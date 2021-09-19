@@ -41,7 +41,7 @@ On considère le dispositif suivant où un objet assimilable à un point matéri
 1. Même question pour la partie (2).
 
 ````
-````{dropdown}Eléments de réponse (sans justification)
+````{dropdown} Eléments de réponse (sans justification)
 
 \begin{align*}
 &\begin{cases}

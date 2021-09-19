@@ -423,7 +423,9 @@ On considère un matériel M glissant sans frottements à l'intérieur d'un côn
 1. Déterminer la relation entre les coordonnées r et z. En déduire l'expression de la vitesse $\overrightarrow{v}$ et de l'accélération $\overrightarrow{a}$ en fonction de r et $\theta$.
 1. En déduire, en utilisant le principe fondamental de la dynamique que:
 
-$$M \ddot r = - \frac{mg}{tan \alpha} + mr \dot \theta^2$ avec $M = m (1+ \frac{1}{\tan^2 \alpha})$$
+$$M \ddot r = - \frac{mg}{tan \alpha} + mr \dot \theta^2$$
+avec $M = m (1+ \frac{1}{\tan^2 \alpha})$
+
 3. Exprimer le moment cinétique $\overrightarrow{J_O}$ par rapport au point O en fonction de $m, r, z$ et $\theta$. Montrer que la composante suivant Oz, notée $J_z$ est conservée au cours du mouvement.
 1. En exprimant $\dot \theta$ en fonction de $J_z$, montrer que l'équation différentielle sur r peut s'écrire sous la forme: $M \ddot r = - \frac{dV_{eff}(r)}{dr}$
 où $V_{eff}(r)$ est un potentiel effectif que l'on exprimera en fonction de $\alpha$, m,g, et $J_z$. Tracer les allures de $V_{eff}(r)$ pour $J_z = 0$ et pour $J_z \neq 0$.
