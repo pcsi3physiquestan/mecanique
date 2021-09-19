@@ -36,13 +36,8 @@ Le portrait de phase $(X(t); V(t) = \frac{\rm{d}X}{\rm{dt}}(t)) $de l'oscillateu
 
 On donne les abscisses correspondant aux croisements de la trajectoire de phase avec l'axe des abscisses:
 
-|t(s)|
-|:-:|
-| 0.31 |
-| 0.65 |
-| 0.97 |
-| 1.3 |
-| 1.62 |
+|t(s)| 0.31 | 0.65 | 0.97 | 1.3 | 1.62 |
+|:-:|:-: |:-: |:-: |:-: |:-: |
 
 1 Établir l'équation différentielle du mouvement de M et la mettre sous la forme: $\ddot x + \frac{\omega_0}{Q} \dot x + \omega_0^2 x = \omega_0^2 X_0$ où x est l'allongement du ressort (par rapport à $l_0$). Les grandeurs $w_0, Q$ et $X_0$ sont à exprimer en fonction des données.
 1. Dans le cas d'une solution pseudo-périodique, exprimer $x(t)$: on définira le temps de relaxation énergétique $\tau$ et la pseudo-période $\Omega$ que l'on exprimera en fonction de $\omega_0$ et $Q$.

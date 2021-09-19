@@ -197,6 +197,7 @@ Il vient que le vecteur vitesse s'écrit:
 
 \begin{equation}
 v_{M/Boule} = R_0 \frac{v_0}{R_0} \overrightarrow{e_{\theta}}
+\end{equation}
 ```
 
 ```{admonition} Fondamental : Dérivation du vecteur vitesse.

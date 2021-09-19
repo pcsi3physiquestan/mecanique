@@ -61,6 +61,7 @@ Temps de remontée: $t_{rem} = \tau \ln \frac{v_L}{v_L - v_e} = $
 
 \begin{align*}
 z(t) = v_L \left(t - t_e\right) - \tau (v_e - v_L)e^{-\frac{\left(t-t_e\right)}{\tau}} -h + \tau (v_e - v_L)
+\end{align*}
 ````
 
 ## Volant freiné
@@ -73,10 +74,8 @@ On considère un volant qui tourne autour d'un axe fixe horizontal. Son moment d
 
 1. Exprimer le coefficient $\alpha$ en fonction de $\omega_0$ et N.
 
-````
 ````{dropdown} Eléments de réponse (sans justification)
 
 $\alpha = \frac{\omega_0^2}{4 \pi N}$
-```
 ````
 

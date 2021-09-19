@@ -112,7 +112,6 @@ W &= \int_{\theta=0}^{\theta=\theta_1} - mgR \sin \theta d\theta \\
 \end{align*}
 ```{admonition} Analyse du résultat
 :class: hint
-{adv_analyse_du_resultat_23}
 On pourra vérifier ici l'homogénéité en utilisant le fait que mgz est homogène à une énergie (potentiel de pesanteur). Donc l'expression précédente est bien homogène à un terme énergétique comme doit l'être un transfert d'énergie mécanique (un travail).
 
 On remarquera aussi que ce travail est __négatif__. Ce qui veut dire que le système a perdu de l'énergie sous l'effet du poids. En effet, en montant, il est ralenti: le poids a alors un effet __résistant__. Si le mouvement s'était effectué dans l'autre sens, le travail (transfert d'énergie mécanique) aurait été positif: le système aurait gagné de l'énergie. Le poids aura alors eu un effet __moteur__.

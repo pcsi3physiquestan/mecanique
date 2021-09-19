@@ -29,6 +29,7 @@ Démontrer les relations suivantes dans l'ellipse:
 a = \frac{p}{1 - e^{2}}\\
 c^{2} = a^{2} - b^{2}\\
 e = c / a
+\end{align*}
 
 ````
 ## Chute d'une règle

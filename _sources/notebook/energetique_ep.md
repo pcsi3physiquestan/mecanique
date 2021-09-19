@@ -204,6 +204,7 @@ L'action de rappel d'un ressort dérive d'une énergie potentielle dont l'expres
 
 \begin{equation}
 E_p = \frac{1}{2} k \Delta l ^2 = \frac{1}{2} k \left(l - l_0\right)^2
+\end{equation}
 ````
 
 
@@ -225,6 +226,7 @@ L'action de rappel d'un couple de torsion dérive d'une énergie potentielle don
 
 \begin{equation}
 E_p = \frac{1}{2} C \Delta \theta ^2 = \frac{1}{2} C \left(\theta - \theta_0\right)^2
+\end{equation}
 ````
 
 

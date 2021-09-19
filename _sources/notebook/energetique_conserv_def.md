@@ -38,7 +38,7 @@ Cette propriété est bien plus générale mais elle a des conséquences particu
 
 Il vient que l'énergie potentielle du mobile doit nécessairement être inférieure ou égale à l'énergie mécanique.
 
-Dans le cas d'un système conservatif où l'énergie mécanique est une constante, cela signifie que l'énergie potentielle est majorée et que __les zones de l'espace où l'énergie potentielle est supérieure à l'énergie mécanique sont des zones inaccessibles pour le système. On parle de____\textbf{barrières de potentiels.__}
+Dans le cas d'un système conservatif où l'énergie mécanique est une constante, cela signifie que l'énergie potentielle est majorée et que __les zones de l'espace où l'énergie potentielle est supérieure à l'énergie mécanique sont des zones inaccessibles pour le système. On parle de barrières de potentiels.__
 
 De plus, si le système atteint un point où l'énergie potentielle égale l'énergie mécanique, alors en ces points, la vitesse du mobile s'annule (puisque l'énergie cinétique y est nulle). C'est en général un point de rebroussement du système.
 ````

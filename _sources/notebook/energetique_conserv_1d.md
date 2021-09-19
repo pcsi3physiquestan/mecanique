@@ -309,6 +309,7 @@ La preuve est directe à partir de l'équation obtenue précédemment:
 
 \begin{align*}
 m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x &= \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x_{eq}
+\end{align*}
 ````
 ````{dropdown} Remarque
 

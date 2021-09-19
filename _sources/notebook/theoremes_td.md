@@ -154,6 +154,7 @@ J_2 \ddot \theta_2 =  - C \theta_2 + C \left(\theta_1 - \theta_2\right)\\
 \begin{align*}
 \omega &= \sqrt{\frac{3C}{J_1}}\\
 \omega &= \sqrt{\frac{C}{J_1}}
+\end{align*}
 ````
 
 

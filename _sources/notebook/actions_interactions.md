@@ -43,7 +43,7 @@ Par la suite, on s'intéressera souvent à un système mécanique donné (systè
 ````{admonition} Définition : Action ponctuelle
 :class: tip
 
-Une action ponctuelle __d'un système____$\Sigma_1$____sur un système____$\Sigma_2$__ est une action agissant sur un point (matériel) du système $\Sigma_2$.
+Une action ponctuelle __d'un système $\Sigma_1$ sur un système $\Sigma_2$__ est une action agissant sur un point (matériel) du système $\Sigma_2$.
 
 Tout système possédant une extension spatiale, il s'agit d'une modélisation théorique d'une action mécanique.
 
@@ -66,7 +66,7 @@ Une action résultante sur un système $\Sigma_2$ est une action du milieu exté
 ````{admonition} Attention : Arbitraire mais réfléchi... 
 :class: note
 
-En effet, un système $\Sigma_2$ subit de nombreuses actions de la part du milieu extérieur. On va pouvoir regrouper ses actions en des actions résultantes mais ces regroupement ne se font pas de manière aléatoire. Un regroupement possède un sens physique: en général, on __doit__ par exemple pouvoir attribuer toutes les actions ponctuelles à un même système $\Sigma_1$ qu'on peut parfaitement définir, de sorte qu'on puisse parler de __l'action résultante du système____$\Sigma_1$____sur le système____$\Sigma_2$____.__
+En effet, un système $\Sigma_2$ subit de nombreuses actions de la part du milieu extérieur. On va pouvoir regrouper ses actions en des actions résultantes mais ces regroupement ne se font pas de manière aléatoire. Un regroupement possède un sens physique: en général, on __doit__ par exemple pouvoir attribuer toutes les actions ponctuelles à un même système $\Sigma_1$ qu'on peut parfaitement définir, de sorte qu'on puisse parler de __l'action résultante du système $\Sigma_1$ sur le système $\Sigma_2$.__
 
 Il arrive par contre qu'on différencie en deux groupes des actions provenant d'un même système. Par exemple, considérons deux boules massiques et chargées. La première exerce sur chaque point de la seconde des actions de gravitation et des actions électriques. Même si l'origine de ces actions reste la première boule, on distinguera deux actions résultantes: l'action électrique résultante de la boule 1 sur la boule 2 et l'action gravitationnelle résultante de la boule 1 sur la boule 2.
 

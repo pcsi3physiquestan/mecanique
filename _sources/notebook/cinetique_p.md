@@ -76,7 +76,7 @@ L'expression précédente ne dépend pas du point B __tant que B est sur l'axe._
 
 Le moment cinétique par rapport à un point est un __vecteur__ et le moment cinétique par rapport à un axe est un __scalaire__. Il est important de faire cette différence.
 
-On pourra remarquer que point un axe $\Delta$ et un point B sur cet axe. Si l'on prend une base contenant le vecteur unitaire $\overrightarrow{u}$ porté par l'axe $\Delta$, alors le moment cinétique d'un point M sur l'axe $\Delta$ correspond mathématiquement à la projection scalaire du moment cinétique par rapport au point B, il donne une__composante scalaire__ du moment par rapport à B dans la base de projection.
+On pourra remarquer que point un axe $\Delta$ et un point B sur cet axe. Si l'on prend une base contenant le vecteur unitaire $\overrightarrow{u}$ porté par l'axe $\Delta$, alors le moment cinétique d'un point M sur l'axe $\Delta$ correspond mathématiquement à la projection scalaire du moment cinétique par rapport au point B, il donne une __composante scalaire__ du moment par rapport à B dans la base de projection.
 
 ````
 
@@ -105,7 +105,7 @@ On observe que:
 
 * Le moment cinétique de M sur l'axe $\Delta$ n'est pas nul que le point M tourne autour de l'axe $\Delta$ __à l'instant t__. C'est fondamental pour comprendre l'utilisation du moment cinétique: il est principalement utilisée pour étudier des rotations. Attention, ça ne signifie pas que la trajectoire est courbe: un point M qui va en ligne droite semble tourne quand on se place sur un axe B non parallèle à la trajectoire ! Le moment est non nul si M semble tourner __par rapport à l'axe__.
 * Il dépend aussi de la distance à l'axe. L'introduction du moment cinétique est d'avoir une grandeur similaire à la quantité de mouvement mais pour la rotation, c'est-à-dire qui va être la grandeur modifiée par les actions du milieux extérieures __sur la rotation de M autour de l'axe__. D'un point de vue inertiel, on comprend qu'il est plus difficile de modifier la rotation d'un point matériel situé loin de l'axe si on se trouve sur l'axe.
-* Il est __algébrique__ et le moment cinétique est positif si le point M tourne dans le sens des $\theta$ croissant (angles orientés __en cohérence vvec l'axe orienté____$\Delta$__) et le moment cinétique est négatif si le point M tourne dans le sens des $\theta$ décroissant (angles orientés __en cohérence vvec l'axe orienté____$\Delta$__).
+* Il est __algébrique__ et le moment cinétique est positif si le point M tourne dans le sens des $\theta$ croissant (angles orientés __en cohérence vvec l'axe orienté____$\Delta$__) et le moment cinétique est négatif si le point M tourne dans le sens des $\theta$ décroissant (angles orientés __en cohérence avec l'axe orienté____$\Delta$__).
 
 On observe donc que le moment cinétique, à l'image de la quantité de mouvement contient des information
 

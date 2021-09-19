@@ -36,6 +36,7 @@ En référentiel galiléen (sous les mêmes hypothèses que précédemment):
 
 \begin{align*}
 \frac{\rm{d}E_{c/\mathfrak{R}}}{\rm{dt}} &= \delta P_{/\mathfrak{R}}(\overrightarrow{F})
+\end{align*}
 ````
 
 __Démonstration__

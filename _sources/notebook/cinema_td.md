@@ -87,5 +87,5 @@ Déterminer alors les équations paramétriques du mouvement de A (équation hor
 
 $r(t) = \frac{\sqrt{2}}{2}a - \frac{\sqrt{2}}{2}v_0 t$
 
-$theta(t) = - \ln \left ( a - v_0 t\right )$
+$\theta(t) = - \ln \left ( a - v_0 t\right )$
 ````
