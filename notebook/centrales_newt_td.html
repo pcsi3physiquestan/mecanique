@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travaux dirigés: Potentiels newtoniens &#8212; Mécanique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/centrales_newt_td.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Mouvement des satellites" href="centrales_newt_satellites.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mécanique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mecanique.html">
+   Mécanique classique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="cinematique.html">
+   Cinématique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_point.html">
+     Cinématique du point
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_referentiel.html">
+       Référentiel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_trajectoire.html">
+       Position et trajectoire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_vitesse.html">
+       Vecteur vitesse
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_acc.html">
+       Vecteur accélération
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_circulaire.html">
+       Cas du mouvement circulaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_acc_unif.html">
+       Mouvement uniformément accéléré
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_td.html">
+       TD Mécanique 1: Cinématique du point
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinetique_point.html">
+     Cinétique du point
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinetique_inertie.html">
+       Point matériel et inertie
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinetique_p.html">
+       Quantité de mouvement
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_cinema.html">
+     Cinématique et cinétique des systèmes de points
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_description.html">
+       Description d’un système de points
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_cinetique.html">
+       Cinétique du solide
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_mouvement.html">
+       Mouvements particuliers
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="actions.html">
+   Description des actions mécaniques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="actions_ponctuelles.html">
+     Modélisation des actions. Cas des actions ponctuelles.
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_interactions.html">
+       Actions et interactions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_typo.html">
+       Action ponctuelle: Modélisation et typologie
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="actions_globales.html">
+     Modélisation des actions globales
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_g_typo.html">
+       Généralités sur les actions à distance
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_g_exemples.html">
+       Exemples d’analyse
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="theoremes.html">
+   Théorèmes fondamentaux de la mécanique classique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_newton.html">
+     Lois de Newton et conséquences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_tmc.html">
+     Théorème du moment cinétique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_meth.html">
+     Activités méthodes: Applications des théorèmes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_ex_app.html">
+     Exercices d’application
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_td.html">
+     Travaux dirigés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_gene.html">
+     Théorèmes énergétiques
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_rappel.html">
+       Energie cinétique: Rappels
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_travail.html">
+       Travail et puissance des actions mécaniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_ep.html">
+       Forces/actions conservatives et énergie potentielle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_theoremes.html">
+       Théorèmes énergétiques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_exemples.html">
+       Exemples
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_td.html">
+       Travaux dirigés
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_conservatifs.html">
+     Systèmes conservatifs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_def.html">
+       Système conservatif: Définition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_1d.html">
+       Système à 1 degré de liberté
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_td.html">
+       Travaux dirigés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="applications.html">
+   Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="oscillateurs.html">
+     Oscillateurs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_equation.html">
+       Mise en équation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_harmonique.html">
+       Oscillateur harmonique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_amorti.html">
+       Oscillateur amorti
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_forces.html">
+       Oscillations forcées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_td.html">
+       Travaux dirigés: Oscillateurs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rotation.html">
+     Solide en rotation autour d’un axe fixe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pendules.html">
+     Etude des pendules
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="centrales.html">
+   Mouvement à force centrales
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="centrales_gene.html">
+     Mouvement à force centrales : Généralités
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="centrales_newtoniens.html">
+     Potentiels newtoniens
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_gene.html">
+       Forces newtoniennes: Généralités
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_odg.html">
+       Forces newtoniennes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_mvt.html">
+       Etude du mouvement
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_kepler.html">
+       Mouvement des planètes et lois de Kepler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_satellites.html">
+       Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Travaux dirigés: Potentiels newtoniens
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/centrales_newt_td.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/centrales_newt_td.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/centrales_newt_td.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etude-du-mouvement-d-une-planete-par-la-methode-du-vecteur-excentricite">
+   Etude du mouvement d’une planète par la méthode du vecteur excentricité
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#explosion-d-une-comete">
+   Explosion d’une comète
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mise-en-orbite-d-une-sonde-spatiale">
+   Mise en orbite d’une sonde spatiale
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comete-a-trajectoire-parabolique">
+   Comète à trajectoire parabolique
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#satellite-hipparcos">
+   Satellite Hipparcos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#satellite-artificiel">
+   Satellite artificiel
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="travaux-diriges-potentiels-newtoniens">
+<h1>Travaux dirigés: Potentiels newtoniens<a class="headerlink" href="#travaux-diriges-potentiels-newtoniens" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="etude-du-mouvement-d-une-planete-par-la-methode-du-vecteur-excentricite">
+<h2>Etude du mouvement d’une planète par la méthode du vecteur excentricité<a class="headerlink" href="#etude-du-mouvement-d-une-planete-par-la-methode-du-vecteur-excentricite" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On veut étudier le mouvement d’une planète P, assimilée à un point matériel dans le champ de gravitation d’une étoile de masse <span class="math notranslate nohighlight">\(M_e\)</span>, de centre O considérée comme ponctuelle et fixe. La planète de masse <span class="math notranslate nohighlight">\(M_P\)</span> est située à une distance <span class="math notranslate nohighlight">\(r=OP\)</span> de O. On considère le référentiel lié à l’étoile comme galiléen.</p>
+<ol class="simple">
+<li><p>Exprimer la force exercée par l’étoile sur la planète en fonction de <span class="math notranslate nohighlight">\(M_p, M_e, r, G\)</span> la constante de gravitation universelle et <span class="math notranslate nohighlight">\(\overrightarrow{u_r} = \frac{\overrightarrow{OP}}{r}\)</span>.</p></li>
+<li><p>Justifier que le mouvement est plan. Préciser ce plan.</p></li>
+</ol>
+<p>On rappelle que l’équation polaire d’une ellipse est <span class="math notranslate nohighlight">\(r(\theta) = \frac{p}{1+ e \cos \theta}\)</span>. On définit le vecteur excentricité: <span class="math notranslate nohighlight">\(\overrightarrow{e} = - \frac{L}{GM_e M_P} \overrightarrow{v} + \overrightarrow{u_{\theta}}\)</span> où <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est la vitesse de la planète.</p>
+<ol class="simple">
+<li><p>Montrer que le vecteur excentricité est un vecteur constant. En fait, ce vecteur est orthogonal au grand axe de l’ellipse.</p></li>
+<li><p>En calculant le produit scalaire <span class="math notranslate nohighlight">\(\overrightarrow{e} \cdot \overrightarrow{u_{\theta}}\)</span>, montrer que l’on retrouve bien l’équation d’une ellipse.</p></li>
+<li><p>Que vaut le module de <span class="math notranslate nohighlight">\(\overrightarrow{e}\)</span>? Préciser p en fonction de G, <span class="math notranslate nohighlight">\(M_p\)</span>, <span class="math notranslate nohighlight">\(M_e\)</span> et L.</p></li>
+<li><p>Préciser la valeur de l’excentricité dans le cas d’un mouvement circulaire.</p></li>
+<li><p>Dans le cas d’un mouvement circulaire, préciser la valeur de L en fonction de R (rayon du cercle), <span class="math notranslate nohighlight">\(v_c\)</span> (vitesse circulaire) et <span class="math notranslate nohighlight">\(M_p\)</span>. Déterminer l’expression de la vitesse <span class="math notranslate nohighlight">\(V_c\)</span> en fonction de R, G et <span class="math notranslate nohighlight">\(M_e\)</span> à l’aide du vecteur excentricité.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="explosion-d-une-comete">
+<h2>Explosion d’une comète<a class="headerlink" href="#explosion-d-une-comete" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Une comète de période T=770 ans s’est approchée du soleil à <span class="math notranslate nohighlight">\(d = 7,75 \times 10^{-3} \rm{u.a.}\)</span></p>
+<ol class="simple">
+<li><p>On suppose que la trajectoire est elliptique. Déterminer le demi-grand axe a, l’excentricité e, le paramètre p de l’ellipse et les vitesses à l’aphélie (<span class="math notranslate nohighlight">\(v_A\)</span>) et au périhélie (<span class="math notranslate nohighlight">\(v_P\)</span>). A-t-on eu raison de faire l’hypothèse d’une trajectoire elliptique?</p></li>
+<li><p>A son périhélie, elle a explosé en deux morceaux de masse <span class="math notranslate nohighlight">\(m_1\)</span> et <span class="math notranslate nohighlight">\(m_2\)</span>, partis respectivement avec la vitesse <span class="math notranslate nohighlight">\(v_1\)</span> et <span class="math notranslate nohighlight">\(v_2\)</span> dans deux directions faisant des angles respectifs <span class="math notranslate nohighlight">\(\alpha_1 = -20 ^{\circ}\)</span> et <span class="math notranslate nohighlight">\(\alpha_2 = 50 ^{\circ}\)</span> avec la direction initiale de <span class="math notranslate nohighlight">\(v_P\)</span>. La quantité de mouvement totale se conserve durant l’explosion et l’on observe que: <span class="math notranslate nohighlight">\(\left \| v_1\right \| \sim \left \| v_2 \right \|\)</span>.</p>
+<ol class="simple">
+<li><p>En utilisant la conservation de la quantité de mouvement, déterminer le rapport des masses <span class="math notranslate nohighlight">\(m_1/m_2\)</span> puis la norme des vitesses des fragments.</p></li>
+<li><p>Calculer l’énergie mécanique par unité de masse pour chaque fragment. En déduire le type de la nouvelle trajectoire.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="mise-en-orbite-d-une-sonde-spatiale">
+<h2>Mise en orbite d’une sonde spatiale<a class="headerlink" href="#mise-en-orbite-d-une-sonde-spatiale" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On souhaite mettre en orbite une sonde spatiale(s) autour de Mars. Ce véhicule possède au point A la vitesse <span class="math notranslate nohighlight">\(v_A\)</span> et présente un “paramètre d’impact” b (cf. Figure). On donne:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(v_A = 2,5 \rm{km/s}\)</span></p></li>
+<li><p>rayon de Mars: <span class="math notranslate nohighlight">\(r_M = 3397 \rm{km}\)</span></p></li>
+<li><p>masse de Mars: <span class="math notranslate nohighlight">\(M_M = 6,39 \times 10^{23} \rm{kg}\)</span></p></li>
+</ul>
+<div class="figure align-center" id="fig-262">
+<img alt="../_images/Mecanique_TD7_EX1_1.jpg" src="../_images/Mecanique_TD7_EX1_1.jpg" />
+</div>
+<p>Remarque: Le point B n’est pas placé correctement sur le schéma. Cela n’a pas d’influence sur les raisonnements.</p>
+<ol class="simple">
+<li><p>Au point A, on suppose que le véhicule est assez éloigné de Mars pour pouvoir négliger l’énergie gravitationnelle. En déduire l’expression de l’énergie mécanique et la nature de la trajectoire de(s). Le justifier sur un graphique.</p></li>
+<li><p>Montrer que le moment cinétique se conserve et définir la constante des aires C. Calculer C en fonction de <span class="math notranslate nohighlight">\(v_A\)</span> et b.</p></li>
+<li><p>Sachant que ma trajectoire d’approche est tangente au cercle de rayon <span class="math notranslate nohighlight">\(\alpha r_M\)</span> en B, calculer <span class="math notranslate nohighlight">\(v_B\)</span> (vitesse en B) en fonction de <span class="math notranslate nohighlight">\(v_A, r_M, \alpha\)</span> et <span class="math notranslate nohighlight">\(b\)</span>.</p></li>
+<li><p>Exprimer le paramètre d’impact b, en fonction de <span class="math notranslate nohighlight">\(r_M, v_A, M_M\)</span> et <span class="math notranslate nohighlight">\(\alpha\)</span>. A.N.: <span class="math notranslate nohighlight">\(\alpha = 3\)</span>.</p></li>
+<li><p>Déterminer la distance minimale <span class="math notranslate nohighlight">\(b_m\)</span> pour que le véhicule évite la surface de Mars.</p></li>
+<li><p>Déterminer la vitesse <span class="math notranslate nohighlight">\(v_c\)</span> d’un objet sur l’orbite circulaire de rayon <span class="math notranslate nohighlight">\(3 r_m\)</span> ainsi que sa période de révolution en fonction des données.</p></li>
+<li><p>Au point B (avec <span class="math notranslate nohighlight">\(\alpha = 3\)</span>), on veut que le véhicule passe sur l’orbite circulaire de rayon <span class="math notranslate nohighlight">\(3 r_M\)</span>. Déterminer la variation de vitesse <span class="math notranslate nohighlight">\(\Delta v_c\)</span> à communiquer au véhicule en fonction des données.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="comete-a-trajectoire-parabolique">
+<h2>Comète à trajectoire parabolique<a class="headerlink" href="#comete-a-trajectoire-parabolique" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>La comète Arend-Roland est une comète à trajectoire d’excentricité e estimée à 1,0002. On assimilera la trajectoire à une parabole d’excentricité e=1. La comète est passée à son périhélie, le 8 avril 1857, à <span class="math notranslate nohighlight">\(r_P = 0,316 \rm{u.a.}\)</span> du soleil.</p>
+<ol class="simple">
+<li><p>Calculer le paramètre de la trajectoire.</p></li>
+<li><p>Exprimer le paramètre p de la conique en fonction de la constante des aires C, de G et la masse du soleil <span class="math notranslate nohighlight">\(M_S\)</span>. En déduire la vitesse de la comète au périhélie.</p></li>
+<li><p>Montrer que l’on peut exprimer la vitesse angulaire <span class="math notranslate nohighlight">\(\dot \theta\)</span> en fonction de la constante des aires C et du paramètres p de la parabole par: <span class="math notranslate nohighlight">\(\dot \theta = C\frac{{(1+ \cos \theta)}^2}{p^2}\)</span>. En quel point est prise l’origine <span class="math notranslate nohighlight">\(\theta=0\)</span>?</p></li>
+<li><p>On note <span class="math notranslate nohighlight">\(t_0\)</span> l’instant de passage au périhélie P. Montrer alors que l’on obtient le temps de passage pour le point d’angle <span class="math notranslate nohighlight">\(\alpha\)</span> avec:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[t(\alpha) = t_0 + \int_0^{\alpha} \frac{p^2}{C} \frac{d \theta}{{(1+ cos \theta)}^2}\]</div>
+<ol class="simple">
+<li><p>Pour calculer cette intégrale, on effectue le changement de variable <span class="math notranslate nohighlight">\(x = \tan \frac{\theta}{2}\)</span>. En déduire l’expression: <span class="math notranslate nohighlight">\(t = t_0 + \frac{p^2}{C} (X + \frac{X^3}{3})\)</span> où <span class="math notranslate nohighlight">\(X = \tan \frac{\alpha}{2}\)</span>.</p></li>
+<li><p>(Analyse numérique) La comète a été découverte par les astronomes belges Sylvain Arend et Georges Roland le 8 novembre 1856. A quelle distance se trouvait-elle du Soleil?</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="satellite-hipparcos">
+<h2>Satellite Hipparcos<a class="headerlink" href="#satellite-hipparcos" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Le satellite Hipparcos lancé le 8 août 1987 était constitué principalement d’un télescope de 30cm de diamètre. Celui-ci a permis d’établir un catalogue des positions, distances et éclats de plus de 118000 étoiles avec une précision jamais atteinte. Ce satellite devait être placé sur une orbite géostationnaire à une altitude H=36000km. Un problème de mise à feu du moteur d’apogée a laissé Hipparcos sur son orbite de transfert son altitude variant entre h et H. Après utilisation des moteurs de positionnement, l’altitude minimale a été porté à h=500km.</p>
+<p>Une programmation du satellite a permis de s’affranchir des problèmes liés à cette orbite. Au cours d’une révolution, il passe dans la ceinture de Van Allen. On supposera que cette ceinture comprise entre 2 sphères de rayon <span class="math notranslate nohighlight">\(r_1 = 8400 \rm{km}\)</span> et <span class="math notranslate nohighlight">\(r_2 = 28000 \rm{km}\)</span> et de centre celui de la Terre. La ceinture de Van Allen est constituée de particule piégées dans le champ magnétique terrestre. Ces particules aveuglent les détecteurs d’Hipparcos interrompant les mesures des positions des étoiles. Il est cependant utilisable à <span class="math notranslate nohighlight">\(65\%\)</span>. On assimile la terre à une sphère de centre O, de rayon R=6400km et de masse M et le satellite à un point matériel (S,m). On suppose le référentiel géocentrique R galiléen. La période de rotation de la terre dans ce référentiel appelée jour sidéral vaut T=86164s.</p>
+<ol class="simple">
+<li><p>Quelle la nature de la trajectoire d’Hipparcos?</p></li>
+<li><p>Déterminer les expressions de l’excentricité e et du paramètre de l’ellipse p en fonction de h,H et R. A.N.</p></li>
+<li><p>Exprimer et calculer le demi-grand axe a de la trajectoire.</p></li>
+<li><p>Démontrer la troisième loi de Kepler.</p></li>
+<li><p>Déduire de la question précédente, la relation entre la période de rotation de la Terre T et l’altitude de l’orbite géostationnaire H.</p></li>
+<li><p>Exprimer la période <span class="math notranslate nohighlight">\(T_h\)</span> de révolution d’Hipparcos en fonction de T,R,H et h. Calculer <span class="math notranslate nohighlight">\(T_h\)</span> en heure.</p></li>
+<li><p>Déterminer les valeurs numériques de angles <span class="math notranslate nohighlight">\(\theta_1\)</span> et <span class="math notranslate nohighlight">\(\theta_2\)</span> d’entrée et de sortie de la ceinture de Van Allen du satellite. On donnera les valeurs comprises entre <span class="math notranslate nohighlight">\(0 ^{\circ}\)</span> et <span class="math notranslate nohighlight">\(180 ^{\circ}\)</span>.</p></li>
+<li><p>Représenter sur un schéma clair la trajectoire du satellite et l’aire balayée par <span class="math notranslate nohighlight">\(\overrightarrow{OS}\)</span> lors d’un passage dans la ceinture de Van Allen. Pour la question suivante, on prendre une valeur approché de <span class="math notranslate nohighlight">\(S_b = 200 \times 10^{6} \rm{km}\)</span>.</p></li>
+<li><p>Déterminer le rapport <span class="math notranslate nohighlight">\(\rho = t_0/T_h\)</span> en fonction de <span class="math notranslate nohighlight">\(S_b\)</span> et <span class="math notranslate nohighlight">\(S_e\)</span> (surface de l’ellipse) où <span class="math notranslate nohighlight">\(t_0\)</span> est la durée totale d’inactivité d’Hipparcos sur une période.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="satellite-artificiel">
+<h2>Satellite artificiel<a class="headerlink" href="#satellite-artificiel" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On étudie le lancement d’un satellite artificiel à partir d’un point O de la surface terrestre.</p>
+<ol class="simple">
+<li><p>Établir l’expression de la vitesse du point O dans le référentiel géocentrique <span class="math notranslate nohighlight">\(R_T\)</span> assimilé à un référentiel galiléen en fonction de la vitesse de rotation de la Terre autour de l’axe de ses pôles <span class="math notranslate nohighlight">\(\omega\)</span>, du rayon terrestre <span class="math notranslate nohighlight">\(R_T\)</span> et de la latitude du lieu <span class="math notranslate nohighlight">\(\lambda\)</span>.</p></li>
+<li><p>En déduire les conditions les plus favorables pour le lancement d’un satellite. Parmi les champs de tirs suivants, lequel choisir de préférence?</p>
+<ul class="simple">
+<li><p>Baïkonour au Kazakhstan: <span class="math notranslate nohighlight">\(\lambda = 46 ^{\circ}\)</span></p></li>
+<li><p>Cap Canaveral aux USA: <span class="math notranslate nohighlight">\(\lambda = 28,5 ^{\circ}\)</span></p></li>
+<li><p>Kourou en Guyane française: <span class="math notranslate nohighlight">\(\lambda = 5,23 ^{\circ}\)</span></p></li>
+</ul>
+</li>
+<li><p>Etablir l’expression de l’énergie potentielle de gravitation du système Terre-satellite en fonction de l’altitude z du satellite par rapport au sol. On prend pour référence une énergie potentielle nulle à l’infini. En déduire l’expression de l’énergie mécanique du satellite sur sa base de lancement dans le référentiel géocentrique.</p></li>
+<li><p>On appelle ici vitesse de libération <span class="math notranslate nohighlight">\(v_l\)</span>, la vitesse verticale minimale qu’il faut communiquer initialement au satellite par rapport au sol, pour qu’il puisse se libérer de l’attraction terrestre. Donner l’expression de <span class="math notranslate nohighlight">\(v_l\)</span>. Calculer sa valeur numérique dans le cas où le satellite est lancé de la base de Kourou. On supposera que la vitesse du point O attaché au sol est horizontale et la vitesse communiquée au satellite verticale.</p></li>
+<li><p>On considère un satellite artificiel m en mouvement circulaire autour de la Terre.
+3. Montrer que le mouvement du satellite est uniforme. Etablir l’expression de la vitesse du satellite en fonction de son altitude ainsi que la troisième loi de Kepler liant la période de rotation T du satellite au rayon r de sa trajectoire.
+3. Calculer le rayon de l’orbite d’un satellite géostationnaire et définir son plan de révolution.
+3. Quelle énergie cinétique minimale faut-il communiquer au satellite pour qu’il échappe à l’attraction terrestre s’il est initialement en orbite circulaire autour de la Terre à l’altitude z?  A.N. z = 36000 km; m=6 tonnes.
+3. Soit un satellite d’énergie initiale <span class="math notranslate nohighlight">\(E_{m0}\)</span>. Son orbite est relativement basse et il subit donc les frottements des couches hautes de l’atmosphère. Il s’ensuit que l’énergie mécanique du satellite varie suivant la loi <span class="math notranslate nohighlight">\(E_m = E_{m0} (1+ bt)\)</span>, b étant un coefficient constant positif. On suppose que la trajectoire reste approximativement circulaire. Préciser le signe de <span class="math notranslate nohighlight">\(E_{m0}\)</span>. Etablir l’expression du rayon r et de la vitesse v du satellite en fonction du temps. Comparer les évolutions de r et de v ainsi que celles des énergies potentielle et cinétique. Que devient l’énergie perdue?</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="centrales_newt_satellites.html" title="previous page">Mouvement des satellites</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

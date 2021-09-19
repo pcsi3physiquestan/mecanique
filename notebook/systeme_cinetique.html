@@ -1,0 +1,797 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinétique du solide &#8212; Mécanique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/systeme_cinetique.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Mouvements particuliers" href="systeme_mouvement.html" />
+    <link rel="prev" title="Description d’un système de points" href="systeme_description.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mécanique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mecanique.html">
+   Mécanique classique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="cinematique.html">
+   Cinématique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_point.html">
+     Cinématique du point
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_referentiel.html">
+       Référentiel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_trajectoire.html">
+       Position et trajectoire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_vitesse.html">
+       Vecteur vitesse
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_acc.html">
+       Vecteur accélération
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_circulaire.html">
+       Cas du mouvement circulaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_acc_unif.html">
+       Mouvement uniformément accéléré
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_td.html">
+       TD Mécanique 1: Cinématique du point
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinetique_point.html">
+     Cinétique du point
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinetique_inertie.html">
+       Point matériel et inertie
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinetique_p.html">
+       Quantité de mouvement
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="systeme_cinema.html">
+     Cinématique et cinétique des systèmes de points
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_description.html">
+       Description d’un système de points
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Cinétique du solide
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_mouvement.html">
+       Mouvements particuliers
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="actions.html">
+   Description des actions mécaniques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="actions_ponctuelles.html">
+     Modélisation des actions. Cas des actions ponctuelles.
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_interactions.html">
+       Actions et interactions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_typo.html">
+       Action ponctuelle: Modélisation et typologie
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="actions_globales.html">
+     Modélisation des actions globales
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_g_typo.html">
+       Généralités sur les actions à distance
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_g_exemples.html">
+       Exemples d’analyse
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="theoremes.html">
+   Théorèmes fondamentaux de la mécanique classique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_newton.html">
+     Lois de Newton et conséquences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_tmc.html">
+     Théorème du moment cinétique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_meth.html">
+     Activités méthodes: Applications des théorèmes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_ex_app.html">
+     Exercices d’application
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_td.html">
+     Travaux dirigés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_gene.html">
+     Théorèmes énergétiques
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_rappel.html">
+       Energie cinétique: Rappels
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_travail.html">
+       Travail et puissance des actions mécaniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_ep.html">
+       Forces/actions conservatives et énergie potentielle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_theoremes.html">
+       Théorèmes énergétiques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_exemples.html">
+       Exemples
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_td.html">
+       Travaux dirigés
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_conservatifs.html">
+     Systèmes conservatifs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_def.html">
+       Système conservatif: Définition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_1d.html">
+       Système à 1 degré de liberté
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_td.html">
+       Travaux dirigés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="applications.html">
+   Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="oscillateurs.html">
+     Oscillateurs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_equation.html">
+       Mise en équation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_harmonique.html">
+       Oscillateur harmonique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_amorti.html">
+       Oscillateur amorti
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_forces.html">
+       Oscillations forcées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_td.html">
+       Travaux dirigés: Oscillateurs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rotation.html">
+     Solide en rotation autour d’un axe fixe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pendules.html">
+     Etude des pendules
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="centrales.html">
+   Mouvement à force centrales
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="centrales_gene.html">
+     Mouvement à force centrales : Généralités
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_newtoniens.html">
+     Potentiels newtoniens
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_gene.html">
+       Forces newtoniennes: Généralités
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_odg.html">
+       Forces newtoniennes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_mvt.html">
+       Etude du mouvement
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_kepler.html">
+       Mouvement des planètes et lois de Kepler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_satellites.html">
+       Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_td.html">
+       Travaux dirigés: Potentiels newtoniens
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/systeme_cinetique.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/systeme_cinetique.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/systeme_cinetique.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quantite-de-mouvement">
+   Quantité de mouvement
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantite-de-mouvement-definition">
+     Quantité de mouvement: définition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantite-de-mouvement-et-centre-d-inertie">
+     Quantité de mouvement et centre d’inertie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calcul-de-la-quantite-de-mouvement">
+     Calcul de la quantité de mouvement
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#moment-cinetique-d-un-solide">
+   Moment cinétique d’un solide
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energie-cinetique-d-un-systeme-de-points-materiels">
+   Energie cinétique d’un système de points matériels
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cinetique-du-solide">
+<h1>Cinétique du solide<a class="headerlink" href="#cinetique-du-solide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quantite-de-mouvement">
+<h2>Quantité de mouvement<a class="headerlink" href="#quantite-de-mouvement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quantite-de-mouvement-definition">
+<h3>Quantité de mouvement: définition<a class="headerlink" href="#quantite-de-mouvement-definition" title="Permalink to this headline">¶</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Quantité de mouvement d’un système de points</p>
+<p>La quantité de mouvement dans un référentiel R d’un système de points matériels S est la somme des quantités de mouvements dans le même référentiel des points qui le composent.</p>
+<p>Il peut s’agir d’une somme discrète ou continue suivant la description du système.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Il s’agit d’une définition opératoire qui nous permettra de calculer les quantités de mouvement d’un solide décrit comme un ensemble de solides. On ne sera par contre pas amené à calculer des sommes continues.</p>
+</div>
+</details></div>
+<div class="section" id="quantite-de-mouvement-et-centre-d-inertie">
+<h3>Quantité de mouvement et centre d’inertie<a class="headerlink" href="#quantite-de-mouvement-et-centre-d-inertie" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Quantité de mouvement et centre d’inertie</p>
+<p>La quantité du mouvement dans un référentiel R d’un système S est égale à la quantité de mouvement qu’aurait un point matériel fictif situé au centre d’inertie G et dont la masse serait la masse totale du système.</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0a0eeb13-a2a8-4326-900e-8dd63dcaffbb">
+<span class="eqno">(24)<a class="headerlink" href="#equation-0a0eeb13-a2a8-4326-900e-8dd63dcaffbb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{p_{S/\mathfrak{R}}} = M \overrightarrow{v_{G/\mathfrak{R}}}
+\end{equation}\]</div>
+</div>
+<p><strong>Démonstration</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{P_{S/R}} &amp;= \iiint_{P \in S} \rho(P) \overrightarrow{v}(P) d \tau(P)\\
+&amp;= \iiint_{P \in S} \rho(P) \frac{d \overrightarrow{OP}}{dt} d \tau(P)\\
+&amp;= \frac{d}{dt}(\iiint_{P \in S} \rho(P) \overrightarrow{OP} d \tau(P))\\
+&amp;= \frac{d}{dt}(M \overrightarrow{OG}) = M \overrightarrow{v_{G/R}}
+\end{align*}\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Cette propriété, avec le théorème de la résultante cinétique que nous verrons plus tard permet de justifier la modélisation ponctuelle de solides dans le cas de nombreux mouvements de translation.</p>
+</div>
+</details></div>
+<div class="section" id="calcul-de-la-quantite-de-mouvement">
+<h3>Calcul de la quantité de mouvement<a class="headerlink" href="#calcul-de-la-quantite-de-mouvement" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>On considère un cylindre d’axe Oz fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> et de masse uniformément répartie en rotation autour de l’axe Oz. Déterminer la quantité de mouvement du cylindre.</p></li>
+<li><p>On considère un système composé de pièces de masse respectives <span class="math notranslate nohighlight">\(m_1\)</span> et <span class="math notranslate nohighlight">\(m_2\)</span>. La première est en translation à une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_0}\)</span> dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. La seconde est en translation à une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{2/1}}\)</span> par rapport à la première pièce. Déterminer la quantité de mouvement du système total.</p></li>
+<li><p>On considère un disque d’épaisseur <span class="math notranslate nohighlight">\(h\)</span> et de rayon <span class="math notranslate nohighlight">\(R\)</span> de masse totale <span class="math notranslate nohighlight">\(M\)</span> répartie de manière homogène. Il tourne autour d’un axe <span class="math notranslate nohighlight">\(Oz\)</span> où O est distance de <span class="math notranslate nohighlight">\(R/2\)</span> par rapport avec à G. La rotation se fait à vitesse angulaire constante <span class="math notranslate nohighlight">\(\omega\)</span>. Déterminer la quantité de mouvement du disque.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="moment-cinetique-d-un-solide">
+<h2>Moment cinétique d’un solide<a class="headerlink" href="#moment-cinetique-d-un-solide" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Moment cinétique par rapport à un point</p>
+<p>Le moment cinétique <span class="math notranslate nohighlight">\(\overrightarrow{\sigma_{S/A}}\)</span> d’un système S dans un référentiel R par rapport à un point A est la somme des moments cinétiques des différents points du système par rapport au même point A.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Moment cinétique par rapport à un axe</p>
+<p>Le moment cinétique <span class="math notranslate nohighlight">\(\overrightarrow{\sigma_{S/\Delta}}\)</span> d’un système S dans un référentiel R par rapport à un point <span class="math notranslate nohighlight">\(\Delta\)</span> est la somme des moments cinétiques des différents points du système par rapport au même point <span class="math notranslate nohighlight">\(\Delta\)</span>.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p>On ne peut relier a priori le moment cinétique du solide à la vitesse du centre d’inertie par une formule faisant inervenir un produit vectoriel (définition du moment cinétique d’un point matériel). Le moment cinétique d’un solide ne peut se calcule que de trois manière:</p>
+<ul class="simple">
+<li><p>Cas général: par sommation discrète ou continue à partir du moment de chaque point</p></li>
+<li><p>Cas d’une translation: seul cas où l’on peut se ramener au mouvement du centre d’inertie (cf. suite)</p></li>
+<li><p>uCas d’une rotation:  une expression du moment cinétique sera donnée par la suite.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="energie-cinetique-d-un-systeme-de-points-materiels">
+<h2>Energie cinétique d’un système de points matériels<a class="headerlink" href="#energie-cinetique-d-un-systeme-de-points-materiels" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Energie cinétique d’un système de point matériel</p>
+<p>L’énergie cinétique <span class="math notranslate nohighlight">\(E_{C/R}\)</span> du système S dans le référentiel R est la somme des énergie cinétique de l’ensemble des points qui composent le système S.</p>
+</div>
+<p><strong>Termes de l’énergie cinétique (Admis)</strong>
+L’énergie cinétique d’un solide <strong>indéformable</strong> se décompose en deux termes:</p>
+<ul class="simple">
+<li><p>le premier décrit le mouvement de translation global du solide (mouvement du centre d’inertie).</p></li>
+<li><p>le second correspond à la rotation du solide sur lui-même.</p></li>
+</ul>
+<p>Il existe des expressions pour chaque terme mais ils ne sont aps à connaître dans le cas général. Nous étudierons des expressions particulières de l’énergie cinétique dans le cas de la translation et de la rotation.</p>
+<div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p>Comme pour le moment, il n’y a pas a priori de relation entre l’énergie cinétique totale d’un système et la vitesse du centre d’inertie. Elle ne peut s’établir que dans un cas particulier.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="systeme_description.html" title="previous page">Description d’un système de points</a>
+    <a class='right-next' id="next-link" href="systeme_mouvement.html" title="next page">Mouvements particuliers</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forces/actions conservatives et énergie potentielle &#8212; Mécanique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/energetique_ep.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Théorèmes énergétiques" href="energetique_theoremes.html" />
+    <link rel="prev" title="Travail et puissance des actions mécaniques" href="energetique_travail.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mécanique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mecanique.html">
+   Mécanique classique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="cinematique.html">
+   Cinématique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_point.html">
+     Cinématique du point
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_referentiel.html">
+       Référentiel
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_trajectoire.html">
+       Position et trajectoire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_vitesse.html">
+       Vecteur vitesse
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_acc.html">
+       Vecteur accélération
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_circulaire.html">
+       Cas du mouvement circulaire
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_acc_unif.html">
+       Mouvement uniformément accéléré
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_td.html">
+       TD Mécanique 1: Cinématique du point
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinetique_point.html">
+     Cinétique du point
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinetique_inertie.html">
+       Point matériel et inertie
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinetique_p.html">
+       Quantité de mouvement
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_cinema.html">
+     Cinématique et cinétique des systèmes de points
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_description.html">
+       Description d’un système de points
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_cinetique.html">
+       Cinétique du solide
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_mouvement.html">
+       Mouvements particuliers
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="actions.html">
+   Description des actions mécaniques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="actions_ponctuelles.html">
+     Modélisation des actions. Cas des actions ponctuelles.
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_interactions.html">
+       Actions et interactions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_typo.html">
+       Action ponctuelle: Modélisation et typologie
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="actions_globales.html">
+     Modélisation des actions globales
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_g_typo.html">
+       Généralités sur les actions à distance
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_g_exemples.html">
+       Exemples d’analyse
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="theoremes.html">
+   Théorèmes fondamentaux de la mécanique classique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_newton.html">
+     Lois de Newton et conséquences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_tmc.html">
+     Théorème du moment cinétique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_meth.html">
+     Activités méthodes: Applications des théorèmes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_ex_app.html">
+     Exercices d’application
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theoremes_td.html">
+     Travaux dirigés
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="energetique_gene.html">
+     Théorèmes énergétiques
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_rappel.html">
+       Energie cinétique: Rappels
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_travail.html">
+       Travail et puissance des actions mécaniques
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Forces/actions conservatives et énergie potentielle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_theoremes.html">
+       Théorèmes énergétiques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_exemples.html">
+       Exemples
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_td.html">
+       Travaux dirigés
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_conservatifs.html">
+     Systèmes conservatifs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_def.html">
+       Système conservatif: Définition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_1d.html">
+       Système à 1 degré de liberté
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_conserv_td.html">
+       Travaux dirigés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="applications.html">
+   Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="oscillateurs.html">
+     Oscillateurs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_equation.html">
+       Mise en équation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_harmonique.html">
+       Oscillateur harmonique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_amorti.html">
+       Oscillateur amorti
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_forces.html">
+       Oscillations forcées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_td.html">
+       Travaux dirigés: Oscillateurs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rotation.html">
+     Solide en rotation autour d’un axe fixe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pendules.html">
+     Etude des pendules
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="centrales.html">
+   Mouvement à force centrales
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="centrales_gene.html">
+     Mouvement à force centrales : Généralités
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_newtoniens.html">
+     Potentiels newtoniens
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_gene.html">
+       Forces newtoniennes: Généralités
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_odg.html">
+       Forces newtoniennes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_mvt.html">
+       Etude du mouvement
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_kepler.html">
+       Mouvement des planètes et lois de Kepler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_satellites.html">
+       Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_td.html">
+       Travaux dirigés: Potentiels newtoniens
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/energetique_ep.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/energetique_ep.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/energetique_ep.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#forces-actions-conservatives-definition">
+   Forces/actions conservatives: définition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energie-potentielle-et-force">
+   Energie potentielle et force
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#forces-conservatives-usuelles">
+   Forces conservatives usuelles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-de-determination-d-une-energie-potentielle">
+     Méthode de détermination d’une énergie potentielle
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#energie-potentielle-de-pesanteur">
+     Energie potentielle de pesanteur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-de-lorentz">
+     Force de Lorentz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#forces-newtoniennes">
+     Forces newtoniennes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#actions-de-rappel">
+     Actions de rappel
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="forces-actions-conservatives-et-energie-potentielle">
+<h1>Forces/actions conservatives et énergie potentielle<a class="headerlink" href="#forces-actions-conservatives-et-energie-potentielle" title="Permalink to this headline">¶</a></h1>
+<p>Nous avons vu précédemment que le travail d’une action dépendant a priori du chemin parcouru entre 2 points. Il existe néanmoins une classe de forces où ce n’est plus le cas. Le travail ne dépendra plus que des positions A et B. Ces actions ont en physique un rôle extrêment important au point qu’on va les particulariser: ce sont les actions conservatives.</p>
+<div class="section" id="forces-actions-conservatives-definition">
+<h2>Forces/actions conservatives: définition<a class="headerlink" href="#forces-actions-conservatives-definition" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Actions ponctuelle conservatives</p>
+<p>Il existe des actions dont le travail sur un trajet entre deux points A et B <strong>ne dépend que des positions des points A et B</strong> mais pas du chemin parcouru entre les deux.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Energie potentielle</p>
+<p>Puisque le travail de l’action du point A au point B ne dépend pas du chemin parcouru mais uniquement des positions A et B, il existe une fonction <strong>de la seule position</strong> notée <span class="math notranslate nohighlight">\(E_p\)</span> dont la variation <span class="math notranslate nohighlight">\(E_p(B) - E_p(A)\)</span> permet de déterminer le travail de l’action de A à B. On appelle cette fonction <strong>énergie potentielle</strong> et elle est définit de telle sorte que le travail de l’action du point A au point B vaut:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8514eae5-89b3-4620-9193-237245e2077a">
+<span class="eqno">(38)<a class="headerlink" href="#equation-8514eae5-89b3-4620-9193-237245e2077a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+W_{A \to B} = - \left(E_p(B) - E_p(A)\right) = - \Delta E_{p,A \to B}
+\end{equation}\]</div>
+<p>Remarque: On dit que la force dérive d’une énergie potentielle.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Energie potentielle et constante</p>
+<p>L’énergie potentielle de pesanteur est <strong>définie à une constante près</strong>. Le point où l’énergie potentielle est nulle peut-être choisi arbitrairement, ce qui signifie qu’une valeur d’énergie potentielle <strong>n’a pas de sens</strong>. Ce n’est qu’une <strong>variation</strong> d’énergie potentielle qui possède un sens.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Dépendance de l’énergie potentielle</strong>
+L’énergie potentielle d’une action ponctuelle conservative (on parle de <strong>force conservative</strong>) dépend de la force en question et uniquement de la position où l’on calcule l’énergie potentielle. C’est donc une fonction de la position seulement (pas de la vitesse).</p>
+</div>
+</details><div class="note admonition">
+<p class="admonition-title">Attention : Signe -</p>
+<p>Il faut bien faire attention à la présence du signe - entre le travail et la variation d’énergie potentielle. Une telle définition permettra de “passer” l’énergie potentielle du “côté” de l’énergie cinétique pour faire apparaître l’énergie mécanique. Nous pourrons alors fournir une interprétation plus complète de l’intérêt des forces conservatives.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Variation infinitésimale de l’énergie potentielle.</p>
+<p>L’énergie potentielle est alors une grandeur d’état puisqu’elle s’exprime en fonction du seul état du système à l’instant considéré. Lors d’une transformation, on va donc calculer une <strong>variation</strong> de l’énergie potentielle. Si la variation est finie, on la notera <span class="math notranslate nohighlight">\(\Delta E_p\)</span>, si elle est infinitésimale, on la notera <span class="math notranslate nohighlight">\(dE_p\)</span>. Ces notations sont à mettre en rapport avec celle pour l’énergie cinétique: ce sera une généralité pour les grandeurs dites “d’état”, c’est-à-dire qui ne dépendent que de l’état du système à un instant donné et pas de la façon avec laquelle il est arrivé dans cet état.</p>
+</div>
+</div>
+<div class="section" id="energie-potentielle-et-force">
+<h2>Energie potentielle et force<a class="headerlink" href="#energie-potentielle-et-force" title="Permalink to this headline">¶</a></h2>
+<p><strong>Variation infinitésimale de l’énergie potentielle.</strong>
+Dans le cadre d’un déplacement infinitésimale <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span>, la variation d’énergie potentielle d’une action ponctuelle s’écrit:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+dE_p &amp;= - \delta W(\overrightarrow{F}) \\
+&amp;= - \overrightarrow{F} \cdot \overrightarrow{dOM}\\
+&amp;= - P_{/\mathfrak{R}}(\overrightarrow{F}) dt
+\end{align*}\]</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Relation force et énergie potentielle</p>
+<p>L’expression précédennte démontre immédiatement la relation suivante:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+dE_p = - \overrightarrow{F} \cdot \overrightarrow{dOM}\\
+\overrightarrow{F} = - \overrightarrow{grad} E_p
+\end{align*}\]</div>
+<p>La dernière expression permet de déduire de l’énergie potentielle l’expression de la force dans tous les types de repères.</p>
+</div>
+</div>
+<div class="section" id="forces-conservatives-usuelles">
+<h2>Forces conservatives usuelles<a class="headerlink" href="#forces-conservatives-usuelles" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="methode-de-determination-d-une-energie-potentielle">
+<h3>Méthode de détermination d’une énergie potentielle<a class="headerlink" href="#methode-de-determination-d-une-energie-potentielle" title="Permalink to this headline">¶</a></h3>
+<p><strong>Méthodes</strong>
+Il existe deux méthodes de détermination de l’expression d’une énergie potentielle:</p>
+<ul class="simple">
+<li><p>si on ne sait pas si l’action dérive d’une énergie potentielle (ou qu’on doit le prouver), alors il faut calculer le travail infinitésimale et le mettre sous la forme d’une différentielle <span class="math notranslate nohighlight">\(\delta W = - d(f(M))\)</span>. On idenitifie alors f(M) à l’énergie potentielle (à une constante près).
+Remarque: on peut aussi calculer la puissance transmise et l’écrire sous la forme: <span class="math notranslate nohighlight">\(P = \frac{\rm{d}}{\rm{dt}}(f(M))\)</span>. De la même manière f(M) s’identifie à l’énergie potentielle.</p></li>
+</ul>
+<p>Attention, la fonction f ne doit dépendre <strong>que de la position de M (coordonnées), pas des dérivées de la position</strong>.</p>
+<ul class="simple">
+<li><p>si on sait que l’action dérive d’une énergie potentielle, on peut utiliser l’expression du gradient et intégrer (dans le cadre du programme, uniquement si la force ne dépend que d’une seule coordonnée).</p></li>
+</ul>
+<p>On utilisera ici la première méthode puisque le but est de <strong>prouver</strong> que les forces ci-après dérivent d’une énergie potentielle.</p>
+</div>
+<div class="section" id="energie-potentielle-de-pesanteur">
+<h3>Energie potentielle de pesanteur<a class="headerlink" href="#energie-potentielle-de-pesanteur" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Cas d’un point matériel</p>
+<p>L’action du poids sur un point matériel M dérive d’une énergie potentielle dont l’expression est:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-34e83c2e-c6ff-489e-9cf6-5c4dfbf968ec">
+<span class="eqno">(39)<a class="headerlink" href="#equation-34e83c2e-c6ff-489e-9cf6-5c4dfbf968ec" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+E_{p,pes} = mg h + K
+\end{equation}\]</div>
+<p>où h est l’altitude et K une constante - on rappelle que l’énergie potentielle est définie à une constant près.</p>
+</div>
+<p><strong>Démonstration</strong>
+On utilise un système de coordonnées cartésiennes où z est la coordonnée verticale vers le haut (donc h)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta W &amp;= -mg \overrightarrow{e_z} \wedge \left(dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}\right)\\
+&amp;= -mg dz\\
+&amp;= -d \left(mgz\right)
+\end{align*}\]</div>
+<div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p>Dans l’expression précédente, l’axe Oz est orienté <strong>vers le haut</strong>. Si l’axe est orienté vers le bas, il apparaît un signe -dans l’expression de l’énergie potentielle.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Cas d’une action sur un solide</p>
+<p>L’énergie potentielle de l’action de la pesanteur uniforme sur un solide peut s’écrire <span class="math notranslate nohighlight">\(E_p = M g h_G + K\)</span> où M est la masse totale du solide et <span class="math notranslate nohighlight">\(h_G\)</span> l’altitude du centre d’inertie.</p>
+<p>La démonstration se fait sommation des énergies potentielles de chaque point du solide.</p>
+</div>
+</div>
+<div class="section" id="force-de-lorentz">
+<h3>Force de Lorentz<a class="headerlink" href="#force-de-lorentz" title="Permalink to this headline">¶</a></h3>
+<p><strong>Partie magnétique</strong>
+Sur un point matériel, la partie magnétique de la force de Lorentez <strong>ne travaille pas</strong>, c’est-à-dire que le travail de cette force est nul (et la puissance aussi).</p>
+<p><strong>Démonstration</strong>
+La force magnétique est par définition perpendiculaire à la vitesse, donc la puissance transmise est nulle.</p>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Partie électrique</p>
+<p>L’action sur un point matériel du champ électrique indépendant du temps <span class="math notranslate nohighlight">\(\overrightarrow{E}\)</span> dérive d’une énergie potentielle appelée énergie potentielle électrostatique. Elle s’écrit sous la forme <span class="math notranslate nohighlight">\(E_p(M) = qV(M)\)</span> où q est la charge du point matériel et V(M) est le potentiel électrique dépendant du seul champ électrique (et pas du point matériel sur lequel il agit). On a la relation <span class="math notranslate nohighlight">\(\overrightarrow{E} = - \overrightarrow{grad} V\)</span>.</p>
+<p>Remarque: Le potentiel électrique est celui introduit en électrocinétique. Cette expression ne sera utilisée qu’en fin d’année.</p>
+</div>
+</div>
+<div class="section" id="forces-newtoniennes">
+<h3>Forces newtoniennes<a class="headerlink" href="#forces-newtoniennes" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Potentiel newtonien</p>
+<p>Soit un point O de masse <span class="math notranslate nohighlight">\(m_O\)</span> et/ou de charge<span class="math notranslate nohighlight">\(q_O\)</span> agissant sur un point M de masse <span class="math notranslate nohighlight">\(m\)</span> et/ou de charge <span class="math notranslate nohighlight">\(q\)</span>. Les forces gravitationnelles et coulombiennes dont les expressions sont de la forme <span class="math notranslate nohighlight">\(\overrightarrow{F} = - \frac{K}{r^2} \overrightarrow{e_r}\)</span>dans un système de coordonnées de sphérique centrée au point O dérivent d’une énergie potentielle appelées respectivement énergie potentielle de gravitation et énergie potentielle électrostatique et dont l’expression est: <span class="math notranslate nohighlight">\(E_p = -\frac{K}{r} + Cste\)</span>.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On s’entraînera à expliciter K suivant que la force soit gravitationnelle ou coulombienne.</p>
+</div>
+</details><p><strong>Démonstration</strong>
+Comme dit dans la propriété, on va se placer en coordonnées sphériques centrées au point O.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta W &amp;= - \frac{K}{r^2}\overrightarrow{e_r} \wedge \left(dr \overrightarrow{e_r} + r d\theta \overrightarrow{e_\theta} + r \sin\theta d\varphi \overrightarrow{e_\varphi}\right)\\
+&amp;= -\frac{K}{r^2} dr\\
+&amp;= -d \left(- \frac{K}{r}\right)
+\end{align*}\]</div>
+<p><strong>Interprétation</strong>
+On remarquera que suivant le signe de K, l’énergie potentielle est croissante ou décroissante. Or la relation force-énergie potentielle, permet de déduire de la monotonie de l’énergie potentielle son sens (ici suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>, soit son caractère attractif ou répulsif).</p>
+<p>Ainsi, si <span class="math notranslate nohighlight">\(K &lt; 0\)</span>, l’énergie potentielle est décroissante en r, donc la force est dirigée vers les r croissants: la force est répulsive.</p>
+<p>Ainsi, si <span class="math notranslate nohighlight">\(K &gt; 0\)</span>, l’énergie potentielle est croissant en r, donc la force est dirigée vers les r décroissants: la force est attractive.</p>
+</div>
+<div class="section" id="actions-de-rappel">
+<h3>Actions de rappel<a class="headerlink" href="#actions-de-rappel" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Action de rappel d’un ressort</p>
+<p>L’action de rappel d’un ressort dérive d’une énergie potentielle dont l’expression est:</p>
+<p>\begin{equation}
+E_p = \frac{1}{2} k \Delta l ^2 = \frac{1}{2} k \left(l - l_0\right)^2</p>
+</div>
+<p><strong>Démonstration</strong>
+On travaille dans un système de coordonées cartésiennes d’axe Ox le long du ressort et le point O est à l’autre extrémité du ressort tel que<span class="math notranslate nohighlight">\(l = x\)</span>. On trouve alors que <span class="math notranslate nohighlight">\(\overrightarrow{u_{ext}} = \overrightarrow{e_x}\)</span> et donc:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta W &amp;= -k\left(x - l_0\right) \overrightarrow{e_x} \wedge \left(dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}\right)\\
+&amp;= -k \left(x - l_0\right) dx\\
+&amp;= -d \left(\frac{1}{2} k {\left(x - l_0\right)}^2\right)
+\end{align*}\]</div>
+<p>On retrouve l’expression en remplaçant x par l.</p>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Energie potentielle de torsion</p>
+<p>L’action de rappel d’un couple de torsion dérive d’une énergie potentielle dont l’expression est:</p>
+<p>\begin{equation}
+E_p = \frac{1}{2} C \Delta \theta ^2 = \frac{1}{2} C \left(\theta - \theta_0\right)^2</p>
+</div>
+<p><strong>Démonstration</strong>
+On ne peut ici justifier cette propriété par les actions ponctuelles. On va donc calculer directement le travail infinitésimal pour l’action globale. On est ici dans le cadre d’un solide en rotation, donc le travail infintésimal s’écrit <span class="math notranslate nohighlight">\(M_{axe/torsion}d\theta\)</span> où <span class="math notranslate nohighlight">\(M_{axe/torsion}\)</span> est le moment résultant de l’action sur l’axe de rotation et <span class="math notranslate nohighlight">\(\theta\)</span> une coordonnées angulaire repérant la rotation du solide dans le plan perpendiculaire à l’axe de torsion. On rappelle que le moment résultant s’écrit <span class="math notranslate nohighlight">\(- C(\theta - \theta_0)\)</span>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta W &amp;= -C\left(\theta - \theta_0\right) d \theta \\
+&amp;= -d \left(\frac{1}{2} C {\left(\theta - \theta_0\right)}^2\right)
+\end{align*}\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Interprétation</strong>
+On remarque que l’énergie potentielle est minimale pour un allongement nul ou pour une torsion nulle: cela correspond bien à la configuration ou le ressort/fil de torsion n’exerce pas d’action sur le système accroché.</p>
+<p class="card-text">L’énergie potentielle augment quand l’allongement du ressort augmente: la force est donc dirigée vers l’intérieur du ressort, elle tend à comprimer le ressort. A l’inverse, quand l’allongement du ressort diminue, l’énergie potentielle augmente aussi, donc la force est dirigée vers l’extérieur du ressort, elle tend à étendre le ressort. On retrouve le principe de la force de rappel.</p>
+<p class="card-text">On pourra s’entraîner à observer ce phénomène graphiquement en traçant l’énergie potentielle de rappel élastique.</p>
+</div>
+</details></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="energetique_travail.html" title="previous page">Travail et puissance des actions mécaniques</a>
+    <a class='right-next' id="next-link" href="energetique_theoremes.html" title="next page">Théorèmes énergétiques</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
