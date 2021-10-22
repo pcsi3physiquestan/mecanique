@@ -159,10 +159,11 @@ On démontrera en exercice les relations suivantes:
 a = \frac{p}{1 - e^{2}}\\
 c^{2} = a^{2} - b^{2}\\
 e = c / a
+\end{align*}
 ````
 ### Trajectoire parabolique
 
-````{admonition} Définition : Ellipse
+````{admonition} Définition : Parabole
 :class: tip
 
 Une parabole est une courbe non fermée qu'on peut caractériser/reconnaître de plusieurs manières:
@@ -181,7 +182,7 @@ Une parabole est une courbe non fermée qu'on peut caractériser/reconnaître de
 ````{admonition} Attention : 
 :class: note
 
-Dans le cas polaire, si $theta_0 = 0$ (cas fréquent) l'axe de symétrie de la parabole est l'axe qui sert d'origine des angles, soit en général l'axe Ox. Ce qui est différent du cas cartésien présenté ici.
+Dans le cas polaire, si $\theta_0 = 0$ (cas fréquent) l'axe de symétrie de la parabole est l'axe qui sert d'origine des angles, soit en général l'axe Ox. Ce qui est différent du cas cartésien présenté ici.
 
 ````
 

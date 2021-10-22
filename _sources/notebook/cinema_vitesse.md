@@ -23,7 +23,7 @@ kernelspec:
 Soit O un point fixe du référentiel R et M un point mobile. La vitesse du point M dans le référentiel R est définit comme la dérivée temporelle du vecteur position dans le référentiel R.
 
 \begin{equation}
-\overrightarrow{V_{M/R} = {(\frac{d \overrightarrow{OM}}{dt})}_{R}}
+\overrightarrow{V_{M/R}} = {(\frac{d \overrightarrow{OM}}{dt})}_{R}
 \end{equation}
 ````
 
@@ -59,10 +59,10 @@ En coordonnées spheriques:
 ````
 
 
-__Démonstration__
-On peut démontrer ces expressions de deux manières: soit en dérivant le vecteur position (il faut tenir compte des dérivées des vecteurs des bases locales, nous le verrons en traitant le cas du vecteur accélération) ou en utilisant l'expression du vecteur déplacement élémentaire. Nous présentons ce dernier cas. On rappelle que le déplacement élémentaire s'exprime (respectivement en coordonnées cartésiennes, cylindriques, sphériques):
-
-\begin{equation}
+> __Démonstration__
+> On peut démontrer ces expressions de deux manières: soit en dérivant le vecteur position (il faut tenir compte des dérivées des vecteurs des bases locales, nous le verrons en traitant le cas du vecteur accélération) ou en utilisant l'expression du vecteur déplacement élémentaire. Nous présentons ce dernier cas. On rappelle que le déplacement élémentaire s'exprime (respectivement en coordonnées cartésiennes, cylindriques, sphériques):
+> 
+> \begin{equation}
 \overrightarrow{dOM} = dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}
 \end{equation}
 \begin{equation}
@@ -71,7 +71,7 @@ On peut démontrer ces expressions de deux manières: soit en dérivant le vecte
 \begin{equation}
 \overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + r \sin \theta d\varphi \overrightarrow{e_{\varphi}}
 \end{equation}
-Ici, on rapport le déplacement élémentaire à la variation temporelle dt pendant lequel le déplacement se fait, ce qui revient à rapporter chaque différentielle ($dx, dy, d\theta, dr...$) par dt, c'est-à-dire les remplacer par les dérivées. On obtient bien les expressions données.
+> Ici, on rapport le déplacement élémentaire à la variation temporelle dt pendant lequel le déplacement se fait, ce qui revient à rapporter chaque différentielle ($dx, dy, d\theta, dr...$) par dt, c'est-à-dire les remplacer par les dérivées. On obtient bien les expressions données.
 
 
 ````{admonition} Attention : 

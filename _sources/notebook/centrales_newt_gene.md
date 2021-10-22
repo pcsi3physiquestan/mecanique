@@ -76,8 +76,9 @@ Dans ce cas, l'énergie potentielle en un point M représente aussi l'énergie q
 Elles ont pour expression:
 
 \begin{align*}
-E_{p,el} = \frac{q_1 q_2}{4 \pi \epsilon_0 r}\\
-E_{p,grav} = \frac{- G m_1 m_2}{r}\\
+E_{p,el} &= \frac{q_1 q_2}{4 \pi \epsilon_0 r}\\
+E_{p,grav} &= \frac{- G m_1 m_2}{r}\\
+\end{align*}
 
 ````
 ## Analogie electromecanique
