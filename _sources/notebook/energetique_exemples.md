@@ -36,6 +36,17 @@ On considère une masse m ponctuelle qui se déplace sans frottements sur une de
 >
 >On applique donc le PFD.
 >
+>__Application du TEC__
+>
+>Il est important de savoir quel théorème on applique (puissance ou énergie) et de préciser sur quoi on applique le théorème. Ici, on va appliquerle théorème de l'énergie cinétique entre l'instant 0 et un instant t où le mobile est à un angle $\theta$. On considèrera la vitesse initiale négligeable devant la vitesse à l'instant t.
+>
+>L'énergie cinétique s'écrit: $E_c =\frac{1}{2} m R^2 \dot  \theta^2$. Sa variation vaut: $\Delta E_c = \frac{1}{2} m R^2 \dot  \theta(t)^2 - 0$
+>
+>La réaction du support est __perpendiculaire à la vitesse__ donc son travail est nulle sur tout le trajet. Le poids travaille est l'expression du travail élémentaire est $\delta W = mg \sin \theta d\theta$. En intégrant entre $\theta(t=0) = 0$ et $\theta(t=t) = \theta$, il vient: $W = mgR (1 - \cos \theta)$.
+>
+>On peut donc appliquer le théorème de l'énergie mécanique:
+>
+>
 >\begin{align*}
 \frac{1}{2} m R^2 \dot \theta^2 &= mgR \left(1 - \cos \theta\right)\\
 m R \dot \theta^2 &= 2 mg \left(1 - \cos \theta\right)
