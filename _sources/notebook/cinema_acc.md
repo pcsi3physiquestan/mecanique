@@ -146,22 +146,20 @@ Une étude des composantes de l'accélération montre qu'on a les relations suiv
 \left\vert a_N \right\vert &= \frac{v^2}{\left\vert R \right\vert}
 \end{align*}
 ````
-````{admonition} Interprétation 
-:class: attention
+>__Interprétation__
+>
+>Le rayon de courbure est algébrique: son signe dépend de la concavité de la trajectoire. Dans le cadre du programme, on se contentera de sa valeur absolue dans l'expression de l'accélération normale. Il suffit alors d'orienter l'accélération normale par la physique: est est toujours vers l'intérieur de la courbure de la trajectoire.
+>
+>On peut interpréter ces expressions.
+>
+>*  plus l'accélération normale est grande, plus la trajectoire va être courbée soit un faible rayon. De plus, plus la vitesse est grande, plus il faut une forte accélération pour courber la trajectoire.
+>* l'accélération tangentielle étant directement reliée au caractère accéléré ou décéléré, il est logique d'avoir cette relation. La démonstration de l'expression de l'accélération tangentielle se fait d'ailleurs à partir du calcul du produit scalaire $\overrightarrow{a}\cdot\overrightarrow{v} $ comme on l'a fait précédemment.
+>
+>Quelques cas particuliers pour le rayon de courbure:
+>
+>* Cas d'une trajectoire circulaire (cf. suite): le rayon de courbure est le rayon du cercle.
+>* Cas d'une trajectoire rectiligne: l'accélération normale étant alors nulle, le rayon de courbue est infini.
 
-Le rayon de courbure est algébrique: son signe dépend de la concavité de la trajectoire. Dans le cadre du programme, on se contentera de sa valeur absolue dans l'expression de l'accélération normale. Il suffit alors d'orienter l'accélération normale par la physique: est est toujours vers l'intérieur de la courbure de la trajectoire.
-
-On peut interpréter ces expressions.
-
-*  plus l'accélération normale est grande, plus la trajectoire va être courbée soit un faible rayon. De plus, plus la vitesse est grande, plus il faut une forte accélération pour courber la trajectoire.
-* l'accélération tangentielle étant directement reliée au caractère accéléré ou décéléré, il est logique d'avoir cette relation. La démonstration de l'expression de l'accélération tangentielle se fait d'ailleurs à partir du calcul du produit scalaire $\overrightarrow{a}\cdot\overrightarrow{v} $ comme on l'a fait précédemment.
-
-Quelques cas particuliers pour le rayon de courbure:
-
-* Cas d'une trajectoire circulaire (cf. suite): le rayon de courbure est le rayon du cercle.
-* Cas d'une trajectoire rectiligne: l'accélération normale étant alors nulle, le rayon de courbue est infini.
-
-````
 
 ## Méthode: Calcul d'une accélération en coordonnées sphériques.
 
@@ -171,9 +169,8 @@ Quelques cas particuliers pour le rayon de courbure:
 On considère un point M contraint à se déplacer sur une sphère fixe de rayon $R_0$. Il part du pôle Nord de la sphère en direction du pôle Sud à une vitesse $v_0$ constante. Déterminer le vecteur accélération et l'évolution des coordonnées sphériques du point M dans un repère sphérique associé au référentiel de la boule.
 
 ````
-````{dropdown}
- 
 
+````{dropdown} Résolution
 
 Cet exercice présente deux points importants: la traduction de contrainte cinématique en terme d'expression des coordonnées et des vecteurs et la détermination d'une accélération en sphérique par dérivation du vecteur vitesse.
 
