@@ -175,7 +175,7 @@ On considère un point M contraint à se déplacer sur une sphère fixe de rayon
 >Cet exercice présente deux points importants: la traduction de contrainte cinématique en terme d'expression des coordonnées et des vecteurs et la détermination d'une accélération en sphérique par dérivation du vecteur vitesse.
 >
 >
->```{admonition} Méthode : Coordonnées et vecteur vitesse.
+```{admonition} Méthode : Coordonnées et vecteur vitesse.
 :class: attention
 
 Ici, les contraintes sont: $r = R_0= Cste; \theta = \frac{v_0}{R_0} t; \varphi = \varphi_0 = Cste$. On choisi l'origine des angles de tels sorte que $\varphi_0 = 0$. Il est important de comprendre l'expression de $\theta(t)$ qui traduit la relation en vitesse linéaire et vitesse angulaire.
@@ -187,7 +187,7 @@ v_{M/Boule} = R_0 \frac{v_0}{R_0} \overrightarrow{e_{\theta}}
 \end{equation}
 ```
 
->```{admonition} Méthode : Dérivation du vecteur vitesse.
+```{admonition} Méthode : Dérivation du vecteur vitesse.
 :class: attention
 
 Il vient par dérivation:
