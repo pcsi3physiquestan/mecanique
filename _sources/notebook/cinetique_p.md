@@ -143,14 +143,14 @@ On considère un point matériel M de masse M en mouvement rectiligne sur un axe
 
 ````
 ````{dropdown} Résolution
-__Quantité de mouvement__
-\begin{equation}
+>__Quantité de mouvement__
+>\begin{equation}
 \overrightarrow{p_{M/R}} = m \overrightarrow{v_{M/R}}
 \end{equation}
-
-
-__Moment cinétique__
-\begin{align*}
+>
+>
+>__Moment cinétique__
+>\begin{align*}
 \overrightarrow{L_{O/\mathfrak{R}}(M)} &= \overrightarrow{OM} \wedge \overrightarrow{p_{M/R}}\\
 &= z \overrightarrow{e_z} \wedge m v(t) \overrightarrow{e_z}\\
 &= 0\\
@@ -160,9 +160,9 @@ L_{Ox/\mathfrak{R}}(M) &= \overrightarrow{e_x} \cdot \overrightarrow{L_{O/\mathf
 &= mav(t) \overrightarrow{e_y} - mv(t)b \overrightarrow{e_x}\\
 L_{Ox/\mathfrak{R}}(M) &= \overrightarrow{e_x} \cdot \overrightarrow{L_{B/\mathfrak{R}}(M)} = - mv(t)b
 \end{align*}
-Les moments par rapport à O et Ox sont évidemment nuls car le point M ne tourne pas autour de O (il s'en éloigne ou s'en rapproche en ligne droite) ni autour de Ox.
-
-Le moment autour de Bx est non nul car si l'on se place sur l'axe Bx, on voit effectivement le point M tourner autour de l'axe. Si v(t) et b sont positifs, le moment est négatif. En effet, la rotation à effectuer pour suivre le point M quand on est sur l'axe Bx ne se fait effectivement pas en cohérence avec l'orientation de l'axe Bx.
+>Les moments par rapport à O et Ox sont évidemment nuls car le point M ne tourne pas autour de O (il s'en éloigne ou s'en rapproche en ligne droite) ni autour de Ox.
+>
+>Le moment autour de Bx est non nul car si l'on se place sur l'axe Bx, on voit effectivement le point M tourner autour de l'axe. Si v(t) et b sont positifs, le moment est négatif. En effet, la rotation à effectuer pour suivre le point M quand on est sur l'axe Bx ne se fait effectivement pas en cohérence avec l'orientation de l'axe Bx.
 
 ````
 
@@ -173,12 +173,9 @@ On considère un point M sur une trajectoire circulaire de centre O et d'axe Oz.
 
 ````
 ````{dropdown} Résolution
- 
-
-
-Quantité de mouvement:
-
-\begin{align*}
+>__Quantité de mouvement__
+>
+>\begin{align*}
 \overrightarrow{p_{M/R}} &= m r \dot \theta \overrightarrow{e_{\theta}}\\
 \overrightarrow{L_{O/\mathfrak{R}}(M)} &= \overrightarrow{OM} \wedge \overrightarrow{p_{M/R}}\\
 &= r \overrightarrow{e_r} \wedge m r \dot \theta \overrightarrow{e_{\theta}}\\
