@@ -642,6 +642,21 @@
 <p class="card-text">On utilise un système de coordonnées cylindriques d’axe Oz perpendiculaire au plan du mouvement (le mouvement est plan puisque les deux forces sont dans un même plan et la vitesse initiale dans le même plan) où O est le centre de la sphère. La vitesse s’écrit alors <span class="math notranslate nohighlight">\(\overrightarrow{v} = R \dot \theta \overrightarrow{e_\theta}\)</span> et l’accélération <span class="math notranslate nohighlight">\(\overrightarrow{a} = - R \dot \theta^2 \overrightarrow{e_r} + R \ddot \theta \overrightarrow{e_\theta}\)</span>.</p>
 <p class="card-text">Les deux forces qui s’appliquent sont le poids <span class="math notranslate nohighlight">\(\overrightarrow{P} = -mg \cos \theta \overrightarrow{e_r} + mg \sin \theta \overrightarrow{e_\theta}\)</span> et la réaction du toboggan supposée normale par l’absence des frottements <span class="math notranslate nohighlight">\(\overrightarrow{R} = R \overrightarrow{e_r}\)</span>. La condition de contact s’écrit <span class="math notranslate nohighlight">\(R &gt; 0\)</span>. L’annulation coïncidera avec le décollage.</p>
 <p class="card-text">On applique donc le PFD.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} m R^2 \dot \theta^2 &amp;= mgR \left(1 - \cos \theta\right)\\
+m R \dot \theta^2 &amp;= 2 mg \left(1 - \cos \theta\right)
+\end{align*}\]</div>
+<p class="card-text">Il vient en remplçant dans la première équation: <span class="math notranslate nohighlight">\( R = 3 mg \cos \theta - 2mg\)</span>. La condition de décollement s’obtient pour <span class="math notranslate nohighlight">\(\theta = \arccos 2/3\)</span>.</p>
+<p class="card-text"><strong>Application du théorème de l’énergie mécanique</strong></p>
+<p class="card-text">On applique à nouveau le théorème de l’énergie mécanique entre t=0 et t=t. Remarquons que la réaction du toboggan ne travaille pas et que le poids dérive d’une énergie potentielle donc il n’y a pas de force non-conservative: l’énergie mécanique est une constante. La variation d’énergie potentielle de pesanteur s’écrit <span class="math notranslate nohighlight">\(\Delta E_p = mg x(t) - mg x(0) = mg (\cos\theta - 1)\)</span>. Il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta E_c + \Delta E_p &amp;= 0\\
+\left(\frac{1}{2} m R^2 \dot \theta^2 - 0\right) + mgR \left(\cos \theta - 1\right)&amp;= 0\\
+m R \dot \theta^2 &amp;= 2 mg \left(1 - \cos \theta\right)
+\end{align*}\]</div>
+<p class="card-text">La suite de la résolution est identique au cas précédent. On remarquera l’équivalence logique de l’écriture du TEC et du TEM.</p>
 </div></blockquote>
 </div>
 </details></div>

@@ -36,6 +36,22 @@ On considère une masse m ponctuelle qui se déplace sans frottements sur une de
 >
 >On applique donc le PFD.
 >
+>\begin{align*}
+\frac{1}{2} m R^2 \dot \theta^2 &= mgR \left(1 - \cos \theta\right)\\
+m R \dot \theta^2 &= 2 mg \left(1 - \cos \theta\right)
+\end{align*}
+>Il vient en remplçant dans la première équation: $ R = 3 mg \cos \theta - 2mg$. La condition de décollement s'obtient pour $\theta = \arccos 2/3$.
+>
+>__Application du théorème de l'énergie mécanique__
+>
+>On applique à nouveau le théorème de l'énergie mécanique entre t=0 et t=t. Remarquons que la réaction du toboggan ne travaille pas et que le poids dérive d'une énergie potentielle donc il n'y a pas de force non-conservative: l'énergie mécanique est une constante. La variation d'énergie potentielle de pesanteur s'écrit $\Delta E_p = mg x(t) - mg x(0) = mg (\cos\theta - 1)$. Il vient:
+>
+>\begin{align*}
+\Delta E_c + \Delta E_p &= 0\\
+\left(\frac{1}{2} m R^2 \dot \theta^2 - 0\right) + mgR \left(\cos \theta - 1\right)&= 0\\
+m R \dot \theta^2 &= 2 mg \left(1 - \cos \theta\right)
+\end{align*}
+>La suite de la résolution est identique au cas précédent. On remarquera l'équivalence logique de l'écriture du TEC et du TEM.
 
 ````
 
