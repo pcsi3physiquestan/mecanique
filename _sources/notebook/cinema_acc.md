@@ -102,7 +102,7 @@ Dans un mouvement décéléré, le vecteur accélération forme avec le vecteur 
 \overrightarrow{v} \cdot \overrightarrow{a} &= \overrightarrow{v} \cdot \frac{d\overrightarrow{v}}{dt}\\
 \left \| v \right \| \left \| a \right \| \cos \theta &= \frac{d}{dt}(\frac{1}{2} v^2)
 \end{align*}
-La vitesse est donc constante si: $\left \| v \right \| \left \| a \right \| cos \theta = 0$ soit si $\left \| a\right \|=0$ ou si $\theta = \pm \pi/2$.
+>La vitesse est donc constante si: $\left \| v \right \| \left \| a \right \| cos \theta = 0$ soit si $\left \| a\right \|=0$ ou si $\theta = \pm \pi/2$.
 >
 >Sinon, $\textrm{sign}(\frac{dv}{dt}) = \textrm{sign}(\theta)$ donc la vitesse est décroissante si $|\theta| > \pi/2$ et croissante si $|\theta| < \pi/2$.
 
@@ -120,9 +120,8 @@ Elle est définit par deux vecteurs unitaires:
 
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Vecteur vitesse_
 
-__Vecteur vitesse__
 Le vecteur vitesse étant par définition tangent à la trajectoire, il est colinéaire à $\overrightarrow{u_T} $ (et dans le même sens).
 
 On remarquera donc la relation utile: $\overrightarrow{u_T} = \frac{\overrightarrow{v}}{\left \| \overrightarrow{v}\right \|} $.

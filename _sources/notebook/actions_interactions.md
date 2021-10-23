@@ -31,9 +31,8 @@ Attention, un action n'est PAS une force. Comme nous le verrons par la suite la 
 
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Système d'étude et milieu extérieur_
 
-__Système d'étude et milieu extérieur__
 Par la suite, on s'intéressera souvent à un système mécanique donné (système d'étude) qui subit l'influence (des actions) d'autres systèmes (qu'on regroupe sous le terme de "milieu extérieur"). Dans cette vision, on s'intéresse à aux actions du milieu extérieur ou "oubliant" un peu dans l'étude les actions réciproques du système sur le milieu extérieur. C'est pourquoi par la suite, on parlera surtout d'actions et non d'interactions. Il faut néanmoins garder à l'esprit qu'elles existent, même si leur prise en compte n'est pas nécessaire dans l'étude du mouvement du système d'étude.
 
 ````

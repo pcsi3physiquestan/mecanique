@@ -25,9 +25,8 @@ _Soit un solide __indéformable__ animé d'une vitesse de translation $\overrigh
 
 _Soit un solide __indéformable__ en rotation autour d'un axe fixe $\Delta$ dans un référentiel $\mathfrak{R}$ à la vitesse angulaire $\omega_{/\\Delta}$. L'énergie cinétique du solide (somme de l'énergie cinétique de toutes ses composantes) a pour expression $E_c = \frac{1}{2} J_{\Delta} \omega_{/\Delta}^2$ où $J_{\Delta}$ est le moment d'inertie du solide sur l'axe $\Delta$_
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Solide indéformable_
 
-__Solide indéformable__
 L'hypothèse d'un solide indéformable suppose notamment qu'il n'y a pas d'agitation thermique au sein du solide. En pratique, elle toujours présente et la contribution énergétique associée est contenue dans un terme énergétique supplémentaire appelée énergie interne. Comme nous le verrons en thermodynamique, cette part de l'énergie est liée à la température du solide. Cela revient à considérer ici que la température des solides ne varient de manière significative.
 
 ````

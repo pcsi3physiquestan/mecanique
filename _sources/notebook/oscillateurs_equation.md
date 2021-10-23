@@ -92,9 +92,8 @@ On pose X(t) l'écart à la position d'équilibre lorsque $\overrightarrow{OA} =
 1. En déduire la représentation complexe $\underline{X}$ de X(t). Commenter le comportement fréquentielle de la réponse en élongation.
 
 ````
-````{dropdown} Remarque
+````{dropdown} _Remarque : Force de frottement fluides_
 
-__Force de frottement fluides__
 Il arrive que le fluide ne soit pas au repos dans le référentiel galiléen mais dans un référentiel mobile (cas de l'accéléromètre).Il faut alors faire attention au fait que la vitesse dans la force de frottements fluide doit être par rapport au fluide.
 ````
 

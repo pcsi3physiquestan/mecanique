@@ -51,9 +51,8 @@ __Éléments de réponse (sans justification)__
 1. Il est nul (vecteur $\overrightarrow{SP}$ parallèle à la force gravitationnelle).
 
 
-```{dropdown} Remarque
+```{dropdown} _Remarque : Conservation du moment cinétique_
 
-__Conservation du moment cinétique__
 Comme on le verra par la suite, la nullité du moment résultant des forces extérieures conduit à la conservation du moment cinétique. Cette propriété aura de nombreuse conséquences sur l'étude du mouvement des planètes.
 
 ```

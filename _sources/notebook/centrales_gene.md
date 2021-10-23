@@ -205,18 +205,16 @@ Nous allons détailler les caractéristiques qu'on peut déduire de l'énergie p
 Comme pour le cas des mouvements conservatifs, cela va interdire certaines zones. Mais cette condition est plus contraignante car l'énergie potentielle effective est plus grande que l'énergie potentielle (le terme d'énergie cinétique orthoradiale est positive - strictement si le moment cinétique est non nul).
 
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Barrière de potentiel en r=0._
 
-__Barrière de potentiel en r=0.__
 Le terme ajouté $\frac{1mC^2}{2r^2}$ tend vers $+ \infty$ en $r=0$. Cela signifie que ce terme énergétique tend à __empêcher le mobile d'atteindre le centre de force__ en lui opposant une barrière d'énergie infinie.
 
 A partir du moment où le mobile tourne, il faudra une énergie potentielle tendant très rapidement vers $- \infty$, c'est-à-dire que la force doit être __très__ attractive, pour que cette barrière infinie soit compensée et que le centre de force soit accessible. Dans de nombreux cas usuels, la barrière infinie n'est pas compensée.
 
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Effet centrifuge_
 
-__Effet centrifuge__
 De manière plus générale, on remarque que la conservation de l'énergie mécanique permet d'écrire:
 
 \begin{align*}
@@ -286,9 +284,8 @@ Par contre, si l'énergie mécanique égale la valeur minimale de l'énergie pot
 Dans le cas d'un mouvement circulaire, la trajectoire est uniforme. En effet, le moment cinétique est conservé et le rayon étant constant, il vient que la vitesse angulaire est aussi constante, soit un mouvement uniforme dans le cas d'un mouvement circulaire.
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Cercles_
 
-__Cercles__
 Bien qu'il n'apparaissent souvent qu'un seul minimume sur les tracés d'énergie potentielle effective, il existe en réalité une infinité de trajectoires circulaires possibles suivant la valeur du moment cinétique. Une variation de ce dernier fait varier le tracé même de $E_{p,eff}(r)$ et donc la position du minimum.
 
 On déduit en général, non pas une valeur de R, mais une relation entre le rayon du cercle et la vitesse (constante on le rappelle) du mobile.
@@ -374,9 +371,8 @@ On ne donne pas ici les réponses complètes:
 * La conservation du moment cinétique implique que le mouvement est uniforme. $v_0 = \sqrt{\frac{k}{m}}r_0$
 
 
-```{dropdown} Remarque
+```{dropdown} _Remarque : Traitement complet_
 
-__Traitement complet__
 En pratique, on traite le cas de l'oscillateur spatial étudié ici différemment en utilisant un système de coordonnées cartésien. Cela permet de montrer que la trajectoire est elliptique.
 
 ```

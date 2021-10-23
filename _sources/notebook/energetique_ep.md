@@ -42,9 +42,8 @@ Remarque: On dit que la force dérive d'une énergie potentielle.
 L'énergie potentielle de pesanteur est __définie à une constante près__. Le point où l'énergie potentielle est nulle peut-être choisi arbitrairement, ce qui signifie qu'une valeur d'énergie potentielle __n'a pas de sens__. Ce n'est qu'une __variation__ d'énergie potentielle qui possède un sens.
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Dépendance de l'énergie potentielle_
 
-__Dépendance de l'énergie potentielle__
 L'énergie potentielle d'une action ponctuelle conservative (on parle de __force conservative__) dépend de la force en question et uniquement de la position où l'on calcule l'énergie potentielle. C'est donc une fonction de la position seulement (pas de la vitesse).
 
 ````
@@ -225,9 +224,8 @@ On ne peut ici justifier cette propriété par les actions ponctuelles. On va do
 \delta W &= -C\left(\theta - \theta_0\right) d \theta \\
 &= -d \left(\frac{1}{2} C {\left(\theta - \theta_0\right)}^2\right)
 \end{align*}
-````{dropdown} Remarque
+````{dropdown} _Remarque : Interprétation_
 
-__Interprétation__
 On remarque que l'énergie potentielle est minimale pour un allongement nul ou pour une torsion nulle: cela correspond bien à la configuration ou le ressort/fil de torsion n'exerce pas d'action sur le système accroché.
 
 L'énergie potentielle augment quand l'allongement du ressort augmente: la force est donc dirigée vers l'intérieur du ressort, elle tend à comprimer le ressort. A l'inverse, quand l'allongement du ressort diminue, l'énergie potentielle augmente aussi, donc la force est dirigée vers l'extérieur du ressort, elle tend à étendre le ressort. On retrouve le principe de la force de rappel.

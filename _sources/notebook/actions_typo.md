@@ -49,9 +49,8 @@ __Point d'application et système ponctuel__
 Dans le cas d'un système constitué d'un unique point matériel M, le point d'application est nécessairement le point M (et les actions du milieu extérieur sont toutes nécessairement des actions ponctuelles).
 
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Indépendance vis-à-vis du référentiel_
 
-__Indépendance vis-à-vis du référentiel__
 Par principe physique, les caractéristiques d'une action sont indépendante du référentiel considéré.
 
 ````
@@ -486,9 +485,8 @@ Comme cela a été évoqué dans précédemment, les champs (et notamment le cha
 
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Interaction électrique ou électromagnétique_
 
-__Interaction électrique ou électromagnétique__
 Le champ électrique présenté précédemment et le même que celui présenté dans la force de Lorentz. Seule son expression va différer suivant que ce champ soit créé par une seule charge (cas évoqué ci-dessus) ou par un ensemble de charge (cas qui sera étudié en deuxième année au moyen des relations fondamentales de l'électromagnétisme). Dans tous les cas, on voit qu'une charge q ponctuelle placée en un point P subira une force électrique $\overrightarrow{F} = q \overrightarrow{E}$.
 
 Comme on l'a dit précédemment, si les charges sont en mouvement, elles vont aussi créer un champ magnétique qui va agir sur les autres charges en mouvement. Dans le cas d'une interactions entre deux charges ponctuelles, on peut montrer que la partie magnétique de l'interaction de Lorentz est alors négligeable devant la partie électrique. C'est pourquoi lors de l'interaction entre deux particules chargées, on considère simplement la partie magnétique de la force de Lorentz qui s'exprime comme l'interaction coulombienne.
@@ -613,9 +611,8 @@ Les allongements sont donc:
 \Delta l_2 = l_2 - l_0 = L - x - l_0
 \end{align*}
 
-```{dropdown} Remarque
+```{dropdown} _Remarque : Longueur et allongement_
 
-__Longueur et allongement__
 Il peut être préférable dans certains cas de determiner directement l'allongement directement.
 ```
 

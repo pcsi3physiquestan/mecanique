@@ -23,9 +23,8 @@ Une interaction newtonienne est une force (ou un champ de force) dont l'intensit
 
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Force centrale_
 
-__Force centrale__
 On remarquera qu'une interaction newtonienne est modélisée par une force centrale si le centre de force est fixe d'où l'utilisation des coordonées cylindriques.
 
 ````

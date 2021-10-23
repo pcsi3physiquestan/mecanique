@@ -31,9 +31,8 @@ On peut donc utiliser les résultats précédents en prenant $K = G M_S M_P >0$.
 * La masse des planètes est négligeable devant celle du Soleil.
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Sur les hypothèses_
 
-__Sur les hypothèses__
 Sur la symétrie sphérique: Ceci reste une approximation au 1er ordre et quelques écarts aux lois énoncées peuvent s'expliquer par la non-sphéricité des planètes. Nous verrons dans le cours d'électromagnétisme que cela permet d'assimiler les planètes et le Soleil à des points matériels.
 
 Sur la seule interaction considérée: Cette hypothèse est cruciale car il est aujourd'hui encore impossible d'étudier un problème à N corps de manière analytique. Elle est plus ou moins critiquable (notamment lorsqu'il s'agit de comparer l'effet du Soleil et celui des satellites des planètes) mais suffit en première approximation.

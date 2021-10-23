@@ -61,9 +61,8 @@ __Démonstration__
 \Delta E_{c,A \rightarrow B} &= - \Delta E_{p,A \rightarrow B} + W_{A \rightarrow B}(\overrightarrow{F_{nc}})\\
 \Delta E_{c,A \rightarrow B} + \Delta E_{p,A \rightarrow B} &= W_{A \rightarrow B}(\overrightarrow{F_{nc}})
 \end{align*}
-````{dropdown} Remarque
+````{dropdown} _Remarque : Théorème de la puissance mécanique_
 
-__Théorème de la puissance mécanique__
 On peut déduire du théorème précédent le théorème de la puissance mécanique.
 
 ````
@@ -145,9 +144,8 @@ Si le mobile se déforme, cette expression est a priori non nulle.
 Si le solide est indéformable, cette expression est toujours nulle.
 
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Cas d'un solide déformable isolé._
 
-__Cas d'un solide déformable isolé.__
 Une grandeur conservative est une grandeur qui reste constante lorsque le système est isolé. Initialement, on a construit l'énergie mécanique comme une grandeur conservative. Et cela est vraie pour un point matériel ou un solide indéformable.
 
 Par contre, on remarque que cela n'est plus vrai pour un système indéformable: un système isolé peut voir son énergie mécanique augmenter ou diminuer sous l'influence des forces. Cette limite peut paraître anodine mais elle est l'une des bases de l'élaboration du premier principe de la thermodynamique: on va rechercher une grandeur énergétique plus générale qui restera conservative lorsqu'on tient compte de la déformation du système (fondamentale pour les gaz) en ajoutant à l'énergie mécanique un terme énergétique supplémentaire appelé énergie interne.

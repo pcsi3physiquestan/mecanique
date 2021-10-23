@@ -74,9 +74,8 @@ Profil d'énergie potentielle et énergie cinétique
 Cette propriété permet de calculer la vitesse (en norme), en tout point d'une trajectoire d'un système conservatif et de prévoir les point où la vitesse est nulle ou maximale.
 ````
 
-````{dropdown} Remarque
+````{dropdown} _Remarque : Energie potentielle et force_
 
-__Energie potentielle et force__
 On a aussi donné la direction de la force qui, on le rappelle, peut être déterminée en fonction de la __monotonie__ de l'énergie potentielle. Sa valeur ne se lit pas directement par contre (il faudrait la pente).
 
 ````
@@ -297,9 +296,8 @@ La preuve est directe à partir de l'équation obtenue précédemment:
 m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x &= \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x_{eq}
 \end{align*}
 ````
-````{dropdown} Remarque
+````{dropdown} _Remarque : Importance de ces études_
 
-__Importance de ces études__
 L'étude aux petits mouvements est fondamentale, notamment pour les systèmes microscopiques. Elle permet une étude souvent fine des systèmes chimiques où les déplacements des atomes dans les liaisons intramoléculaires sont souvent des déplacements faibles autour de leur position d'équilibre. De la, on peut, comme nous le verrons par la suite, déduire des comportements en spectroscopie.
 
 Cette caractéristiques a elle seule justifie l'importance des oscillateurs harmoniques et des oscillateurs amortis (cas où s'ajoute une force de frottements fluides au système, cf. suite).
