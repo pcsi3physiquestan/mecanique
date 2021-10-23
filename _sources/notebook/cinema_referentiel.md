@@ -15,8 +15,8 @@ kernelspec:
 ---
 # Référentiel
 
-````{admonition} Définition : Référentiel
-:class: tip
+````{important} 
+__Définition : Référentiel__
 
 Un référentiel $\mathfrak{R}$ est un ensemble de points rigides - c'est-à-dire fixes les uns par rapports aux autres - auquel on associe une horloge. Comme le temps est absolu en mécanique classique, l'horloge est la même quelque soit le référentiel.
 
