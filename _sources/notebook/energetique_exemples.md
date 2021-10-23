@@ -36,38 +36,6 @@ On considère une masse m ponctuelle qui se déplace sans frottements sur une de
 >
 >On applique donc le PFD.
 >
->\begin{align*}
-- m R \dot \theta^2 &= -mg \cos \theta + R\\
-m R \ddot \theta &= mg \sin \theta
-\end{align*}
->L'équation suivant $\overrightarrow{e_r}$ permet de déterminer R en fonction de la vitesse angulaire. Il reste donc à déterminer cette vitesse angulaire en fonction de l'angle pour répondre à la question. On va utiliser le TEC ou le TEM pour déterminer cette relation. Remarquons qu'on aurait pu utiliser à la place la seconde équation en la multipliant par $\dot \theta$.
->
->__Application du TEC__
->
->Il est important de savoir quel théorème on applique (puissance ou énergie) et de préciser sur quoi on applique le théorème. Ici, on va appliquerle théorème de l'énergie cinétique entre l'instant 0 et un instant t où le mobile est à un angle $\theta$. On considèrera la vitesse initiale négligeable devant la vitesse à l'instant t.
->
->L'énergie cinétique s'écrit: $E_c =\frac{1}{2} m R^2 \dot  \theta^2$. Sa variation vaut: $\Delta E_c = \frac{1}{2} m R^2 \dot  \theta(t)^2 - 0$
->
->La réaction du support est __perpendiculaire à la vitesse__ donc son travail est nulle sur tout le trajet. Le poids travaille est l'expression du travail élémentaire est $\delta W = mg \sin \theta d\theta$. En intégrant entre $\theta(t=0) = 0$ et $\theta(t=t) = \theta$, il vient: $W = mgR (1 - \cos \theta)$.
->
->On peut donc appliquer le théorème de l'énergie mécanique:
->
->\begin{align*}
-\frac{1}{2} m R^2 \dot \theta^2 &= mgR \left(1 - \cos \theta\right)\\
-m R \dot \theta^2 &= 2 mg \left(1 - \cos \theta\right)
-\end{align*}
->Il vient en remplçant dans la première équation: $ R = 3 mg \cos \theta - 2mg$. La condition de décollement s'obtient pour $\theta = \arccos 2/3$.
->
->__Application du théorème de l'énergie mécanique__
->
->On applique à nouveau le théorème de l'énergie mécanique entre t=0 et t=t. Remarquons que la réaction du toboggan ne travaille pas et que le poids dérive d'une énergie potentielle donc il n'y a pas de force non-conservative: l'énergie mécanique est une constante. La variation d'énergie potentielle de pesanteur s'écrit $\Delta E_p = mg x(t) - mg x(0) = mg (\cos\theta - 1)$. Il vient:
->
->\begin{align*}
-\Delta E_c + \Delta E_p &= 0\\
-\left(\frac{1}{2} m R^2 \dot \theta^2 - 0\right) + mgR \left(\cos \theta - 1\right)&= 0\\
-m R \dot \theta^2 &= 2 mg \left(1 - \cos \theta\right)
-\end{align*}
->La suite de la résolution est identique au cas précédent. On remarquera l'équivalence logique de l'écriture du TEC et du TEM.
 
 ````
 
