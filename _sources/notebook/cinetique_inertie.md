@@ -33,7 +33,7 @@ Le point matériel possède trois utilité:
 * il permet la modélisation simplifiée d'un système mécanique qu'on va __assimilé__ à un point matériel seul. Il s'agit d'une modélisation qui n'est valable que si la rotation ou la déformation du système mécanique n'a pas d'influence sur le mouvement global du système mécanique (ou n'existe pas).
 
 
-````{admonition} Exercice Modélisation valable et non valable par un point matériel seul.
+````{admonition} Modélisation valable et non valable par un point matériel seul.
 :class: attention
 
 Un ballon lancé dans l'air peut être assimilé à un point matériel si l'influence de l'air (frottements) est négligées où si la rotation du ballon est relativement faible. Son mouvement sera identique au point considérée. Nous verrons par la suite que le point auquel on assimile le ballon est son centre d'inertie.
@@ -57,7 +57,7 @@ La masse est inertielle est indépendante du temps et du référentiel considér
 Par la suite, on parlera de "masse" sans préciser qu'il s'agit de masse inertielle.
 
 
-````{admonition} Exercice 
+````{admonition} Exemple 
 :class: attention
 
 Un joueur de ping-pong peut renvoyer sans problème une balle de ping-pong avec sa raquette mais ne pourra renvoyer une boule de billard, même si les deux ont la même vitesse.

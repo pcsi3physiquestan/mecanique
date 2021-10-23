@@ -67,7 +67,7 @@ On note $\phi$ l'angle $(\overrightarrow{IO}, \overrightarrow{IB})$.
 ````{dropdown}
  
 
-```{admonition} Fondamental : Eléments de réponse (sans justification)
+```{admonition} Eléments de réponse (sans justification)
 :class: attention
 
 $\theta(t) = \frac{\omega}{2}t$ et $r(t) = b \sqrt{2 (1 - \cos \omega t)}$et $z(t) = 2b^2 (1 + \cos \omega t)$
@@ -88,7 +88,7 @@ On assimile la Terre à une sphère de rayon $R_T = 6400 \rm{km}$ et tournant su
 ````{dropdown}
  
 
-```{admonition} Fondamental : Eléments de réponse (sans justification)
+```{admonition} Eléments de réponse (sans justification)
 :class: attention
 
 $\omega = 0.72 \times 10^{-4} rad.s^{-1}$
