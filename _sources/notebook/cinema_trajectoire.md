@@ -66,9 +66,8 @@ Un mouvement rectiligne est un mouvement dont la trajectoire est portée par une
 
 ````
 
-````{hint}
-:class:dropdown
-_Choix du système de coordonnées_  
+````{admonition} Choix du système de coordonnées_
+:class:hint, dropdown
 En général, on prévoit par une étude physique que le mouvement sera rectiligne. On va donc choisir un système de coordonnées cartésiennes (ou à la limite cylindriques) dont un axe est confondu avec le support de la trajectoire.
 ````
 
@@ -86,9 +85,8 @@ Un mouvement est dit circulaire si le point M se déplace sur un cercle (ou une 
 
 ````
 
-````{hint}
-:class:dropdown
-_Choix du système de coordonnées_  
+````{admonition} Choix du système de coordonnées_
+:class:hint, dropdown
 On va donc choisir un système de coordonnées cylindriques (ou polaires) de centre O le centre du cercle et d'axe Oz perpendiculaire au plan du cercle. On étudiera plus en détail les caractéristiques d'un tel mouvement.
 ````
 
