@@ -131,8 +131,9 @@ Si l'énergie mécanique est positive ou nulle, le système sera en état de dif
 Dans le cas de l'hyperbole, seule une des deux branches est parcourue suivant que la trajectoire soit attractive (branche qui s'enroule autour du centre de force) ou répulsive (branche qui évite le centre de force).
 
 
-````{admonition} Attention : Signe de K
-:class: note
+````{attention}
+__Signe de K__
+
 
 Attention, le raisonnement sur le signe de K dépend de l'expression de la force newtonienne (présence ou non d'un signe -).
 

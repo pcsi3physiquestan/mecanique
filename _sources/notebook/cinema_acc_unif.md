@@ -25,32 +25,30 @@ Nous allons ici étudié le cas simple d'un mouvement uniformément accéléré.
 On considère un point M donc le vecteur accélération est constant. Déterminer l'équation horaire du point M pour une vitesse initiale $\overrightarrow{v_0}$ et une position initiale $M_0$ à $t = 0$.
 
 ````
-````{dropdown}
- 
+````{dropdown} Résolution
 
-
-La direction du vecteur accélération étant constante, on va particulariser cet axe en le choisissant comme axe Oz. On pose le point O confondu avec $M_0$ et on choisit un système de coordonnées cartésiennes dont l'axe Ox est tel que le vecteur vitesse initiale soit plan xOz. On peut donc écrire  que:
-
-\begin{align*}
+>La direction du vecteur accélération étant constante, on va particulariser cet axe en le choisissant comme axe Oz. On pose le point O confondu avec $M_0$ et on choisit un système de coordonnées cartésiennes dont l'axe Ox est tel que le vecteur vitesse initiale soit plan xOz. On peut donc écrire  que:
+>
+>\begin{align*}
 \overrightarrow{a} &= a_0 \overrightarrow{e_z}\\
 \overrightarrow{v} &= v_{0x} \overrightarrow{e_x} + v_{0z} \overrightarrow{e_z}
 \end{align*}
-
-Par projection, on trouve que:
-
-\begin{align*}
+>
+>Par projection, on trouve que:
+>
+>\begin{align*}
 \frac{\rm{d}v_x}{\rm{dt}} &= 0\\
 \frac{\rm{d}v_y}{\rm{dt}} &= 0\\
 \frac{\rm{d}v_z}{\rm{dt}} &= a_0
 \end{align*}
-soit par intégration:
-
-\begin{align*}
+>soit par intégration:
+>
+>\begin{align*}
 v_x &= v_{0x} \Longrightarrow x(t) = v_{0x} t + x_0\\
 v_x &= 0 \Longrightarrow x(t) = y_0\\
 v_x &= v_{0z} + a_0t \Longrightarrow x(t) = \frac{a_0}{2} t^2 + v_{0z} t + z_0
 \end{align*}
-Comme nous le verrons, on peut montrer qu'une telle équation est celle d'une parabole.
+>Comme nous le verrons, on peut montrer qu'une telle équation est celle d'une parabole.
 
 ````
 

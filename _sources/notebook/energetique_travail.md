@@ -130,8 +130,9 @@ Ces interprétations s'appliquent aussi au travail et la dénomination moteur/r�
 
 ## Travail et chemin
 
-````{admonition} Attention : Dépendance et notation
-:class: note
+````{attention}
+__Dépendance et notation__
+
 
 Le travail d'une action __dépend du chemin considéré__. Il ne s'agit donc PAS de la variation d'une grandeur d'état (c'est-à-dire définie pour un état donné de position et vitesse).
 

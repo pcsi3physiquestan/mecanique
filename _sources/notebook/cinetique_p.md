@@ -46,8 +46,9 @@ Soit un point M de masse m, de vitesse $\overrightarrow{v_{M/R}}$, de quantité 
 \end{equation}
 ````
 
-````{admonition} Attention : Dépendance du point considéré
-:class: note
+````{attention}
+__Dépendance du point considéré__
+
 
 Un moment cinétique se calcule par rapport à un A de l'espace (pas nécessairement le centre du repère). Il est important de le préciser car l'expression du moment cinétique __dépend du point considéré__. Celà devient évident lorsqu'on donne un sens (cf. suite) au moment cinétique.
 
@@ -68,8 +69,9 @@ L_{\Delta/R} = \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{B/R}}(M)
 L'expression précédente ne dépend pas du point B __tant que B est sur l'axe.__ C'est pourquoi on peut parler de moment cinétique sur un axe sans précision.
 
 
-````{admonition} Attention : Scalaire et vecteur
-:class: note
+````{attention}
+__Scalaire et vecteur__
+
 
 Le moment cinétique par rapport à un point est un __vecteur__ et le moment cinétique par rapport à un axe est un __scalaire__. Il est important de faire cette différence.
 

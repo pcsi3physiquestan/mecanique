@@ -259,8 +259,9 @@ Si la trajectoire n'est pas limitée par un rayon maximal, l'état sera de __dif
 Les rayons extrêmes atteints seront données par l'équation $E_{p,eff} = E_m$. De même, le mobile ne peut change la variation de r (passer d'éloignement à rapprochement ou inversement) qu'aux position extrêmes car ce sont les positions où la vitesse __radiale__ s'annule. La trajectoire est y est tangente au cercle.
 ````
 
-````{admonition} Attention : Positions extrêmes et vitesse
-:class: note
+````{attention}
+__Positions extrêmes et vitesse__
+
 
 Aux rayons extrêmes, __seule la vitesse radiale s'annule__. La vitesse totale n'est __pas nulle__. En effet, si le moment cinétique n'est pas nulle, il vient que la vitesse orthoradiale ne s'annule jamais.
 

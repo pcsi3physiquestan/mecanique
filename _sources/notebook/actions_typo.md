@@ -559,8 +559,9 @@ La raideur donne une information sur la facilité qu'on peut avoir à tendre ou 
 On parle de __force de rappel__. En effet, lorsque le ressort est comprimé, l'allongement est négatif et la force est dirigée vers l'extérieur: le ressort essaie de se détendre. Lorsque le ressort est étendu, l'allongement est positif et la force est dirigée vers l'intérieur: le ressort essaie de se contracter. Dans tous les cas, le système accroché tend à être __rappelé__ vers la position à vide par le ressort.
 
 
-````{admonition} Attention : Position au repos et position à vide
-:class: note
+````{attention}
+__Position au repos et position à vide__
+
 
 Il ne faut pas confondre la position au repos et la position à vide. En effet, la longueur du ressort au repos d'un système complet (ressort + système accroché au bout du ressort) n'est pas nécessairement la longueur à vide. On peut penser à un ressort vertical au bout duquel on a attaché une masse. Au repos, la longueur du ressort sera différente de la longueur à vide: le ressort sera étiré ou compressé suivant que la masse soit accrochée au dessus ou au dessous.
 

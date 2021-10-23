@@ -110,8 +110,9 @@ __Démonstration__
 La démonstration s'obtient par simple sommation du TEC/TEM pour chaque point du système.
 
 
-````{admonition} Attention : Travail des forces intérieures
-:class: note
+````{attention}
+__Travail des forces intérieures__
+
 
 Il est important de noter la différence entre ce théorème et le cas du Théorème de la résultante dynamique ou le théorème du moment cinétique. Cette fois, on __doit tenir compte des actions intérieures__ dont le travail est a priori non nul.
 

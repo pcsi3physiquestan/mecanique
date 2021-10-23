@@ -657,8 +657,8 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Expressions en fonction du vecteur tournant.</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe7b30de-909f-49b6-a372-723100c974c2">
-<span class="eqno">(14)<a class="headerlink" href="#equation-fe7b30de-909f-49b6-a372-723100c974c2" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dff1ea8b-0f2b-4514-bb2f-e9c51210354a">
+<span class="eqno">(14)<a class="headerlink" href="#equation-dff1ea8b-0f2b-4514-bb2f-e9c51210354a" title="Permalink to this equation">¶</a></span>\[\begin{align}
     \overrightarrow{v_{M/R}} &amp;= \overrightarrow{\Omega} \wedge \overrightarrow{OM}\\
     \overrightarrow{a_{M/R}} &amp;= \frac{d \overrightarrow{\Omega}}{dt} \wedge \overrightarrow{OM} + \overrightarrow{\Omega} \wedge \overrightarrow{v}
 \end{align}\]</div>
@@ -678,28 +678,21 @@
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Un satellite géostationnaire est un satellite en orbite circulaire autour de la terre à une altitude <span class="math notranslate nohighlight">\(h=r-R_T\)</span> où <span class="math notranslate nohighlight">\(R_T\)</span> est le rayon de la Terre (r est le rayon de l’orbite). L’orbite est équatoriale et il reste fixe par rapport à un point de la Terre. Il est soumis à une accélération dans le référentiel géocentrique:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-38b81be0-97cb-4c38-8f6a-b25fc4a11f99">
-<span class="eqno">(15)<a class="headerlink" href="#equation-38b81be0-97cb-4c38-8f6a-b25fc4a11f99" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3e059a5a-b91f-4305-b642-76254644b3ac">
+<span class="eqno">(15)<a class="headerlink" href="#equation-3e059a5a-b91f-4305-b642-76254644b3ac" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{a} = - g_0 {(\frac{R_T}{r})}^2 \overrightarrow{e_r}
 \end{equation}\]</div>
-<p>Calculer r avec <span class="math notranslate nohighlight">\(g_0 = 9,8 \rm{m.s^{-1}}\)</span> et <span class="math notranslate nohighlight">\(R_T = 6400 \rm{km}\)</span>.
-\end{equation}</p>
+<p>Calculer r avec <span class="math notranslate nohighlight">\(g_0 = 9,8 \rm{m.s^{-1}}\)</span> et <span class="math notranslate nohighlight">\(R_T = 6400 \rm{km}\)</span>.</p>
 </div>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
+Résolution<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">On peut utilise directement le fait que l’accélération radiale s’écrit <span class="math notranslate nohighlight">\(- r \dot \theta^2 \overrightarrow{e_r}\)</span></p>
+<blockquote>
+<div><p class="card-text">On peut utilise directement le fait que l’accélération radiale s’écrit <span class="math notranslate nohighlight">\(- r \dot \theta^2 \overrightarrow{e_r}\)</span></p>
 <p class="card-text">Un satellite géostationnaire doit tourner autour de la terre en 24h, soit une vitesse angulaire <span class="math notranslate nohighlight">\(\dot \theta = \frac{2 \pi}{T_0}\)</span> avec <span class="math notranslate nohighlight">\(T_0 = 24 \rm{h} = 86400 \rm{s}\)</span>.</p>
 <p class="card-text">Il vient:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -707,6 +700,7 @@
 r &amp;= {\left(\frac{g_0 R_T^2T_0^2}{4 \pi^2 }\right)}^{\left(1/3\right)}\\
 &amp;= 42 \times 10^3 \rm{km}
 \end{align*}\]</div>
+</div></blockquote>
 </div>
 </details></div>
 </div>

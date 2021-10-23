@@ -123,8 +123,9 @@ Dans l'exemple ci-dessus, on apporte de l'énergie pour faire passer l'énergie 
 On peut chercher à calculer l'énergie minimale à apporter pour "libérer" le système. Il s'agit ici de la différence $E_{m5} - E_{m4}$soit la hauteur de la barrière de potentiel.
 ````
 
-````{admonition} Attention : Nouvel état
-:class: note
+````{attention}
+__Nouvel état__
+
 
 Une fois qu'on a fourni de l'énergie au système, il n'est pas dans l'état "supérieur à F" défini précédemment (son énergie mécanique a changé). Il est dans un état qu'on pourrait pour l'instant appelé "supérieur à C" en utilisant les notations du graphique.
 

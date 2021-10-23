@@ -71,19 +71,17 @@ Un satellite géostationnaire est un satellite en orbite circulaire autour de la
 \overrightarrow{a} = - g_0 {(\frac{R_T}{r})}^2 \overrightarrow{e_r}
 \end{equation}
 Calculer r avec $g_0 = 9,8 \rm{m.s^{-1}}$ et $R_T = 6400 \rm{km}$.
-\end{equation}
 ````
-````{dropdown}
- 
 
+````{dropdown} Résolution
 
-On peut utilise directement le fait que l'accélération radiale s'écrit $- r \dot \theta^2 \overrightarrow{e_r}$
-
-Un satellite géostationnaire doit tourner autour de la terre en 24h, soit une vitesse angulaire $\dot \theta = \frac{2 \pi}{T_0}$ avec $T_0 = 24 \rm{h} = 86400 \rm{s}$.
-
-Il vient:
-
-\begin{align*}
+>On peut utilise directement le fait que l'accélération radiale s'écrit $- r \dot \theta^2 \overrightarrow{e_r}$
+>
+>Un satellite géostationnaire doit tourner autour de la terre en 24h, soit une vitesse angulaire $\dot \theta = \frac{2 \pi}{T_0}$ avec $T_0 = 24 \rm{h} = 86400 \rm{s}$.
+>
+>Il vient:
+>
+>\begin{align*}
 r &= {\left(\frac{g_0 R_T^2T_0^2}{4 \pi^2 }\right)}^{\left(1/3\right)}\\
 &= 42 \times 10^3 \rm{km}
 \end{align*}

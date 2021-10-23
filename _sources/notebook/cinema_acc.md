@@ -198,5 +198,6 @@ Il vient par dérivation:
 &= - \frac{v_{0}^2}{R_0} \overrightarrow{e_r}
 \end{align*}
 ```
+>
 ````
 

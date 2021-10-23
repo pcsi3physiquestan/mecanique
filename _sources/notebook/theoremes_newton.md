@@ -129,8 +129,9 @@ Une des conséquences est qu'il n'est pas nécessaire de tenir compte des action
 De plus, ce théorème de la résultante cinétique justifie la possible modélisation d'un système en volume par un point matériel qui sera le centre d'inertie. En effet, par la modélisation en point matériel, on perd complètement l'information sur les actions intérieures. Mais vu qu'elle n'agit pas sur la quantité de mouvement total, on ne perd rien. De plus, la quantité de mouvement totale égale la masse totale multipliée par la vitesse du centre d'inertie, donc assimiler le système au centre d'inertie donnera la même information.
 
 
-````{admonition} Attention : Insuffisance du théorème de la résultante cinétique (TRC).
-:class: note
+````{attention}
+__Insuffisance du théorème de la résultante cinétique (TRC).__
+
 
 En somment les PFD, on perd les points d'application des forces ce qui rend le TRC insuffisant a priori pour décrire complètement le mouvement d'un solide. En effet, le TRD __ne donne que le mouvement du centre d'inertie (mouvement de translation globale du système)__. Il ne donne pas d'information sur la déformation du système, ni même sur sa rotation sur lui-même (ou autour d'un autre point).
 

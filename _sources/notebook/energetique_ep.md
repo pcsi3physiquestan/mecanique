@@ -48,8 +48,9 @@ L'énergie potentielle d'une action ponctuelle conservative (on parle de __force
 
 ````
 
-````{admonition} Attention : Signe -
-:class: note
+````{attention}
+__Signe -__
+
 
 Il faut bien faire attention à la présence du signe - entre le travail et la variation d'énergie potentielle. Une telle définition permettra de "passer" l'énergie potentielle du "côté" de l'énergie cinétique pour faire apparaître l'énergie mécanique. Nous pourrons alors fournir une interprétation plus complète de l'intérêt des forces conservatives.
 

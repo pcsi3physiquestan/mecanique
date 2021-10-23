@@ -78,8 +78,9 @@ Le moment cinétique d'un solide contient deux termes: l'information sur la rota
 Dans ce cadre, l'interprétation du moment cinétique reste la même: on relie le mouvement de rotation sur l'axe à l'influence des actions extérieures sur ce mouvement (par le moment résultant de ces actions).
 
 
-````{admonition} Attention : TMC et TRC
-:class: note
+````{attention}
+__TMC et TRC__
+
 
 Pour un système de points matériels, le TMC __ne se déduit pas__ du théorème de la résulante cinétique.
 

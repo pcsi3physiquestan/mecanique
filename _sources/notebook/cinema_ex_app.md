@@ -64,14 +64,9 @@ On note $\phi$ l'angle $(\overrightarrow{IO}, \overrightarrow{IB})$.
 1. Déterminer la vitesse $\overrightarrow{v_J}$ et l'accélération $\overrightarrow{a_J}$ de J, ainsi que leur normes.
 
 ````
-````{dropdown}
- 
-
-```{admonition} Eléments de réponse (sans justification)
-:class: attention
+````{dropdown} Eléments de réponse (sans justification)
 
 $\theta(t) = \frac{\omega}{2}t$ et $r(t) = b \sqrt{2 (1 - \cos \omega t)}$et $z(t) = 2b^2 (1 + \cos \omega t)$
-```
 ````
 
 ## Rotation de la Terre
@@ -85,13 +80,7 @@ On assimile la Terre à une sphère de rayon $R_T = 6400 \rm{km}$ et tournant su
 1. Déterminer la position, la vitesse et l'accélération de M en fonction de $\omega, R_T$ et t. On prendra soin de définir correctement le repère de projection. 
 ````
 
-````{dropdown}
- 
-
-```{admonition} Eléments de réponse (sans justification)
-:class: attention
-
+````{dropdown} Eléments de réponse (sans justification)
 $\omega = 0.72 \times 10^{-4} rad.s^{-1}$
-```
 ````
 

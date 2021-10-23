@@ -24,8 +24,9 @@ Soit deux systèmes mécaniques $\Sigma_1$ et $\Sigma_2$ (points matériels ou s
  On peut décrire l'interaction entre deux systèmes mécaniques par __deux actions réciproques__: l'action $\mathfrak{A}_{1 \to 2}$ de $\Sigma_1$ sur $\Sigma_2$ et l'action $\mathfrak{A}_{2 \to 1}$ de $\Sigma_2$ sur $\Sigma_1$.
 
 
-````{admonition} Attention : Action et force
-:class: note
+````{attention}
+__Action et force__
+
 
 Attention, un action n'est PAS une force. Comme nous le verrons par la suite la force est __un des éléments permettant de modéliser une action__.
 
@@ -60,8 +61,9 @@ Une action résultante sur un système $\Sigma_2$ est une action du milieu exté
 
 ````
 
-````{admonition} Attention : Arbitraire mais réfléchi... 
-:class: note
+````{attention}
+__Arbitraire mais réfléchi... __
+
 
 En effet, un système $\Sigma_2$ subit de nombreuses actions de la part du milieu extérieur. On va pouvoir regrouper ses actions en des actions résultantes mais ces regroupement ne se font pas de manière aléatoire. Un regroupement possède un sens physique: en général, on __doit__ par exemple pouvoir attribuer toutes les actions ponctuelles à un même système $\Sigma_1$ qu'on peut parfaitement définir, de sorte qu'on puisse parler de __l'action résultante du système $\Sigma_1$ sur le système $\Sigma_2$.__
 

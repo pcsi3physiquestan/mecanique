@@ -207,8 +207,9 @@ Dans le cas de la surface latérales en forme de cylindre, la force ponctuelle e
 Il vient que le moment résultant sera nul.
 
 
-````{admonition} Attention : Erreurs classiques
-:class: note
+````{attention}
+__Erreurs classiques__
+
 
 Attention, la nullité du moment sur l'axe __n'est pas liée__ à l'orientation de la force résultante. On rappelle __qu'il n'y a pas de lien directe entre force résultante et moment résultant__.
 
