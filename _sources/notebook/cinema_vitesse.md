@@ -65,10 +65,10 @@ En coordonnées spheriques:
 > \begin{equation}
 \overrightarrow{dOM} = dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}
 \end{equation}
-\begin{equation}
+> \begin{equation}
 \overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + dz \overrightarrow{e_z}
 \end{equation}
-\begin{equation}
+> \begin{equation}
 \overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + r \sin \theta d\varphi \overrightarrow{e_{\varphi}}
 \end{equation}
 > Ici, on rapport le déplacement élémentaire à la variation temporelle dt pendant lequel le déplacement se fait, ce qui revient à rapporter chaque différentielle ($dx, dy, d\theta, dr...$) par dt, c'est-à-dire les remplacer par les dérivées. On obtient bien les expressions données.
