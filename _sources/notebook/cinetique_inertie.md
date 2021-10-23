@@ -15,8 +15,7 @@ kernelspec:
 ---
 # Point matériel et inertie
 
-````{admonition} Définition : Point matériel
-:class: tip
+````{important} __Définition : Point matériel__
 
 Un point matériel est une modélisation idéalisée d'un objet ponctuel matériel, c'est-à-dire d'une portion infinitésimale de matière.
 
@@ -42,8 +41,7 @@ Un ballon qui roule sur un plan incliné ne peut être assimilé à un point. En
 
 ````
 
-````{admonition} Définition : Masse intertielle.
-:class: tip
+````{important} __Définition : Masse intertielle.__
 
 La capacité que possède un objet matériel à résister à toute variation de mouvement est appelé __inertie__.
 

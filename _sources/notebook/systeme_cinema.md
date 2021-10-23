@@ -16,7 +16,7 @@ kernelspec:
 # Cinématique et cinétique des systèmes de points
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Différencier un solide indéformable d'un système indéformable
 * Reconnaître et décrire une translation rectiligne, une translation circulaire
 * Décrire la trajectoire d'un point quelconque du solide et exprimer sa vitesse en fonction de sa distance à l'axe et de la vitesse angulaire dans le cas d'un solide en rotation autour d'un axe fixe.

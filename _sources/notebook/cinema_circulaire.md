@@ -20,8 +20,7 @@ kernelspec:
 _On rappelle qu'un mouvement circulaire est un mouvement dont la trajectoire est portée par un cercle fixe dans le référentiel $\mathfrak{R}$ considéré. On notera $R_0$ le rayon du cercle._
 
 
-````{admonition} Fondamental : Système de coordonnées et expressions
-:class: attention
+````{important} __Fondamental : Système de coordonnées et expressions__
 
 Les coordonnées utiles pour un tel mouvement sont les coordonnées cylindriques d'axe Oz perpendiculaire au plan du cercle. On a alors les relations:
 
@@ -31,8 +30,7 @@ Les coordonnées utiles pour un tel mouvement sont les coordonnées cylindriques
 \overrightarrow{a_{M/\mathfrak{R}}} &= - r \dot \theta ^2 \overrightarrow{e_r} + r \ddot \theta \overrightarrow{e_{\theta}}
 \end{align*}
 ````
-````{admonition} Fondamental : Accélération tangentielle et normale
-:class: attention
+````{important} __Fondamental : Accélération tangentielle et normale__
 
 Remarquons que la direction radiale $e_{r}$ est  toujours perpendiculaire au mouvement et la direction orthoradiale $e_{\theta}$ est  toujours tangente au mouvement. Il vient que:
 
@@ -40,15 +38,13 @@ Remarquons que la direction radiale $e_{r}$ est  toujours perpendiculaire au mou
 * L'accélération normale vaut: $\overrightarrow{a_N} = -R_0 \dot \theta^2 \overrightarrow{e_r} = - \frac{v^2}{R} \overrightarrow{e_r}$
 ````
 
-````{admonition} Définition : Vecteur tournant
-:class: tip
+````{important} __Définition : Vecteur tournant__
 
 On définit le vecteur tournant comme: $\overrightarrow{\Omega} = \omega \overrightarrow{e_z}$
 
 ````
 
-````{admonition} Fondamental : Expressions en fonction du vecteur tournant.
-:class: attention
+````{important} __Fondamental : Expressions en fonction du vecteur tournant.__
 
 \begin{align}
     \overrightarrow{v_{M/R}} &= \overrightarrow{\Omega} \wedge \overrightarrow{OM}\\
@@ -59,8 +55,7 @@ __Vous devez savoir prouver ces formules.__
 
 ## Cas d'un mouvement circulaire uniforme
 
-````{admonition} Fondamental : Expressions
-:class: attention
+````{important} __Fondamental : Expressions__
 
 Dans le cas d'un mouvement circulaire uniforme, il vient que l'accélération est purement centripète: elle est bien orthogonale au mouvement. Son expression est alors: $\overrightarrow{a_{M/\mathfrak{R}}} = - \frac{v^2}{R} \overrightarrow{e_r}$
 ````

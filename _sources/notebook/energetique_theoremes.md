@@ -17,8 +17,7 @@ kernelspec:
 
 ## Théorème de l'énergie cinétique
 
-````{admonition} Fondamental : Théorème de l'énergie cinétique
-:class: attention
+````{important} __Fondamental : Théorème de l'énergie cinétique__
 
 Soit un point matériel M de masse m. La variation d'énergie cinétique du point M dans un référentiel galiléen entre deux instants est égale à la somme du travail de toutes les forces qui s'exercent sur le point M entre les deux instants considérés.
 
@@ -29,8 +28,7 @@ dE_c &= \delta W(\overrightarrow{F})
 où $\overrightarrow{F}$ est la résultante totale des forces s'appliquant sur le point matériel M. La première écriture consiste à appliquer le théorème de l'énergie cinétique sur un chemin fini d'un point A à un point B (on a rappelle que le travail des forces dépend a priori du chemin choisi). La seconde traite le cas d'un déplacement infinitésimal.
 ````
 
-````{admonition} Fondamental : Théorème de la puissance cinétique
-:class: attention
+````{important} __Fondamental : Théorème de la puissance cinétique__
 
 En référentiel galiléen (sous les mêmes hypothèses que précédemment):
 
@@ -51,8 +49,7 @@ L'expression intégrale s'obtient en intégrant la dernière équation sur le ch
 
 ## Théorème de l'énergie mécanique
 
-````{admonition} Fondamental : Théorème de l'énergie mécanique
-:class: attention
+````{important} __Fondamental : Théorème de l'énergie mécanique__
 
 Dans un référentiel galiléen, la variation d'énergie mécanique d'un point matériel M de masse m entre deux points A et B d'un système est égale au travail des seules forces non-conservatives sur le trajet entre A et B.
 ````
@@ -102,8 +99,7 @@ Est-ce grave de calculer un travail pour une force conservative au lieu d'utilis
 
 ## Applications des théorèmes aux solides
 
-````{admonition} Fondamental : Théorème de l'énergie cinétique/mécanique. Cas général.
-:class: attention
+````{important} __Fondamental : Théorème de l'énergie cinétique/mécanique. Cas général.__
 
 La variation d'énergie cinétique d'un système de points d'un état A à un état B est égale au travail des forces qui s'appliquent sur le système sur le même chemin, qu'elles __soient extérieures ou intérieures__.
 
@@ -122,8 +118,7 @@ Il est important de noter la différence entre ce théorème et le cas du Théor
 
 ````
 
-````{admonition} Fondamental : Théorème de l'énergie cinétique/mécanique. Cas d'un solide indéformable.
-:class: attention
+````{important} __Fondamental : Théorème de l'énergie cinétique/mécanique. Cas d'un solide indéformable.__
 
 Dans le cas d'un solide __indéformable, le travail des forces intérieures est nul.__
 ````

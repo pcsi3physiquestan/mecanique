@@ -17,8 +17,7 @@ kernelspec:
 
 ## Solide déformable et indéformable
 
-````{admonition} Définition : Système de points matériel
-:class: tip
+````{important} __Définition : Système de points matériel__
 
 Un système de points matériels S (ou solide déformable) est un ensemble de points matériels dont on décrit le mouvement.
 
@@ -35,8 +34,7 @@ Le regroupement d'un ensemble de points matériel dans un même système est arb
 On pourra être amenés à considérer un solide comme un ensemble de sous-systèmes dont on connaît les caractéristiques.
 
 
-````{admonition} Définition : Solide indéformable
-:class: tip
+````{important} __Définition : Solide indéformable__
 
 Un solide indéformable est un système de points tel que, quelque soit les deux points $P_i$ et $P_j$ du solides, à tout instants, la distance $P_i P_j$ est constante.
 
@@ -50,8 +48,7 @@ Dans un solide, la distance entre les points doit être constantes, mais la dire
 
 ## Masse et centre d'inertie
 
-````{admonition} Définition : Masse totale
-:class: tip
+````{important} __Définition : Masse totale__
 
 On définit la masse totale M du système S comme la somme de toutes les masses des points matériels composant le solide.
 
@@ -64,8 +61,7 @@ Dans le cadre d'une description discrète, la masse totale est simplement $M = \
 Dans le cadre d'une description continu, la masse totale devient une intégrale: $M = \iiint_{P \in S} \rho(P) d \tau(P)$. A l'heure actuelle, il n'est pas demandé de savoir calculer une telle intégrale. Il suffit de comprendre qu'on somme des petits volumes infinitésimaux $d\tau(M)$ coefficientés (ici par la masse volumique).
 
 
-````{admonition} Définition : Centre d'inertie
-:class: tip
+````{important} __Définition : Centre d'inertie__
 
 On définit le centre d'inertie G du système S comme le barycentre des points du solide affectés de leur masse.
 
@@ -122,8 +118,7 @@ Cette formule est valable quelque soit le mouvement du solide. Néanmoins, elle 
 
 ## Mouvement de translation
 
-````{admonition} Définition : Translation
-:class: tip
+````{important} __Définition : Translation__
 
 Un solide est en translation si pour tout point P du solide, la vitesse $\overrightarrow{v_{P/R}}$ est identique.
 
@@ -137,15 +132,13 @@ Une translation ne signifie pas que le solide va forcément tout droit (ne pas c
 
 ## Mouvement de rotation autour d'un axe fixe
 
-````{admonition} Définition : Rotation autour d'un axe fixe
-:class: tip
+````{important} __Définition : Rotation autour d'un axe fixe__
 
 On peut définir le concept de rotation en rapport avec les composantes du torseur cinématique (cf SI). Pour nous, la description d'un solide en rotation autour d'un axe fixe est visuelle: il tourne sur lui-même.
 
 ````
 
-````{admonition} Fondamental : Champ de vitesse d'un solide en rotation
-:class: attention
+````{important} __Fondamental : Champ de vitesse d'un solide en rotation__
 
 Soit un solide en rotation autour d'un axe fixe, à un instant t, tous les points du solide ont la même vitesse angulaire $\omega(t)$. On peut alors définir un vecteur $\overrightarrow{\Omega}(t)$ appelé vecteur rotation du solide tel que pour tout point P du solide, la vitesse $\overrightarrow{v_{P/R}}$ s'écrit:
 

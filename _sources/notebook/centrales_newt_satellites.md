@@ -35,8 +35,7 @@ En général, la mise en orbite "haute" d'un satellite se fait de la manière su
 On définit alors certaines grandeurs utiles pour la réflexion.
 
 
-````{admonition} Définition : Vitesses cosmiques
-:class: tip
+````{important} __Définition : Vitesses cosmiques__
 
 On définit la première vitesse cosmique par la vitesse qu'aurait un satellite en orbite basse, c'est-à-dire telle que $h \ll R_T$.
 
@@ -44,8 +43,7 @@ On définit la seconde vitesse cosmique comme la vitesse minimale à transmettre
 
 ````
 
-````{admonition} Définition : Orbite géostationnaire
-:class: tip
+````{important} __Définition : Orbite géostationnaire__
 
 L'orbite géostationnaire correspond à une orbite où le satellite tourne avec la même période que la Terre sur elle-même et est fixe par rapport à un point du globe.
 

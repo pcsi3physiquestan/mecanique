@@ -15,13 +15,13 @@ kernelspec:
 ---
 # Référentiel
 
-````{important} Définition : Référentiel
+````{important} __Définition : Référentiel__
 
 Un référentiel $\mathfrak{R}$ est un ensemble de points rigides - c'est-à-dire fixes les uns par rapports aux autres - auquel on associe une horloge. Comme le temps est absolu en mécanique classique, l'horloge est la même quelque soit le référentiel.
 
 ````
 
-````{important} Définition : Repère associé à un référentiel
+````{important} __Définition : Repère associé à un référentiel__
 
 En physique, on  associe à un référentiel, un(des) repère(s) $(0, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})$ soit la donnée d'un point (O)  dans le référentiel (c'est-à-dire  par rapport aux points rigides définit précédemment) et une base de 3 vecteurs  dans ce même référentiel.
 

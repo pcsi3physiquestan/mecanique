@@ -19,7 +19,7 @@ kernelspec:
 
 ### Vecteur position: Définition
 
-````{important} Définition : Vecteur position
+````{important} __Définition : Vecteur position__
 
 On définit la position d'un point matériel M dans un référentiel $\mathfrak{R}$ à l'aide du vecteur position $\overrightarrow{OM}$ où O est un __point fixe__ du référentiel.
 
@@ -29,7 +29,7 @@ On définit la position d'un point matériel M dans un référentiel $\mathfrak{
 Normalement, on prend comme point O, le centre du repère choisi comme associé au référentiel d'étude.
 
 
-````{important} Définition : Equation horaire et trajectoire
+````{important} __Définition : Equation horaire et trajectoire__
 
 L'évolution du mouvement du point matériel $OM(t)$ est appelée équation horaire. Elle est aussi définit par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.
 
@@ -39,7 +39,7 @@ On peut être amené à tracer des trajectoires en utilisant la représentation 
 
 ### Expression du vecteur position
 
-````{important} Fondamental : Expressions
+````{important} __Fondamental : Expressions__
 
 On peut exprimer le vecteur position dans les différents repères. Les vecteurs des bases locales sont exprimées au point M mobile:
 
@@ -60,7 +60,7 @@ Il est important de pouvoir reconnaître un certain nombre de trajectoires usuel
 
 ### Trajectoire rectiligne
 
-````{important} Définition : Mouvement rectiligne
+````{important} __Définition : Mouvement rectiligne__
 
 Un mouvement rectiligne est un mouvement dont la trajectoire est portée par une droite (ou un segment) fixe dans le référentiel d'étude. Il se fait suivant une direction de l'espace: c'est un mouvement à 1 degré de liberté.
 
@@ -78,20 +78,17 @@ Un trajectoire rectiligne ne signifie pas que le mobile va toujours dans le mêm
 
 ### Trajectoire circulaire
 
-````{admonition} Définition : Mouvement circulaire
-:class: tip
+````{important} __Définition : Mouvement circulaire__
 
 Un mouvement est dit circulaire si le point M se déplace sur un cercle (ou une portion de cercle) fixe dans le référentiel R. C'est aussi un mouvement à 1 degré de liberté.
 
 ````
 
-````{admonition} Choix du système de coordonnées
-:class: hint
+````{hint} Choix du système de coordonnées
 On va donc choisir un système de coordonnées cylindriques (ou polaires) de centre O le centre du cercle et d'axe Oz perpendiculaire au plan du cercle. On étudiera plus en détail les caractéristiques d'un tel mouvement.
 ````
 
-````{admonition} Fondamental : Equation cartésienne et paramétrique
-:class: attention
+````{important} __Fondamental : Equation cartésienne et paramétrique__
 
 On peut être amené à obtenir une trajectoire circulaire sans l'avoir prévu et en ayant utilisé au départ des coordonnées cartésiennes. Il est important de reconnaître qu'une équation cartésienne ou paramétrique est l'équation d'un cercle.
 
@@ -111,8 +108,7 @@ Dans les deux cas, il s'agit de l'équation d'un cercle de rayon R et de centre 
 
 ### Trajectoire elliptique
 
-````{admonition} Définition : Ellipse
-:class: tip
+````{important} __Définition : Ellipse__
 
 Une ellipse est une courbe fermée qu'on peut caractériser/reconnaître de plusieurs manières:
 
@@ -135,8 +131,7 @@ On fera attention au fait que le centre du repère ne définit pas le même poin
 
 ````
 
-````{admonition} Fondamental : Caractéristiques d'une ellipse.
-:class: attention
+````{important} __Fondamental : Caractéristiques d'une ellipse.__
 
 Les caractéristiques importantes sont:
 
@@ -154,8 +149,7 @@ e = c / a
 ````
 ### Trajectoire parabolique
 
-````{admonition} Définition : Parabole
-:class: tip
+````{important} __Définition : Parabole__
 
 Une parabole est une courbe non fermée qu'on peut caractériser/reconnaître de plusieurs manières:
 
@@ -178,8 +172,7 @@ Dans le cas polaire, si $\theta_0 = 0$ (cas fréquent) l'axe de symétrie de la 
 
 ### Coniques
 
-````{admonition} Définition : Coniques
-:class: tip
+````{important} __Définition : Coniques__
 
 Les coniques correspondent à l'ensemble des courbes qu'on peut obtenir par l'intersection d'un cône et d'un plan. Il en résulte trois types de conique:
 
@@ -195,8 +188,7 @@ Les coniques correspondent à l'ensemble des courbes qu'on peut obtenir par l'in
 
 ````
 
-````{admonition} Fondamental : Equation polaire d'une conique
-:class: attention
+````{important} __Fondamental : Equation polaire d'une conique__
 
 En choisissant correctement l'origine du repère polaire, on peut exprimer l'équation polaire d'une conique sous la forme:
 

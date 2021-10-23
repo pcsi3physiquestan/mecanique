@@ -24,8 +24,7 @@ Nous sommes dans le cas où le potentiel newtonien est attractive. Dans un premi
 On peut donc utiliser les résultats précédents en prenant $K = G M_S M_P >0$.
 
 
-````{admonition} Fondamental : Hypothèses des lois de Kepler
-:class: attention
+````{important} __Fondamental : Hypothèses des lois de Kepler__
 
 * Les planètes et le Soleil présentent une symétrie sphérique.
 * Le mouvement d'une planète est uniquement lié à l'interaction entre cette planète et le Soleil. On exclut toute influence des autres planètes et objets célestes.
@@ -45,8 +44,7 @@ Les deux dernières hypothèses sont justifiées en observant que la masse du So
 
 ````
 
-````{admonition} Fondamental : Lois de Kepler
-:class: attention
+````{important} __Fondamental : Lois de Kepler__
 
 * 1ère loi: Le centre des planètes décrit une ellipse dont l'un des foyers est le Soleil.
 * 2ème loi: Les rayons vecteurs balaient des aires égales pour des intervalles de temps égaux.
@@ -74,8 +72,7 @@ _On rappelle que le point le plus éloigné est appelé __aphélie__ et que le p
 
 _On rappelle aussi que dans le cours générale sur les coniques, une relation entre le demi-grand axe $a$ et l'excentricité a été démontrée. On notera aussi b le demi-petit axe._
 
-````{admonition} Fondamental : Relation énergie mécanique et demi-grand axe.
-:class: attention
+````{important} __Fondamental : Relation énergie mécanique et demi-grand axe.__
 
 L'énergie mécanique dans une trajectoire elliptique a pour expression:
 
@@ -90,8 +87,7 @@ Cette démonstration est à faire en exercice. Elle doit être connue.
 Indice: Les caractéristiques de conservation des intégrales premières sont à utiliser entre le périhélie et l'aphélie.
 
 
-````{admonition} Fondamental : Cas circulaire
-:class: attention
+````{important} __Fondamental : Cas circulaire__
 
 Si la trajectoire est circulaire, alors $E_m = -E_c = \frac{E_p}{2} = - \frac{K}{2R}$ avec R le rayon du cercle.
 ````
@@ -105,8 +101,7 @@ Indice: Exprimer, au moyen du PFD, une relation entre la vitesse et le rayon. En
 
 ## Troisième loi de Kepler
 
-````{admonition} Fondamental : Cas d'un mouvement circulaire
-:class: attention
+````{important} __Fondamental : Cas d'un mouvement circulaire__
 
 Note: C'est le cas à connaître.
 

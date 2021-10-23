@@ -16,7 +16,7 @@ kernelspec:
 # Modélisation des actions. Cas des actions ponctuelles.
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Établir un bilan des actions sur un système ou plusieurs systèmes en interaction.
 * Établir une relation graphique ou analytique entre des forces modélisant des actions sur un point matériel dans un cas statique.
 * Prévoir qualitativement l'effet d'une force résultante l'évolution d'un point matériel.

@@ -47,8 +47,7 @@ On va donc choisir un système de coordonnées cylindriques d'axe Oz colinéaire
 
 ### Force newtonienne: Trajectoire
 
-````{admonition} Fondamental : Trajectoire conique
-:class: attention
+````{important} __Fondamental : Trajectoire conique__
 
 Un point matériel M soumis à une force centrale newtonienne de type $\overrightarrow{F} = - \frac{K}{r^2} \overrightarrow{e_r}$ dans un référentiel galiléen possède une trajectoire conique dont l'équation, dans un repère cylindrique d'axe Oz colinéaire au moment cinétique et de centre O le centre de force est:
 
@@ -74,8 +73,7 @@ La preuve de cette propriété n'est théoriquement pas à connaître mais il es
 
 ### Forces newtoniennes: Trajectoire - Démonstration
 
-````{admonition} Fondamental : Démonstration
-:class: attention, dropdown
+````{important} __Fondamental : Démonstration, dropdown__
 
 Le système est conservatif, donc l'énergie mécanique se conserve, soit: $\frac{dE_m}{dt} = 0$. Nous allons introduire la coordonnées $u = \frac{1}{r}$ et éliminer le temps en utilisant la constante des aires $C = r^2 \dot \theta$.
 
@@ -106,8 +104,7 @@ r(\theta) &= \frac{\frac{mC^2}{K}}{1+ \frac{mC^2 A}{K} \cos (\theta - \theta_0)}
 
 ### Etude qualitatide du mouvement
 
-````{admonition} Fondamental : Energie potentielle effective.
-:class: attention
+````{important} __Fondamental : Energie potentielle effective.__
 
 On rappelle l'allure de l'énegie potentielle effective dans le cas attractif (premier) et répulsif (second). On rappelle que l'origine des potentiels a été choisi à l'infini.
 
@@ -143,8 +140,7 @@ Quoiqu'il arrive, le paramètre p sera pris de sorte que $p = \frac{mC^2}{\left\
 
 ````
 
-````{admonition} Fondamental : Caractéristiques des trajectoires. Cas elliptique.
-:class: attention
+````{important} __Fondamental : Caractéristiques des trajectoires. Cas elliptique.__
 
 On prend $\theta_0 = 0$.
 
@@ -157,8 +153,7 @@ On prend $\theta_0 = 0$.
 * Toutes les valeurs de $\theta$ sont possibles.
 ````
 
-````{admonition} Fondamental : Caractéristiques des trajectoires. Cas parabolique.
-:class: attention
+````{important} __Fondamental : Caractéristiques des trajectoires. Cas parabolique.__
 
 On prend $\theta_0 = 0$.
 
@@ -170,8 +165,7 @@ On prend $\theta_0 = 0$.
 * Toutes les valeurs de $\theta$ sont possibles sauf $\theta = \pi$
 ````
 
-````{admonition} Fondamental : Caractéristiques des trajectoires. Cas hyperbolique
-:class: attention
+````{important} __Fondamental : Caractéristiques des trajectoires. Cas hyperbolique__
 
 On prend $\theta_0 = 0$.
 

@@ -22,8 +22,7 @@ Nous verrons dans le cas où le système est un point matériel comment on peut 
 
 ## Action ponctuelle: Modélisation mathématique
 
-````{admonition} Fondamental : Modélisation d'une action ponctuelle
-:class: attention
+````{important} __Fondamental : Modélisation d'une action ponctuelle__
 
 Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$. On modélise mathématiquement cette action par deux caractéristiques:
 
@@ -117,8 +116,7 @@ Le système précédente est probablement une modélisation ponctuelle d'un syst
 
 ### Moment d'une action: définition
 
-````{admonition} Définition : Moment d'une action ponctuelle/d'une force par rapport à un point.
-:class: tip
+````{important} __Définition : Moment d'une action ponctuelle/d'une force par rapport à un point.__
 
 Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$ modélisée par une force $\overrightarrow{F}$ et un point d'application A.
 
@@ -133,8 +131,7 @@ Soit un point B de l'espace. On définit le moment $\overrightarrow{M_B}(\overri
 Par abus de langage (quasi systématique), on parle de moment d'une force et non de moment d'une action. Cela ne pose de problème pour des actions ponctuelles car __pour une action ponctuelle__, le moment se déduit de la force (cf. expression précédente). Il faudra néanmoins faire attention à cet abus de langage pour des actions globales (résultantes) car alors __le moment ne se déduit plus de la force__.
 
 
-````{admonition} Définition : Moment d'une action ponctuelle/force par rapport à un axe.
-:class: tip
+````{important} __Définition : Moment d'une action ponctuelle/force par rapport à un axe.__
 
 Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$ modélisée par une force $\overrightarrow{F}$ et un point d'application A.
 
@@ -396,8 +393,7 @@ Initialement, les champs électriques $\overrightarrow{E}$ et magnétiques $\ove
 On peut donc "oublier" les éléments qui causent l'existence des champs électromagnétiques en posant leur existence et s'intéresser uniquement à leur action sur des particules chargés. Quand on continue en physique, on peut observer que les champs électromagnétiques ne sont pas que des "intermédiaires de calcul" mais possède leur réalité propre et leurs caractéristiques propres qui permet de les étudier indépendamment du reste (cf. deuxième année). On va ici simplement s'intéresser à l'action ponctuelle d'un champ électromagnétique sur une particule chargée (donc ponctuelle).
 
 
-````{admonition} Définition : Force de Lorentz
-:class: tip
+````{important} __Définition : Force de Lorentz__
 
 Soit un point matériel M chargé de charge q et un champ électromagnétique donc les expressions vectorielles au point M sont $\overrightarrow{E}(M)$ et $\overrightarrow{B}(M)$. Alors le champ électromagnétique exerce une action dont la force, appelée force de Lorentz s'écrit:
 
@@ -422,8 +418,7 @@ Les forces dites newtoniennes sont des interactions dont la force décroît en $
 Il s'agit de deux des 4 interactions fondamentales (les deux autres, l'interaction forte et l'interaction faible n'ont pas d'effet significatifs dans le cadre de la mécanique classique, elles ont un rôle à l'échelle du noyau).
 
 
-````{admonition} Définition : Interactions gravitationnelles
-:class: tip
+````{important} __Définition : Interactions gravitationnelles__
 
 Soit deux points matériels $M_1$ et $M_2$ de masses respectives $m_1$ et $m_2$. Les deux masses sont en interaction dites gravitationnelles. L'action de $M_1$ sur $M_2$ est modélisée par une force dirigée de $M_2$ vers $M_1$ dont l'expression est:
 
@@ -443,8 +438,7 @@ On remarquera que l'interaction gavitationnelle est toujours attractive.
 L'action de $M_2$ sur $M_1$ est l'opposé (principe des actions réciproques).
 
 
-````{admonition} Définition : Champ de gravitation
-:class: tip
+````{important} __Définition : Champ de gravitation__
 
 Soit un point $M_1$ de masse $m_1$. On dit que le point $M_1$ créé dans tout point P de l'espace un __champ de gravitation__ $\overrightarrow{\mathfrak{G}_{M_1}}(P)$ dont l'expression est:
 
@@ -457,8 +451,7 @@ Le champ de gravitation permet de séparer la cause (présence d'une masse) de l
 
 ````
 
-````{admonition} Définition : Interactions coulombiennes (ou électrostatiques)
-:class: tip
+````{important} __Définition : Interactions coulombiennes (ou électrostatiques)__
 
 Soit deux points matériels $M_1$ et $M_2$ chargés de charges respectives $q_1$ et $q_2$. Les deux charges sont en interaction dites coulombiennes. L'action de $M_1$ sur $M_2$ est modélisée par une force portée par la droite $M_1 M_2$ dont l'expression est:
 
@@ -478,8 +471,7 @@ On remarquera que l'interaction coulombienne peut être attractive si les charge
 L'action de $M_2$ sur $M_1$ est l'opposé (principe des actions réciproques).
 
 
-````{admonition} Définition : Champ électrique
-:class: tip
+````{important} __Définition : Champ électrique__
 
 Soit un point $M_1$ de charge $q_1$. On dit que le point $M_1$ créé dans tout point P de l'espace un __champ électrique__ $\overrightarrow{E_{M_1}}(P)$ dont l'expression est:
 
@@ -510,8 +502,7 @@ Comme on peut le voir, l'interaction coulombienne et l'interaction gravitationne
 
 ### Pesanteur sur un point matériel
 
-````{admonition} Définition : Champ de pesanteur
-:class: tip
+````{important} __Définition : Champ de pesanteur__
 
 A la surface de la Terre, tout corps massique est attiré vers "le bas" par une action appelée poids. Pour un point matériel M de masse m, la force qui s'applique s'écrit $\overrightarrow{P} = m \overrightarrow{g}$ où $\overrightarrow{g}$ est le champ de pesanteur au point M. Il est dirigé vers "le bas" (en réalité, il permet de définir la verticale (principe du fil à plomb)).
 
@@ -526,8 +517,7 @@ En général, on considère le champ de pesanteur comme uniforme. En effet, si l
 
 ### Tension d'un fil
 
-````{admonition} Définition : Tension d'un fil ou d'une tige rigide.
-:class: tip
+````{important} __Définition : Tension d'un fil ou d'une tige rigide.__
 
 La tension d'un fil ou d'une tige rigide est l'action qu'exerce un fil/une tige sur un système accroché au fil/à la tige (c'est une action de contact). Dans le cas d'un fil/une tige fin(e) dont la torsion n'a pas d'influence (ou qui ne se tord pas), on peut assimiler cette action à une action ponctuelle.
 
@@ -535,8 +525,7 @@ La force exercée par le fil/la tige n'a pas d'expression connue a priori mais o
 
 ````
 
-````{admonition} Fondamental : Cas d'une fil/d'une tige parfaite
-:class: attention
+````{important} __Fondamental : Cas d'une fil/d'une tige parfaite__
 
 Un fil/une tige parfaite est un fil/tige sans masse. Dans ce cas la tension exercée en chaque point du fil/tige sur l'autre partie du fil est la même en tout point du fil/tige est égale à la tension exercée à chaque extrémité du fil/tige sur les systèmes accrochée. De plus la tension du fil/tige est alors tangente au fil/tige.
 ````
@@ -550,8 +539,7 @@ Pour les portions de fils aux extrémités, le même raisonnement conduit à dir
 
 ### Action d'un ressort: Force de rappel élastique
 
-````{admonition} Définition : Action d'un ressort
-:class: tip
+````{important} __Définition : Action d'un ressort__
 
 Soit un système accroché à un ressort. En général, on considère le point d'accroche comme ponctuel et la force exercée par le ressort à son extrémité sur le système comme tangente au ressort. Si le ressort est de masse négligeable (cas usuel), alors la force exercée par le ressort sur un système accroché à son extrémité s'écrit si sa longueur est l:
 

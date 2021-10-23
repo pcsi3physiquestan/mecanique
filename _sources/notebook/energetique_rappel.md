@@ -34,14 +34,12 @@ L'hypothèse d'un solide indéformable suppose notamment qu'il n'y a pas d'agita
 
 ## Indépendance de la variation d'énergie cinétique vis-à-vis du chemin parcouru.
 
-````{admonition} Fondamental : Indépendance de l'énergie cinétique vis-à-vis du chemin parcouru.
-:class: attention
+````{important} __Fondamental : Indépendance de l'énergie cinétique vis-à-vis du chemin parcouru.__
 
 Considérons un système mécanique évoluant d'un état A (vitesse et position donnée) à un état B (vitesse et position donnée). On peut définir l'énergie cinétique à chaque état A et B indépendamment des états précédents ou succédants aux états A et B et la __variation__ d'énergie cinétique de A à B ne dépend pas du chemin parcouru pour passer de l'état A à l'état B. On dit que l'énergie cinétique est une fonction d'état.
 ````
 
-````{admonition} Fondamental : Notation
-:class: attention
+````{important} __Fondamental : Notation__
 
 Les fonctions d'états sont des différentielles exactes d'un point de vue mathématique. Cela implique une notation particulière lorsqu'on travaille avec la __variation__ de l'énergie cinétique:
 

@@ -16,7 +16,7 @@ kernelspec:
 # Théorèmes fondamentaux de la mécanique classique
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Décrire le mouvement relatif de deux référentiels galiléens
 * Déterminer les équations du mouvement d'un point matériel ou du centre d'inertie d'un système fermé.
 * Mettre en équation le mouvement sans frottements d'un système dans un champ de pesanteur.

@@ -16,7 +16,7 @@ kernelspec:
 # Oscillateurs
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Mettre en évidence la similitude des comportements des oscillateurs mécanique et électronique
 * Analyser, sur des relevés expérimentaux, l'évolution de la forme des régimes transitoires en fonction des paramètres caractéristiques
 * Prévoir l'évolution du système à partir de considérations énergétiques

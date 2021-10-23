@@ -40,8 +40,7 @@ Par la suite, on s'intéressera souvent à un système mécanique donné (systè
 
 ## Actions: Types de description
 
-````{admonition} Définition : Action ponctuelle
-:class: tip
+````{important} __Définition : Action ponctuelle__
 
 Une action ponctuelle __d'un système $\Sigma_1$ sur un système $\Sigma_2$__ est une action agissant sur un point (matériel) du système $\Sigma_2$.
 
@@ -56,8 +55,7 @@ Une action ponctuelle peut décrire l'action sur un système qui est un point ma
 Cette dernière vision (qui ne sera pas développée de manière calculatoire) permet d'appréhender des actions plus complexes par le calcul différentiel (calcul intégral principalement).
 
 
-````{admonition} Définition : Action résultante (ou globale).
-:class: tip
+````{important} __Définition : Action résultante (ou globale).__
 
 Une action résultante sur un système $\Sigma_2$ est une action du milieu extérieur modélisable par le regroupement __arbitraire__ d'un ensemble d'actions ponctuelles sur le système $\Sigma_2$.
 

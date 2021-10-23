@@ -16,7 +16,7 @@ kernelspec:
 # Etude des pendules
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Etablir l'équation du mouvement du pendule simple
 * Etablir l'équation du mouvement du pendule pesant.
 * Justifier l'analogie avec l'oscillateur harmonique dans le cadre de l'approximation linéaire (pendule simple ou pesant)

@@ -19,8 +19,7 @@ kernelspec:
 
 ### Quantité de mouvement: définition
 
-````{admonition} Définition : Quantité de mouvement d'un système de points
-:class: tip
+````{important} __Définition : Quantité de mouvement d'un système de points__
 
 La quantité de mouvement dans un référentiel R d'un système de points matériels S est la somme des quantités de mouvements dans le même référentiel des points qui le composent.
 
@@ -36,8 +35,7 @@ Il s'agit d'une définition opératoire qui nous permettra de calculer les quant
 
 ### Quantité de mouvement et centre d'inertie
 
-````{admonition} Fondamental : Quantité de mouvement et centre d'inertie
-:class: attention
+````{important} __Fondamental : Quantité de mouvement et centre d'inertie__
 
 La quantité du mouvement dans un référentiel R d'un système S est égale à la quantité de mouvement qu'aurait un point matériel fictif situé au centre d'inertie G et dont la masse serait la masse totale du système.
 
@@ -73,15 +71,13 @@ Cette propriété, avec le théorème de la résultante cinétique que nous verr
 
 ## Moment cinétique d'un solide
 
-````{admonition} Définition : Moment cinétique par rapport à un point
-:class: tip
+````{important} __Définition : Moment cinétique par rapport à un point__
 
 Le moment cinétique $\overrightarrow{\sigma_{S/A}}$ d'un système S dans un référentiel R par rapport à un point A est la somme des moments cinétiques des différents points du système par rapport au même point A.
 
 ````
 
-````{admonition} Définition : Moment cinétique par rapport à un axe
-:class: tip
+````{important} __Définition : Moment cinétique par rapport à un axe__
 
 Le moment cinétique $\overrightarrow{\sigma_{S/\Delta}}$ d'un système S dans un référentiel R par rapport à un point $\Delta$ est la somme des moments cinétiques des différents points du système par rapport au même point $\Delta$.
 
@@ -99,8 +95,7 @@ On ne peut relier a priori le moment cinétique du solide à la vitesse du centr
 
 ## Energie cinétique d'un système de points matériels
 
-````{admonition} Définition : Energie cinétique d'un système de point matériel
-:class: tip
+````{important} __Définition : Energie cinétique d'un système de point matériel__
 
 L'énergie cinétique $E_{C/R}$ du système S dans le référentiel R est la somme des énergie cinétique de l'ensemble des points qui composent le système S.
 

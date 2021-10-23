@@ -50,8 +50,7 @@ Les actions de contact sont en général surfacique: on va sommer les actions po
 
 ## Modélisation des actions ponctuelles de contact
 
-````{admonition} Fondamental : Composante tangentielle et composante normale
-:class: attention
+````{important} __Fondamental : Composante tangentielle et composante normale__
 
 En un point de contact M entre le système et le solide/fluide (qu'on appellera $\Sigma_{ext}$), l'action ponctuelle (modélisée par la force $\overrightarrow{F}(M)$ peut-être décomposée en deux composantes:
 
@@ -65,8 +64,7 @@ En un point de contact M entre le système et le solide/fluide (qu'on appellera 
 ```
 ````
 
-````{admonition} Fondamental : Interprétation des composantes.
-:class: attention
+````{important} __Fondamental : Interprétation des composantes.__
 
 La __composante normale__ correspond à une "réaction de non interpénétration", le système extérieur tend à pousser le système au point M. Cela peut-être une tendance légère (cas d'un système extérieur déformable) ou une contrainte forte (le mouvement du système étudié dans la direction normale au point de contact est alors nul. Au jouant sur la géométrie du contact dans le second cas, on arrive à créer des __liaisons__ dont les mouvements possibles (__degré de liberté__) sont définies précisément (surface de contact cylindrique conduit à un pivot glissant, surface de contact plan sur plan conduit à...  un mouvement plan).
 
@@ -104,14 +102,12 @@ La force de frottements fluide va dépendre du comportement du fluide qui de la 
 On distingue deux types de régimes extrêmes: le régime laminaire (aux faibles vitesses) où l'écoulement du fluide épouse la forme de l'obstacle (ici le système mobile) et le régime turbulant (aux fortes vitesses) où l'écoulement du fluide possède un caractère tourbillonnaire (vortex). La transition du premier régime au second régime n'est pas brusque et des phénomènes très particuliers peuvent se produire pour des vitesses intermédiaires (ces cas ne seront pas étudiés en classe préparatoire).
 
 
-````{admonition} Fondamental : Force de frottements fluide - Cas laminaire
-:class: attention
+````{important} __Fondamental : Force de frottements fluide - Cas laminaire__
 
 Aux faibles vitesses, la force de frottements fluides est proportionnelle à la vitesse du fluide: $\overrightarrow{F} = - \lambda \overrightarrow{v_{systeme/fluide}}$. Cette expression est valable pour un système en translation. Dans le cas d'un système en rotation au tour d'un axe fixe, c'est le moment sur l'axe qui est opposé à la vitesse angulaire.
 ````
 
-````{admonition} Fondamental : Force de frottements fluide - Cas turbulent
-:class: attention
+````{important} __Fondamental : Force de frottements fluide - Cas turbulent__
 
 Aux fortes vitesses, la force de frottements fluides est proportionnelle au carré de la vitesse du fluide: $\overrightarrow{F} = -k \left \| v\right \| \overrightarrow{v}$. Cette expression est valable pour un système en translation. Le cas d'un système en rotation ne sera pas traité.
 ````
@@ -124,8 +120,7 @@ Aux fortes vitesses, la force de frottements fluides est proportionnelle au carr
 Il n'y a pas de modèle théorique complet permettant de déterminer les actions de contact solide. Il existe par contre une loi phénoménologique (déduite de l'expérience) qui permet de les modéliser. Plus précisément, on va, au niveau __des actions ponctuelles__, relier la composante normale et la composante tangentielle.
 
 
-````{admonition} Fondamental : Lois phénoménologiques de Coulomb
-:class: attention
+````{important} __Fondamental : Lois phénoménologiques de Coulomb__
 
 En un point de contact solide-solide, la force de contact $\overrightarrow{R}$ se décompose en deux composantes, l'une tangentielle $\overrightarrow{R_T}$ et l'autre normale $\overrightarrow{R_N}$ ($\overrightarrow{R} = \overrightarrow{R_N} + \overrightarrow{R_T}$). On déduit expérimentalement les comportements suivants:
 
@@ -177,8 +172,7 @@ En général, on travaille avec des géométries simples et usuelles pour les su
 
 ### Liaison pivot
 
-````{admonition} Définition : Liaison pivot
-:class: tip
+````{important} __Définition : Liaison pivot__
 
 La liaison pivot est une liaison où le seul degré de liberté est la rotation entre les deux solides. Elles est réalisée par une surface de contact cylindrique (qui permet une rotation suivant UN axe) fermé latéralement (pour empêcher la translation suivant l'axe de rotation).
 
@@ -186,8 +180,7 @@ En physique, on travaille en générale avec un solide mobile (le rotor) en liai
 
 ````
 
-````{admonition} Fondamental : Caractéristiques d'une liaison pivot
-:class: attention
+````{important} __Fondamental : Caractéristiques d'une liaison pivot__
 
 On rappelle que les caractéristiques modélisant une action globale sont la force et le moment résultant exprimé en un point. En général, pour une liaison pivot, on essaie d'exprimer le moment de la liaison sur un point de l'axe de rotation de la liaison.
 
@@ -198,8 +191,7 @@ A priori, toutes les composantes de la force et du moment résultant __peuvent �
 * la composante du moment résultant sur l'axe de rotation. Elle agit sur le (seul) mouvement du rotor à savoir le mouvement de rotation suivant l'axe. Elle peut a priori avoir un effet moteur ou résistant suivant l'expression de ce moment.
 ````
 
-````{admonition} Fondamental : Liaison pivot parfaite
-:class: attention
+````{important} __Fondamental : Liaison pivot parfaite__
 
 Une liaison pivot parfaite est une liaison pivot sans frottements, le moment résultant de la liaison __sur l'axe de rotation__ est nulle.
 ````
@@ -237,8 +229,7 @@ Un fil de torsion est un fil dont la section n'est pas négligeable et qui peut 
 ```
 
 
-````{admonition} Fondamental : Action d'un fil de torsion
-:class: attention
+````{important} __Fondamental : Action d'un fil de torsion__
 
 Soit un fil pouvant se tordre suivant son axe. On suppose qu'il ne flambe pas. Pour un angle de torsion $\theta - \theta_0$ du fil, ce dernier exerce à ses extrémités une action dont le moment suivant l'axe de torsion est:
 

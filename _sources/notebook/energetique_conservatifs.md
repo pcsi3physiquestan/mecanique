@@ -16,7 +16,7 @@ kernelspec:
 # Systèmes conservatifs
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 Toutes ces compétences concernent les systèmes conservatifs.
 
 * Déduire d'un graphe d'énergie potentielle le comportement qualitatif: trajectoire bornée ou non, mouvement périodique, positions de vitesse nulle.

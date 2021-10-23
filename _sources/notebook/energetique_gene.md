@@ -16,7 +16,7 @@ kernelspec:
 
 # Théorèmes énergétiques
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Calculer la puissance et le travail d'une force
 * Reconnaître le caractère moteur ou résistant d'une force.
 * Savoir que la puissance dépend du référentiel

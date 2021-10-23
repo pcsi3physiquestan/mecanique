@@ -16,7 +16,7 @@ kernelspec:
 # Cinétique du point
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Connaître les caractéristiques cinétiques d'un point matériel et pouvoir les calculer dans différentes systèmes de coordonnées pour des mouvements usuels.
 * Relier la direction et le sens du vecteur moment cinétique aux caractéristiques du mouvement.
 ````

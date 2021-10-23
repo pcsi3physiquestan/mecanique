@@ -19,8 +19,7 @@ kernelspec:
 
 _On rappelle que dans une translation, tous les points du système ont la même vitesse dans un référentiel donné. Cette vitesse correspond donc aussi à la vitesse du centre d'inertie._
 
-````{admonition} Fondamental : Eléments cinétiques
-:class: attention
+````{important} __Fondamental : Eléments cinétiques__
 
 L'énergie cinétique du système S dans un référentiel peut alors s'écrire:
 
@@ -58,8 +57,7 @@ Ces expressions ne sont valables que pour un mouvement de translation.
 Nous allons d'abord introduire une grandeur très important pour décrire la rotation d'un solide. Nous verrons par la suite qu'elle intervient dans l'expression de l'énergie cinétique et du moment cinétique.
 
 
-````{admonition} Définition : Moment d'inertie
-:class: tip
+````{important} __Définition : Moment d'inertie__
 
 Lorsqu'un solide S est en rotation autour d'un axe fixe, on définit son moment d'inertie $J_{S/\Delta}$ par rapport à l'axe  par la grandeur:
 
@@ -79,8 +77,7 @@ Il est important de pouvoir analyser qualitativement le moment d'inertie d'un so
 
 _L'expression de la quantité de mouvement peut toujours s'obtenir par sommation et/ou en utilisant la position du centre d'inertie. Attention, la quantité de mouvement n'est pas nécessairement nulle (cas d'un centre d'inertie qui n'est pas sur l'axe de rotation)._
 
-````{admonition} Fondamental : Moment cinétique sur l'axe de rotation
-:class: attention
+````{important} __Fondamental : Moment cinétique sur l'axe de rotation__
 
 Pour un solide S en rotation autour d'un axe fixe  dans R, le moment cinétique $\sigma_{S/\Delta}$ du solide S dans le référentiel R s'exprime comme le produit du moment d'inertie $J_{S/\Delta}$ du même système multiplié par la vitesse de rotation $\omega$ __comptée algébriquement en cohérence avec l'orientation de l'axe__ (règle du tire-bouchon par exemple):
 
@@ -99,8 +96,7 @@ __Démonstration__
 &= \iiint_{P \in S} \rho(P) r^2(P) \omega d \tau(P)\\
 &= J_{S/\Delta} \omega
 \end{align*}
-````{admonition} Fondamental : Energie cinétique d'un solide en rotation autour d'un axe fixe.
-:class: attention
+````{important} __Fondamental : Energie cinétique d'un solide en rotation autour d'un axe fixe.__
 
 Dans le cas d'une rotation autour d'un axe fixe $\Delta$, l'énergie cinétique du solide peut s'écrire sous la forme:
 

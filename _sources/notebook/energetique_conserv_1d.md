@@ -22,8 +22,7 @@ Par contre, pour un système à 1 degré de liberté, les représentations sont 
 
 ## Système à 1 degré de liberté et profil
 
-````{admonition} Définition : Système à 1 degré de liberté
-:class: tip
+````{important} __Définition : Système à 1 degré de liberté__
 
 Un système à degré de liberté est un système où toutes les grandeurs peuvent être décrites comme des fonctions d'une seule coordonnée de l'espace ($x, \theta...$). Il s'agit en général dun mouvement rectiligne ou d'un mouvement de rotation.
 
@@ -52,8 +51,7 @@ Si les propriétés établies par la suite sont très générales et s'appliquen
 
 ````
 
-````{admonition} Fondamental : Position et vitesse.
-:class: attention
+````{important} __Fondamental : Position et vitesse.__
 
 On remarquera que l'énergie cinétique est aussi une fonction de la position __dans le cas d'un système conservatif__.
 
@@ -87,8 +85,7 @@ On a aussi donné la direction de la force qui, on le rappelle, peut être déte
 
 ### Zonnes accessibles et barrière de potentiel
 
-````{admonition} Fondamental : Zones accessibles
-:class: attention
+````{important} __Fondamental : Zones accessibles__
 
 On va s'intéresse ici au cas des systèmes conservatifs où l'énergie mécanique est une constante.
 
@@ -103,16 +100,14 @@ Zones accessibles et inaccessibles
 Dans l'exemple ci-dessus, si le système possède une énergie mécanique égale à $E_{m4}$, toutes les positions de $x_D$ à $x_E$ et les positions de $x_F$ à l'infini sont accessibles et les autres sont inaccessibles.
 ````
 
-````{admonition} Fondamental : Barrière de potentiel
-:class: attention
+````{important} __Fondamental : Barrière de potentiel__
 
 Remarquons que le mobile ne peut passer de la zone DE à la après F. En effet, pour passer de la première zone à la seconde, il faudrait passer par des points entre E et F qui sont inaccessibles par leur trop forte énergie potentielle. On dit qu'il y a une __barrière d'énergie potentielle__.
 
 Suivant ses conditions initiales, le système sera soit "bloqué" entre D et E, soit entre F et l'infini.
 ````
 
-````{admonition} Fondamental : Franchissement d'une barrière de potentiel
-:class: attention
+````{important} __Fondamental : Franchissement d'une barrière de potentiel__
 
 Sans apport d'énergie extérieure supplémentaire, le système ne peut passer de l'état "entre DE" à l'état "supérieur à F".
 
@@ -147,8 +142,7 @@ Attention quand même car ces phénomènes sont quantiques. En mécanique quanti
 
 ### Etats liés et de diffusion
 
-````{admonition} Définition : Etats liés et de diffusion
-:class: tip
+````{important} __Définition : Etats liés et de diffusion__
 
 On remarque sur les états précédents deux types d'états très particuliers: des états où le système est __confiné__ dans une portion d'espace (état "entre DE"). On parle d'état __lié__.
 
@@ -165,8 +159,7 @@ On remarquera sur l'exemple précédent qu'il ne s'agit pas d'un système à 1 d
 
 ````
 
-````{admonition} Fondamental : Etats possibles
-:class: attention
+````{important} __Fondamental : Etats possibles__
 
 ```{figure} ./images/meca_ep_1d_general.jpg
 :name: fig_244
@@ -188,8 +181,7 @@ Le système ne peut pas passer d'un état à l'autre car il mettra un temps infi
 
 ### Propriétés états liés.
 
-````{admonition} Fondamental : Propriétés générales
-:class: attention
+````{important} __Fondamental : Propriétés générales__
 
 * Les points extrêmes atteints par un état liés sont les points où $E_p = E_m$.
 * Un état lié est nécessairement périodique
@@ -213,8 +205,7 @@ De même, on peut remarquer qu'à chaque position x, la vitesse sera la même, q
 
 ### Condition d'équilibre
 
-````{admonition} Fondamental : Condition d'équilibre
-:class: attention
+````{important} __Fondamental : Condition d'équilibre__
 
 Les positions d'équilibre d'un système conservatif sont nécessairement des positions où l'énergie potentielle possède un extremum (ou plus généralement un point d'annulation de la dérivée).
 ````
@@ -249,8 +240,7 @@ Si l'on travaille dans un autre système de coordonnées (cylindriques par exemp
 
 ### Stabilité des positions des d'équilibre
 
-````{admonition} Définition : Stabilité
-:class: tip
+````{important} __Définition : Stabilité__
 
 Une position d'équilibre est dite stable si, en écartant légèrement le mobile de cette position d'équilibre, il reviendra de lui-même vers la position d'équilibre.
 
@@ -264,16 +254,14 @@ Il peut très bien y avoir plusieurs positions d'équilibre stable. On parle alo
 
 ````
 
-````{admonition} Fondamental : Preuve d'une stabilité
-:class: attention
+````{important} __Fondamental : Preuve d'une stabilité__
 
 On rappelle qu'il a été étudié précédemment deux méthodes possibles de stabilité d'une position d'équilibre: on réalise l'écart cité précédemment et on étudie le signe de l'accélération ou on réalise l'écart cité précédemment et on linéarise l'équation différentielle du mouvement pour en étudier la stabilité.
 
 Nous allons compléter ces deux méthodes par une troisième portant sur l'énergie potentielle.
 ````
 
-````{admonition} Fondamental : Energie potentielle et stabilité
-:class: attention
+````{important} __Fondamental : Energie potentielle et stabilité__
 
 Si en une position d'équilibre, la dérivée seconde est strictement positive, alors c'est une position d'équilibre stable.
 
@@ -299,8 +287,7 @@ La dernière équation est stable si la dérivée seconde est positive et instab
 
 ### Petits mouvements autour d'une position d'équilibre stable
 
-````{admonition} Fondamental : Petits mouvements autour d'une position d'équilibre stable
-:class: attention
+````{important} __Fondamental : Petits mouvements autour d'une position d'équilibre stable__
 
 Autour d'une position d'équilibre stable, le système va rester confiné et se comporte comme un oscillateur harmonique de pulsation propre $\sqrt{\frac{\frac{\rm{d^2}E_p}{\rm{dt^2}}(x_{eq})}{m}}$.
 

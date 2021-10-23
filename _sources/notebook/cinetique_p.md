@@ -15,8 +15,7 @@ kernelspec:
 ---
 # Quantité de mouvement
 
-````{admonition} Définition : Quantité de mouvement d'un point matériel
-:class: tip
+````{important} __Définition : Quantité de mouvement d'un point matériel__
 
 Soit M un point matériel de masse inertielle m. On définit la quantité de mouvement d'un point M dans le référentiel R par la grandeur:
 
@@ -38,8 +37,7 @@ Lorsque nous travaillerons à des systèmes de points matériels, nous verrons q
 
 ## Moment cinétique: Définition
 
-````{admonition} Définition : Moment cinétique par rapport à un point.
-:class: tip
+````{important} __Définition : Moment cinétique par rapport à un point.__
 
 Soit un point M de masse m, de vitesse $\overrightarrow{v_{M/R}}$, de quantité de mouvement $\overrightarrow{p_{M/R}}$ rapport au référentiel R et A un point. Le moment cinétique d'un point M par rapport à un point A dans le référentiel R est défini par le vecteur:
 
@@ -57,8 +55,7 @@ On peut calculerun moment cinétique par rapport à un point fixe ou non fixe da
 
 ````
 
-````{admonition} Définition : Moment cinétique par rapport à un axe.
-:class: tip
+````{important} __Définition : Moment cinétique par rapport à un axe.__
 
 Soit un axe $\Delta$ orienté. On note B un point de cet axe et $\overrightarrow{u_{\Delta}}$ un vecteur unitaire directeur de l'axe. On définit un moment cinétique rapport à l'axe $\Delta$:
 
@@ -192,8 +189,7 @@ Quantité de mouvement:
 
 # Energie cinétique
 
-````{admonition} Définition : Energie cinétique d'un point matériel
-:class: tip
+````{important} __Définition : Energie cinétique d'un point matériel__
 
 On appelle énergie cinétique d'un point matériel M de masse m dans le référentiel R, la quantité scalaire:
 

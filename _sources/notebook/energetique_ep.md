@@ -20,15 +20,13 @@ Nous avons vu précédemment que le travail d'une action dépendant a priori du 
 
 ## Forces/actions conservatives: définition
 
-````{admonition} Définition : Actions ponctuelle conservatives
-:class: tip
+````{important} __Définition : Actions ponctuelle conservatives__
 
 Il existe des actions dont le travail sur un trajet entre deux points A et B __ne dépend que des positions des points A et B__ mais pas du chemin parcouru entre les deux.
 
 ````
 
-````{admonition} Définition : Energie potentielle
-:class: tip
+````{important} __Définition : Energie potentielle__
 
 Puisque le travail de l'action du point A au point B ne dépend pas du chemin parcouru mais uniquement des positions A et B, il existe une fonction __de la seule position__ notée $E_p$ dont la variation $E_p(B) - E_p(A)$ permet de déterminer le travail de l'action de A à B. On appelle cette fonction __énergie potentielle__ et elle est définit de telle sorte que le travail de l'action du point A au point B vaut:
 
@@ -39,8 +37,7 @@ Remarque: On dit que la force dérive d'une énergie potentielle.
 
 ````
 
-````{admonition} Fondamental : Energie potentielle et constante
-:class: attention
+````{important} __Fondamental : Energie potentielle et constante__
 
 L'énergie potentielle de pesanteur est __définie à une constante près__. Le point où l'énergie potentielle est nulle peut-être choisi arbitrairement, ce qui signifie qu'une valeur d'énergie potentielle __n'a pas de sens__. Ce n'est qu'une __variation__ d'énergie potentielle qui possède un sens.
 ````
@@ -59,8 +56,7 @@ Il faut bien faire attention à la présence du signe - entre le travail et la v
 
 ````
 
-````{admonition} Fondamental : Variation infinitésimale de l'énergie potentielle.
-:class: attention
+````{important} __Fondamental : Variation infinitésimale de l'énergie potentielle.__
 
 L'énergie potentielle est alors une grandeur d'état puisqu'elle s'exprime en fonction du seul état du système à l'instant considéré. Lors d'une transformation, on va donc calculer une __variation__ de l'énergie potentielle. Si la variation est finie, on la notera $\Delta E_p$, si elle est infinitésimale, on la notera $dE_p$. Ces notations sont à mettre en rapport avec celle pour l'énergie cinétique: ce sera une généralité pour les grandeurs dites "d'état", c'est-à-dire qui ne dépendent que de l'état du système à un instant donné et pas de la façon avec laquelle il est arrivé dans cet état.
 ````
@@ -76,8 +72,7 @@ dE_p &= - \delta W(\overrightarrow{F}) \\
 &= - \overrightarrow{F} \cdot \overrightarrow{dOM}\\
 &= - P_{/\mathfrak{R}}(\overrightarrow{F}) dt
 \end{align*}
-````{admonition} Fondamental : Relation force et énergie potentielle
-:class: attention
+````{important} __Fondamental : Relation force et énergie potentielle__
 
 L'expression précédennte démontre immédiatement la relation suivante:
 
@@ -108,8 +103,7 @@ On utilisera ici la première méthode puisque le but est de __prouver__ que les
 
 ### Energie potentielle de pesanteur
 
-````{admonition} Fondamental : Cas d'un point matériel
-:class: attention
+````{important} __Fondamental : Cas d'un point matériel__
 
 L'action du poids sur un point matériel M dérive d'une énergie potentielle dont l'expression est:
 
@@ -134,8 +128,7 @@ Dans l'expression précédente, l'axe Oz est orienté __vers le haut__. Si l'axe
 
 ````
 
-````{admonition} Fondamental : Cas d'une action sur un solide
-:class: attention
+````{important} __Fondamental : Cas d'une action sur un solide__
 
 L'énergie potentielle de l'action de la pesanteur uniforme sur un solide peut s'écrire $E_p = M g h_G + K$ où M est la masse totale du solide et $h_G$ l'altitude du centre d'inertie.
 
@@ -154,8 +147,7 @@ __Démonstration__
 La force magnétique est par définition perpendiculaire à la vitesse, donc la puissance transmise est nulle.
 
 
-````{admonition} Fondamental : Partie électrique
-:class: attention
+````{important} __Fondamental : Partie électrique__
 
 L'action sur un point matériel du champ électrique indépendant du temps $\overrightarrow{E}$ dérive d'une énergie potentielle appelée énergie potentielle électrostatique. Elle s'écrit sous la forme $E_p(M) = qV(M)$ où q est la charge du point matériel et V(M) est le potentiel électrique dépendant du seul champ électrique (et pas du point matériel sur lequel il agit). On a la relation $\overrightarrow{E} = - \overrightarrow{grad} V$.
 
@@ -164,8 +156,7 @@ Remarque: Le potentiel électrique est celui introduit en électrocinétique. Ce
 
 ### Forces newtoniennes
 
-````{admonition} Fondamental : Potentiel newtonien
-:class: attention
+````{important} __Fondamental : Potentiel newtonien__
 
 Soit un point O de masse $m_O$ et/ou de charge$q_O$ agissant sur un point M de masse $m$ et/ou de charge $q$. Les forces gravitationnelles et coulombiennes dont les expressions sont de la forme $\overrightarrow{F} = - \frac{K}{r^2} \overrightarrow{e_r}$dans un système de coordonnées de sphérique centrée au point O dérivent d'une énergie potentielle appelées respectivement énergie potentielle de gravitation et énergie potentielle électrostatique et dont l'expression est: $E_p = -\frac{K}{r} + Cste$.
 ````
@@ -196,8 +187,7 @@ Ainsi, si $K > 0$, l'énergie potentielle est croissant en r, donc la force est 
 
 ### Actions de rappel
 
-````{admonition} Fondamental : Action de rappel d'un ressort
-:class: attention
+````{important} __Fondamental : Action de rappel d'un ressort__
 
 L'action de rappel d'un ressort dérive d'une énergie potentielle dont l'expression est:
 
@@ -218,8 +208,7 @@ On travaille dans un système de coordonées cartésiennes d'axe Ox le long du r
 On retrouve l'expression en remplaçant x par l.
 
 
-````{admonition} Fondamental : Energie potentielle de torsion
-:class: attention
+````{important} __Fondamental : Energie potentielle de torsion__
 
 L'action de rappel d'un couple de torsion dérive d'une énergie potentielle dont l'expression est:
 

@@ -16,7 +16,7 @@ kernelspec:
 # Modélisation des actions globales
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Modéliser une action globale pour une force et un moment résultant.
 * Prévoir qualitativement ou quantitativement les positions de moment nul pour des forces usuelles (pesanteur).
 * Exploiter les lois de Coulomb dans les trois situations: équilibre, mise en mouvement, freinage.

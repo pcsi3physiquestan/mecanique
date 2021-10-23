@@ -16,7 +16,7 @@ kernelspec:
 # Potentiels newtoniens
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Evaluer les ordres de grandeurs des forces électriques ou magnétiques et les comparer à ceux des forces gravitationnelles.
 * Connaître les types de trajectoire possibles pour une force newtonienne.
 * Relier la trajectoire possible au signe de l'énergie mécanique et à l'excentricité.

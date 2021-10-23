@@ -17,8 +17,7 @@ kernelspec:
 
 ## Vecteur vitesse: Définition
 
-````{admonition} Définition : Vecteur vitesse
-:class: tip
+````{important} __Définition : Vecteur vitesse__
 
 Soit O un point fixe du référentiel R et M un point mobile. La vitesse du point M dans le référentiel R est définit comme la dérivée temporelle du vecteur position dans le référentiel R.
 
@@ -35,8 +34,7 @@ Il est important de préciser le référentiel d'étude: il définit les vecteur
 
 ## Expression du vecteur vitesse
 
-````{admonition} Fondamental : Expressions du vecteur vitesse
-:class: attention
+````{important} __Fondamental : Expressions du vecteur vitesse__
 
 Le vecteur vitesse s'exprime.
 

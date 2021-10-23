@@ -641,8 +641,9 @@
 <div class="section" id="translation">
 <h2>Translation<a class="headerlink" href="#translation" title="Permalink to this headline">¶</a></h2>
 <p><em>On rappelle que dans une translation, tous les points du système ont la même vitesse dans un référentiel donné. Cette vitesse correspond donc aussi à la vitesse du centre d’inertie.</em></p>
-<div class="attention admonition">
-<p class="admonition-title">Fondamental : Eléments cinétiques</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Eléments cinétiques</strong></p>
 <p>L’énergie cinétique du système S dans un référentiel peut alors s’écrire:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -669,15 +670,16 @@ E_{c/R} &amp;= \sum\limits_{i=1}^{n} \frac{1}{2} m_i v_i^2\\
 <h3>Moment d’inertie<a class="headerlink" href="#moment-d-inertie" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p><em>On rappelle que le champ de vitesse d’un solide en rotation autour d’un axe fixe s’exprime:</em></p>
-<div class="amsmath math notranslate nohighlight" id="equation-8db667b0-57d5-4fb1-ac77-fe27b65c756a">
-<span class="eqno">(26)<a class="headerlink" href="#equation-8db667b0-57d5-4fb1-ac77-fe27b65c756a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-70bb1b8d-4c72-4b5e-b74a-5b90cd73984f">
+<span class="eqno">(26)<a class="headerlink" href="#equation-70bb1b8d-4c72-4b5e-b74a-5b90cd73984f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{v_{P/R}} = \overrightarrow{\Omega} \wedge \overrightarrow{AP}
 \end{equation}\]</div>
 <p>avec A un point de l’axe de rotation.</p>
 </div></blockquote>
 <p>Nous allons d’abord introduire une grandeur très important pour décrire la rotation d’un solide. Nous verrons par la suite qu’elle intervient dans l’expression de l’énergie cinétique et du moment cinétique.</p>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Moment d’inertie</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Moment d’inertie</strong></p>
 <p>Lorsqu’un solide S est en rotation autour d’un axe fixe, on définit son moment d’inertie <span class="math notranslate nohighlight">\(J_{S/\Delta}\)</span> par rapport à l’axe  par la grandeur:</p>
 <ul class="simple">
 <li><p>Cas discret: <span class="math notranslate nohighlight">\(J_{S/\Delta} = \sum\limits_{i=1}^{n} m_i d_i^2\)</span> où <span class="math notranslate nohighlight">\(d_i\)</span> est la distance entre le point <span class="math notranslate nohighlight">\(P_i\)</span> et l’axe.</p></li>
@@ -691,11 +693,12 @@ On remarquera que cette grandeur dépend à la fois de la masse (inertie) et de 
 <div class="section" id="solide-en-rotation-autour-d-un-axe-fixe-grandeurs-cinetiques">
 <h3>Solide en rotation autour d’un axe fixe: grandeurs cinétiques<a class="headerlink" href="#solide-en-rotation-autour-d-un-axe-fixe-grandeurs-cinetiques" title="Permalink to this headline">¶</a></h3>
 <p><em>L’expression de la quantité de mouvement peut toujours s’obtenir par sommation et/ou en utilisant la position du centre d’inertie. Attention, la quantité de mouvement n’est pas nécessairement nulle (cas d’un centre d’inertie qui n’est pas sur l’axe de rotation).</em></p>
-<div class="attention admonition">
-<p class="admonition-title">Fondamental : Moment cinétique sur l’axe de rotation</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Moment cinétique sur l’axe de rotation</strong></p>
 <p>Pour un solide S en rotation autour d’un axe fixe  dans R, le moment cinétique <span class="math notranslate nohighlight">\(\sigma_{S/\Delta}\)</span> du solide S dans le référentiel R s’exprime comme le produit du moment d’inertie <span class="math notranslate nohighlight">\(J_{S/\Delta}\)</span> du même système multiplié par la vitesse de rotation <span class="math notranslate nohighlight">\(\omega\)</span> <strong>comptée algébriquement en cohérence avec l’orientation de l’axe</strong> (règle du tire-bouchon par exemple):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-21cca545-2905-451e-bcab-7f09d9d7b80f">
-<span class="eqno">(27)<a class="headerlink" href="#equation-21cca545-2905-451e-bcab-7f09d9d7b80f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-58cfda3d-2e58-4dd3-b9d1-306b96e4b9b1">
+<span class="eqno">(27)<a class="headerlink" href="#equation-58cfda3d-2e58-4dd3-b9d1-306b96e4b9b1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \sigma_{S/\Delta} = J_{S/\Delta} \omega
 \end{equation}\]</div>
 </div>
@@ -709,11 +712,12 @@ On remarquera que cette grandeur dépend à la fois de la masse (inertie) et de 
 &amp;= \iiint_{P \in S} \rho(P) r^2(P) \omega d \tau(P)\\
 &amp;= J_{S/\Delta} \omega
 \end{align*}\]</div>
-<div class="attention admonition">
-<p class="admonition-title">Fondamental : Energie cinétique d’un solide en rotation autour d’un axe fixe.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Energie cinétique d’un solide en rotation autour d’un axe fixe.</strong></p>
 <p>Dans le cas d’une rotation autour d’un axe fixe <span class="math notranslate nohighlight">\(\Delta\)</span>, l’énergie cinétique du solide peut s’écrire sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0e9cf2d0-3845-4412-a543-9bda21bf5f37">
-<span class="eqno">(28)<a class="headerlink" href="#equation-0e9cf2d0-3845-4412-a543-9bda21bf5f37" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8110f66f-1264-4254-88d5-e7790941fbd4">
+<span class="eqno">(28)<a class="headerlink" href="#equation-8110f66f-1264-4254-88d5-e7790941fbd4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_c = \frac{1}{2} J_{S/\Delta} \omega^2
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(J_{S/\Delta}\)</span> est le moment cinétique de S par rapport à l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> et <span class="math notranslate nohighlight">\(\omega\)</span> la vitesse angulaire de rotation du solide sur le même axe.</p>

@@ -16,7 +16,7 @@ kernelspec:
 # Mouvement à force centrales : Généralités
 
 ````{admonition} Objectifs
-:class: hint
+:class: tip
 * Déduire du théorème du moment cinétique la conservation du moment cinétique
 * Connaître les conséquences de la conservation du moment cinétique: mouvement plan et loi des aires
 * Exprimer la conservation de l'énergie mécanique et construire une énergie potentielle effective.
@@ -45,8 +45,7 @@ Les intégrales premières du mouvement sont extrêmement importantes car elles 
 
 ## Mouvement à force centrale: Définition
 
-````{admonition} Définition : Mouvement à force centrale: Définition
-:class: tip
+````{important} __Définition : Mouvement à force centrale: Définition__
 
 Un mouvement à force centrale est un mouvement dont la résultante des forces est toujours dirigée vers un même point O.
 
@@ -67,8 +66,7 @@ La symétrie du problème pousse à prendre un repère centré au point O. On po
 
 ### Conservation du moment cinétique
 
-````{admonition} Fondamental : Conservation du moment cinétique
-:class: attention
+````{important} __Fondamental : Conservation du moment cinétique__
 
 Dans un mouvement à force centrale dont le centre de force est le point O, alors le moment cinétique au point O est une intégrale première du mouvement.
 
@@ -84,8 +82,7 @@ Par définition, le moment cinétique dépend de la position et de la vitesse. C
 
 ### Planéité du mouvement
 
-````{admonition} Fondamental : Planéité du mouvement
-:class: attention
+````{important} __Fondamental : Planéité du mouvement__
 
 Un mouvement à force centrale est un mouvement plan: la trajectoire du mobile est contenu dans le plan passante par le centre de force O et perpendiculaire au moment cinétique.
 ````
@@ -95,8 +92,7 @@ __Démonstration__
 Nous avons démontré que le moment cinétique était un vecteur constant. Or par définition du moment cinétique, le vecteur position pris au point O est perpendiculaire au moment cinétique. Il vient que le vecteur position est à tout instant perpendiculaire au même vecteur: il est contenu dans le plan passant par O et perpendiculaire au moment cinétique.
 
 
-````{admonition} Fondamental : Paramétrage
-:class: attention
+````{important} __Fondamental : Paramétrage__
 
 La planéité du mouvement et le caractère centrale de la force explique le choix du paramétrage. Par la suite, on va travailler dans un repère cylindrique centré au point O et d'axe Oz suivant le moment cinétique. On notera le moment cinétique au point O: $\overrightarrow{L_O} = L_O \overrightarrow{e_z}$.
 
@@ -112,8 +108,7 @@ On remarquera que le moment cinétique est une donnée constante qui peut être 
 
 ### Loi des aires
 
-````{admonition} Fondamental : Loi des aires
-:class: attention
+````{important} __Fondamental : Loi des aires__
 
 Dans un mouvement à force centrale, la vitesse aréolaire, c'est-à-dire l'aire parcourue par le vecteur position par unité de temps est constante.
 ````
@@ -131,8 +126,7 @@ d\mathfrak{A} &= \frac{1}{2} \left\vert \overrightarrow{OM}\wedge\overrightarrow
 Le moment cinétique étant constant, il vient que la vitesse aréolaire est constante. La loi des aires est bien vérifiée.
 
 
-````{admonition} Définition : Constante des aires
-:class: tip
+````{important} __Définition : Constante des aires__
 
 On définit la constante des aires comme la grandeur $C = r^2 \dot\theta$. Dans un mouvement à force centrale, il s'agit évidemment d'une constante et la vitesse aréolaire s'écrit $\frac{\rm{d}\mathfrak{A}}{\rm{dt}} = \frac{1}{2}C$.
 
@@ -142,8 +136,7 @@ On définit la constante des aires comme la grandeur $C = r^2 \dot\theta$. Dans 
 
 ### Cas des mouvements conservatifs: généralités
 
-````{admonition} Fondamental : Force centrale conservatives
-:class: attention
+````{important} __Fondamental : Force centrale conservatives__
 
 Une force centrale conservative ne dépend que de la coordonnées radiale. On peut donc écrire $\overrightarrow{F} = F(r) \overrightarrow{e_r}$ et l'énergie potentielle associée $E_p(r)$ est telle que $F(r) = - \frac{\rm{d}E_p}{\rm{dr}}(t)$.
 ````
@@ -186,8 +179,7 @@ E_m &= E_{c,r} + E_{p,eff}(r)\\
 L'intérêt de pouvoir utiliser la positivité de l'énergie cinétique radiale pour obtenir des informations. Comme nous allons le voir, nous obtiendrons plus d'informations qu'avec la seule positivité de l'énergie cinétique complète.
 
 
-````{admonition} Fondamental : Expression de l'énergie potentielle effective.
-:class: attention
+````{important} __Fondamental : Expression de l'énergie potentielle effective.__
 
 Dans le cadre d'un mouvement à force centrale, on peut réécrire l'énergie mécanique sous la forme:
 
@@ -252,8 +244,7 @@ Cet effet centrifuge explique la difficulté pour atteindre le centre de force. 
 On rappelle que l'énergie cinétique radiale est nécessairement positive ou nulle. Cela permet de déterminer des zones accessibles. Nous allons préciser ici ce principe en remarquant que les zones accessibles sont un peu particulières. Ici le système est à deux degrés de liberté: sa position radiale et sa position angulaire.
 \end{rappel}
 
-````{admonition} Fondamental : Zones accessibles
-:class: attention
+````{important} __Fondamental : Zones accessibles__
 
 Les zones où $E_{p,eff}(r) > E_m$ sont inaccessibles. Cela correspond à des __rayons__ inaccessibles soit à des __zones limitées par des cercles.__. Les zones accessibles et inaccessibles sont dont définies comme des zones comprises entre des cercles de centre O où $E_ {p,eff}(r) = E_m$.
 
@@ -281,8 +272,7 @@ Nous verrons même des exemples où la vitesse sera maximale pour l'un des deux 
 
 #### Caractéristiques différentes
 
-````{admonition} Fondamental : Minimum d'énergie potentielle effective
-:class: attention
+````{important} __Fondamental : Minimum d'énergie potentielle effective__
 
 __Le minimum d'énergie potentielle effective ne correspond pas à une position d'équilibre possible du système.__ On rappelle que le moment cinétique est non nul, donc il y a toujours le mouvement de rotation.
 
@@ -291,8 +281,7 @@ __Au minimum d'énergie potentielle effective, la vitesse n'est pas non plus max
 Par contre, si l'énergie mécanique égale la valeur minimale de l'énergie potentielle effective, alors un seul rayon est accessible: __la trajectoire sera donc un cercle__.
 ````
 
-````{admonition} Fondamental : Mouvement uniforme
-:class: attention
+````{important} __Fondamental : Mouvement uniforme__
 
 Dans le cas d'un mouvement circulaire, la trajectoire est uniforme. En effet, le moment cinétique est conservé et le rayon étant constant, il vient que la vitesse angulaire est aussi constante, soit un mouvement uniforme dans le cas d'un mouvement circulaire.
 ````

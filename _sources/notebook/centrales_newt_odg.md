@@ -35,8 +35,7 @@ F_e &\sim \frac{e^2}{4 \pi \epsilon_0} \frac{1}{r^2} \sim \frac{10^{-38}}{10 \ti
 Il vient un rapport $\frac{F_g}{ F_e} = 10^{-39} \Longrightarrow F_g \ll F_e$.
 
 
-````{admonition} Fondamental : Conclusion
-:class: attention
+````{important} __Fondamental : Conclusion__
 
 D'un point de vue "analytique", cela signifie que pour une étude des phénomènes microscopiques, on aura tendance à négliger l'action de la gravitation.
 

@@ -43,8 +43,7 @@ On va différencier plusieurs types d'étude:
 
 ### Equivalience TMC-TEC
 
-````{admonition} Fondamental : Equivalence
-:class: attention
+````{important} __Fondamental : Equivalence__
 
 Pour un solide __indéformable__ en __rotation autour d'un axe fixe__ dans un référentiel galiléen, le théorème de l'énergie cinétique et le théorème du moment cinétique sont équivalents.
 ````
@@ -68,8 +67,7 @@ Nous allons nous intéresser au cas d'un assemblement de solide pouvant bouger l
 
 ### Solide déformable: Théorèmes généraux
 
-````{admonition} Fondamental : TEC et TMC
-:class: attention
+````{important} __Fondamental : TEC et TMC__
 
 Si le solide est déformable, __le TEC et le TMC ne sont plus équivalents__.
 

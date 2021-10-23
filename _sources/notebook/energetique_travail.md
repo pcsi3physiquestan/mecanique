@@ -17,8 +17,7 @@ kernelspec:
 
 ## Travail et puissance d'une action ponctuelle
 
-````{admonition} Définition : Travail élémentaire d'une action ponctuelle
-:class: tip
+````{important} __Définition : Travail élémentaire d'une action ponctuelle__
 
 Considérons une action ponctuelle exercée par un système $\Sigma_1$ sur un point matériel M de masse m et modélisée par une force $\overrightarrow{F}$. On définit le travail élémentaire de cette action sur un déplacement élémentaire $\overrightarrow{dOM}$ par:
 
@@ -31,8 +30,7 @@ Ce __transfert__ d'énergie __dépend a priori du déplacement élémentaire con
 
 ````
 
-````{admonition} Définition : Travail sur un déplacement fini d'une action ponctuelle
-:class: tip
+````{important} __Définition : Travail sur un déplacement fini d'une action ponctuelle__
 
 Considérons une action ponctuelle exercée par un système $\Sigma_1$ sur un point matériel M de masse m et modélisée par une force $\overrightarrow{F}$. Si le point M se déplace sur un chemin $\Gamma$. On définit le travail $W(\overrightarrow{F})$ de cette action sur un déplacement fini le long du chemin $\Gamma$ par la somme (intégrale) des travaux élémentaires le long de chemin:
 
@@ -45,8 +43,7 @@ Ce __transfert__ d'énergie __dépend a priori du chemin parcouru__.
 
 ````
 
-````{admonition} Définition : Puissance transmise par une action ponctuelle
-:class: tip
+````{important} __Définition : Puissance transmise par une action ponctuelle__
 
 Considérons une action ponctuelle exercée par un système $\Sigma_1$ sur un point matériel M de masse m et modélisée par une force $\overrightarrow{F}$. Si à un instant t, le point M possède une vitesse $\overrightarrow{v_{M/\mathfrak{R}}}$ dans un référentiel $\mathfrak{R}$, on définit la puissance $P_{\mathfrak{R}}(\overrightarrow{F})$ par cette action au système M dans le référentiel $\mathfrak{R}$ par:
 
@@ -64,8 +61,7 @@ __Action et force__
 Lorsqu'il s'agit d'une action ponctuelle, on parle aussi de travail ou puissance d'une force. Tant qu'on fait attention au point d'application, cela ne porte pas à conséquence. Il faut néanmoins garder à l'esprit que cet abus de langage devient très trompeur pour des actions globales où le travail et la puissance d'une action __ne se déduit plus de la force seule.__
 
 
-````{admonition} Fondamental : Relation puissance-travail
-:class: attention
+````{important} __Fondamental : Relation puissance-travail__
 
 On a la relation suivante pour une même action:
 
@@ -156,8 +152,7 @@ On peut se rendre compte de cette dépendance en prenant le cas d'une action de 
 
 ### Travail d'une action globale: Définition et expression générale
 
-````{admonition} Définition : Travail et puissance d'une action globale
-:class: tip
+````{important} __Définition : Travail et puissance d'une action globale__
 
 Le travail (élémentaire ou fini) d'une action globale est la somme des travaux (élémentaires ou fini) de chaque action ponctuelle.
 
@@ -176,8 +171,7 @@ Nous allons simplement traiter les deux premiers cas de manière mathématisée.
 
 ### Travail d'une action globale - Cas particuliers.
 
-````{admonition} Fondamental : Cas d'un solide en translation (à connaître)
-:class: attention
+````{important} __Fondamental : Cas d'un solide en translation (à connaître)__
 
 Dans le cas d'un solide indéformable en translation, la puissance transmise par une action globale peut se réécrire comme $P_{\mathfrak{R}} = \overrightarrow{F} \cdot \overrightarrow{v_{M/\mathfrak{R}}}$ avec M un point quelconque du solide (on prend en général le centre d'inertie mais de toute façon, tous les points ont la même vitesse puisque le solide est en translation) et $\overrightarrow{F}$ la force résultante de l'action globale.
 
@@ -196,8 +190,7 @@ P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &= \sum\limits_{M} \left(\overrightarr
 La démonstration pour le travail est identique.
 
 
-````{admonition} Fondamental : Cas d'un solide en rotation autour d'un axe fixe (à connaître)
-:class: attention
+````{important} __Fondamental : Cas d'un solide en rotation autour d'un axe fixe (à connaître)__
 
 Dans le cas d'un solide indéformable en rotation autour d'un axe $\Delta$ fixe dans un référentiel $\mathfrak{R}$, la puissance transmise par une action globale peut se réécrire comme $P_{\mathfrak{R}} = M_\Delta \omega_\Delta$ avec $\omega_\Delta$ la vitesse angulaire de rotation du solide autour de l'axe $\Delta$ (__c'est une grandeur algébrique__) et $M_\Delta$ le moment résultant de l'action globale sur l'axe $\Delta$.
 
@@ -222,8 +215,7 @@ __Cas de la liaison pivot. Cas général.__
 Dans le référentiel du stator, la puissance transmise au rotor par l'intermédiaire de la liaison pivot s'écrit comme on la vue précédemment au moyen du moment sur l'axe et de la vitesse angulaire.
 
 
-````{admonition} Fondamental : Cas d'une liaison parfaite.
-:class: attention
+````{important} __Fondamental : Cas d'une liaison parfaite.__
 
 Si la liaison pivot est parfaite, alors la puissance (et le travail) transmis par la liaison pivot dans le référentiel du stator est nulle. La preuve est triviale.
 ````

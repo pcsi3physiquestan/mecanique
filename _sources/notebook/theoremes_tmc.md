@@ -17,8 +17,7 @@ kernelspec:
 
 ## Théorème du moment cinétique: Enoncé
 
-````{admonition} Fondamental : Théorème du moment cinétique. Enoncé par rapport à un point.
-:class: attention
+````{important} __Fondamental : Théorème du moment cinétique. Enoncé par rapport à un point.__
 
 Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la dérivée du moment cinétique du point M en un point A fixe dans $\mathfrak{R}$ par rapport au temps est égale à la somme des moments des forces appliquées en M par rapport au même point A.
 
@@ -35,8 +34,7 @@ __Démonstration__
 &= \underbrace{\overrightarrow{V_{M/\mathfrak{R}}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}}}_{= 0} + \overrightarrow{AM} \wedge \left(\sum \overrightarrow{F_{\to M}}\right)\\
 &= \sum \overrightarrow{M_{A}\left(\overrightarrow{F_{\to M}}\right)}
 \end{align*}
-````{admonition} Fondamental : Théorème du moment cinétique. Enoncé par rapport à un axe.
-:class: attention
+````{important} __Fondamental : Théorème du moment cinétique. Enoncé par rapport à un axe.__
 
 Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la dérivée du moment cinétique du point M sur un axe $\Delta$ orienté fixe dans $\mathfrak{R}$ par rapport au temps est égale à la somme des moments des forces appliquées en M par rapport au même axe $\Delta$.
 ````
@@ -53,8 +51,7 @@ On retrouve "l'intuition" qui a été utilisée dans le chapitre précédent pou
 
 ## Théorème du moment cinétique: Application au solide.
 
-````{admonition} Fondamental : TMC appliqué à un solide.
-:class: attention
+````{important} __Fondamental : TMC appliqué à un solide.__
 
 La dérivée temporelle du moment cinétique d'un système de points matériel par rapport à un point/un axe fixe dans un référentel $\mathfrak{R}$ est égal à la somme du moment des actions extérieures calculé au point point/axe.
 ````

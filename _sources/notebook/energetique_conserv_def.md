@@ -15,8 +15,7 @@ kernelspec:
 ---
 # Système conservatif: Définition
 
-````{admonition} Définition : Système conservatif
-:class: tip
+````{important} __Définition : Système conservatif__
 
 Un système mécanique est dit conservatif si son énergie mécanique est conservé durant le mouvement. Cela implique que les seules forces qui s'appliquent sur le système sont conservatives ou ne travaillent pas.
 
@@ -31,8 +30,7 @@ Les systèmes conservatifs présentent de nombreux intérêts. Tout d'abord, à 
 
 ## Positivité de l'énergie cinétique
 
-````{admonition} Fondamental : Positivité de l'énergie cinétique
-:class: attention
+````{important} __Fondamental : Positivité de l'énergie cinétique__
 
 Cette propriété est bien plus générale mais elle a des conséquences particulière dans les mouvements conservatifs. En effet, __l'énergie cinétique est positive ou nulle__.
 
@@ -45,8 +43,7 @@ De plus, si le système atteint un point où l'énergie potentielle égale l'én
 
 ## Position d'équilibre
 
-````{admonition} Fondamental : Position d'équilibre et énergie potentielle
-:class: attention
+````{important} __Fondamental : Position d'équilibre et énergie potentielle__
 
 Nous étudierons plus en détail cette propriété pour les système conservatifs à 1 degré de liberté mais on peut déjà remarqué que les positions d'équilibre correspondent à des extrema d'énergi potentielle (maximum, minimum ou point col). En effet, la résultante des forces est nulle en une position d'équilibre. Or la force étant moins le gradient de l'énergie potentielle, il vient la propriété précédente (dans un système conservatif, la résultante des forces dérive d'une énergie potentielle).
 ````

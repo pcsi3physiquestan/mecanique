@@ -22,8 +22,7 @@ __Système d'étude__
 Les postulats fondamentaux de la mécanique sont énoncés pour des points matériels. Nous déduirons les conséquences sur les solides par la suite.
 
 
-````{admonition} Définition : Système isolé et pseudo-isolé
-:class: tip
+````{important} __Définition : Système isolé et pseudo-isolé__
 
 Un point matériel qui n'est soumis à aucune force est dit isolé.
 
@@ -31,8 +30,7 @@ Un point matériel soumis à un ensemble de forces dont la résultante (i.e. la 
 
 ````
 
-````{admonition} Fondamental : Première loi de Newton (Principe d'inertie)
-:class: attention
+````{important} __Fondamental : Première loi de Newton (Principe d'inertie)__
 
 Il existe une classe de référentiels, appelés référentiels galiléens, dans lesquels un point matériel isolé ou pseudo-isolé possède un mouvement rectiligne uniforme.
 ````
@@ -41,8 +39,7 @@ Il existe une classe de référentiels, appelés référentiels galiléens, dans
 Il n'existe pas de référentiel strictement galiléen connu. On peut néanmoins considérer que les référentiels courant (terrestre, géocentrique, héliocentrique... ) sont des référentiels galiléens suivant les mouvements considérés (il ne faut pas qu'ils soient trop longs).
 
 
-````{admonition} Fondamental : Deuxième loi de Newton (Principe fondamental de la dynamique)
-:class: attention
+````{important} __Fondamental : Deuxième loi de Newton (Principe fondamental de la dynamique)__
 
 Dans un référentiel galiléen, la variation de la quantité de mouvement d'un point matériel M au cours du temps est égale à la somme des forces s'exerçant sur les systèmes:
 
@@ -53,8 +50,7 @@ m{(\frac{d \overrightarrow{v_{M/\mathfrak{R}}}}{dt})}_{\mathfrak{R}} &= \sum \ov
 La deuxième expression n'est valable que si le système est fermé, c'est-à-dire qu'il n'échange pas de matière avec l'extérieur.
 ````
 
-````{admonition} Fondamental : Troisième loi de Newton (Lois des actions réciproques)
-:class: attention
+````{important} __Fondamental : Troisième loi de Newton (Lois des actions réciproques)__
 
 Si un point matériel A exerce sur un point B une force $\overrightarrow{f_{A \rightarrow B}}$ alors le point B exerce sur le point A une force $\overrightarrow{f_{B \rightarrow A}}$ telle que:
 
@@ -64,8 +60,7 @@ Si un point matériel A exerce sur un point B une force $\overrightarrow{f_{A \r
 
 ## Relativité galiléenne
 
-````{admonition} Définition : Référentiels galiléens usuels
-:class: tip
+````{important} __Définition : Référentiels galiléens usuels__
 
 Il n'existe pas de référentiel galiléen strict connu. Néanmoins, de nombreux référentiels peuvent être considérés comme galiléen sur des périodes de temps suffisamment courte.
 
@@ -76,8 +71,7 @@ Il n'existe pas de référentiel galiléen strict connu. Néanmoins, de nombreux
 
 ````
 
-````{admonition} Fondamental : Infinité des référentiels galiléens.
-:class: attention
+````{important} __Fondamental : Infinité des référentiels galiléens.__
 
 Tout référentiel en translation rectiligne uniforme avec un référentiel galiléen est aussi un référentiel galiléen.
 ````
@@ -115,8 +109,7 @@ Le but est de voir comment on peut appliquer le principe fondamental de la dynam
 On rappelle que pour un système de points matériels (solide déformable ou indéformable), on distingue les forces __intérieures__ exercées par une partie du système sur une autre partie du système et les forces __extérieures__ exercées par le milieu extérieur sur le système.
 \end{rappel}
 
-````{admonition} Fondamental : Théorème de la résultante dynamique
-:class: attention
+````{important} __Fondamental : Théorème de la résultante dynamique__
 
 La dérivée temporelle de la quantité de mouvement total d'un système de points matériel dans un référentiel galiléen est égale à la somme des forces __extérieures__ qui s'appliquent sur le solide.
 ````

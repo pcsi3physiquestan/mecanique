@@ -652,8 +652,9 @@
 <h1>Description d’un système de points<a class="headerlink" href="#description-d-un-systeme-de-points" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="solide-deformable-et-indeformable">
 <h2>Solide déformable et indéformable<a class="headerlink" href="#solide-deformable-et-indeformable" title="Permalink to this headline">¶</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Système de points matériel</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Système de points matériel</strong></p>
 <p>Un système de points matériels S (ou solide déformable) est un ensemble de points matériels dont on décrit le mouvement.</p>
 <p>On distingue deux types de descriptions:</p>
 <ul class="simple">
@@ -663,8 +664,9 @@
 </div>
 <p>Le regroupement d’un ensemble de points matériel dans un même système est arbitraire (choix de la personne travaillant sur le problème) mais répond à une réflexion physique:les points font partie du même objet, de la même pièce physique, sont du même type… )</p>
 <p>On pourra être amenés à considérer un solide comme un ensemble de sous-systèmes dont on connaît les caractéristiques.</p>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Solide indéformable</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Solide indéformable</strong></p>
 <p>Un solide indéformable est un système de points tel que, quelque soit les deux points <span class="math notranslate nohighlight">\(P_i\)</span> et <span class="math notranslate nohighlight">\(P_j\)</span> du solides, à tout instants, la distance <span class="math notranslate nohighlight">\(P_i P_j\)</span> est constante.</p>
 </div>
 <div class="admonition attention">
@@ -674,24 +676,26 @@
 </div>
 <div class="section" id="masse-et-centre-d-inertie">
 <h2>Masse et centre d’inertie<a class="headerlink" href="#masse-et-centre-d-inertie" title="Permalink to this headline">¶</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Masse totale</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Masse totale</strong></p>
 <p>On définit la masse totale M du système S comme la somme de toutes les masses des points matériels composant le solide.</p>
 </div>
 <p><strong>Expression mathématique</strong>
 Dans le cadre d’une description discrète, la masse totale est simplement <span class="math notranslate nohighlight">\(M = \sum\limits_{i=1}^{n} m_i\)</span>.</p>
 <p>Dans le cadre d’une description continu, la masse totale devient une intégrale: <span class="math notranslate nohighlight">\(M = \iiint_{P \in S} \rho(P) d \tau(P)\)</span>. A l’heure actuelle, il n’est pas demandé de savoir calculer une telle intégrale. Il suffit de comprendre qu’on somme des petits volumes infinitésimaux <span class="math notranslate nohighlight">\(d\tau(M)\)</span> coefficientés (ici par la masse volumique).</p>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Centre d’inertie</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Centre d’inertie</strong></p>
 <p>On définit le centre d’inertie G du système S comme le barycentre des points du solide affectés de leur masse.</p>
 <p>Cas d’un système discret:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-862c1361-d909-46a0-b451-8dd9ca9c564f">
-<span class="eqno">(21)<a class="headerlink" href="#equation-862c1361-d909-46a0-b451-8dd9ca9c564f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-011861b0-3cef-4c04-85ac-9ff0c9a20840">
+<span class="eqno">(21)<a class="headerlink" href="#equation-011861b0-3cef-4c04-85ac-9ff0c9a20840" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{OG} = \frac{1}{M}\sum\limits_{i=1}^{n} m_i \overrightarrow{OP_i}
 \end{equation}\]</div>
 <p>Cas continu:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3fc39801-8f75-4d15-896f-72595779859e">
-<span class="eqno">(22)<a class="headerlink" href="#equation-3fc39801-8f75-4d15-896f-72595779859e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9b547247-b9b0-4ff7-addb-71b951c7e875">
+<span class="eqno">(22)<a class="headerlink" href="#equation-9b547247-b9b0-4ff7-addb-71b951c7e875" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{OG} = \frac{1}{M}\iiint_{P \int S} \rho(P) \overrightarrow{OP} d \tau(P)
 \end{equation}\]</div>
 </div>
@@ -720,8 +724,8 @@ Puisque tous les points du solides sont contraints à se déplacer ensemble, il 
 <div class="hint dropdown admonition">
 <p class="admonition-title">Complément : Composition des vitesse (HP)</p>
 <p>Soit un solide donc le vecteur taux de rotation à un instant t est <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> et donc la vitesse en un point A du solide est connue par: <span class="math notranslate nohighlight">\(\overrightarrow{v_{A/R}}(t)\)</span>. Alors la vitesse en tout point B du solide est connue et donnée par la relation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1506d394-5ad1-4db8-95e1-8ab45ae252b2">
-<span class="eqno">(23)<a class="headerlink" href="#equation-1506d394-5ad1-4db8-95e1-8ab45ae252b2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-77e44c9b-ff34-4d38-958a-f4c3aea757cd">
+<span class="eqno">(23)<a class="headerlink" href="#equation-77e44c9b-ff34-4d38-958a-f4c3aea757cd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{v_{B/R}} = \overrightarrow{v_{A/R}} + \overrightarrow{\Omega} \wedge \overrightarrow{AB}
 \end{equation}\]</div>
 <p>Cette formule est valable quelque soit le mouvement du solide. Néanmoins, elle n’est pas à connaître et ne peut être appliquée directement en physique. Elle est par contre probablement à connaître et à savoir utiliser en SI. Les conséquences et définitions associées qui auront pu être vues en SI (centre instantanée de rotation, détermination graphique d’une vitesse… ) ne sont pas à connaître en physique. Par contre, les cas particuliers qui vont être présentés ensuite sont à connaître.</p>
@@ -729,8 +733,9 @@ Puisque tous les points du solides sont contraints à se déplacer ensemble, il 
 </div>
 <div class="section" id="mouvement-de-translation">
 <h2>Mouvement de translation<a class="headerlink" href="#mouvement-de-translation" title="Permalink to this headline">¶</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Translation</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Translation</strong></p>
 <p>Un solide est en translation si pour tout point P du solide, la vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{P/R}}\)</span> est identique.</p>
 </div>
 <div class="admonition attention">
@@ -740,15 +745,17 @@ Puisque tous les points du solides sont contraints à se déplacer ensemble, il 
 </div>
 <div class="section" id="mouvement-de-rotation-autour-d-un-axe-fixe">
 <h2>Mouvement de rotation autour d’un axe fixe<a class="headerlink" href="#mouvement-de-rotation-autour-d-un-axe-fixe" title="Permalink to this headline">¶</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Rotation autour d’un axe fixe</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Rotation autour d’un axe fixe</strong></p>
 <p>On peut définir le concept de rotation en rapport avec les composantes du torseur cinématique (cf SI). Pour nous, la description d’un solide en rotation autour d’un axe fixe est visuelle: il tourne sur lui-même.</p>
 </div>
-<div class="attention admonition">
-<p class="admonition-title">Fondamental : Champ de vitesse d’un solide en rotation</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Champ de vitesse d’un solide en rotation</strong></p>
 <p>Soit un solide en rotation autour d’un axe fixe, à un instant t, tous les points du solide ont la même vitesse angulaire <span class="math notranslate nohighlight">\(\omega(t)\)</span>. On peut alors définir un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}(t)\)</span> appelé vecteur rotation du solide tel que pour tout point P du solide, la vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{P/R}}\)</span> s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f3e3f8a7-e49b-4c23-9864-5d0dbc56112d">
-<span class="eqno">(24)<a class="headerlink" href="#equation-f3e3f8a7-e49b-4c23-9864-5d0dbc56112d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1150559b-4b7b-4404-9ab7-f20cffb065b8">
+<span class="eqno">(24)<a class="headerlink" href="#equation-1150559b-4b7b-4404-9ab7-f20cffb065b8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{v_{P/R}} = \overrightarrow{\Omega} \wedge \overrightarrow{AP}
 \end{equation}\]</div>
 <p>où A est un point de l’axe de rotation.</p>

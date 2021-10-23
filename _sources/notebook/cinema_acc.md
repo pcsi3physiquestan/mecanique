@@ -17,8 +17,7 @@ kernelspec:
 
 ## Vectreur accélération: Définition
 
-````{admonition} Définition : Vecteur accélération
-:class: tip
+````{important} __Définition : Vecteur accélération__
 
 On définit l'accélération d'un point M dans un un référentiel R comme la dérivée du vecteur vitesse dans le référentiel R.
 
@@ -41,8 +40,7 @@ Il est indispensable de connaître les expressions du vecteur accélération dan
 Dans le cas des coordonnées sphériques, son expression doit être redémontrées dans des cas partculier comme nous le verrons en exercice.
 
 
-````{admonition} Fondamental : Vecteur accélération en coordonnées cartésiennes.
-:class: attention
+````{important} __Fondamental : Vecteur accélération en coordonnées cartésiennes.__
 
 En coordonnées cartésiennes, le vecteur accélération s'écrit:
 
@@ -51,8 +49,7 @@ En coordonnées cartésiennes, le vecteur accélération s'écrit:
 \end{equation}
 ````
 
-````{admonition} Fondamental : Vecteur accélération en coordonnées cylindriques.
-:class: attention
+````{important} __Fondamental : Vecteur accélération en coordonnées cylindriques.__
 
 En coordonnées cylindriques, le vecteur accélération s'écrit:
 
@@ -74,8 +71,7 @@ On va partir de l'expresson du vecteur vitesse et le dériver.
 
 ## Relation géométrique entre vitesse et accélération
 
-````{admonition} Définition : Mouvement uniforme, accélérié et décéléré
-:class: tip
+````{important} __Définition : Mouvement uniforme, accélérié et décéléré__
 
 Un mouvement est dit __uniforme__ si la __norme__ de la vitesse est constante au cours du mouvement.
 
@@ -89,8 +85,7 @@ Un mouvement uniforme n'est pas forcéméne rectiligne, le vecteur vitesse peut 
 
 ````
 
-````{admonition} Fondamental : Relation vitesse et accélération
-:class: attention
+````{important} __Fondamental : Relation vitesse et accélération__
 
 Dans un mouvement uniforme, le vecteur accélération est soit nul, soit perpendiculaire au vecteur vitesse.
 
@@ -114,8 +109,7 @@ Sinon, $\textrm{sign}(\frac{dv}{dt}) = \textrm{sign}(\theta)$ donc la vitesse es
 
 ## Vectreur accélération: Base de Frenet
 
-````{admonition} Définition : Base de Frenet
-:class: tip
+````{important} __Définition : Base de Frenet__
 
 La base de Frenet est une __base locale__ définie __pour une trajectoire plane__.
 
@@ -135,8 +129,7 @@ On remarquera donc la relation utile: $\overrightarrow{u_T} = \frac{\overrightar
 
 ````
 
-````{admonition} Fondamental : Composantes de l'accélération.
-:class: attention
+````{important} __Fondamental : Composantes de l'accélération.__
 
 Pour un mouvement plan, on peut décomposer l'accélération en deux composantes:
 
