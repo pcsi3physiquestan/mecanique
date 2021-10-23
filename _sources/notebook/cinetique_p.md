@@ -115,8 +115,7 @@ On observe donc que le moment cinétique, à l'image de la quantité de mouvemen
 Il faut noter néanmoins que l'on ne garde __que des informations sur la rotation relative à l'axe.__. Comme montré précédemment un mouvement peut avoir des caractéristiques qui n'apparaissent plus directement (comme une trajectoire rectiligne non parallèle à l'axe $\Delta$).
 
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 On va souvent calculer des moments cinétiques dans le cas de mouvement circulaire. On les calculera en générals sur l'axe de rotation du point M. Il faut néanmoins bien penser qu'un moment cinétique non nul implique que le point M est en train d'avoir un mouvement courbe, et encore moins un mouvement circulaire. Celà veut dire uniquement que du point de vue de l'axe, le point M a l'air de tourner (si l'on se trouve sur l'axe, on doit tourner la tête horizontalement pour suivre le mouvement de M).
 

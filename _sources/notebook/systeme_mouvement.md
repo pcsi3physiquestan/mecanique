@@ -37,8 +37,7 @@ Le moment cinétique du système S par rapport à un point A dans un référenti
 &= \overrightarrow{AG} \wedge \overrightarrow{v_{G/\mathfrak{R}}}
 \end{align*}
 ````
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Ces expressions ne sont valables que pour un mouvement de translation.
 
@@ -126,8 +125,7 @@ On pourra faire le parallèle entre la forme de l'énergie cinétique de transla
 
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Attention, ces expressions ne sont valables que si l'ensemble du solide tourne à la même vitesse angulaire, c'est-à-dire que le solide est indéformable.
 

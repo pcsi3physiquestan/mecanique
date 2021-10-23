@@ -31,8 +31,7 @@ Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur
 * son point d'application.
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 La force $\overrightarrow{F}$ donne la direction et le sens vers laquelle l'action tend à entraîner le système mais cela ne veut pas dire que le sytèmeva aller dans sa direction. Son inertie peut lui permettre de continuer dans une autre direction. Il sera simplement dévié (plus ou moins fortement suivant son inertie et l'intensité de la force).
 
@@ -180,8 +179,7 @@ Et si la composante orthoradiale est nulle, cela signifie que l'action n'a pas d
 * On remarquera que le moment de l'action est aussi plus important quand r est grand. Si l'on fait le parallèle avec la force, on comprend que plus le moment est grand, plus il sera capable de modifier la rotation du système autour de l'axe considéré. Or on observe expérimentalement que plus l'action est loin de l'axe de rotation, plus elle a d'effet sur le système (principe du bras de levier utilisé par Archimède), il est donc normal que le moment de la force soit proportionnel à la distance r à l'axe.
 
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Il s'agit d'une tendance pour l'action considéré et cela ne donne d'information que sur la tendanceà faire tourner le système autour d'un axe donné. Mais cela ne veut pas dire que le système est en rotation autour de l'axe (bien que très on souvent on utilise les calculs de moments pour des systèmes en rotation, la définition du moment est valable quelque soit le mouvement), il peut même être immobile (les considérations sur les moments sont très important en statique des systèmes de points).
 

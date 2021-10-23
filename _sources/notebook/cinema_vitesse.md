@@ -27,8 +27,7 @@ Soit O un point fixe du référentiel R et M un point mobile. La vitesse du poin
 \end{equation}
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Il est important de préciser le référentiel d'étude: il définit les vecteurs qu'on considère fixe. Dans un premier temps, il n'y aura qu'un seul référentiel.
 
@@ -74,8 +73,7 @@ En coordonnées spheriques:
 > Ici, on rapport le déplacement élémentaire à la variation temporelle dt pendant lequel le déplacement se fait, ce qui revient à rapporter chaque différentielle ($dx, dy, d\theta, dr...$) par dt, c'est-à-dire les remplacer par les dérivées. On obtient bien les expressions données.
 
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Dans le cadre d'une démonstration des expressions des vecteurs vitesses, il __faut redémontrer l'expression des déplacements élémentaires.__
 

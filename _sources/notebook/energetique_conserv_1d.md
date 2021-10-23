@@ -241,8 +241,7 @@ Néanmoins, si l'on fait l'analogie avec une bille sur un profil d'altitude, on 
 
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Si l'on travaille dans un autre système de coordonnées (cylindriques par exemple), l'expression du gradient doit être modifiée. La conclusion sera néanmoins identique.
 

@@ -216,8 +216,7 @@ E_m &= \frac{1}{2} mC^2 ({(\frac{e \sin \theta}{p})}^2 + {(\frac{1 + e \cos \the
 D'où le lien entre énergie mécanique et type de trajectoire.
 
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Cette relation ne __peut PAS être utilisée directement.__
 

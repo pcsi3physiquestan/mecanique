@@ -27,8 +27,7 @@ On définit l'accélération d'un point M dans un un référentiel R comme la d�
 \end{equation}
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Comme le vecteur vitesse, le vecteur accélération dépend du référentel dans lequel il est calculé.
 
@@ -84,8 +83,7 @@ Si la norme diminue, on dit que le mouvement est décéléré. Si la norme augme
 
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Un mouvement uniforme n'est pas forcéméne rectiligne, le vecteur vitesse peut changer de direction.
 

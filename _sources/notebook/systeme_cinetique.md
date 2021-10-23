@@ -87,8 +87,7 @@ Le moment cinétique $\overrightarrow{\sigma_{S/\Delta}}$ d'un système S dans u
 
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 On ne peut relier a priori le moment cinétique du solide à la vitesse du centre d'inertie par une formule faisant inervenir un produit vectoriel (définition du moment cinétique d'un point matériel). Le moment cinétique d'un solide ne peut se calcule que de trois manière:
 
@@ -117,8 +116,7 @@ L'énergie cinétique d'un solide __indéformable__ se décompose en deux termes
 Il existe des expressions pour chaque terme mais ils ne sont aps à connaître dans le cas général. Nous étudierons des expressions particulières de l'énergie cinétique dans le cas de la translation et de la rotation.
 
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Comme pour le moment, il n'y a pas a priori de relation entre l'énergie cinétique totale d'un système et la vitesse du centre d'inertie. Elle ne peut s'établir que dans un cas particulier.
 

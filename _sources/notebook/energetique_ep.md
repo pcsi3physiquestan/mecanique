@@ -128,8 +128,7 @@ On utilise un système de coordonnées cartésiennes où z est la coordonnée ve
 &= -mg dz\\
 &= -d \left(mgz\right)
 \end{align*}
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Dans l'expression précédente, l'axe Oz est orienté __vers le haut__. Si l'axe est orienté vers le bas, il apparaît un signe -dans l'expression de l'énergie potentielle.
 

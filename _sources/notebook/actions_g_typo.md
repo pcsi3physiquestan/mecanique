@@ -135,8 +135,7 @@ En un point de contact solide-solide, la force de contact $\overrightarrow{R}$ s
 * Quelque soit le système, $\mu_D < \mu_S$, c'est-à-dire qu'il est plus facile de maintenir un solide en mouvement par rapport à un autre solide malgré les frottements que de mettre en mouvement le solide.
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Il faut faire attention à plusieurs points:
 
@@ -255,8 +254,7 @@ L'angle $\theta$ repère la torsion du fil. La présence de l'angle $\theta_0$ p
 On parle de moment de rappel ou par abus de langage de couple de rappel.
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Malgré l'appellation abusive qu'on peut trouver de "couple" de rappel, cette action n'est a priori PAS un couple. Il n'y a aucune raison pour que la force résultante de l'action du fil sur le système à ses extrémités soit nulle.
 

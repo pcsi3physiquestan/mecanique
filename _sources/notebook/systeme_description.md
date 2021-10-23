@@ -42,8 +42,7 @@ Un solide indéformable est un système de points tel que, quelque soit les deux
 
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Dans un solide, la distance entre les points doit être constantes, mais la direction du vecteur associé peut varier, c'est le cas quand le solide tourne sur lui-même. Si nous utiliserons principalement des solides continus par la suite, un solide peut aussi être un ensemble discrets de points matériels.
 
@@ -130,8 +129,7 @@ Un solide est en translation si pour tout point P du solide, la vitesse $\overri
 
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Une translation ne signifie pas que le solide va forcément tout droit (ne pas confondre mouvement de translation et mouvement rectiligne). Ainsi, un solide peut avoir un mouvement de translation circulaire: c'est le cas des nacelles de grande roue.
 
