@@ -59,10 +59,10 @@ En coordonnées cylindriques, le vecteur accélération s'écrit:
 ````
 
 
-__Démonstration dans le cas cylindrique__
-On va partir de l'expresson du vecteur vitesse et le dériver.
-
-\begin{align*}
+>__Démonstration dans le cas cylindrique__
+>On va partir de l'expresson du vecteur vitesse et le dériver.
+>
+>\begin{align*}
 \overrightarrow{v_{M/R}}& = \frac{\rm{d\overrightarrow{v_{M/R}}}}{\rm{dt}}\\
 & = \frac{\rm{d}}{\rm{dt}}\left(\dot r\overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}\right)\\
 & = \ddot r \overrightarrow{e_r} + \dot r \underbrace{\frac{\rm{d}\overrightarrow{e_r}}{\rm{dt}}_{\mathfrak{R}}}_{= \dot \theta \overrightarrow{e_{\theta}}} + \left(\dot r \dot \theta + r \ddot \Theta\right)\overrightarrow{e_{\theta}} + r \dot \theta \underbrace{\frac{\rm{d}\overrightarrow{e_{\theta}}}{\rm{dt}}_{\mathfrak{R}}}_{= - \dot \theta \overrightarrow{e_{r}}} + \ddot z \overrightarrow{e_z}\\
@@ -95,16 +95,16 @@ Dans un mouvement décéléré, le vecteur accélération forme avec le vecteur 
 ````
 
 
-__Démonstration__
-Soit $\theta = (\overrightarrow{v};\overrightarrow{a})$. Remarquons que: 
-
-\begin{align*}
+>__Démonstration__
+>Soit $\theta = (\overrightarrow{v};\overrightarrow{a})$. Remarquons que: 
+>
+>\begin{align*}
 \overrightarrow{v} \cdot \overrightarrow{a} &= \overrightarrow{v} \cdot \frac{d\overrightarrow{v}}{dt}\\
 \left \| v \right \| \left \| a \right \| \cos \theta &= \frac{d}{dt}(\frac{1}{2} v^2)
 \end{align*}
 La vitesse est donc constante si: $\left \| v \right \| \left \| a \right \| cos \theta = 0$ soit si $\left \| a\right \|=0$ ou si $\theta = \pm \pi/2$.
-
-Sinon, $\textrm{sign}(\frac{dv}{dt}) = \textrm{sign}(\theta)$ donc la vitesse est décroissante si $|\theta| > \pi/2$ et croissante si $|\theta| < \pi/2$.
+>
+>Sinon, $\textrm{sign}(\frac{dv}{dt}) = \textrm{sign}(\theta)$ donc la vitesse est décroissante si $|\theta| > \pi/2$ et croissante si $|\theta| < \pi/2$.
 
 
 ## Vectreur accélération: Base de Frenet
