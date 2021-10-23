@@ -22,8 +22,8 @@ Un référentiel $\mathfrak{R}$ est un ensemble de points rigides - c'est-à-dir
 
 ````
 
-````{hint} Définition : Repère associé à un référentiel
-
+````{admonition} Définition : Repère associé à un référentiel
+:class: important
 En physique, on  associe à un référentiel, un(des) repère(s) $(0, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})$ soit la donnée d'un point (O)  dans le référentiel (c'est-à-dire  par rapport aux points rigides définit précédemment) et une base de 3 vecteurs  dans ce même référentiel.
 
 ````
