@@ -19,7 +19,7 @@ kernelspec:
 
 ### Vecteur position: Définition
 
-````{admonition} Définition : Vecteur position
+````{warning} Définition : Vecteur position
 :class: tip
 
 On définit la position d'un point matériel M dans un référentiel $\mathfrak{R}$ à l'aide du vecteur position $\overrightarrow{OM}$ où O est un __point fixe__ du référentiel.
