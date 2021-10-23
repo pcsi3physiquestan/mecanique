@@ -114,14 +114,15 @@ où h est l'altitude et K une constante - on rappelle que l'énergie potentielle
 ````
 
 
-__Démonstration__
-On utilise un système de coordonnées cartésiennes où z est la coordonnée verticale vers le haut (donc h)
-
-\begin{align*}
+>__Démonstration__
+>On utilise un système de coordonnées cartésiennes où z est la coordonnée verticale vers le haut (donc h)
+>
+>\begin{align*}
 \delta W &= -mg \overrightarrow{e_z} \wedge \left(dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}\right)\\
 &= -mg dz\\
 &= -d \left(mgz\right)
 \end{align*}
+
 ````{attention}
 
 Dans l'expression précédente, l'axe Oz est orienté __vers le haut__. Si l'axe est orienté vers le bas, il apparaît un signe -dans l'expression de l'énergie potentielle.
@@ -143,8 +144,8 @@ Sur un point matériel, la partie magnétique de la force de Lorentez __ne trava
 
 
 
-__Démonstration__
-La force magnétique est par définition perpendiculaire à la vitesse, donc la puissance transmise est nulle.
+>__Démonstration__
+>La force magnétique est par définition perpendiculaire à la vitesse, donc la puissance transmise est nulle.
 
 
 ````{important} __Fondamental : Partie électrique__
@@ -166,12 +167,10 @@ Soit un point O de masse $m_O$ et/ou de charge$q_O$ agissant sur un point M de m
 On s'entraînera à expliciter K suivant que la force soit gravitationnelle ou coulombienne.
 
 ````
-
-
-__Démonstration__
-Comme dit dans la propriété, on va se placer en coordonnées sphériques centrées au point O.
-
-\begin{align*}
+>__Démonstration__
+>Comme dit dans la propriété, on va se placer en coordonnées sphériques centrées au point O.
+>
+>\begin{align*}
 \delta W &= - \frac{K}{r^2}\overrightarrow{e_r} \wedge \left(dr \overrightarrow{e_r} + r d\theta \overrightarrow{e_\theta} + r \sin\theta d\varphi \overrightarrow{e_\varphi}\right)\\
 &= -\frac{K}{r^2} dr\\
 &= -d \left(- \frac{K}{r}\right)
@@ -197,10 +196,10 @@ E_p = \frac{1}{2} k \Delta l ^2 = \frac{1}{2} k \left(l - l_0\right)^2
 ````
 
 
-__Démonstration__
-On travaille dans un système de coordonées cartésiennes d'axe Ox le long du ressort et le point O est à l'autre extrémité du ressort tel que$l = x$. On trouve alors que $\overrightarrow{u_{ext}} = \overrightarrow{e_x}$ et donc:
-
-\begin{align*}
+>__Démonstration__
+>On travaille dans un système de coordonées cartésiennes d'axe Ox le long du ressort et le point O est à l'autre extrémité du ressort tel que$l = x$. On trouve alors que $\overrightarrow{u_{ext}} = \overrightarrow{e_x}$ et donc:
+>
+>\begin{align*}
 \delta W &= -k\left(x - l_0\right) \overrightarrow{e_x} \wedge \left(dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}\right)\\
 &= -k \left(x - l_0\right) dx\\
 &= -d \left(\frac{1}{2} k {\left(x - l_0\right)}^2\right)
@@ -218,13 +217,14 @@ E_p = \frac{1}{2} C \Delta \theta ^2 = \frac{1}{2} C \left(\theta - \theta_0\rig
 ````
 
 
-__Démonstration__
-On ne peut ici justifier cette propriété par les actions ponctuelles. On va donc calculer directement le travail infinitésimal pour l'action globale. On est ici dans le cadre d'un solide en rotation, donc le travail infintésimal s'écrit $M_{axe/torsion}d\theta$ où $M_{axe/torsion}$ est le moment résultant de l'action sur l'axe de rotation et $\theta$ une coordonnées angulaire repérant la rotation du solide dans le plan perpendiculaire à l'axe de torsion. On rappelle que le moment résultant s'écrit $- C(\theta - \theta_0)$:
-
-\begin{align*}
+>__Démonstration__
+>On ne peut ici justifier cette propriété par les actions ponctuelles. On va donc calculer directement le travail infinitésimal pour l'action globale. On est ici dans le cadre d'un solide en rotation, donc le travail infintésimal s'écrit $M_{axe/torsion}d\theta$ où $M_{axe/torsion}$ est le moment résultant de l'action sur l'axe de rotation et $\theta$ une coordonnées angulaire repérant la rotation du solide dans le plan perpendiculaire à l'axe de torsion. On rappelle que le moment résultant s'écrit $- C(\theta - \theta_0)$:
+>
+>\begin{align*}
 \delta W &= -C\left(\theta - \theta_0\right) d \theta \\
 &= -d \left(\frac{1}{2} C {\left(\theta - \theta_0\right)}^2\right)
 \end{align*}
+
 ````{dropdown} _Remarque : Interprétation_
 
 On remarque que l'énergie potentielle est minimale pour un allongement nul ou pour une torsion nulle: cela correspond bien à la configuration ou le ressort/fil de torsion n'exerce pas d'action sur le système accroché.

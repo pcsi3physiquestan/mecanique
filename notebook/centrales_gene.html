@@ -344,11 +344,6 @@
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       Exemples
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="energetique_ex_app.html">
        Exercices d’application
       </a>
@@ -754,9 +749,11 @@ La symétrie du problème pousse à prendre un repère centré au point O. On po
 <p>Dans un mouvement à force centrale dont le centre de force est le point O, alors le moment cinétique au point O est une intégrale première du mouvement.</p>
 <p>Cela signifie qu’il est constant au cours du mouvement.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 On va appliquer au système M le théorème du moment cinétique au point O. La résultante des forces étant portée par la droite OM, son moment en O est nul. Il vient que la dérivée du moment cinétique est nulle: le moment cinétique est donc une constante du mouvement.</p>
 <p>Par définition, le moment cinétique dépend de la position et de la vitesse. C’est donc une intégrale première du mouvement.</p>
+</div></blockquote>
 </div>
 <div class="section" id="planeite-du-mouvement">
 <h3>Planéité du mouvement<a class="headerlink" href="#planeite-du-mouvement" title="Permalink to this headline">¶</a></h3>
@@ -765,8 +762,10 @@ On va appliquer au système M le théorème du moment cinétique au point O. La 
 <p><strong>Fondamental : Planéité du mouvement</strong></p>
 <p>Un mouvement à force centrale est un mouvement plan: la trajectoire du mobile est contenu dans le plan passante par le centre de force O et perpendiculaire au moment cinétique.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 Nous avons démontré que le moment cinétique était un vecteur constant. Or par définition du moment cinétique, le vecteur position pris au point O est perpendiculaire au moment cinétique. Il vient que le vecteur position est à tout instant perpendiculaire au même vecteur: il est contenu dans le plan passant par O et perpendiculaire au moment cinétique.</p>
+</div></blockquote>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Paramétrage</strong></p>
@@ -788,7 +787,8 @@ Nous avons démontré que le moment cinétique était un vecteur constant. Or pa
 <p><strong>Fondamental : Loi des aires</strong></p>
 <p>Dans un mouvement à force centrale, la vitesse aréolaire, c’est-à-dire l’aire parcourue par le vecteur position par unité de temps est constante.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 Durant un temps dt, le mobile passe du point <span class="math notranslate nohighlight">\(M(t)\)</span> au point <span class="math notranslate nohighlight">\(M(t+dt)\)</span>. L’aire balayée est donc l’aire du triangle <span class="math notranslate nohighlight">\(OM(t)M(t+dt)\)</span>. L’aire de ce triangle s’écrit:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -798,6 +798,7 @@ d\mathfrak{A} &amp;= \frac{1}{2} \left\vert \overrightarrow{OM}\wedge\overrighta
 \frac{\rm{d}\mathfrak{A}}{\rm{dt}} &amp;= \frac{1}{2m} L_O
 \end{align*}\]</div>
 <p>Le moment cinétique étant constant, il vient que la vitesse aréolaire est constante. La loi des aires est bien vérifiée.</p>
+</div></blockquote>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Constante des aires</strong></p>
@@ -814,19 +815,23 @@ d\mathfrak{A} &amp;= \frac{1}{2} \left\vert \overrightarrow{OM}\wedge\overrighta
 <p><strong>Fondamental : Force centrale conservatives</strong></p>
 <p>Une force centrale conservative ne dépend que de la coordonnées radiale. On peut donc écrire <span class="math notranslate nohighlight">\(\overrightarrow{F} = F(r) \overrightarrow{e_r}\)</span> et l’énergie potentielle associée <span class="math notranslate nohighlight">\(E_p(r)\)</span> est telle que <span class="math notranslate nohighlight">\(F(r) = - \frac{\rm{d}E_p}{\rm{dr}}(t)\)</span>.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 La force est uniquement suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> par définition d’une force centrale. Il vient (gradient) que les dérivées partielles de l’énergie potentielle par rapport à <span class="math notranslate nohighlight">\(\theta\)</span> et z sont nulles: l’énergie potentielle ne dépend que de r. En dérivant, il vient que la force ne dépend aussi que de r.</p>
-<p><strong>Conservation de l’énergie mécanique</strong>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Conservation de l’énergie mécanique</strong>
 La seule force est conservative, donc l’énergie mécanique est une constante: c’est une intégrale première du mouvement. Comme nous l’avons expliqué, nous n’utiliserons que très rarement des données initiales sur la vitesse et la position. Elles seront remplacées par les données de l’énergie mécanique et du moment cinétique qui sont des constantes du mouvement.</p>
 <p>A un instant t quelconque, l’énergie mécanique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-150ad2f4-24cb-4bed-a057-ece3d1175567">
-<span class="eqno">(48)<a class="headerlink" href="#equation-150ad2f4-24cb-4bed-a057-ece3d1175567" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-740f572a-4f24-4ac0-a757-6b1daf356f58">
+<span class="eqno">(48)<a class="headerlink" href="#equation-740f572a-4f24-4ac0-a757-6b1daf356f58" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_m = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2 + E_p(r)
 \end{equation}\]</div>
+</div></blockquote>
 <p><strong>Interprétation de l’énergie cinétique.</strong>
 L’énergie cinétique se réécrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-01b366a9-5756-464a-8fe5-80226e72e131">
-<span class="eqno">(49)<a class="headerlink" href="#equation-01b366a9-5756-464a-8fe5-80226e72e131" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5e66958e-67d8-4f69-8ffd-dbad7fe98e03">
+<span class="eqno">(49)<a class="headerlink" href="#equation-5e66958e-67d8-4f69-8ffd-dbad7fe98e03" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_c = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2
 \end{equation}\]</div>
 <p>On distingue donc deux termes. La premier correspond à l’éloignement/rapprochement du mobile. On l’appelera énergie cinétique radiale. Le second correspond à la rotation du mobile autour de O, on l’appelera énergie cinétique orthoradiale (ou de rotation).</p>
@@ -901,9 +906,8 @@ m \frac{\rm{d^2}r}{\rm{dt^2}} &amp;= - \frac{\rm{d}E_{p,eff}}{\rm{dr}}\\
 <h3>Analyse semi-qualitatives<a class="headerlink" href="#analyse-semi-qualitatives" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="positivite-de-l-energie-cinetique">
 <h4>Positivité de l’énergie cinétique<a class="headerlink" href="#positivite-de-l-energie-cinetique" title="Permalink to this headline">¶</a></h4>
-<p>\begin{rappel}{Energie cinétique radiale}
-On rappelle que l’énergie cinétique radiale est nécessairement positive ou nulle. Cela permet de déterminer des zones accessibles. Nous allons préciser ici ce principe en remarquant que les zones accessibles sont un peu particulières. Ici le système est à deux degrés de liberté: sa position radiale et sa position angulaire.
-\end{rappel}</p>
+<p><em>Rappel : Energie cinétique radiale</em>
+On rappelle que l’énergie cinétique radiale est nécessairement positive ou nulle. Cela permet de déterminer des zones accessibles. Nous allons préciser ici ce principe en remarquant que les zones accessibles sont un peu particulières. Ici le système est à deux degrés de liberté: sa position radiale et sa position angulaire.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Zones accessibles</strong></p>
@@ -964,14 +968,7 @@ On rappelle que l’énergie cinétique radiale est nécessairement positive ou 
 <p><em>On ne justifiera pas ici les tracés. Il est <strong>vivement conseillé</strong> d’essayer de les tracer seul.</em></p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
+Eléments de réponse<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1017,28 +1014,19 @@ Le cas <span class="math notranslate nohighlight">\(n = 2\)</span> est un cas li
 </div>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
+Elément de réponss<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text"><strong>Elément de réponse</strong>
-On ne donne pas ici les réponses complètes:</p>
-<p class="card-text">\begin{enumerate}</p>
-<ul class="simple">
+<p class="card-text">On ne donne pas ici les réponses complètes:</p>
+<ol class="simple">
 <li><p class="card-text">Appliquer le théorème du moment cinétique puis le théorème de l’énergie cinétique.</p></li>
 <li><p class="card-text"><span class="math notranslate nohighlight">\(L_O = mr_0 v_0\)</span> et <span class="math notranslate nohighlight">\(E_m = \frac{1}{2}m (v_1^2 +v_0^2)+ \frac{1}{2}k r_0^2\)</span></p></li>
 <li><p class="card-text">On montrera que le système est toujours dans un état lié. Si la vitesse orthoradiale est nulle initialement, elle le restera et le moment cinétique est nul. Le mouvement est alors rectiligne et symétrique en O le centre de force (pas de barrière de potentiel en r=0).</p></li>
 <li><p class="card-text">L’équation <span class="math notranslate nohighlight">\(E_m =E_{p,eff}\)</span> aboutit à la résolution d’un trinôme du second degré.</p></li>
 <li><p class="card-text">La conservation du moment cinétique implique que le mouvement est uniforme. <span class="math notranslate nohighlight">\(v_0 = \sqrt{\frac{k}{m}}r_0\)</span></p></li>
-</ul>
+</ol>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 <em>Remarque : Traitement complet</em><div class="summary-down docutils">

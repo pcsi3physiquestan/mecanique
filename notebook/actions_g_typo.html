@@ -344,11 +344,6 @@
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       Exemples
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="energetique_ex_app.html">
        Exercices d’application
       </a>
@@ -691,10 +686,13 @@ Les actions à distance sont en général des actions volumiques (si elle s’ex
 <p>Les actions de contact sont en général surfacique: on va sommer les actions ponctuelles en surface (double intégale) en se restreignant évidemment à la surface de contact ! On ne cherchera pas à calculer ces intégrales. L’expression des caractéristiques de ces actions de contacts se fait de deux manières:</p>
 <ul class="simple">
 <li><p>Cas d’action d’un fluide (liquide ou gaz). Comme on va le voir, on dispose souvent d’expression de la résultante des forces. En première année, on utilise principalement ces actions dans le cadre d’une modélisation ponctuelle du système mécanique de sorte que le moment résultant n’est pas donné (l’action devenant par modélisation…  ponctuelle).</p></li>
-<li><p>Cas d’action d’un solide (on parle de liaison). Dans le cadre du programme, les caractéristiques:</p></li>
+<li><p>Cas d’action d’un solide (on parle de liaison). Dans le cadre du programme, les caractéristiques:</p>
+<ul>
 <li><p>sont inconnues et ne peuvent être déterminées que par l’utilisation de théorème (comme le PFD (ou plutôt TRD… ) qui permet de déterminer certaines composantes des forces et moments résultants.</p></li>
 <li><p>possèdent des composantes nulles par hypothèse (cas d’absence de frottements)</p></li>
 <li><p>sont établies ou encadrées (inégalité) grâce aux lois de Coulomb (cf. suite)</p></li>
+</ul>
+</li>
 </ul>
 <div class="section" id="modelisation-des-actions-ponctuelles-de-contact">
 <h2>Modélisation des actions ponctuelles de contact<a class="headerlink" href="#modelisation-des-actions-ponctuelles-de-contact" title="Permalink to this headline">¶</a></h2>
@@ -714,7 +712,7 @@ Les actions à distance sont en général des actions volumiques (si elle s’ex
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Interprétation des composantes.</strong></p>
 <p>La <strong>composante normale</strong> correspond à une “réaction de non interpénétration”, le système extérieur tend à pousser le système au point M. Cela peut-être une tendance légère (cas d’un système extérieur déformable) ou une contrainte forte (le mouvement du système étudié dans la direction normale au point de contact est alors nul. Au jouant sur la géométrie du contact dans le second cas, on arrive à créer des <strong>liaisons</strong> dont les mouvements possibles (<strong>degré de liberté</strong>) sont définies précisément (surface de contact cylindrique conduit à un pivot glissant, surface de contact plan sur plan conduit à…  un mouvement plan).</p>
-<p>Il vient que (sauf cas de surface adhésive non étudié dans le cadre du programme), la composante normale de la force modélisant l’action ponctuelle du système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur le système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> en un point de contact M est toujours dirigée <strong>vers l’intérieur du système</strong>__<span class="math notranslate nohighlight">\(\Sigma_2\)</span>__ (qui subit l’action).</p>
+<p>Il vient que (sauf cas de surface adhésive non étudié dans le cadre du programme), la composante normale de la force modélisant l’action ponctuelle du système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur le système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> en un point de contact M est toujours dirigée <strong>vers l’intérieur du système <span class="math notranslate nohighlight">\(\Sigma_2\)</span></strong> (qui subit l’action).</p>
 <p>La <strong>composante tangentielle</strong> correspond à une action s’opposant au <strong>mouvement relatif</strong> des deux systèmes en contacts (ou à la mise en mouvement relatif). On parle de <strong>frottements</strong> (fluide ou solide suivant le cas). Lorsqu’on point M de contact, la composantre tangentielle s’oppose à la vitesse du système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> par rapport au système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> (<span class="math notranslate nohighlight">\(\overrightarrow{v}(M \in \Sigma_2 / M \in \Sigma_1)\)</span>. Lorsqu’il y a immobilité, elle s’oppose à la mise en mouvement (ou est nulle cf. suite).</p>
 </div>
 <p>Il n’y a pas d’expression simple a priori de cette action ponctuelle qui dépend de la géométrie au point de contact mais aussi du reste du contact, des autres actions qui s’appliquent sur les deux systèmes, de la nature des matériaux qui forment le système…</p>
@@ -782,7 +780,7 @@ Dans la plupart des exemples qui seront données en première année, les lois d
 <div class="section" id="liaisons-normalisee-et-geometrie">
 <h3>Liaisons normalisée et géométrie<a class="headerlink" href="#liaisons-normalisee-et-geometrie" title="Permalink to this headline">¶</a></h3>
 <div class="attention admonition">
-<p class="admonition-title">Exercice Liaison et géométrie</p>
+<p class="admonition-title">Liaison et géométrie</p>
 <p>Les caractéristiques d’une action de contact solide <strong>résulante</strong> vont dépendre de la géométrie de la surface de contact. En effet, certaines géométries vont empêcher certains mouvements. Cela signifie que la force résultante et le moment résultant peuvent être non nuls pour empêcher ces mouvements.</p>
 <p>Par exemple, deux solides <span class="math notranslate nohighlight">\(\Sigma_1\)</span> et <span class="math notranslate nohighlight">\(\Sigma_2\)</span> dont la surface de contact est une sphère (ou portion de sphère) ne peuvent que tourner l’un par rapport à l’autre, les mouvements de translation relatifs (sans perte de contact) sont impossibles. Si une autre action <span class="math notranslate nohighlight">\(\mathfrak{A}_{ext \to \Sigma_1}\)</span> extérieur tend à faire translater le solide <span class="math notranslate nohighlight">\(\Sigma_1\)</span>, alors l’action de <span class="math notranslate nohighlight">\(\Sigma_2\)</span> sur <span class="math notranslate nohighlight">\(\Sigma_1\)</span> va tendre à s’opposer à l’action <span class="math notranslate nohighlight">\(\mathfrak{A}_{ext \to \Sigma_1}\)</span>.</p>
 <p>A l’inverse la géométrie de la surface de contact va laisser des mouvements possibles, on parle de degré de liberté de la liaison. Dans l’exemple précédente, toutes les rotations sont possibles.</p>
@@ -816,11 +814,13 @@ En général, on travaille avec des géométries simples et usuelles pour les su
 <p><strong>Fondamental : Liaison pivot parfaite</strong></p>
 <p>Une liaison pivot parfaite est une liaison pivot sans frottements, le moment résultant de la liaison <strong>sur l’axe de rotation</strong> est nulle.</p>
 </div>
-<p><strong>Explication</strong>
+<blockquote>
+<div><p><strong>Explication</strong>
 Dans une liaison pivot, la surface de contact est un cylindre. S’il n’y a pas de frottements, alors il n’y a pas de composantes tangentielles pour chaque action ponctuelles de contact.</p>
 <p>Dans le cas des surfaces planes extrêmes, la force ponctuelle est donc suivant l’axe de rotation: son moment est nul.</p>
 <p>Dans le cas de la surface latérales en forme de cylindre, la force ponctuelle est dirigée vers l’axe de rotation: son moment est nul.</p>
 <p>Il vient que le moment résultant sera nul.</p>
+</div></blockquote>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p><strong>Erreurs classiques</strong></p>
@@ -839,8 +839,8 @@ Un fil de torsion est un fil dont la section n’est pas négligeable et qui peu
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Action d’un fil de torsion</strong></p>
 <p>Soit un fil pouvant se tordre suivant son axe. On suppose qu’il ne flambe pas. Pour un angle de torsion <span class="math notranslate nohighlight">\(\theta - \theta_0\)</span> du fil, ce dernier exerce à ses extrémités une action dont le moment suivant l’axe de torsion est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-38b7707e-61a4-4e7d-a4c5-819e722f158e">
-<span class="eqno">(33)<a class="headerlink" href="#equation-38b7707e-61a4-4e7d-a4c5-819e722f158e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e63715cb-b44c-4045-b158-0bc965a2e3b3">
+<span class="eqno">(33)<a class="headerlink" href="#equation-e63715cb-b44c-4045-b158-0bc965a2e3b3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \Gamma_{axe} = - C \left(\theta - \theta_0\right)
 \end{equation}\]</div>
 <p>où C est appelée constante de torsion du fil.</p>

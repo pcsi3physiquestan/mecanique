@@ -344,11 +344,6 @@
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       Exemples
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="energetique_ex_app.html">
        Exercices d’application
       </a>
@@ -627,12 +622,13 @@
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Théorème du moment cinétique. Enoncé par rapport à un point.</strong></p>
 <p>Soit un point matériel M. Dans un référentiel galiléen <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>, la dérivée du moment cinétique du point M en un point A fixe dans <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> par rapport au temps est égale à la somme des moments des forces appliquées en M par rapport au même point A.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8959e91e-f7f8-460c-832f-207853df7b05">
-<span class="eqno">(34)<a class="headerlink" href="#equation-8959e91e-f7f8-460c-832f-207853df7b05" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-76cbda60-dd42-4837-aab7-061e1d4b26fd">
+<span class="eqno">(34)<a class="headerlink" href="#equation-76cbda60-dd42-4837-aab7-061e1d4b26fd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 {(\frac{d \overrightarrow{L_{O/\mathfrak{R}}}(M)}{dt})}_{\mathfrak{R}} = \overrightarrow{M_O}(\overrightarrow{F})
 \end{equation}\]</div>
 </div>
-<p><strong>Démonstration</strong></p>
+<blockquote>
+<div><p><strong>Démonstration</strong></p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{\rm{d}\overrightarrow{L_{A/\mathfrak{R}}}(M)}{\rm{dt}}_{\mathfrak{R}} &amp;= {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{AM} \wedge \overrightarrow{p_{M/\mathfrak{R}}}\right)}_{\mathfrak{R}} \\
@@ -640,13 +636,16 @@
 &amp;= \underbrace{\overrightarrow{V_{M/\mathfrak{R}}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}}}_{= 0} + \overrightarrow{AM} \wedge \left(\sum \overrightarrow{F_{\to M}}\right)\\
 &amp;= \sum \overrightarrow{M_{A}\left(\overrightarrow{F_{\to M}}\right)}
 \end{align*}\]</div>
+</div></blockquote>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Théorème du moment cinétique. Enoncé par rapport à un axe.</strong></p>
 <p>Soit un point matériel M. Dans un référentiel galiléen <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>, la dérivée du moment cinétique du point M sur un axe <span class="math notranslate nohighlight">\(\Delta\)</span> orienté fixe dans <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> par rapport au temps est égale à la somme des moments des forces appliquées en M par rapport au même axe <span class="math notranslate nohighlight">\(\Delta\)</span>.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 Il suffit d’appliquer le TMC en un point de l’axe et de projeter l’équation sur un vecteur directeur de l’axe.</p>
+</div></blockquote>
 <p><strong>Interprétation</strong>
 On retrouve “l’intuition” qui a été utilisée dans le chapitre précédent pour prévoir l’évolution du moment. Le moment résultant sur le point M va influencer la rotation du point M autour de l’axe de calcul.</p>
 </div>
@@ -657,7 +656,8 @@ On retrouve “l’intuition” qui a été utilisée dans le chapitre précéde
 <p><strong>Fondamental : TMC appliqué à un solide.</strong></p>
 <p>La dérivée temporelle du moment cinétique d’un système de points matériel par rapport à un point/un axe fixe dans un référentel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> est égal à la somme du moment des actions extérieures calculé au point point/axe.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe étant similaire. Comme pour le cas du TRC, on peut appliquer le théorème du moment cinétique à chaque point <span class="math notranslate nohighlight">\(M_i\)</span> du système. On distingue encore les actions extérieures et les actions intérieures. On rappelle que pour deux points <span class="math notranslate nohighlight">\(M_i\)</span> et <span class="math notranslate nohighlight">\(M_j\)</span> du système. Les forces de <span class="math notranslate nohighlight">\(M_i\)</span> sur <span class="math notranslate nohighlight">\(M_j\)</span> et de <span class="math notranslate nohighlight">\(M_i\)</span> sur <span class="math notranslate nohighlight">\(M_j\)</span> sont opposées et portées par la droite <span class="math notranslate nohighlight">\(M_i M_j\)</span>.</p>
 <p>On somme l’ensemble des théorèmes du moment cinétique ponctuels et on s’intéresse aux actions intérieures. On va particulariser les moments des actions de <span class="math notranslate nohighlight">\(M_i\)</span> sur <span class="math notranslate nohighlight">\(M_j\)</span> et de <span class="math notranslate nohighlight">\(M_j\)</span> sur <span class="math notranslate nohighlight">\(M_i\)</span>. La somme donne:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -668,6 +668,7 @@ On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe ét
 &amp;= 0
 \end{align*}\]</div>
 <p>Le dernier produit vectoriel est nul car la troisième loi de Newton donne que la force de <span class="math notranslate nohighlight">\(M_j\)</span> sur <span class="math notranslate nohighlight">\(M_i\)</span> est portée par la droite <span class="math notranslate nohighlight">\(M_j M_i\)</span>. Il vient que le moment résultant des actions intérieures est nul.</p>
+</div></blockquote>
 <p><strong>Interprétation</strong>
 Le moment cinétique d’un solide contient deux termes: l’information sur la rotation du centre d’inertie autour de l’axe d’étude et l’information sur la rotation du solide sur lui-même. Dans le cadre du programme, le moment cinétique se ramènera directement à l’information sur la rotation su solide complet autour de l’axe fixe considéré.</p>
 <p>Dans ce cadre, l’interprétation du moment cinétique reste la même: on relie le mouvement de rotation sur l’axe à l’influence des actions extérieures sur ce mouvement (par le moment résultant de ces actions).</p>

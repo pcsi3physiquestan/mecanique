@@ -37,8 +37,8 @@ En référentiel galiléen (sous les mêmes hypothèses que précédemment):
 \end{align*}
 ````
 
-__Démonstration__
-\begin{align*}
+>__Démonstration__
+>\begin{align*}
 m \frac{d \overrightarrow{v_{M/R}}}{dt} &= \overrightarrow{F}\\
 m \frac{d \overrightarrow{v_{M/R}}}{dt} \cdot \overrightarrow{v_{M/R}} &= \overrightarrow{F} \cdot \overrightarrow{v_{M/R}}\\
 \frac{d}{dt}(\frac{1}{2} m v^2) &= P_R(\overrightarrow{F})\\
@@ -55,8 +55,8 @@ Dans un référentiel galiléen, la variation d'énergie mécanique d'un point m
 ````
 
 
-__Démonstration__
-\begin{align*}
+>__Démonstration__
+>\begin{align*}
 \Delta E_{c,A \rightarrow B} &= W_{A \rightarrow B}(\overrightarrow{F_c}) + W_{A \rightarrow B}(\overrightarrow{F_{nc}})\\
 \Delta E_{c,A \rightarrow B} &= - \Delta E_{p,A \rightarrow B} + W_{A \rightarrow B}(\overrightarrow{F_{nc}})\\
 \Delta E_{c,A \rightarrow B} + \Delta E_{p,A \rightarrow B} &= W_{A \rightarrow B}(\overrightarrow{F_{nc}})
@@ -106,8 +106,8 @@ La variation d'énergie mécanique d'un système de points d'un état A à un é
 ````
 
 
-__Démonstration__
-La démonstration s'obtient par simple sommation du TEC/TEM pour chaque point du système.
+>__Démonstration__
+>La démonstration s'obtient par simple sommation du TEC/TEM pour chaque point du système.
 
 
 ````{attention}
@@ -124,12 +124,12 @@ Dans le cas d'un solide __indéformable, le travail des forces intérieures est 
 ````
 
 
-__Démonstration__
-Nous allons démontrer que dans le cas général le travail des forces intérieures est a priori non nul et qu'il s'annule dans le cas d'un solide indéformable.
-
-Considérons deux points $M_1$ et $M_2$ du solide en interaction. On note $\overrightarrow{f_{1 \rightarrow 2}}$ la force exercée par $M_1$ sur $M_2$ et $\overrightarrow{f_{2 \rightarrow 1}}$ la force exercée par $M_2$ sur $M_1$. On a (troisième loi de Newton): $\overrightarrow{f_{1 \rightarrow 2}} = -\overrightarrow{f_{2 \rightarrow 1}}$. La puissance totale associée à ces deux forces s'écrit:
-
-\begin{align*}
+>__Démonstration__
+>Nous allons démontrer que dans le cas général le travail des forces intérieures est a priori non nul et qu'il s'annule dans le cas d'un solide indéformable.
+>
+>Considérons deux points $M_1$ et $M_2$ du solide en interaction. On note $\overrightarrow{f_{1 \rightarrow 2}}$ la force exercée par $M_1$ sur $M_2$ et $\overrightarrow{f_{2 \rightarrow 1}}$ la force exercée par $M_2$ sur $M_1$. On a (troisième loi de Newton): $\overrightarrow{f_{1 \rightarrow 2}} = -\overrightarrow{f_{2 \rightarrow 1}}$. La puissance totale associée à ces deux forces s'écrit:
+>
+>\begin{align*}
 P &= \overrightarrow{f_{1 \rightarrow 2}} \cdot v_{M_2/R} + \overrightarrow{f_{2 \rightarrow 1}} \cdot v_{M_1/R}\\
 &= \overrightarrow{f_{1 \rightarrow 2}} \cdot {(\frac{d \overrightarrow{M_1 M_2}}{dt})}_{R}\\
 \overrightarrow{f_{1 \rightarrow 2}} &= f_{1 \rightarrow 2} \overrightarrow{u_{1 \rightarrow 2}}\\
@@ -137,12 +137,12 @@ P &= \overrightarrow{f_{1 \rightarrow 2}} \cdot v_{M_2/R} + \overrightarrow{f_{2
 {(\frac{d \overrightarrow{M_1 M_2}}{dt})}_{R} &= \frac{d M_1 M_2}{dt} \overrightarrow{u_{1 \rightarrow 2}} + M_1 M_2 {(\frac{d \overrightarrow{u_{1 \rightarrow 2}}}{dt})}_R
 \end{align*}
 où $\overrightarrow{u_{1 \rightarrow 2}}$ est le vecteur unitaire allant de $M_1$ vers $M_2$.
-
-Le première terme correspond à la variation de la distance entre les deux points, le second à la rotation d'un point par rapport à l'autre. La puissance des forces intérieurs pour ces deux points s'écrit donc: $P = f_{1 \rightarrow 2} \frac{d M_1 M_2}{dt}$
-
-Si le mobile se déforme, cette expression est a priori non nulle.
-
-Si le solide est indéformable, cette expression est toujours nulle.
+>
+>Le première terme correspond à la variation de la distance entre les deux points, le second à la rotation d'un point par rapport à l'autre. La puissance des forces intérieurs pour ces deux points s'écrit donc: $P = f_{1 \rightarrow 2} \frac{d M_1 M_2}{dt}$
+>
+>Si le mobile se déforme, cette expression est a priori non nulle.
+>
+>Si le solide est indéformable, cette expression est toujours nulle.
 
 
 ````{dropdown} _Remarque : Cas d'un solide déformable isolé._

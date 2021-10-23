@@ -108,7 +108,7 @@ Cas à vitesse constante: $ \alpha < \arccos \frac{v^2}{Rg}$
 Cas à force constante:
 
 \begin{align*}
--m R \dot \theta ^2 = N - mg \cos \theta\\
+-m R \dot \theta ^2 &= N - mg \cos \theta\\
 m R \ddot \theta &= F + mg \sin \theta
 \end{align*}
 $- \frac{mv_0^2}{R}- 2F\theta_d + 3 mg \cos \theta_d = 0$

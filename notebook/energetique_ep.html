@@ -344,11 +344,6 @@
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       Exemples
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="energetique_ex_app.html">
        Exercices d’application
       </a>
@@ -665,8 +660,8 @@
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Energie potentielle</strong></p>
 <p>Puisque le travail de l’action du point A au point B ne dépend pas du chemin parcouru mais uniquement des positions A et B, il existe une fonction <strong>de la seule position</strong> notée <span class="math notranslate nohighlight">\(E_p\)</span> dont la variation <span class="math notranslate nohighlight">\(E_p(B) - E_p(A)\)</span> permet de déterminer le travail de l’action de A à B. On appelle cette fonction <strong>énergie potentielle</strong> et elle est définit de telle sorte que le travail de l’action du point A au point B vaut:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3f2b3114-bb06-42b9-afe8-9f326c856f62">
-<span class="eqno">(39)<a class="headerlink" href="#equation-3f2b3114-bb06-42b9-afe8-9f326c856f62" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2c1b7328-ce96-481d-be70-02065e0ea757">
+<span class="eqno">(39)<a class="headerlink" href="#equation-2c1b7328-ce96-481d-be70-02065e0ea757" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 W_{A \to B} = - \left(E_p(B) - E_p(A)\right) = - \Delta E_{p,A \to B}
 \end{equation}\]</div>
 <p>Remarque: On dit que la force dérive d’une énergie potentielle.</p>
@@ -740,13 +735,14 @@ Remarque: on peut aussi calculer la puissance transmise et l’écrire sous la f
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Cas d’un point matériel</strong></p>
 <p>L’action du poids sur un point matériel M dérive d’une énergie potentielle dont l’expression est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-79ba30d5-ed18-496a-b70a-8eca61a8d137">
-<span class="eqno">(40)<a class="headerlink" href="#equation-79ba30d5-ed18-496a-b70a-8eca61a8d137" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-74e8aeb7-d6b6-4f07-a28f-169a00460dac">
+<span class="eqno">(40)<a class="headerlink" href="#equation-74e8aeb7-d6b6-4f07-a28f-169a00460dac" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_{p,pes} = mg h + K
 \end{equation}\]</div>
 <p>où h est l’altitude et K une constante - on rappelle que l’énergie potentielle est définie à une constant près.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 On utilise un système de coordonnées cartésiennes où z est la coordonnée verticale vers le haut (donc h)</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -754,6 +750,7 @@ On utilise un système de coordonnées cartésiennes où z est la coordonnée ve
 &amp;= -mg dz\\
 &amp;= -d \left(mgz\right)
 \end{align*}\]</div>
+</div></blockquote>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Dans l’expression précédente, l’axe Oz est orienté <strong>vers le haut</strong>. Si l’axe est orienté vers le bas, il apparaît un signe -dans l’expression de l’énergie potentielle.</p>
@@ -769,8 +766,10 @@ On utilise un système de coordonnées cartésiennes où z est la coordonnée ve
 <h3>Force de Lorentz<a class="headerlink" href="#force-de-lorentz" title="Permalink to this headline">¶</a></h3>
 <p><strong>Partie magnétique</strong>
 Sur un point matériel, la partie magnétique de la force de Lorentez <strong>ne travaille pas</strong>, c’est-à-dire que le travail de cette force est nul (et la puissance aussi).</p>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 La force magnétique est par définition perpendiculaire à la vitesse, donc la puissance transmise est nulle.</p>
+</div></blockquote>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Partie électrique</strong></p>
@@ -794,7 +793,8 @@ Remarque<div class="summary-down docutils">
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">On s’entraînera à expliciter K suivant que la force soit gravitationnelle ou coulombienne.</p>
 </div>
-</details><p><strong>Démonstration</strong>
+</details><blockquote>
+<div><p><strong>Démonstration</strong>
 Comme dit dans la propriété, on va se placer en coordonnées sphériques centrées au point O.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -802,6 +802,7 @@ Comme dit dans la propriété, on va se placer en coordonnées sphériques centr
 &amp;= -\frac{K}{r^2} dr\\
 &amp;= -d \left(- \frac{K}{r}\right)
 \end{align*}\]</div>
+</div></blockquote>
 <p><strong>Interprétation</strong>
 On remarquera que suivant le signe de K, l’énergie potentielle est croissante ou décroissante. Or la relation force-énergie potentielle, permet de déduire de la monotonie de l’énergie potentielle son sens (ici suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>, soit son caractère attractif ou répulsif).</p>
 <p>Ainsi, si <span class="math notranslate nohighlight">\(K &lt; 0\)</span>, l’énergie potentielle est décroissante en r, donc la force est dirigée vers les r croissants: la force est répulsive.</p>
@@ -813,12 +814,13 @@ On remarquera que suivant le signe de K, l’énergie potentielle est croissante
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Action de rappel d’un ressort</strong></p>
 <p>L’action de rappel d’un ressort dérive d’une énergie potentielle dont l’expression est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1f097c0b-6232-413a-919d-347a5cca134b">
-<span class="eqno">(41)<a class="headerlink" href="#equation-1f097c0b-6232-413a-919d-347a5cca134b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e6af7ef8-96dc-4aa4-87e8-d4ff61a86922">
+<span class="eqno">(41)<a class="headerlink" href="#equation-e6af7ef8-96dc-4aa4-87e8-d4ff61a86922" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_p = \frac{1}{2} k \Delta l ^2 = \frac{1}{2} k \left(l - l_0\right)^2
 \end{equation}\]</div>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 On travaille dans un système de coordonées cartésiennes d’axe Ox le long du ressort et le point O est à l’autre extrémité du ressort tel que<span class="math notranslate nohighlight">\(l = x\)</span>. On trouve alors que <span class="math notranslate nohighlight">\(\overrightarrow{u_{ext}} = \overrightarrow{e_x}\)</span> et donc:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -826,23 +828,26 @@ On travaille dans un système de coordonées cartésiennes d’axe Ox le long du
 &amp;= -k \left(x - l_0\right) dx\\
 &amp;= -d \left(\frac{1}{2} k {\left(x - l_0\right)}^2\right)
 \end{align*}\]</div>
+</div></blockquote>
 <p>On retrouve l’expression en remplaçant x par l.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Energie potentielle de torsion</strong></p>
 <p>L’action de rappel d’un couple de torsion dérive d’une énergie potentielle dont l’expression est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5d21ab5e-3d23-438e-bfd8-23eebcb9ee93">
-<span class="eqno">(42)<a class="headerlink" href="#equation-5d21ab5e-3d23-438e-bfd8-23eebcb9ee93" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a5fba9ad-633f-4059-96be-0c81ec7563cc">
+<span class="eqno">(42)<a class="headerlink" href="#equation-a5fba9ad-633f-4059-96be-0c81ec7563cc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_p = \frac{1}{2} C \Delta \theta ^2 = \frac{1}{2} C \left(\theta - \theta_0\right)^2
 \end{equation}\]</div>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 On ne peut ici justifier cette propriété par les actions ponctuelles. On va donc calculer directement le travail infinitésimal pour l’action globale. On est ici dans le cadre d’un solide en rotation, donc le travail infintésimal s’écrit <span class="math notranslate nohighlight">\(M_{axe/torsion}d\theta\)</span> où <span class="math notranslate nohighlight">\(M_{axe/torsion}\)</span> est le moment résultant de l’action sur l’axe de rotation et <span class="math notranslate nohighlight">\(\theta\)</span> une coordonnées angulaire repérant la rotation du solide dans le plan perpendiculaire à l’axe de torsion. On rappelle que le moment résultant s’écrit <span class="math notranslate nohighlight">\(- C(\theta - \theta_0)\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \delta W &amp;= -C\left(\theta - \theta_0\right) d \theta \\
 &amp;= -d \left(\frac{1}{2} C {\left(\theta - \theta_0\right)}^2\right)
 \end{align*}\]</div>
+</div></blockquote>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 <em>Remarque : Interprétation</em><div class="summary-down docutils">

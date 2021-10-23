@@ -74,10 +74,10 @@ Cela signifie qu'il est constant au cours du mouvement.
 ````
 
 
-__Démonstration__
-On va appliquer au système M le théorème du moment cinétique au point O. La résultante des forces étant portée par la droite OM, son moment en O est nul. Il vient que la dérivée du moment cinétique est nulle: le moment cinétique est donc une constante du mouvement.
-
-Par définition, le moment cinétique dépend de la position et de la vitesse. C'est donc une intégrale première du mouvement.
+>__Démonstration__
+>On va appliquer au système M le théorème du moment cinétique au point O. La résultante des forces étant portée par la droite OM, son moment en O est nul. Il vient que la dérivée du moment cinétique est nulle: le moment cinétique est donc une constante du mouvement.
+>
+>Par définition, le moment cinétique dépend de la position et de la vitesse. C'est donc une intégrale première du mouvement.
 
 
 ### Planéité du mouvement
@@ -88,8 +88,8 @@ Un mouvement à force centrale est un mouvement plan: la trajectoire du mobile e
 ````
 
 
-__Démonstration__
-Nous avons démontré que le moment cinétique était un vecteur constant. Or par définition du moment cinétique, le vecteur position pris au point O est perpendiculaire au moment cinétique. Il vient que le vecteur position est à tout instant perpendiculaire au même vecteur: il est contenu dans le plan passant par O et perpendiculaire au moment cinétique.
+>__Démonstration__
+>Nous avons démontré que le moment cinétique était un vecteur constant. Or par définition du moment cinétique, le vecteur position pris au point O est perpendiculaire au moment cinétique. Il vient que le vecteur position est à tout instant perpendiculaire au même vecteur: il est contenu dans le plan passant par O et perpendiculaire au moment cinétique.
 
 
 ````{important} __Fondamental : Paramétrage__
@@ -114,16 +114,16 @@ Dans un mouvement à force centrale, la vitesse aréolaire, c'est-à-dire l'aire
 ````
 
 
-__Démonstration__
-Durant un temps dt, le mobile passe du point $M(t)$ au point $M(t+dt)$. L'aire balayée est donc l'aire du triangle $OM(t)M(t+dt)$. L'aire de ce triangle s'écrit:
-
-\begin{align*}
+>__Démonstration__
+>Durant un temps dt, le mobile passe du point $M(t)$ au point $M(t+dt)$. L'aire balayée est donc l'aire du triangle $OM(t)M(t+dt)$. L'aire de ce triangle s'écrit:
+>
+>\begin{align*}
 d\mathfrak{A} &= \frac{1}{2} \left\vert \overrightarrow{OM}\wedge\overrightarrow{M(t)M(t+dt)} \right\vert \\
 &= \frac{1}{2m} \left\vert \overrightarrow{OM}\wedge m\overrightarrow{v_M}dt \right\vert \\
 &= \frac{1}{2m}\left\vert \overrightarrow{L_O} \right\vert dt \\
 \frac{\rm{d}\mathfrak{A}}{\rm{dt}} &= \frac{1}{2m} L_O
 \end{align*}
-Le moment cinétique étant constant, il vient que la vitesse aréolaire est constante. La loi des aires est bien vérifiée.
+>Le moment cinétique étant constant, il vient que la vitesse aréolaire est constante. La loi des aires est bien vérifiée.
 
 
 ````{important} __Définition : Constante des aires__
@@ -142,20 +142,17 @@ Une force centrale conservative ne dépend que de la coordonnées radiale. On pe
 ````
 
 
-__Démonstration__
-La force est uniquement suivant $\overrightarrow{e_r}$ par définition d'une force centrale. Il vient (gradient) que les dérivées partielles de l'énergie potentielle par rapport à $\theta$ et z sont nulles: l'énergie potentielle ne dépend que de r. En dérivant, il vient que la force ne dépend aussi que de r.
+>__Démonstration__
+>La force est uniquement suivant $\overrightarrow{e_r}$ par définition d'une force centrale. Il vient (gradient) que les dérivées partielles de l'énergie potentielle par rapport à $\theta$ et z sont nulles: l'énergie potentielle ne dépend que de r. En dérivant, il vient que la force ne dépend aussi que de r.
 
-
-
-__Conservation de l'énergie mécanique__
-La seule force est conservative, donc l'énergie mécanique est une constante: c'est une intégrale première du mouvement. Comme nous l'avons expliqué, nous n'utiliserons que très rarement des données initiales sur la vitesse et la position. Elles seront remplacées par les données de l'énergie mécanique et du moment cinétique qui sont des constantes du mouvement.
-
-A un instant t quelconque, l'énergie mécanique s'écrit:
-
-\begin{equation}
+>__Conservation de l'énergie mécanique__
+>La seule force est conservative, donc l'énergie mécanique est une constante: c'est une intégrale première du mouvement. Comme nous l'avons expliqué, nous n'utiliserons que très rarement des données initiales sur la vitesse et la position. Elles seront remplacées par les données de l'énergie mécanique et du moment cinétique qui sont des constantes du mouvement.
+>
+>A un instant t quelconque, l'énergie mécanique s'écrit:
+>
+>\begin{equation}
 E_m = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2 + E_p(r)
 \end{equation}
-
 
 __Interprétation de l'énergie cinétique.__
 L'énergie cinétique se réécrit:
@@ -238,9 +235,8 @@ Cet effet centrifuge explique la difficulté pour atteindre le centre de force. 
 
 #### Positivité de l'énergie cinétique
 
-\begin{rappel}{Energie cinétique radiale}
+_Rappel : Energie cinétique radiale_
 On rappelle que l'énergie cinétique radiale est nécessairement positive ou nulle. Cela permet de déterminer des zones accessibles. Nous allons préciser ici ce principe en remarquant que les zones accessibles sont un peu particulières. Ici le système est à deux degrés de liberté: sa position radiale et sa position angulaire.
-\end{rappel}
 
 ````{important} __Fondamental : Zones accessibles__
 
@@ -311,8 +307,7 @@ On considère une force centrale dont l'énergie potentielle s'écrit comme $E_p
 ````
 
 _On ne justifiera pas ici les tracés. Il est __vivement conseillé__ d'essayer de les tracer seul._
-````{dropdown}
- 
+````{dropdown} Eléments de réponse
 
 
 ```{figure} ./images/meca_force_centrale_Krn.png
@@ -357,19 +352,14 @@ On s'intéresse au cas d'un point matériel M relié à un ressort de raideur k 
 1. Déterminer la relation entre $v_0$ et $r_0$ pour observer un mouvement circulaire. Commenter le caractère uniforme/accéléré/décéléré d'un tel mouvement.
 
 ````
-````{dropdown}
- 
-
-
-__Elément de réponse__
+````{dropdown} Elément de réponss
 On ne donne pas ici les réponses complètes:
 
-\begin{enumerate}
-* Appliquer le théorème du moment cinétique puis le théorème de l'énergie cinétique.
-* $L_O = mr_0 v_0$ et $E_m = \frac{1}{2}m (v_1^2 +v_0^2)+ \frac{1}{2}k r_0^2$
-* On montrera que le système est toujours dans un état lié. Si la vitesse orthoradiale est nulle initialement, elle le restera et le moment cinétique est nul. Le mouvement est alors rectiligne et symétrique en O le centre de force (pas de barrière de potentiel en r=0).
-* L'équation $E_m =E_{p,eff}$ aboutit à la résolution d'un trinôme du second degré.
-* La conservation du moment cinétique implique que le mouvement est uniforme. $v_0 = \sqrt{\frac{k}{m}}r_0$
+1. Appliquer le théorème du moment cinétique puis le théorème de l'énergie cinétique.
+1. $L_O = mr_0 v_0$ et $E_m = \frac{1}{2}m (v_1^2 +v_0^2)+ \frac{1}{2}k r_0^2$
+1. On montrera que le système est toujours dans un état lié. Si la vitesse orthoradiale est nulle initialement, elle le restera et le moment cinétique est nul. Le mouvement est alors rectiligne et symétrique en O le centre de force (pas de barrière de potentiel en r=0).
+1. L'équation $E_m =E_{p,eff}$ aboutit à la résolution d'un trinôme du second degré.
+1. La conservation du moment cinétique implique que le mouvement est uniforme. $v_0 = \sqrt{\frac{k}{m}}r_0$
 
 
 ```{dropdown} _Remarque : Traitement complet_

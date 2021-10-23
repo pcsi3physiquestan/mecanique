@@ -36,7 +36,7 @@ Profil d'énergie potentielle
 
 ````
 
-````{admonition} Exercice Analogie avec un profil d'altitude
+````{admonition} Analogie avec un profil d'altitude
 :class: attention
 
 Dans le cas d'une bille roulant sur un profil d'altitude à 1 dimension, l'altitude z dépend uniquement de x. On peut alors représenter $z(x)$ mais aussi $E_p(x)$ qui est proportionnelle à z.
@@ -131,7 +131,7 @@ Une fois qu'on a fourni de l'énergie au système, il n'est pas dans l'état "su
 
 ````
 
-````{admonition} Exercice Barrière d'énergie en chimie
+````{admonition} Barrière d'énergie en chimie
 :class: attention
 
 Les barrières d'énergie ont déjà été observées en chimie lors de l'étude des réaction (énergie d'activation). Il faut que l'énergie cinétique soit suffisante pour l'énergie mécanique totale puisse passer "au-dessus" de la barrière.
@@ -150,7 +150,7 @@ Des états où le système peut s'éloigner indéfiniment (état "supérieur à 
 
 ````
 
-````{admonition} Exercice Chimie et ion
+````{admonition} Chimie et ion
 :class: attention
 
 On pourra ainsi différencier ces deux états pour un électron. S'il est piégé en orbite autour du noyau, il est dans un état lié. S'il est libéré par ionisation, il passe sur un état de diffusion.
@@ -189,16 +189,16 @@ Le système ne peut pas passer d'un état à l'autre car il mettra un temps infi
 ````
 
 
-__Démonstration__
-Commençons par rappeler que le PFD implique pour un système conservatif que l'accélération est une donnée de la position et de la vitesse seule (les forces ne peuvent varier explicitement en fonction du temps où le système ne serait pas conservatif). Cela signifie qu'en un état donné, la connaissance de la position et de la vitesse défini entièrement le mouvement ultérieur (on connaît l'équation différentielle et on a les deux conditions initiales, c'est un problème de Cauchy).
-
-Cela signifie aussi que si un système repasse par le même point  $(x(t);v(t))$ alors il va reproduire la même trajectoire de phase, c'est-à-dire le même mouvement.
-
-Points extrêmes: En un point où $E_p < E_m$, la vitesse du mobile est non nulle. S'il rebrousse chemin en ce point, alors il y aurait discontinuité de la vitesse (changement de signe nécessaire), ce qui est impossible. Il ne peut donc rebrousser chemin qu'en un point de vitesse nulle.
-
-Périodicité et symétrie: Supposons que le mobile passe par un point A entre les deux points extrêmes E et D. Une fois passé par E et D, il va revenir en A dans le même sens de parcours qu'initialement. Et en ce point, il aura la même vitesse. On est donc revenu dans le même état. La remarque précédente assure que le mouvement ultérieur sera identique au mouvement précédent: le mouvement sera périodique.
-
-De même, on peut remarquer qu'à chaque position x, la vitesse sera la même, que le mouvement se fasse de E vers D ou de D vers E: le mouvement est donc symétrique.
+>__Démonstration__
+>Commençons par rappeler que le PFD implique pour un système conservatif que l'accélération est une donnée de la position et de la vitesse seule (les forces ne peuvent varier explicitement en fonction du temps où le système ne serait pas conservatif). Cela signifie qu'en un état donné, la connaissance de la position et de la vitesse défini entièrement le mouvement ultérieur (on connaît l'équation différentielle et on a les deux conditions initiales, c'est un problème de Cauchy).
+>
+>Cela signifie aussi que si un système repasse par le même point  $(x(t);v(t))$ alors il va reproduire la même trajectoire de phase, c'est-à-dire le même mouvement.
+>
+>Points extrêmes: En un point où $E_p < E_m$, la vitesse du mobile est non nulle. S'il rebrousse chemin en ce point, alors il y aurait discontinuité de la vitesse (changement de signe nécessaire), ce qui est impossible. Il ne peut donc rebrousser chemin qu'en un point de vitesse nulle.
+>
+>Périodicité et symétrie: Supposons que le mobile passe par un point A entre les deux points extrêmes E et D. Une fois passé par E et D, il va revenir en A dans le même sens de parcours qu'initialement. Et en ce point, il aura la même vitesse. On est donc revenu dans le même état. La remarque précédente assure que le mouvement ultérieur sera identique au mouvement précédent: le mouvement sera périodique.
+>
+>De même, on peut remarquer qu'à chaque position x, la vitesse sera la même, que le mouvement se fasse de E vers D ou de D vers E: le mouvement est donc symétrique.
 
 
 ## Equilibre et stabilité
@@ -211,16 +211,16 @@ Les positions d'équilibre d'un système conservatif sont nécessairement des po
 ````
 
 
-__Démonstration__
-On a déjà démontré cette propriété dans le cas général, mais nous allons à nouveau la présenter ici dans le cas à une dimension.
-
-On rappelle que la résultante des forces conservatives (ici la seule) est donnée par:
-
-\begin{align*}
+>__Démonstration__
+>On a déjà démontré cette propriété dans le cas général, mais nous allons à nouveau la présenter ici dans le cas à une dimension.
+>
+>On rappelle que la résultante des forces conservatives (ici la seule) est donnée par:
+>
+>\begin{align*}
 \overrightarrow{F} &= - \overrightarrow{grad} E_p\\
 &= - \frac{\rm{d}E_p}{\rm{dx}}(x) \overrightarrow{e_x}
 \end{align*}
-A l'équilibre, la résultante des forces est nulle donc la dérivée de l'énergie potentielle est nulle.
+>A l'équilibre, la résultante des forces est nulle donc la dérivée de l'énergie potentielle est nulle.
 
 
 ````{admonition} Exercice 
@@ -271,18 +271,18 @@ Si elle est nulle, on ne peut conclure.
 ````
 
 
-__Démonstration__
-On peut utiliser l'une des deux méthodes énoncées précédemment pour prouver cette propriété. Nous allons ici utiliser la propriété de stabilité des équation différentielle linéaires mais on pourrait très bien utiliser l'analyse du signe de l'accélération (s'entraîner à le faire).
-
-On rappelle que la force s'écrit $\overrightarrow{F} = - \frac{\rm{d}E_p}{\rm{dx}}(x) \overrightarrow{e_x}$. Pour linéairise le PFD, nous allons développer l'énergie potentielle à l'ordre 2. Il vient:
-
-\begin{align*}
+>__Démonstration__
+>On peut utiliser l'une des deux méthodes énoncées précédemment pour prouver cette propriété. Nous allons ici utiliser la propriété de stabilité des équation différentielle linéaires mais on pourrait très bien utiliser l'analyse du signe de l'accélération (s'entraîner à le faire).
+>
+>On rappelle que la force s'écrit $\overrightarrow{F} = - \frac{\rm{d}E_p}{\rm{dx}}(x) \overrightarrow{e_x}$. Pour linéairise le PFD, nous allons développer l'énergie potentielle à l'ordre 2. Il vient:
+>
+>\begin{align*}
 E_p(x) &\approx_{x \approx x_{eq}} E_p(x_{eq}) + \underbrace{\frac{\rm{d}E_p}{\rm{dx}}(x_{eq})}_{=0} (x - x_{eq}) + \frac{1}{2} \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) {\left(x - x_{eq}\right)}^2\\
 F(x) = - \frac{\rm{d}E_p}{\rm{dx}} &\approx_{x \approx x_{eq}} - 0 -  0 -  \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) {\left(x - x_{eq}\right)}\\
 m \ddot x &= F(x) \approx - \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) {\left(x - x_{eq}\right)}\\
 \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x_{eq} &= m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x
 \end{align*}
-La dernière équation est stable si la dérivée seconde est positive et instable si la dérivée seconde négative. Si elle est nulle, il faut faire un développement limité à un ordre supérieur. Mais l'équation obtenue n'est pas linéaire, la seule méthode utilisable sera de vérifier le signe de l'accélération.
+>La dernière équation est stable si la dérivée seconde est positive et instable si la dérivée seconde négative. Si elle est nulle, il faut faire un développement limité à un ordre supérieur. Mais l'équation obtenue n'est pas linéaire, la seule méthode utilisable sera de vérifier le signe de l'accélération.
 
 
 ### Petits mouvements autour d'une position d'équilibre stable

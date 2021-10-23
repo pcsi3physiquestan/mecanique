@@ -49,15 +49,15 @@ Pour un solide __indéformable__ en __rotation autour d'un axe fixe__ dans un r�
 ````
 
 
-__Démonstration__
-Nous allons partir du théorème du moment cinétique et procéder par égalité.
-
-\begin{align*}
+>__Démonstration__
+>Nous allons partir du théorème du moment cinétique et procéder par égalité.
+>
+>\begin{align*}
 \frac{\rm{d}J\omega}{\rm{dt}} &= M_{ext,\Delta}\\
 \frac{\rm{d}J\omega}{\rm{dt}}\omega &= M_{ext,\Delta}\omega \\
 \frac{\rm{d}}{\rm{dt}}\left(\frac{1}{2}J\omega^2\right) &= P_{ext}
 \end{align*}
-La dernière ligne correspond au théorème de l'énergie cinétique puisque __pour un système indéformable__, la puissance des forces intérieures est nulle.
+>La dernière ligne correspond au théorème de l'énergie cinétique puisque __pour un système indéformable__, la puissance des forces intérieures est nulle.
 
 
 ## Solide déformable

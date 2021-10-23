@@ -85,29 +85,29 @@ Nous allons voir ici la méthode permettant de calculer le travail d'une force. 
 On considère un point M sur une trajectoire circulaire dans un plan vertical. On repère l'angle $\theta$ que fait le vecteur position $\overrightarrow{OM}$ (O est le centre du cercle) par rapport au point le plus bas du cercle. Déterminer le travail du poids sur M lorsqu'il passe du point $\theta = 0$ au point $\theta = \theta_1$.
 
 ````
-````{dropdown}
+````{dropdown} Résolution
  
-
-__Plan du calcul__  
-
-On va détailler le calcul en deux étapes: on calcule le travail infinitésimal sur un déplacement élémentaire le long du cercle pour une position d'angle $\theta$ quelconque. On va alors trouver une expression de la forme $f(\theta)d\theta$. Il suffira alors de l'intégrer en choisissant correctement les bornes d'intégration en fonction du chemin choisi.
-
-
-
-__Travail infinitésimal__
-Le déplacement élémentaire __sur le cercle__ s'écrit $\overrightarrow{dOM} = R d\theta \overrightarrow{e_\theta}$. Quant à la force, elle s'écrit $\overrightarrow{P} = mg \cos \theta \overrightarrow{e_r} - mg \sin \theta \overrightarrow{e_\theta}$. Le travail élémentaire s'écrit donc: $\delta W = -mgR \sin \theta d \theta$
-
-
-
-__Intégration__
-L'expression du travail infinitésimal fait apparaître que l'intégration sera suivant $\theta$ (en effet, c'est en faisant varier cet angle qu'on décrit entièrement la trajectoire de M sur le cercle). Les bornes d'intégration sous le point de départ et d'arrivée soit $\theta = 0$ et $\theta = \theta_1$. Il vient:
-
-\begin{align*}
+>__Plan du calcul__  
+>
+>On va détailler le calcul en deux étapes: on calcule le travail infinitésimal sur un déplacement élémentaire le long du cercle pour une position d'angle $\theta$ quelconque. On va alors trouver une expression de la forme $f(\theta)d\theta$. Il suffira alors de l'intégrer en choisissant correctement les bornes d'intégration en fonction du chemin choisi.
+>
+>
+>
+>__Travail infinitésimal__
+>Le déplacement élémentaire __sur le cercle__ s'écrit $\overrightarrow{dOM} = R d\theta \overrightarrow{e_\theta}$. Quant à la force, elle s'écrit $\overrightarrow{P} = mg \cos \theta \overrightarrow{e_r} - mg \sin \theta \overrightarrow{e_\theta}$. Le travail élémentaire s'écrit donc: $\delta W = -mgR \sin \theta d \theta$
+>
+>
+>
+>__Intégration__
+>L'expression du travail infinitésimal fait apparaître que l'intégration sera suivant $\theta$ (en effet, c'est en faisant varier cet angle qu'on décrit entièrement la trajectoire de M sur le cercle). Les bornes d'intégration sous le point de départ et d'arrivée soit $\theta = 0$ et $\theta = \theta_1$. Il vient:
+>
+>\begin{align*}
 W &= \int_{\theta=0}^{\theta=\theta_1} - mgR \sin \theta d\theta \\
 &= mgR \left(\cos \theta_1 - 1\right)
 \end{align*}
+
 ```{admonition} Analyse du résultat
-:class: hint
+:class: hint, dropdown
 On pourra vérifier ici l'homogénéité en utilisant le fait que mgz est homogène à une énergie (potentiel de pesanteur). Donc l'expression précédente est bien homogène à un terme énergétique comme doit l'être un transfert d'énergie mécanique (un travail).
 
 On remarquera aussi que ce travail est __négatif__. Ce qui veut dire que le système a perdu de l'énergie sous l'effet du poids. En effet, en montant, il est ralenti: le poids a alors un effet __résistant__. Si le mouvement s'était effectué dans l'autre sens, le travail (transfert d'énergie mécanique) aurait été positif: le système aurait gagné de l'énergie. Le poids aura alors eu un effet __moteur__.
@@ -142,7 +142,7 @@ Il est important de faire la différence avec les grandeurs d'état (comme l'én
 
 ````
 
-````{admonition} Exercice Dépendance
+````{admonition} Dépendance
 :class: attention
 
 On peut se rendre compte de cette dépendance en prenant le cas d'une action de contact sur un plan horizontal. La loi de Coulomb prévoit que la composante tangentielle est constante est toujours opposée au mouvement. Le travail d'un point A à un point B sera donc dépendant de la distance parcourue pour aller de A à B et donc du chemin parcouru.
@@ -180,15 +180,15 @@ Le travail élémentaire s'écrit $\delta W = \overrightarrow{F} \cdot \overrigh
 ````
 
 
-__Démonstration (cette démonstration n'est pas à connaître)__
-Considérons une action globale d'un système $\Sigma_{ext}$ sur le système étudié $\Sigma$ décomposée en une somme d'action ponctuelle sur les points M de $\Sigma$. On modélise chaque action ponctuelle par une force $\overrightarrow{F_{\Sigma_1 \to M}}$, le puissance transmise par l'action ponctuelle s'écrit $\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}$. On remarquera que la vitesse de tous les points M est identique (on la notera $\overrightarrow{v_{trans/\mathfrak{R}}}$).
-
-\begin{align*}
+>__Démonstration (cette démonstration n'est pas à connaître)__
+>Considérons une action globale d'un système $\Sigma_{ext}$ sur le système étudié $\Sigma$ décomposée en une somme d'action ponctuelle sur les points M de $\Sigma$. On modélise chaque action ponctuelle par une force $\overrightarrow{F_{\Sigma_1 \to M}}$, le puissance transmise par l'action ponctuelle s'écrit $\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}$. On remarquera que la vitesse de tous les points M est identique (on la notera $\overrightarrow{v_{trans/\mathfrak{R}}}$).
+>
+>\begin{align*}
 P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &= \sum\limits_{M} \left(\overrightarrow{F_{\Sigma_1 \to M}} \cdot \overrightarrow{v_{M/\mathfrak{R}}}\right)\\
 &=\sum\limits_{M} \left(\overrightarrow{F_{\Sigma_1 \to M}}\right) \cdot \overrightarrow{v_{trans/\mathfrak{R}}}\\
 &= \overrightarrow{F_{\Sigma_1 \to \Sigma}} \cdot \overrightarrow{v_{trans/\mathfrak{R}}}
 \end{align*}
-La démonstration pour le travail est identique.
+>La démonstration pour le travail est identique.
 
 
 ````{important} __Fondamental : Cas d'un solide en rotation autour d'un axe fixe (à connaître)__
@@ -199,16 +199,17 @@ Le travail élémentaire s'écrit $\delta W = M_\Delta d\theta_\Delta$ avec $d\t
 ````
 
 
-__Démonstration (cette démonstration n'est pas à connaître)__
-Considérons une action globale d'un système $\Sigma_{ext}$ sur le système étudié $\Sigma$ décomposée en une somme d'action ponctuelle sur les points M de $\Sigma$. On modélise chaque action ponctuelle par une force $\overrightarrow{F_{\Sigma_1 \to M}}$, le puissance transmise par l'action ponctuelle s'écrit $\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}$. On remarquera que la vitesse de tous les points M peut s'écrire (solide en rotation) $\overrightarrow{v_M} = \overrightarrow{\Omega} \wedge \overrightarrow{OM}$ (O est un point de l'axe et $\overrightarrow{\Omega}$ le vecteur taux de rotation).
-
-\begin{align*}
+>__Démonstration (cette démonstration n'est pas à connaître)__
+>Considérons une action globale d'un système $\Sigma_{ext}$ sur le système étudié $\Sigma$ décomposée en une somme d'action ponctuelle sur les points M de $\Sigma$. On modélise chaque action ponctuelle par une force $\overrightarrow{F_{\Sigma_1 \to M}}$, le puissance transmise par l'action ponctuelle s'écrit $\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}$. On remarquera que la vitesse de tous les points M peut s'écrire (solide en rotation) $\overrightarrow{v_M} = \overrightarrow{\Omega} \wedge \overrightarrow{OM}$ (O est un point de l'axe et $\overrightarrow{\Omega}$ le vecteur taux de rotation).
+>
+>\begin{align*}
 P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &= \sum\limits_{M} \left(\overrightarrow{F_{\Sigma_1 \to M}} \cdot \left(\overrightarrow{\Omega}\wedge \overrightarrow{OM}\right)\right)\\
 P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &= \sum\limits_{M} \left(\overrightarrow{\Omega} \cdot \left(\overrightarrow{OM} \wedge \overrightarrow{F_{\Sigma_1 \to M}}\right)\right)\\
 P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &= \overrightarrow{\Omega} \cdot \sum\limits_{M} \left(\overrightarrow{M_{O}}\left(\overrightarrow{F_{\Sigma_1 \to M}}\right)\right)\\
 P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &= \omega_{\Delta} \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_{O}}\left(\overrightarrow{F_{\Sigma_1 \to \Sigma}}\right)\\
 P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &= \omega_{\Delta} M_{\Delta}\left(\overrightarrow{F_{\Sigma_1 \to \Sigma}}\right)
 \end{align*}
+
 ### Cas de la liaison pivot. Cas parfait
 
 

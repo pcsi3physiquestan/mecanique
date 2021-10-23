@@ -26,9 +26,8 @@ Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la d�
 \end{equation}
 ````
 
-
-__Démonstration__
-\begin{align*}
+>__Démonstration__
+>\begin{align*}
 \frac{\rm{d}\overrightarrow{L_{A/\mathfrak{R}}}(M)}{\rm{dt}}_{\mathfrak{R}} &= {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{AM} \wedge \overrightarrow{p_{M/\mathfrak{R}}}\right)}_{\mathfrak{R}} \\
 &= {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{AM}\right)}_{\mathfrak{R}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}} + \overrightarrow{AM} \wedge {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{p_{M/\mathfrak{R}}}\right)}_{\mathfrak{R}}\\
 &= \underbrace{\overrightarrow{V_{M/\mathfrak{R}}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}}}_{= 0} + \overrightarrow{AM} \wedge \left(\sum \overrightarrow{F_{\to M}}\right)\\
@@ -40,8 +39,8 @@ Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la d�
 ````
 
 
-__Démonstration__
-Il suffit d'appliquer le TMC en un point de l'axe et de projeter l'équation sur un vecteur directeur de l'axe.
+>__Démonstration__
+>Il suffit d'appliquer le TMC en un point de l'axe et de projeter l'équation sur un vecteur directeur de l'axe.
 
 
 
@@ -57,18 +56,18 @@ La dérivée temporelle du moment cinétique d'un système de points matériel p
 ````
 
 
-__Démonstration__
-On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe étant similaire. Comme pour le cas du TRC, on peut appliquer le théorème du moment cinétique à chaque point $M_i$ du système. On distingue encore les actions extérieures et les actions intérieures. On rappelle que pour deux points $M_i$ et $M_j$ du système. Les forces de $M_i$ sur $M_j$ et de $M_i$ sur $M_j$ sont opposées et portées par la droite $M_i M_j$.
-
-On somme l'ensemble des théorèmes du moment cinétique ponctuels et on s'intéresse aux actions intérieures. On va particulariser les moments des actions de $M_i$ sur $M_j$ et de $M_j$ sur $M_i$. La somme donne:
-
-\begin{align*}
+>__Démonstration__
+>On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe étant similaire. Comme pour le cas du TRC, on peut appliquer le théorème du moment cinétique à chaque point $M_i$ du système. On distingue encore les actions extérieures et les actions intérieures. On rappelle que pour deux points $M_i$ et $M_j$ du système. Les forces de $M_i$ sur $M_j$ et de $M_i$ sur $M_j$ sont opposées et portées par la droite $M_i M_j$.
+>
+>On somme l'ensemble des théorèmes du moment cinétique ponctuels et on s'intéresse aux actions intérieures. On va particulariser les moments des actions de $M_i$ sur $M_j$ et de $M_j$ sur $M_i$. La somme donne:
+>
+>\begin{align*}
 \overrightarrow{M_{A/\mathfrak{R}}\left(\overrightarrow{F_{M_j\to M_i}}\right)} + \overrightarrow{M_{A/\mathfrak{R}}\left(\overrightarrow{F_{M_i\to M_j}}\right)} &= \overrightarrow{AM_i} \wedge \overrightarrow{F_{M_j\to M_i}} + \overrightarrow{AM_j} \wedge \overrightarrow{F_{M_i\to M_j}}\\
 &= \left(\overrightarrow{AM_i} - \overrightarrow{AM_j}\right) \wedge \overrightarrow{F_{M_j\to M_i}}\\
 &= \overrightarrow{M_j M_i} \wedge \overrightarrow{F_{M_j\to M_i}}\\
 &= 0
 \end{align*}
-Le dernier produit vectoriel est nul car la troisième loi de Newton donne que la force de $M_j$ sur $M_i$ est portée par la droite $M_j M_i$. Il vient que le moment résultant des actions intérieures est nul.
+>Le dernier produit vectoriel est nul car la troisième loi de Newton donne que la force de $M_j$ sur $M_i$ est portée par la droite $M_j M_i$. Il vient que le moment résultant des actions intérieures est nul.
 
 
 

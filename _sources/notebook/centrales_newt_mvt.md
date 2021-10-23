@@ -196,19 +196,19 @@ Nous allons trouver une relation entre l'énergie mécanique et l'excentricité.
 
 
 
-__Relation énergie mécanique-excentricité.__
-On utilise l'expression trouvée précédemment:
-
-$E_m = \frac{1}{2} mC^2 ({(\frac{du}{d \theta})}^2 + u^2 - \frac{2K}{mC^2} u)$
-
-or $u(\theta) = \frac{1 + e \cos \theta}{p}$ soit $\frac{du}{d \theta} = \frac{-e \sin \theta}{p}$. Donc:
-
-\begin{align*}
+>__Relation énergie mécanique-excentricité.__
+>On utilise l'expression trouvée précédemment:
+>
+>$E_m = \frac{1}{2} mC^2 ({(\frac{du}{d \theta})}^2 + u^2 - \frac{2K}{mC^2} u)$
+>
+>or $u(\theta) = \frac{1 + e \cos \theta}{p}$ soit $\frac{du}{d \theta} = \frac{-e \sin \theta}{p}$. Donc:
+>
+>\begin{align*}
 E_m &= \frac{1}{2} mC^2 ({(\frac{e \sin \theta}{p})}^2 + {(\frac{1 + e \cos \theta}{p})}^2 - \frac{2K}{mC^2} \frac{1 + e \cos \theta}{p})\\
 &= \frac{1}{2} mC^2 (\frac{e^2}{p^2} \sin^2 \theta + \frac{e^2}{p^2} \cos^2 \theta + \frac{1}{p^2} + \frac{2e}{p^2} \cos \theta - \frac{2 + 2e \cos \theta}{p^2})\\
 &= \frac{1}{2} \frac{K^2}{mC^2} (e^2 - 1)
 \end{align*}
-D'où le lien entre énergie mécanique et type de trajectoire.
+>D'où le lien entre énergie mécanique et type de trajectoire.
 
 
 ````{attention}

@@ -41,10 +41,9 @@ Les actions de contact sont en général surfacique: on va sommer les actions po
 
 * Cas d'action d'un fluide (liquide ou gaz). Comme on va le voir, on dispose souvent d'expression de la résultante des forces. En première année, on utilise principalement ces actions dans le cadre d'une modélisation ponctuelle du système mécanique de sorte que le moment résultant n'est pas donné (l'action devenant par modélisation...  ponctuelle).
 * Cas d'action d'un solide (on parle de liaison). Dans le cadre du programme, les caractéristiques:
-
-* sont inconnues et ne peuvent être déterminées que par l'utilisation de théorème (comme le PFD (ou plutôt TRD... ) qui permet de déterminer certaines composantes des forces et moments résultants.
-* possèdent des composantes nulles par hypothèse (cas d'absence de frottements)
-* sont établies ou encadrées (inégalité) grâce aux lois de Coulomb (cf. suite)
+    * sont inconnues et ne peuvent être déterminées que par l'utilisation de théorème (comme le PFD (ou plutôt TRD... ) qui permet de déterminer certaines composantes des forces et moments résultants.
+    * possèdent des composantes nulles par hypothèse (cas d'absence de frottements)
+    * sont établies ou encadrées (inégalité) grâce aux lois de Coulomb (cf. suite)
 
 
 
@@ -68,7 +67,7 @@ En un point de contact M entre le système et le solide/fluide (qu'on appellera 
 
 La __composante normale__ correspond à une "réaction de non interpénétration", le système extérieur tend à pousser le système au point M. Cela peut-être une tendance légère (cas d'un système extérieur déformable) ou une contrainte forte (le mouvement du système étudié dans la direction normale au point de contact est alors nul. Au jouant sur la géométrie du contact dans le second cas, on arrive à créer des __liaisons__ dont les mouvements possibles (__degré de liberté__) sont définies précisément (surface de contact cylindrique conduit à un pivot glissant, surface de contact plan sur plan conduit à...  un mouvement plan).
 
-Il vient que (sauf cas de surface adhésive non étudié dans le cadre du programme), la composante normale de la force modélisant l'action ponctuelle du système $\Sigma_1$ sur le système $\Sigma_2$ en un point de contact M est toujours dirigée __vers l'intérieur du système____$\Sigma_2$__ (qui subit l'action).
+Il vient que (sauf cas de surface adhésive non étudié dans le cadre du programme), la composante normale de la force modélisant l'action ponctuelle du système $\Sigma_1$ sur le système $\Sigma_2$ en un point de contact M est toujours dirigée __vers l'intérieur du système $\Sigma_2$__ (qui subit l'action).
 
 La __composante tangentielle__ correspond à une action s'opposant au __mouvement relatif__ des deux systèmes en contacts (ou à la mise en mouvement relatif). On parle de __frottements__ (fluide ou solide suivant le cas). Lorsqu'on point M de contact, la composantre tangentielle s'oppose à la vitesse du système $\Sigma_2$ par rapport au système $\Sigma_1$ ($\overrightarrow{v}(M \in \Sigma_2 / M \in \Sigma_1)$. Lorsqu'il y a immobilité, elle s'oppose à la mise en mouvement (ou est nulle cf. suite).
 ````
@@ -150,7 +149,7 @@ On peut néanmoins noter que par intégration des données précédentes, on pou
 
 ### Liaisons normalisée et géométrie
 
-````{admonition} Exercice Liaison et géométrie
+````{admonition} Liaison et géométrie
 :class: attention
 
 Les caractéristiques d'une action de contact solide __résulante__ vont dépendre de la géométrie de la surface de contact. En effet, certaines géométries vont empêcher certains mouvements. Cela signifie que la force résultante et le moment résultant peuvent être non nuls pour empêcher ces mouvements.
@@ -197,14 +196,14 @@ Une liaison pivot parfaite est une liaison pivot sans frottements, le moment ré
 ````
 
 
-__Explication__
-Dans une liaison pivot, la surface de contact est un cylindre. S'il n'y a pas de frottements, alors il n'y a pas de composantes tangentielles pour chaque action ponctuelles de contact.
-
-Dans le cas des surfaces planes extrêmes, la force ponctuelle est donc suivant l'axe de rotation: son moment est nul.
-
-Dans le cas de la surface latérales en forme de cylindre, la force ponctuelle est dirigée vers l'axe de rotation: son moment est nul.
-
-Il vient que le moment résultant sera nul.
+>__Explication__
+>Dans une liaison pivot, la surface de contact est un cylindre. S'il n'y a pas de frottements, alors il n'y a pas de composantes tangentielles pour chaque action ponctuelles de contact.
+>
+>Dans le cas des surfaces planes extrêmes, la force ponctuelle est donc suivant l'axe de rotation: son moment est nul.
+>
+>Dans le cas de la surface latérales en forme de cylindre, la force ponctuelle est dirigée vers l'axe de rotation: son moment est nul.
+>
+>Il vient que le moment résultant sera nul.
 
 
 ````{attention}

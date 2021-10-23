@@ -77,37 +77,33 @@ Tout référentiel en translation rectiligne uniforme avec un référentiel gali
 ````
 
 
-__Démonstration__
-Considérons un référentiel galiléen noté $\mathfrak{R_G}$ et un second référentiel $\mathfrak{R}$ en translation rectiligne uniforme à la vitesse $\overrightarrow{v_{R/RG}}$ par rapport à $\mathfrak{R_G}$.
-
-Première méthode: On considère un point matériel isolé. Il possède un mouvement de translation rectiligne uniforme (à la vitesse $\overrightarrow{v_0}$) dans $\mathfrak{R_G}$ car ce référentiel est galiléen. Dans $\mathfrak{R}$, sa vitesse est: $\overrightarrow{v_{/R}} = \overrightarrow{v_0} + \overrightarrow{v_{R/RG}} = \overrightarrow{cste}$: il possède aussi un mouvement rectiligne uniforme dans $\mathfrak{R}$ donc $\mathfrak{R}$ est aussi galiléen.
-
-Deuxième méthode:] On considère un point matériel soumise un ensemble de force dont la résultante est $\overrightarrow{F}$. Le principe fondamental dans $\mathfrak{R_G}$ s'écrit: $m \overrightarrow{a_{RG}} = \overrightarrow{F}$
-
-Or:
-
-\begin{align*}
+>__Démonstration__
+>Considérons un référentiel galiléen noté $\mathfrak{R_G}$ et un second référentiel $\mathfrak{R}$ en translation rectiligne uniforme à la vitesse $\overrightarrow{v_{R/RG}}$ par rapport à $\mathfrak{R_G}$.
+>
+>Première méthode: On considère un point matériel isolé. Il possède un mouvement de translation rectiligne uniforme (à la vitesse $\overrightarrow{v_0}$) dans $\mathfrak{R_G}$ car ce référentiel est galiléen. Dans $\mathfrak{R}$, sa vitesse est: $\overrightarrow{v_{/R}} = \overrightarrow{v_0} + \overrightarrow{v_{R/RG}} = \overrightarrow{cste}$: il possède aussi un mouvement rectiligne uniforme dans $\mathfrak{R}$ donc $\mathfrak{R}$ est aussi galiléen.
+>
+>Deuxième méthode:] On considère un point matériel soumise un ensemble de force dont la résultante est $\overrightarrow{F}$. Le principe fondamental dans $\mathfrak{R_G}$ s'écrit: $m \overrightarrow{a_{RG}} = \overrightarrow{F}$
+>
+>Or:
+>
+>\begin{align*}
 &m \overrightarrow{a_{\mathfrak{R}}} = m \frac{d \overrightarrow{v_{\mathfrak{R}}}}{dt} = m \frac{d \overrightarrow{v_{\mathfrak{RG}}} + \overrightarrow{v_{R/RG}}}{dt} = m \frac{d \overrightarrow{v_{\mathfrak{RG}}}}{dt} = m \overrightarrow{a_{\mathfrak{RG}}}\\
 &\Longrightarrow m \overrightarrow{a_{\mathfrak{R}}} = \overrightarrow{F}
 \end{align*}
-En particulier si le mobile est isolé ($\overrightarrow{F} = 0$), l'accélération dans $\mathfrak{R}$ est nulle et le système est donc dans un mouvement de translation rectiligne uniforme: c'est un référentiel galiléen.
+>En particulier si le mobile est isolé ($\overrightarrow{F} = 0$), l'accélération dans $\mathfrak{R}$ est nulle et le système est donc dans un mouvement de translation rectiligne uniforme: c'est un référentiel galiléen.
 
-
-
-__Principe de relativité galiléenne.__
-La deuxième méthode est ce qu'on appelle le __principe de relativité galiléenne__: Les lois de la dynamique sont les mêmes quel que soit le référentiel galiléen considéré.
+>__Principe de relativité galiléenne.__
+>La deuxième méthode est ce qu'on appelle le __principe de relativité galiléenne__: Les lois de la dynamique sont les mêmes quel que soit le référentiel galiléen considéré.
 
 
 ## Théorème de la résultante cinétique
-
 
 __Application des lois de Newton à un solide.__
 Le but est de voir comment on peut appliquer le principe fondamental de la dynamique à un système de points matériel. On peut l'énoncer de manière identique mais comme on va le voir, on peut "simplifier" légèrement son énoncé.
 
 
-\begin{rappel}{Forces extérieures et intérieures}
+_Rappel : Forces extérieures et intérieures_
 On rappelle que pour un système de points matériels (solide déformable ou indéformable), on distingue les forces __intérieures__ exercées par une partie du système sur une autre partie du système et les forces __extérieures__ exercées par le milieu extérieur sur le système.
-\end{rappel}
 
 ````{important} __Fondamental : Théorème de la résultante dynamique__
 
@@ -115,11 +111,11 @@ La dérivée temporelle de la quantité de mouvement total d'un système de poin
 ````
 
 
-__Démonstration__
-Considérons chaque point $M_i$ de masse $m_i$du système. On peut appliquer le principe fondamental de la dynamique à chaque point. Le bilan des forces sur un point $M_i$ se divise en deux parties: les actions extérieures, modélisées par des forces $\overrightarrow{F}_{ext \to M_i}$ et les actions intérieures au système. Si l'on somme tous ces PFD, il vient:
-
-* le terme de gauche est la somme des dérivées des quantités de mouvement soit la dérivée de la quantité de mouvement totale.
-* le terme de droite contient la somme de toutes les actions extérieures au système (qui seront regroupées en actions résultantes) et la somme des actions intérieures. Or pour chaque action du point $M_j$ sur le point $M_i$ à l'intérieur du système, il y aura aussi l'action du point $M_i$ sur le point $M_j$ et le principe des actions réciproques implique que les forces associées à ces deux actions sont opposées: elles vont s'annuler. De cette somme, il ne restera donc bien que la résultante des forces extérieures.
+>__Démonstration__
+>Considérons chaque point $M_i$ de masse $m_i$du système. On peut appliquer le principe fondamental de la dynamique à chaque point. Le bilan des forces sur un point $M_i$ se divise en deux parties: les actions extérieures, modélisées par des forces $\overrightarrow{F}_{ext \to M_i}$ et les actions intérieures au système. Si l'on somme tous ces PFD, il vient:
+>
+>* le terme de gauche est la somme des dérivées des quantités de mouvement soit la dérivée de la quantité de mouvement totale.
+>* le terme de droite contient la somme de toutes les actions extérieures au système (qui seront regroupées en actions résultantes) et la somme des actions intérieures. Or pour chaque action du point $M_j$ sur le point $M_i$ à l'intérieur du système, il y aura aussi l'action du point $M_i$ sur le point $M_j$ et le principe des actions réciproques implique que les forces associées à ces deux actions sont opposées: elles vont s'annuler. De cette somme, il ne restera donc bien que la résultante des forces extérieures.
 
 
 

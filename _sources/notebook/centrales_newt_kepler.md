@@ -53,12 +53,12 @@ Les deux dernières hypothèses sont justifiées en observant que la masse du So
 ## Cas des deux premières lois
 
 
-__Démonstration des deux premières lois.__
-Les deux premières lois se démontrent rapidement. Les hypothèses permettent de considérer le Soleil fixe et la seule force qui s'applique sur la force (attraction du Soleil) est une force centrale.
-
-Il vient, de la conservation du moment cinétique, que le mouvement vérifie la loi des aires.
-
-De plus, la force est newtonienne donc la trajectoire est une conique. Comme le mouvement est confiné, c'est un état lié, donc une ellipse.
+>__Démonstration des deux premières lois.__
+>Les deux premières lois se démontrent rapidement. Les hypothèses permettent de considérer le Soleil fixe et la seule force qui s'applique sur la force (attraction du Soleil) est une force centrale.
+>
+>Il vient, de la conservation du moment cinétique, que le mouvement vérifie la loi des aires.
+>
+>De plus, la force est newtonienne donc la trajectoire est une conique. Comme le mouvement est confiné, c'est un état lié, donc une ellipse.
 
 
 ## Energie mécanique
@@ -77,11 +77,12 @@ L'énergie mécanique dans une trajectoire elliptique a pour expression:
 
 \begin{equation}
 E_m = - \frac{K}{2a}
+\end{equation}
 ````
 
 
-__Démonstration__
-Cette démonstration est à faire en exercice. Elle doit être connue.
+>__Démonstration__
+>Cette démonstration est à faire en exercice. Elle doit être connue.
 
 Indice: Les caractéristiques de conservation des intégrales premières sont à utiliser entre le périhélie et l'aphélie.
 
@@ -92,8 +93,8 @@ Si la trajectoire est circulaire, alors $E_m = -E_c = \frac{E_p}{2} = - \frac{K}
 ````
 
 
-__Démonstration__
-Cette démonstration est à faire en exercice. Elle doit être connue.
+>__Démonstration__
+>Cette démonstration est à faire en exercice. Elle doit être connue.
 
 Indice: Exprimer, au moyen du PFD, une relation entre la vitesse et le rayon. En déduire l'expression de $E_m$.
 

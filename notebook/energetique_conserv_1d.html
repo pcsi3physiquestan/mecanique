@@ -344,11 +344,6 @@
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       Exemples
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="energetique_ex_app.html">
        Exercices d’application
       </a>
@@ -680,7 +675,7 @@
 </div>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Exercice Analogie avec un profil d’altitude</p>
+<p class="admonition-title">Analogie avec un profil d’altitude</p>
 <p>Dans le cas d’une bille roulant sur un profil d’altitude à 1 dimension, l’altitude z dépend uniquement de x. On peut alors représenter <span class="math notranslate nohighlight">\(z(x)\)</span> mais aussi <span class="math notranslate nohighlight">\(E_p(x)\)</span> qui est proportionnelle à z.</p>
 <p>Si les propriétés établies par la suite sont très générales et s’appliquent à des cas où l’énergie potentielle n’a pas pour origine la pesanteur, on pourra garder à l’esprit cet exemple pour visualiser les propriétés d’équilibre, de stabilité, d’état lié et de diffusion établies par la suite.</p>
 <div class="figure align-center" id="fig-240">
@@ -755,7 +750,7 @@
 <p>Une fois qu’on a fourni de l’énergie au système, il n’est pas dans l’état “supérieur à F” défini précédemment (son énergie mécanique a changé). Il est dans un état qu’on pourrait pour l’instant appelé “supérieur à C” en utilisant les notations du graphique.</p>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Exercice Barrière d’énergie en chimie</p>
+<p class="admonition-title">Barrière d’énergie en chimie</p>
 <p>Les barrières d’énergie ont déjà été observées en chimie lors de l’étude des réaction (énergie d’activation). Il faut que l’énergie cinétique soit suffisante pour l’énergie mécanique totale puisse passer “au-dessus” de la barrière.</p>
 <p>Attention quand même car ces phénomènes sont quantiques. En mécanique quantique, un système peut franchir une barrière de potentiel sans augmenter son énergie mécanique, on parle d’effet tunnel.</p>
 </div>
@@ -769,7 +764,7 @@
 <p>Des états où le système peut s’éloigner indéfiniment (état “supérieur à F”), on parle <strong>d’état de diffusion</strong>.</p>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Exercice Chimie et ion</p>
+<p class="admonition-title">Chimie et ion</p>
 <p>On pourra ainsi différencier ces deux états pour un électron. S’il est piégé en orbite autour du noyau, il est dans un état lié. S’il est libéré par ionisation, il passe sur un état de diffusion.</p>
 <p>On remarquera sur l’exemple précédent qu’il ne s’agit pas d’un système à 1 degré de liberté. Mais la propriété fondamentale ici est la positivité de l’énergie cinétique qui reste valable quoiqu’il arrive.</p>
 </div>
@@ -802,12 +797,14 @@ Le système ne peut pas passer d’un état à l’autre car il mettra un temps 
 <li><p>L’évolution de la vitesse est symétrique à l’aller et au retour.</p></li>
 </ul>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 Commençons par rappeler que le PFD implique pour un système conservatif que l’accélération est une donnée de la position et de la vitesse seule (les forces ne peuvent varier explicitement en fonction du temps où le système ne serait pas conservatif). Cela signifie qu’en un état donné, la connaissance de la position et de la vitesse défini entièrement le mouvement ultérieur (on connaît l’équation différentielle et on a les deux conditions initiales, c’est un problème de Cauchy).</p>
 <p>Cela signifie aussi que si un système repasse par le même point  <span class="math notranslate nohighlight">\((x(t);v(t))\)</span> alors il va reproduire la même trajectoire de phase, c’est-à-dire le même mouvement.</p>
 <p>Points extrêmes: En un point où <span class="math notranslate nohighlight">\(E_p &lt; E_m\)</span>, la vitesse du mobile est non nulle. S’il rebrousse chemin en ce point, alors il y aurait discontinuité de la vitesse (changement de signe nécessaire), ce qui est impossible. Il ne peut donc rebrousser chemin qu’en un point de vitesse nulle.</p>
 <p>Périodicité et symétrie: Supposons que le mobile passe par un point A entre les deux points extrêmes E et D. Une fois passé par E et D, il va revenir en A dans le même sens de parcours qu’initialement. Et en ce point, il aura la même vitesse. On est donc revenu dans le même état. La remarque précédente assure que le mouvement ultérieur sera identique au mouvement précédent: le mouvement sera périodique.</p>
 <p>De même, on peut remarquer qu’à chaque position x, la vitesse sera la même, que le mouvement se fasse de E vers D ou de D vers E: le mouvement est donc symétrique.</p>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="equilibre-et-stabilite">
@@ -819,7 +816,8 @@ Commençons par rappeler que le PFD implique pour un système conservatif que l�
 <p><strong>Fondamental : Condition d’équilibre</strong></p>
 <p>Les positions d’équilibre d’un système conservatif sont nécessairement des positions où l’énergie potentielle possède un extremum (ou plus généralement un point d’annulation de la dérivée).</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 On a déjà démontré cette propriété dans le cas général, mais nous allons à nouveau la présenter ici dans le cas à une dimension.</p>
 <p>On rappelle que la résultante des forces conservatives (ici la seule) est donnée par:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -828,6 +826,7 @@ On a déjà démontré cette propriété dans le cas général, mais nous allons
 &amp;= - \frac{\rm{d}E_p}{\rm{dx}}(x) \overrightarrow{e_x}
 \end{align*}\]</div>
 <p>A l’équilibre, la résultante des forces est nulle donc la dérivée de l’énergie potentielle est nulle.</p>
+</div></blockquote>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>On retrouve l’assertion donnée précedemment selon laquelle <span class="math notranslate nohighlight">\(x_0\)</span> et <span class="math notranslate nohighlight">\(x_1\)</span> dont des positions d’équilibres.</p>
@@ -868,7 +867,8 @@ Remarque<div class="summary-down docutils">
 <p>Si en une position d’équilibre, la dérivée seconde est strictement négative, alors c’est une position d’équilibre instable.</p>
 <p>Si elle est nulle, on ne peut conclure.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 On peut utiliser l’une des deux méthodes énoncées précédemment pour prouver cette propriété. Nous allons ici utiliser la propriété de stabilité des équation différentielle linéaires mais on pourrait très bien utiliser l’analyse du signe de l’accélération (s’entraîner à le faire).</p>
 <p>On rappelle que la force s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F} = - \frac{\rm{d}E_p}{\rm{dx}}(x) \overrightarrow{e_x}\)</span>. Pour linéairise le PFD, nous allons développer l’énergie potentielle à l’ordre 2. Il vient:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -879,6 +879,7 @@ m \ddot x &amp;= F(x) \approx - \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) {\left(x -
 \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x_{eq} &amp;= m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x
 \end{align*}\]</div>
 <p>La dernière équation est stable si la dérivée seconde est positive et instable si la dérivée seconde négative. Si elle est nulle, il faut faire un développement limité à un ordre supérieur. Mais l’équation obtenue n’est pas linéaire, la seule méthode utilisable sera de vérifier le signe de l’accélération.</p>
+</div></blockquote>
 </div>
 <div class="section" id="petits-mouvements-autour-d-une-position-d-equilibre-stable">
 <h3>Petits mouvements autour d’une position d’équilibre stable<a class="headerlink" href="#petits-mouvements-autour-d-une-position-d-equilibre-stable" title="Permalink to this headline">¶</a></h3>

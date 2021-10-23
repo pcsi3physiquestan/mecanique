@@ -65,7 +65,7 @@ En général (mais ce n'est pas obligatoire), on choisit de fixer l'énergie pot
 Dans ce cas, l'énergie potentielle en un point M représente aussi l'énergie qu'il faut fournir au mobile pour l'amener de l'infini au point M sans faire varier sa vitesse.
 
 
-````{admonition} Exercice Energie potentielle électrostatique et gravitationnelle
+````{admonition} Energie potentielle électrostatique et gravitationnelle
 :class: attention
 
 Elles ont pour expression:

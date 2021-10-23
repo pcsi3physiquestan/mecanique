@@ -55,7 +55,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Exemples" href="energetique_exemples.html" />
+    <link rel="next" title="Exercices d’application" href="energetique_ex_app.html" />
     <link rel="prev" title="Forces/actions conservatives et énergie potentielle" href="energetique_ep.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -341,11 +341,6 @@
      <li class="toctree-l3 current active">
       <a class="current reference internal" href="#">
        Théorèmes énergétiques
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       Exemples
       </a>
      </li>
      <li class="toctree-l3">
@@ -653,7 +648,8 @@ dE_c &amp;= \delta W(\overrightarrow{F})
 \frac{\rm{d}E_{c/\mathfrak{R}}}{\rm{dt}} &amp;= \delta P_{/\mathfrak{R}}(\overrightarrow{F})
 \end{align*}\]</div>
 </div>
-<p><strong>Démonstration</strong></p>
+<blockquote>
+<div><p><strong>Démonstration</strong></p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 m \frac{d \overrightarrow{v_{M/R}}}{dt} &amp;= \overrightarrow{F}\\
@@ -661,6 +657,7 @@ m \frac{d \overrightarrow{v_{M/R}}}{dt} \cdot \overrightarrow{v_{M/R}} &amp;= \o
 \frac{d}{dt}(\frac{1}{2} m v^2) &amp;= P_R(\overrightarrow{F})\\
 dE_c &amp;= \delta W(\overrightarrow{F})
 \end{align*}\]</div>
+</div></blockquote>
 <p>L’expression intégrale s’obtient en intégrant la dernière équation sur le chemin choisi.</p>
 </div>
 <div class="section" id="theoreme-de-l-energie-mecanique">
@@ -670,13 +667,15 @@ dE_c &amp;= \delta W(\overrightarrow{F})
 <p><strong>Fondamental : Théorème de l’énergie mécanique</strong></p>
 <p>Dans un référentiel galiléen, la variation d’énergie mécanique d’un point matériel M de masse m entre deux points A et B d’un système est égale au travail des seules forces non-conservatives sur le trajet entre A et B.</p>
 </div>
-<p><strong>Démonstration</strong></p>
+<blockquote>
+<div><p><strong>Démonstration</strong></p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \Delta E_{c,A \rightarrow B} &amp;= W_{A \rightarrow B}(\overrightarrow{F_c}) + W_{A \rightarrow B}(\overrightarrow{F_{nc}})\\
 \Delta E_{c,A \rightarrow B} &amp;= - \Delta E_{p,A \rightarrow B} + W_{A \rightarrow B}(\overrightarrow{F_{nc}})\\
 \Delta E_{c,A \rightarrow B} + \Delta E_{p,A \rightarrow B} &amp;= W_{A \rightarrow B}(\overrightarrow{F_{nc}})
 \end{align*}\]</div>
+</div></blockquote>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 <em>Remarque : Théorème de la puissance mécanique</em><div class="summary-down docutils">
@@ -713,8 +712,10 @@ Est-ce grave de calculer un travail pour une force conservative au lieu d’util
 <p>La variation d’énergie cinétique d’un système de points d’un état A à un état B est égale au travail des forces qui s’appliquent sur le système sur le même chemin, qu’elles <strong>soient extérieures ou intérieures</strong>.</p>
 <p>La variation d’énergie mécanique d’un système de points d’un état A à un état B est égale au travail des forces non conservatives qui s’appliquent sur le système sur le même chemin, qu’elles <strong>soient extérieures ou intérieures</strong>.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 La démonstration s’obtient par simple sommation du TEC/TEM pour chaque point du système.</p>
+</div></blockquote>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p><strong>Travail des forces intérieures</strong></p>
@@ -725,7 +726,8 @@ La démonstration s’obtient par simple sommation du TEC/TEM pour chaque point 
 <p><strong>Fondamental : Théorème de l’énergie cinétique/mécanique. Cas d’un solide indéformable.</strong></p>
 <p>Dans le cas d’un solide <strong>indéformable, le travail des forces intérieures est nul.</strong></p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 Nous allons démontrer que dans le cas général le travail des forces intérieures est a priori non nul et qu’il s’annule dans le cas d’un solide indéformable.</p>
 <p>Considérons deux points <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span> du solide en interaction. On note <span class="math notranslate nohighlight">\(\overrightarrow{f_{1 \rightarrow 2}}\)</span> la force exercée par <span class="math notranslate nohighlight">\(M_1\)</span> sur <span class="math notranslate nohighlight">\(M_2\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{f_{2 \rightarrow 1}}\)</span> la force exercée par <span class="math notranslate nohighlight">\(M_2\)</span> sur <span class="math notranslate nohighlight">\(M_1\)</span>. On a (troisième loi de Newton): <span class="math notranslate nohighlight">\(\overrightarrow{f_{1 \rightarrow 2}} = -\overrightarrow{f_{2 \rightarrow 1}}\)</span>. La puissance totale associée à ces deux forces s’écrit:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -736,10 +738,13 @@ P &amp;= \overrightarrow{f_{1 \rightarrow 2}} \cdot v_{M_2/R} + \overrightarrow{
 \overrightarrow{M_1 M_2} &amp;= M_1 M_2 \overrightarrow{u_{1 \rightarrow 2}}\\
 {(\frac{d \overrightarrow{M_1 M_2}}{dt})}_{R} &amp;= \frac{d M_1 M_2}{dt} \overrightarrow{u_{1 \rightarrow 2}} + M_1 M_2 {(\frac{d \overrightarrow{u_{1 \rightarrow 2}}}{dt})}_R
 \end{align*}\]</div>
+</div></blockquote>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{u_{1 \rightarrow 2}}\)</span> est le vecteur unitaire allant de <span class="math notranslate nohighlight">\(M_1\)</span> vers <span class="math notranslate nohighlight">\(M_2\)</span>.</p>
-<p>Le première terme correspond à la variation de la distance entre les deux points, le second à la rotation d’un point par rapport à l’autre. La puissance des forces intérieurs pour ces deux points s’écrit donc: <span class="math notranslate nohighlight">\(P = f_{1 \rightarrow 2} \frac{d M_1 M_2}{dt}\)</span></p>
+<blockquote>
+<div><p>Le première terme correspond à la variation de la distance entre les deux points, le second à la rotation d’un point par rapport à l’autre. La puissance des forces intérieurs pour ces deux points s’écrit donc: <span class="math notranslate nohighlight">\(P = f_{1 \rightarrow 2} \frac{d M_1 M_2}{dt}\)</span></p>
 <p>Si le mobile se déforme, cette expression est a priori non nulle.</p>
 <p>Si le solide est indéformable, cette expression est toujours nulle.</p>
+</div></blockquote>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 <em>Remarque : Cas d’un solide déformable isolé.</em><div class="summary-down docutils">
@@ -780,7 +785,7 @@ P &amp;= \overrightarrow{f_{1 \rightarrow 2}} \cdot v_{M_2/R} + \overrightarrow{
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="energetique_ep.html" title="previous page">Forces/actions conservatives et énergie potentielle</a>
-    <a class='right-next' id="next-link" href="energetique_exemples.html" title="next page">Exemples</a>
+    <a class='right-next' id="next-link" href="energetique_ex_app.html" title="next page">Exercices d’application</a>
 
         </div>
         
