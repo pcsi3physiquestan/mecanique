@@ -60,7 +60,7 @@ Il est important de pouvoir reconnaître un certain nombre de trajectoires usuel
 
 ### Trajectoire rectiligne
 
-````{tip} Définition : Mouvement rectiligne
+````{important} Définition : Mouvement rectiligne
 
 Un mouvement rectiligne est un mouvement dont la trajectoire est portée par une droite (ou un segment) fixe dans le référentiel d'étude. Il se fait suivant une direction de l'espace: c'est un mouvement à 1 degré de liberté.
 
