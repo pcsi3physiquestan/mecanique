@@ -45,8 +45,8 @@ La quantité du mouvement dans un référentiel R d'un système S est égale à 
 ````
 
 
-__Démonstration__
-\begin{align*}
+>__Démonstration__
+>\begin{align*}
 \overrightarrow{P_{S/R}} &= \iiint_{P \in S} \rho(P) \overrightarrow{v}(P) d \tau(P)\\
 &= \iiint_{P \in S} \rho(P) \frac{d \overrightarrow{OP}}{dt} d \tau(P)\\
 &= \frac{d}{dt}(\iiint_{P \in S} \rho(P) \overrightarrow{OP} d \tau(P))\\
@@ -89,7 +89,7 @@ On ne peut relier a priori le moment cinétique du solide à la vitesse du centr
 
 * Cas général: par sommation discrète ou continue à partir du moment de chaque point
 * Cas d'une translation: seul cas où l'on peut se ramener au mouvement du centre d'inertie (cf. suite)
-* uCas d'une rotation:  une expression du moment cinétique sera donnée par la suite.
+* Cas d'une rotation:  une expression du moment cinétique sera donnée par la suite.
 
 ````
 
@@ -102,7 +102,7 @@ L'énergie cinétique $E_{C/R}$ du système S dans le référentiel R est la som
 ````
 
 
-__Termes de l'énergie cinétique (Admis)__
+__Termes de l'énergie cinétique (Admis)__  
 L'énergie cinétique d'un solide __indéformable__ se décompose en deux termes:
 
 * le premier décrit le mouvement de translation global du solide (mouvement du centre d'inertie).

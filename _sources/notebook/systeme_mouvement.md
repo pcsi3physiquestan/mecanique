@@ -87,8 +87,8 @@ Pour un solide S en rotation autour d'un axe fixe  dans R, le moment cinétique 
 ````
 
 
-__Démonstration__
-\begin{align*}
+>__Démonstration__
+>\begin{align*}
 \sigma_{S/\Delta} &= \iiint_{P \in S} \rho(P)(\overrightarrow{OP} \wedge \overrightarrow{v(P)})\cdot \overrightarrow{u_{\Delta}} d \tau(P)\\
 &= \iiint_{P \in S} \rho(P)(\overrightarrow{OP} \wedge (\overrightarrow{\Omega} \wedge \overrightarrow{OP})) \cdot \overrightarrow{u_{\Delta}} d \tau(P)\\
 \intertext{En utilisant des coordonnées cylindriques d'axe $\Delta$:}
@@ -96,6 +96,7 @@ __Démonstration__
 &= \iiint_{P \in S} \rho(P) r^2(P) \omega d \tau(P)\\
 &= J_{S/\Delta} \omega
 \end{align*}
+
 ````{important} __Fondamental : Energie cinétique d'un solide en rotation autour d'un axe fixe.__
 
 Dans le cas d'une rotation autour d'un axe fixe $\Delta$, l'énergie cinétique du solide peut s'écrire sous la forme:
@@ -107,12 +108,13 @@ où $J_{S/\Delta}$ est le moment cinétique de S par rapport à l'axe $\Delta$ e
 ````
 
 
-__Démonstration__
-\begin{align*}
+>__Démonstration__
+>\begin{align*}
 E_{c/R} &= \sum\limits_{i=1}^{n} \frac{1}{2} m_i v_i^2\\
 &= \sum\limits_{i=1}^{n} \frac{1}{2} m_i {(r_i \omega)}^2\\
 &= \frac{1}{2} J_{S/\Delta} \omega^2
 \end{align*}
+
 ````{dropdown} Remarque
 
 On peut remarquer que le moment d'inertie par rapport à l'axe est d'autant plus grand que la plus grande partie de la masse du solide est éloignée de l'axe. Puisque ce sont les points les plus éloignés de l'axe qui auront la plus grande vitesse, il est logique que l'énergie cinétique soit d'autant plus grande que le moment d'inertie est grand.

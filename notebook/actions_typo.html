@@ -744,12 +744,15 @@ Dans le cas d’un système constitué d’un unique point matériel M, le point
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text"><strong>1. Paramétrage</strong></p>
+<blockquote>
+<div><p class="card-text"><strong>1. Paramétrage</strong></p>
 <p class="card-text">On va choisir un système de coordonnées cartésiennes dont l’un des axes (Ox) est suivant le plan incliné.</p>
+</div></blockquote>
 <div class="figure align-center" id="fig-228">
 <img alt="../_images/plan_modelisation.png" src="../_images/plan_modelisation.png" />
 </div>
-<p class="card-text">Le poids s’écrira donc: <span class="math notranslate nohighlight">\(\overrightarrow{P} = - mg \cos \alpha \overrightarrow{e_y} + mg \sin \alpha \overrightarrow{e_x}\)</span>.</p>
+<blockquote>
+<div><p class="card-text">Le poids s’écrira donc: <span class="math notranslate nohighlight">\(\overrightarrow{P} = - mg \cos \alpha \overrightarrow{e_y} + mg \sin \alpha \overrightarrow{e_x}\)</span>.</p>
 <p class="card-text">La réaction du support s’écrit: <span class="math notranslate nohighlight">\(\overrightarrow{R} = R_y \overrightarrow{e_y}\)</span>. Nous ici dans un cas où l’on n’a pas d’expression connue des composantes de la force. Par contre, on connaît que <strong>certaines composantes sont nulles</strong>. C’est souvent le cas pour les actions dites “de contact”.</p>
 <p class="card-text"><strong>2. Contrainte cinématique</strong></p>
 <p class="card-text">Ici, le mouvement de M est contraint à reste sur le plan incliné. Il vient une accélération nulle suivant l’axe Oy. Sans quantifier complètement la relation accélération-force, on peut déjà observer que cela implique que la somme des forces suivant l’axe Oy est nulle (il faut que leur action de déviation dans cette direction se compense). Soit: <span class="math notranslate nohighlight">\(R_y = - P_y = mg \cos \alpha\)</span> et donc <span class="math notranslate nohighlight">\(\overrightarrow{R} = mg \cos \alpha \overrightarrow{e_y}\)</span></p>
@@ -759,6 +762,7 @@ Dans le cas d’un système constitué d’un unique point matériel M, le point
 <p class="card-text">Attention, on rappelle que l’inertie peut permettre au point M de monter dans un premier temps si sa vitesse initiale était vers le haut. Mais va être ralenti et finira par redescendre.</p>
 <p class="card-text"><strong>Modélisation ponctuelle</strong>
 Le système précédente est probablement une modélisation ponctuelle d’un système mécanique plus étendu (un cube, une luge… ). On rappelle qu’une telle modélisation est valable seulement si le système de se déforme pas et ne risque pas de tourner sur lui-même.</p>
+</div></blockquote>
 </div>
 </details></div>
 <div class="section" id="action-ponctuelle-moment-d-une-action">
@@ -770,8 +774,8 @@ Le système précédente est probablement une modélisation ponctuelle d’un sy
 <p><strong>Définition : Moment d’une action ponctuelle/d’une force par rapport à un point.</strong></p>
 <p>Soit une action ponctuelle <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> d’un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> et un point d’application A.</p>
 <p>Soit un point B de l’espace. On définit le moment <span class="math notranslate nohighlight">\(\overrightarrow{M_B}(\overrightarrow{F})\)</span> (ou <span class="math notranslate nohighlight">\(\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})\)</span>) de l’action <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> (ou moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>) par rapport au point B par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ccd0fb0f-d4aa-4802-949a-05cfbc0c760e">
-<span class="eqno">(29)<a class="headerlink" href="#equation-ccd0fb0f-d4aa-4802-949a-05cfbc0c760e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-be5b4d4b-207c-458f-a6b3-1dfce0b0d80e">
+<span class="eqno">(29)<a class="headerlink" href="#equation-be5b4d4b-207c-458f-a6b3-1dfce0b0d80e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{M_B}\left(\overrightarrow{F}\right) = \overrightarrow{BA} \wedge \overrightarrow{F}
 \end{equation}\]</div>
 </div>
@@ -781,8 +785,8 @@ Le système précédente est probablement une modélisation ponctuelle d’un sy
 <p><strong>Définition : Moment d’une action ponctuelle/force par rapport à un axe.</strong></p>
 <p>Soit une action ponctuelle <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> d’un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> et un point d’application A.</p>
 <p>Soit un axe <span class="math notranslate nohighlight">\(\Delta\)</span> orienté par un vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}}\)</span>. On définit le moment <span class="math notranslate nohighlight">\(M_{\Delta}(\overrightarrow{F})\)</span> (ou <span class="math notranslate nohighlight">\(M_{\Delta}(\mathfrak{A}_{1 \to 2})\)</span>) de l’action <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> (ou moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>) par rapport à l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b09d9e8b-728d-4f64-a358-e9b401f1f225">
-<span class="eqno">(30)<a class="headerlink" href="#equation-b09d9e8b-728d-4f64-a358-e9b401f1f225" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6ee287fa-2a5a-48ad-9df5-a098d4de5304">
+<span class="eqno">(30)<a class="headerlink" href="#equation-6ee287fa-2a5a-48ad-9df5-a098d4de5304" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 M_{\Delta}\left(\overrightarrow{F}\right) = \overrightarrow{u_{\Delta}} \cdot \left(\overrightarrow{BA} \wedge \overrightarrow{F}\right)
 \end{equation}\]</div>
 <p>où B est un point de l’axe <span class="math notranslate nohighlight">\(\Delta\)</span>.</p>
@@ -790,17 +794,18 @@ M_{\Delta}\left(\overrightarrow{F}\right) = \overrightarrow{u_{\Delta}} \cdot \l
 </div>
 <div class="section" id="moment-d-une-force-interpretation">
 <h3>Moment d’une force: Interprétation<a class="headerlink" href="#moment-d-une-force-interpretation" title="Permalink to this headline">¶</a></h3>
-<p><strong>Interprétation du moment cinétique par rapport à un axe.</strong>
+<blockquote>
+<div><p><strong>Interprétation du moment cinétique par rapport à un axe.</strong>
 Dans toute la suite on travaillera implicitement dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
 <p>Pour interprêter le moment cinétique par rapport à un axe orienté <span class="math notranslate nohighlight">\(\Delta\)</span>, on va se placer dans un repère cylindrique d’axe <span class="math notranslate nohighlight">\(\Delta\)</span> centré en un point O de l’axe.</p>
 <p>On considère pour simplifier un point matériel M subissant une action modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> (appliquée donc au point M). On note l’expression de <span class="math notranslate nohighlight">\(\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}\)</span>.</p>
 <p>On peut donc calculer le moment de la force (!) <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> sur <span class="math notranslate nohighlight">\(\Delta\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-L_{\Delta/R} &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
-&amp;= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
-&amp;= m r^2 \dot \theta
-\end{align*}\]</div>
+&gt;L_{\Delta/R} &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
+&gt;&amp;= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
+&gt;&amp;= m r^2 \dot \theta
+&gt;\end{align*}\]</div>
 <p>On observe que:</p>
 <ul class="simple">
 <li><p>Le moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> sur l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> n’est pas nul si la composante orthoradiale <span class="math notranslate nohighlight">\(F_{\theta}\)</span> est non nulle.
@@ -815,6 +820,7 @@ A l’inverse, si <span class="math notranslate nohighlight">\(F_{\theta} &lt; 0
 <ul class="simple">
 <li><p>On remarquera que le moment de l’action est aussi plus important quand r est grand. Si l’on fait le parallèle avec la force, on comprend que plus le moment est grand, plus il sera capable de modifier la rotation du système autour de l’axe considéré. Or on observe expérimentalement que plus l’action est loin de l’axe de rotation, plus elle a d’effet sur le système (principe du bras de levier utilisé par Archimède), il est donc normal que le moment de la force soit proportionnel à la distance r à l’axe.</p></li>
 </ul>
+</div></blockquote>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Il s’agit d’une tendance pour l’action considéré et cela ne donne d’information que sur la tendanceà faire tourner le système autour d’un axe donné. Mais cela ne veut pas dire que le système est en rotation autour de l’axe (bien que très on souvent on utilise les calculs de moments pour des systèmes en rotation, la définition du moment est valable quelque soit le mouvement), il peut même être immobile (les considérations sur les moments sont très important en statique des systèmes de points).</p>
@@ -853,12 +859,15 @@ Si le calcul (et la définition !) du moment diffère pour des systèmes de poin
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text"><strong>1. Paramétrage</strong></p>
+<blockquote>
+<div><p class="card-text"><strong>1. Paramétrage</strong></p>
 <p class="card-text">Le point M se déplace dans un plan à une distance constante du point O, sa trajectoire est donc portée par un cercle de centre O et de rayon l. On va donc travailler dans un système de coordonnées cylindriques d’axe Oz perpendiculaire au cercle trajectoire. On a pris l’origine des angles sur la verticale descendante.</p>
+</div></blockquote>
 <div class="figure align-center" id="fig-229">
 <img alt="../_images/pendule_param.png" src="../_images/pendule_param.png" />
 </div>
-<p class="card-text">On peut alors écrire:</p>
+<blockquote>
+<div><p class="card-text">On peut alors écrire:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \overrightarrow{OM} &amp;= l \overrightarrow{e_r}\\
@@ -886,6 +895,7 @@ Si le calcul (et la définition !) du moment diffère pour des systèmes de poin
 <p class="card-text"><strong>4. Force et accélération</strong></p>
 <p class="card-text">On ne peut pas déterminer pour l’instant l’expression de T comme on l’a fait précédemment pour la réaction d’un support. En effet, il n’y a pas de mouvement radiale (suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> mais c’est un mouvement <strong>courbe</strong>. Le mouvement est donc <strong>dévié</strong> dans la direction <span class="math notranslate nohighlight">\(- \overrightarrow{e_r}\)</span> à chaque instant (son accélération suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est non nulle et négative).</p>
 <p class="card-text">Il vient que la somme des forces suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> <strong>ne doit pas être nulle</strong> ce qui nous empêche de déterminer complètement l’expression de T. Grâce au principe fondamentale de la dynamique, on pourra obtenir une expression faisant intervenir l’accélération. Quant au calcul de cette dernière, nous évoquerons le cas de ce système plus tard.</p>
+</div></blockquote>
 </div>
 </details></div>
 <div class="section" id="methode-cas-d-un-systeme-de-points">
@@ -919,12 +929,15 @@ Si le calcul (et la définition !) du moment diffère pour des systèmes de poin
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text"><strong>1. Paramétrage</strong></p>
+<blockquote>
+<div><p class="card-text"><strong>1. Paramétrage</strong></p>
 <p class="card-text">Pour étudier un système en rotation autour d’un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d’axe Oz l’axe de rotation. On a représenté ci dessous le système. On repère l’angle <span class="math notranslate nohighlight">\(\theta\)</span> permettant de repérer l’orientation du cube par l’angle <span class="math notranslate nohighlight">\((\overrightarrow{e_x},\overrightarrow{OA})\)</span> de manière à pouvoir utiliser cet angle pour les calculs de moments.</p>
+</div></blockquote>
 <div class="figure align-center" id="fig-231">
 <img alt="../_images/moment_cube_2.png" src="../_images/moment_cube_2.png" />
 </div>
-<p class="card-text">On peut alors écrire les éléments cinétiques du cube:</p>
+<blockquote>
+<div><p class="card-text">On peut alors écrire les éléments cinétiques du cube:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 L_{Oz}(cube) &amp;= J \dot \theta \\
@@ -944,15 +957,19 @@ M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} 
 \end{align*}\]</div>
 <p class="card-text"><strong>3. Analyse du moment</strong></p>
 <p class="card-text">On remarque que si <span class="math notranslate nohighlight">\(\theta\)</span> est positif, le moment de l’action est négatif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> décroissants. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, le moment de l’action est positif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants. C’est cohérent avec le schéma représenté ci-dessous.</p>
+</div></blockquote>
 <div class="figure align-center" id="fig-232">
 <img alt="../_images/moment_cube_signe.png" src="../_images/moment_cube_signe.png" />
 </div>
-<p class="card-text"><strong>3. Positions d’équilibre et stabilité</strong></p>
+<blockquote>
+<div><p class="card-text"><strong>3. Positions d’équilibre et stabilité</strong></p>
 <p class="card-text">Seule les actions possédant un moment non nul sur l’axe Oz peuvent agir sur la rotation du cube autour de Oz. Si seul l’action du fil possède un effet, alors les angles pour lesquels ce moment est nul seront les positions d’équilibre (on peut faire le parallèle avec la translation d’un système: les positions d’équilibre sont les points la résultante des forces est nul). L’expression précédente montre que les deux positions correspondent aux angles <span class="math notranslate nohighlight">\(\theta = 0\)</span> et <span class="math notranslate nohighlight">\(\theta = \pi\)</span>. On a représenté les positions d’équilibre ci-dessous.</p>
+</div></blockquote>
 <div class="figure align-center" id="fig-233">
 <img alt="../_images/moment_cube_equilibre.png" src="../_images/moment_cube_equilibre.png" />
 </div>
-<p class="card-text">On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma ou signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma ou signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
+<blockquote>
+<div><p class="card-text">On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma ou signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma ou signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
 <p class="card-text">A l’inverse si l’on écarte le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = \pi\)</span>, on remarque qu’il va s’éloigner de cette position. En effet, pour <span class="math notranslate nohighlight">\(\theta &lt; \pi\)</span>, le moment est négatif et l’angle va encore décroître. Et pour <span class="math notranslate nohighlight">\(\theta &gt; + pi\)</span>, le moment est positif et l’angle va croître. Dans les deux cas, on s’éloigne de la position d’équilibre: la position est dite <strong>instable</strong>.</p>
 <p class="card-text">On pourra faire le parallèle avec le sommet d’une bosse et le creux d’un trou pour une bille. Les deux sont des positions d’équilibre mais la première est instable alors que la seconde est stable. Dans ce cas, c’est un raisonnement sur la force résultante (pesanteur + réaction du sol) là on raisonne ici sur le moment.</p>
 <p class="card-text"><strong>4. Détermination (qualitative) d’un moment en statique</strong></p>
@@ -960,6 +977,7 @@ M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} 
 <p class="card-text">Nous n’avons pas appris à calculer le moment d’une telle action mais si l’on considère que les moments ont un effet sur la rotation et que c’est le moment résultant de la somme de toutes les actions sur le cube qui détermine le mouvement du cube (par analogie avec l’effet des forces sur la translation du cube), on peut raisonner qualitativement.</p>
 <p class="card-text">Ici le cube ne peut tourner que suivant l’axe Oz. Cela signifie que la rotation suivant l’axe Oy est bloquée. Donc le moment résultant suivant l’axe Oy de toute les actions sur le cube devraient être nul (comme l’immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l’action du fil sur le cube sur Ox est non nul, il vaut: <span class="math notranslate nohighlight">\(\frac{aF_0}{2}\)</span> (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l’action de l’axe sur le cube doit être non nul suivant l’axe Oy.</p>
 <p class="card-text">Il est important de pouvoir comprendre le raisonnement précédent de manière qualitative. On a représenté ci-dessous un vue de “dessus” (suivant Oy). On observe que si l’on permettait au cube de tourner autour de Oy (au lieu de Oz), on remarque graphiquement que la tension du fil ferait effectivement tourner le cube autour de Oy. Il faut donc une action contraire qui s’oppose à cette rotation: l’axe de rotation doit donc exercer une action de moment contraire (donc non nul) suivant Oy.</p>
+</div></blockquote>
 <div class="figure align-center" id="fig-234">
 <img alt="../_images/moment_cube_dessus.png" src="../_images/moment_cube_dessus.png" />
 </div>
@@ -980,8 +998,8 @@ Initialement, les champs électriques <span class="math notranslate nohighlight"
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Force de Lorentz</strong></p>
 <p>Soit un point matériel M chargé de charge q et un champ électromagnétique donc les expressions vectorielles au point M sont <span class="math notranslate nohighlight">\(\overrightarrow{E}(M)\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span>. Alors le champ électromagnétique exerce une action dont la force, appelée force de Lorentz s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cfe0cb09-70dd-4cea-b6ed-3b054316286c">
-<span class="eqno">(31)<a class="headerlink" href="#equation-cfe0cb09-70dd-4cea-b6ed-3b054316286c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ed8f73e3-4614-4f99-9cd8-4eb4de69739e">
+<span class="eqno">(31)<a class="headerlink" href="#equation-ed8f73e3-4614-4f99-9cd8-4eb4de69739e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F}_{Lorentz} = q \left(\overrightarrow{E}(M) + \overrightarrow{v_{M/\mathfrak{R}}} \wedge \overrightarrow{B}(M)\right)
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{v_{M/\mathfrak{R}}}\)</span> est la vitesse du point M dans le référentiel d’étude.</p>
@@ -1092,8 +1110,8 @@ La démonstration fait intervenir le principe fondamentale de la dynamique: <spa
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Action d’un ressort</strong></p>
 <p>Soit un système accroché à un ressort. En général, on considère le point d’accroche comme ponctuel et la force exercée par le ressort à son extrémité sur le système comme tangente au ressort. Si le ressort est de masse négligeable (cas usuel), alors la force exercée par le ressort sur un système accroché à son extrémité s’écrit si sa longueur est l:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7e8879de-3d31-4fc2-812d-feb0a7b4d8cc">
-<span class="eqno">(32)<a class="headerlink" href="#equation-7e8879de-3d31-4fc2-812d-feb0a7b4d8cc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1d0ff55c-1f71-4714-bf8c-3f0aefceb14c">
+<span class="eqno">(32)<a class="headerlink" href="#equation-1d0ff55c-1f71-4714-bf8c-3f0aefceb14c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F_{ressort\to extremite}} = -k \left(l - l_0\right) \overrightarrow{u_{ext}} = - k \Delta l \overrightarrow{u_{ext}}
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(l_0\)</span> est la longueur à vide du ressort, k sa raideur et <span class="math notranslate nohighlight">\(\overrightarrow{u_{ext}}\)</span> un vecteur unitaire tangent à l’axe de ressort et dirigé vers l’extérieur du ressort.</p>
@@ -1124,19 +1142,13 @@ On remarquera que la longueur à vide est bien la longueur que possède le resso
 </div>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
+Résolution<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text"><strong>Expression des longueurs</strong></p>
+<blockquote>
+<div><p class="card-text"><strong>Expression des longueurs</strong></p>
 <p class="card-text">On va exprimer les longueurs (grandeurs positives) de chaque ressort en fonction des coordonnées. On note <span class="math notranslate nohighlight">\(l_1 = AM\)</span> et <span class="math notranslate nohighlight">\(l_2 = MB\)</span> les longueurs des ressorts.</p>
 <p class="card-text">. Il est conseillé d’utiliser des grandeurs algébriques pour déterminer ces longueurs. Ici, il vient:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -1150,6 +1162,7 @@ l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
 \Delta l_1 = l_1 - l_0 = L + x - l_0\\
 \Delta l_2 = l_2 - l_0 = L - x - l_0
 \end{align*}\]</div>
+</div></blockquote>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 <em>Remarque : Longueur et allongement</em><div class="summary-down docutils">
@@ -1159,7 +1172,8 @@ l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Il peut être préférable dans certains cas de determiner directement l’allongement directement.</p>
 </div>
-</details><p class="card-text"><strong>Expression du vecteurs unitaires directeurs</strong></p>
+</details><blockquote>
+<div><p class="card-text"><strong>Expression du vecteurs unitaires directeurs</strong></p>
 <p class="card-text">Il s’agit d’exprimer ce vecteur dans la base d’étude choisi. Ici, pour le ressort 1, le vecteur unitaire doit être suivant <span class="math notranslate nohighlight">\(+ \overrightarrow{e_x}\)</span> pour être orienté vers l’extérieur depuis le point M.</p>
 <p class="card-text">Pour le ressort 2, <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}} = - \overrightarrow{e_x}\)</span>.</p>
 <p class="card-text"><strong>Expression complète</strong></p>
@@ -1169,6 +1183,7 @@ l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
 \overrightarrow{F_1} = -k \left(L + x - l_0\right) \overrightarrow{e_x}\\
 \overrightarrow{F_2} = k \left(L - x - l_0\right) \overrightarrow{e_x}\\
 \end{align*}\]</div>
+</div></blockquote>
 </div>
 </details></div>
 </div>

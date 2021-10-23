@@ -24,7 +24,7 @@ En général, on donne (ou il doit être connu), un point où le moment résulta
 En général, la force résultante se calcule à partir de l'expression usuelle des forces ponctuelles associées aux actions ponctuelles usuelles (gravitation... )
 
 
-````{admonition} Exercice Actions à distance usuelles
+````{admonition} Actions à distance usuelles
 :class: attention
 
 Les actions à distance usuelles sont:

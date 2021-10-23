@@ -74,41 +74,34 @@ On considère un point matériel M de masse m se déplaçant sur un plan inclin�
 
 ````
 ````{dropdown}
- 
-
-__1. Paramétrage__
-
-On va choisir un système de coordonnées cartésiennes dont l'un des axes (Ox) est suivant le plan incliné.
-
+>__1. Paramétrage__
+>
+>On va choisir un système de coordonnées cartésiennes dont l'un des axes (Ox) est suivant le plan incliné.
+>
 ```{figure} ./images/plan_modelisation.png
 :name: fig_228
 :align: center
 
 ```
-
-Le poids s'écrira donc: $\overrightarrow{P} = - mg \cos \alpha \overrightarrow{e_y} + mg \sin \alpha \overrightarrow{e_x}$.
-
-La réaction du support s'écrit: $\overrightarrow{R} = R_y \overrightarrow{e_y}$. Nous ici dans un cas où l'on n'a pas d'expression connue des composantes de la force. Par contre, on connaît que __certaines composantes sont nulles__. C'est souvent le cas pour les actions dites "de contact".
-
-
-__2. Contrainte cinématique__
-
-Ici, le mouvement de M est contraint à reste sur le plan incliné. Il vient une accélération nulle suivant l'axe Oy. Sans quantifier complètement la relation accélération-force, on peut déjà observer que cela implique que la somme des forces suivant l'axe Oy est nulle (il faut que leur action de déviation dans cette direction se compense). Soit: $R_y = - P_y = mg \cos \alpha$ et donc $\overrightarrow{R} = mg \cos \alpha \overrightarrow{e_y}$
-
-Remarque: on pourrait faire une construction graphique pour déterminer graphiquement les caractéristiques de $\overrightarrow{R}$.
-
-
-__3. Influence sur le mouvement__
-
-A nouveau, on sait que la force résultante suivant Ox donne la tendance générale du mouvement. Ici seul le poids possède une composante suivant Ox et elle est positive. Le point M aura donc tendance à être dirigé vers le bas de la pente.
-
-Attention, on rappelle que l'inertie peut permettre au point M de monter dans un premier temps si sa vitesse initiale était vers le haut. Mais va être ralenti et finira par redescendre.
-
-
-
-__Modélisation ponctuelle__
+>
+>Le poids s'écrira donc: $\overrightarrow{P} = - mg \cos \alpha \overrightarrow{e_y} + mg \sin \alpha \overrightarrow{e_x}$.
+>
+>La réaction du support s'écrit: $\overrightarrow{R} = R_y \overrightarrow{e_y}$. Nous ici dans un cas où l'on n'a pas d'expression connue des composantes de la force. Par contre, on connaît que __certaines composantes sont nulles__. C'est souvent le cas pour les actions dites "de contact".
+>
+>__2. Contrainte cinématique__
+>
+>Ici, le mouvement de M est contraint à reste sur le plan incliné. Il vient une accélération nulle suivant l'axe Oy. Sans quantifier complètement la relation accélération-force, on peut déjà observer que cela implique que la somme des forces suivant l'axe Oy est nulle (il faut que leur action de déviation dans cette direction se compense). Soit: $R_y = - P_y = mg \cos \alpha$ et donc $\overrightarrow{R} = mg \cos \alpha \overrightarrow{e_y}$
+>
+>Remarque: on pourrait faire une construction graphique pour déterminer graphiquement les caractéristiques de $\overrightarrow{R}$.
+>
+>__3. Influence sur le mouvement__
+>
+>A nouveau, on sait que la force résultante suivant Ox donne la tendance générale du mouvement. Ici seul le poids possède une composante suivant Ox et elle est positive. Le point M aura donc tendance à être dirigé vers le bas de la pente.
+>
+>Attention, on rappelle que l'inertie peut permettre au point M de monter dans un premier temps si sa vitesse initiale était vers le haut. Mais va être ralenti et finira par redescendre.
+>
+>__Modélisation ponctuelle__
 Le système précédente est probablement une modélisation ponctuelle d'un système mécanique plus étendu (un cube, une luge... ). On rappelle qu'une telle modélisation est valable seulement si le système de se déforme pas et ne risque pas de tourner sur lui-même.
-
 ````
 
 ## Action ponctuelle: Moment d'une action
@@ -146,33 +139,33 @@ où B est un point de l'axe $\Delta$.
 ### Moment d'une force: Interprétation
 
 
-__Interprétation du moment cinétique par rapport à un axe.__
-Dans toute la suite on travaillera implicitement dans un référentiel $\mathfrak{R}$.
-
-Pour interprêter le moment cinétique par rapport à un axe orienté $\Delta$, on va se placer dans un repère cylindrique d'axe $\Delta$ centré en un point O de l'axe.
-
-On considère pour simplifier un point matériel M subissant une action modélisée par une force $\overrightarrow{F}$ (appliquée donc au point M). On note l'expression de $\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}$.
-
-On peut donc calculer le moment de la force (!) $\overrightarrow{F}$ sur $\Delta$:
-
-\begin{align*}
-L_{\Delta/R} &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
-&= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
-&= m r^2 \dot \theta
-\end{align*}
-On observe que:
-
-* Le moment de la force $\overrightarrow{F}$ sur l'axe $\Delta$ n'est pas nul si la composante orthoradiale $F_{\theta}$ est non nulle.
-Or la composante orthoradiale correspond à la (seule) composante de $\overrightarrow{F}$ qui tend à faire tourner le point M autour de l'axe $\Delta$ (la composante suivant Oz tend à le faire longer l'axe Oz et la composante suivant $\overrightarrow{e_r}$ ne fait qu'éloigner ou rapprocherle point M de l'axe.
-
-Le moment d'une action sur un axe donne donc une information sur __la possibilité que possède cette action (seule) à faire tourner le système autour de l'axe considéré.__.
-
-* Il est __algébrique__ et le moment de l'action est positif $F_{\theta} > 0$ c'est-à-dire si l'action tend à faire tourner le système suivant les$\theta$ positifs (on généralisera en remarquant qu'il s'agit de faire tourner le système dans un sens en cohérence avec l'orientation de l'axe considéré).
-A l'inverse, si $F_{\theta} < 0$, l'action tend à faire tourner le système en sens inverse.
-
-Et si la composante orthoradiale est nulle, cela signifie que l'action n'a pas d'effet sur la rotation autour de l'axe. Elle ne fait qu'éloigner/rapprocher le système de l'axe ou le faire longer l'axe.
-
-* On remarquera que le moment de l'action est aussi plus important quand r est grand. Si l'on fait le parallèle avec la force, on comprend que plus le moment est grand, plus il sera capable de modifier la rotation du système autour de l'axe considéré. Or on observe expérimentalement que plus l'action est loin de l'axe de rotation, plus elle a d'effet sur le système (principe du bras de levier utilisé par Archimède), il est donc normal que le moment de la force soit proportionnel à la distance r à l'axe.
+>__Interprétation du moment cinétique par rapport à un axe.__
+>Dans toute la suite on travaillera implicitement dans un référentiel $\mathfrak{R}$.
+>
+>Pour interprêter le moment cinétique par rapport à un axe orienté $\Delta$, on va se placer dans un repère cylindrique d'axe $\Delta$ centré en un point O de l'axe.
+>
+>On considère pour simplifier un point matériel M subissant une action modélisée par une force $\overrightarrow{F}$ (appliquée donc au point M). On note l'expression de $\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}$.
+>
+>On peut donc calculer le moment de la force (!) $\overrightarrow{F}$ sur $\Delta$:
+>
+>\begin{align*}
+>L_{\Delta/R} &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
+>&= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
+>&= m r^2 \dot \theta
+>\end{align*}
+>On observe que:
+>
+>* Le moment de la force $\overrightarrow{F}$ sur l'axe $\Delta$ n'est pas nul si la composante orthoradiale $F_{\theta}$ est non nulle.
+>Or la composante orthoradiale correspond à la (seule) composante de $\overrightarrow{F}$ qui tend à faire tourner le point M autour de l'axe $\Delta$ (la composante suivant Oz tend à le faire longer l'axe Oz et la composante suivant $\overrightarrow{e_r}$ ne fait qu'éloigner ou rapprocherle point M de l'axe.
+>
+>Le moment d'une action sur un axe donne donc une information sur __la possibilité que possède cette action (seule) à faire tourner le système autour de l'axe considéré.__.
+>
+>* Il est __algébrique__ et le moment de l'action est positif $F_{\theta} > 0$ c'est-à-dire si l'action tend à faire tourner le système suivant les$\theta$ positifs (on généralisera en remarquant qu'il s'agit de faire tourner le système dans un sens en cohérence avec l'orientation de l'axe considéré).
+>A l'inverse, si $F_{\theta} < 0$, l'action tend à faire tourner le système en sens inverse.
+>
+>Et si la composante orthoradiale est nulle, cela signifie que l'action n'a pas d'effet sur la rotation autour de l'axe. Elle ne fait qu'éloigner/rapprocher le système de l'axe ou le faire longer l'axe.
+>
+>* On remarquera que le moment de l'action est aussi plus important quand r est grand. Si l'on fait le parallèle avec la force, on comprend que plus le moment est grand, plus il sera capable de modifier la rotation du système autour de l'axe considéré. Or on observe expérimentalement que plus l'action est loin de l'axe de rotation, plus elle a d'effet sur le système (principe du bras de levier utilisé par Archimède), il est donc normal que le moment de la force soit proportionnel à la distance r à l'axe.
 
 
 ````{attention}
@@ -214,39 +207,37 @@ On supposera que le mouvement de M reste dans un plan vertical contenant le poin
 ````{dropdown}
  
 
-__1. Paramétrage__
-
-Le point M se déplace dans un plan à une distance constante du point O, sa trajectoire est donc portée par un cercle de centre O et de rayon l. On va donc travailler dans un système de coordonnées cylindriques d'axe Oz perpendiculaire au cercle trajectoire. On a pris l'origine des angles sur la verticale descendante.
-
+>__1. Paramétrage__
+>
+>Le point M se déplace dans un plan à une distance constante du point O, sa trajectoire est donc portée par un cercle de centre O et de rayon l. On va donc travailler dans un système de coordonnées cylindriques d'axe Oz perpendiculaire au cercle trajectoire. On a pris l'origine des angles sur la verticale descendante.
+>
 ```{figure} ./images/pendule_param.png
 :name: fig_229
 :align: center
 
 ```
-
-On peut alors écrire:
-
-\begin{align*}
+>
+>On peut alors écrire:
+>
+>\begin{align*}
 \overrightarrow{OM} &= l \overrightarrow{e_r}\\
 \overrightarrow{v_{M/\mathfrak{R}_T}} &= l \dot \theta \overrightarrow{e_{\theta}}\\
 \overrightarrow{a_{M/\mathfrak{R}_T}} &= - l \dot \theta^2 \overrightarrow{e_r} + l \ddot \theta \overrightarrow{e_{\theta}}\\
 \overrightarrow{L_{O/\mathfrak{R}_T}}(M) &= m l^2 \dot \theta \overrightarrow{e_z}\\
 \end{align*}
-Il est vivement conseillé de s'entraîner à retrouver les expressions précédentes.
-
-
-__2. Bilan des forces__
-
-On est dans un champ de pesanteur, donc le poids s'applique sur le point M. Son expression est $\overrightarrow{P} = mg \overrightarrow{e_x} = mg \cos \theta \overrightarrow{e_r} - mg \sin \theta \overrightarrow{e_{\theta}}$.
-
-De plus, la tige exerce une action supposée ponctuelle dont l'expression est $\overrightarrow{T} = T \overrightarrow{e_r}$. Comme dans l'exemple du plan incliné, on ne connaît pas l'expression de T mais on sait que l'action est dirigée suivant $\overrightarrow{e_r}$. Ici T est de signe quelconque puisque la tige peut tirer ou pousser le point M. Si ça avait été un fil T aurait forcément été négatif (un fil ne peut pousser).
-
-
-__3. Calcul des moments des actions__
-
-Avec les expressions précédentes, il vient:
-
-\begin{align*}
+>Il est vivement conseillé de s'entraîner à retrouver les expressions précédentes.
+>
+>__2. Bilan des forces__
+>
+>On est dans un champ de pesanteur, donc le poids s'applique sur le point M. Son expression est $\overrightarrow{P} = mg \overrightarrow{e_x} = mg \cos \theta \overrightarrow{e_r} - mg \sin \theta \overrightarrow{e_{\theta}}$.
+>
+>De plus, la tige exerce une action supposée ponctuelle dont l'expression est $\overrightarrow{T} = T \overrightarrow{e_r}$. Comme dans l'exemple du plan incliné, on ne connaît pas l'expression de T mais on sait que l'action est dirigée suivant $\overrightarrow{e_r}$. Ici T est de signe quelconque puisque la tige peut tirer ou pousser le point M. Si ça avait été un fil T aurait forcément été négatif (un fil ne peut pousser).
+>
+>__3. Calcul des moments des actions__
+>
+>Avec les expressions précédentes, il vient:
+>
+>\begin{align*}
 \overrightarrow{M_{O}(\mathfrak{A(poids)})} &= \overrightarrow{OM} \wedge \overrightarrow{P}\\
 &= l \overrightarrow{e_r} \wedge \left(mg \cos \theta \overrightarrow{e_r} - mg \overrightarrow{e_{\theta}}\right)\\
 &= -mgl \sin \theta \overrightarrow{e_z}\\
@@ -254,16 +245,15 @@ Avec les expressions précédentes, il vient:
 &= l \overrightarrow{e_r} \wedge \left(T \overrightarrow{e_r}\right)\\
 &= 0
 \end{align*}
-On remarque que le moment de la tige __au point O__ est nul. C'est logique car la force exercée par l'action __ponctuelle__ exercée par la tige est dirigée vers le point O de sorte qu'elle n'a aucun effet sur la rotation de M autour de O. D'un point de vue mathématique pour faire le calcul du moment, on pourra directement remarquer que la force est dirigée vers O, donc le produit vectoriel est nul.
-
-Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant $\overrightarrow{e_{\theta}}$. On peut remarquer que le poids tend à ramener le point M vers $\theta = 0$ (point le plus bas) de sorte que le moment du poids doit être négatif quand $\theta > 0$ et positif quand $\theta < 0$. C'est ce qu'on trouve.
-
-
-__4. Force et accélération__
-
-On ne peut pas déterminer pour l'instant l'expression de T comme on l'a fait précédemment pour la réaction d'un support. En effet, il n'y a pas de mouvement radiale (suivant $\overrightarrow{e_r}$ mais c'est un mouvement __courbe__. Le mouvement est donc __dévié__ dans la direction $- \overrightarrow{e_r}$ à chaque instant (son accélération suivant $\overrightarrow{e_r}$ est non nulle et négative).
-
-Il vient que la somme des forces suivant $\overrightarrow{e_r}$ __ne doit pas être nulle__ ce qui nous empêche de déterminer complètement l'expression de T. Grâce au principe fondamentale de la dynamique, on pourra obtenir une expression faisant intervenir l'accélération. Quant au calcul de cette dernière, nous évoquerons le cas de ce système plus tard.
+>On remarque que le moment de la tige __au point O__ est nul. C'est logique car la force exercée par l'action __ponctuelle__ exercée par la tige est dirigée vers le point O de sorte qu'elle n'a aucun effet sur la rotation de M autour de O. D'un point de vue mathématique pour faire le calcul du moment, on pourra directement remarquer que la force est dirigée vers O, donc le produit vectoriel est nul.
+>
+>Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant $\overrightarrow{e_{\theta}}$. On peut remarquer que le poids tend à ramener le point M vers $\theta = 0$ (point le plus bas) de sorte que le moment du poids doit être négatif quand $\theta > 0$ et positif quand $\theta < 0$. C'est ce qu'on trouve.
+>
+>__4. Force et accélération__
+>
+>On ne peut pas déterminer pour l'instant l'expression de T comme on l'a fait précédemment pour la réaction d'un support. En effet, il n'y a pas de mouvement radiale (suivant $\overrightarrow{e_r}$ mais c'est un mouvement __courbe__. Le mouvement est donc __dévié__ dans la direction $- \overrightarrow{e_r}$ à chaque instant (son accélération suivant $\overrightarrow{e_r}$ est non nulle et négative).
+>
+>Il vient que la somme des forces suivant $\overrightarrow{e_r}$ __ne doit pas être nulle__ ce qui nous empêche de déterminer complètement l'expression de T. Grâce au principe fondamentale de la dynamique, on pourra obtenir une expression faisant intervenir l'accélération. Quant au calcul de cette dernière, nous évoquerons le cas de ce système plus tard.
 
 ````
 
@@ -293,79 +283,75 @@ On attache un fil tendu à un coin du cube noté A. On considère que la liaison
 
 ````
 ````{dropdown}
- 
 
-__1. Paramétrage__
-
-Pour étudier un système en rotation autour d'un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d'axe Oz l'axe de rotation. On a représenté ci dessous le système. On repère l'angle $\theta$ permettant de repérer l'orientation du cube par l'angle $(\overrightarrow{e_x},\overrightarrow{OA})$ de manière à pouvoir utiliser cet angle pour les calculs de moments.
-
+>__1. Paramétrage__
+>
+>Pour étudier un système en rotation autour d'un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d'axe Oz l'axe de rotation. On a représenté ci dessous le système. On repère l'angle $\theta$ permettant de repérer l'orientation du cube par l'angle $(\overrightarrow{e_x},\overrightarrow{OA})$ de manière à pouvoir utiliser cet angle pour les calculs de moments.
+>
 ```{figure} ./images/moment_cube_2.png
 :name: fig_231
 :align: center
 
 ```
-
-On peut alors écrire les éléments cinétiques du cube:
-
-\begin{align*}
+>
+>On peut alors écrire les éléments cinétiques du cube:
+>
+>\begin{align*}
 L_{Oz}(cube) &= J \dot \theta \\
 E_{c,cube} &= \frac{1}{2} \dot \theta^2\\
 \overrightarrow{P_{cube/\mathfrak{R}}} = M \overrightarrow{v_{G}} = \overrightarrow{0}
 \end{align*}
-__Le cube étant de masse répartie de manière homogène, le centre d'inertie est situé au point O, centre du cube__. Fixé sur l'axe Oz, le centre d'inertie est donc immobile, d'où la quantité de mouvement nulle.
-
-Les deux autres expressions sont les expressions déjà données __dans le cas d'un solide en rotation autour d'un axe fixe__.
-
-
-__2. Calcul de moment de l'action/la force__
-
-L'action du fil sur le cube est une action ponctuelle dont la force s'écrit $\overrightarrow{F} = F_0 \overrightarrow{e_x}$ et dont le point d'application est A. Le moment de l'action du fil sur le cube calculé sur l'axe Oz s'écrit (O est un point de l'axe...  Oz):
-
-\begin{align*}
+>__Le cube étant de masse répartie de manière homogène, le centre d'inertie est situé au point O, centre du cube__. Fixé sur l'axe Oz, le centre d'inertie est donc immobile, d'où la quantité de mouvement nulle.
+>
+>Les deux autres expressions sont les expressions déjà données __dans le cas d'un solide en rotation autour d'un axe fixe__.
+>
+>__2. Calcul de moment de l'action/la force__
+>
+>L'action du fil sur le cube est une action ponctuelle dont la force s'écrit $\overrightarrow{F} = F_0 \overrightarrow{e_x}$ et dont le point d'application est A. Le moment de l'action du fil sur le cube calculé sur l'axe Oz s'écrit (O est un point de l'axe...  Oz):
+>
+>\begin{align*}
 M_{fil \to cube,Oz} &= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wedge \overrightarrow{F}\right)\\
 &= \overrightarrow{e_z} \cdot \left(\left(\frac{a}{\sqrt{2}} \overrightarrow{e_r} + \frac{a}{2} \overrightarrow{e_z}\right) \wedge F_0 \overrightarrow{e_x}\right)\\
 &= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} \wedge F_0 \sin \theta  \overrightarrow{e_z} \right)\\
 &= - \frac{a}{\sqrt{2}} F_0 \sin \theta \\
 \end{align*}
-
-__3. Analyse du moment__  
-
-On remarque que si $\theta$ est positif, le moment de l'action est négatif: l'action du fil aura tendance à faire tourner le cube dans le sens des $\theta$ décroissants. A l'inverse, si $\theta$ est négatif, le moment de l'action est positif: l'action du fil aura tendance à faire tourner le cube dans le sens des $\theta$ croissants. C'est cohérent avec le schéma représenté ci-dessous.
-
+>
+>__3. Analyse du moment__  
+>
+>On remarque que si $\theta$ est positif, le moment de l'action est négatif: l'action du fil aura tendance à faire tourner le cube dans le sens des $\theta$ décroissants. A l'inverse, si $\theta$ est négatif, le moment de l'action est positif: l'action du fil aura tendance à faire tourner le cube dans le sens des $\theta$ croissants. C'est cohérent avec le schéma représenté ci-dessous.
+>
 ```{figure} ./images/moment_cube_signe.png
 :name: fig_232
 :align: center
 
 ```
-
-
-__3. Positions d'équilibre et stabilité__
-
-Seule les actions possédant un moment non nul sur l'axe Oz peuvent agir sur la rotation du cube autour de Oz. Si seul l'action du fil possède un effet, alors les angles pour lesquels ce moment est nul seront les positions d'équilibre (on peut faire le parallèle avec la translation d'un système: les positions d'équilibre sont les points la résultante des forces est nul). L'expression précédente montre que les deux positions correspondent aux angles $\theta = 0$ et $\theta = \pi$. On a représenté les positions d'équilibre ci-dessous.
-
+>
+>__3. Positions d'équilibre et stabilité__
+>
+>Seule les actions possédant un moment non nul sur l'axe Oz peuvent agir sur la rotation du cube autour de Oz. Si seul l'action du fil possède un effet, alors les angles pour lesquels ce moment est nul seront les positions d'équilibre (on peut faire le parallèle avec la translation d'un système: les positions d'équilibre sont les points la résultante des forces est nul). L'expression précédente montre que les deux positions correspondent aux angles $\theta = 0$ et $\theta = \pi$. On a représenté les positions d'équilibre ci-dessous.
+>
 ```{figure} ./images/moment_cube_equilibre.png
 :name: fig_233
 :align: center
 
 ```
-
-On remarque que si l'on écarte légèrement le cube de sa position d'équilibre $\theta = 0$ vers des angles positifs, l'angle va décroitre sous l'effet de l'action du fil (cf. schéma ou signe du moment) et il va donc avoir tendance à revenir vers la position d'équilibre. A l'inverse, si $\theta$ est négatif, l'angle va croitre (schéma ou signe du moment) et va aussi revenir vers la position d'équilibre. Donc  lorsqu'on écarte le système de cette position d'équilibre, il tend à y revenir, on dit que la position d'équilibre est __stable__.
-
-A l'inverse si l'on écarte le cube de sa position d'équilibre $\theta = \pi$, on remarque qu'il va s'éloigner de cette position. En effet, pour $\theta < \pi$, le moment est négatif et l'angle va encore décroître. Et pour $\theta > + pi$, le moment est positif et l'angle va croître. Dans les deux cas, on s'éloigne de la position d'équilibre: la position est dite __instable__.
-
-On pourra faire le parallèle avec le sommet d'une bosse et le creux d'un trou pour une bille. Les deux sont des positions d'équilibre mais la première est instable alors que la seconde est stable. Dans ce cas, c'est un raisonnement sur la force résultante (pesanteur + réaction du sol) là on raisonne ici sur le moment.
-
-
-__4. Détermination (qualitative) d'un moment en statique__
-
-Le cube tourne d'une axe fixe. L'axe est en contact avec le cube et exerce une action (de contact) sur le cube. C'est la somme des deux actions (fil sur cube et axe sur cube) qui permet d'étudier le mouvement du cube. On remarquera que l'action de contact se fait en de nombreux points (à la surface de contact), il s'agit donc d'une __action résultante__.
-
-Nous n'avons pas appris à calculer le moment d'une telle action mais si l'on considère que les moments ont un effet sur la rotation et que c'est le moment résultant de la somme de toutes les actions sur le cube qui détermine le mouvement du cube (par analogie avec l'effet des forces sur la translation du cube), on peut raisonner qualitativement.
-
-Ici le cube ne peut tourner que suivant l'axe Oz. Cela signifie que la rotation suivant l'axe Oy est bloquée. Donc le moment résultant suivant l'axe Oy de toute les actions sur le cube devraient être nul (comme l'immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l'action du fil sur le cube sur Ox est non nul, il vaut: $\frac{aF_0}{2}$ (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l'action de l'axe sur le cube doit être non nul suivant l'axe Oy.
-
-Il est important de pouvoir comprendre le raisonnement précédent de manière qualitative. On a représenté ci-dessous un vue de "dessus" (suivant Oy). On observe que si l'on permettait au cube de tourner autour de Oy (au lieu de Oz), on remarque graphiquement que la tension du fil ferait effectivement tourner le cube autour de Oy. Il faut donc une action contraire qui s'oppose à cette rotation: l'axe de rotation doit donc exercer une action de moment contraire (donc non nul) suivant Oy.
-
+>
+>On remarque que si l'on écarte légèrement le cube de sa position d'équilibre $\theta = 0$ vers des angles positifs, l'angle va décroitre sous l'effet de l'action du fil (cf. schéma ou signe du moment) et il va donc avoir tendance à revenir vers la position d'équilibre. A l'inverse, si $\theta$ est négatif, l'angle va croitre (schéma ou signe du moment) et va aussi revenir vers la position d'équilibre. Donc  lorsqu'on écarte le système de cette position d'équilibre, il tend à y revenir, on dit que la position d'équilibre est __stable__.
+>
+>A l'inverse si l'on écarte le cube de sa position d'équilibre $\theta = \pi$, on remarque qu'il va s'éloigner de cette position. En effet, pour $\theta < \pi$, le moment est négatif et l'angle va encore décroître. Et pour $\theta > + pi$, le moment est positif et l'angle va croître. Dans les deux cas, on s'éloigne de la position d'équilibre: la position est dite __instable__.
+>
+>On pourra faire le parallèle avec le sommet d'une bosse et le creux d'un trou pour une bille. Les deux sont des positions d'équilibre mais la première est instable alors que la seconde est stable. Dans ce cas, c'est un raisonnement sur la force résultante (pesanteur + réaction du sol) là on raisonne ici sur le moment.
+>
+>__4. Détermination (qualitative) d'un moment en statique__
+>
+>Le cube tourne d'une axe fixe. L'axe est en contact avec le cube et exerce une action (de contact) sur le cube. C'est la somme des deux actions (fil sur cube et axe sur cube) qui permet d'étudier le mouvement du cube. On remarquera que l'action de contact se fait en de nombreux points (à la surface de contact), il s'agit donc d'une __action résultante__.
+>
+>Nous n'avons pas appris à calculer le moment d'une telle action mais si l'on considère que les moments ont un effet sur la rotation et que c'est le moment résultant de la somme de toutes les actions sur le cube qui détermine le mouvement du cube (par analogie avec l'effet des forces sur la translation du cube), on peut raisonner qualitativement.
+>
+>Ici le cube ne peut tourner que suivant l'axe Oz. Cela signifie que la rotation suivant l'axe Oy est bloquée. Donc le moment résultant suivant l'axe Oy de toute les actions sur le cube devraient être nul (comme l'immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l'action du fil sur le cube sur Ox est non nul, il vaut: $\frac{aF_0}{2}$ (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l'action de l'axe sur le cube doit être non nul suivant l'axe Oy.
+>
+>Il est important de pouvoir comprendre le raisonnement précédent de manière qualitative. On a représenté ci-dessous un vue de "dessus" (suivant Oy). On observe que si l'on permettait au cube de tourner autour de Oy (au lieu de Oz), on remarque graphiquement que la tension du fil ferait effectivement tourner le cube autour de Oy. Il faut donc une action contraire qui s'oppose à cette rotation: l'axe de rotation doit donc exercer une action de moment contraire (donc non nul) suivant Oy.
+>
 ```{figure} ./images/moment_cube_dessus.png
 :name: fig_234
 :align: center
@@ -592,43 +578,42 @@ On considère deux ressorts horizontaux de raideur identique k et de longueur à
 ```
 
 ````
-````{dropdown}
- 
+````{dropdown} Résolution
 
-__Expression des longueurs__
-
-On va exprimer les longueurs (grandeurs positives) de chaque ressort en fonction des coordonnées. On note $l_1 = AM$ et $l_2 = MB$ les longueurs des ressorts.
-
-. Il est conseillé d'utiliser des grandeurs algébriques pour déterminer ces longueurs. Ici, il vient:
-
-\begin{align*}
+>__Expression des longueurs__
+>
+>On va exprimer les longueurs (grandeurs positives) de chaque ressort en fonction des coordonnées. On note $l_1 = AM$ et $l_2 = MB$ les longueurs des ressorts.
+>
+>. Il est conseillé d'utiliser des grandeurs algébriques pour déterminer ces longueurs. Ici, il vient:
+>
+>\begin{align*}
 l_1 = \overline{AM} = \overline{AO} + \overline{OM} = L + x\\
 l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
 \end{align*}
-Les allongements sont donc:
-
-\begin{align*}
+>Les allongements sont donc:
+>
+>\begin{align*}
 \Delta l_1 = l_1 - l_0 = L + x - l_0\\
 \Delta l_2 = l_2 - l_0 = L - x - l_0
 \end{align*}
-
+>
 ```{dropdown} _Remarque : Longueur et allongement_
 
 Il peut être préférable dans certains cas de determiner directement l'allongement directement.
 ```
-
-__Expression du vecteurs unitaires directeurs__  
-
-Il s'agit d'exprimer ce vecteur dans la base d'étude choisi. Ici, pour le ressort 1, le vecteur unitaire doit être suivant $+ \overrightarrow{e_x}$ pour être orienté vers l'extérieur depuis le point M.
-
-Pour le ressort 2, $\overrightarrow{u_{\Delta}} = - \overrightarrow{e_x}$.
-
-
-__Expression complète__
-
-Il vient l'expression des forces de rappel appliquées sur le point M:
-
-\begin{align*}
+>
+>__Expression du vecteurs unitaires directeurs__  
+>
+>Il s'agit d'exprimer ce vecteur dans la base d'étude choisi. Ici, pour le ressort 1, le vecteur unitaire doit être suivant $+ \overrightarrow{e_x}$ pour être orienté vers l'extérieur depuis le point M.
+>
+>Pour le ressort 2, $\overrightarrow{u_{\Delta}} = - \overrightarrow{e_x}$.
+>
+>
+>__Expression complète__
+>
+>Il vient l'expression des forces de rappel appliquées sur le point M:
+>
+>\begin{align*}
 \overrightarrow{F_1} = -k \left(L + x - l_0\right) \overrightarrow{e_x}\\
 \overrightarrow{F_2} = k \left(L - x - l_0\right) \overrightarrow{e_x}\\
 \end{align*}

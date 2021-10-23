@@ -681,26 +681,30 @@
 <p><strong>Définition : Masse totale</strong></p>
 <p>On définit la masse totale M du système S comme la somme de toutes les masses des points matériels composant le solide.</p>
 </div>
-<p><strong>Expression mathématique</strong>
+<blockquote>
+<div><p><strong>Expression mathématique</strong>
 Dans le cadre d’une description discrète, la masse totale est simplement <span class="math notranslate nohighlight">\(M = \sum\limits_{i=1}^{n} m_i\)</span>.</p>
 <p>Dans le cadre d’une description continu, la masse totale devient une intégrale: <span class="math notranslate nohighlight">\(M = \iiint_{P \in S} \rho(P) d \tau(P)\)</span>. A l’heure actuelle, il n’est pas demandé de savoir calculer une telle intégrale. Il suffit de comprendre qu’on somme des petits volumes infinitésimaux <span class="math notranslate nohighlight">\(d\tau(M)\)</span> coefficientés (ici par la masse volumique).</p>
+</div></blockquote>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Centre d’inertie</strong></p>
 <p>On définit le centre d’inertie G du système S comme le barycentre des points du solide affectés de leur masse.</p>
 <p>Cas d’un système discret:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-011861b0-3cef-4c04-85ac-9ff0c9a20840">
-<span class="eqno">(21)<a class="headerlink" href="#equation-011861b0-3cef-4c04-85ac-9ff0c9a20840" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ddc7f8a9-4cdc-4b73-8dae-147f2094835f">
+<span class="eqno">(21)<a class="headerlink" href="#equation-ddc7f8a9-4cdc-4b73-8dae-147f2094835f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{OG} = \frac{1}{M}\sum\limits_{i=1}^{n} m_i \overrightarrow{OP_i}
 \end{equation}\]</div>
 <p>Cas continu:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9b547247-b9b0-4ff7-addb-71b951c7e875">
-<span class="eqno">(22)<a class="headerlink" href="#equation-9b547247-b9b0-4ff7-addb-71b951c7e875" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-41daf861-d1cd-47d7-9520-f9be4333df02">
+<span class="eqno">(22)<a class="headerlink" href="#equation-41daf861-d1cd-47d7-9520-f9be4333df02" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{OG} = \frac{1}{M}\iiint_{P \int S} \rho(P) \overrightarrow{OP} d \tau(P)
 \end{equation}\]</div>
 </div>
-<p><strong>Interprétation qualitative de la position du centre d’inertie</strong>
+<blockquote>
+<div><p><strong>Interprétation qualitative de la position du centre d’inertie</strong>
 On remarquera que le centre d’inertie est décalé vers les zones plus massiques et que sa position respecte les symétries de masse du système.</p>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="description-d-un-mouvement">
@@ -724,8 +728,8 @@ Puisque tous les points du solides sont contraints à se déplacer ensemble, il 
 <div class="hint dropdown admonition">
 <p class="admonition-title">Complément : Composition des vitesse (HP)</p>
 <p>Soit un solide donc le vecteur taux de rotation à un instant t est <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> et donc la vitesse en un point A du solide est connue par: <span class="math notranslate nohighlight">\(\overrightarrow{v_{A/R}}(t)\)</span>. Alors la vitesse en tout point B du solide est connue et donnée par la relation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-77e44c9b-ff34-4d38-958a-f4c3aea757cd">
-<span class="eqno">(23)<a class="headerlink" href="#equation-77e44c9b-ff34-4d38-958a-f4c3aea757cd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a0427f6f-d332-4d8b-b2ad-2dc638655f7b">
+<span class="eqno">(23)<a class="headerlink" href="#equation-a0427f6f-d332-4d8b-b2ad-2dc638655f7b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{v_{B/R}} = \overrightarrow{v_{A/R}} + \overrightarrow{\Omega} \wedge \overrightarrow{AB}
 \end{equation}\]</div>
 <p>Cette formule est valable quelque soit le mouvement du solide. Néanmoins, elle n’est pas à connaître et ne peut être appliquée directement en physique. Elle est par contre probablement à connaître et à savoir utiliser en SI. Les conséquences et définitions associées qui auront pu être vues en SI (centre instantanée de rotation, détermination graphique d’une vitesse… ) ne sont pas à connaître en physique. Par contre, les cas particuliers qui vont être présentés ensuite sont à connaître.</p>
@@ -754,13 +758,14 @@ Puisque tous les points du solides sont contraints à se déplacer ensemble, il 
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Champ de vitesse d’un solide en rotation</strong></p>
 <p>Soit un solide en rotation autour d’un axe fixe, à un instant t, tous les points du solide ont la même vitesse angulaire <span class="math notranslate nohighlight">\(\omega(t)\)</span>. On peut alors définir un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}(t)\)</span> appelé vecteur rotation du solide tel que pour tout point P du solide, la vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{P/R}}\)</span> s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1150559b-4b7b-4404-9ab7-f20cffb065b8">
-<span class="eqno">(24)<a class="headerlink" href="#equation-1150559b-4b7b-4404-9ab7-f20cffb065b8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b2f8d526-c545-4d5c-a37d-37b7fb954171">
+<span class="eqno">(24)<a class="headerlink" href="#equation-b2f8d526-c545-4d5c-a37d-37b7fb954171" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{v_{P/R}} = \overrightarrow{\Omega} \wedge \overrightarrow{AP}
 \end{equation}\]</div>
 <p>où A est un point de l’axe de rotation.</p>
 </div>
-<p><strong>Démonstration</strong>
+<blockquote>
+<div><p><strong>Démonstration</strong>
 Pour les différentes preuves de ce chapitre, nous choisissons soit le cas discret, soit le cas continu. Mais les deux démonstrations sont possibles et il faut savoir traiter chaque cas.</p>
 <p>La vitesse angulaire est la même pour tout point du solide (sinon il se déformerait). On se place dans un système de coordonnées cylindriques d’axe <span class="math notranslate nohighlight">\(Az\)</span> l’axe de rotation et de centre A. Pour un point P à un distance <span class="math notranslate nohighlight">\(r\)</span> de l’axe:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -769,6 +774,7 @@ Pour les différentes preuves de ce chapitre, nous choisissons soit le cas discr
 &amp;= r \omega \overrightarrow{e_{\theta}} \\
 &amp;= \overrightarrow{v_{P/R}}
 \end{align*}\]</div>
+</div></blockquote>
 </div>
 </div>
 

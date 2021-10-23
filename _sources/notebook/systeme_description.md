@@ -54,11 +54,10 @@ On définit la masse totale M du système S comme la somme de toutes les masses 
 
 ````
 
-
-__Expression mathématique__
-Dans le cadre d'une description discrète, la masse totale est simplement $M = \sum\limits_{i=1}^{n} m_i$.
-
-Dans le cadre d'une description continu, la masse totale devient une intégrale: $M = \iiint_{P \in S} \rho(P) d \tau(P)$. A l'heure actuelle, il n'est pas demandé de savoir calculer une telle intégrale. Il suffit de comprendre qu'on somme des petits volumes infinitésimaux $d\tau(M)$ coefficientés (ici par la masse volumique).
+>__Expression mathématique__
+>Dans le cadre d'une description discrète, la masse totale est simplement $M = \sum\limits_{i=1}^{n} m_i$.
+>
+>Dans le cadre d'une description continu, la masse totale devient une intégrale: $M = \iiint_{P \in S} \rho(P) d \tau(P)$. A l'heure actuelle, il n'est pas demandé de savoir calculer une telle intégrale. Il suffit de comprendre qu'on somme des petits volumes infinitésimaux $d\tau(M)$ coefficientés (ici par la masse volumique).
 
 
 ````{important} __Définition : Centre d'inertie__
@@ -78,8 +77,8 @@ Cas continu:
 ````
 
 
-__Interprétation qualitative de la position du centre d'inertie__
-On remarquera que le centre d'inertie est décalé vers les zones plus massiques et que sa position respecte les symétries de masse du système.
+>__Interprétation qualitative de la position du centre d'inertie__
+>On remarquera que le centre d'inertie est décalé vers les zones plus massiques et que sa position respecte les symétries de masse du système.
 
 
 # Description d'un mouvement
@@ -148,13 +147,12 @@ Soit un solide en rotation autour d'un axe fixe, à un instant t, tous les point
 où A est un point de l'axe de rotation.
 ````
 
-
-__Démonstration__
-Pour les différentes preuves de ce chapitre, nous choisissons soit le cas discret, soit le cas continu. Mais les deux démonstrations sont possibles et il faut savoir traiter chaque cas.
-
-La vitesse angulaire est la même pour tout point du solide (sinon il se déformerait). On se place dans un système de coordonnées cylindriques d'axe $Az$ l'axe de rotation et de centre A. Pour un point P à un distance $r$ de l'axe:
-
-\begin{align*}
+>__Démonstration__
+>Pour les différentes preuves de ce chapitre, nous choisissons soit le cas discret, soit le cas continu. Mais les deux démonstrations sont possibles et il faut savoir traiter chaque cas.
+>
+>La vitesse angulaire est la même pour tout point du solide (sinon il se déformerait). On se place dans un système de coordonnées cylindriques d'axe $Az$ l'axe de rotation et de centre A. Pour un point P à un distance $r$ de l'axe:
+>
+>\begin{align*}
 \overrightarrow{\Omega} \wedge \overrightarrow{AP} &= \omega \overrightarrow{e_z} \wedge (r \overrightarrow{e_r} + z \overrightarrow{e_z}) \\
 &= r \omega \overrightarrow{e_{\theta}} \\
 &= \overrightarrow{v_{P/R}}
