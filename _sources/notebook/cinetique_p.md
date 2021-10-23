@@ -83,48 +83,48 @@ On pourra remarquer que point un axe $\Delta$ et un point B sur cet axe. Si l'on
 
 
 __Interprétation du moment cinétique par rapport à un axe.__
-Dans toute la suite on travaillera implicitement dans un référentiel $\mathfrak{R}$.
-
-Pour interprêter le moment cinétique par rapport à un axe orienté $\Delta$, on va se placer dans un repère cylindrique d'axe $\Delta$ centré en un point O de l'axe.
-
-On peut donc écrire:
-
-\begin{align*}
-\overrightarrow{OM} = r \overrightarrow{e_r} + z \overrightarrow{e_z}\\
-\overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}
-\end{align*}
-On peut donc calculer le moment cinétique de M sur $\Delta$ dans $\mathfrak{R}$:
-
-\begin{align*}
-L_{\Delta/R} &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
-&= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
-&= m r^2 \dot \theta
-\end{align*}
-On observe que:
-
-* Le moment cinétique de M sur l'axe $\Delta$ n'est pas nul que le point M tourne autour de l'axe $\Delta$ __à l'instant t__. C'est fondamental pour comprendre l'utilisation du moment cinétique: il est principalement utilisée pour étudier des rotations. Attention, ça ne signifie pas que la trajectoire est courbe: un point M qui va en ligne droite semble tourne quand on se place sur un axe B non parallèle à la trajectoire ! Le moment est non nul si M semble tourner __par rapport à l'axe__.
-* Il dépend aussi de la distance à l'axe. L'introduction du moment cinétique est d'avoir une grandeur similaire à la quantité de mouvement mais pour la rotation, c'est-à-dire qui va être la grandeur modifiée par les actions du milieux extérieures __sur la rotation de M autour de l'axe__. D'un point de vue inertiel, on comprend qu'il est plus difficile de modifier la rotation d'un point matériel situé loin de l'axe si on se trouve sur l'axe.
-* Il est __algébrique__ et le moment cinétique est positif si le point M tourne dans le sens des $\theta$ croissant (angles orientés __en cohérence vvec l'axe orienté____$\Delta$__) et le moment cinétique est négatif si le point M tourne dans le sens des $\theta$ décroissant (angles orientés __en cohérence avec l'axe orienté____$\Delta$__).
-
-On observe donc que le moment cinétique, à l'image de la quantité de mouvement contient des information
-
-*  sur le mouvement: sa vitesse de rotation et son sens de rotation autour de l'axe.
-* sur la facilité qu'on aura à modifier cette rotation depuis l'axe: sa masse et sa distance à l'axe.
-
-Il faut noter néanmoins que l'on ne garde __que des informations sur la rotation relative à l'axe.__. Comme montré précédemment un mouvement peut avoir des caractéristiques qui n'apparaissent plus directement (comme une trajectoire rectiligne non parallèle à l'axe $\Delta$).
+>Dans toute la suite on travaillera implicitement dans un référentiel $\mathfrak{R}$.
+>
+>Pour interprêter le moment cinétique par rapport à un axe orienté $\Delta$, on va se placer dans un repère cylindrique d'axe $\Delta$ centré en un point O de l'axe.
+>
+>On peut donc écrire:
+>
+>\begin{align*}
+>\overrightarrow{OM} = r \overrightarrow{e_r} + z \overrightarrow{e_z}\\
+>\overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}
+>\end{align*}
+>On peut donc calculer le moment cinétique de M sur $\Delta$ dans $\mathfrak{R}$:
+>
+>\begin{align*}
+>L_{\Delta/R} &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
+>&= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
+>&= m r^2 \dot \theta
+>\end{align*}
+>On observe que:
+>
+>* Le moment cinétique de M sur l'axe $\Delta$ n'est pas nul que le point M tourne autour de l'axe $\Delta$ __à l'instant t__. C'est fondamental pour comprendre l'utilisation du moment cinétique: il est principalement utilisée pour étudier des rotations. Attention, ça ne signifie pas que la trajectoire est courbe: un point M qui va en ligne droite semble tourne quand on se place sur un axe B non parallèle à la trajectoire ! Le moment est non nul si M semble tourner __par rapport à l'axe__.
+>* Il dépend aussi de la distance à l'axe. L'introduction du moment cinétique est d'avoir une grandeur similaire à la quantité de mouvement mais pour la rotation, c'est-à-dire qui va être la grandeur modifiée par les actions du milieux extérieures __sur la rotation de M autour de l'axe__. D'un point de vue inertiel, on comprend qu'il est plus difficile de modifier la rotation d'un point matériel situé loin de l'axe si on se trouve sur l'axe.
+>* Il est __algébrique__ et le moment cinétique est positif si le point M tourne dans le sens des $\theta$ croissant (angles orientés __en cohérence vvec l'axe orienté____$\Delta$__) et le moment cinétique est négatif si le point M tourne dans le sens des $\theta$ décroissant (angles orientés __en cohérence avec l'axe orienté____$\Delta$__).
+>
+>On observe donc que le moment cinétique, à l'image de la quantité de mouvement contient des information
+>
+>*  sur le mouvement: sa vitesse de rotation et son sens de rotation autour de l'axe.
+>* sur la facilité qu'on aura à modifier cette rotation depuis l'axe: sa masse et sa distance à l'axe.
+>
+>Il faut noter néanmoins que l'on ne garde __que des informations sur la rotation relative à l'axe.__. Comme montré précédemment un mouvement peut avoir des caractéristiques qui n'apparaissent plus directement (comme une trajectoire rectiligne non parallèle à l'axe $\Delta$).
 
 
 ````{attention}
 
-On va souvent calculer des moments cinétiques dans le cas de mouvement circulaire. On les calculera en générals sur l'axe de rotation du point M. Il faut néanmoins bien penser qu'un moment cinétique non nul implique que le point M est en train d'avoir un mouvement courbe, et encore moins un mouvement circulaire. Celà veut dire uniquement que du point de vue de l'axe, le point M a l'air de tourner (si l'on se trouve sur l'axe, on doit tourner la tête horizontalement pour suivre le mouvement de M).
+On va souvent calculer des moments cinétiques dans le cas de mouvement circulaire. On les calculera en générals sur l'axe de rotation du point M. Il faut néanmoins bien penser qu'un moment cinétique non nul n'implique pas que le point M est en train d'avoir un mouvement courbe, et encore moins un mouvement circulaire. Celà veut dire uniquement que du point de vue de l'axe, le point M a l'air de tourner (si l'on se trouve sur l'axe, on doit tourner la tête horizontalement pour suivre le mouvement de M).
 
 ````
 
 
 __Interprétation du moment cinétique par rapport à un point.__
-En remarquant que la projection du moment cinétique par rapport à un point Bsur différents axes passante par B, on trouve la tendance qu'a le point M à tourner autour de chaque axe. Il apparaît donc que le moment cinétique du point M par rapport à un point B correspond à la tendance que possède le point M à tourner autour de B (avec toutes les précautions précédentes sur le fait de tourner).
-
-On pourra noter aussi que cette tendance est maximale dans une direction. Il s'agit de la direction du vecteur moment cinétique: cette direction portant le moment cinétique par rapport à un point  donne l'axe perpendiculaire au plan dans lequel M est entrain de se déplacer autour de B à l'instant t.
+>En remarquant que la projection du moment cinétique par rapport à un point Bsur différents axes passante par B, on trouve la tendance qu'a le point M à tourner autour de chaque axe. Il apparaît donc que le moment cinétique du point M par rapport à un point B correspond à la tendance que possède le point M à tourner autour de B (avec toutes les précautions précédentes sur le fait de tourner).
+>
+>On pourra noter aussi que cette tendance est maximale dans une direction. Il s'agit de la direction du vecteur moment cinétique: cette direction portant le moment cinétique par rapport à un point  donne l'axe perpendiculaire au plan dans lequel M est entrain de se déplacer autour de B à l'instant t.
 
 
 ## Calcul de moment cinétique
@@ -142,17 +142,14 @@ On considère un point matériel M de masse M en mouvement rectiligne sur un axe
 1. Exprimer le moment cinétique du point M par rapport à l'axe Bx dans le référentuel $\mathfrak{R}$. On donne les coordonnées de $B(a,b,0)$. Commenter.
 
 ````
-````{dropdown}
- 
-
-
+````{dropdown} Résolution
 __Quantité de mouvement__
 \begin{equation}
 \overrightarrow{p_{M/R}} = m \overrightarrow{v_{M/R}}
 \end{equation}
 
 
-__Quantité de mouvement__
+__Moment cinétique__
 \begin{align*}
 \overrightarrow{L_{O/\mathfrak{R}}(M)} &= \overrightarrow{OM} \wedge \overrightarrow{p_{M/R}}\\
 &= z \overrightarrow{e_z} \wedge m v(t) \overrightarrow{e_z}\\
@@ -175,7 +172,7 @@ Le moment autour de Bx est non nul car si l'on se place sur l'axe Bx, on voit ef
 On considère un point M sur une trajectoire circulaire de centre O et d'axe Oz. Exprimer la quantité de mouvement dans une base cylindrique ainsi que le moment cinétique de M sur l'axe Oz.
 
 ````
-````{dropdown}
+````{dropdown} Résolution
  
 
 
