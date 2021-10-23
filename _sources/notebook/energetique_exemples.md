@@ -36,6 +36,8 @@ On considère une masse m ponctuelle qui se déplace sans frottements sur une de
 >
 >On applique donc le PFD.
 >
+>L'équation suivant $\overrightarrow{e_r}$ permet de déterminer R en fonction de la vitesse angulaire. Il reste donc à déterminer cette vitesse angulaire en fonction de l'angle pour répondre à la question. On va utiliser le TEC ou le TEM pour déterminer cette relation. Remarquons qu'on aurait pu utiliser à la place la seconde équation en la multipliant par $\dot \theta$.
+>
 >__Application du TEC__
 >
 >Il est important de savoir quel théorème on applique (puissance ou énergie) et de préciser sur quoi on applique le théorème. Ici, on va appliquerle théorème de l'énergie cinétique entre l'instant 0 et un instant t où le mobile est à un angle $\theta$. On considèrera la vitesse initiale négligeable devant la vitesse à l'instant t.
