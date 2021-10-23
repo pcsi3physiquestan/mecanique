@@ -19,7 +19,7 @@ kernelspec:
 
 ### Vecteur position: Définition
 
-````{attention} Définition : Vecteur position
+````{important} Définition : Vecteur position
 
 On définit la position d'un point matériel M dans un référentiel $\mathfrak{R}$ à l'aide du vecteur position $\overrightarrow{OM}$ où O est un __point fixe__ du référentiel.
 
@@ -29,8 +29,7 @@ On définit la position d'un point matériel M dans un référentiel $\mathfrak{
 Normalement, on prend comme point O, le centre du repère choisi comme associé au référentiel d'étude.
 
 
-````{admonition} Définition : Equation horaire et trajectoire
-:class: tip
+````{important} Définition : Equation horaire et trajectoire
 
 L'évolution du mouvement du point matériel $OM(t)$ est appelée équation horaire. Elle est aussi définit par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.
 
@@ -40,8 +39,7 @@ On peut être amené à tracer des trajectoires en utilisant la représentation 
 
 ### Expression du vecteur position
 
-````{admonition} Fondamental : Expressions
-:class: attention
+````{important} Fondamental : Expressions
 
 On peut exprimer le vecteur position dans les différents repères. Les vecteurs des bases locales sont exprimées au point M mobile:
 
@@ -50,9 +48,7 @@ On peut exprimer le vecteur position dans les différents repères. Les vecteurs
 * Coordonnées sphériques: $r_M(t) \overrightarrow{e_r}$.
 ````
 
-````{admonition} Attention : 
-:class: note
-
+````{warning} Attention : 
 On rappelle que les bases cylindriques et sphériques sont des bases __locales__ dont les vecteurs vont varier lorsque le point M se déplace. Il faudra donc tenir compte de leur dérivées temporelles.
 
 ````
