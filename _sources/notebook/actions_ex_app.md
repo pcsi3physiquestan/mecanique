@@ -23,7 +23,7 @@ Ces exercices d'application directe sont à faire à la suite du cours pour vér
 ````{admonition} Exercice 
 :class: attention
 
-On place des goutellettes d'huile chargée de masse m et de charge q entre deux plaques et on maintient les deux plaques distantes d'une distance d à une différence de potentiel U orienté de la plaque du haut vers la plaque vers le bas. Il reigne alors entre les plaque un chaque électrique $\overrightarrow{E} = \frac{U}{d}\overrightarrow{e_z}$ avec $\overrightarrow{e_z}$ un vecteur unitaire vertical orienté vers le haut. On suppose le champ de pesanteur uniforme.
+On place des goutellettes d'huile chargée de masse m et de charge q entre deux plaques et on maintient les deux plaques distantes d'une distance d à une différence de potentiel U orienté de la plaque du haut vers la plaque vers le bas. Il règne alors entre les plaque un chaque électrique $\overrightarrow{E} = \frac{U}{d}\overrightarrow{e_z}$ avec $\overrightarrow{e_z}$ un vecteur unitaire vertical orienté vers le haut. On suppose le champ de pesanteur uniforme.
 
 Exprimer la charge q en fonction des autres grandeurs introduites et de l'intensité du champ de pesanteur.
 

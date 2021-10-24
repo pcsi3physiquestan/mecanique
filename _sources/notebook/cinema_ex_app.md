@@ -26,9 +26,9 @@ Ces exercices d'application directe sont à faire à la suite du cours pour vér
 Démontrer les relations suivantes dans l'ellipse:
 
 \begin{align*}
-a = \frac{p}{1 - e^{2}}\\
-c^{2} = a^{2} - b^{2}\\
-e = c / a
+a &= \frac{p}{1 - e^{2}}\\
+c^{2} &= a^{2} - b^{2}\\
+e &= c / a
 \end{align*}
 
 ````

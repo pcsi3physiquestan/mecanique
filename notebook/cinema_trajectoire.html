@@ -736,8 +736,8 @@ x(t) = R \cos \omega t + x_0\\
 y(t) = R \sin \omega t + y_0
 \end{align*}\]</div>
 <p>Et on peut aussi écrire l’équation d’un cercle sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e22ca137-0e85-4513-ae05-f6a3e157ee8e">
-<span class="eqno">(1)<a class="headerlink" href="#equation-e22ca137-0e85-4513-ae05-f6a3e157ee8e" title="Permalink to this equation">¶</a></span>\[\begin{equation}\label{eq_cercle_cartesienmtex_234}
+<div class="amsmath math notranslate nohighlight" id="equation-9ecdca05-63cd-4012-b39f-438b396b65ea">
+<span class="eqno">(1)<a class="headerlink" href="#equation-9ecdca05-63cd-4012-b39f-438b396b65ea" title="Permalink to this equation">¶</a></span>\[\begin{equation}\label{eq_cercle_cartesienmtex_234}
 {(x - x_0)}^2 + {(y - y_0)}^2 = R^2
 \end{equation}\]</div>
 <p>Dans les deux cas, il s’agit de l’équation d’un cercle de rayon R et de centre C dont les coordonnées sont <span class="math notranslate nohighlight">\(C(x_0,y_0)\)</span></p>
@@ -751,7 +751,7 @@ y(t) = R \sin \omega t + y_0
 <p>Une ellipse est une courbe fermée qu’on peut caractériser/reconnaître de plusieurs manières:</p>
 <ul class="simple">
 <li><p>Lieu géométrique (peu usité): Soit deux points, appelées foyers, <span class="math notranslate nohighlight">\(F_1\)</span> et <span class="math notranslate nohighlight">\(F_2\)</span> et un réel positif K, l’ensemble des points M tel que <span class="math notranslate nohighlight">\(MF_1 + MF_2 = K\)</span> décrit une ellipse. Le milieu du segment <span class="math notranslate nohighlight">\(F_1 F_2\)</span> est appelé centre de l’ellipse.</p></li>
-<li><p>Représentation polaire (<strong>fondamentale</strong>): Soit un point F centre d’un repère polaire. L’ensemble des points M dont les coordonnées du vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{FM}\)</span> sont tels que <span class="math notranslate nohighlight">\(r = \frac{p}{1 + e \cos{\theta - \theta_0}}\)</span> avec <span class="math notranslate nohighlight">\(p &gt; 0\)</span> et <span class="math notranslate nohighlight">\(0 \leq e &lt; 1\)</span> décrit une ellipse. <strong>Le point F est un des foyers de l’ellipse</strong>. On dit que p est le <strong>paramètre de l’ellipse</strong> et que <strong>e</strong> est l’excentricité de l’ellipse.</p></li>
+<li><p>Représentation polaire (<strong>fondamentale</strong>): Soit un point F centre d’un repère polaire. L’ensemble des points M dont les coordonnées du vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{FM}\)</span> sont tels que <span class="math notranslate nohighlight">\(r = \frac{p}{1 + e \cos{(\theta - \theta_0)}}\)</span> avec <span class="math notranslate nohighlight">\(p &gt; 0\)</span> et <span class="math notranslate nohighlight">\(0 \leq e &lt; 1\)</span> décrit une ellipse. <strong>Le point F est un des foyers de l’ellipse</strong>. On dit que p est le <strong>paramètre de l’ellipse</strong> et que <strong>e</strong> est l’excentricité de l’ellipse.</p></li>
 <li><p>Représentation cartésienne (très utile). L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x,y)\)</span> sont telles que: <span class="math notranslate nohighlight">\({(\frac{x}{a})}^2 + {(\frac{y}{b})}^2 = 1\)</span> décrit une ellipse dont le centre est le centre du repère.</p></li>
 <li><p>Représentation paramétrique (utile): L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x(t) = a \cos t ; y(t) = b \sin(t))\)</span> décrit une ellipse dont le centre est le centre du repère.</p></li>
 </ul>
@@ -775,9 +775,9 @@ y(t) = R \sin \omega t + y_0
 <p>On démontrera en exercice les relations suivantes:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-a = \frac{p}{1 - e^{2}}\\
-c^{2} = a^{2} - b^{2}\\
-e = c / a
+a &amp;= \frac{p}{1 - e^{2}}\\
+c^{2} &amp;= a^{2} - b^{2}\\
+e &amp;= c / a
 \end{align*}\]</div>
 </div>
 </div>
@@ -791,20 +791,17 @@ e = c / a
 <li><p>Représentation polaire (<strong>fondamentale</strong>): Soit un point F centre d’un repère polaire. L’ensemble des points M dont les coordonnées du vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{FM}\)</span> sont tels que <span class="math notranslate nohighlight">\(r = \frac{p}{1 + e \cos{\theta - \theta_0}}\)</span> avec <span class="math notranslate nohighlight">\(p &gt; 0\)</span> et <span class="math notranslate nohighlight">\(e = 1\)</span> décrit une parabole. <strong>Le point F est appelé foyer de la parabole</strong>. On dit que p est le <strong>paramètre de la parabole</strong> et que <strong>e</strong> est l’excentricité de la parabole.</p></li>
 <li><p>Représentation cartésienne (très utile). L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x,y)\)</span> sont telles que: <span class="math notranslate nohighlight">\(y = ax^2 + bx + c\)</span> décrit une parabole d’axe de symétrie parallèle à Oy.</p></li>
 </ul>
-<div class="figure align-center" id="fig-223">
-<img alt="../_images/mathematiques_paraboleb.jpg" src="../_images/mathematiques_paraboleb.jpg" />
-</div>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Dans le cas polaire, si <span class="math notranslate nohighlight">\(\theta_0 = 0\)</span> (cas fréquent) l’axe de symétrie de la parabole est l’axe qui sert d’origine des angles, soit en général l’axe Ox. Ce qui est différent du cas cartésien présenté ici.</p>
+<div class="figure align-center" id="fig-223">
+<img alt="../_images/mathematiques_paraboleb.jpg" src="../_images/mathematiques_paraboleb.jpg" />
+</div>
 </div>
 </div>
 <div class="section" id="coniques">
 <h3>Coniques<a class="headerlink" href="#coniques" title="Permalink to this headline">¶</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Définition : Coniques</strong></p>
 <p>Les coniques correspondent à l’ensemble des courbes qu’on peut obtenir par l’intersection d’un cône et d’un plan. Il en résulte trois types de conique:</p>
 <ul class="simple">
 <li><p>l’ellipse</p></li>
@@ -814,13 +811,12 @@ e = c / a
 <div class="figure align-center" id="fig-224">
 <img alt="../_images/conique.png" src="../_images/conique.png" />
 </div>
-</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Equation polaire d’une conique</strong></p>
 <p>En choisissant correctement l’origine du repère polaire, on peut exprimer l’équation polaire d’une conique sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-77b8278a-4aa2-4df5-ac76-4b88159680b9">
-<span class="eqno">(2)<a class="headerlink" href="#equation-77b8278a-4aa2-4df5-ac76-4b88159680b9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-fe00a1e0-197a-44ec-9a2f-b0ddaccb8997">
+<span class="eqno">(2)<a class="headerlink" href="#equation-fe00a1e0-197a-44ec-9a2f-b0ddaccb8997" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 r(\theta) = \frac{p}{1 \pm e \cos \left(\theta - \theta_0\right)}
 \end{equation}\]</div>
 <p>Le centre du repère est alors appelée foyer de la conique. A noter que l’ellipse et la parabole possède deux foyers symétriques par rapport au centre de la conique (centre de symétrie de la conique).</p>

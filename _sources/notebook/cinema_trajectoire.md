@@ -115,7 +115,7 @@ Dans les deux cas, il s'agit de l'équation d'un cercle de rayon R et de centre 
 Une ellipse est une courbe fermée qu'on peut caractériser/reconnaître de plusieurs manières:
 
 * Lieu géométrique (peu usité): Soit deux points, appelées foyers, $F_1$ et $F_2$ et un réel positif K, l'ensemble des points M tel que $MF_1 + MF_2 = K$ décrit une ellipse. Le milieu du segment $F_1 F_2$ est appelé centre de l'ellipse.
-* Représentation polaire (__fondamentale__): Soit un point F centre d'un repère polaire. L'ensemble des points M dont les coordonnées du vecteur position $\overrightarrow{FM}$ sont tels que $r = \frac{p}{1 + e \cos{\theta - \theta_0}}$ avec $p > 0$ et $0 \leq e < 1$ décrit une ellipse. __Le point F est un des foyers de l'ellipse__. On dit que p est le __paramètre de l'ellipse__ et que __e__ est l'excentricité de l'ellipse.
+* Représentation polaire (__fondamentale__): Soit un point F centre d'un repère polaire. L'ensemble des points M dont les coordonnées du vecteur position $\overrightarrow{FM}$ sont tels que $r = \frac{p}{1 + e \cos{(\theta - \theta_0)}}$ avec $p > 0$ et $0 \leq e < 1$ décrit une ellipse. __Le point F est un des foyers de l'ellipse__. On dit que p est le __paramètre de l'ellipse__ et que __e__ est l'excentricité de l'ellipse.
 * Représentation cartésienne (très utile). L'ensemble des M dont les coordonnées $(x,y)$ sont telles que: ${(\frac{x}{a})}^2 + {(\frac{y}{b})}^2 = 1$ décrit une ellipse dont le centre est le centre du repère.
 * Représentation paramétrique (utile): L'ensemble des M dont les coordonnées $(x(t) = a \cos t ; y(t) = b \sin(t))$ décrit une ellipse dont le centre est le centre du repère.
 
@@ -144,9 +144,9 @@ Les caractéristiques importantes sont:
 On démontrera en exercice les relations suivantes:
 
 \begin{align*}
-a = \frac{p}{1 - e^{2}}\\
-c^{2} = a^{2} - b^{2}\\
-e = c / a
+a &= \frac{p}{1 - e^{2}}\\
+c^{2} &= a^{2} - b^{2}\\
+e &= c / a
 \end{align*}
 ````
 ### Trajectoire parabolique
@@ -158,23 +158,22 @@ Une parabole est une courbe non fermée qu'on peut caractériser/reconnaître de
 * Représentation polaire (__fondamentale__): Soit un point F centre d'un repère polaire. L'ensemble des points M dont les coordonnées du vecteur position $\overrightarrow{FM}$ sont tels que $r = \frac{p}{1 + e \cos{\theta - \theta_0}}$ avec $p > 0$ et $e = 1$ décrit une parabole. __Le point F est appelé foyer de la parabole__. On dit que p est le __paramètre de la parabole__ et que __e__ est l'excentricité de la parabole.
 * Représentation cartésienne (très utile). L'ensemble des M dont les coordonnées $(x,y)$ sont telles que: $y = ax^2 + bx + c$ décrit une parabole d'axe de symétrie parallèle à Oy.
 
-```{figure} ./images/mathematiques_paraboleb.jpg
-:name: fig_223
-:align: center
-
-```
-
 ````
 
 ````{attention}
 
 Dans le cas polaire, si $\theta_0 = 0$ (cas fréquent) l'axe de symétrie de la parabole est l'axe qui sert d'origine des angles, soit en général l'axe Ox. Ce qui est différent du cas cartésien présenté ici.
 
+```{figure} ./images/mathematiques_paraboleb.jpg
+:name: fig_223
+:align: center
+
+```
+
+
 ````
 
 ### Coniques
-
-````{important} __Définition : Coniques__
 
 Les coniques correspondent à l'ensemble des courbes qu'on peut obtenir par l'intersection d'un cône et d'un plan. Il en résulte trois types de conique:
 
@@ -187,8 +186,6 @@ Les coniques correspondent à l'ensemble des courbes qu'on peut obtenir par l'in
 :align: center
 
 ```
-
-````
 
 ````{important} __Fondamental : Equation polaire d'une conique__
 

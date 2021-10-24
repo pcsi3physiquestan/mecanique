@@ -608,11 +608,6 @@
    Cylindre sur plan incliné
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#balancoire">
-   Balançoire
-  </a>
- </li>
 </ul>
 
             </nav>
@@ -630,12 +625,30 @@
 <h2>Cube sur plan incliné<a class="headerlink" href="#cube-sur-plan-incline" title="Permalink to this headline">¶</a></h2>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
-<p>On reprend l’étude du cube sur un plan incliné.</p>
+<p>On étudie un cube (de masse uniformément répartie) sur un plan incliné. On admet qu’à l’équilibre, la somme des forces résultats est nulle et la somme des moments résultants en un même point est nulle.</p>
 <ol class="simple">
 <li><p>Représenter la force résultante de l’action du poids en un point judicieusement choisi.</p></li>
 <li><p>Le cube est immobile. Par une analyse du bilan des actions, représenter la force résultante de l’action du plan incliné sur le cube en un point judicieusement choisi.</p></li>
 <li><p>Que se passe-t-il si l’on incline trop le plan ?</p></li>
 </ol>
+</div>
+<blockquote>
+<div><p><strong>Résolution</strong></p>
+<p><strong>1.Force résultante du poids.</strong>
+Le poids estune action globale qui n’a pas de point d’application. MAIS, on a vu qu’une action globale était <em>mathématiquement</em> équivalente à une action ponctuelle en un point de moment résultant nul. Un tel point est donc un bon endroit pour “représenter” une action globale.<br />
+Dans le cas du poids, on sait que le moment résultant est nul au centre d’inertie (champ de pesanteur uniforme) donc on va représenter le poids en G, le centre du cube.
+<em>Note : On pourrait remarquer que le moment résultant du poids est aussi nul en tout point à la verticale de G. Le choix de le représenter en G plutôt qu’en un autre point à sa verticale reste arbitraire.</em></p>
+<p><strong>2.Force résultante de la réaction.</strong>
+Deux forces s’appliquent sur le cube : son poids et l’action du support. La somme des force est nulle à l’équilibre, donc la force résultante de l’action du support est un vecteur force opposé : <span class="math notranslate nohighlight">\(\overrightarrow{R} = - \overrightarrow{P}\)</span>.<br />
+On va de même chercher un point de moment résultant nul. A l’équilibre, la somme des moments résultants en un même point. Donc si le moment du poids en un point B est nul, le moment de l’action du support est aussi nul en B. Il vient que le moment de  de l’action du support est nul en tout point à la verticale de G.<br />
+Pour garder le sens physique de l’action de contact, on aura tendance à représenter <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> au point d’intersection entre cette verticale et le plan incliné. <em>Mais mathématiquement, on pourrait le représenter en G.</em></p>
+<p><strong>3.Inclinaison du plan</strong><br />
+Si l’on incline trop le cube, on observe que l’intersection (notée B) entre la verticale en G etle plan incliné se retrouve hors du cube (angle supérieur à 45 degré).<br />
+Commençons par remarquer que chaque action ponctuelle entre le plan incliné et le cube est toujours dirigée vers l’extérieur du plan (condition de non pénétration sur la composante normale). Ce qui signifie que <em>le moment en B de toutes ces actions ponctuelles aura le même sens</em> (soit positif suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span> sur le <a class="reference internal" href="#cube-incline"><span class="std std-ref">schéma</span></a>). Il vient que le moment résultant est nécessairement non nul en B : le cube ne peut être en équilibre aux fortes pentes, il va basculer.</p>
+</div></blockquote>
+<div class="figure align-center" id="cube-incline">
+<img alt="../_images/meca_actions_cube.png" src="../_images/meca_actions_cube.png" />
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Actions sur le cube</span><a class="headerlink" href="#cube-incline" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="cylindre-sur-plan-incline">
@@ -648,18 +661,10 @@
 <li><p>Le cylindre peut-il rester immobile ? Peut-il glisser sans rouler ? Peut-il rouler sans glisser ? On expliquera ceci au moyen d’un bilan des actions.</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="balancoire">
-<h2>Balançoire<a class="headerlink" href="#balancoire" title="Permalink to this headline">¶</a></h2>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère une tige assimilable à un segment de masse M répartie maintenu horizontale par deux fils parfaits aux extrémités. On suppose qu’aux deux extrémités des fils, on a réalisé deux liaisons pivots parfaites.</p>
-<ol class="simple">
-<li><p>Quelles sont les mouvements possibles de la balançoire ?</p></li>
-<li><p>Les forces résultantes des deux fils sur la tige mobile sont-elles ?</p></li>
-<li><p>Faire un bilan des moments résultants extérieurs. Le comportement de la balançoire est-il ce qu’on attend ?</p></li>
-</ol>
-</div>
+<blockquote>
+<div><p>Le raisonnement sur le cube peut-être refait ici et montre que le même résultant de l’action du plan sur le cylindre ne peut-être nul que sur l’arête de contact entre le cylindre et le plan incliné. Le poids est lui toujours de moment nul en G.
+On observe, une fois le schéma réalisé (s’entraîner à le faire), que la somme des moments est nécessairement non nulle donc le cylindre ne peut rester immobile et va forcément tourner (rouler). Il n’y a par contre pas <em>a priori</em> de contradiction à un roulement sans glissement.</p>
+</div></blockquote>
 </div>
 </div>
 
