@@ -146,13 +146,14 @@ où B est un point de l'axe $\Delta$.
 >
 >On considère pour simplifier un point matériel M subissant une action modélisée par une force $\overrightarrow{F}$ (appliquée donc au point M). On note l'expression de $\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}$.
 >
->On peut donc calculer le moment de la force (!) $\overrightarrow{F}$ sur $\Delta$:
+>On peut donc calculer le moment de la force (!) $\overrightarrow{F}$ sur $\Delta$ (Le pointA est le point d'application de l'action):
 >
 >\begin{align*}
->L_{\Delta/R} &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
->&= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
->&= m r^2 \dot \theta
->\end{align*}
+M_{\Delta}(\overrightarrow{F}) &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_O (\overrightarrow{F})}\\
+&= \overrightarrow{u_{\Delta}} \cdot \left( \overrightarrow{OA}\wedge \overrightarrow{F}\right)\\
+&= \overrightarrow{e_z} \cdot ((r_A \overrightarrow{e_r} + z_A \overrightarrow{e_z}) \wedge (F_r \overrightarrow{e_r} + F_\theta \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}))\\
+&= r_A F_\theta
+\end{align*}
 >On observe que:
 >
 >* Le moment de la force $\overrightarrow{F}$ sur l'axe $\Delta$ n'est pas nul si la composante orthoradiale $F_{\theta}$ est non nulle.
@@ -247,11 +248,11 @@ On supposera que le mouvement de M reste dans un plan vertical contenant le poin
 \end{align*}
 >On remarque que le moment de la tige __au point O__ est nul. C'est logique car la force exercée par l'action __ponctuelle__ exercée par la tige est dirigée vers le point O de sorte qu'elle n'a aucun effet sur la rotation de M autour de O. D'un point de vue mathématique pour faire le calcul du moment, on pourra directement remarquer que la force est dirigée vers O, donc le produit vectoriel est nul.
 >
->Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant $\overrightarrow{e_{\theta}}$. On peut remarquer que le poids tend à ramener le point M vers $\theta = 0$ (point le plus bas) de sorte que le moment du poids doit être négatif quand $\theta > 0$ et positif quand $\theta < 0$. C'est ce qu'on trouve.
+>Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant $\overrightarrow{e_{\theta}}$). On peut remarquer que le poids tend à ramener le point M vers $\theta = 0$ (point le plus bas) de sorte que le moment du poids doit être négatif quand $\theta > 0$ et positif quand $\theta < 0$. C'est ce qu'on trouve.
 >
 >__4. Force et accélération__
 >
->On ne peut pas déterminer pour l'instant l'expression de T comme on l'a fait précédemment pour la réaction d'un support. En effet, il n'y a pas de mouvement radiale (suivant $\overrightarrow{e_r}$ mais c'est un mouvement __courbe__. Le mouvement est donc __dévié__ dans la direction $- \overrightarrow{e_r}$ à chaque instant (son accélération suivant $\overrightarrow{e_r}$ est non nulle et négative).
+>On ne peut pas déterminer pour l'instant l'expression de T comme on l'a fait précédemment pour la réaction d'un support. En effet, il n'y a pas de mouvement radiale (suivant $\overrightarrow{e_r}$) mais c'est un mouvement __courbe__. Le mouvement est donc __dévié__ dans la direction $- \overrightarrow{e_r}$ à chaque instant (son accélération suivant $\overrightarrow{e_r}$ est non nulle et négative).
 >
 >Il vient que la somme des forces suivant $\overrightarrow{e_r}$ __ne doit pas être nulle__ ce qui nous empêche de déterminer complètement l'expression de T. Grâce au principe fondamentale de la dynamique, on pourra obtenir une expression faisant intervenir l'accélération. Quant au calcul de cette dernière, nous évoquerons le cas de ce système plus tard.
 
@@ -276,7 +277,7 @@ On considère un cube de côté a et de répartition de masse homogène fixé su
 
 On attache un fil tendu à un coin du cube noté A. On considère que la liaison entre le cube et le fil se résume à un seul point de sorte qu'on puisse considérer l'action du ressort sur le cube comme ponctuelle. La force appliqué par le fil sur le cube est toujours horizontale et de norme $F_0$.
 
-1. Paramétrer le problème (proposer un système de coordonnées et des paramètre utile au problème) pour pouvoir étudier la rotation du cube autour de son axe. Proposer alors une expression du moment cinétique du cube,de son énergie cinétique et de sa quantité de mouvement. On notera J le moment d'inertie du cube sur l'axe de rotation et M sa masse totale.
+1. Paramétrer le problème (proposer un système de coordonnées et des paramètres utiles au problème) pour pouvoir étudier la rotation du cube autour de son axe. Proposer alors une expression du moment cinétique du cube sur l'axe de rotation,de son énergie cinétique et de sa quantité de mouvement. On notera J le moment d'inertie du cube sur l'axe de rotation et M sa masse totale.
 1. Exprimer le moment de la force exercé par le ressort sur le cube exprimé au centre du cube. Commenter suivant les valeurs des paramètres introduits la tendance qu'aura cette force à agir sur la rotation du cube.
 1. On admet que la seule action dont le moment sur l'axe de rotation est non nul est la tension du fil étudié précédemment. Quelles sont les positions d'équilibre du système ? Si l'on écarte légèrement le cube de chacune de ces positions, aura-t-il tendance a revenir à la position d'équilibre ? (On parle de stabilité des positions d'équilibre).
 1. On néglige l'action de la pesanteur. Quelle autre action s'exerce sur le cube ? En raisonnant sur les moments de manière analogique au raisonnement qu'on pourrait avoir sur des forces, justifier que le moment de cette action sur un axe vertical passant par O est nécessairement non nul.
@@ -298,7 +299,7 @@ On attache un fil tendu à un coin du cube noté A. On considère que la liaison
 >
 >\begin{align*}
 L_{Oz}(cube) &= J \dot \theta \\
-E_{c,cube} &= \frac{1}{2} \dot \theta^2\\
+E_{c,cube} &= \frac{1}{2} J \dot \theta^2\\
 \overrightarrow{P_{cube/\mathfrak{R}}} = M \overrightarrow{v_{G}} = \overrightarrow{0}
 \end{align*}
 >__Le cube étant de masse répartie de manière homogène, le centre d'inertie est situé au point O, centre du cube__. Fixé sur l'axe Oz, le centre d'inertie est donc immobile, d'où la quantité de mouvement nulle.
@@ -312,7 +313,7 @@ E_{c,cube} &= \frac{1}{2} \dot \theta^2\\
 >\begin{align*}
 M_{fil \to cube,Oz} &= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wedge \overrightarrow{F}\right)\\
 &= \overrightarrow{e_z} \cdot \left(\left(\frac{a}{\sqrt{2}} \overrightarrow{e_r} + \frac{a}{2} \overrightarrow{e_z}\right) \wedge F_0 \overrightarrow{e_x}\right)\\
-&= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} \wedge F_0 \sin \theta  \overrightarrow{e_z} \right)\\
+&= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} F_0 \sin \theta  \overrightarrow{e_z} \right)\\
 &= - \frac{a}{\sqrt{2}} F_0 \sin \theta \\
 \end{align*}
 >
@@ -336,7 +337,7 @@ M_{fil \to cube,Oz} &= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wed
 
 ```
 >
->On remarque que si l'on écarte légèrement le cube de sa position d'équilibre $\theta = 0$ vers des angles positifs, l'angle va décroitre sous l'effet de l'action du fil (cf. schéma ou signe du moment) et il va donc avoir tendance à revenir vers la position d'équilibre. A l'inverse, si $\theta$ est négatif, l'angle va croitre (schéma ou signe du moment) et va aussi revenir vers la position d'équilibre. Donc  lorsqu'on écarte le système de cette position d'équilibre, il tend à y revenir, on dit que la position d'équilibre est __stable__.
+>On remarque que si l'on écarte légèrement le cube de sa position d'équilibre $\theta = 0$ vers des angles positifs, l'angle va décroitre sous l'effet de l'action du fil (cf. schéma du signe du moment) et il va donc avoir tendance à revenir vers la position d'équilibre. A l'inverse, si $\theta$ est négatif, l'angle va croitre (schéma du signe du moment) et va aussi revenir vers la position d'équilibre. Donc  lorsqu'on écarte le système de cette position d'équilibre, il tend à y revenir, on dit que la position d'équilibre est __stable__.
 >
 >A l'inverse si l'on écarte le cube de sa position d'équilibre $\theta = \pi$, on remarque qu'il va s'éloigner de cette position. En effet, pour $\theta < \pi$, le moment est négatif et l'angle va encore décroître. Et pour $\theta > + pi$, le moment est positif et l'angle va croître. Dans les deux cas, on s'éloigne de la position d'équilibre: la position est dite __instable__.
 >
@@ -348,7 +349,7 @@ M_{fil \to cube,Oz} &= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wed
 >
 >Nous n'avons pas appris à calculer le moment d'une telle action mais si l'on considère que les moments ont un effet sur la rotation et que c'est le moment résultant de la somme de toutes les actions sur le cube qui détermine le mouvement du cube (par analogie avec l'effet des forces sur la translation du cube), on peut raisonner qualitativement.
 >
->Ici le cube ne peut tourner que suivant l'axe Oz. Cela signifie que la rotation suivant l'axe Oy est bloquée. Donc le moment résultant suivant l'axe Oy de toute les actions sur le cube devraient être nul (comme l'immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l'action du fil sur le cube sur Ox est non nul, il vaut: $\frac{aF_0}{2}$ (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l'action de l'axe sur le cube doit être non nul suivant l'axe Oy.
+>Ici le cube ne peut tourner que suivant l'axe Oz. Cela signifie que la rotation suivant l'axe Oy est bloquée. Donc le moment résultant suivant l'axe Oy de toute les actions sur le cube devraient être nul (comme l'immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l'action du fil sur le cube sur Oy est non nul, il vaut: $\frac{aF_0}{2}$ (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l'action de l'axe sur le cube doit être non nul suivant l'axe Oy.
 >
 >Il est important de pouvoir comprendre le raisonnement précédent de manière qualitative. On a représenté ci-dessous un vue de "dessus" (suivant Oy). On observe que si l'on permettait au cube de tourner autour de Oy (au lieu de Oz), on remarque graphiquement que la tension du fil ferait effectivement tourner le cube autour de Oy. Il faut donc une action contraire qui s'oppose à cette rotation: l'axe de rotation doit donc exercer une action de moment contraire (donc non nul) suivant Oy.
 >

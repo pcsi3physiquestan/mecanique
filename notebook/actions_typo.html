@@ -774,8 +774,8 @@ Le système précédente est probablement une modélisation ponctuelle d’un sy
 <p><strong>Définition : Moment d’une action ponctuelle/d’une force par rapport à un point.</strong></p>
 <p>Soit une action ponctuelle <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> d’un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> et un point d’application A.</p>
 <p>Soit un point B de l’espace. On définit le moment <span class="math notranslate nohighlight">\(\overrightarrow{M_B}(\overrightarrow{F})\)</span> (ou <span class="math notranslate nohighlight">\(\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})\)</span>) de l’action <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> (ou moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>) par rapport au point B par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2cb79e22-b001-4bdb-9f23-c48e742b7b5b">
-<span class="eqno">(29)<a class="headerlink" href="#equation-2cb79e22-b001-4bdb-9f23-c48e742b7b5b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c9a93b94-0083-40fb-8d13-1d509b725586">
+<span class="eqno">(29)<a class="headerlink" href="#equation-c9a93b94-0083-40fb-8d13-1d509b725586" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{M_B}\left(\overrightarrow{F}\right) = \overrightarrow{BA} \wedge \overrightarrow{F}
 \end{equation}\]</div>
 </div>
@@ -785,8 +785,8 @@ Le système précédente est probablement une modélisation ponctuelle d’un sy
 <p><strong>Définition : Moment d’une action ponctuelle/force par rapport à un axe.</strong></p>
 <p>Soit une action ponctuelle <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> d’un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> et un point d’application A.</p>
 <p>Soit un axe <span class="math notranslate nohighlight">\(\Delta\)</span> orienté par un vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}}\)</span>. On définit le moment <span class="math notranslate nohighlight">\(M_{\Delta}(\overrightarrow{F})\)</span> (ou <span class="math notranslate nohighlight">\(M_{\Delta}(\mathfrak{A}_{1 \to 2})\)</span>) de l’action <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> (ou moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>) par rapport à l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-551c303b-c345-45ba-abdd-e87b9d391faf">
-<span class="eqno">(30)<a class="headerlink" href="#equation-551c303b-c345-45ba-abdd-e87b9d391faf" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-acf67a75-9244-4f6d-82c6-14e6e061a47e">
+<span class="eqno">(30)<a class="headerlink" href="#equation-acf67a75-9244-4f6d-82c6-14e6e061a47e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 M_{\Delta}\left(\overrightarrow{F}\right) = \overrightarrow{u_{\Delta}} \cdot \left(\overrightarrow{BA} \wedge \overrightarrow{F}\right)
 \end{equation}\]</div>
 <p>où B est un point de l’axe <span class="math notranslate nohighlight">\(\Delta\)</span>.</p>
@@ -799,13 +799,14 @@ M_{\Delta}\left(\overrightarrow{F}\right) = \overrightarrow{u_{\Delta}} \cdot \l
 Dans toute la suite on travaillera implicitement dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
 <p>Pour interprêter le moment cinétique par rapport à un axe orienté <span class="math notranslate nohighlight">\(\Delta\)</span>, on va se placer dans un repère cylindrique d’axe <span class="math notranslate nohighlight">\(\Delta\)</span> centré en un point O de l’axe.</p>
 <p>On considère pour simplifier un point matériel M subissant une action modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> (appliquée donc au point M). On note l’expression de <span class="math notranslate nohighlight">\(\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}\)</span>.</p>
-<p>On peut donc calculer le moment de la force (!) <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> sur <span class="math notranslate nohighlight">\(\Delta\)</span>:</p>
+<p>On peut donc calculer le moment de la force (!) <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> sur <span class="math notranslate nohighlight">\(\Delta\)</span> (Le pointA est le point d’application de l’action):</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-&gt;L_{\Delta/R} &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
-&gt;&amp;= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
-&gt;&amp;= m r^2 \dot \theta
-&gt;\end{align*}\]</div>
+M_{\Delta}(\overrightarrow{F}) &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_O (\overrightarrow{F})}\\
+&amp;= \overrightarrow{u_{\Delta}} \cdot \left( \overrightarrow{OA}\wedge \overrightarrow{F}\right)\\
+&amp;= \overrightarrow{e_z} \cdot ((r_A \overrightarrow{e_r} + z_A \overrightarrow{e_z}) \wedge (F_r \overrightarrow{e_r} + F_\theta \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}))\\
+&amp;= r_A F_\theta
+\end{align*}\]</div>
 <p>On observe que:</p>
 <ul class="simple">
 <li><p>Le moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> sur l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> n’est pas nul si la composante orthoradiale <span class="math notranslate nohighlight">\(F_{\theta}\)</span> est non nulle.
@@ -891,9 +892,9 @@ Si le calcul (et la définition !) du moment diffère pour des systèmes de poin
 &amp;= 0
 \end{align*}\]</div>
 <p class="card-text">On remarque que le moment de la tige <strong>au point O</strong> est nul. C’est logique car la force exercée par l’action <strong>ponctuelle</strong> exercée par la tige est dirigée vers le point O de sorte qu’elle n’a aucun effet sur la rotation de M autour de O. D’un point de vue mathématique pour faire le calcul du moment, on pourra directement remarquer que la force est dirigée vers O, donc le produit vectoriel est nul.</p>
-<p class="card-text">Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span>. On peut remarquer que le poids tend à ramener le point M vers <span class="math notranslate nohighlight">\(\theta = 0\)</span> (point le plus bas) de sorte que le moment du poids doit être négatif quand <span class="math notranslate nohighlight">\(\theta &gt; 0\)</span> et positif quand <span class="math notranslate nohighlight">\(\theta &lt; 0\)</span>. C’est ce qu’on trouve.</p>
+<p class="card-text">Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span>). On peut remarquer que le poids tend à ramener le point M vers <span class="math notranslate nohighlight">\(\theta = 0\)</span> (point le plus bas) de sorte que le moment du poids doit être négatif quand <span class="math notranslate nohighlight">\(\theta &gt; 0\)</span> et positif quand <span class="math notranslate nohighlight">\(\theta &lt; 0\)</span>. C’est ce qu’on trouve.</p>
 <p class="card-text"><strong>4. Force et accélération</strong></p>
-<p class="card-text">On ne peut pas déterminer pour l’instant l’expression de T comme on l’a fait précédemment pour la réaction d’un support. En effet, il n’y a pas de mouvement radiale (suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> mais c’est un mouvement <strong>courbe</strong>. Le mouvement est donc <strong>dévié</strong> dans la direction <span class="math notranslate nohighlight">\(- \overrightarrow{e_r}\)</span> à chaque instant (son accélération suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est non nulle et négative).</p>
+<p class="card-text">On ne peut pas déterminer pour l’instant l’expression de T comme on l’a fait précédemment pour la réaction d’un support. En effet, il n’y a pas de mouvement radiale (suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>) mais c’est un mouvement <strong>courbe</strong>. Le mouvement est donc <strong>dévié</strong> dans la direction <span class="math notranslate nohighlight">\(- \overrightarrow{e_r}\)</span> à chaque instant (son accélération suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est non nulle et négative).</p>
 <p class="card-text">Il vient que la somme des forces suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> <strong>ne doit pas être nulle</strong> ce qui nous empêche de déterminer complètement l’expression de T. Grâce au principe fondamentale de la dynamique, on pourra obtenir une expression faisant intervenir l’accélération. Quant au calcul de cette dernière, nous évoquerons le cas de ce système plus tard.</p>
 </div></blockquote>
 </div>
@@ -909,7 +910,7 @@ Si le calcul (et la définition !) du moment diffère pour des systèmes de poin
 </div>
 <p>On attache un fil tendu à un coin du cube noté A. On considère que la liaison entre le cube et le fil se résume à un seul point de sorte qu’on puisse considérer l’action du ressort sur le cube comme ponctuelle. La force appliqué par le fil sur le cube est toujours horizontale et de norme <span class="math notranslate nohighlight">\(F_0\)</span>.</p>
 <ol class="simple">
-<li><p>Paramétrer le problème (proposer un système de coordonnées et des paramètre utile au problème) pour pouvoir étudier la rotation du cube autour de son axe. Proposer alors une expression du moment cinétique du cube,de son énergie cinétique et de sa quantité de mouvement. On notera J le moment d’inertie du cube sur l’axe de rotation et M sa masse totale.</p></li>
+<li><p>Paramétrer le problème (proposer un système de coordonnées et des paramètres utiles au problème) pour pouvoir étudier la rotation du cube autour de son axe. Proposer alors une expression du moment cinétique du cube sur l’axe de rotation,de son énergie cinétique et de sa quantité de mouvement. On notera J le moment d’inertie du cube sur l’axe de rotation et M sa masse totale.</p></li>
 <li><p>Exprimer le moment de la force exercé par le ressort sur le cube exprimé au centre du cube. Commenter suivant les valeurs des paramètres introduits la tendance qu’aura cette force à agir sur la rotation du cube.</p></li>
 <li><p>On admet que la seule action dont le moment sur l’axe de rotation est non nul est la tension du fil étudié précédemment. Quelles sont les positions d’équilibre du système ? Si l’on écarte légèrement le cube de chacune de ces positions, aura-t-il tendance a revenir à la position d’équilibre ? (On parle de stabilité des positions d’équilibre).</p></li>
 <li><p>On néglige l’action de la pesanteur. Quelle autre action s’exerce sur le cube ? En raisonnant sur les moments de manière analogique au raisonnement qu’on pourrait avoir sur des forces, justifier que le moment de cette action sur un axe vertical passant par O est nécessairement non nul.</p></li>
@@ -941,7 +942,7 @@ Si le calcul (et la définition !) du moment diffère pour des systèmes de poin
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 L_{Oz}(cube) &amp;= J \dot \theta \\
-E_{c,cube} &amp;= \frac{1}{2} \dot \theta^2\\
+E_{c,cube} &amp;= \frac{1}{2} J \dot \theta^2\\
 \overrightarrow{P_{cube/\mathfrak{R}}} = M \overrightarrow{v_{G}} = \overrightarrow{0}
 \end{align*}\]</div>
 <p class="card-text"><strong>Le cube étant de masse répartie de manière homogène, le centre d’inertie est situé au point O, centre du cube</strong>. Fixé sur l’axe Oz, le centre d’inertie est donc immobile, d’où la quantité de mouvement nulle.</p>
@@ -952,7 +953,7 @@ E_{c,cube} &amp;= \frac{1}{2} \dot \theta^2\\
 \[\begin{align*}
 M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wedge \overrightarrow{F}\right)\\
 &amp;= \overrightarrow{e_z} \cdot \left(\left(\frac{a}{\sqrt{2}} \overrightarrow{e_r} + \frac{a}{2} \overrightarrow{e_z}\right) \wedge F_0 \overrightarrow{e_x}\right)\\
-&amp;= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} \wedge F_0 \sin \theta  \overrightarrow{e_z} \right)\\
+&amp;= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} F_0 \sin \theta  \overrightarrow{e_z} \right)\\
 &amp;= - \frac{a}{\sqrt{2}} F_0 \sin \theta \\
 \end{align*}\]</div>
 <p class="card-text"><strong>3. Analyse du moment</strong></p>
@@ -969,13 +970,13 @@ M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} 
 <img alt="../_images/moment_cube_equilibre.png" src="../_images/moment_cube_equilibre.png" />
 </div>
 <blockquote>
-<div><p class="card-text">On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma ou signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma ou signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
+<div><p class="card-text">On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma du signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma du signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
 <p class="card-text">A l’inverse si l’on écarte le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = \pi\)</span>, on remarque qu’il va s’éloigner de cette position. En effet, pour <span class="math notranslate nohighlight">\(\theta &lt; \pi\)</span>, le moment est négatif et l’angle va encore décroître. Et pour <span class="math notranslate nohighlight">\(\theta &gt; + pi\)</span>, le moment est positif et l’angle va croître. Dans les deux cas, on s’éloigne de la position d’équilibre: la position est dite <strong>instable</strong>.</p>
 <p class="card-text">On pourra faire le parallèle avec le sommet d’une bosse et le creux d’un trou pour une bille. Les deux sont des positions d’équilibre mais la première est instable alors que la seconde est stable. Dans ce cas, c’est un raisonnement sur la force résultante (pesanteur + réaction du sol) là on raisonne ici sur le moment.</p>
 <p class="card-text"><strong>4. Détermination (qualitative) d’un moment en statique</strong></p>
 <p class="card-text">Le cube tourne d’une axe fixe. L’axe est en contact avec le cube et exerce une action (de contact) sur le cube. C’est la somme des deux actions (fil sur cube et axe sur cube) qui permet d’étudier le mouvement du cube. On remarquera que l’action de contact se fait en de nombreux points (à la surface de contact), il s’agit donc d’une <strong>action résultante</strong>.</p>
 <p class="card-text">Nous n’avons pas appris à calculer le moment d’une telle action mais si l’on considère que les moments ont un effet sur la rotation et que c’est le moment résultant de la somme de toutes les actions sur le cube qui détermine le mouvement du cube (par analogie avec l’effet des forces sur la translation du cube), on peut raisonner qualitativement.</p>
-<p class="card-text">Ici le cube ne peut tourner que suivant l’axe Oz. Cela signifie que la rotation suivant l’axe Oy est bloquée. Donc le moment résultant suivant l’axe Oy de toute les actions sur le cube devraient être nul (comme l’immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l’action du fil sur le cube sur Ox est non nul, il vaut: <span class="math notranslate nohighlight">\(\frac{aF_0}{2}\)</span> (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l’action de l’axe sur le cube doit être non nul suivant l’axe Oy.</p>
+<p class="card-text">Ici le cube ne peut tourner que suivant l’axe Oz. Cela signifie que la rotation suivant l’axe Oy est bloquée. Donc le moment résultant suivant l’axe Oy de toute les actions sur le cube devraient être nul (comme l’immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l’action du fil sur le cube sur Oy est non nul, il vaut: <span class="math notranslate nohighlight">\(\frac{aF_0}{2}\)</span> (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l’action de l’axe sur le cube doit être non nul suivant l’axe Oy.</p>
 <p class="card-text">Il est important de pouvoir comprendre le raisonnement précédent de manière qualitative. On a représenté ci-dessous un vue de “dessus” (suivant Oy). On observe que si l’on permettait au cube de tourner autour de Oy (au lieu de Oz), on remarque graphiquement que la tension du fil ferait effectivement tourner le cube autour de Oy. Il faut donc une action contraire qui s’oppose à cette rotation: l’axe de rotation doit donc exercer une action de moment contraire (donc non nul) suivant Oy.</p>
 </div></blockquote>
 <div class="figure align-center" id="fig-234">
@@ -998,8 +999,8 @@ Initialement, les champs électriques <span class="math notranslate nohighlight"
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Force de Lorentz</strong></p>
 <p>Soit un point matériel M chargé de charge q et un champ électromagnétique donc les expressions vectorielles au point M sont <span class="math notranslate nohighlight">\(\overrightarrow{E}(M)\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span>. Alors le champ électromagnétique exerce une action dont la force, appelée force de Lorentz s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b9899953-8f12-4d0c-8cf3-6fae0bf0f300">
-<span class="eqno">(31)<a class="headerlink" href="#equation-b9899953-8f12-4d0c-8cf3-6fae0bf0f300" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-228412f1-9a8d-4777-90fa-450e4c30f215">
+<span class="eqno">(31)<a class="headerlink" href="#equation-228412f1-9a8d-4777-90fa-450e4c30f215" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F}_{Lorentz} = q \left(\overrightarrow{E}(M) + \overrightarrow{v_{M/\mathfrak{R}}} \wedge \overrightarrow{B}(M)\right)
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{v_{M/\mathfrak{R}}}\)</span> est la vitesse du point M dans le référentiel d’étude.</p>
@@ -1110,8 +1111,8 @@ La démonstration fait intervenir le principe fondamentale de la dynamique: <spa
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Action d’un ressort</strong></p>
 <p>Soit un système accroché à un ressort. En général, on considère le point d’accroche comme ponctuel et la force exercée par le ressort à son extrémité sur le système comme tangente au ressort. Si le ressort est de masse négligeable (cas usuel), alors la force exercée par le ressort sur un système accroché à son extrémité s’écrit si sa longueur est l:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3d747fa1-b3c3-40e3-9801-dba06cb59f09">
-<span class="eqno">(32)<a class="headerlink" href="#equation-3d747fa1-b3c3-40e3-9801-dba06cb59f09" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-66ab6df8-e352-4be1-a567-444167bfd955">
+<span class="eqno">(32)<a class="headerlink" href="#equation-66ab6df8-e352-4be1-a567-444167bfd955" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F_{ressort\to extremite}} = -k \left(l - l_0\right) \overrightarrow{u_{ext}} = - k \Delta l \overrightarrow{u_{ext}}
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(l_0\)</span> est la longueur à vide du ressort, k sa raideur et <span class="math notranslate nohighlight">\(\overrightarrow{u_{ext}}\)</span> un vecteur unitaire tangent à l’axe de ressort et dirigé vers l’extérieur du ressort.</p>

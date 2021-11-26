@@ -183,7 +183,7 @@ Ici, les contraintes sont: $r = R_0= Cste; \theta = \frac{v_0}{R_0} t; \varphi =
 Il vient que le vecteur vitesse s'écrit:
 
 \begin{equation}
-v_{M/Boule} = R_0 \frac{v_0}{R_0} \overrightarrow{e_{\theta}}
+\overrightarrow{v_{M/Boule}} = R_0 \frac{v_0}{R_0} \overrightarrow{e_{\theta}}
 \end{equation}
 ```
 

@@ -33,7 +33,7 @@ Le moment cinétique du système S par rapport à un point A dans un référenti
 \begin{align*}
 \overrightarrow{L_{A/\mathfrak{R}}} &= \sum\limits_{i} \overrightarrow{AM_i} \wedge m_i \overrightarrow{v_{i/\mathfrak{R}}}\\
 &= \left(\sum\limits_{i} m_i \overrightarrow{AM_i}\right) \wedge \overrightarrow{v_{G/\mathfrak{R}}}\\
-&= \overrightarrow{AG} \wedge \overrightarrow{v_{G/\mathfrak{R}}}
+&= \overrightarrow{AG} \wedge M \overrightarrow{v_{G/\mathfrak{R}}}
 \end{align*}
 ````
 ````{attention}
