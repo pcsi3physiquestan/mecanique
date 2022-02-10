@@ -139,5 +139,4 @@ On considère un satellite artificiel m en mouvement circulaire autour de la Ter
 2. Calculer le rayon de l'orbite d'un satellite géostationnaire et définir son plan de révolution.
 3. Quelle énergie cinétique minimale faut-il communiquer au satellite pour qu'il échappe à l'attraction terrestre s'il est initialement en orbite circulaire autour de la Terre à l'altitude z?  A.N. z = 36000 km; m=6 tonnes.
 4. Soit un satellite d'énergie initiale $E_{m0}$. Son orbite est relativement basse et il subit donc les frottements des couches hautes de l'atmosphère. Il s'ensuit que l'énergie mécanique du satellite varie suivant la loi $E_m = E_{m0} (1+ bt)$, b étant un coefficient constant positif. On suppose que la trajectoire reste approximativement circulaire. Préciser le signe de $E_{m0}$. Etablir l'expression du rayon r et de la vitesse v du satellite en fonction du temps. Comparer les évolutions de r et de v ainsi que celles des énergies potentielle et cinétique. Que devient l'énergie perdue?
-
 ````

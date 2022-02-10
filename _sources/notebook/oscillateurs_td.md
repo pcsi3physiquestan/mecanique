@@ -150,11 +150,12 @@ où C, $\alpha$ et n sont des constantes positives. En l'absence de toute champ 
 1. Interpréter graphiquement l'énergie $E_d$ et déterminer son expression. 
 1. Repérer $r_0$ sur le graphique et déterminer son expression. Vérifier que la position est stable. 
 1. En réalité, la molécule peut vibrer légèrement autour de sa position d'équilibre $r_0$. Déterminer l'équation du mouvement et en déduire la pulsation $\omega_0$ des petites oscillations. On introduira la constante de raideur équivalente $k$.
-1. Des mesures spectroscopiques permettent d'accéder expérimentalement à $r_0, \omega_0$ et $E_d$. Calculer les valeurs des constantes C, $\alpha$ et n. On donne: 
+1. Des mesures spectroscopiques permettent d'accéder expérimentalement à $r_0, \omega_0$ et $E_d$. Calculer les valeurs des constantes C, $\alpha$ et n. On donne:
 \begin{align*}
-  m = 1,66\times 10^{-27} \rm{kg}; e=1,6 \times 10^{-19} \rm{C}; r_0 = 1,27 \times 10^{-10} \rm{m};\\
-  \omega_0 = 5,45 \times 10^{14} \rm{rad.s^{-1}}; E_d = 400 \rm{kJ.mol^{-1}}$.
+m = 1,66\times 10^{-27} \rm{kg}; e=1,6 \times 10^{-19} \rm{C}; r_0 = 1,27 \times 10^{-10} \rm{m};\\
+\omega_0 = 5,45 \times 10^{14} \rm{rad.s^{-1}}; E_d = 400 \rm{kJ.mol^{-1}}$.
 \end{align*}
+
 1. Le temps de réponse caractéristique de la molécule est $\tau = 10^{-9} s$. Donner le facteur de qualité de cet oscillateur. Commenter cette valeur. 
 1. Dans quel domaine de longueur d'onde faudrait-il travailler pour briser cette liaison en l'éclairant? Quelle marge possède-t-on sur le choix de la longueur d'onde? 
 1. La molécule est maintenant excitée à sa fréquence propre par un champ électrique $E(t) = E_0 \cos (\omega_0 t)$; nous supposons que la force subie alors par le noyau d'hydrogène est $F(t) = \beta E(t)$ où $\beta(t)$ est de l'ordre de l'unité. Déterminer l'amplitude des oscillations forcées. 
