@@ -127,7 +127,7 @@ Pour créer des vagues dans une piscine, on fait effectuer des oscillations vert
 1. A l'aide d'un piston, on impose un mouvement sinusoïdal au point de suspension A du ressort. Cela revient à appliquer une force $\overrightarrow{f} = a M \omega_{2}^2 \cos(\omega_2 t)\overrightarrow{u_z}$ à la masse M. On pose $Z = z- h$ l'écart à la position d'équilibre.
     1. Donner la nouvelle équation différentielle du mouvement.
     1. Dans le cas d'un amortissement faible, justifier que la solution complète pour $Z(t)$ serait somme de 2 termes dont on précisera le sens mais qu'on ne calculera pas.
-    1. A partir de l'équation différentielle, déterminer l'expression de l'amplitude complexe Z des oscillations en régime permanent sinusoïdal. On utilisera les grandeurs: $a, x = \frac{\omega}{\omega_0}, \tau = \frac{M}{\alpha}, \omega_0 = \sqrt{\frac{k}{M}}$.
+    1. A partir de l'équation différentielle, déterminer l'expression de l'amplitude complexe Z des oscillations en régime sinusoïdal forcé. On utilisera les grandeurs: $a, x = \frac{\omega}{\omega_0}, \tau = \frac{M}{\alpha}, \omega_0 = \sqrt{\frac{k}{M}}$.
     1. On se place en régime permanent établi. Déterminer les deux conditions nécessaires pour qu'on puisse avoir des oscillations d'amplitude supérieure à a, l'une portant sur la valeur minimale de la masse M et l'autre sur l'intervalle de pulsations à utiliser.
     1. Quelle est alors la pulsation pour laquelle l'amplitude est la plus grande?
     1. Donner l'expression de l'amplitude correspondante en fonction de a, M, k et $\alpha$.
@@ -150,7 +150,11 @@ où C, $\alpha$ et n sont des constantes positives. En l'absence de toute champ 
 1. Interpréter graphiquement l'énergie $E_d$ et déterminer son expression. 
 1. Repérer $r_0$ sur le graphique et déterminer son expression. Vérifier que la position est stable. 
 1. En réalité, la molécule peut vibrer légèrement autour de sa position d'équilibre $r_0$. Déterminer l'équation du mouvement et en déduire la pulsation $\omega_0$ des petites oscillations. On introduira la constante de raideur équivalente $k$.
-1. Des mesures spectroscopiques permettent d'accéder expérimentalement à $r_0, \omega_0$ et $E_d$. Calculer les valeurs des constantes C, $\alpha$ et n. On donne: $m = 1,66\times 10^{-27} \rm{kg}; e=1,6 \times 10^{-19} \rm{C}; r_0 = 1,27 \times 10^{-10} \rm{m}; \omega_0 = 5,45 \times 10^{14} \rm{rad.s^{-1}}; E_d = 400 \rm{kJ.mol^{-1}}$.
+1. Des mesures spectroscopiques permettent d'accéder expérimentalement à $r_0, \omega_0$ et $E_d$. Calculer les valeurs des constantes C, $\alpha$ et n. On donne: 
+\begin{align*}
+  m = 1,66\times 10^{-27} \rm{kg}; e=1,6 \times 10^{-19} \rm{C}; r_0 = 1,27 \times 10^{-10} \rm{m};\\
+  \omega_0 = 5,45 \times 10^{14} \rm{rad.s^{-1}}; E_d = 400 \rm{kJ.mol^{-1}}$.
+\end{align*}
 1. Le temps de réponse caractéristique de la molécule est $\tau = 10^{-9} s$. Donner le facteur de qualité de cet oscillateur. Commenter cette valeur. 
 1. Dans quel domaine de longueur d'onde faudrait-il travailler pour briser cette liaison en l'éclairant? Quelle marge possède-t-on sur le choix de la longueur d'onde? 
 1. La molécule est maintenant excitée à sa fréquence propre par un champ électrique $E(t) = E_0 \cos (\omega_0 t)$; nous supposons que la force subie alors par le noyau d'hydrogène est $F(t) = \beta E(t)$ où $\beta(t)$ est de l'ordre de l'unité. Déterminer l'amplitude des oscillations forcées. 

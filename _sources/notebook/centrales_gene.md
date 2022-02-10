@@ -101,7 +101,7 @@ On peut alors exprimer le moment cinétique dans le système de coordonnées:
 \begin{align*}
 \overrightarrow{L_O} &= \overrightarrow{OM} \wedge m \overrightarrow{v_{M}}\\
 &= r \overrightarrow{e_r} \wedge m \left(\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}}\right)\\
-&= m r^2 \dot \theta^2 \overrightarrow{e_z}
+&= m r^2 \dot \theta \overrightarrow{e_z}
 \end{align*}
 On remarquera que le moment cinétique est une donnée constante qui peut être utilisée comme "donnée initiale" comme on le verra par la suite. Son expression montre que l'on relie l'évolution angulaire au rayon. Il vient qu'on par d'un système à 2 degré de liberté (rotation autour de O donné par $\dot \theta$ et éloignement/rapprochement de O donné par $r$) et qu'on lie l'évolution des mouvements. On pourra donc, en introduisant le moment cinétique $L_O$ éliminer la vitesse angulaire dans les équations.
 ````
