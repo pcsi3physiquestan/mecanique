@@ -109,7 +109,7 @@ Une programmation du satellite a permis de s'affranchir des problèmes liés à 
 1. Quelle la nature de la trajectoire d'Hipparcos?
 1. Déterminer les expressions de l'excentricité e et du paramètre de l'ellipse p en fonction de h,H et R. A.N.
 1. Exprimer et calculer le demi-grand axe a de la trajectoire.
-1. Démontrer la troisième loi de Kepler.
+1. Rappeler la troisième loi de Kepler.
 1. Déduire de la question précédente, la relation entre la période de rotation de la Terre T et l'altitude de l'orbite géostationnaire H.
 1. Exprimer la période $T_h$ de révolution d'Hipparcos en fonction de T,R,H et h. Calculer $T_h$ en heure.
 1. Déterminer les valeurs numériques de angles $\theta_1$ et $\theta_2$ d'entrée et de sortie de la ceinture de Van Allen du satellite. On donnera les valeurs comprises entre $0 ^{\circ}$ et $180 ^{\circ}$.
