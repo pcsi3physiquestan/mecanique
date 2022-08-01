@@ -214,7 +214,7 @@ On attache un fil tendu à un coin du cube noté A. On considère que la liaison
 1. Exprimer le moment de la force exercé par le fil sur le cube exprimé au centre du cube. Commenter suivant les valeurs des paramètres introduits la tendance qu'aura cette force à agir sur la rotation du cube.
 1. On suppose la liaison pivot parfaite. Quelles sont les positions d'équilibre du système ? Si l'on écarte légèrement le cube de chacune de ces positions, aura-t-il tendance a revenir à la position d'équilibre ? (On parle de stabilité des positions d'équilibre).
 ````
-````{dropdown}
+````{topic} Correction
 
 >__1. Paramétrage__
 >

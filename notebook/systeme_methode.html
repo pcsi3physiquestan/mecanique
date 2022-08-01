@@ -778,15 +778,15 @@
 <div><ol class="simple">
 <li><p>Le cylindre étant de masse uniformément répartie, le centre d’inertie est situé sur l’axe de rotation et sa vitesse est nulle. Il vient:</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-8cd1b6a4-28bf-4f7f-b8ef-03f0439554e0">
-<span class="eqno">(59)<a class="headerlink" href="#equation-8cd1b6a4-28bf-4f7f-b8ef-03f0439554e0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-67f50be9-712f-461a-b3fc-e190e9c097c5">
+<span class="eqno">(59)<a class="headerlink" href="#equation-67f50be9-712f-461a-b3fc-e190e9c097c5" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{p}_{cylindre} = M \overrightarrow{v}_{G/\mathfrak{R}} = \overrightarrow{0}
 \end{equation}\]</div>
 <ol class="simple">
 <li><p>On décompose le système total en deux parties correspondant aux deux pièces:</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-ecab2b87-74e0-473d-bbdf-1558e0c60b3d">
-<span class="eqno">(60)<a class="headerlink" href="#equation-ecab2b87-74e0-473d-bbdf-1558e0c60b3d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-15cae801-09e5-4dd0-b72a-97e630a9e92b">
+<span class="eqno">(60)<a class="headerlink" href="#equation-15cae801-09e5-4dd0-b72a-97e630a9e92b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{p}_{total} = \overrightarrow{p}_{1} + \overrightarrow{p}_{2} = m_1 \overrightarrow{v_0} + m_2 \left ( \overrightarrow{v_2/1} + \overrightarrow{v_0}\right)
 \end{equation}\]</div>
 <ol class="simple">
@@ -798,8 +798,8 @@
 <p>On a indicé le vecteur $\overrightarrow{e}_{\theta} pour bien préciser que la base locale est par rapport au point G. S’il n’y a pas d’ambiguité, cette précision n’est pas nécessaire.</p>
 </div>
 <blockquote>
-<div><div class="amsmath math notranslate nohighlight" id="equation-3be20405-351a-477d-8947-c34bf713a62d">
-<span class="eqno">(61)<a class="headerlink" href="#equation-3be20405-351a-477d-8947-c34bf713a62d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div><div class="amsmath math notranslate nohighlight" id="equation-a228bc32-f9cd-4d1c-a188-21d700ea855c">
+<span class="eqno">(61)<a class="headerlink" href="#equation-a228bc32-f9cd-4d1c-a188-21d700ea855c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{p}_{cylindre} = M \overrightarrow{v}_{G/\mathfrak{R}} = M \frac{R}{2} \omega \overrightarrow{e}_{\theta,G}
 \end{equation}\]</div>
 </div></blockquote>
@@ -990,39 +990,27 @@ On observe, une fois le schéma réalisé (s’entraîner à le faire), que la s
 <li><p>On suppose la liaison pivot parfaite. Quelles sont les positions d’équilibre du système ? Si l’on écarte légèrement le cube de chacune de ces positions, aura-t-il tendance a revenir à la position d’équilibre ? (On parle de stabilité des positions d’équilibre).</p></li>
 </ol>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+<div class="topic">
+<p class="topic-title first">Correction</p>
 <blockquote>
-<div><p class="card-text"><strong>1. Paramétrage</strong></p>
-<p class="card-text">Pour étudier un système en rotation autour d’un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d’axe Oz l’axe de rotation. On a représenté ci dessous le système. On repère l’angle <span class="math notranslate nohighlight">\(\theta\)</span> permettant de repérer l’orientation du cube par l’angle <span class="math notranslate nohighlight">\((\overrightarrow{e_x},\overrightarrow{OA})\)</span> de manière à pouvoir utiliser cet angle pour les calculs de moments.</p>
+<div><p><strong>1. Paramétrage</strong></p>
+<p>Pour étudier un système en rotation autour d’un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d’axe Oz l’axe de rotation. On a représenté ci dessous le système. On repère l’angle <span class="math notranslate nohighlight">\(\theta\)</span> permettant de repérer l’orientation du cube par l’angle <span class="math notranslate nohighlight">\((\overrightarrow{e_x},\overrightarrow{OA})\)</span> de manière à pouvoir utiliser cet angle pour les calculs de moments.</p>
 </div></blockquote>
 <div class="figure align-center" id="fig-231">
 <img alt="../_images/moment_cube_2.png" src="../_images/moment_cube_2.png" />
 </div>
 <blockquote>
-<div><p class="card-text">On peut alors écrire les éléments cinétiques du cube:</p>
+<div><p>On peut alors écrire les éléments cinétiques du cube:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 L_{Oz}(cube) &amp;= J \dot \theta \\
 E_{c,cube} &amp;= \frac{1}{2} J \dot \theta^2\\
 \overrightarrow{P_{cube/\mathfrak{R}}} = M \overrightarrow{v_{G}} = \overrightarrow{0}
 \end{align*}\]</div>
-<p class="card-text"><strong>Le cube étant de masse répartie de manière homogène, le centre d’inertie est situé au point O, centre du cube</strong>. Fixé sur l’axe Oz, le centre d’inertie est donc immobile, d’où la quantité de mouvement nulle.</p>
-<p class="card-text">Les deux autres expressions sont les expressions déjà données <strong>dans le cas d’un solide en rotation autour d’un axe fixe</strong>.</p>
-<p class="card-text"><strong>2. Calcul de moment de l’action/la force</strong></p>
-<p class="card-text">L’action du fil sur le cube est une action ponctuelle dont la force s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F} = F_0 \overrightarrow{e_x}\)</span> et dont le point d’application est A. Le moment de l’action du fil sur le cube calculé sur l’axe Oz s’écrit (O est un point de l’axe…  Oz):</p>
+<p><strong>Le cube étant de masse répartie de manière homogène, le centre d’inertie est situé au point O, centre du cube</strong>. Fixé sur l’axe Oz, le centre d’inertie est donc immobile, d’où la quantité de mouvement nulle.</p>
+<p>Les deux autres expressions sont les expressions déjà données <strong>dans le cas d’un solide en rotation autour d’un axe fixe</strong>.</p>
+<p><strong>2. Calcul de moment de l’action/la force</strong></p>
+<p>L’action du fil sur le cube est une action ponctuelle dont la force s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F} = F_0 \overrightarrow{e_x}\)</span> et dont le point d’application est A. Le moment de l’action du fil sur le cube calculé sur l’axe Oz s’écrit (O est un point de l’axe…  Oz):</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wedge \overrightarrow{F}\right)\\
@@ -1030,35 +1018,35 @@ M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} 
 &amp;= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} F_0 \sin \theta  \overrightarrow{e_z} \right)\\
 &amp;= - \frac{a}{\sqrt{2}} F_0 \sin \theta \\
 \end{align*}\]</div>
-<p class="card-text"><strong>3. Positions d’équilibre et stabilité</strong>
+<p><strong>3. Positions d’équilibre et stabilité</strong>
 On remarque que si <span class="math notranslate nohighlight">\(\theta\)</span> est positif, le moment de l’action est négatif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> décroissants. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, le moment de l’action est positif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants. C’est cohérent avec le schéma représenté ci-dessous.</p>
 </div></blockquote>
 <div class="figure align-center" id="fig-232">
 <img alt="../_images/moment_cube_signe.png" src="../_images/moment_cube_signe.png" />
 </div>
 <blockquote>
-<div><p class="card-text">On va appliquer un TMC sur l’axe de rotation au cube. Le poids est de moment nul (centre d’inertie sur l’axe) et la liaison pivot aussi (liaison parvaite). Le TMC devient donc:</p>
+<div><p>On va appliquer un TMC sur l’axe de rotation au cube. Le poids est de moment nul (centre d’inertie sur l’axe) et la liaison pivot aussi (liaison parvaite). Le TMC devient donc:</p>
 </div></blockquote>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 J_{cube} \frac{\rm{d^2}\\theta}{\rm{dt^2}} = - \frac{a}{\sqrt{2}} F_0 \sin \theta
 \end{split}\]</div>
-<p class="card-text">Donc, les angles pour lesquels le moment de l’action du fil est nul seront les positions d’équilibre. L’expression précédente montre que les deux positions correspondent aux angles <span class="math notranslate nohighlight">\(\theta = 0\)</span> et <span class="math notranslate nohighlight">\(\theta = \pi\)</span>. On a représenté les positions d’équilibre ci-dessous.</p>
+<p>Donc, les angles pour lesquels le moment de l’action du fil est nul seront les positions d’équilibre. L’expression précédente montre que les deux positions correspondent aux angles <span class="math notranslate nohighlight">\(\theta = 0\)</span> et <span class="math notranslate nohighlight">\(\theta = \pi\)</span>. On a représenté les positions d’équilibre ci-dessous.</p>
 <div class="figure align-center" id="fig-233">
 <img alt="../_images/moment_cube_equilibre.png" src="../_images/moment_cube_equilibre.png" />
 </div>
 <blockquote>
-<div><p class="card-text">On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma du signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma du signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
+<div><p>On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma du signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma du signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
 </div></blockquote>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
-<p class="card-text">On pourrait montrer que l’action du fil dérive d’une énergie potentiel et faire une étude énergétique des équilibres.</p>
+<p>On pourrait montrer que l’action du fil dérive d’une énergie potentiel et faire une étude énergétique des équilibres.</p>
 </div>
 <blockquote>
-<div><p class="card-text">A l’inverse si l’on écarte le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = \pi\)</span>, on remarque qu’il va s’éloigner de cette position. En effet, pour <span class="math notranslate nohighlight">\(\theta &lt; \pi\)</span>, le moment est négatif et l’angle va encore décroître. Et pour <span class="math notranslate nohighlight">\(\theta &gt; + pi\)</span>, le moment est positif et l’angle va croître. Dans les deux cas, on s’éloigne de la position d’équilibre: la position est dite <strong>instable</strong>.</p>
+<div><p>A l’inverse si l’on écarte le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = \pi\)</span>, on remarque qu’il va s’éloigner de cette position. En effet, pour <span class="math notranslate nohighlight">\(\theta &lt; \pi\)</span>, le moment est négatif et l’angle va encore décroître. Et pour <span class="math notranslate nohighlight">\(\theta &gt; + pi\)</span>, le moment est positif et l’angle va croître. Dans les deux cas, on s’éloigne de la position d’équilibre: la position est dite <strong>instable</strong>.</p>
 </div></blockquote>
 </div>
-</details></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
