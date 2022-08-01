@@ -68,9 +68,9 @@ _On rappelle aussi que dans le cours générale sur les coniques, une relation e
 
 L'énergie mécanique dans une trajectoire elliptique a pour expression:
 
-\begin{equation}
+$$
 E_m = - \frac{K}{2a}
-\end{equation}
+$$
 ````
 
 >Cette démonstration sera faite en exercice. Elle doit être connue.

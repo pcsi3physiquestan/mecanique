@@ -128,9 +128,9 @@ Pour créer des vagues dans une piscine, on fait effectuer des oscillations vert
 
 La molécule HCl est modélisée, selon un axe fixe, par deux masses ponctuelles distantes de r. Puisque l'atome de chlore est beaucoup plus lourd que celui d'hydrogène, il peut être considéré comme fixe. Seul le noyau d'hydrogène de masse m est alors susceptible de se déplacer, il subit l'énergie potentielle d'interaction:
 
-\begin{equation}
+$$
 E_p(r) = \frac{C}{r^n} - \alpha \frac{e^2}{4 \pi \epsilon_0 r}
-\end{equation}
+$$
 où C, $\alpha$ et n sont des constantes positives. En l'absence de toute champ extérieur, la distance à l'équilibre est $r_0$. L'énergie minimale à fournir pour dissocier cette molécule sera notée $E_d$.
 
 1. Interpréter physiquement les deux termes de l'énergie potentielle et représenter l'allure de $E_p(r)$.

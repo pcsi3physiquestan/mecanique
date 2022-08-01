@@ -218,9 +218,9 @@ Un fil de torsion est un fil dont la section n'est pas négligeable et qui peut 
 
 Soit un fil pouvant se tordre suivant son axe. On suppose qu'il ne flambe pas. Pour un angle de torsion $\theta - \theta_0$ du fil, ce dernier exerce à ses extrémités une action dont le moment suivant l'axe de torsion est:
 
-\begin{equation}
+$$
 \Gamma_{axe} = - C \left(\theta - \theta_0\right)
-\end{equation}
+$$
 où C est appelée constante de torsion du fil.
 
 On remarquera qu'une telle action est sembable à une action de rappel élastique. Pour le ressort, le rappel se fait suivant ue translation. Ici le rappel concerne une rotation.

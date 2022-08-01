@@ -129,9 +129,9 @@ E_m = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2 + E_p(r)
 ````{topic} Interprétation de l'énergie cinétique.
 L'énergie cinétique se réécrit:
 
-\begin{equation}
+$$
 E_c = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2
-\end{equation}
+$$
 On distingue donc deux termes:
 * Le premier correspond à l'éloignement/rapprochement du mobile. On l'appelera énergie cinétique radiale. 
 * Le second correspond à la rotation du mobile autour de O, on l'appelera énergie cinétique orthoradiale (ou de rotation).

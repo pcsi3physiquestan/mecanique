@@ -38,15 +38,15 @@ On définit le centre d'inertie G du système S comme le barycentre des points d
 
 * Cas d'un système discret:
 
-\begin{equation}
+$$
 \overrightarrow{OG} = \frac{1}{M}\sum\limits_{i=1}^{n} m_i \overrightarrow{OP_i}
-\end{equation}
+$$
 
 * Cas continu:
 
-\begin{equation}
+$$
 \overrightarrow{OG} = \frac{1}{M}\iiint_{P \int S} \rho(P) \overrightarrow{OP} d \tau(P)
-\end{equation}
+$$
 ````
 
 ## Description d'un mouvement
@@ -74,9 +74,9 @@ En physique nous n'utiliserons que deux cas particuliers: la translation seule e
 ````{topic} Complément : Composition des vitesse (HP)
 Soit un solide donc le vecteur taux de rotation à un instant t est $\overrightarrow{\Omega}$ et donc la vitesse en un point A du solide est connue par: $\overrightarrow{v_{A/R}}(t)$. Alors la vitesse en tout point B du solide est connue et donnée par la relation:
 
-\begin{equation}
+$$
 \overrightarrow{v_{B/R}} = \overrightarrow{v_{A/R}} + \overrightarrow{\Omega} \wedge \overrightarrow{AB}
-\end{equation}
+$$
 Cette formule est valable quelque soit le mouvement du solide. Néanmoins, elle n'est pas à connaître et ne peut être appliquée directement en physique. Elle est par contre probablement à connaître et à savoir utiliser en SI. Les conséquences et définitions associées qui auront pu être vues en SI (centre instantanée de rotation, détermination graphique d'une vitesse... ) ne sont pas à connaître en physique. Par contre, les cas particuliers qui vont être présentés ensuite sont à connaître.
 ````
 
@@ -103,9 +103,9 @@ On peut définir le concept de rotation en rapport avec les composantes du torse
 
 Soit un solide en rotation autour d'un axe fixe, à un instant t, tous les points du solide ont la même vitesse angulaire $\omega(t)$. On peut alors définir un vecteur $\overrightarrow{\Omega}(t)$ appelé vecteur rotation du solide tel que pour tout point P du solide, la vitesse $\overrightarrow{v_{P/R}}$ s'écrit:
 
-\begin{equation}
+$$
 \overrightarrow{v_{P/R}} = \overrightarrow{\Omega} \wedge \overrightarrow{AP}
-\end{equation}
+$$
 où A est un point de l'axe de rotation.
 ````
 

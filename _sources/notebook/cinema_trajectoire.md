@@ -161,9 +161,9 @@ Les coniques correspondent à l'ensemble des courbes qu'on peut obtenir par l'in
 
 En choisissant correctement l'origine du repère polaire, on peut exprimer l'équation polaire d'une conique sous la forme:
 
-\begin{equation}
+$$
 r(\theta) = \frac{p}{1 \pm e \cos \left(\theta - \theta_0\right)}
-\end{equation}
+$$
 Le centre du repère est alors appelée foyer de la conique. A noter que l'ellipse et la parabole possède deux foyers symétriques par rapport au centre de la conique (centre de symétrie de la conique).
 
 p est appelée paramètre de l'ellipse et e excentricité. En changeant l'origine des angles, on peut faire en sorte de $\theta_0 = 0$.

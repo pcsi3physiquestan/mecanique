@@ -97,9 +97,10 @@ Cette relation ne __peut PAS être utilisée directement.__
 ```{admonition} Relation énergie - excentricité
 :class: attention
 Montrer que : 
-\begin{equation}
+
+$$
 E_m = \frac{1}{2} \frac{K^2}{mC^2} (e^2 - 1)
-\end{equation}
+$$
 et retrouver la relation entre le signe de $E_m$ et le type de trajectoire.
 ```
 

@@ -50,9 +50,9 @@ On considère un point M contraint à se déplacer sur une sphère fixe de rayon
 
 Un satellite géostationnaire est un satellite en orbite circulaire autour de la terre à une altitude $h=r-R_T$ où $R_T$ est le rayon de la Terre (r est le rayon de l'orbite). L'orbite est équatoriale et il reste fixe par rapport à un point de la Terre. Il est soumis à une accélération dans le référentiel géocentrique:
 
-\begin{equation}
+$$
 \overrightarrow{a} = - g_0 {(\frac{R_T}{r})}^2 \overrightarrow{e_r}
-\end{equation}
+$$
 Calculer r avec $g_0 = 9,8 \rm{m.s^{-1}}$ et $R_T = 6400 \rm{km}$.
 ````
 

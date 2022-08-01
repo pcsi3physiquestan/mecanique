@@ -57,9 +57,9 @@ Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur
 
 Soit un point B de l'espace. On définit le moment $\overrightarrow{M_B}(\overrightarrow{F})$ (ou $\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})$) de l'action $\mathfrak{A}_{1 \to 2}$ (ou moment de la force $\overrightarrow{F}$) par rapport au point B par:
 
-\begin{equation}
+$$
 \overrightarrow{M_B}\left(\overrightarrow{F}\right) = \overrightarrow{BA} \wedge \overrightarrow{F}
-\end{equation}
+$$
 ````
 
 ````{important} __Moment d'une action ponctuelle/force par rapport à un axe.__
@@ -68,9 +68,9 @@ Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur
 
 Soit un axe $\Delta$ orienté par un vecteur unitaire $\overrightarrow{u_{\Delta}}$. On définit le moment $M_{\Delta}(\overrightarrow{F})$ (ou $M_{\Delta}(\mathfrak{A}_{1 \to 2})$) de l'action $\mathfrak{A}_{1 \to 2}$ (ou moment de la force $\overrightarrow{F}$) par rapport à l'axe $\Delta$ par:
 
-\begin{equation}
+$$
 M_{\Delta}\left(\overrightarrow{F}\right) = \overrightarrow{u_{\Delta}} \cdot \left(\overrightarrow{BA} \wedge \overrightarrow{F}\right)
-\end{equation}
+$$
 où B est un point de l'axe $\Delta$.
 ````
 
@@ -146,9 +146,9 @@ On peut donc "oublier" les éléments qui causent l'existence des champs électr
 
 Soit un point matériel M chargé de charge q et un champ électromagnétique donc les expressions vectorielles au point M sont $\overrightarrow{E}(M)$ et $\overrightarrow{B}(M)$. Alors le champ électromagnétique exerce une action dont la force, appelée force de Lorentz s'écrit:
 
-\begin{equation}
+$$
 \overrightarrow{F}_{Lorentz} = q \left(\overrightarrow{E}(M) + \overrightarrow{v_{M/\mathfrak{R}}} \wedge \overrightarrow{B}(M)\right)
-\end{equation}
+$$
 où $\overrightarrow{v_{M/\mathfrak{R}}}$ est la vitesse du point M dans le référentiel d'étude.
 
 ````
@@ -264,9 +264,9 @@ Pour les portions de fils aux extrémités, le même raisonnement conduit à dir
 
 Soit un système accroché à un ressort. En général, on considère le point d'accroche comme ponctuel et la force exercée par le ressort à son extrémité sur le système comme tangente au ressort. Si le ressort est de masse négligeable (cas usuel), alors la force exercée par le ressort sur un système accroché à son extrémité s'écrit si sa longueur est l:
 
-\begin{equation}
+$$
 \overrightarrow{F_{ressort\to extremite}} = -k \left(l - l_0\right) \overrightarrow{u_{ext}} = - k \Delta l \overrightarrow{u_{ext}}
-\end{equation}
+$$
 où $l_0$ est la longueur à vide du ressort, k sa raideur et $\overrightarrow{u_{ext}}$ un vecteur unitaire tangent à l'axe de ressort et dirigé vers l'extérieur du ressort.
 
 $\Delta l = l - l_0$ est appelé allongement du ressort.

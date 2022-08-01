@@ -33,9 +33,9 @@ Il peut s'agir d'une somme discrète ou continue suivant la description du syst�
 
 La quantité du mouvement dans un référentiel R d'un système S est égale à la quantité de mouvement qu'aurait un point matériel fictif situé au centre d'inertie G et dont la masse serait la masse totale du système.
 
-\begin{equation}
+$$
 \overrightarrow{p_{S/\mathfrak{R}}} = M \overrightarrow{v_{G/\mathfrak{R}}}
-\end{equation}
+$$
 ````
 
 ````{admonition} Démonstration

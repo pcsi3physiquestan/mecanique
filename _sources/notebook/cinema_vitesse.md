@@ -24,9 +24,9 @@ Il est important de préciser le référentiel d'étude: il définit les vecteur
 
 Soit O un point fixe du référentiel R et M un point mobile. La vitesse du point M dans le référentiel R est définit comme la dérivée temporelle du vecteur position dans le référentiel R.
 
-\begin{equation}
+$$
 \overrightarrow{V_{M/R}} = {(\frac{d \overrightarrow{OM}}{dt})}_{R}
-\end{equation}
+$$
 ````
 
 
@@ -38,19 +38,19 @@ Le vecteur vitesse s'exprime.
 
 En coordonnées cartésiennes:
 
-\begin{equation}
+$$
 \overrightarrow{v_{M/\mathfrak{R}}} = \dot x \overrightarrow{e_x} + \dot y \overrightarrow{e_y} + \dot z \overrightarrow{e_z}
-\end{equation}
+$$
 En coordonnées cyindriques:
 
-\begin{equation}
+$$
 \overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_\theta} + \dot z \overrightarrow{e_z}
-\end{equation}
+$$
 En coordonnées spheriques:
 
-\begin{equation}
+$$
 \overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_\theta} + r \sin{\theta} \dot \varphi \overrightarrow{e_\varphi}
-\end{equation}
+$$
 ````
 
 ````{topic} Démonstration

@@ -23,9 +23,9 @@ La quantité de mouvement est fondamentale car c'est elle qui est directement mo
 
 Soit M un point matériel de masse inertielle m. On définit la quantité de mouvement d'un point M dans le référentiel R par la grandeur:
 
-\begin{equation}
+$$
 \overrightarrow{p_{M/R}} = m \overrightarrow{v_{M/R}}
-\end{equation}
+$$
 ````
 
 ## Moment cinétique d'un point matériel
@@ -48,9 +48,9 @@ On peut calculerun moment cinétique par rapport à un point fixe ou non fixe da
 
 Soit un point M de masse m, de vitesse $\overrightarrow{v_{M/R}}$, de quantité de mouvement $\overrightarrow{p_{M/R}}$ rapport au référentiel R et A un point. Le moment cinétique d'un point M par rapport à un point A dans le référentiel R est défini par le vecteur:
 
-\begin{equation}
+$$
 \overrightarrow{L_{A/R}(M)} = \overrightarrow{AM} \wedge \overrightarrow{p_{M/R}}
-\end{equation}
+$$
 ````
 
 ```{margin}
@@ -60,9 +60,9 @@ L'expression précédente ne dépend pas du point B __tant que B est sur l'axe._
 
 Soit un axe $\Delta$ orienté. On note B un point de cet axe et $\overrightarrow{u_{\Delta}}$ un vecteur unitaire directeur de l'axe. On définit un moment cinétique rapport à l'axe $\Delta$:
 
-\begin{equation}
+$$
 L_{\Delta/R} = \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{B/R}}(M)
-\end{equation}
+$$
 ````
 
 
@@ -119,9 +119,9 @@ L_{\Delta/R} &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
 
 On appelle énergie cinétique d'un point matériel M de masse m dans le référentiel R, la quantité scalaire:
 
-\begin{equation}
+$$
 E_c = \frac{1}{2} m v_{M/R}^2
-\end{equation}
+$$
 ````
 
 ````{topic} Variation d'énergie cinétique

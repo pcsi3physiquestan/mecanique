@@ -47,9 +47,9 @@ Le moment cinétique du système S par rapport à un point A dans un référenti
 ```{topic} Rappel
 _On rappelle que le champ de vitesse d'un solide en rotation autour d'un axe fixe s'exprime:_
 
-\begin{equation}
+$$
 \overrightarrow{v_{P/R}} = \overrightarrow{\Omega} \wedge \overrightarrow{AP}
-\end{equation}
+$$
 _avec A un point de l'axe de rotation._
 ```
 
@@ -79,9 +79,9 @@ _L'expression de la quantité de mouvement peut toujours s'obtenir par sommation
 
 Pour un solide S en rotation autour d'un axe fixe  dans R, le moment cinétique $\sigma_{S/\Delta}$ du solide S dans le référentiel R s'exprime comme le produit du moment d'inertie $J_{S/\Delta}$ du même système multiplié par la vitesse de rotation $\omega$ __comptée algébriquement en cohérence avec l'orientation de l'axe__ (règle du tire-bouchon par exemple):
 
-\begin{equation}
+$$
 \sigma_{S/\Delta} = J_{S/\Delta} \omega
-\end{equation}
+$$
 ````
 
 ````{admonition} Démonstration
@@ -103,9 +103,9 @@ En utilisant des coordonnées cylindriques d'axe $\Delta$:
 
 Dans le cas d'une rotation autour d'un axe fixe $\Delta$, l'énergie cinétique du solide peut s'écrire sous la forme:
 
-\begin{equation}
+$$
 E_c = \frac{1}{2} J_{S/\Delta} \omega^2
-\end{equation}
+$$
 où $J_{S/\Delta}$ est le moment cinétique de S par rapport à l'axe $\Delta$ et $\omega$ la vitesse angulaire de rotation du solide sur le même axe.
 ````
 

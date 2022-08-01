@@ -21,9 +21,9 @@ kernelspec:
 
 Considérons une action ponctuelle exercée par un système $\Sigma_1$ sur un point matériel M de masse m et modélisée par une force $\overrightarrow{F}$. On définit le travail élémentaire de cette action sur un déplacement élémentaire $\overrightarrow{dOM}$ par:
 
-\begin{equation}
+$$
 \delta W (\overrightarrow{F}) = \overrightarrow{F} \cdot \overrightarrow{dOM}
-\end{equation}
+$$
 Ce travail correspond à l'énergie apportée par le système $\Sigma_1$ au système ponctuel M lorsque ce dernier se déplace de manière infinitésimale de $\overrightarrow{dOM}$.
 
 Ce __transfert__ d'énergie __dépend a priori du déplacement élémentaire considéré__.
@@ -33,9 +33,9 @@ Ce __transfert__ d'énergie __dépend a priori du déplacement élémentaire con
 
 Considérons une action ponctuelle exercée par un système $\Sigma_1$ sur un point matériel M de masse m et modélisée par une force $\overrightarrow{F}$. Si le point M se déplace sur un chemin $\Gamma$. On définit le travail $W(\overrightarrow{F})$ de cette action sur un déplacement fini le long du chemin $\Gamma$ par la somme (intégrale) des travaux élémentaires le long de chemin:
 
-\begin{equation}
+$$
 W_{\Gamma} (\overrightarrow{F}) = \int_{M \in \Gamma} \overrightarrow{F} \cdot \overrightarrow{dOM}
-\end{equation}
+$$
 Ce travail correspond à l'énergie apportée par le système $\Sigma_1$ au système ponctuel M lorsque ce dernier se déplace sur le chemin $\Gamma$.
 
 Ce __transfert__ d'énergie __dépend a priori du chemin parcouru__.
@@ -45,9 +45,9 @@ Ce __transfert__ d'énergie __dépend a priori du chemin parcouru__.
 
 Considérons une action ponctuelle exercée par un système $\Sigma_1$ sur un point matériel M de masse m et modélisée par une force $\overrightarrow{F}$. Si à un instant t, le point M possède une vitesse $\overrightarrow{v_{M/\mathfrak{R}}}$ dans un référentiel $\mathfrak{R}$, on définit la puissance $P_{\mathfrak{R}}(\overrightarrow{F})$ par cette action au système M dans le référentiel $\mathfrak{R}$ par:
 
-\begin{equation}
+$$
 P_{/\mathfrak{R}} (\overrightarrow{F}) = \overrightarrow{F} \cdot \overrightarrow{v_{M/\mathfrak{R}}}
-\end{equation}
+$$
 Cette puissance correspond à la puissance apportée par le système $\Sigma_1$ au système ponctuel M à un instant t dans le référentiel $\mathfrak{R}$.
 
 Ce __transfert__ d'énergie __dépend a priori du référentiel considéré__.
@@ -57,9 +57,9 @@ Ce __transfert__ d'énergie __dépend a priori du référentiel considéré__.
 
 On a la relation suivante pour une même action:
 
-\begin{equation}
+$$
 P_{/\mathfrak{R}}(\overrightarrow{F}) = \frac{\delta W (\overrightarrow{F})}{\rm{d}t}
-\end{equation}
+$$
 Remarque: Le point pour l'expression du déplacement élémentaire doit être fixe dans $\mathfrak{R}$.
 
 Cette expression se démontre en remarquant que $\overrightarrow{v_{M/\mathfrak{R}}} = \frac{\rm{d}\overrightarrow{OM}}{\rm{dt}}_{\mathfrak{R}}$

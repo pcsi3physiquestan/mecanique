@@ -21,9 +21,9 @@ kernelspec:
 
 Un oscillateur amorti est un oscillateur donc l'équation s'écrit:
 
-\begin{equation}
+$$
 \frac{\rm{d^2}x}{\rm{dt^2}}(t) + \frac{\omega_0}{Q} \frac{\rm{d}x}{\rm{dt}}(t)+\omega_0^2 x(t) = \omega_{0}^2 x_{eq}
-\end{equation}
+$$
 On rappelle qu'on réalise souvent un changement de variable pour annuler le second membre constant.
 
 On n'a pas donné ici l'expression avec le coefficient d'amortissement mais on peut réaliser l'étude au moyen de ce dernier aussi.

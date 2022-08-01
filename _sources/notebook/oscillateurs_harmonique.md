@@ -21,9 +21,9 @@ kernelspec:
 
 Un oscillateur harmonique est un système dont l'équation d'évolution s'écrit:
 
-\begin{equation}
+$$
 \frac{\rm{d^2}x}{\rm{dt^2}}(t) + \omega_0^2 x(t) = \omega_{0}^2 x_{eq}
-\end{equation}
+$$
 On rappelle qu'on peut annuler le second membre __constant__ en procédant à un changement de variable $X = x - x_{eq}$. Pour la suite, on étudiera directement l'équation sans second membre.
 
 ````

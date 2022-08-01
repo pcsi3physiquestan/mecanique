@@ -21,9 +21,9 @@ kernelspec:
 :class: important
 1. Montrer que dans un mouvement à force centrale conservative.
 
-\begin{equation}
+$$
 m \frac{\rm{d^2}r}{\rm{dt^2}} = - \frac{\rm{d}E_{p,eff}}{\rm{dr}}
-\end{equation}
+$$
 
 Grâce à cette relation et en analysant les différents termes de $E_{p,eff}$, retrouver l'effet centrifuge de la rotation et les effets possibles (centrifuge/centripète) de la force centrale.
 ````

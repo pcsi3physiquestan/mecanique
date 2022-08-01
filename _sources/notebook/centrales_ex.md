@@ -18,4 +18,4 @@ kernelspec:
 * des activités (Activités) : Ordre de grandeur, 
 * des exercices d'application (Application)
 * des exercices d'entrainement (Entrainement)
-* des approfondissement (Aller plus loin) : pas pour ce chapitre
+* des approfondissement (Aller plus loin) : Deux approfondissements pour ce chapitre : une comparaison des force à l'échelle macroscopique et une étude [de la diffusion de Rutherford sous forme de résolution de problème](https://stanislas.edunao.com/mod/resource/view.php?id=12858).

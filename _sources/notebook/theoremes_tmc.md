@@ -21,9 +21,9 @@ kernelspec:
 
 Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la dérivée du moment cinétique du point M en un point A fixe dans $\mathfrak{R}$ par rapport au temps est égale à la somme des moments des forces appliquées en M par rapport au même point A.
 
-\begin{equation}
+$$
 {(\frac{d \overrightarrow{L_{O/\mathfrak{R}}}(M)}{dt})}_{\mathfrak{R}} = \overrightarrow{M_O}(\overrightarrow{F})
-\end{equation}
+$$
 ````
 
 >__Démonstration__

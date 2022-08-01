@@ -49,9 +49,9 @@ On va donc choisir un système de coordonnées cylindriques d'axe Oz colinéaire
 
 Un point matériel M soumis à une force centrale newtonienne de type $\overrightarrow{F} = - \frac{K}{r^2} \overrightarrow{e_r}$ dans un référentiel galiléen possède une trajectoire conique dont l'équation, dans un repère cylindrique d'axe Oz colinéaire au moment cinétique et de centre O le centre de force est:
 
-\begin{equation}
+$$
 r(\theta) = \frac{p}{\epsilon + e \cos (\theta - \theta_0)}
-\end{equation}
+$$
 où $\epsilon= \pm 1$ et $e$ est appelée excentricité et $p$ le paramètre de la conique. On a: $\vert p \vert = \frac{mC^2}{\vert K \vert}$
 
 On distingue les cas:

@@ -27,9 +27,9 @@ Nous aborderons aussi quelques éléments de modélisation des systèmes atomiqu
 
 __L'équation d'un oscillateur harmonique est un système dont l'évolution est régit par une équation différentielle de la forme:__
 
-\begin{equation}
+$$
 \frac{\rm{d^2}x}{\rm{dt^2}}(t) + \omega_0^2 x(t) = \omega_{0}^2 x_{eq}
-\end{equation}
+$$
 On considère un ressort de raideur k et de longueur $l_0$ accroché d'un côté à un point A de côte $x_A$ fixe et de l'autre à une masse m assimilable à un point matériel noté M. Le point M glisse sans frottements sur un axe Ox de sorte que le ressort reste horizontal. On note x la position du point M par rapport à un point O de référence. Pour cet exercice, le point O est confondu avec le point A.
 
 1. Exprimer l'équation d'évolution de x(t).
@@ -50,9 +50,9 @@ L'équation différentielle de vient alors $\frac{\rm{d^2}x}{\rm{dt^2}} + \omega
 
 Un oscillateur (linéaire) amorti possède comme équation différentielle:
 
-\begin{equation}
+$$
 \frac{\rm{d^2}x}{\rm{dt^2}}(t) + \frac{\omega_0}{Q} \frac{\rm{d}x}{\rm{dt}}(t)+\omega_0^2 x(t) = \omega_{0}^2 x_{eq}
-\end{equation}
+$$
 On reprend le cas précédent du système masse-ressort mais on suppose que le système est soumis à une force de frottement fluide de la forme $-\lambda \overrightarrow{v}$.
 
 1. Déterminer la nouvelle équation qui régit l'évolution de x. Introduire les expressions de la pulsation propre et du facteur de qualité.

@@ -26,9 +26,9 @@ Une interaction newtonienne est une force (ou un champ de force) dont l'intensit
 
 Soit deux particules chargées de charges $q_1$ et $q_2$ située aux points $M_1$ et $M_2$. La charge en $M_1$ exerce sur la charge en $M_2$ une force appelée force électrostatique de Coulomb dont l'expression est:
 
-\begin{equation}
+$$
 \overrightarrow{F_{1 \rightarrow 2}} = \frac{q_1 q_2}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 M_2}}{M_1 M_2^3}
-\end{equation}
+$$
 où $\epsilon_0$ est appelée permittivité du vide: $\epsilon_0 = 8,85 \times 10^{-12} \rm{m^{-3}.kg^{-1}.A^{2}.s^{4}}$
 
 ````
@@ -37,9 +37,9 @@ où $\epsilon_0$ est appelée permittivité du vide: $\epsilon_0 = 8,85 \times 1
 
 Soit deux points matériels situées en $M_1$ et $M_2$ qui possèdent des masses gravitationnelles $m_{1}$ et $m_{2}$. Le point en $M_1$ exerce sur le point en $M_2$ une force gravitationnelle ou force de Newton dont l'expression est:
 
-\begin{equation}
+$$
 \overrightarrow{F_{1 \rightarrow 2}} = -G m_{1} m_{2} \frac{\overrightarrow{M_1 M_2}}{M_1 M_2^3}
-\end{equation}
+$$
 où G est appelé constante de gravitation universelle: $G = 6,67 \times 10^{-11} \rm{m^{3}.kg^{-1}.s^{-2}}$
 
 ````

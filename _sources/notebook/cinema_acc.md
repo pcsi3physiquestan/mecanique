@@ -24,9 +24,9 @@ Comme le vecteur vitesse, le vecteur accélération dépend du référentel dans
 
 On définit l'accélération d'un point M dans un un référentiel R comme la dérivée du vecteur vitesse dans le référentiel R.
 
-\begin{equation}
+$$
 \overrightarrow{a_{M/R}} = {(\frac{d \overrightarrow{v_{M/R}}}{dt})}_{R}= {(\frac{d^2 \overrightarrow{OM}}{dt^2})}_{R}
-\end{equation}
+$$
 ````
 
 
@@ -36,18 +36,18 @@ On définit l'accélération d'un point M dans un un référentiel R comme la d�
 
 En coordonnées cartésiennes, le vecteur accélération s'écrit:
 
-\begin{equation}
+$$
 \overrightarrow{a_{M/R}} = \ddot x \overrightarrow{e_x} + \ddot y \overrightarrow{e_{y}} + \ddot z \overrightarrow{e_z}
-\end{equation}
+$$
 ````
 
 ````{important} __Vecteur accélération en coordonnées cylindriques.__
 
 En coordonnées cylindriques, le vecteur accélération s'écrit:
 
-\begin{equation}
+$$
 \overrightarrow{a_{M/R}} = (\ddot r - r \dot \theta^2) \overrightarrow{e_r} + (2 \dot r \dot \theta + r \ddot \theta) \overrightarrow{e_{\theta}} + \ddot z \overrightarrow{e_z}
-\end{equation}
+$$
 ````
 
 ````{topic} Démonstration dans le cas cylindrique

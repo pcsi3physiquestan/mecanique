@@ -17,5 +17,5 @@ kernelspec:
 * exercices-types (Méthodes)
 * des activités (Activités) : Solide en rotation
 * des exercices d'application (Application)
-* des exercices d'entrainement (Entrainement)
-* des approfondissement (Aller plus loin) : Un devoir libre sur les systèmes de deux points est proposés.
+* des exercices d'entrainement (Entrainement) : Un devoir libre est proposés [ici](https://stanislas.edunao.com/mod/resource/view.php?id=12850).
+* des approfondissement (Aller plus loin) : Une étude [des interactions entre particule](https://stanislas.edunao.com/mod/resource/view.php?id=12859) pour aller vers la thermodynamique.

@@ -37,9 +37,9 @@ L'énergie potentielle de pesanteur est __définie à une constante près__. Le 
 
 Puisque le travail de l'action du point A au point B ne dépend pas du chemin parcouru mais uniquement des positions A et B, il existe une fonction __de la seule position__ notée $E_p$ dont la variation $E_p(B) - E_p(A)$ permet de déterminer le travail de l'action de A à B. On appelle cette fonction __énergie potentielle__ et elle est définit de telle sorte que le travail de l'action du point A au point B vaut:
 
-\begin{equation}
+$$
 W_{A \to B} = - \left(E_p(B) - E_p(A)\right) = - \Delta E_{p,A \to B}
-\end{equation}
+$$
 _Remarque: On dit que la force dérive d'une énergie potentielle._
 ````
 
@@ -94,9 +94,9 @@ Dans cette expression, l'axe Oz est orienté __vers le haut__. Si l'axe est orie
 
 L'action du poids sur un point matériel M dérive d'une énergie potentielle dont l'expression est:
 
-\begin{equation}
+$$
 E_{p,pes} = mg h + K
-\end{equation}
+$$
 où h est l'altitude et K une constante - on rappelle que l'énergie potentielle est définie à une constant près.
 ````
 
@@ -155,9 +155,9 @@ On remarquera que suivant le signe de K, l'énergie potentielle est croissante o
 ````{important} __Action de rappel d'un ressort__
 L'action de rappel d'un ressort dérive d'une énergie potentielle dont l'expression est:
 
-\begin{equation}
+$$
 E_p = \frac{1}{2} k \Delta l ^2 = \frac{1}{2} k \left(l - l_0\right)^2
-\end{equation}
+$$
 ````
 
 ````{sidebar} _Interprétation_
