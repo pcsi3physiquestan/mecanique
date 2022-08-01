@@ -13,10 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# TD Mécanique 1: Cinématique du point
-
-Ces exercices seront traités en classe.
-
+# Entrainement : Cinématique du point
 
 ## Vélodrome
 
@@ -28,7 +25,6 @@ On s'intéresse à un cycliste, considéré comme un point matériel M, qui s'en
 ```{figure} ./images/td_velodrome.jpg
 :name: fig_227
 :align: center
-
 ```
 
 1. De D, le cycliste se dirige vers le point $E_1$, entrée du demi-cercle. Justifier que l'accélération normale à la vitesse est nulle puis calculer le temps $t_{E1}$ de passage en $E_1$ ainsi que la vitesse $v_{E1}$ en $E_1$ en fonction de $a_1$ et L. 
@@ -39,19 +35,13 @@ On s'intéresse à un cycliste, considéré comme un point matériel M, qui s'en
 1. Calculer de même les temps de passage $t_{E2}, t_{S2}, t_D$ respectivement en $S_1, S_2,D$ (après un tour) ainsi que les vitesses $v_{E1}, v_{E2}, v_D$.
 1. La course se fait sur quatre tours et est longue de 1km mais on ne s'intéresse ici qu'au premier tour effectué en $T_1=18,155 \rm{s}$ (par le britannique Chris Roy aux Championnats du monde de 2007). 
 1. Déterminer la valeur de l'accélération a1 ainsi que la vitesse atteinte en D. La vitesse mesurée sur piste est d'environ $v_D = 60 \rm{km.h^{-1}}$. Que doit-on modifier dans le modèle pour se rapprocher de la réalité?
-
 ````
-````{dropdown} Eléménts de réponse (sans justification)
-
-$t_{E1} = \sqrt{\frac{L}{a_1}}$ et $v_{E1} = \sqrt{a_1 L}$.
-
-$t_{S1} = \sqrt{\frac{L + \frac{\pi}{2}R}{a_1}}$ et $v_{S1} = \sqrt{a_1 (L + \frac{\pi}{2}R)}$.
-
-$t_{E2} = \sqrt{\frac{3L + \frac{\pi}{2}R}{a_1}}$ et $v_{E2} = \sqrt{a_1 (3L + \frac{\pi}{2}R)}$.
-
-$t_{S2} = \sqrt{\frac{3L + \pi R}{a_1}}$ et $v_{S2} = \sqrt{a_1 (3L + \pi R)}$.
-
-$t_{D} = \sqrt{\frac{4L + \pi R}{a_1}}$ et $v_{D} = \sqrt{a_1 (4L + \pi R)}$.
+````{topic} Eléménts de réponse (sans justification)
+* $t_{E1} = \sqrt{\frac{L}{a_1}}$ et $v_{E1} = \sqrt{a_1 L}$.
+* $t_{S1} = \sqrt{\frac{L + \frac{\pi}{2}R}{a_1}}$ et $v_{S1} = \sqrt{a_1 (L + \frac{\pi}{2}R)}$.
+* $t_{E2} = \sqrt{\frac{3L + \frac{\pi}{2}R}{a_1}}$ et $v_{E2} = \sqrt{a_1 (3L + \frac{\pi}{2}R)}$.
+* $t_{S2} = \sqrt{\frac{3L + \pi R}{a_1}}$ et $v_{S2} = \sqrt{a_1 (3L + \pi R)}$.
+* $t_{D} = \sqrt{\frac{4L + \pi R}{a_1}}$ et $v_{D} = \sqrt{a_1 (4L + \pi R)}$.
 ````
 
 ## Trajectoire d'un bateau
@@ -66,11 +56,9 @@ On s'intéresse à une planète semblable à la Terre mais entièrement recouver
 1. Quelle est la date d'arrivée au pôle?
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
-
-$\theta(t) = \theta_0 - \frac{\sqrt{2}}{2}\frac{V_0}{R}t$
-
-$\phi(t) = \ln \frac{\tan \theta_0 / 2}{\tan \frac{\theta_0 - \frac{\sqrt{2}V_0}{2R}t}{2}}$
+````{topic} Eléments de réponse (sans justification)
+* $\theta(t) = \theta_0 - \frac{\sqrt{2}}{2}\frac{V_0}{R}t$
+* $\phi(t) = \ln \frac{\tan \theta_0 / 2}{\tan \frac{\theta_0 - \frac{\sqrt{2}V_0}{2R}t}{2}}$
 ````
 
 ## Poursuite
@@ -83,9 +71,7 @@ Quatre robots repérés par les points A,B,C et D sont initialement aux sommets 
 Déterminer alors les équations paramétriques du mouvement de A (équation horaire) en fonction de t et v puis l'instant $t_0$ d'arrivée en O. 
 ````
 
-````{dropdown} Eléments de réponse (sans justification)
-
-$r(t) = \frac{\sqrt{2}}{2}a - \frac{\sqrt{2}}{2}v_0 t$
-
-$\theta(t) = - \ln \left ( a - v_0 t\right )$
+````{topic} Eléments de réponse (sans justification)
+* $r(t) = \frac{\sqrt{2}}{2}a - \frac{\sqrt{2}}{2}v_0 t$
+* $\theta(t) = - \ln \left ( a - v_0 t\right )$
 ````

@@ -13,9 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# Solide en rotation autour d'un axe fixe
-
-Nous avons déjà établi les principales caractéristiques du mouvement des solides dans le cadre du programme et notamment les cas du pendule pesant et de torsion.
+# Activité : Solide en rotation autour d'un axe fixe
 
 Il s'agit ici de reprendre certaines idées générales et de préciser le cas d'étude des systèmes __déformables__ en rotation.
 
@@ -32,33 +30,14 @@ On rappelle quelques éléments utiles:
 * La liaison pivot possède a priori un moment non nul sur son axe. Il n'est nul que si la liaison pivot est parfaite.
 * On a déjà étudié le cas des pendules pesant et de torsion.
 
-### Types d'études
-
-
-On va différencier plusieurs types d'étude:
-
-* Solide indéformable de type pendule: déjà étudié précédemment.
-* Solide indéformable de type moteur: nous étudierons  un chapitre complet sera proposé plus tard dans l'année sur les moteurs électriques.
-
-
 ### Equivalience TMC-TEC
 
-````{important} __Fondamental : Equivalence__
+````{important} __A retenir : Equivalence__
 
 Pour un solide __indéformable__ en __rotation autour d'un axe fixe__ dans un référentiel galiléen, le théorème de l'énergie cinétique et le théorème du moment cinétique sont équivalents.
 ````
 
-
->__Démonstration__
->Nous allons partir du théorème du moment cinétique et procéder par égalité.
->
->\begin{align*}
-\frac{\rm{d}J\omega}{\rm{dt}} &= M_{ext,\Delta}\\
-\frac{\rm{d}J\omega}{\rm{dt}}\omega &= M_{ext,\Delta}\omega \\
-\frac{\rm{d}}{\rm{dt}}\left(\frac{1}{2}J\omega^2\right) &= P_{ext}
-\end{align*}
->La dernière ligne correspond au théorème de l'énergie cinétique puisque __pour un système indéformable__, la puissance des forces intérieures est nulle.
-
+_Le démontrer_
 
 ## Solide déformable
 
@@ -84,28 +63,3 @@ Dans le cadre du programme, on sera en général amené à montrer que le moment
 Observer l'expérience du tabouret d'inertie et proposer une modélisation permettant de l'expliquer.
 
 ````
-
-## Exercices d'application
-
-### Pendule pesant
-
-````{admonition} Exercice 
-:class: attention
-
-On considère une tige de longueur $L$ et de masse $M$ attaché à une extrémité à un bati par une liaison pivot parfaite d'axe Oz horizontal (on donne le moment de la tige par rapport à Oz: $J_{Oz} = \frac{M L^2}{3}$), l'autre extrémité étant laissé libre. Une masse ponctuelle $m$ est accrochée à la tige à une distance $l$ de l'axe Oz. Déterminer la période des petites oscillations en fonction de la longueur $l$.
-
-````
-
-### Entraînement par frottements
-
-````{admonition} Exercice 
-:class: attention
-
-On considère un système constitué de deux disques en rotation autour d'un axe $\Delta$ (les moments d'inertie des deux disques par rapport à l'axe sont notés $J_1$ et $J_2$) au moyen d'une liaison pivot parfaite. A l'instant initial, les deux disques sont éloignés et sans contact et le premier tourne avec une vitesse angulaire $\omega_0$ et le second est immobile. On approche doucement les deux disques jusqu'à ce qu'ils soient en contact.
-
-1. Déterminer la vitesse angulaire de l'ensemble des deux disques à la fin de la manipulation. Ce résultat dépend-t-il de la nature des frottements entre les deux disques?
-1. Faire un bilan d'énergie mécanique pour chaque disque séparément puis pour l'ensemble des deux disques. Commenter les résultats.
-
-````
-
-

@@ -15,7 +15,7 @@ kernelspec:
 ---
 # Modélisation des actions. Cas des actions ponctuelles.
 
-````{admonition} Objectifs
+````{admonition} Compétences
 :class: tip
 * Établir un bilan des actions sur un système ou plusieurs systèmes en interaction.
 * Établir une relation graphique ou analytique entre des forces modélisant des actions sur un point matériel dans un cas statique.

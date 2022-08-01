@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travail et puissance des actions mécaniques &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,34 +31,37 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/energetique_travail.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Forces/actions conservatives et énergie potentielle" href="energetique_ep.html" />
-    <link rel="prev" title="Energie cinétique: Rappels" href="energetique_rappel.html" />
+    <link rel="prev" title="Théorèmes énergétiques" href="energetique_gene.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -94,7 +98,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="cinematique.html">
-   Cinématique
+   Cinématique et cinétique du point
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -103,8 +107,8 @@
   </label>
   <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinema_point.html">
-     Cinématique du point
+    <a class="reference internal" href="cinema_contxt.html">
+     Comprendre le contexte.
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
@@ -112,34 +116,80 @@
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_referentiel.html">
-       Référentiel
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinema_point.html">
+       Cinématique du point
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_referentiel.html">
+         Référentiel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_trajectoire.html">
+         Position et trajectoire
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_vitesse.html">
+         Vecteur vitesse
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_acc.html">
+         Vecteur accélération
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_circulaire.html">
+         Cas du mouvement circulaire
+        </a>
+       </li>
+      </ul>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_trajectoire.html">
-       Position et trajectoire
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinetique_point.html">
+       Cinétique du point
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_inertie.html">
+         Point matériel et inertie
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_p.html">
+         Eléments cinétiques
+        </a>
+       </li>
+      </ul>
      </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="cinema_vitesse.html">
-       Vecteur vitesse
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc.html">
-       Vecteur accélération
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_circulaire.html">
-       Cas du mouvement circulaire
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc_unif.html">
-       Mouvement uniformément accéléré
+      <a class="reference internal" href="cinema_methode.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -149,56 +199,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="cinema_td.html">
-       TD Mécanique 1: Cinématique du point
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinetique_point.html">
-     Cinétique du point
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-    <label for="toctree-checkbox-3">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_inertie.html">
-       Point matériel et inertie
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_p.html">
-       Quantité de mouvement
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_cinema.html">
-     Cinématique et cinétique des systèmes de points
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-    <label for="toctree-checkbox-4">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_description.html">
-       Description d’un système de points
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_cinetique.html">
-       Cinétique du solide
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_mouvement.html">
-       Mouvements particuliers
+       Entrainement : Cinématique du point
       </a>
      </li>
     </ul>
@@ -206,45 +207,18 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="actions.html">
-   Description des actions mécaniques
+  <a class="reference internal" href="dynamique.html">
+   Dynamique du point matériel
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="actions_ponctuelles.html">
-     Modélisation des actions. Cas des actions ponctuelles.
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-    <label for="toctree-checkbox-6">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_interactions.html">
-       Actions et interactions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_typo.html">
-       Action ponctuelle: Modélisation et typologie
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_ex_app.html">
-       Exercices d’application
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="actions_globales.html">
-     Modélisation des actions globales
+    <a class="reference internal" href="dynamique_contxt.html">
+     Comprendre le contexte.
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
     <label for="toctree-checkbox-7">
@@ -252,54 +226,78 @@
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_typo.html">
-       Généralités sur les actions à distance
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions.html">
+       Description des actions mécaniques ponctuelles
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_typo.html">
+         Action ponctuelle: Modélisation et typologie
+        </a>
+       </li>
+      </ul>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_exemples.html">
-       Exemples d’analyse
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="theoremes.html">
+       Théorèmes fondamentaux de la mécanique classique
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_newton.html">
+         Lois de Newton et conséquences
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_tmc.html">
+         Théorème du moment cinétique
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="theoremes.html">
-   Théorèmes fondamentaux de la mécanique classique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_newton.html">
-     Lois de Newton et conséquences
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="dynamique_ex.html">
+     S’entrainer
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_tmc.html">
-     Théorème du moment cinétique
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_meth.html">
-     Activités méthodes: Applications des théorèmes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_ex_app.html">
-     Exercices d’application
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_td.html">
-     Travaux dirigés
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_meth.html">
+       Méthodes : Actions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_meth.html">
+       Méthodes : Applications des théorèmes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_ex_app.html">
+       Applications
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -307,45 +305,81 @@
   <a class="reference internal" href="energetique.html">
    Approche énérgétique
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="energetique_gene.html">
-     Théorèmes énergétiques
+    <a class="reference internal" href="energetique_contxt.html">
+     Comprendre le contexte
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul class="current">
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_rappel.html">
-       Energie cinétique: Rappels
-      </a>
-     </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       Travail et puissance des actions mécaniques
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_ep.html">
-       Forces/actions conservatives et énergie potentielle
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_theoremes.html">
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="energetique_gene.html">
        Théorèmes énergétiques
       </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Travail et puissance des actions mécaniques
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_ep.html">
+         Forces/actions conservatives et énergie potentielle
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_theoremes.html">
+         Théorèmes énergétiques
+        </a>
+       </li>
+      </ul>
      </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_conservatifs.html">
+       Systèmes conservatifs
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_conserv_1d.html">
+         Système à 1 degré de liberté
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_exemples.html">
-       Exemples
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -355,34 +389,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_td.html">
-       Travaux dirigés
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_conservatifs.html">
-     Systèmes conservatifs
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label for="toctree-checkbox-11">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_def.html">
-       Système conservatif: Définition
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_1d.html">
-       Système à 1 degré de liberté
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_td.html">
-       Travaux dirigés
+       Entrainement
       </a>
      </li>
     </ul>
@@ -393,8 +400,8 @@
   <a class="reference internal" href="applications.html">
    Applications
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -403,8 +410,8 @@
     <a class="reference internal" href="oscillateurs.html">
      Oscillateurs
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label for="toctree-checkbox-13">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -431,15 +438,10 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="oscillateurs_td.html">
-       Travaux dirigés: Oscillateurs
+       Entrainement : Oscillateurs
       </a>
      </li>
     </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rotation.html">
-     Solide en rotation autour d’un axe fixe
-    </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="pendules.html">
@@ -452,55 +454,189 @@
   <a class="reference internal" href="centrales.html">
    Mouvement à force centrales
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="centrales_gene.html">
-     Mouvement à force centrales : Généralités
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="centrales_newtoniens.html">
-     Potentiels newtoniens
+    <a class="reference internal" href="centrales_contxt.html">
+     Comprendre le contexte
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_gene.html">
-       Forces newtoniennes: Généralités
+      <a class="reference internal" href="centrales_gene.html">
+       Généralités
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="centrales_newtoniens.html">
+       Potentiels newtoniens
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_mvt.html">
+         Etude du mouvement
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_kepler.html">
+         Mouvement des planètes et lois de Kepler
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_methodes.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_odg.html">
-       Forces newtoniennes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_mvt.html">
-       Etude du mouvement
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_kepler.html">
-       Mouvement des planètes et lois de Kepler
+       Activités : Ordres de grandeur
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_satellites.html">
-       Mouvement des satellites
+       Activités : Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_app.html">
+       Applications
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_td.html">
-       Travaux dirigés: Potentiels newtoniens
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="systeme_pts.html">
+   Systèmes de points matériels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="systeme_cinema.html">
+       Cinématique et cinétique des systèmes de points
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_description.html">
+         Description d’un système de points
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_cinetique.html">
+         Cinétique du solide
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_mouvement.html">
+         Mouvements particuliers
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions_globales.html">
+       Modélisation des actions globales
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_g_typo.html">
+         Types d’actions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_theoremes.html">
+         Théorèmes en mécanique du solide
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+    <label for="toctree-checkbox-26">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_methode.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="rotation.html">
+       Activité : Solide en rotation autour d’un axe fixe
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_td.html">
+       Entrainement
       </a>
      </li>
     </ul>
@@ -596,7 +732,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#travail-et-puissance-d-une-action-ponctuelle">
@@ -604,41 +740,9 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#methode-calcul-du-travail-d-une-force">
-   Méthode: Calcul du travail d’une force.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interpretation-du-travail-et-de-la-puissance">
-   Interprétation du travail et de la puissance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#travail-et-chemin">
    Travail et chemin
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cas-des-actions-globales">
-   Cas des actions globales
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#travail-d-une-action-globale-definition-et-expression-generale">
-     Travail d’une action globale: Définition et expression générale
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#travail-d-une-action-globale-cas-particuliers">
-     Travail d’une action globale - Cas particuliers.
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cas-de-la-liaison-pivot-cas-parfait">
-     Cas de la liaison pivot. Cas parfait
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -651,16 +755,16 @@
         
               <div>
                 
-  <div class="section" id="travail-et-puissance-des-actions-mecaniques">
+  <div class="tex2jax_ignore mathjax_ignore section" id="travail-et-puissance-des-actions-mecaniques">
 <h1>Travail et puissance des actions mécaniques<a class="headerlink" href="#travail-et-puissance-des-actions-mecaniques" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="travail-et-puissance-d-une-action-ponctuelle">
 <h2>Travail et puissance d’une action ponctuelle<a class="headerlink" href="#travail-et-puissance-d-une-action-ponctuelle" title="Permalink to this headline">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Travail élémentaire d’une action ponctuelle</strong></p>
+<p><strong>Travail élémentaire d’une action ponctuelle</strong></p>
 <p>Considérons une action ponctuelle exercée par un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un point matériel M de masse m et modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>. On définit le travail élémentaire de cette action sur un déplacement élémentaire <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span> par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1c7362a7-da55-4840-8d93-753594f4cc05">
-<span class="eqno">(35)<a class="headerlink" href="#equation-1c7362a7-da55-4840-8d93-753594f4cc05" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-51fc4a97-77d3-45c2-bd1b-be2d73958764">
+<span class="eqno">(26)<a class="headerlink" href="#equation-51fc4a97-77d3-45c2-bd1b-be2d73958764" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \delta W (\overrightarrow{F}) = \overrightarrow{F} \cdot \overrightarrow{dOM}
 \end{equation}\]</div>
 <p>Ce travail correspond à l’énergie apportée par le système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> au système ponctuel M lorsque ce dernier se déplace de manière infinitésimale de <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span>.</p>
@@ -668,10 +772,10 @@
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Travail sur un déplacement fini d’une action ponctuelle</strong></p>
+<p><strong>Travail sur un déplacement fini d’une action ponctuelle</strong></p>
 <p>Considérons une action ponctuelle exercée par un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un point matériel M de masse m et modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>. Si le point M se déplace sur un chemin <span class="math notranslate nohighlight">\(\Gamma\)</span>. On définit le travail <span class="math notranslate nohighlight">\(W(\overrightarrow{F})\)</span> de cette action sur un déplacement fini le long du chemin <span class="math notranslate nohighlight">\(\Gamma\)</span> par la somme (intégrale) des travaux élémentaires le long de chemin:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3945afb0-5410-48e2-9d29-7857c437246b">
-<span class="eqno">(36)<a class="headerlink" href="#equation-3945afb0-5410-48e2-9d29-7857c437246b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-39bee39b-9e0e-4710-a821-761fc1e3bf5a">
+<span class="eqno">(27)<a class="headerlink" href="#equation-39bee39b-9e0e-4710-a821-761fc1e3bf5a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 W_{\Gamma} (\overrightarrow{F}) = \int_{M \in \Gamma} \overrightarrow{F} \cdot \overrightarrow{dOM}
 \end{equation}\]</div>
 <p>Ce travail correspond à l’énergie apportée par le système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> au système ponctuel M lorsque ce dernier se déplace sur le chemin <span class="math notranslate nohighlight">\(\Gamma\)</span>.</p>
@@ -679,73 +783,36 @@ W_{\Gamma} (\overrightarrow{F}) = \int_{M \in \Gamma} \overrightarrow{F} \cdot \
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Puissance transmise par une action ponctuelle</strong></p>
+<p><strong>Puissance transmise par une action ponctuelle</strong></p>
 <p>Considérons une action ponctuelle exercée par un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un point matériel M de masse m et modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>. Si à un instant t, le point M possède une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{M/\mathfrak{R}}}\)</span> dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>, on définit la puissance <span class="math notranslate nohighlight">\(P_{\mathfrak{R}}(\overrightarrow{F})\)</span> par cette action au système M dans le référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fb283f75-0dca-4ee4-811f-96cb741ef4ec">
-<span class="eqno">(37)<a class="headerlink" href="#equation-fb283f75-0dca-4ee4-811f-96cb741ef4ec" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-fa4b8786-2e18-4e3e-b25e-05f0d8ef581e">
+<span class="eqno">(28)<a class="headerlink" href="#equation-fa4b8786-2e18-4e3e-b25e-05f0d8ef581e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 P_{/\mathfrak{R}} (\overrightarrow{F}) = \overrightarrow{F} \cdot \overrightarrow{v_{M/\mathfrak{R}}}
 \end{equation}\]</div>
 <p>Cette puissance correspond à la puissance apportée par le système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> au système ponctuel M à un instant t dans le référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
 <p>Ce <strong>transfert</strong> d’énergie <strong>dépend a priori du référentiel considéré</strong>.</p>
 </div>
-<p><strong>Action et force</strong>
-Lorsqu’il s’agit d’une action ponctuelle, on parle aussi de travail ou puissance d’une force. Tant qu’on fait attention au point d’application, cela ne porte pas à conséquence. Il faut néanmoins garder à l’esprit que cet abus de langage devient très trompeur pour des actions globales où le travail et la puissance d’une action <strong>ne se déduit plus de la force seule.</strong></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Relation puissance-travail</strong></p>
+<p><strong>Relation puissance-travail</strong></p>
 <p>On a la relation suivante pour une même action:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ddb542ca-da83-4c28-971e-d29dda20792c">
-<span class="eqno">(38)<a class="headerlink" href="#equation-ddb542ca-da83-4c28-971e-d29dda20792c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4b2fb9ad-94c9-44c7-875e-4827ae9741f9">
+<span class="eqno">(29)<a class="headerlink" href="#equation-4b2fb9ad-94c9-44c7-875e-4827ae9741f9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 P_{/\mathfrak{R}}(\overrightarrow{F}) = \frac{\delta W (\overrightarrow{F})}{\rm{d}t}
 \end{equation}\]</div>
 <p>Remarque: Le point pour l’expression du déplacement élémentaire doit être fixe dans <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
 <p>Cette expression se démontre en remarquant que <span class="math notranslate nohighlight">\(\overrightarrow{v_{M/\mathfrak{R}}} = \frac{\rm{d}\overrightarrow{OM}}{\rm{dt}}_{\mathfrak{R}}\)</span></p>
 </div>
-</div>
-<div class="section" id="methode-calcul-du-travail-d-une-force">
-<h2>Méthode: Calcul du travail d’une force.<a class="headerlink" href="#methode-calcul-du-travail-d-une-force" title="Permalink to this headline">¶</a></h2>
-<p>Nous allons voir ici la méthode permettant de calculer le travail d’une force. Dans le cadre du programme, le point centrale est le paramétrage. Il permet d’obtenir une expression simple de l’intégrale à calculer.</p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère un point M sur une trajectoire circulaire dans un plan vertical. On repère l’angle <span class="math notranslate nohighlight">\(\theta\)</span> que fait le vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{OM}\)</span> (O est le centre du cercle) par rapport au point le plus bas du cercle. Déterminer le travail du poids sur M lorsqu’il passe du point <span class="math notranslate nohighlight">\(\theta = 0\)</span> au point <span class="math notranslate nohighlight">\(\theta = \theta_1\)</span>.</p>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Résolution<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<blockquote>
-<div><p class="card-text"><strong>Plan du calcul</strong></p>
-<p class="card-text">On va détailler le calcul en deux étapes: on calcule le travail infinitésimal sur un déplacement élémentaire le long du cercle pour une position d’angle <span class="math notranslate nohighlight">\(\theta\)</span> quelconque. On va alors trouver une expression de la forme <span class="math notranslate nohighlight">\(f(\theta)d\theta\)</span>. Il suffira alors de l’intégrer en choisissant correctement les bornes d’intégration en fonction du chemin choisi.</p>
-<p class="card-text"><strong>Travail infinitésimal</strong>
-Le déplacement élémentaire <strong>sur le cercle</strong> s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{dOM} = R d\theta \overrightarrow{e_\theta}\)</span>. Quant à la force, elle s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{P} = mg \cos \theta \overrightarrow{e_r} - mg \sin \theta \overrightarrow{e_\theta}\)</span>. Le travail élémentaire s’écrit donc: <span class="math notranslate nohighlight">\(\delta W = -mgR \sin \theta d \theta\)</span></p>
-<p class="card-text"><strong>Intégration</strong>
-L’expression du travail infinitésimal fait apparaître que l’intégration sera suivant <span class="math notranslate nohighlight">\(\theta\)</span> (en effet, c’est en faisant varier cet angle qu’on décrit entièrement la trajectoire de M sur le cercle). Les bornes d’intégration sous le point de départ et d’arrivée soit <span class="math notranslate nohighlight">\(\theta = 0\)</span> et <span class="math notranslate nohighlight">\(\theta = \theta_1\)</span>. Il vient:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-W &amp;= \int_{\theta=0}^{\theta=\theta_1} - mgR \sin \theta d\theta \\
-&amp;= mgR \left(\cos \theta_1 - 1\right)
-\end{align*}\]</div>
-</div></blockquote>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Analyse du résultat</p>
-<p class="card-text">On pourra vérifier ici l’homogénéité en utilisant le fait que mgz est homogène à une énergie (potentiel de pesanteur). Donc l’expression précédente est bien homogène à un terme énergétique comme doit l’être un transfert d’énergie mécanique (un travail).</p>
-<p class="card-text">On remarquera aussi que ce travail est <strong>négatif</strong>. Ce qui veut dire que le système a perdu de l’énergie sous l’effet du poids. En effet, en montant, il est ralenti: le poids a alors un effet <strong>résistant</strong>. Si le mouvement s’était effectué dans l’autre sens, le travail (transfert d’énergie mécanique) aurait été positif: le système aurait gagné de l’énergie. Le poids aura alors eu un effet <strong>moteur</strong>.</p>
-</div>
-</div>
-</details></div>
-<div class="section" id="interpretation-du-travail-et-de-la-puissance">
-<h2>Interprétation du travail et de la puissance<a class="headerlink" href="#interpretation-du-travail-et-de-la-puissance" title="Permalink to this headline">¶</a></h2>
-<p><strong>Interprétation</strong>
-Comme on l’a dit dans la définit, le travail correspond à l’apport d’énergie sur un trajet donné par le milieu extérieur par l’intermédiaire de l’action considéré. De même la puissance d’une action correspond à la puissance transmise à un instant donné.</p>
+<div class="topic">
+<p class="topic-title first">Interprétation</p>
+<p>Comme on l’a dit dans la définit, le travail correspond à l’apport d’énergie sur un trajet donné par le milieu extérieur par l’intermédiaire de l’action considéré. De même la puissance d’une action correspond à la puissance transmise à un instant donné.</p>
 <p>On peut distinguer deux cas:</p>
 <ul class="simple">
 <li><p>la puissance transmise est négative. Cela correspond un angle <strong>obtu</strong> entre la vitesse de M et la force: on est dans une configuration où l’action tend à ralentir le mobile. D’un point de vue énergétique, il lui enlève la puissance. On dit que l’action est <strong>résistante</strong>.</p></li>
 <li><p>la puissance transmise est positive. Cela correspond un angle <strong>aigu</strong> entre la vitesse de M et la force: on est dans une configuration où l’action tend à accélérer le mobile. D’un point de vue énergétique, il lui fournit la puissance. On dit que l’action est <strong>motrice</strong>.</p></li>
 </ul>
 <p>Ces interprétations s’appliquent aussi au travail et la dénomination moteur/résistant restera valable pour des actions résultantes.</p>
+</div>
 </div>
 <div class="section" id="travail-et-chemin">
 <h2>Travail et chemin<a class="headerlink" href="#travail-et-chemin" title="Permalink to this headline">¶</a></h2>
@@ -756,73 +823,9 @@ Comme on l’a dit dans la définit, le travail correspond à l’apport d’én
 <p>Le travail correspond donc à une grandeur mathématique particulière. Le travail infinitésimal doit donc être noté <span class="math notranslate nohighlight">\(\delta W\)</span> (l’important c’est le <span class="math notranslate nohighlight">\(\delta\)</span>) et le travail sur un déplacement fini W (l’important est l’absence de <span class="math notranslate nohighlight">\(\Delta\)</span>).</p>
 <p>Il est important de faire la différence avec les grandeurs d’état (comme l’énergie cinétique) dont on calcule une <strong>variation</strong> (notée avec un d ou <span class="math notranslate nohighlight">\(\Delta\)</span> suivant que la transformation soit infinitésimale ou finie) et les grandeurs d’échange comme le transfert d’énergie mécanique (ou travail) dont le <strong>transfert</strong> est noté avec un <span class="math notranslate nohighlight">\(\delta\)</span> ou rien.</p>
 </div>
-<div class="attention admonition">
-<p class="admonition-title">Dépendance</p>
+<div class="topic">
+<p class="topic-title first">Dépendance</p>
 <p>On peut se rendre compte de cette dépendance en prenant le cas d’une action de contact sur un plan horizontal. La loi de Coulomb prévoit que la composante tangentielle est constante est toujours opposée au mouvement. Le travail d’un point A à un point B sera donc dépendant de la distance parcourue pour aller de A à B et donc du chemin parcouru.</p>
-</div>
-</div>
-<div class="section" id="cas-des-actions-globales">
-<h2>Cas des actions globales<a class="headerlink" href="#cas-des-actions-globales" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="travail-d-une-action-globale-definition-et-expression-generale">
-<h3>Travail d’une action globale: Définition et expression générale<a class="headerlink" href="#travail-d-une-action-globale-definition-et-expression-generale" title="Permalink to this headline">¶</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Définition : Travail et puissance d’une action globale</strong></p>
-<p>Le travail (élémentaire ou fini) d’une action globale est la somme des travaux (élémentaires ou fini) de chaque action ponctuelle.</p>
-<p>La puissance transmise par une action globale dans un référentiel donné est la somme des puissances transmises par chaque action ponctuelle dans le même référentiel.</p>
-</div>
-<p><strong>Calcul et interprétation</strong>
-On ne donne pas de méthode de calcul générale car on ne calculera pas de sommation des travaux et puissance d’une action globale. On verra des expressions simplifiées dans les cas de translation et rotation.</p>
-<p>On peut par contre toujours interprêter ces grandeurs comme des échanges énergétiques. Comme on le verra avec le théorème de l’énergie cinétique, ces échanges vont faire varier l’énergie cinétique du système. La limite de cette interprétation dans le cas général est que pour un solide, cette influence peut agir sur l’énergie cinétique associée à la translation, associée à la rotation, ou à la déformation du système.</p>
-<p>Nous allons simplement traiter les deux premiers cas de manière mathématisée. Certains cas correspondant à la déformation seront présentés par la suite.</p>
-</div>
-<div class="section" id="travail-d-une-action-globale-cas-particuliers">
-<h3>Travail d’une action globale - Cas particuliers.<a class="headerlink" href="#travail-d-une-action-globale-cas-particuliers" title="Permalink to this headline">¶</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Cas d’un solide en translation (à connaître)</strong></p>
-<p>Dans le cas d’un solide indéformable en translation, la puissance transmise par une action globale peut se réécrire comme <span class="math notranslate nohighlight">\(P_{\mathfrak{R}} = \overrightarrow{F} \cdot \overrightarrow{v_{M/\mathfrak{R}}}\)</span> avec M un point quelconque du solide (on prend en général le centre d’inertie mais de toute façon, tous les points ont la même vitesse puisque le solide est en translation) et <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> la force résultante de l’action globale.</p>
-<p>Le travail élémentaire s’écrit <span class="math notranslate nohighlight">\(\delta W = \overrightarrow{F} \cdot \overrightarrow{dOM}\)</span> avec M un point quelconque du solide.</p>
-</div>
-<blockquote>
-<div><p><strong>Démonstration (cette démonstration n’est pas à connaître)</strong>
-Considérons une action globale d’un système <span class="math notranslate nohighlight">\(\Sigma_{ext}\)</span> sur le système étudié <span class="math notranslate nohighlight">\(\Sigma\)</span> décomposée en une somme d’action ponctuelle sur les points M de <span class="math notranslate nohighlight">\(\Sigma\)</span>. On modélise chaque action ponctuelle par une force <span class="math notranslate nohighlight">\(\overrightarrow{F_{\Sigma_1 \to M}}\)</span>, le puissance transmise par l’action ponctuelle s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}\)</span>. On remarquera que la vitesse de tous les points M est identique (on la notera <span class="math notranslate nohighlight">\(\overrightarrow{v_{trans/\mathfrak{R}}}\)</span>).</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \sum\limits_{M} \left(\overrightarrow{F_{\Sigma_1 \to M}} \cdot \overrightarrow{v_{M/\mathfrak{R}}}\right)\\
-&amp;=\sum\limits_{M} \left(\overrightarrow{F_{\Sigma_1 \to M}}\right) \cdot \overrightarrow{v_{trans/\mathfrak{R}}}\\
-&amp;= \overrightarrow{F_{\Sigma_1 \to \Sigma}} \cdot \overrightarrow{v_{trans/\mathfrak{R}}}
-\end{align*}\]</div>
-<p>La démonstration pour le travail est identique.</p>
-</div></blockquote>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Cas d’un solide en rotation autour d’un axe fixe (à connaître)</strong></p>
-<p>Dans le cas d’un solide indéformable en rotation autour d’un axe <span class="math notranslate nohighlight">\(\Delta\)</span> fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>, la puissance transmise par une action globale peut se réécrire comme <span class="math notranslate nohighlight">\(P_{\mathfrak{R}} = M_\Delta \omega_\Delta\)</span> avec <span class="math notranslate nohighlight">\(\omega_\Delta\)</span> la vitesse angulaire de rotation du solide autour de l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> (<strong>c’est une grandeur algébrique</strong>) et <span class="math notranslate nohighlight">\(M_\Delta\)</span> le moment résultant de l’action globale sur l’axe <span class="math notranslate nohighlight">\(\Delta\)</span>.</p>
-<p>Le travail élémentaire s’écrit <span class="math notranslate nohighlight">\(\delta W = M_\Delta d\theta_\Delta\)</span> avec <span class="math notranslate nohighlight">\(d\theta_\Delta\)</span> une variation infinitésimale de l’angle <span class="math notranslate nohighlight">\(\theta_\Delta\)</span> orienté suivant <span class="math notranslate nohighlight">\(\Delta\)</span> et représentant la rotation du solide autour de l’axe.</p>
-</div>
-<blockquote>
-<div><p><strong>Démonstration (cette démonstration n’est pas à connaître)</strong>
-Considérons une action globale d’un système <span class="math notranslate nohighlight">\(\Sigma_{ext}\)</span> sur le système étudié <span class="math notranslate nohighlight">\(\Sigma\)</span> décomposée en une somme d’action ponctuelle sur les points M de <span class="math notranslate nohighlight">\(\Sigma\)</span>. On modélise chaque action ponctuelle par une force <span class="math notranslate nohighlight">\(\overrightarrow{F_{\Sigma_1 \to M}}\)</span>, le puissance transmise par l’action ponctuelle s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}\)</span>. On remarquera que la vitesse de tous les points M peut s’écrire (solide en rotation) <span class="math notranslate nohighlight">\(\overrightarrow{v_M} = \overrightarrow{\Omega} \wedge \overrightarrow{OM}\)</span> (O est un point de l’axe et <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> le vecteur taux de rotation).</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \sum\limits_{M} \left(\overrightarrow{F_{\Sigma_1 \to M}} \cdot \left(\overrightarrow{\Omega}\wedge \overrightarrow{OM}\right)\right)\\
-P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \sum\limits_{M} \left(\overrightarrow{\Omega} \cdot \left(\overrightarrow{OM} \wedge \overrightarrow{F_{\Sigma_1 \to M}}\right)\right)\\
-P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \overrightarrow{\Omega} \cdot \sum\limits_{M} \left(\overrightarrow{M_{O}}\left(\overrightarrow{F_{\Sigma_1 \to M}}\right)\right)\\
-P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \omega_{\Delta} \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_{O}}\left(\overrightarrow{F_{\Sigma_1 \to \Sigma}}\right)\\
-P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \omega_{\Delta} M_{\Delta}\left(\overrightarrow{F_{\Sigma_1 \to \Sigma}}\right)
-\end{align*}\]</div>
-</div></blockquote>
-</div>
-<div class="section" id="cas-de-la-liaison-pivot-cas-parfait">
-<h3>Cas de la liaison pivot. Cas parfait<a class="headerlink" href="#cas-de-la-liaison-pivot-cas-parfait" title="Permalink to this headline">¶</a></h3>
-<p><strong>Cas de la liaison pivot. Cas général.</strong>
-Dans le référentiel du stator, la puissance transmise au rotor par l’intermédiaire de la liaison pivot s’écrit comme on la vue précédemment au moyen du moment sur l’axe et de la vitesse angulaire.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Cas d’une liaison parfaite.</strong></p>
-<p>Si la liaison pivot est parfaite, alors la puissance (et le travail) transmis par la liaison pivot dans le référentiel du stator est nulle. La preuve est triviale.</p>
-</div>
 </div>
 </div>
 </div>
@@ -850,16 +853,27 @@ Dans le référentiel du stator, la puissance transmise au rotor par l’interm�
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="energetique_rappel.html" title="previous page">Energie cinétique: Rappels</a>
-    <a class='right-next' id="next-link" href="energetique_ep.html" title="next page">Forces/actions conservatives et énergie potentielle</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="energetique_gene.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Théorèmes énergétiques</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="energetique_ep.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Forces/actions conservatives et énergie potentielle</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -875,8 +889,7 @@ Dans le référentiel du stator, la puissance transmise au rotor par l’interm�
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

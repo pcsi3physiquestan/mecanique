@@ -36,7 +36,7 @@ On considère un ressort de raideur k et de longueur $l_0$ accroché d'un côté
 1. En comparant l'équation d'un oscillateur LC en électrocinétique à celle obtenue ici. Proposer des grandeurs analogues entre k,m,L et C
 
 ````
-````{dropdown} Ecart à l'équilibre
+````{topic} Ecart à l'équilibre
 
 Par la suite, on fera en sorte que le second membre soit nul à l'équilibre (très important pour le cas des régimes forcés sinusoïdaux). Pour cela __on réalise le changement de variabme:__ $X = x - x_{eq}$. Cela revient à s'intéresser à l'écart à la position d'équilibre.
 
@@ -81,6 +81,9 @@ On pose X(t) l'écart à la position d'équilibre.
 
 ````
 
+````{margin}
+Il arrive que le fluide ne soit pas au repos dans le référentiel galiléen mais dans un référentiel mobile (cas de l'accéléromètre). La vitesse dans la force de frottements fluide doit être par rapport au fluide.
+````
 ````{admonition} Exercice 
 :class: attention
 
@@ -92,19 +95,13 @@ On pose X(t) l'écart à la position d'équilibre lorsque $\overrightarrow{OA} =
 1. En déduire la représentation complexe $\underline{X}$ de X(t). Commenter le comportement fréquentielle de la réponse en élongation.
 
 ````
-````{dropdown} _Remarque : Force de frottement fluides_
 
-Il arrive que le fluide ne soit pas au repos dans le référentiel galiléen mais dans un référentiel mobile (cas de l'accéléromètre).Il faut alors faire attention au fait que la vitesse dans la force de frottements fluide doit être par rapport au fluide.
-````
-
-## Monde microscopique
-
-
-__Modélisation en terme d'oscillateur__
+````{topic} Echelle microscopique
 De nombreux phénomènes microscopiques comme les liaisons intramoléculaires peuvent être modélisées par des oscillateurs.
 
-* Force de rappel: Comme on l'a vu précédemment, tant que les vibrations atomiques sont faibles, on peut les assimiler à des oscillations autour d'une position d'équilibre stable. Dans le cadre des petits mouvements, la force est assimilable à une force de rappel.
-* Cas forcé - Excitation sinusöïdale: Si l'on place la molécule dans un rayonnement électromagnétique de pulsation $\omega$, le champ électrique va exercer une force sinusoïdale sur le système forçant les oscillations.
-* Amortissement fluide: les causes de l'amortissement fluide à l'échelle microscopique sont purement relativiste. En effet, on peut montrer en mécanique relativiste qu'une particule chargé accéléré émet un rayonnement et perd donc de l'énergie. Elle sera donc freinée (on parle de freinage par rayonnement). On peut modéliser cet effet par une force de frottement fluide.
+* _Force de rappel:_ Comme on l'a vu précédemment, tant que les vibrations atomiques sont faibles, on peut les assimiler à des oscillations autour d'une position d'équilibre stable. Dans le cadre des petits mouvements, la force est assimilable à une force de rappel.
+* _Cas forcé - Excitation sinusoïdale:_ Si l'on place la molécule dans un rayonnement électromagnétique de pulsation $\omega$, le champ électrique va exercer une force sinusoïdale sur le système forçant les oscillations.
+* _Amortissement fluide:_ les causes de l'amortissement fluide à l'échelle microscopique sont purement relativiste. En effet, on peut montrer en mécanique relativiste qu'une particule chargé accéléré émet un rayonnement et perd donc de l'énergie. Elle sera donc freinée (on parle de freinage par rayonnement). On peut modéliser cet effet par une force de frottement fluide.
+````
 
 

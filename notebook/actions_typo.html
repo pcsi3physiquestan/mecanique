@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Action ponctuelle: Modélisation et typologie &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,34 +31,37 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/actions_typo.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Exercices d’application" href="actions_ex_app.html" />
-    <link rel="prev" title="Actions et interactions" href="actions_interactions.html" />
+    <link rel="next" title="Théorèmes fondamentaux de la mécanique classique" href="theoremes.html" />
+    <link rel="prev" title="Description des actions mécaniques ponctuelles" href="actions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -94,7 +98,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="cinematique.html">
-   Cinématique
+   Cinématique et cinétique du point
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -103,8 +107,8 @@
   </label>
   <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinema_point.html">
-     Cinématique du point
+    <a class="reference internal" href="cinema_contxt.html">
+     Comprendre le contexte.
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
@@ -112,34 +116,80 @@
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_referentiel.html">
-       Référentiel
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinema_point.html">
+       Cinématique du point
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_referentiel.html">
+         Référentiel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_trajectoire.html">
+         Position et trajectoire
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_vitesse.html">
+         Vecteur vitesse
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_acc.html">
+         Vecteur accélération
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_circulaire.html">
+         Cas du mouvement circulaire
+        </a>
+       </li>
+      </ul>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_trajectoire.html">
-       Position et trajectoire
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinetique_point.html">
+       Cinétique du point
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_inertie.html">
+         Point matériel et inertie
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_p.html">
+         Eléments cinétiques
+        </a>
+       </li>
+      </ul>
      </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="cinema_vitesse.html">
-       Vecteur vitesse
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc.html">
-       Vecteur accélération
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_circulaire.html">
-       Cas du mouvement circulaire
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc_unif.html">
-       Mouvement uniformément accéléré
+      <a class="reference internal" href="cinema_methode.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -149,56 +199,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="cinema_td.html">
-       TD Mécanique 1: Cinématique du point
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinetique_point.html">
-     Cinétique du point
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-    <label for="toctree-checkbox-3">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_inertie.html">
-       Point matériel et inertie
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_p.html">
-       Quantité de mouvement
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_cinema.html">
-     Cinématique et cinétique des systèmes de points
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-    <label for="toctree-checkbox-4">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_description.html">
-       Description d’un système de points
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_cinetique.html">
-       Cinétique du solide
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_mouvement.html">
-       Mouvements particuliers
+       Entrainement : Cinématique du point
       </a>
      </li>
     </ul>
@@ -206,116 +207,69 @@
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="actions.html">
-   Description des actions mécaniques
+  <a class="reference internal" href="dynamique.html">
+   Dynamique du point matériel
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="actions_ponctuelles.html">
-     Modélisation des actions. Cas des actions ponctuelles.
+    <a class="reference internal" href="dynamique_contxt.html">
+     Comprendre le contexte.
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-    <label for="toctree-checkbox-6">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul class="current">
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_interactions.html">
-       Actions et interactions
-      </a>
-     </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       Action ponctuelle: Modélisation et typologie
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_ex_app.html">
-       Exercices d’application
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="actions_globales.html">
-     Modélisation des actions globales
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
     <label for="toctree-checkbox-7">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_typo.html">
-       Généralités sur les actions à distance
+    <ul class="current">
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="actions.html">
+       Description des actions mécaniques ponctuelles
       </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Action ponctuelle: Modélisation et typologie
+        </a>
+       </li>
+      </ul>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_exemples.html">
-       Exemples d’analyse
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="theoremes.html">
+       Théorèmes fondamentaux de la mécanique classique
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_newton.html">
+         Lois de Newton et conséquences
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_tmc.html">
+         Théorème du moment cinétique
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="theoremes.html">
-   Théorèmes fondamentaux de la mécanique classique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_newton.html">
-     Lois de Newton et conséquences
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_tmc.html">
-     Théorème du moment cinétique
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_meth.html">
-     Activités méthodes: Applications des théorèmes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_ex_app.html">
-     Exercices d’application
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_td.html">
-     Travaux dirigés
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="energetique.html">
-   Approche énérgétique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_gene.html">
-     Théorèmes énergétiques
+    <a class="reference internal" href="dynamique_ex.html">
+     S’entrainer
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
     <label for="toctree-checkbox-10">
@@ -324,28 +278,108 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_rappel.html">
-       Energie cinétique: Rappels
+      <a class="reference internal" href="actions_meth.html">
+       Méthodes : Actions
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_travail.html">
-       Travail et puissance des actions mécaniques
+      <a class="reference internal" href="theoremes_meth.html">
+       Méthodes : Applications des théorèmes
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_ep.html">
-       Forces/actions conservatives et énergie potentielle
+      <a class="reference internal" href="theoremes_ex_app.html">
+       Applications
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_theoremes.html">
+      <a class="reference internal" href="theoremes_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_contxt.html">
+     Comprendre le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_gene.html">
        Théorèmes énergétiques
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_travail.html">
+         Travail et puissance des actions mécaniques
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_ep.html">
+         Forces/actions conservatives et énergie potentielle
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_theoremes.html">
+         Théorèmes énergétiques
+        </a>
+       </li>
+      </ul>
      </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_conservatifs.html">
+       Systèmes conservatifs
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_conserv_1d.html">
+         Système à 1 degré de liberté
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_exemples.html">
-       Exemples
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -355,34 +389,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_td.html">
-       Travaux dirigés
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_conservatifs.html">
-     Systèmes conservatifs
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label for="toctree-checkbox-11">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_def.html">
-       Système conservatif: Définition
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_1d.html">
-       Système à 1 degré de liberté
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_td.html">
-       Travaux dirigés
+       Entrainement
       </a>
      </li>
     </ul>
@@ -393,8 +400,8 @@
   <a class="reference internal" href="applications.html">
    Applications
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -403,8 +410,8 @@
     <a class="reference internal" href="oscillateurs.html">
      Oscillateurs
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label for="toctree-checkbox-13">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -431,15 +438,10 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="oscillateurs_td.html">
-       Travaux dirigés: Oscillateurs
+       Entrainement : Oscillateurs
       </a>
      </li>
     </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rotation.html">
-     Solide en rotation autour d’un axe fixe
-    </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="pendules.html">
@@ -452,55 +454,189 @@
   <a class="reference internal" href="centrales.html">
    Mouvement à force centrales
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="centrales_gene.html">
-     Mouvement à force centrales : Généralités
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="centrales_newtoniens.html">
-     Potentiels newtoniens
+    <a class="reference internal" href="centrales_contxt.html">
+     Comprendre le contexte
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_gene.html">
-       Forces newtoniennes: Généralités
+      <a class="reference internal" href="centrales_gene.html">
+       Généralités
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="centrales_newtoniens.html">
+       Potentiels newtoniens
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_mvt.html">
+         Etude du mouvement
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_kepler.html">
+         Mouvement des planètes et lois de Kepler
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_methodes.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_odg.html">
-       Forces newtoniennes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_mvt.html">
-       Etude du mouvement
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_kepler.html">
-       Mouvement des planètes et lois de Kepler
+       Activités : Ordres de grandeur
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_satellites.html">
-       Mouvement des satellites
+       Activités : Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_app.html">
+       Applications
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_td.html">
-       Travaux dirigés: Potentiels newtoniens
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="systeme_pts.html">
+   Systèmes de points matériels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="systeme_cinema.html">
+       Cinématique et cinétique des systèmes de points
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_description.html">
+         Description d’un système de points
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_cinetique.html">
+         Cinétique du solide
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_mouvement.html">
+         Mouvements particuliers
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions_globales.html">
+       Modélisation des actions globales
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_g_typo.html">
+         Types d’actions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_theoremes.html">
+         Théorèmes en mécanique du solide
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+    <label for="toctree-checkbox-26">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_methode.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="rotation.html">
+       Activité : Solide en rotation autour d’un axe fixe
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_td.html">
+       Entrainement
       </a>
      </li>
     </ul>
@@ -596,41 +732,26 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#action-ponctuelle-modelisation-mathematique">
-   Action ponctuelle: Modélisation mathématique
+  <a class="reference internal nav-link" href="#modelisation-mathematique">
+   Modélisation mathématique
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#forces-et-mouvement">
-   Forces et mouvement.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#action-ponctuelle-moment-d-une-action">
-   Action ponctuelle: Moment d’une action
+  <a class="reference internal nav-link" href="#moment-d-une-action">
+   Moment d’une action
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moment-d-une-action-definition">
-     Moment d’une action: définition
+    <a class="reference internal nav-link" href="#definition">
+     Définition
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moment-d-une-force-interpretation">
-     Moment d’une force: Interprétation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#utilisation-du-moment">
-     Utilisation du moment
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#methode-cas-d-un-systeme-de-points">
-     Méthode: Cas d’un système de points.
+    <a class="reference internal nav-link" href="#moment-d-une-force-interpretation-en-ligne">
+     Moment d’une force: Interprétation (en ligne)
     </a>
    </li>
   </ul>
@@ -641,34 +762,48 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#force-de-lorentz">
-     Force de Lorentz
+    <a class="reference internal nav-link" href="#actions-a-distance">
+     Actions à distance
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#force-de-lorentz">
+       Force de Lorentz
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#forces-newtoniennes">
+       Forces newtoniennes
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pesanteur-sur-un-point-materiel">
+       Pesanteur sur un point matériel
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#forces-newtoniennes">
-     Forces newtoniennes
+    <a class="reference internal nav-link" href="#actions-de-contact">
+     Actions de contact
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pesanteur-sur-un-point-materiel">
-     Pesanteur sur un point matériel
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#tension-d-un-fil">
-     Tension d’un fil
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#action-d-un-ressort-force-de-rappel-elastique">
-     Action d’un ressort: Force de rappel élastique
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#methode-determination-de-la-force-de-rappel">
-     Méthode: Détermination de la force de rappel
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tension-d-un-fil">
+       Tension d’un fil
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#action-d-un-ressort-force-de-rappel-elastique">
+       Action d’un ressort: Force de rappel élastique
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#contact-solide-et-contact-fluide">
+       Contact solide et contact fluide
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -683,120 +818,77 @@
         
               <div>
                 
-  <div class="section" id="action-ponctuelle-modelisation-et-typologie">
+  <div class="tex2jax_ignore mathjax_ignore section" id="action-ponctuelle-modelisation-et-typologie">
 <h1>Action ponctuelle: Modélisation et typologie<a class="headerlink" href="#action-ponctuelle-modelisation-et-typologie" title="Permalink to this headline">¶</a></h1>
+<div class="topic">
+<p class="topic-title first">Introduction</p>
 <p>Comme nous l’avons vu, l’action ponctuelle possède une grande importance car une action résultante est définie initialement comme un regroupement d’actions ponctuelles. Nous allons donc voir comment modéliser mathématiquement une action ponctuelle. Nous nous en servirons dans ce chapitre pour décrire des actions usuelles ponctuelles comme les interactions fondamentales (gravitation et électromagnétiques) ainsi que quelques actions dont la modélisation ponctuelle reste valable pour la grande majorité des systèmes d’étude.</p>
 <p>Nous verrons dans le cas où le système est un point matériel comment on peut déterminer certaines caractéristiques des actions inconnues en statique ou prévoir l’évolution qualitative du mouvement en dynamique. Nous introduirons enfin le moment des forces qui aura, comme nous le verrons par la suite un effet sur la rotation du système et donc sur le moment cinétique du système.</p>
-<div class="section" id="action-ponctuelle-modelisation-mathematique">
-<h2>Action ponctuelle: Modélisation mathématique<a class="headerlink" href="#action-ponctuelle-modelisation-mathematique" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="modelisation-mathematique">
+<h2>Modélisation mathématique<a class="headerlink" href="#modelisation-mathematique" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Dans le cas d’un système constitué d’un unique point matériel M, le point d’application est nécessairement le point M (et les actions du milieu extérieur sont toutes nécessairement des actions ponctuelles).</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Modélisation d’une action ponctuelle</strong></p>
+<p><strong>Modélisation d’une action ponctuelle</strong></p>
 <p>Soit une action ponctuelle <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> d’un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span>. On modélise mathématiquement cette action par deux caractéristiques:</p>
 <ul class="simple">
 <li><p>sa force <span class="math notranslate nohighlight">\(\overrightarrow{F}(\mathfrak{A}_{1 \to 2})\)</span> (noté souvent simplement <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>) qui donne la direction et le sens vers laquelle l’action tend à entraîner le système et avec quelle intensité elle tend à entraîner le système.</p></li>
 <li><p>son point d’application.</p></li>
 </ul>
+<p><em>Par principe physique, les caractéristiques d’une action sont indépendante du référentiel considéré.</em></p>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>La force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> donne la direction et le sens vers laquelle l’action tend à entraîner le système mais cela ne veut pas dire que le sytèmeva aller dans sa direction. Son inertie peut lui permettre de continuer dans une autre direction. Il sera simplement dévié (plus ou moins fortement suivant son inertie et l’intensité de la force).</p>
-<p>Exemple: Un objet lancé vers le haut subit l’action de la pesanteur dirigée vers le bas mais il continue à monter (en étant par contre ralenti).</p>
-</div>
-<p>Il est important de noter la présence de <strong>deux</strong> caractéristiques: force ET point d’application car pour les actions globales, il faudra aussi <strong>deux</strong> caractéristiques pour décrire une action globale. Sauf que ce ne sera pas les mêmes.</p>
-<p>Il est néanmoins courant de voir des abus de langage confondant l’action ponctuelle et la force (“Un système subit une force”). C’est abus ne porte pas trop à conséquence, tant qu’on travaille avec des systèmes ponctuels (cf. suite). Il faudra faire attention lorsqu’on travaille avec une action résultante sur un système de points matériels.</p>
-<p><strong>Point d’application et système ponctuel</strong>
-Dans le cas d’un système constitué d’un unique point matériel M, le point d’application est nécessairement le point M (et les actions du milieu extérieur sont toutes nécessairement des actions ponctuelles).</p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<em>Remarque : Indépendance vis-à-vis du référentiel</em><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Par principe physique, les caractéristiques d’une action sont indépendante du référentiel considéré.</p>
-</div>
-</details></div>
-<div class="section" id="forces-et-mouvement">
-<h2>Forces et mouvement.<a class="headerlink" href="#forces-et-mouvement" title="Permalink to this headline">¶</a></h2>
-<p>Déduire le mouvement d’un système mécanique des actions qui s’appliquent sur lui de manière quantitative nécessite les lois fondamentales de la dynamique que nous verrons plus tard. Néanmoins, on peut déjà réaliser quelques études semi qualitatives.</p>
-<p>On va utiliser le fait que <strong>la force modélise la direction et le sens dans laquelle l’acion tend à faire se diriger le système</strong> c’est-à-dire son centre d’inertie.</p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère un point matériel M de masse m se déplaçant sur un plan incliné faisant un angle <span class="math notranslate nohighlight">\(\alpha\)</span> avec l’horizontale. Il est soumis à deux actions: son poids <span class="math notranslate nohighlight">\(\overrightarrow{P}\)</span> d’amplitude <span class="math notranslate nohighlight">\(mg\)</span> dirigé verticalement vers le bas et l’action du plan incliné <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> qu’on suppose perpendiculaire au plan.</p>
-<ol class="simple">
-<li><p>Proposer un système de coordonnées permettant d’étudier le mouvement de M sur le plan (on suppose que M reste sur le plan incliné). Préciser les expressions vectorielles des forces modélisant les deux actions qui s’appliquent sur le point M.</p></li>
-<li><p>Déduire des contraintes imposées l’expression de <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span>.</p></li>
-<li><p>Justifier qualitativement que le point matériel M va glisser le long du plan.</p></li>
-</ol>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
 <blockquote>
-<div><p class="card-text"><strong>1. Paramétrage</strong></p>
-<p class="card-text">On va choisir un système de coordonnées cartésiennes dont l’un des axes (Ox) est suivant le plan incliné.</p>
-</div></blockquote>
-<div class="figure align-center" id="fig-228">
-<img alt="../_images/plan_modelisation.png" src="../_images/plan_modelisation.png" />
-</div>
-<blockquote>
-<div><p class="card-text">Le poids s’écrira donc: <span class="math notranslate nohighlight">\(\overrightarrow{P} = - mg \cos \alpha \overrightarrow{e_y} + mg \sin \alpha \overrightarrow{e_x}\)</span>.</p>
-<p class="card-text">La réaction du support s’écrit: <span class="math notranslate nohighlight">\(\overrightarrow{R} = R_y \overrightarrow{e_y}\)</span>. Nous ici dans un cas où l’on n’a pas d’expression connue des composantes de la force. Par contre, on connaît que <strong>certaines composantes sont nulles</strong>. C’est souvent le cas pour les actions dites “de contact”.</p>
-<p class="card-text"><strong>2. Contrainte cinématique</strong></p>
-<p class="card-text">Ici, le mouvement de M est contraint à reste sur le plan incliné. Il vient une accélération nulle suivant l’axe Oy. Sans quantifier complètement la relation accélération-force, on peut déjà observer que cela implique que la somme des forces suivant l’axe Oy est nulle (il faut que leur action de déviation dans cette direction se compense). Soit: <span class="math notranslate nohighlight">\(R_y = - P_y = mg \cos \alpha\)</span> et donc <span class="math notranslate nohighlight">\(\overrightarrow{R} = mg \cos \alpha \overrightarrow{e_y}\)</span></p>
-<p class="card-text">Remarque: on pourrait faire une construction graphique pour déterminer graphiquement les caractéristiques de <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span>.</p>
-<p class="card-text"><strong>3. Influence sur le mouvement</strong></p>
-<p class="card-text">A nouveau, on sait que la force résultante suivant Ox donne la tendance générale du mouvement. Ici seul le poids possède une composante suivant Ox et elle est positive. Le point M aura donc tendance à être dirigé vers le bas de la pente.</p>
-<p class="card-text">Attention, on rappelle que l’inertie peut permettre au point M de monter dans un premier temps si sa vitesse initiale était vers le haut. Mais va être ralenti et finira par redescendre.</p>
-<p class="card-text"><strong>Modélisation ponctuelle</strong>
-Le système précédente est probablement une modélisation ponctuelle d’un système mécanique plus étendu (un cube, une luge… ). On rappelle qu’une telle modélisation est valable seulement si le système de se déforme pas et ne risque pas de tourner sur lui-même.</p>
+<div><p>Exemple: Un objet lancé vers le haut subit l’action de la pesanteur dirigée vers le bas mais il continue à monter (en étant par contre ralenti).</p>
 </div></blockquote>
 </div>
-</details></div>
-<div class="section" id="action-ponctuelle-moment-d-une-action">
-<h2>Action ponctuelle: Moment d’une action<a class="headerlink" href="#action-ponctuelle-moment-d-une-action" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="moment-d-une-action-definition">
-<h3>Moment d’une action: définition<a class="headerlink" href="#moment-d-une-action-definition" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="moment-d-une-action">
+<h2>Moment d’une action<a class="headerlink" href="#moment-d-une-action" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="definition">
+<h3>Définition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Par abus de langage (quasi systématique), on parle de moment d’une force et non de moment d’une action.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Moment d’une action ponctuelle/d’une force par rapport à un point.</strong></p>
+<p><strong>Moment d’une action ponctuelle/d’une force par rapport à un point.</strong></p>
 <p>Soit une action ponctuelle <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> d’un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> et un point d’application A.</p>
 <p>Soit un point B de l’espace. On définit le moment <span class="math notranslate nohighlight">\(\overrightarrow{M_B}(\overrightarrow{F})\)</span> (ou <span class="math notranslate nohighlight">\(\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})\)</span>) de l’action <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> (ou moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>) par rapport au point B par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c9a93b94-0083-40fb-8d13-1d509b725586">
-<span class="eqno">(29)<a class="headerlink" href="#equation-c9a93b94-0083-40fb-8d13-1d509b725586" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b7d765a8-4c46-48c4-a618-82077b132ecb">
+<span class="eqno">(21)<a class="headerlink" href="#equation-b7d765a8-4c46-48c4-a618-82077b132ecb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{M_B}\left(\overrightarrow{F}\right) = \overrightarrow{BA} \wedge \overrightarrow{F}
 \end{equation}\]</div>
 </div>
-<p>Par abus de langage (quasi systématique), on parle de moment d’une force et non de moment d’une action. Cela ne pose de problème pour des actions ponctuelles car <strong>pour une action ponctuelle</strong>, le moment se déduit de la force (cf. expression précédente). Il faudra néanmoins faire attention à cet abus de langage pour des actions globales (résultantes) car alors <strong>le moment ne se déduit plus de la force</strong>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Moment d’une action ponctuelle/force par rapport à un axe.</strong></p>
+<p><strong>Moment d’une action ponctuelle/force par rapport à un axe.</strong></p>
 <p>Soit une action ponctuelle <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> d’un système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> et un point d’application A.</p>
 <p>Soit un axe <span class="math notranslate nohighlight">\(\Delta\)</span> orienté par un vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}}\)</span>. On définit le moment <span class="math notranslate nohighlight">\(M_{\Delta}(\overrightarrow{F})\)</span> (ou <span class="math notranslate nohighlight">\(M_{\Delta}(\mathfrak{A}_{1 \to 2})\)</span>) de l’action <span class="math notranslate nohighlight">\(\mathfrak{A}_{1 \to 2}\)</span> (ou moment de la force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span>) par rapport à l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-acf67a75-9244-4f6d-82c6-14e6e061a47e">
-<span class="eqno">(30)<a class="headerlink" href="#equation-acf67a75-9244-4f6d-82c6-14e6e061a47e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c043f3b0-58eb-47c9-bf03-281c2444aebe">
+<span class="eqno">(22)<a class="headerlink" href="#equation-c043f3b0-58eb-47c9-bf03-281c2444aebe" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 M_{\Delta}\left(\overrightarrow{F}\right) = \overrightarrow{u_{\Delta}} \cdot \left(\overrightarrow{BA} \wedge \overrightarrow{F}\right)
 \end{equation}\]</div>
 <p>où B est un point de l’axe <span class="math notranslate nohighlight">\(\Delta\)</span>.</p>
 </div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Ne pas confondre moment d’une force et moment cinétique. Ils n’ont même pas la même unité.</p>
 </div>
-<div class="section" id="moment-d-une-force-interpretation">
-<h3>Moment d’une force: Interprétation<a class="headerlink" href="#moment-d-une-force-interpretation" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="moment-d-une-force-interpretation-en-ligne">
+<h3>Moment d’une force: Interprétation (en ligne)<a class="headerlink" href="#moment-d-une-force-interpretation-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Interprétation du moment cinétique par rapport à un axe.</p>
 <blockquote>
-<div><p><strong>Interprétation du moment cinétique par rapport à un axe.</strong>
-Dans toute la suite on travaillera implicitement dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
+<div><p>Dans toute la suite on travaillera implicitement dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
 <p>Pour interprêter le moment cinétique par rapport à un axe orienté <span class="math notranslate nohighlight">\(\Delta\)</span>, on va se placer dans un repère cylindrique d’axe <span class="math notranslate nohighlight">\(\Delta\)</span> centré en un point O de l’axe.</p>
 <p>On considère pour simplifier un point matériel M subissant une action modélisée par une force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> (appliquée donc au point M). On note l’expression de <span class="math notranslate nohighlight">\(\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}\)</span>.</p>
 <p>On peut donc calculer le moment de la force (!) <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> sur <span class="math notranslate nohighlight">\(\Delta\)</span> (Le pointA est le point d’application de l’action):</p>
@@ -822,200 +914,67 @@ A l’inverse, si <span class="math notranslate nohighlight">\(F_{\theta} &lt; 0
 <li><p>On remarquera que le moment de l’action est aussi plus important quand r est grand. Si l’on fait le parallèle avec la force, on comprend que plus le moment est grand, plus il sera capable de modifier la rotation du système autour de l’axe considéré. Or on observe expérimentalement que plus l’action est loin de l’axe de rotation, plus elle a d’effet sur le système (principe du bras de levier utilisé par Archimède), il est donc normal que le moment de la force soit proportionnel à la distance r à l’axe.</p></li>
 </ul>
 </div></blockquote>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Interprétation</strong></p>
+<p>On retiendra que le moment d’une action sur un axe <span class="math notranslate nohighlight">\(\Delta\)</span> donne la <strong>tendance</strong> qu’à cette action à faire tourner le système autour de l’axe. Il donne par son signe le sens dans lequel cette tendance se fait.</p>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Il s’agit d’une tendance pour l’action considéré et cela ne donne d’information que sur la tendanceà faire tourner le système autour d’un axe donné. Mais cela ne veut pas dire que le système est en rotation autour de l’axe (bien que très on souvent on utilise les calculs de moments pour des systèmes en rotation, la définition du moment est valable quelque soit le mouvement), il peut même être immobile (les considérations sur les moments sont très important en statique des systèmes de points).</p>
-<p>Comme pour la force, le moment donne une tendance qui sera réalisée ou non suivant l’existance d’autres actions et suivant l’inertie et le mouvement initial du système.</p>
-</div>
-<p><strong>Généralisation</strong>
-Si le calcul (et la définition !) du moment diffère pour des systèmes de points et des actions résultantes, l’interprétation physique du moment d’une action sur un axe restera identique. Le moment d’une action sur un axe donnera toujours l’information sur la tendance que possède cette action à faire tourner le système autour de l’axe considéré.</p>
-<p>Le moment d’une action par rapport à un point B, à l’image du moment cinétique, donne l’information sur la rotation autour du point. Ses projections dans différentes directions de l’espace donne les effets sur les rotations dans chaque direction considérée.</p>
-</div>
-<div class="section" id="utilisation-du-moment">
-<h3>Utilisation du moment<a class="headerlink" href="#utilisation-du-moment" title="Permalink to this headline">¶</a></h3>
-<p>Nous allons voir comment calculer un moment d’une action/d’une force puis comment l’utiliser de manière qualitative.</p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>Dans tout le problème, on travaille dans le référentiel terrestre <span class="math notranslate nohighlight">\(\mathfrak{R}_T\)</span>.</p>
-<p>On considère une petite masse m assimilable à un point matériel M accrochée à une tige rigide de longueur l sans masse dont l’autre extrémité est relié à un point fixe O. On considère que la tige ne se déforme pas et qu’elle exerce une action ponctuelle sur la masse dont la force est dirigé le long de la tige. L’ensemble est placé dans un champ de pesanteur <span class="math notranslate nohighlight">\(\overrightarrow{g}\)</span> de sorte que le point M.</p>
-<p>On supposera que le mouvement de M reste dans un plan vertical contenant le point O.</p>
-<ol class="simple">
-<li><p>Proposer un paramétrage adapté à l’étude du mouvement du point M puis déterminer dans ce système de coordonnées les vecteurs position, vitesse et accélération ainsi que le moment cinétique calculé par rapport au point O.</p></li>
-<li><p>Faire un bilan des actions appliquées sur le point M et donner l’expression vectorielle des forces associées. (Remarque: pour un point matériel, on parle aussi de bilan des forces).</p></li>
-<li><p>Calculer le moment de chaque action/force par rapport au point O et commenter leurs expressions. En déduire qualitativement l’évolution du mouvement du point M (on distinguera deux types de mouvement possibles).</p></li>
-<li><p>Peut-on déterminer pour l’instant l’expression de la force exercée par la tige sur le point M ? Pourquoi ?</p></li>
-</ol>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<blockquote>
-<div><p class="card-text"><strong>1. Paramétrage</strong></p>
-<p class="card-text">Le point M se déplace dans un plan à une distance constante du point O, sa trajectoire est donc portée par un cercle de centre O et de rayon l. On va donc travailler dans un système de coordonnées cylindriques d’axe Oz perpendiculaire au cercle trajectoire. On a pris l’origine des angles sur la verticale descendante.</p>
-</div></blockquote>
-<div class="figure align-center" id="fig-229">
-<img alt="../_images/pendule_param.png" src="../_images/pendule_param.png" />
-</div>
-<blockquote>
-<div><p class="card-text">On peut alors écrire:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\overrightarrow{OM} &amp;= l \overrightarrow{e_r}\\
-\overrightarrow{v_{M/\mathfrak{R}_T}} &amp;= l \dot \theta \overrightarrow{e_{\theta}}\\
-\overrightarrow{a_{M/\mathfrak{R}_T}} &amp;= - l \dot \theta^2 \overrightarrow{e_r} + l \ddot \theta \overrightarrow{e_{\theta}}\\
-\overrightarrow{L_{O/\mathfrak{R}_T}}(M) &amp;= m l^2 \dot \theta \overrightarrow{e_z}\\
-\end{align*}\]</div>
-<p class="card-text">Il est vivement conseillé de s’entraîner à retrouver les expressions précédentes.</p>
-<p class="card-text"><strong>2. Bilan des forces</strong></p>
-<p class="card-text">On est dans un champ de pesanteur, donc le poids s’applique sur le point M. Son expression est <span class="math notranslate nohighlight">\(\overrightarrow{P} = mg \overrightarrow{e_x} = mg \cos \theta \overrightarrow{e_r} - mg \sin \theta \overrightarrow{e_{\theta}}\)</span>.</p>
-<p class="card-text">De plus, la tige exerce une action supposée ponctuelle dont l’expression est <span class="math notranslate nohighlight">\(\overrightarrow{T} = T \overrightarrow{e_r}\)</span>. Comme dans l’exemple du plan incliné, on ne connaît pas l’expression de T mais on sait que l’action est dirigée suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>. Ici T est de signe quelconque puisque la tige peut tirer ou pousser le point M. Si ça avait été un fil T aurait forcément été négatif (un fil ne peut pousser).</p>
-<p class="card-text"><strong>3. Calcul des moments des actions</strong></p>
-<p class="card-text">Avec les expressions précédentes, il vient:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\overrightarrow{M_{O}(\mathfrak{A(poids)})} &amp;= \overrightarrow{OM} \wedge \overrightarrow{P}\\
-&amp;= l \overrightarrow{e_r} \wedge \left(mg \cos \theta \overrightarrow{e_r} - mg \overrightarrow{e_{\theta}}\right)\\
-&amp;= -mgl \sin \theta \overrightarrow{e_z}\\
-\overrightarrow{M_{O}(\mathfrak{A(tige)})} &amp;= \overrightarrow{OM} \wedge \overrightarrow{T}\\
-&amp;= l \overrightarrow{e_r} \wedge \left(T \overrightarrow{e_r}\right)\\
-&amp;= 0
-\end{align*}\]</div>
-<p class="card-text">On remarque que le moment de la tige <strong>au point O</strong> est nul. C’est logique car la force exercée par l’action <strong>ponctuelle</strong> exercée par la tige est dirigée vers le point O de sorte qu’elle n’a aucun effet sur la rotation de M autour de O. D’un point de vue mathématique pour faire le calcul du moment, on pourra directement remarquer que la force est dirigée vers O, donc le produit vectoriel est nul.</p>
-<p class="card-text">Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span>). On peut remarquer que le poids tend à ramener le point M vers <span class="math notranslate nohighlight">\(\theta = 0\)</span> (point le plus bas) de sorte que le moment du poids doit être négatif quand <span class="math notranslate nohighlight">\(\theta &gt; 0\)</span> et positif quand <span class="math notranslate nohighlight">\(\theta &lt; 0\)</span>. C’est ce qu’on trouve.</p>
-<p class="card-text"><strong>4. Force et accélération</strong></p>
-<p class="card-text">On ne peut pas déterminer pour l’instant l’expression de T comme on l’a fait précédemment pour la réaction d’un support. En effet, il n’y a pas de mouvement radiale (suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>) mais c’est un mouvement <strong>courbe</strong>. Le mouvement est donc <strong>dévié</strong> dans la direction <span class="math notranslate nohighlight">\(- \overrightarrow{e_r}\)</span> à chaque instant (son accélération suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est non nulle et négative).</p>
-<p class="card-text">Il vient que la somme des forces suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> <strong>ne doit pas être nulle</strong> ce qui nous empêche de déterminer complètement l’expression de T. Grâce au principe fondamentale de la dynamique, on pourra obtenir une expression faisant intervenir l’accélération. Quant au calcul de cette dernière, nous évoquerons le cas de ce système plus tard.</p>
-</div></blockquote>
-</div>
-</details></div>
-<div class="section" id="methode-cas-d-un-systeme-de-points">
-<h3>Méthode: Cas d’un système de points.<a class="headerlink" href="#methode-cas-d-un-systeme-de-points" title="Permalink to this headline">¶</a></h3>
-<p>Cet exercice présente trois points importants: la capacité à paramétrer correctement un problème, le calcul d’un moment d’une force et l’analyse physique d’un système en rotation par étude des moments. Nous en profiterons pour aborder qualitativement deux notions importantes: la notion d’équilibre et la notion de stabilité.</p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère un cube de côté a et de répartition de masse homogène fixé sur un axe passant par le centre du cube et perpendiculaire à deux des faces du cube. Le cube ne peut ainsi que tourner autour de cet axe supposé fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. Tous les éléments cinématiques et cinétiques devront être établis dans ce référentiel qu’on supposera galiléen. A ce stade, cela signifiera que l’intuition physique sur l’effet d’une action sur le solide est celle que nous pouvons avoir habituellement.</p>
-<div class="figure align-center" id="fig-230">
-<img alt="../_images/moment_cube.png" src="../_images/moment_cube.png" />
-</div>
-<p>On attache un fil tendu à un coin du cube noté A. On considère que la liaison entre le cube et le fil se résume à un seul point de sorte qu’on puisse considérer l’action du ressort sur le cube comme ponctuelle. La force appliqué par le fil sur le cube est toujours horizontale et de norme <span class="math notranslate nohighlight">\(F_0\)</span>.</p>
-<ol class="simple">
-<li><p>Paramétrer le problème (proposer un système de coordonnées et des paramètres utiles au problème) pour pouvoir étudier la rotation du cube autour de son axe. Proposer alors une expression du moment cinétique du cube sur l’axe de rotation,de son énergie cinétique et de sa quantité de mouvement. On notera J le moment d’inertie du cube sur l’axe de rotation et M sa masse totale.</p></li>
-<li><p>Exprimer le moment de la force exercé par le ressort sur le cube exprimé au centre du cube. Commenter suivant les valeurs des paramètres introduits la tendance qu’aura cette force à agir sur la rotation du cube.</p></li>
-<li><p>On admet que la seule action dont le moment sur l’axe de rotation est non nul est la tension du fil étudié précédemment. Quelles sont les positions d’équilibre du système ? Si l’on écarte légèrement le cube de chacune de ces positions, aura-t-il tendance a revenir à la position d’équilibre ? (On parle de stabilité des positions d’équilibre).</p></li>
-<li><p>On néglige l’action de la pesanteur. Quelle autre action s’exerce sur le cube ? En raisonnant sur les moments de manière analogique au raisonnement qu’on pourrait avoir sur des forces, justifier que le moment de cette action sur un axe vertical passant par O est nécessairement non nul.</p></li>
-</ol>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<blockquote>
-<div><p class="card-text"><strong>1. Paramétrage</strong></p>
-<p class="card-text">Pour étudier un système en rotation autour d’un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d’axe Oz l’axe de rotation. On a représenté ci dessous le système. On repère l’angle <span class="math notranslate nohighlight">\(\theta\)</span> permettant de repérer l’orientation du cube par l’angle <span class="math notranslate nohighlight">\((\overrightarrow{e_x},\overrightarrow{OA})\)</span> de manière à pouvoir utiliser cet angle pour les calculs de moments.</p>
-</div></blockquote>
-<div class="figure align-center" id="fig-231">
-<img alt="../_images/moment_cube_2.png" src="../_images/moment_cube_2.png" />
-</div>
-<blockquote>
-<div><p class="card-text">On peut alors écrire les éléments cinétiques du cube:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-L_{Oz}(cube) &amp;= J \dot \theta \\
-E_{c,cube} &amp;= \frac{1}{2} J \dot \theta^2\\
-\overrightarrow{P_{cube/\mathfrak{R}}} = M \overrightarrow{v_{G}} = \overrightarrow{0}
-\end{align*}\]</div>
-<p class="card-text"><strong>Le cube étant de masse répartie de manière homogène, le centre d’inertie est situé au point O, centre du cube</strong>. Fixé sur l’axe Oz, le centre d’inertie est donc immobile, d’où la quantité de mouvement nulle.</p>
-<p class="card-text">Les deux autres expressions sont les expressions déjà données <strong>dans le cas d’un solide en rotation autour d’un axe fixe</strong>.</p>
-<p class="card-text"><strong>2. Calcul de moment de l’action/la force</strong></p>
-<p class="card-text">L’action du fil sur le cube est une action ponctuelle dont la force s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F} = F_0 \overrightarrow{e_x}\)</span> et dont le point d’application est A. Le moment de l’action du fil sur le cube calculé sur l’axe Oz s’écrit (O est un point de l’axe…  Oz):</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wedge \overrightarrow{F}\right)\\
-&amp;= \overrightarrow{e_z} \cdot \left(\left(\frac{a}{\sqrt{2}} \overrightarrow{e_r} + \frac{a}{2} \overrightarrow{e_z}\right) \wedge F_0 \overrightarrow{e_x}\right)\\
-&amp;= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} F_0 \sin \theta  \overrightarrow{e_z} \right)\\
-&amp;= - \frac{a}{\sqrt{2}} F_0 \sin \theta \\
-\end{align*}\]</div>
-<p class="card-text"><strong>3. Analyse du moment</strong></p>
-<p class="card-text">On remarque que si <span class="math notranslate nohighlight">\(\theta\)</span> est positif, le moment de l’action est négatif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> décroissants. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, le moment de l’action est positif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants. C’est cohérent avec le schéma représenté ci-dessous.</p>
-</div></blockquote>
-<div class="figure align-center" id="fig-232">
-<img alt="../_images/moment_cube_signe.png" src="../_images/moment_cube_signe.png" />
-</div>
-<blockquote>
-<div><p class="card-text"><strong>3. Positions d’équilibre et stabilité</strong></p>
-<p class="card-text">Seule les actions possédant un moment non nul sur l’axe Oz peuvent agir sur la rotation du cube autour de Oz. Si seul l’action du fil possède un effet, alors les angles pour lesquels ce moment est nul seront les positions d’équilibre (on peut faire le parallèle avec la translation d’un système: les positions d’équilibre sont les points la résultante des forces est nul). L’expression précédente montre que les deux positions correspondent aux angles <span class="math notranslate nohighlight">\(\theta = 0\)</span> et <span class="math notranslate nohighlight">\(\theta = \pi\)</span>. On a représenté les positions d’équilibre ci-dessous.</p>
-</div></blockquote>
-<div class="figure align-center" id="fig-233">
-<img alt="../_images/moment_cube_equilibre.png" src="../_images/moment_cube_equilibre.png" />
-</div>
-<blockquote>
-<div><p class="card-text">On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma du signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma du signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
-<p class="card-text">A l’inverse si l’on écarte le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = \pi\)</span>, on remarque qu’il va s’éloigner de cette position. En effet, pour <span class="math notranslate nohighlight">\(\theta &lt; \pi\)</span>, le moment est négatif et l’angle va encore décroître. Et pour <span class="math notranslate nohighlight">\(\theta &gt; + pi\)</span>, le moment est positif et l’angle va croître. Dans les deux cas, on s’éloigne de la position d’équilibre: la position est dite <strong>instable</strong>.</p>
-<p class="card-text">On pourra faire le parallèle avec le sommet d’une bosse et le creux d’un trou pour une bille. Les deux sont des positions d’équilibre mais la première est instable alors que la seconde est stable. Dans ce cas, c’est un raisonnement sur la force résultante (pesanteur + réaction du sol) là on raisonne ici sur le moment.</p>
-<p class="card-text"><strong>4. Détermination (qualitative) d’un moment en statique</strong></p>
-<p class="card-text">Le cube tourne d’une axe fixe. L’axe est en contact avec le cube et exerce une action (de contact) sur le cube. C’est la somme des deux actions (fil sur cube et axe sur cube) qui permet d’étudier le mouvement du cube. On remarquera que l’action de contact se fait en de nombreux points (à la surface de contact), il s’agit donc d’une <strong>action résultante</strong>.</p>
-<p class="card-text">Nous n’avons pas appris à calculer le moment d’une telle action mais si l’on considère que les moments ont un effet sur la rotation et que c’est le moment résultant de la somme de toutes les actions sur le cube qui détermine le mouvement du cube (par analogie avec l’effet des forces sur la translation du cube), on peut raisonner qualitativement.</p>
-<p class="card-text">Ici le cube ne peut tourner que suivant l’axe Oz. Cela signifie que la rotation suivant l’axe Oy est bloquée. Donc le moment résultant suivant l’axe Oy de toute les actions sur le cube devraient être nul (comme l’immobilité de translation suivant un axe Ox correspondrait à une somme des forces nulles suivant Ox). Or le moment de l’action du fil sur le cube sur Oy est non nul, il vaut: <span class="math notranslate nohighlight">\(\frac{aF_0}{2}\)</span> (cf. le calcul précédent du moment). Il vient, pour que la somme des moments des moments soit nul que le moment de l’action de l’axe sur le cube doit être non nul suivant l’axe Oy.</p>
-<p class="card-text">Il est important de pouvoir comprendre le raisonnement précédent de manière qualitative. On a représenté ci-dessous un vue de “dessus” (suivant Oy). On observe que si l’on permettait au cube de tourner autour de Oy (au lieu de Oz), on remarque graphiquement que la tension du fil ferait effectivement tourner le cube autour de Oy. Il faut donc une action contraire qui s’oppose à cette rotation: l’axe de rotation doit donc exercer une action de moment contraire (donc non nul) suivant Oy.</p>
-</div></blockquote>
-<div class="figure align-center" id="fig-234">
-<img alt="../_images/moment_cube_dessus.png" src="../_images/moment_cube_dessus.png" />
+<ul class="simple">
+<li><p>Il s’agit d’une <strong>tendance</strong> pour l’action considéré. (notion d’inertie)</p></li>
+<li><p>Cela ne veut pas dire que le système est en rotation autour de l’axe, il peut même être immobile (les considérations sur les moments sont très important en statique des systèmes de points).</p>
+<ul>
+<li><p>Comme pour la force, le moment donne une tendance qui sera réalisée ou non suivant l’existence d’autres actions et suivant l’inertie et le mouvement initial du système.</p></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
-</details></div>
 </div>
 <div class="section" id="actions-ponctuelles-usuelles">
 <h2>Actions ponctuelles usuelles<a class="headerlink" href="#actions-ponctuelles-usuelles" title="Permalink to this headline">¶</a></h2>
-<p>Nous allons présenter ici les actions usuelles dont les caractéristiques des forces doivent être connues.</p>
-<p>Il s’agit pour la plupart d’action ponctuelle s’exerçant sur des points matériels, il ne sera donc en général pas précisé le point d’application parce qu’il est alors évident.</p>
-<p>On distingue les interactions à distance et les interactions de contact. Les premières regroupent des interactions fondamentales (gravitation et électromagnétisme) et des dérivées (pesanteur). Les secondes, représentent des actions résultant de multiples actions (principalement électrostatiques) à l’échelle microscopique. On parle aussi d’actions surfaciques puisque les actions microscopiques se font en surface. Il s’agit donc d’action globales mais dans certains cas, on peut les assimiler à des actions ponctuelles: quand le contact se fait sur une surface très petite (qu’on peut considérer à un point) ou quand on assimile le système à un point matériel.</p>
+<p><em>Nous allons présenter ici les actions usuelles dont les caractéristiques des forces doivent être connues. Il s’agit pour la plupart d’action ponctuelle s’exerçant sur des points matériels, il ne sera donc en général pas précisé le point d’application parce qu’il est alors évident.</em></p>
+<p>On distingue les interactions à distance et les interactions de contact.</p>
+<ul class="simple">
+<li><p>Les premières regroupent des interactions fondamentales (gravitation et électromagnétisme) et des dérivées (pesanteur).</p></li>
+<li><p>Les secondes, représentent des actions résultant de multiples actions (principalement électrostatiques) à l’échelle microscopique. On parle aussi d’actions surfaciques puisque les actions microscopiques se font en surface. <em>Il s’agit donc d’action globales mais dans certains cas, on peut les assimiler à des actions ponctuelles: quand le contact se fait sur une surface très petite (qu’on peut considérer à un point) ou quand on assimile le système à un point matériel.</em></p></li>
+</ul>
+<div class="section" id="actions-a-distance">
+<h3>Actions à distance<a class="headerlink" href="#actions-a-distance" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="force-de-lorentz">
-<h3>Force de Lorentz<a class="headerlink" href="#force-de-lorentz" title="Permalink to this headline">¶</a></h3>
-<p><strong>Champ électromagnétique</strong>
-Initialement, les champs électriques <span class="math notranslate nohighlight">\(\overrightarrow{E}\)</span> et magnétiques <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> sont la conséquence de la présence de charges (pour le champ électrique) en mouvement (pour le champ magnétique) et vont agir sur d’autres particules chargées. On peut les voir comme des intermédiaires de calcul dont l’interaction électromagnétique entre deux systèmes chargées: on s’intéresse d’un côté aux charges qui crée le champ puis on s’intéresse à l’action du champ sur les particules dont on veut étudier le mouvement.</p>
+<h4>Force de Lorentz<a class="headerlink" href="#force-de-lorentz" title="Permalink to this headline">¶</a></h4>
+<div class="topic">
+<p class="topic-title first">Champ électromagnétique</p>
+<p>Initialement, les champs électriques <span class="math notranslate nohighlight">\(\overrightarrow{E}\)</span> et magnétiques <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> sont la conséquence de la présence de charges (pour le champ électrique) en mouvement (pour le champ magnétique) et vont agir sur d’autres particules chargées. On peut les voir comme des intermédiaires de calcul dont l’interaction électromagnétique entre deux systèmes chargées: on s’intéresse d’un côté aux charges qui crée le champ puis on s’intéresse à l’action du champ sur les particules dont on veut étudier le mouvement.</p>
 <p>On peut donc “oublier” les éléments qui causent l’existence des champs électromagnétiques en posant leur existence et s’intéresser uniquement à leur action sur des particules chargés. Quand on continue en physique, on peut observer que les champs électromagnétiques ne sont pas que des “intermédiaires de calcul” mais possède leur réalité propre et leurs caractéristiques propres qui permet de les étudier indépendamment du reste (cf. deuxième année). On va ici simplement s’intéresser à l’action ponctuelle d’un champ électromagnétique sur une particule chargée (donc ponctuelle).</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Force de Lorentz</strong></p>
+<p><strong>Force de Lorentz</strong></p>
 <p>Soit un point matériel M chargé de charge q et un champ électromagnétique donc les expressions vectorielles au point M sont <span class="math notranslate nohighlight">\(\overrightarrow{E}(M)\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span>. Alors le champ électromagnétique exerce une action dont la force, appelée force de Lorentz s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-228412f1-9a8d-4777-90fa-450e4c30f215">
-<span class="eqno">(31)<a class="headerlink" href="#equation-228412f1-9a8d-4777-90fa-450e4c30f215" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a5bbae55-1a1b-43b8-93c1-3b977239ceb8">
+<span class="eqno">(23)<a class="headerlink" href="#equation-a5bbae55-1a1b-43b8-93c1-3b977239ceb8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F}_{Lorentz} = q \left(\overrightarrow{E}(M) + \overrightarrow{v_{M/\mathfrak{R}}} \wedge \overrightarrow{B}(M)\right)
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{v_{M/\mathfrak{R}}}\)</span> est la vitesse du point M dans le référentiel d’étude.</p>
 </div>
-<p><strong>Dépendance vis à vis du référentiel</strong>
-Normalement, une action ne peut dépendre du référentiel d’étude. Or ici, la partie magnétique de la force de Lorentz dépend explicitement du référentiel. C’est un problème qui ne peut être résolu que par l’introduction de la mécanique relativiste (hors programme). Néanmoins, on peut raisonner sur la partie magnétique tant qu’on reste dans un même référentiel (galiléen) en restant dans le cadre de la mécanique classique. C’est dans ce cadre qu’on raisonnera en classe préparatoire.</p>
 </div>
 <div class="section" id="forces-newtoniennes">
-<h3>Forces newtoniennes<a class="headerlink" href="#forces-newtoniennes" title="Permalink to this headline">¶</a></h3>
-<p><strong>Forces newtoniennes</strong>
-Les forces dites newtoniennes sont des interactions dont la force décroît en <span class="math notranslate nohighlight">\(\frac{1}{r^2}\)</span> où r est la distance entre les deux points matériels en interaction. On distingue deux interactions newtoniennes: les interactions coulombiennes entre deux particules chargées (elles correspondent à un cas particulier de la force de Lorentz) et les interactions gravitationnelles entre deux particules massiques.</p>
+<h4>Forces newtoniennes<a class="headerlink" href="#forces-newtoniennes" title="Permalink to this headline">¶</a></h4>
+<div class="topic">
+<p class="topic-title first">Forces newtoniennes</p>
+<p>Les forces dites newtoniennes sont des interactions dont la force décroît en <span class="math notranslate nohighlight">\(\frac{1}{r^2}\)</span> où r est la distance entre les deux points matériels en interaction. On distingue deux interactions newtoniennes: les interactions coulombiennes entre deux particules chargées (elles correspondent à un cas particulier de la force de Lorentz) et les interactions gravitationnelles entre deux particules massiques.</p>
 <p>Il s’agit de deux des 4 interactions fondamentales (les deux autres, l’interaction forte et l’interaction faible n’ont pas d’effet significatifs dans le cadre de la mécanique classique, elles ont un rôle à l’échelle du noyau).</p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On remarquera que l’interaction gavitationnelle est toujours attractive.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Interactions gravitationnelles</strong></p>
+<p><strong>Interactions gravitationnelles</strong></p>
 <p>Soit deux points matériels <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span> de masses respectives <span class="math notranslate nohighlight">\(m_1\)</span> et <span class="math notranslate nohighlight">\(m_2\)</span>. Les deux masses sont en interaction dites gravitationnelles. L’action de <span class="math notranslate nohighlight">\(M_1\)</span> sur <span class="math notranslate nohighlight">\(M_2\)</span> est modélisée par une force dirigée de <span class="math notranslate nohighlight">\(M_2\)</span> vers <span class="math notranslate nohighlight">\(M_1\)</span> dont l’expression est:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1025,22 +984,27 @@ Les forces dites newtoniennes sont des interactions dont la force décroît en <
 <p>où G est la constante de gravitation universelle dont l’expression est <span class="math notranslate nohighlight">\(G = 6.67 \times 10^{-11} \rm{m^{3}.kg^{-1}.s^{-2}}\)</span>.</p>
 <p>Dans la seconde expression, r est la distance <span class="math notranslate nohighlight">\(M_1 M_2\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{u_{1 \to 2}}\)</span> est le vecteur unitaire porté par la droite orientée de <span class="math notranslate nohighlight">\(M_1\)</span> vers <span class="math notranslate nohighlight">\(M_2\)</span>.</p>
 </div>
-<p>On remarquera que l’interaction gavitationnelle est toujours attractive.</p>
-<p>L’action de <span class="math notranslate nohighlight">\(M_2\)</span> sur <span class="math notranslate nohighlight">\(M_1\)</span> est l’opposé (principe des actions réciproques).</p>
+<div class="sidebar">
+<p class="sidebar-title">Intérêt</p>
+<p>Le champ de gravitation permet de séparer la cause (présence d’une masse) de la conséquence (action sur une autre masse). Cela devient très utile quand on travaille avec non plus des points mais des <strong>systèmes de points matériels</strong> qui créent le champ de gravitation. Ce dernier étant la somme (possiblement continue = intégrale !) des champ de gravitation créé par chaque points du système, on peut séparément calculer le champ de gravitation puis dans un second temps calculer l’action sur un système (un point - action ponctuelle ou un système de points - action résultante de l’ensemble des action gravitationnelle sur chaque point du système).</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Champ de gravitation</strong></p>
+<p><strong>Champ de gravitation</strong></p>
 <p>Soit un point <span class="math notranslate nohighlight">\(M_1\)</span> de masse <span class="math notranslate nohighlight">\(m_1\)</span>. On dit que le point <span class="math notranslate nohighlight">\(M_1\)</span> créé dans tout point P de l’espace un <strong>champ de gravitation</strong> <span class="math notranslate nohighlight">\(\overrightarrow{\mathfrak{G}_{M_1}}(P)\)</span> dont l’expression est:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \overrightarrow{\mathfrak{G}_{M_1}}(P) &amp;= - G m_1 \frac{\overrightarrow{M_1 P}}{M_1 P^3}
 \end{align*}\]</div>
 <p>Si l’on place en un point P un point matériel <span class="math notranslate nohighlight">\(M_2\)</span> de masse <span class="math notranslate nohighlight">\(m_2\)</span>, alors le point <span class="math notranslate nohighlight">\(M_2\)</span> subira une action gravitationnelle de la part de <span class="math notranslate nohighlight">\(M_1\)</span>: <span class="math notranslate nohighlight">\(\overrightarrow{F_{grav,1 \to 2}} = m_2 \overrightarrow{\mathfrak{G}_{M_1}}(P = M_2)\)</span>.</p>
-<p>Le champ de gravitation permet de séparer la cause (présence d’une masse) de la conséquence (action sur une autre masse). Cela devient très utile quand on travaille avec non plus des points mais des <strong>systèmes de points matériels</strong> qui créent le champ de gravitation. Ce dernier étant la somme (possiblement continue = intégrale !) des champ de gravitation créé par chaque points du système, on peut séparément calculer le champ de gravitation puis dans un second temps calculer l’action sur un système (un point - action ponctuelle ou un système de points - action résultante de l’ensemble des action gravitationnelle sur chaque point du système).</p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On remarquera que l’interaction coulombienne peut être attractive si les charges sont opposées et répulsive si les charges sont de même signe.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Interactions coulombiennes (ou électrostatiques)</strong></p>
+<p><strong>Interactions coulombiennes (ou électrostatiques)</strong></p>
 <p>Soit deux points matériels <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span> chargés de charges respectives <span class="math notranslate nohighlight">\(q_1\)</span> et <span class="math notranslate nohighlight">\(q_2\)</span>. Les deux charges sont en interaction dites coulombiennes. L’action de <span class="math notranslate nohighlight">\(M_1\)</span> sur <span class="math notranslate nohighlight">\(M_2\)</span> est modélisée par une force portée par la droite <span class="math notranslate nohighlight">\(M_1 M_2\)</span> dont l’expression est:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1050,143 +1014,151 @@ Les forces dites newtoniennes sont des interactions dont la force décroît en <
 <p>où <span class="math notranslate nohighlight">\(\epsilon_0\)</span> est la <strong>permittivité électrique du vide</strong> dont l’expression est <span class="math notranslate nohighlight">\(\epsilon_0 = 8.85 \times 10^{-12} \rm{s^{4}.A^{2}.kg^{-1}.m^{-3}}\)</span> soit <span class="math notranslate nohighlight">\(\frac{1}{4 \pi \epsilon_0} = 8.99 10^{9} S.I.\)</span>.</p>
 <p>Dans la seconde expression, r est la distance <span class="math notranslate nohighlight">\(M_1 M_2\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{u_{1 \to 2}}\)</span> est le vecteur unitaire porté par la droite orientée de <span class="math notranslate nohighlight">\(M_1\)</span> vers <span class="math notranslate nohighlight">\(M_2\)</span>.</p>
 </div>
-<p>On remarquera que l’interaction coulombienne peut être attractive si les charges sont opposées et répulsive si les charges sont de même signe.</p>
-<p>L’action de <span class="math notranslate nohighlight">\(M_2\)</span> sur <span class="math notranslate nohighlight">\(M_1\)</span> est l’opposé (principe des actions réciproques).</p>
+<div class="sidebar">
+<p class="sidebar-title">Intérêt</p>
+<p>Le champ électrique permet, comme le champ de gravitation, de séparer la cause (présence d’une charge) de la conséquence (action sur une autre charge). Cela devient très utile quand on travaille avec non plus des points mais des <strong>systèmes de points matériels chargés</strong> qui créent le champ électrique. Ce dernier étant la somme (possiblement continue = intégrale !) des champs électrique créé par chaque points du système, on peut séparément calculer le champ électrique puis dans un second temps calculer l’action sur un système (un point - action ponctuelle ou un système de points - action résultante de l’ensemble des action gravitationnelle sur chaque point du système).</p>
+<p>Comme cela a été évoqué dans précédemment, les champs (et notamment le champ électrique) peut être étudié pour lui-même sans tenir compte de la cause de ce champ électrique. C’est le cas des ondes électromagnétiques.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Champ électrique</strong></p>
+<p><strong>Champ électrique</strong></p>
 <p>Soit un point <span class="math notranslate nohighlight">\(M_1\)</span> de charge <span class="math notranslate nohighlight">\(q_1\)</span>. On dit que le point <span class="math notranslate nohighlight">\(M_1\)</span> créé dans tout point P de l’espace un <strong>champ électrique</strong> <span class="math notranslate nohighlight">\(\overrightarrow{E_{M_1}}(P)\)</span> dont l’expression est:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \overrightarrow{E_{M_1}}(P) &amp;= - \frac{q_1}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 P}}{M_1 P^3}
 \end{align*}\]</div>
 <p>Si l’on place en un point P un point matériel <span class="math notranslate nohighlight">\(M_2\)</span> de charge <span class="math notranslate nohighlight">\(q_2\)</span>, alors le point <span class="math notranslate nohighlight">\(M_2\)</span> subira une action coulmbienne de la part de <span class="math notranslate nohighlight">\(M_1\)</span>: <span class="math notranslate nohighlight">\(\overrightarrow{F_{grav,1 \to 2}} = q_2 \overrightarrow{E_{M_1}}(P = M_2)\)</span>.</p>
-<p>Le champ électrique permet, comme le champ de gravitation, de séparer la cause (présence d’une charge) de la conséquence (action sur une autre charge). Cela devient très utile quand on travaille avec non plus des points mais des <strong>systèmes de points matériels chargés</strong> qui créent le champ électrique. Ce dernier étant la somme (possiblement continue = intégrale !) des champs électrique créé par chaque points du système, on peut séparément calculer le champ électrique puis dans un second temps calculer l’action sur un système (un point - action ponctuelle ou un système de points - action résultante de l’ensemble des action gravitationnelle sur chaque point du système).</p>
-<p>Comme cela a été évoqué dans précédemment, les champs (et notamment le champ électrique) peut être étudié pour lui-même sans tenir compte de la cause de ce champ électrique. C’est le cas des ondes électromagnétiques.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<em>Remarque : Interaction électrique ou électromagnétique</em><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Le champ électrique présenté précédemment et le même que celui présenté dans la force de Lorentz. Seule son expression va différer suivant que ce champ soit créé par une seule charge (cas évoqué ci-dessus) ou par un ensemble de charge (cas qui sera étudié en deuxième année au moyen des relations fondamentales de l’électromagnétisme). Dans tous les cas, on voit qu’une charge q ponctuelle placée en un point P subira une force électrique <span class="math notranslate nohighlight">\(\overrightarrow{F} = q \overrightarrow{E}\)</span>.</p>
-<p class="card-text">Comme on l’a dit précédemment, si les charges sont en mouvement, elles vont aussi créer un champ magnétique qui va agir sur les autres charges en mouvement. Dans le cas d’une interactions entre deux charges ponctuelles, on peut montrer que la partie magnétique de l’interaction de Lorentz est alors négligeable devant la partie électrique. C’est pourquoi lors de l’interaction entre deux particules chargées, on considère simplement la partie magnétique de la force de Lorentz qui s’exprime comme l’interaction coulombienne.</p>
-</div>
-</details><p><strong>Forces newtoniennes</strong>
-Comme on peut le voir, l’interaction coulombienne et l’interaction gravitationnelle</p>
 </div>
 <div class="section" id="pesanteur-sur-un-point-materiel">
-<h3>Pesanteur sur un point matériel<a class="headerlink" href="#pesanteur-sur-un-point-materiel" title="Permalink to this headline">¶</a></h3>
+<h4>Pesanteur sur un point matériel<a class="headerlink" href="#pesanteur-sur-un-point-materiel" title="Permalink to this headline">¶</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Champ de pesanteur</strong></p>
+<p><strong>Champ de pesanteur</strong></p>
 <p>A la surface de la Terre, tout corps massique est attiré vers “le bas” par une action appelée poids. Pour un point matériel M de masse m, la force qui s’applique s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{P} = m \overrightarrow{g}\)</span> où <span class="math notranslate nohighlight">\(\overrightarrow{g}\)</span> est le champ de pesanteur au point M. Il est dirigé vers “le bas” (en réalité, il permet de définir la verticale (principe du fil à plomb)).</p>
+<div class="margin sidebar">
+<p class="sidebar-title">Gravitation et pesanteur</p>
 <p>Le champ de pesanteur résulte de l’action gravitationnelle de la Terre sur le point M et de l’effet de rotation du référentiel terrestre (rotation de la Terre sur elle-même). Comme c’est l’action gravitationnelle qui prédomine au voisinage de la surface terrestre (cf. deuxième année), on confond souvent la pesanteur à la gravitation.</p>
 </div>
-<p><strong>Caractère uniforme</strong>
-En général, on considère le champ de pesanteur comme uniforme. En effet, si l’on considère la part gravitationnelle qui est prépondérante à la surface, elle a pour intensité <span class="math notranslate nohighlight">\(\frac{GM_T m}{(R_T + h)^2}\)</span> où h est l’altitude et <span class="math notranslate nohighlight">\(R_T\)</span> le rayon terrestre. Une variation de 1% de cette force par rapport au niveau de la mer correspond à une altitude <span class="math notranslate nohighlight">\(h = 9 R_T = 57600 \rm{km}\)</span> ! Pour des systèmes dont la taille est de l’ordre du mètre ne montant pas plus haut qu’une centaine de mètres, on peut largment considérer que le champ de pesanteur est uniforme.</p>
 </div>
+</div>
+</div>
+<div class="section" id="actions-de-contact">
+<h3>Actions de contact<a class="headerlink" href="#actions-de-contact" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="tension-d-un-fil">
-<h3>Tension d’un fil<a class="headerlink" href="#tension-d-un-fil" title="Permalink to this headline">¶</a></h3>
+<h4>Tension d’un fil<a class="headerlink" href="#tension-d-un-fil" title="Permalink to this headline">¶</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Tension d’un fil ou d’une tige rigide.</strong></p>
+<p><strong>Tension d’un fil ou d’une tige rigide.</strong></p>
 <p>La tension d’un fil ou d’une tige rigide est l’action qu’exerce un fil/une tige sur un système accroché au fil/à la tige (c’est une action de contact). Dans le cas d’un fil/une tige fin(e) dont la torsion n’a pas d’influence (ou qui ne se tord pas), on peut assimiler cette action à une action ponctuelle.</p>
 <p>La force exercée par le fil/la tige n’a pas d’expression connue a priori mais on sait que dans le cas d’un fil, elle est alors nécessairement vers le fil et non vers le système accroché (un fil ne peut que tirer le système). Pour une tige, la force peut être dans les deux directions.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Cas d’une fil/d’une tige parfaite</strong></p>
-<p>Un fil/une tige parfaite est un fil/tige sans masse. Dans ce cas la tension exercée en chaque point du fil/tige sur l’autre partie du fil est la même en tout point du fil/tige est égale à la tension exercée à chaque extrémité du fil/tige sur les systèmes accrochée. De plus la tension du fil/tige est alors tangente au fil/tige.</p>
+<p><strong>Cas d’une fil/d’une tige parfaite</strong>
+Un fil/une tige parfaite est un fil/tige sans masse. Dans ce cas la tension exercée en chaque point du fil/tige sur l’autre partie du fil est la même en tout point du fil/tige est égale à la tension exercée à chaque extrémité du fil/tige sur les systèmes accrochée. De plus la tension du fil/tige est alors tangente au fil/tige.</p>
 </div>
-<p><strong>Démonstration</strong>
-La démonstration fait intervenir le principe fondamentale de la dynamique: <span class="math notranslate nohighlight">\(\frac{\rm{d}\overrightarrow{p}}{\rm{dt}} = \sum \overrightarrow{F_{ext \to systeme}}\)</span>. Si l’on considère une portion de fil, les deux actions qui s’appliquent sur la portion de fil sont la tension de partie de fil à gauche et la tension de la partie du fil à droite. Comme le fil est sans masse, la quantité de mouvement est nulle, il vient donc que les deux tensions du fil sont opposées de même intensité. Par symétrie, il vient que les tensions seront tangentes au fil.</p>
+<div class="topic">
+<p class="topic-title first">Démonstration</p>
+<p>La démonstration fait intervenir le principe fondamentale de la dynamique: <span class="math notranslate nohighlight">\(\frac{\rm{d}\overrightarrow{p}}{\rm{dt}} = \sum \overrightarrow{F_{ext \to systeme}}\)</span>. Si l’on considère une portion de fil, les deux actions qui s’appliquent sur la portion de fil sont la tension de partie de fil à gauche et la tension de la partie du fil à droite. Comme le fil est sans masse, la quantité de mouvement est nulle, il vient donc que les deux tensions du fil sont opposées de même intensité. Par symétrie, il vient que les tensions seront tangentes au fil.</p>
 <p>Pour les portions de fils aux extrémités, le même raisonnement conduit à dire que l’action des systèmes accrochés aux extrémités sur le fil sont modélisées par des forces égales entre elles et égales à la tension du fil en chaque point. Par principe des actions réciproques, l’action du fil sur les systèmes accrochés aux extrémités est modélisée par une force d’intensité égale à cette tension.</p>
 </div>
+</div>
 <div class="section" id="action-d-un-ressort-force-de-rappel-elastique">
-<h3>Action d’un ressort: Force de rappel élastique<a class="headerlink" href="#action-d-un-ressort-force-de-rappel-elastique" title="Permalink to this headline">¶</a></h3>
+<h4>Action d’un ressort: Force de rappel élastique<a class="headerlink" href="#action-d-un-ressort-force-de-rappel-elastique" title="Permalink to this headline">¶</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Action d’un ressort</strong></p>
+<p><strong>Action d’un ressort</strong></p>
 <p>Soit un système accroché à un ressort. En général, on considère le point d’accroche comme ponctuel et la force exercée par le ressort à son extrémité sur le système comme tangente au ressort. Si le ressort est de masse négligeable (cas usuel), alors la force exercée par le ressort sur un système accroché à son extrémité s’écrit si sa longueur est l:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-66ab6df8-e352-4be1-a567-444167bfd955">
-<span class="eqno">(32)<a class="headerlink" href="#equation-66ab6df8-e352-4be1-a567-444167bfd955" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-92e07e14-704a-434c-8205-7f0b0178c964">
+<span class="eqno">(24)<a class="headerlink" href="#equation-92e07e14-704a-434c-8205-7f0b0178c964" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F_{ressort\to extremite}} = -k \left(l - l_0\right) \overrightarrow{u_{ext}} = - k \Delta l \overrightarrow{u_{ext}}
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(l_0\)</span> est la longueur à vide du ressort, k sa raideur et <span class="math notranslate nohighlight">\(\overrightarrow{u_{ext}}\)</span> un vecteur unitaire tangent à l’axe de ressort et dirigé vers l’extérieur du ressort.</p>
 <p><span class="math notranslate nohighlight">\(\Delta l = l - l_0\)</span> est appelé allongement du ressort.</p>
 </div>
-<p><strong>Analyse de l’expression</strong>
-On remarquera que la longueur à vide est bien la longueur que possède le ressort au repos <strong>lorsqu’aucune action n’est exercée à ses extrémités</strong> (donc lorsqu’il n’exerce aucune action à ses extrémités.</p>
-<p>La raideur donne une information sur la facilité qu’on peut avoir à tendre ou compresser le ressort: plus la raideur est grande, plus la force nécessaire pour étendre ou compresser le ressort devra être grande.</p>
-<p>On parle de <strong>force de rappel</strong>. En effet, lorsque le ressort est comprimé, l’allongement est négatif et la force est dirigée vers l’extérieur: le ressort essaie de se détendre. Lorsque le ressort est étendu, l’allongement est positif et la force est dirigée vers l’intérieur: le ressort essaie de se contracter. Dans tous les cas, le système accroché tend à être <strong>rappelé</strong> vers la position à vide par le ressort.</p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p><strong>Position au repos et position à vide</strong></p>
+<div class="sidebar">
+<p class="sidebar-title">Position au repos et position à vide</p>
 <p>Il ne faut pas confondre la position au repos et la position à vide. En effet, la longueur du ressort au repos d’un système complet (ressort + système accroché au bout du ressort) n’est pas nécessairement la longueur à vide. On peut penser à un ressort vertical au bout duquel on a attaché une masse. Au repos, la longueur du ressort sera différente de la longueur à vide: le ressort sera étiré ou compressé suivant que la masse soit accrochée au dessus ou au dessous.</p>
 </div>
-<p><strong>Utilisation de cette expression</strong></p>
-<p>Pour pouvoir utiliser cette expression, il faut exprimer les différentes caractéristiques (longueur ou allongement et vecteur unitaire) dans le système de coordonnées choisi.</p>
-<p>Il est important, lorsqu’on a établi l’expression d’une force de rappel d’un ressort <strong>de vérifier sa cohérence</strong>: position de la longueur à vide correcte, force correspondant bien à une force de rappel.</p>
-</div>
-<div class="section" id="methode-determination-de-la-force-de-rappel">
-<h3>Méthode: Détermination de la force de rappel<a class="headerlink" href="#methode-determination-de-la-force-de-rappel" title="Permalink to this headline">¶</a></h3>
-<p>On va présenter ici une méthode permettant de déterminer l’expression de la force de rappel élastique.</p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère deux ressorts horizontaux de raideur identique k et de longueur à vide <span class="math notranslate nohighlight">\(l_0\)</span>. Ils sont attachées comme représentés ci-dessous. Déterminer la force exercée par chaque ressort sur le point matériel M en fonction de la coordonnées x de M.</p>
-<div class="figure align-center" id="fig-235">
-<img alt="../_images/ressort_exo.png" src="../_images/ressort_exo.png" />
+<div class="topic">
+<p class="topic-title first">Analyse de l’expression</p>
+<p>On remarquera que la longueur à vide est bien la longueur que possède le ressort au repos <strong>lorsqu’aucune action n’est exercée à ses extrémités</strong> (donc lorsqu’il n’exerce aucune action à ses extrémités.</p>
+<p>La raideur donne une information sur la facilité qu’on peut avoir à tendre ou compresser le ressort: plus la raideur est grande, plus la force nécessaire pour étendre ou compresser le ressort devra être grande.</p>
+<p>On parle de <strong>force de rappel</strong>. En effet, lorsque le ressort est comprimé, l’allongement est négatif et la force est dirigée vers l’extérieur: le ressort essaie de se détendre. Lorsque le ressort est étendu, l’allongement est positif et la force est dirigée vers l’intérieur: le ressort essaie de se contracter. Dans tous les cas, le système accroché tend à être <strong>rappelé</strong> vers la position à vide par le ressort.</p>
 </div>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Résolution<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<blockquote>
-<div><p class="card-text"><strong>Expression des longueurs</strong></p>
-<p class="card-text">On va exprimer les longueurs (grandeurs positives) de chaque ressort en fonction des coordonnées. On note <span class="math notranslate nohighlight">\(l_1 = AM\)</span> et <span class="math notranslate nohighlight">\(l_2 = MB\)</span> les longueurs des ressorts.</p>
-<p class="card-text">. Il est conseillé d’utiliser des grandeurs algébriques pour déterminer ces longueurs. Ici, il vient:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-l_1 = \overline{AM} = \overline{AO} + \overline{OM} = L + x\\
-l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
-\end{align*}\]</div>
-<p class="card-text">Les allongements sont donc:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\Delta l_1 = l_1 - l_0 = L + x - l_0\\
-\Delta l_2 = l_2 - l_0 = L - x - l_0
-\end{align*}\]</div>
-</div></blockquote>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<em>Remarque : Longueur et allongement</em><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Il peut être préférable dans certains cas de determiner directement l’allongement directement.</p>
+<div class="section" id="contact-solide-et-contact-fluide">
+<h4>Contact solide et contact fluide<a class="headerlink" href="#contact-solide-et-contact-fluide" title="Permalink to this headline">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Composante tangentielle et composante normale</strong></p>
+<p>En un point de contact M entre le système et le solide/fluide (qu’on appellera <span class="math notranslate nohighlight">\(\Sigma_{ext}\)</span>), l’action ponctuelle (modélisée par la force <span class="math notranslate nohighlight">\(\overrightarrow{F}(M)\)</span> peut-être décomposée en deux composantes:</p>
+<ul class="simple">
+<li><p>une composante normale à la surface de contact <span class="math notranslate nohighlight">\(\overrightarrow{F_{\perp}}(M)\)</span></p></li>
+<li><p>une composante tangentielle à la surface de contact <span class="math notranslate nohighlight">\(\overrightarrow{F_{//}}(M)\)</span></p></li>
+</ul>
+<div class="figure align-center" id="fig-236">
+<img alt="../_images/contact_modelisation.png" src="../_images/contact_modelisation.png" />
 </div>
-</details><blockquote>
-<div><p class="card-text"><strong>Expression du vecteurs unitaires directeurs</strong></p>
-<p class="card-text">Il s’agit d’exprimer ce vecteur dans la base d’étude choisi. Ici, pour le ressort 1, le vecteur unitaire doit être suivant <span class="math notranslate nohighlight">\(+ \overrightarrow{e_x}\)</span> pour être orienté vers l’extérieur depuis le point M.</p>
-<p class="card-text">Pour le ressort 2, <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}} = - \overrightarrow{e_x}\)</span>.</p>
-<p class="card-text"><strong>Expression complète</strong></p>
-<p class="card-text">Il vient l’expression des forces de rappel appliquées sur le point M:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\overrightarrow{F_1} = -k \left(L + x - l_0\right) \overrightarrow{e_x}\\
-\overrightarrow{F_2} = k \left(L - x - l_0\right) \overrightarrow{e_x}\\
-\end{align*}\]</div>
-</div></blockquote>
 </div>
-</details></div>
+<div class="topic">
+<p class="topic-title first"><strong>Interprétation des composantes.</strong></p>
+<p>La <strong>composante normale</strong> correspond à une “réaction de non interpénétration”, le système extérieur tend à pousser le système au point M. Cela peut-être une tendance légère (cas d’un système extérieur déformable) ou une contrainte forte (le mouvement du système étudié dans la direction normale au point de contact est alors nul. Au jouant sur la géométrie du contact dans le second cas, on arrive à créer des <strong>liaisons</strong> dont les mouvements possibles (<strong>degré de liberté</strong>) sont définies précisément (surface de contact cylindrique conduit à un pivot glissant, surface de contact plan sur plan conduit à…  un mouvement plan).</p>
+<p>Il vient que (sauf cas de surface adhésive non étudié dans le cadre du programme), la composante normale de la force modélisant l’action ponctuelle du système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur le système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> en un point de contact M est toujours dirigée <strong>vers l’intérieur du système <span class="math notranslate nohighlight">\(\Sigma_2\)</span></strong> (qui subit l’action).</p>
+<p>La <strong>composante tangentielle</strong> correspond à une action s’opposant au <strong>mouvement relatif</strong> des deux systèmes en contacts (ou à la mise en mouvement relatif). On parle de <strong>frottements</strong> (fluide ou solide suivant le cas). Lorsqu’on point M de contact, la composantre tangentielle s’oppose à la vitesse du système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> par rapport au système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> (<span class="math notranslate nohighlight">\(\overrightarrow{v}(M \in \Sigma_2 / M \in \Sigma_1)\)</span>. Lorsqu’il y a immobilité, elle s’oppose à la mise en mouvement (ou est nulle cf. suite).</p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Il s’agit d’une vision simplifiée pour s’adapter au modèle du point matériel. Une vision globale sera présentée dans les systèmes de points.</p>
+<p>La distinction faible/forte vitesse reste pour l’instant qualitative. Sauf précision contraire, on supposera l’écoulement laminaire.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Action d’un fluide</strong>
+L’action d’un fluide sur un point matériel est modéliée par une action de <strong>frottements fluides qui s’oppose à la vitesse.</strong> On distingue deux cas:</p>
+<ul class="simple">
+<li><p><strong>Cas laminaire</strong> : Aux faibles vitesses, l’écoulement est dit laminaire et la force de frottement fluide est proportionnelle à la vitesse par rapport au fluide.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{f} = - \lambda \overrightarrow{v}_{M/fluide}
+\]</div>
+<ul class="simple">
+<li><p><strong>Cas turbulent</strong> : Aux fortes vitesses, l’écoulement est dit turbulent et la force de frottement fluide est proportionnelle au carré de la vitesse par rapport au fluide.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{f} = - k \left \| \overrightarrow{v}_{M/fluide} \right \|\overrightarrow{v}_{M/fluide}
+\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Actions d’un solide : Lois phénoménologiques de Coulomb</strong></p>
+<p>En un point de contact solide-solide, la force de contact <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> se décompose en deux composantes, l’une tangentielle <span class="math notranslate nohighlight">\(\overrightarrow{R_T}\)</span> et l’autre normale <span class="math notranslate nohighlight">\(\overrightarrow{R_N}\)</span> (<span class="math notranslate nohighlight">\(\overrightarrow{R} = \overrightarrow{R_N} + \overrightarrow{R_T}\)</span>). On déduit expérimentalement les comportements suivants:</p>
+<ul class="simple">
+<li><p>La <strong>composante normale</strong> est telle qu’elle empêche l’interpénétration des systèmes (contrainte cinématique). Elle est dirigée vers l’intérieur du solide qui subit l’action. Son annulaion signifie la perte de contact.</p></li>
+<li><p>La <strong>composante tangentielle</strong> a un comportement qui dépend de l’état relatif des deux solides:</p>
+<ul>
+<li><p><em>en cas d’immobilité relative des deux solides</em>, l’action complète est telle qu’elle permet l’immobilité relative (somme des forces nulle si l’on est dans un référentiel galiléen). La composante tangentielle est de norme nécessairement <strong>inférieure</strong> à <span class="math notranslate nohighlight">\(\left \| \overrightarrow{R_T}\right \| &lt; \mu_S \left \| \overrightarrow{R_N}\right \|\)</span> où <span class="math notranslate nohighlight">\(\mu_S\)</span> est appelé coefficient de frottement statique. Lorsque cette condition est mise en défaut, alors le système se met en mouvement.</p></li>
+<li><p><em>en cas de mouvement relatif des deux solides</em> (on dit qu’il y a glissement au point M), la composante tangentielle s’oppose à la vitesse relative au point M. Sa norme est <strong>égale</strong> à <span class="math notranslate nohighlight">\(\left \| \overrightarrow{R_T}\right \| = \mu_D \left \| \overrightarrow{R_N}\right \|\)</span> où <span class="math notranslate nohighlight">\(\mu_D\)</span> est appelé coefficient de frottement dynamique.</p></li>
+</ul>
+</li>
+<li><p>Quelque soit le système, <span class="math notranslate nohighlight">\(\mu_D &lt; \mu_S\)</span>, c’est-à-dire qu’il est plus facile de maintenir un solide en mouvement par rapport à un autre solide malgré les frottements que de mettre en mouvement le même solide.</p></li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Il faut faire attention à plusieurs points:</p>
+<ul class="simple">
+<li><p>la condition d’immobilité est une <strong>inéquation</strong>. Elle ne permet PAS de déterminer la force ou le moment de l’action. Ces derniers se détermine par application des théorèmes fondamentaux dans un cas statique (immobilité relative des deux solides).</p></li>
+<li><p>Dans tous les cas, la composante normale se déduit de la contrainte cinématique imposée.</p></li>
+<li><p>La condition de contact est importante pour déterminer s’il y a décollement.</p></li>
+<li><p>Il faut faire attention à l’orientation de la composante tangentielle qui change en fonction de la vitesse. Cela signifie qu’on doit souvent faire l’étude du mouvement par phase en fonction du sens de déplacement.</p></li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -1213,16 +1185,27 @@ l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="actions_interactions.html" title="previous page">Actions et interactions</a>
-    <a class='right-next' id="next-link" href="actions_ex_app.html" title="next page">Exercices d’application</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="actions.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Description des actions mécaniques ponctuelles</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="theoremes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Théorèmes fondamentaux de la mécanique classique</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -1238,8 +1221,7 @@ l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

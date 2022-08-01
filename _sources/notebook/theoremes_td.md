@@ -13,14 +13,10 @@ kernelspec:
   language: python
   name: python3
 ---
-# Travaux dirigés
+(saut_elas)=
+# Entrainement
 
-Ces exercices seront corrigés en classe.
-
-
-## Saut à l'elastique
-
-````{admonition} Exercice 
+````{admonition} Saut à l'elastique
 :class: attention
 
 Dans tout le problème, on ne tient pas compte des frottements de l'air. Un fabricant de saut à l'élastique donne les caractéristiques suivant pour un type d'élastique:
@@ -44,7 +40,7 @@ On prendra $g = 9.8 \rm{m.s^{-2}}$.
     1. En réalité, les frottements de l'air entraîne l'immobilisation du sauteur après plusieurs oscillations. A quelle hauteur s'immobilise-t-il?
 
 ````
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 
 Dans les deux cas l'origine est prise au niveau du point d'attache et l'axe Oz est orienté vers le haut.
 
@@ -73,9 +69,7 @@ L'accélération subit vaut alors: $a = \frac{k}{m}(z_m - l_0) - g$
 Immobilisation à $z_e = -\frac{mg}{k} - l_0$
 ````
 
-## Cascade en voiture
-
-````{admonition} Exercice 
+````{admonition} Cascade en voiture 
 :class: attention
 
 ```{figure} ./images/meca_td_cascade.jpg
@@ -101,7 +95,7 @@ On suppose que durant la descente, la composante "motrice" de l'action de contac
 3. On reprendra cette étude par une application du théorème du moment cinétique.
 
 ````
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 
 Cas à vitesse constante: $ \alpha < \arccos \frac{v^2}{Rg}$
 
@@ -114,9 +108,7 @@ m R \ddot \theta &= F + mg \sin \theta
 $- \frac{mv_0^2}{R}- 2F\theta_d + 3 mg \cos \theta_d = 0$
 ````
 
-## Arrosage
-
-````{admonition} Exercice 
+````{admonition} Arrosage 
 :class: attention
 
 Un tuyau demi-cylindrique de section négligeable est posé sur le sol. Sur une longueur $l$, le demi-cylindre est percé d'un très grand nombre de petits trous régulièrement répartis. Il en sort des jets d'eau, tous perpendiculaires au tuyau d'arrosage selon tous les angles entre 0 et $\pi$ à la même vitesse $v_0$. Le débit total (masse d'eau dispersée par unité de temps) est $D_m$. On suppose que chaque jets d'eau se comporte de manière indépendante et on néglige les frottements de l'air.
@@ -127,34 +119,8 @@ Un tuyau demi-cylindrique de section négligeable est posé sur le sol. Sur une 
 1. En déduire la densité d'arrosage d, c'est-à-dire la masse reçue par unité de temps et par unité d'air (on fera attention aux angles arrosant la même surface élémentaire).
 
 ````
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 
 $d = D_m \frac{g}{2v^2 \pi \cos 2 \theta}$
 ````
-
-## Disques couplés
-
-````{admonition} Exercice 
-:class: attention
-
-On considère deux disques horizontaux tournant autour d'un axe vertical $\Delta$ en leur centre. Les disques sont homogènes, de moment d'inertie par rapport à $\Delta$, $J_1$ et $J_2$ et la liaison avec l'axe est parfaite. On repère leur rotation autour de l'axe par deux angles $\theta_1$ et $\theta_2$.
-
-On relie un fil de torsion de constante C d'un côté au bâti et de l'autre eu premier disque puis un deuxième fil de torsion de même constante C d'un côté au premier disque et de l'autre au second disque et enfin un dernier fil de torsion de même constante C d'un côté au deuxième disque et de l'autre au bâti.
-
-1. Déterminer les deux équations différentielles couplées qui régissent les évolutions de $\theta_1$ et $\theta_2$.
-1. On cherche des configurations pour lesquelles les deux disques oscilles de manièrent sinusoïdales à la même pulsation $\omega$. Montrer qu'il n'existe que deux pulsations possibles  et  dont on déterminera les expressions. Décrire le mouvement global pour chaque pulsation.
-
-````
-````{dropdown} Eléments de réponse (sans justification)
-
-\begin{align*}
-J_1 \ddot \theta_1 =  - C \theta_1 + C \left(\theta_2 - \theta_1\right)\\
-J_2 \ddot \theta_2 =  - C \theta_2 + C \left(\theta_1 - \theta_2\right)\\
-\end{align*}
-\begin{align*}
-\omega &= \sqrt{\frac{3C}{J_1}}\\
-\omega &= \sqrt{\frac{C}{J_1}}
-\end{align*}
-````
-
 

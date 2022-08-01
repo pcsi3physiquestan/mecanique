@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quantité de mouvement &#8212; Mécanique</title>
+    <title>Eléments cinétiques &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,34 +31,37 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/cinetique_p.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Cinématique et cinétique des systèmes de points" href="systeme_cinema.html" />
+    <link rel="next" title="S’entrainer" href="cinema_ex.html" />
     <link rel="prev" title="Point matériel et inertie" href="cinetique_inertie.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -94,7 +98,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="cinematique.html">
-   Cinématique
+   Cinématique et cinétique du point
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -102,44 +106,90 @@
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinema_point.html">
-     Cinématique du point
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="cinema_contxt.html">
+     Comprendre le contexte.
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinema_point.html">
+       Cinématique du point
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_referentiel.html">
+         Référentiel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_trajectoire.html">
+         Position et trajectoire
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_vitesse.html">
+         Vecteur vitesse
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_acc.html">
+         Vecteur accélération
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_circulaire.html">
+         Cas du mouvement circulaire
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="cinetique_point.html">
+       Cinétique du point
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_inertie.html">
+         Point matériel et inertie
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Eléments cinétiques
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="cinema_referentiel.html">
-       Référentiel
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_trajectoire.html">
-       Position et trajectoire
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_vitesse.html">
-       Vecteur vitesse
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc.html">
-       Vecteur accélération
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_circulaire.html">
-       Cas du mouvement circulaire
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc_unif.html">
-       Mouvement uniformément accéléré
+      <a class="reference internal" href="cinema_methode.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -149,56 +199,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="cinema_td.html">
-       TD Mécanique 1: Cinématique du point
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="cinetique_point.html">
-     Cinétique du point
-    </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-    <label for="toctree-checkbox-3">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul class="current">
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_inertie.html">
-       Point matériel et inertie
-      </a>
-     </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       Quantité de mouvement
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_cinema.html">
-     Cinématique et cinétique des systèmes de points
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-    <label for="toctree-checkbox-4">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_description.html">
-       Description d’un système de points
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_cinetique.html">
-       Cinétique du solide
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_mouvement.html">
-       Mouvements particuliers
+       Entrainement : Cinématique du point
       </a>
      </li>
     </ul>
@@ -206,45 +207,18 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="actions.html">
-   Description des actions mécaniques
+  <a class="reference internal" href="dynamique.html">
+   Dynamique du point matériel
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="actions_ponctuelles.html">
-     Modélisation des actions. Cas des actions ponctuelles.
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-    <label for="toctree-checkbox-6">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_interactions.html">
-       Actions et interactions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_typo.html">
-       Action ponctuelle: Modélisation et typologie
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_ex_app.html">
-       Exercices d’application
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="actions_globales.html">
-     Modélisation des actions globales
+    <a class="reference internal" href="dynamique_contxt.html">
+     Comprendre le contexte.
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
     <label for="toctree-checkbox-7">
@@ -252,70 +226,50 @@
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_typo.html">
-       Généralités sur les actions à distance
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions.html">
+       Description des actions mécaniques ponctuelles
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_typo.html">
+         Action ponctuelle: Modélisation et typologie
+        </a>
+       </li>
+      </ul>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_exemples.html">
-       Exemples d’analyse
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="theoremes.html">
+       Théorèmes fondamentaux de la mécanique classique
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_newton.html">
+         Lois de Newton et conséquences
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_tmc.html">
+         Théorème du moment cinétique
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="theoremes.html">
-   Théorèmes fondamentaux de la mécanique classique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_newton.html">
-     Lois de Newton et conséquences
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_tmc.html">
-     Théorème du moment cinétique
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_meth.html">
-     Activités méthodes: Applications des théorèmes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_ex_app.html">
-     Exercices d’application
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_td.html">
-     Travaux dirigés
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="energetique.html">
-   Approche énérgétique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_gene.html">
-     Théorèmes énergétiques
+    <a class="reference internal" href="dynamique_ex.html">
+     S’entrainer
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
     <label for="toctree-checkbox-10">
@@ -324,28 +278,108 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_rappel.html">
-       Energie cinétique: Rappels
+      <a class="reference internal" href="actions_meth.html">
+       Méthodes : Actions
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_travail.html">
-       Travail et puissance des actions mécaniques
+      <a class="reference internal" href="theoremes_meth.html">
+       Méthodes : Applications des théorèmes
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_ep.html">
-       Forces/actions conservatives et énergie potentielle
+      <a class="reference internal" href="theoremes_ex_app.html">
+       Applications
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_theoremes.html">
+      <a class="reference internal" href="theoremes_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_contxt.html">
+     Comprendre le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_gene.html">
        Théorèmes énergétiques
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_travail.html">
+         Travail et puissance des actions mécaniques
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_ep.html">
+         Forces/actions conservatives et énergie potentielle
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_theoremes.html">
+         Théorèmes énergétiques
+        </a>
+       </li>
+      </ul>
      </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_conservatifs.html">
+       Systèmes conservatifs
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_conserv_1d.html">
+         Système à 1 degré de liberté
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_exemples.html">
-       Exemples
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -355,34 +389,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_td.html">
-       Travaux dirigés
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_conservatifs.html">
-     Systèmes conservatifs
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label for="toctree-checkbox-11">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_def.html">
-       Système conservatif: Définition
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_1d.html">
-       Système à 1 degré de liberté
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_td.html">
-       Travaux dirigés
+       Entrainement
       </a>
      </li>
     </ul>
@@ -393,8 +400,8 @@
   <a class="reference internal" href="applications.html">
    Applications
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -403,8 +410,8 @@
     <a class="reference internal" href="oscillateurs.html">
      Oscillateurs
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label for="toctree-checkbox-13">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -431,15 +438,10 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="oscillateurs_td.html">
-       Travaux dirigés: Oscillateurs
+       Entrainement : Oscillateurs
       </a>
      </li>
     </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rotation.html">
-     Solide en rotation autour d’un axe fixe
-    </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="pendules.html">
@@ -452,55 +454,189 @@
   <a class="reference internal" href="centrales.html">
    Mouvement à force centrales
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="centrales_gene.html">
-     Mouvement à force centrales : Généralités
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="centrales_newtoniens.html">
-     Potentiels newtoniens
+    <a class="reference internal" href="centrales_contxt.html">
+     Comprendre le contexte
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_gene.html">
-       Forces newtoniennes: Généralités
+      <a class="reference internal" href="centrales_gene.html">
+       Généralités
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="centrales_newtoniens.html">
+       Potentiels newtoniens
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_mvt.html">
+         Etude du mouvement
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_kepler.html">
+         Mouvement des planètes et lois de Kepler
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_methodes.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_odg.html">
-       Forces newtoniennes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_mvt.html">
-       Etude du mouvement
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_kepler.html">
-       Mouvement des planètes et lois de Kepler
+       Activités : Ordres de grandeur
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_satellites.html">
-       Mouvement des satellites
+       Activités : Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_app.html">
+       Applications
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_td.html">
-       Travaux dirigés: Potentiels newtoniens
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="systeme_pts.html">
+   Systèmes de points matériels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="systeme_cinema.html">
+       Cinématique et cinétique des systèmes de points
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_description.html">
+         Description d’un système de points
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_cinetique.html">
+         Cinétique du solide
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_mouvement.html">
+         Mouvements particuliers
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions_globales.html">
+       Modélisation des actions globales
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_g_typo.html">
+         Types d’actions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_theoremes.html">
+         Théorèmes en mécanique du solide
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+    <label for="toctree-checkbox-26">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_methode.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="rotation.html">
+       Activité : Solide en rotation autour d’un axe fixe
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_td.html">
+       Entrainement
       </a>
      </li>
     </ul>
@@ -596,32 +732,34 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Quantité de mouvement
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#moment-cinetique-d-un-point-materiel">
-   Moment cinétique d’un point matériel
+   Eléments cinétiques
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moment-cinetique-definition">
-     Moment cinétique: Définition
+    <a class="reference internal nav-link" href="#quantite-de-mouvement">
+     Quantité de mouvement
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moment-cinetique-interpretation">
-     Moment cinétique: Interprétation
+    <a class="reference internal nav-link" href="#moment-cinetique-d-un-point-materiel">
+     Moment cinétique d’un point matériel
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#calcul-de-moment-cinetique">
-     Calcul de moment cinétique
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#moment-cinetique-definition">
+       Moment cinétique: Définition
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#moment-cinetique-interpretation">
+       Moment cinétique: Interprétation
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -641,81 +779,91 @@
         
               <div>
                 
-  <div class="section" id="quantite-de-mouvement">
-<h1>Quantité de mouvement<a class="headerlink" href="#quantite-de-mouvement" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="elements-cinetiques">
+<h1>Eléments cinétiques<a class="headerlink" href="#elements-cinetiques" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quantite-de-mouvement">
+<h2>Quantité de mouvement<a class="headerlink" href="#quantite-de-mouvement" title="Permalink to this headline">¶</a></h2>
+<div class="sidebar">
+<p class="sidebar-title">Intérêt</p>
+<p>La quantité de mouvement est fondamentale car c’est elle qui est directement modifiée par l’action du milieu extérieur au point matériel M par l’intermédiaire des forces comme nous le verrons par la suite.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Quantité de mouvement d’un point matériel</strong></p>
+<p><strong>Quantité de mouvement d’un point matériel</strong></p>
 <p>Soit M un point matériel de masse inertielle m. On définit la quantité de mouvement d’un point M dans le référentiel R par la grandeur:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0bcf2529-dc8d-49a5-ba63-e36382d3fc62">
-<span class="eqno">(16)<a class="headerlink" href="#equation-0bcf2529-dc8d-49a5-ba63-e36382d3fc62" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6ea9ccce-6abb-45d6-841f-0ac300b53b7f">
+<span class="eqno">(14)<a class="headerlink" href="#equation-6ea9ccce-6abb-45d6-841f-0ac300b53b7f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{p_{M/R}} = m \overrightarrow{v_{M/R}}
 \end{equation}\]</div>
 </div>
-<p>La quantité de mouvement est fondamentale car c’est elle qui est directement modifiée par l’action du milieu extérieur au point matériel M par l’intermédiaire des forces comme nous le verrons par la suite.</p>
 </div>
 <div class="section" id="moment-cinetique-d-un-point-materiel">
-<h1>Moment cinétique d’un point matériel<a class="headerlink" href="#moment-cinetique-d-un-point-materiel" title="Permalink to this headline">¶</a></h1>
+<h2>Moment cinétique d’un point matériel<a class="headerlink" href="#moment-cinetique-d-un-point-materiel" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Introduction</p>
 <p>Au niveau du point matériel, le moment cinétique se déduit de la quantité de mouvement. Il permet d’étudier plus simplement certains types de mouvement (mouvement de rotation) car il donne directement des informations sur…  la rotation du point.</p>
 <p>Lorsque nous travaillerons à des systèmes de points matériels, nous verrons que ce moment ne se déduit plus directement de la quantité de mouvement et devient alors une source d’information <strong>complémentaire</strong> à la quantité de mouvement.</p>
-<div class="section" id="moment-cinetique-definition">
-<h2>Moment cinétique: Définition<a class="headerlink" href="#moment-cinetique-definition" title="Permalink to this headline">¶</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Définition : Moment cinétique par rapport à un point.</strong></p>
-<p>Soit un point M de masse m, de vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{M/R}}\)</span>, de quantité de mouvement <span class="math notranslate nohighlight">\(\overrightarrow{p_{M/R}}\)</span> rapport au référentiel R et A un point. Le moment cinétique d’un point M par rapport à un point A dans le référentiel R est défini par le vecteur:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-70aa2a64-fcbe-420d-a94d-34da73ca636b">
-<span class="eqno">(17)<a class="headerlink" href="#equation-70aa2a64-fcbe-420d-a94d-34da73ca636b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\overrightarrow{L_{A/R}(M)} = \overrightarrow{AM} \wedge \overrightarrow{p_{M/R}}
-\end{equation}\]</div>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p><strong>Dépendance du point considéré</strong></p>
+<div class="section" id="moment-cinetique-definition">
+<h3>Moment cinétique: Définition<a class="headerlink" href="#moment-cinetique-definition" title="Permalink to this headline">¶</a></h3>
+<div class="sidebar">
+<p class="sidebar-title">Dépendance du point considéré</p>
 <p>Un moment cinétique se calcule par rapport à un A de l’espace (pas nécessairement le centre du repère). Il est important de le préciser car l’expression du moment cinétique <strong>dépend du point considéré</strong>. Celà devient évident lorsqu’on donne un sens (cf. suite) au moment cinétique.</p>
 <p>On peut calculerun moment cinétique par rapport à un point fixe ou non fixe dans le référentiel considéré. En physique, on se limitera à l’utilisation d’un point fixe de manière à pouvoir appliquer les théorème fondamentaux.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Moment cinétique par rapport à un axe.</strong></p>
+<p><strong>Moment cinétique par rapport à un point.</strong></p>
+<p>Soit un point M de masse m, de vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{M/R}}\)</span>, de quantité de mouvement <span class="math notranslate nohighlight">\(\overrightarrow{p_{M/R}}\)</span> rapport au référentiel R et A un point. Le moment cinétique d’un point M par rapport à un point A dans le référentiel R est défini par le vecteur:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-94cccc8c-ca2b-45b6-9957-f3af666abc86">
+<span class="eqno">(15)<a class="headerlink" href="#equation-94cccc8c-ca2b-45b6-9957-f3af666abc86" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{L_{A/R}(M)} = \overrightarrow{AM} \wedge \overrightarrow{p_{M/R}}
+\end{equation}\]</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>L’expression précédente ne dépend pas du point B <strong>tant que B est sur l’axe.</strong> C’est pourquoi on peut parler de moment cinétique sur un axe sans précision.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Moment cinétique par rapport à un axe.</strong></p>
 <p>Soit un axe <span class="math notranslate nohighlight">\(\Delta\)</span> orienté. On note B un point de cet axe et <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}}\)</span> un vecteur unitaire directeur de l’axe. On définit un moment cinétique rapport à l’axe <span class="math notranslate nohighlight">\(\Delta\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-abee5791-1e36-4aa0-a8dd-754eaf10ed40">
-<span class="eqno">(18)<a class="headerlink" href="#equation-abee5791-1e36-4aa0-a8dd-754eaf10ed40" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-935ebc9b-838a-4902-9f2d-4032290e79cf">
+<span class="eqno">(16)<a class="headerlink" href="#equation-935ebc9b-838a-4902-9f2d-4032290e79cf" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 L_{\Delta/R} = \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{B/R}}(M)
 \end{equation}\]</div>
 </div>
-<p>L’expression précédente ne dépend pas du point B <strong>tant que B est sur l’axe.</strong> C’est pourquoi on peut parler de moment cinétique sur un axe sans précision.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p><strong>Scalaire et vecteur</strong></p>
 <p>Le moment cinétique par rapport à un point est un <strong>vecteur</strong> et le moment cinétique par rapport à un axe est un <strong>scalaire</strong>. Il est important de faire cette différence.</p>
-<p>On pourra remarquer que point un axe <span class="math notranslate nohighlight">\(\Delta\)</span> et un point B sur cet axe. Si l’on prend une base contenant le vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> porté par l’axe <span class="math notranslate nohighlight">\(\Delta\)</span>, alors le moment cinétique d’un point M sur l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> correspond mathématiquement à la projection scalaire du moment cinétique par rapport au point B, il donne une <strong>composante scalaire</strong> du moment par rapport à B dans la base de projection.</p>
 </div>
 </div>
 <div class="section" id="moment-cinetique-interpretation">
-<h2>Moment cinétique: Interprétation<a class="headerlink" href="#moment-cinetique-interpretation" title="Permalink to this headline">¶</a></h2>
-<p><strong>Interprétation du moment cinétique par rapport à un axe.</strong></p>
+<h3>Moment cinétique: Interprétation<a class="headerlink" href="#moment-cinetique-interpretation" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Interprétation du moment cinétique par rapport à un axe</p>
 <blockquote>
 <div><p>Dans toute la suite on travaillera implicitement dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
 <p>Pour interprêter le moment cinétique par rapport à un axe orienté <span class="math notranslate nohighlight">\(\Delta\)</span>, on va se placer dans un repère cylindrique d’axe <span class="math notranslate nohighlight">\(\Delta\)</span> centré en un point O de l’axe.</p>
 <p>On peut donc écrire:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-&gt;\overrightarrow{OM} = r \overrightarrow{e_r} + z \overrightarrow{e_z}\\
-&gt;\overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}
-&gt;\end{align*}\]</div>
+\overrightarrow{OM} = r \overrightarrow{e_r} + z \overrightarrow{e_z}\\
+\overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}
+\end{align*}\]</div>
 <p>On peut donc calculer le moment cinétique de M sur <span class="math notranslate nohighlight">\(\Delta\)</span> dans <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-&gt;L_{\Delta/R} &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
-&gt;&amp;= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
-&gt;&amp;= m r^2 \dot \theta
-&gt;\end{align*}\]</div>
+L_{\Delta/R} &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M)\\
+&amp;= m\overrightarrow{e_z} \cdot ((r \overrightarrow{e_r} + z \overrightarrow{e_z}) \wedge (\dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_{\theta}} + \dot z \overrightarrow{e_z}))\\
+&amp;= m r^2 \dot \theta
+\end{align*}\]</div>
 <p>On observe que:</p>
 <ul class="simple">
 <li><p>Le moment cinétique de M sur l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> n’est pas nul que le point M tourne autour de l’axe <span class="math notranslate nohighlight">\(\Delta\)</span> <strong>à l’instant t</strong>. C’est fondamental pour comprendre l’utilisation du moment cinétique: il est principalement utilisée pour étudier des rotations. Attention, ça ne signifie pas que la trajectoire est courbe: un point M qui va en ligne droite semble tourne quand on se place sur un axe B non parallèle à la trajectoire ! Le moment est non nul si M semble tourner <strong>par rapport à l’axe</strong>.</p></li>
 <li><p>Il dépend aussi de la distance à l’axe. L’introduction du moment cinétique est d’avoir une grandeur similaire à la quantité de mouvement mais pour la rotation, c’est-à-dire qui va être la grandeur modifiée par les actions du milieux extérieures <strong>sur la rotation de M autour de l’axe</strong>. D’un point de vue inertiel, on comprend qu’il est plus difficile de modifier la rotation d’un point matériel situé loin de l’axe si on se trouve sur l’axe.</p></li>
-<li><p>Il est <strong>algébrique</strong> et le moment cinétique est positif si le point M tourne dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissant (angles orientés <strong>en cohérence vvec l’axe orienté</strong>__<span class="math notranslate nohighlight">\(\Delta\)</span><strong>) et le moment cinétique est négatif si le point M tourne dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> décroissant (angles orientés <strong>en cohérence avec l’axe orienté</strong>__<span class="math notranslate nohighlight">\(\Delta\)</span></strong>).</p></li>
+<li><p>Il est <strong>algébrique</strong> et le moment cinétique est positif si le point M tourne dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissant (angles orientés <strong>en cohérence avec l’axe orienté</strong> <span class="math notranslate nohighlight">\(\Delta\)</span>) et le moment cinétique est négatif si le point M tourne dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> décroissant (angles orientés <strong>en cohérence avec l’axe orienté</strong> <span class="math notranslate nohighlight">\(\Delta\)</span>).</p></li>
 </ul>
 <p>On observe donc que le moment cinétique, à l’image de la quantité de mouvement contient des information</p>
 <ul class="simple">
@@ -724,96 +872,35 @@ L_{\Delta/R} = \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{B/R}}(M)
 </ul>
 <p>Il faut noter néanmoins que l’on ne garde <strong>que des informations sur la rotation relative à l’axe.</strong>. Comme montré précédemment un mouvement peut avoir des caractéristiques qui n’apparaissent plus directement (comme une trajectoire rectiligne non parallèle à l’axe <span class="math notranslate nohighlight">\(\Delta\)</span>).</p>
 </div></blockquote>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>On va souvent calculer des moments cinétiques dans le cas de mouvement circulaire. On les calculera en générals sur l’axe de rotation du point M. Il faut néanmoins bien penser qu’un moment cinétique non nul n’implique pas que le point M est en train d’avoir un mouvement courbe, et encore moins un mouvement circulaire. Celà veut dire uniquement que du point de vue de l’axe, le point M a l’air de tourner (si l’on se trouve sur l’axe, on doit tourner la tête horizontalement pour suivre le mouvement de M).</p>
 </div>
-<p><strong>Interprétation du moment cinétique par rapport à un point.</strong></p>
+<div class="topic">
+<p class="topic-title first">Interprétation du moment cinétique par rapport à un point.</p>
 <blockquote>
 <div><p>En remarquant que la projection du moment cinétique par rapport à un point Bsur différents axes passante par B, on trouve la tendance qu’a le point M à tourner autour de chaque axe. Il apparaît donc que le moment cinétique du point M par rapport à un point B correspond à la tendance que possède le point M à tourner autour de B (avec toutes les précautions précédentes sur le fait de tourner).</p>
 <p>On pourra noter aussi que cette tendance est maximale dans une direction. Il s’agit de la direction du vecteur moment cinétique: cette direction portant le moment cinétique par rapport à un point  donne l’axe perpendiculaire au plan dans lequel M est entrain de se déplacer autour de B à l’instant t.</p>
 </div></blockquote>
 </div>
-<div class="section" id="calcul-de-moment-cinetique">
-<h2>Calcul de moment cinétique<a class="headerlink" href="#calcul-de-moment-cinetique" title="Permalink to this headline">¶</a></h2>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>Soit un repère cartésien de centre O associé à un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
-<p>On considère un point matériel M de masse M en mouvement rectiligne sur un axe Oz à une vitesse <span class="math notranslate nohighlight">\(v(t)\)</span>.</p>
-<ol class="simple">
-<li><p>Exprimer la quantité de mouvement de M dans le référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p></li>
-<li><p>Exprimer le moment cinétique du point M par rapport au point O dans le référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. Commenter sa valeur.</p></li>
-<li><p>Exprimer le moment cinétique du point M par rapport à l’axe Ox dans le référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. Commenter sa valeur.</p></li>
-<li><p>Exprimer le moment cinétique du point M par rapport à l’axe Bx dans le référentuel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. On donne les coordonnées de <span class="math notranslate nohighlight">\(B(a,b,0)\)</span>. Commenter.</p></li>
-</ol>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Résolution<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<blockquote>
-<div><p class="card-text"><strong>Quantité de mouvement</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-b3352909-1b4c-4b20-9fed-ec87e5661d31">
-<span class="eqno">(19)<a class="headerlink" href="#equation-b3352909-1b4c-4b20-9fed-ec87e5661d31" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\overrightarrow{p_{M/R}} = m \overrightarrow{v_{M/R}}
-\end{equation}\]</div>
-<p class="card-text"><strong>Moment cinétique</strong></p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\overrightarrow{L_{O/\mathfrak{R}}(M)} &amp;= \overrightarrow{OM} \wedge \overrightarrow{p_{M/R}}\\
-&amp;= z \overrightarrow{e_z} \wedge m v(t) \overrightarrow{e_z}\\
-&amp;= 0\\
-L_{Ox/\mathfrak{R}}(M) &amp;= \overrightarrow{e_x} \cdot \overrightarrow{L_{O/\mathfrak{R}}(M)} = 0\\
-\overrightarrow{L_{B/\mathfrak{R}}(M)} &amp;= \overrightarrow{BM} \wedge \overrightarrow{p_{M/R}}\\
-&amp;= (-a \overrightarrow{e_x} - b \overrightarrow{e_y} + z \overrightarrow{e_z}) \wedge m v(t) \overrightarrow{e_z}\\
-&amp;= mav(t) \overrightarrow{e_y} - mv(t)b \overrightarrow{e_x}\\
-L_{Ox/\mathfrak{R}}(M) &amp;= \overrightarrow{e_x} \cdot \overrightarrow{L_{B/\mathfrak{R}}(M)} = - mv(t)b
-\end{align*}\]</div>
-<p class="card-text">Les moments par rapport à O et Ox sont évidemment nuls car le point M ne tourne pas autour de O (il s’en éloigne ou s’en rapproche en ligne droite) ni autour de Ox.</p>
-<p class="card-text">Le moment autour de Bx est non nul car si l’on se place sur l’axe Bx, on voit effectivement le point M tourner autour de l’axe. Si v(t) et b sont positifs, le moment est négatif. En effet, la rotation à effectuer pour suivre le point M quand on est sur l’axe Bx ne se fait effectivement pas en cohérence avec l’orientation de l’axe Bx.</p>
-</div></blockquote>
 </div>
-</details><div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère un point M sur une trajectoire circulaire de centre O et d’axe Oz. Exprimer la quantité de mouvement dans une base cylindrique ainsi que le moment cinétique de M sur l’axe Oz.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Résolution<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<blockquote>
-<div><p class="card-text"><strong>Quantité de mouvement</strong></p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\overrightarrow{p_{M/R}} &amp;= m r \dot \theta \overrightarrow{e_{\theta}}\\
-\overrightarrow{L_{O/\mathfrak{R}}(M)} &amp;= \overrightarrow{OM} \wedge \overrightarrow{p_{M/R}}\\
-&amp;= r \overrightarrow{e_r} \wedge m r \dot \theta \overrightarrow{e_{\theta}}\\
-&amp;= m r^2 \dot \theta \\
-\end{align*}\]</div>
-</div></blockquote>
-</div>
-</details></div>
-</div>
-<div class="section" id="energie-cinetique">
+<div class="tex2jax_ignore mathjax_ignore section" id="energie-cinetique">
 <h1>Energie cinétique<a class="headerlink" href="#energie-cinetique" title="Permalink to this headline">¶</a></h1>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Energie cinétique d’un point matériel</strong></p>
+<p><strong>Energie cinétique d’un point matériel</strong></p>
 <p>On appelle énergie cinétique d’un point matériel M de masse m dans le référentiel R, la quantité scalaire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1c8fa674-8a65-45fd-861a-0ec9fb8d70bb">
-<span class="eqno">(20)<a class="headerlink" href="#equation-1c8fa674-8a65-45fd-861a-0ec9fb8d70bb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d91a63a7-ae54-4fd3-952b-47013f2bc0c5">
+<span class="eqno">(17)<a class="headerlink" href="#equation-d91a63a7-ae54-4fd3-952b-47013f2bc0c5" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_c = \frac{1}{2} m v_{M/R}^2
 \end{equation}\]</div>
 </div>
-<p><strong>Variation d’énergie cinétique</strong>
-La variation d’énergie cinétique entre deux points A et B ne dépend que des états du système au point A et B (de la vitesse au point A et B) mais pas du chemin parcouru entre les deux. C’est pourquoi, on note cette variation <span class="math notranslate nohighlight">\(\Delta E_c\)</span> (l’importance c’est le signe <span class="math notranslate nohighlight">\(\Delta\)</span>).</p>
-<p>Sur un déplacement infinitésimal, cette variation est infinitésimale et se note <span class="math notranslate nohighlight">\(dE_c\)</span> (l’important, c’est le “d” appelé “d droit”).</p>
+<div class="topic">
+<p class="topic-title first">Variation d’énergie cinétique</p>
+<ul class="simple">
+<li><p>La variation d’énergie cinétique entre deux points A et B ne dépend que des états du système au point A et B (de la vitesse au point A et B) mais pas du chemin parcouru entre les deux. C’est pourquoi, on note cette variation <span class="math notranslate nohighlight">\(\Delta E_c\)</span> (l’important, c’est le signe <span class="math notranslate nohighlight">\(\Delta\)</span>).</p></li>
+<li><p>Sur un déplacement infinitésimal, cette variation est infinitésimale et se note <span class="math notranslate nohighlight">\(dE_c\)</span> (l’important, c’est le “d” appelé “d droit”).</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -839,16 +926,27 @@ La variation d’énergie cinétique entre deux points A et B ne dépend que des
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="cinetique_inertie.html" title="previous page">Point matériel et inertie</a>
-    <a class='right-next' id="next-link" href="systeme_cinema.html" title="next page">Cinématique et cinétique des systèmes de points</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="cinetique_inertie.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Point matériel et inertie</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="cinema_ex.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">S’entrainer</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -864,8 +962,7 @@ La variation d’énergie cinétique entre deux points A et B ne dépend que des
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

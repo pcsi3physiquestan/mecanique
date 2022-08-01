@@ -13,13 +13,11 @@ kernelspec:
   language: python
   name: python3
 ---
-# Activités méthodes: Applications des théorèmes
+# Méthodes : Applications des théorèmes
 
 ## Mouvement dans un champ de pesanteur
 
-
-Cet exercice présente plusieurs points de méthodes extrêment importants
-
+Cet exercice présente plusieurs points de méthodes extrêment importants :
 * la méthode générale d'étude d'un système mécanique
 * l'application du principe fondamental de la dynamique
 * l'utilisation de différentes d'intégration: primitivation, équation différentielle linéaire et __séparation des variables__.
@@ -58,10 +56,7 @@ On considère un point matériel M de masse $m$ se déplaçant dans un champ de 
 ````
 
 ## Système masse-ressort
-
-
 Outre les points évoquées précédemment, nous étudier le cas où l'équation différentielle linéaire est du second ordre. On verra ici le cas d'un oscillateur harmonique.
-
 
 ````{admonition} Exercice 
 :class: attention
@@ -73,14 +68,11 @@ On repère la position de M sur un axe Ox vertical vers le haut où l'origine O 
 1. Déterminer la longueur du ressort à l'équilibre.
 1. Déterminer l'équation qui régit l'évolution de $x(t)$.
 1. En déduire l'expression de $x(t)$ si le point M est initialement immobile et que la longueur initialement du ressort est $l_1$.
-
 ````
 
 ## Perle sur un cerceau
 
-
 Cet exercice va montrer comment appliquer le théorème du moment cinétique à un point matériel.
-
 
 ````{admonition} Exercice 
 :class: attention
@@ -88,7 +80,6 @@ Cet exercice va montrer comment appliquer le théorème du moment cinétique à 
 On considère une perle assimilable à un point matériel M de masse m considère à glisser sans frottements sur un cerceau de rayon R et de centre O dans le plan est vertical.
 
 Etablir l'équation d'évolution de l'angle entre la verticale descendante et $\overrightarrow{OM}$ au moyen du théorème du moment cinétique puis simplifier l'équation obtenue si l'on suppose le mouvement de la perle de faible amplitude autour de sa position d'équilibre stable.
-
 ````
 
 ## Atome de Bohr
@@ -108,37 +99,10 @@ On donne l'expression de l'énergie potentielle de l'électron sous l'action seu
 
 ## Mouvement d'un traineau
 
-
-Nous allons étudier ici le mouvement d'un solide en translation. A nouveau, on ne va pas déterminer le mouvement mais se servir de les caractéristiques des actions. Nous verrons aussi l'application du TMC à un solide.
-
-
 ````{admonition} Exercice 
 :class: attention
 
-On considère un traineau de masse $m$ glissant sur un sol horizontal avec une vitesse $v$ constante. Le contact avec le sol suit les lois de Coulomb avec un coefficient de frottements dynamique $f_d$. L'existence des frottements impose, pour maintenir une vitesse constante $\overrightarrow{v}$ une traction $\overrightarrow{T}$par un utilisateur. Celle-ci se fait au moyen d'une corde avec un angle $\alpha$ avec l'horizontale accroché au centre de l'arête supérieureavant du cube.
+On considère un traineau assimilable à un point matériel de masse $m$ glissant sur un sol horizontal avec une vitesse $v$ constante. Le contact avec le sol suit les lois de Coulomb avec un coefficient de frottements dynamique $f_d$. L'existence des frottements impose, pour maintenir une vitesse constante $\overrightarrow{v}$ une traction $\overrightarrow{T}$par un utilisateur. Celle-ci se fait au moyen d'une corde avec un angle $\alpha$ avec l'horizontale.
 
 1. Déterminer la norme $T$ de la traction en fonction de $\alpha, f, m$ et $g$.
-1. Déterminer l'expression du moment résultant de l'action du sol sur le traineau calculé au centre d'inertie.
-
 ````
-
-## Rotation d'un moteur
-
-
-Nous allons étudier ici brièvement le cas d'un solide en rotation. Nous réétudierons plus en profondeur ces systèmes par la suite. Il s'agit ici de pouvoir utiliser le TMC pour déterminer un mouvement et le TRC pour déterminer des efforts.
-
-
-````{admonition} Exercice 
-:class: attention
-
-On considère un solide (rotor) de forme cylindrique de rayon R et de masse M uniformément répartie. Il est en liaison pivot avec un axe fixe (stator) et on suppose cette laision parfaite. On suppose que l'axe Oz de la liaison pivot est horizontal. On utilise un système de coordonnées cylindriques d'axe Oz et l'angle $\theta$ associé à un point du cylindre permet de repérer la rotation de ce dernier.
-
-Les propriétés magnétiques du rotor (non étudié en détail ici) fait qu'un champ magnétique extérieur au système impose une action modélisable par un couple de moment $\overrightarrow{\Gamma} = \Gamma_m \overrightarrow{e_z}$ et que le cylindre est plongé dans un fluide dont l'action est aussi modélisable par un couple de moment $\overrightarrow{\Gamma_f} = - K \dot \theta$
-
-1. Faire un bilan des actions mécaniques sur le cylindre.
-1. Déduire du mouvement du centre d'inertie la force résultante de la liaison pivot.
-1. Etablir l'équation d'évolution de la vitesse angulaire $\omega$ du cylindre. En déduire que le système tend vers une vitesse de rotation limité qu'on déterminera.
-1. Etablir $\omega(t)$ en supposant que le rotor est initialement immobile.
-
-````
-

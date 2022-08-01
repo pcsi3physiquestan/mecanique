@@ -13,11 +13,9 @@ kernelspec:
   language: python
   name: python3
 ---
-# Travaux dirigés: Oscillateurs
+# Entrainement : Oscillateurs
 
-## Etude d'un portrait de phase
-
-````{admonition} Exercice 
+````{admonition} Etude d'un portrait de phase 
 :class: attention
 
 On fait l'étude d'un oscillateur M de masse $m = 0.2\rm{kg}$ astreint à se déplacer suivant l'axe Ox de vecteur unitaire $\overrightarrow{u_x}$. Il est soumis aux forces suivantes:
@@ -31,13 +29,12 @@ Le portrait de phase $(X(t); V(t) = \frac{\rm{d}X}{\rm{dt}}(t)) $de l'oscillateu
 ```{figure} ./images/Mecanique_TD5_EX1_1.jpg
 :name: fig_252
 :align: center
-
 ```
 
 On donne les abscisses correspondant aux croisements de la trajectoire de phase avec l'axe des abscisses:
-
-|t(s)| 0.31 | 0.65 | 0.97 | 1.3 | 1.62 |
+|Croisement | 1 | 2 | 3 | 4 | 5 |
 |:-:|:-: |:-: |:-: |:-: |:-: |
+|t(s)| 0.31 | 0.65 | 0.97 | 1.3 | 1.62 |
 
 1 Établir l'équation différentielle du mouvement de M et la mettre sous la forme: $\ddot x + \frac{\omega_0}{Q} \dot x + \omega_0^2 x = \omega_0^2 X_0$ où x est l'allongement du ressort (par rapport à $l_0$). Les grandeurs $w_0, Q$ et $X_0$ sont à exprimer en fonction des données.
 1. Dans le cas d'une solution pseudo-périodique, exprimer $x(t)$: on définira le temps de relaxation énergétique $\tau$ et la pseudo-période $\Omega$ que l'on exprimera en fonction de $\omega_0$ et $Q$.
@@ -50,12 +47,10 @@ On donne les abscisses correspondant aux croisements de la trajectoire de phase 
 
 ````
 
-## Amortisseur
-
-````{admonition} Exercice 
+````{admonition} Amortisseur 
 :class: attention
 
-On considère l'amortisseur d'un véhicule. Chaque roue supporte un quart de la masse de la voiture assimilé à un point M de masse $m=500\rm{kg}$ et relié à la voiture par un amortisseur dont le ressort a une constante de raideur $k = 2,5 \times 10^{4} N.m^{-1}$.
+On considère l'amortisseur d'un véhicule. Chaque roue supporte un quart de la masse de la voiture assimilé (la quart de voiture) à un point M de masse $m=500\rm{kg}$ et relié à la voiture par un amortisseur dont le ressort a une constante de raideur $k = 2,5 \times 10^{4} N.m^{-1}$.
 
 Le point M subit aussi un frottement visqueux $\overrightarrow{f} = - \lambda \overrightarrow{v}$ où $\overrightarrow{v}$ est la vitesse verticale de M par rapport au sol. On donne $\lambda = 5 \times 10^{3} \rm{kg.s^{-2}}$. Le véhicule franchit à vitesse constante un défaut de chaussée de hauteur h=5cm. Son inertie est suffisante pour qu'il ne se soulève pas immédiatement mais acquiert une vitesse verticale $v_0 = 0,5 \rm{m.s^{-1}}$. On pose $\alpha = \lambda/m$. On note $Z_i$ la cote du point M avant le passage du défaut (on suppose qu'il n'y a pas de mouvement vertical avant le défaut).
 
@@ -66,9 +61,7 @@ Le point M subit aussi un frottement visqueux $\overrightarrow{f} = - \lambda \o
 
 ````
 
-## Frottements solides
-
-````{admonition} Exercice 
+````{admonition} Frottements solides 
 :class: attention
 
 On considère un mobile M de masse m se déplaçant selon un axe horizontal (Ox) et assimilé à un point matériel. Ce mobile est soumis à une force de rappel $\overrightarrow{f_R} = -kx \overrightarrow{e_x}$ (longueur à vide nulle) et à une force de frottement solide de coefficient de frottement dynamique $f_D$ et statique $f_S$. Pour simplifier le problème, on prendra ici $f_D = f_S$ et on parlera de coefficient de frottement solide. On pose le mobile M en un point d'abscisse $x_0$ sans vitesse initiale.
@@ -87,9 +80,7 @@ On suppose que le mobile réalise N oscillations complètes avant de s'arrêter 
 
 ````
 
-## Elasticité d'une fibre de verre
-
-````{admonition} Exercice 
+````{admonition} Elasticité d'une fibre de verre 
 :class: attention
 
 Le verre est un matériau très dur. On peut toutefois le déformer légèrement sans le casser: on parle d'élasticité. Récemment, des expériences de biophysique ont été menées pour étudier l'ADN. Le capteur utilisé était simplement une fibre optique en silice amincie à l'extrémité de laquelle on accroche un brin d'ADN. L'expérience consistait à suivre la déformation de flexion de la fibre. La masse volumique du verre est $\rho=2500\rm{kg.m{-1}}$.
@@ -109,9 +100,7 @@ La fibre de verre de longueur $l$ et de diamètre $d$ est encastrée horizontale
 
 ````
 
-## Piscine à vagues
-
-````{admonition} Exercice 
+````{admonition} Piscine à vagues 
 :class: attention
 
 Pour créer des vagues dans une piscine, on fait effectuer des oscillations verticales à une masse immergée sur un côté du bassin. Soit une masse M homogène de masse volumique $\rho$ et de volume V plongée dans l'eau de masse volumique $\rho_{eau}$. Cette masse est suspendue à un ressort de raideur k et de longueur à vide $l_0$ accroché à son extrémité en un point A. On note Oz l'axe vertical vertical passant par A et orienté vers le bas et on prend O comme origine. A l'équilibre, la masse M est située en z = h. On se place dans le référentiel terrestre supposé galiléen.  On suppose dans un premier temps que A est immobile et A=O.
@@ -134,9 +123,7 @@ Pour créer des vagues dans une piscine, on fait effectuer des oscillations vert
 
 ````
 
-## Vibration d'une molécule diatomique
-
-````{admonition} Exercice 
+````{admonition} Vibration d'une molécule diatomique 
 :class: attention
 
 La molécule HCl est modélisée, selon un axe fixe, par deux masses ponctuelles distantes de r. Puisque l'atome de chlore est beaucoup plus lourd que celui d'hydrogène, il peut être considéré comme fixe. Seul le noyau d'hydrogène de masse m est alors susceptible de se déplacer, il subit l'énergie potentielle d'interaction:
@@ -157,15 +144,12 @@ où C, $\alpha$ et n sont des constantes positives. En l'absence de toute champ 
 \end{align}
 
 1. Le temps de réponse caractéristique de la molécule est $\tau = 10^{-9} s$. Donner le facteur de qualité de cet oscillateur. Commenter cette valeur. 
-1. Dans quel domaine de longueur d'onde faudrait-il travailler pour briser cette liaison en l'éclairant? Quelle marge possède-t-on sur le choix de la longueur d'onde? 
 1. La molécule est maintenant excitée à sa fréquence propre par un champ électrique $E(t) = E_0 \cos (\omega_0 t)$; nous supposons que la force subie alors par le noyau d'hydrogène est $F(t) = \beta E(t)$ où $\beta(t)$ est de l'ordre de l'unité. Déterminer l'amplitude des oscillations forcées. 
-1. Estimer l'ordre de grandeur du champ nécessaire pour briser la molécule. Discuter la validité du modèle linéaire, et le choix de la longueur d'onde excitatrice.
-
+1. Dans quel domaine de longueur d'onde faudrait-il travailler pour briser cette liaison en l'éclairant? Quelle marge possède-t-on sur le choix de la longueur d'onde? 
+1. Discuter la validité du modèle linéaire, et le choix de la longueur d'onde excitatrice.
 ````
 
-## Système de deux points matériels
-
-````{admonition} Exercice 
+````{admonition} Système de deux points matériels 
 :class: attention
 
 Deux points matériels A et B de même masse m sont reliés entre eux par un ressort de raideur K et à deux points fixes par deux ressorts de raideur k. L'ensemble coulisse sans frottements sur une tige horizontale fixe. On note $\overrightarrow{u}$ un vecteur unitaire de cet axe. On note x et y les élongations de A et B comptées à partir de leur position d'équilibre.

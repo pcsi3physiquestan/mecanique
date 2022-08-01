@@ -13,11 +13,56 @@ kernelspec:
   language: python
   name: python3
 ---
-# Travaux dirigés: Potentiels newtoniens
+# Entrainement
 
-## Etude du mouvement d'une planète par la méthode du vecteur excentricité
+## Forces centrales quelconques
 
-````{admonition} Exercice 
+````{admonition} Point matériel lié à un fil 
+:class: attention
+
+Un point matériel M de masse m se déplace sans frottement sur un plan horizontal. Il est attaché à un fil de masse négligeable. Le plan est percé au point O choisi pour origine, le fil traverse le plan en O; un opérateur exerce sur l'autre extrémité du fil une force de traction de module F constant.
+
+A t=0, le point M se trouve sur l'axe Ox à une distance D de O, sa vitesse est alors $V_0$, colinéaire à Oy.
+
+1. Montrer que le moment cinétique $\overrightarrow{L_O}$ en O de M se conserve pendant toute la durée de la traction. Calculer son module et sa direction. Définir la vitesse aréolaire et montrer que le mouvement de M se fait suivant la loi des aires, à savoir que la vitesse aréolaire est constante. 
+1. Déterminer l'énergie mécanique $E_m$ de M; on montrera que la force de traction dérive d'une énergie potentielle $E_p$ que l'on exprimera en utilisant les coordonnées cylindriques. On prendra $E_p=0$ pour $OM=0$.
+1. Montrer que l'on peut se ramener à un problème à un degré de liberté et définir une fonction énergie potentielle effective. 
+1. Etudier ses variations en fonction de r=OM. Montrer qu'elle passe par un minimum pour $r_1 = \left(\frac{m V_0^2 D^2}{F}\right)^{1/3}$.
+1. Tracer le graphe correspondant et faire apparaître l'énergie mécanique. Déterminer graphiquement les deux distances extrêmes de M à O; à quelle condition sur F la position initiale est-elle le point de la trajectoire le plus éloigné de O? Le point matériel peut-il arriver jusqu'à O?
+1. Quelle valeur donner à F pour observer un mouvement circulaire? Montrer qu'il est alors nécessaire uniforme.
+````
+
+````{admonition} Mouvement d'une bille dans un cône 
+:class: attention
+
+On considère un matériel M glissant sans frottements à l'intérieur d'un cône dont la génératrice fait un angle $\alpha$ avec l'axe Oz vertical dirigé vers le haut, O étant le sommet du cône. On suppose le champ de pesanteur uniforme $\overrightarrow{g} = - g \overrightarrow{e_z}$. On se place en coordonnées cylindriques d'axe Oz et de centre O. On travaille dans le référentiel terrestre qu'on supposera galiléen.
+
+1. Déterminer la relation entre les coordonnées r et z. En déduire l'expression de la vitesse $\overrightarrow{v}$ et de l'accélération $\overrightarrow{a}$ en fonction de r et $\theta$.
+1. En déduire, en utilisant le principe fondamental de la dynamique que:
+
+$$M \ddot r = - \frac{mg}{tan \alpha} + mr \dot \theta^2$$
+avec $M = m (1+ \frac{1}{\tan^2 \alpha})$
+
+3. Exprimer le moment cinétique $\overrightarrow{J_O}$ par rapport au point O en fonction de $m, r, z$ et $\theta$. Montrer que la composante suivant Oz, notée $J_z$ est conservée au cours du mouvement.
+1. En exprimant $\dot \theta$ en fonction de $J_z$, montrer que l'équation différentielle sur r peut s'écrire sous la forme: $M \ddot r = - \frac{dV_{eff}(r)}{dr}$
+où $V_{eff}(r)$ est un potentiel effectif que l'on exprimera en fonction de $\alpha$, m,g, et $J_z$. Tracer les allures de $V_{eff}(r)$ pour $J_z = 0$ et pour $J_z \neq 0$.
+
+ATTENTION: Nous allons à partir de ce point réaliser une étude à partir du potentiel effectif comme elle a été faite en cours pour le cas des mouvements à force centrale. On remarquera néanmoins que le mouvement n'est PAS ici un mouvement à force centrale. On pourra s'en convaincre en remarquant par exemple que la composante du moment cinétique projeté sur $\overrightarrow{e_{\theta}}$ n'est pas conservée (TMC) ou simplement parce que le mouvement n'est pas plan. La méthode d'analyse mathématique ne reste pas moins utilisable A CONDITION DE PROUVER QU'ON PEUT L'UTILISER.
+
+5. Calculer l'énergie mécanique et montrer qu'elle peut s'écrire sous la forme: $E_m = \frac{1}{2} M \dot r^2 + V_{eff}(r)$. Justifier le fait que l'énergie mécanique est conservée. On vérifiera que cette conservation permet bien de retrouver l'équation différentielle établie à la question précédente.
+5. On s'intéresse uniquement aux trajectoires dont les conditions initiales sont de la forme $r(0) = r_0, \overrightarrow{v}(0) = v_0 \overrightarrow{e_{\theta}}$.
+    1. Exprimer $J_z$ en fonction de ces conditions initiales. 
+    1. A quelle condition sur $v_0$ la bille atteint-elle le fond du cône? Quelle est alors la trajectoire.
+    1. Déterminer $v_0$ pour que la trajectoire soit un cercle de rayon $r_0$ et d'altitude constante.
+    1. Montrer graphiquement que dans le cas général et si $J_z \neq 0$ le mouvement est dans un état lié dont les rayons extrêmes sont $r_{\min}$ et $r_{\max}$ qu'on repérera graphiquement.
+
+````
+
+
+
+## Potentiels newtoniens
+
+````{admonition} Vecteur excentricité 
 :class: attention
 
 On veut étudier le mouvement d'une planète P, assimilée à un point matériel dans le champ de gravitation d'une étoile de masse $M_e$, de centre O considérée comme ponctuelle et fixe. La planète de masse $M_P$ est située à une distance $r=OP$ de O. On considère le référentiel lié à l'étoile comme galiléen.
@@ -35,9 +80,7 @@ On rappelle que l'équation polaire d'une ellipse est $r(\theta) = \frac{p}{1+ e
 
 ````
 
-## Explosion d'une comète
-
-````{admonition} Exercice 
+````{admonition} Explosion d'une comète 
 :class: attention
 
 Une comète de période T=770 ans s'est approchée du soleil à $d = 7,75 \times 10^{-3} \rm{u.a.}$
@@ -49,9 +92,7 @@ Une comète de période T=770 ans s'est approchée du soleil à $d = 7,75 \times
 
 ````
 
-## Mise en orbite d'une sonde spatiale
-
-````{admonition} Exercice 
+````{admonition} Mise en orbite d'une sonde spatiale 
 :class: attention
 
 On souhaite mettre en orbite une sonde spatiale(s) autour de Mars. Ce véhicule possède au point A la vitesse $v_A$ et présente un "paramètre d’impact" b (cf. Figure). On donne:
@@ -78,9 +119,7 @@ Remarque: Le point B n'est pas placé correctement sur le schéma. Cela n'a pas 
 
 ````
 
-## Comète à trajectoire parabolique
-
-````{admonition} Exercice 
+````{admonition} Comète à trajectoire parabolique 
 :class: attention
 
 La comète Arend-Roland est une comète à trajectoire d'excentricité e estimée à 1,0002. On assimilera la trajectoire à une parabole d'excentricité e=1. La comète est passée à son périhélie, le 8 avril 1857, à $r_P = 0,316 \rm{u.a.}$ du soleil.
@@ -97,46 +136,3 @@ $$t(\alpha) = t_0 + \int_0^{\alpha} \frac{p^2}{C} \frac{d \theta}{{(1+ cos \thet
 
 ````
 
-## Satellite Hipparcos
-
-````{admonition} Exercice 
-:class: attention
-
-Le satellite Hipparcos lancé le 8 août 1987 était constitué principalement d'un télescope de 30cm de diamètre. Celui-ci a permis d'établir un catalogue des positions, distances et éclats de plus de 118000 étoiles avec une précision jamais atteinte. Ce satellite devait être placé sur une orbite géostationnaire à une altitude H=36000km. Un problème de mise à feu du moteur d'apogée a laissé Hipparcos sur son orbite de transfert son altitude variant entre h et H. Après utilisation des moteurs de positionnement, l'altitude minimale a été porté à h=500km. 
-
-Une programmation du satellite a permis de s'affranchir des problèmes liés à cette orbite. Au cours d'une révolution, il passe dans la ceinture de Van Allen. On supposera que cette ceinture comprise entre 2 sphères de rayon $r_1 = 8400 \rm{km}$ et $r_2 = 28000 \rm{km}$ et de centre celui de la Terre. La ceinture de Van Allen est constituée de particule piégées dans le champ magnétique terrestre. Ces particules aveuglent les détecteurs d'Hipparcos interrompant les mesures des positions des étoiles. Il est cependant utilisable à $65\%$. On assimile la terre à une sphère de centre O, de rayon R=6400km et de masse M et le satellite à un point matériel (S,m). On suppose le référentiel géocentrique R galiléen. La période de rotation de la terre dans ce référentiel appelée jour sidéral vaut T=86164s.
-
-1. Quelle la nature de la trajectoire d'Hipparcos?
-1. Déterminer les expressions de l'excentricité e et du paramètre de l'ellipse p en fonction de h,H et R. A.N.
-1. Exprimer et calculer le demi-grand axe a de la trajectoire.
-1. Rappeler la troisième loi de Kepler.
-1. Déduire de la question précédente, la relation entre la période de rotation de la Terre T et l'altitude de l'orbite géostationnaire H.
-1. Exprimer la période $T_h$ de révolution d'Hipparcos en fonction de T,R,H et h. Calculer $T_h$ en heure.
-1. Déterminer les valeurs numériques de angles $\theta_1$ et $\theta_2$ d'entrée et de sortie de la ceinture de Van Allen du satellite. On donnera les valeurs comprises entre $0 ^{\circ}$ et $180 ^{\circ}$.
-1. Représenter sur un schéma clair la trajectoire du satellite et l'aire balayée par $\overrightarrow{OS}$ lors d'un passage dans la ceinture de Van Allen. Pour la question suivante, on prendre une valeur approché de $S_b = 200 \times 10^{6} \rm{km}$.
-1. Déterminer le rapport $\rho = t_0/T_h$ en fonction de $S_b$ et $S_e$ (surface de l'ellipse) où $t_0$ est la durée totale d'inactivité d'Hipparcos sur une période.
-
-````
-
-## Satellite artificiel
-
-````{admonition} Exercice 
-:class: attention
-
-On étudie le lancement d'un satellite artificiel à partir d'un point O de la surface terrestre.
-
-1. Établir l'expression de la vitesse du point O dans le référentiel géocentrique $R_T$ assimilé à un référentiel galiléen en fonction de la vitesse de rotation de la Terre autour de l'axe de ses pôles $\omega$, du rayon terrestre $R_T$ et de la latitude du lieu $\lambda$.
-1. En déduire les conditions les plus favorables pour le lancement d'un satellite. Parmi les champs de tirs suivants, lequel choisir de préférence?
-    * Baïkonour au Kazakhstan: $\lambda = 46 ^{\circ}$
-    * Cap Canaveral aux USA: $\lambda = 28,5 ^{\circ}$
-    * Kourou en Guyane française: $\lambda = 5,23 ^{\circ}$
-
-3. Etablir l'expression de l'énergie potentielle de gravitation du système Terre-satellite en fonction de l'altitude z du satellite par rapport au sol. On prend pour référence une énergie potentielle nulle à l'infini. En déduire l'expression de l'énergie mécanique du satellite sur sa base de lancement dans le référentiel géocentrique.
-3. On appelle ici vitesse de libération $v_l$, la vitesse verticale minimale qu'il faut communiquer initialement au satellite par rapport au sol, pour qu'il puisse se libérer de l'attraction terrestre. Donner l'expression de $v_l$. Calculer sa valeur numérique dans le cas où le satellite est lancé de la base de Kourou. On supposera que la vitesse du point O attaché au sol est horizontale et la vitesse communiquée au satellite verticale.
-
-On considère un satellite artificiel m en mouvement circulaire autour de la Terre.
-1. Montrer que le mouvement du satellite est uniforme. Etablir l'expression de la vitesse du satellite en fonction de son altitude ainsi que la troisième loi de Kepler liant la période de rotation T du satellite au rayon r de sa trajectoire.
-2. Calculer le rayon de l'orbite d'un satellite géostationnaire et définir son plan de révolution.
-3. Quelle énergie cinétique minimale faut-il communiquer au satellite pour qu'il échappe à l'attraction terrestre s'il est initialement en orbite circulaire autour de la Terre à l'altitude z?  A.N. z = 36000 km; m=6 tonnes.
-4. Soit un satellite d'énergie initiale $E_{m0}$. Son orbite est relativement basse et il subit donc les frottements des couches hautes de l'atmosphère. Il s'ensuit que l'énergie mécanique du satellite varie suivant la loi $E_m = E_{m0} (1+ bt)$, b étant un coefficient constant positif. On suppose que la trajectoire reste approximativement circulaire. Préciser le signe de $E_{m0}$. Etablir l'expression du rayon r et de la vitesse v du satellite en fonction du temps. Comparer les évolutions de r et de v ainsi que celles des énergies potentielle et cinétique. Que devient l'énergie perdue?
-````

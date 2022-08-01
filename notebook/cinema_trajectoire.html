@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position et trajectoire &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/cinema_trajectoire.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Vecteur vitesse" href="cinema_vitesse.html" />
     <link rel="prev" title="Référentiel" href="cinema_referentiel.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -94,7 +98,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="cinematique.html">
-   Cinématique
+   Cinématique et cinétique du point
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -103,8 +107,8 @@
   </label>
   <ul class="current">
    <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="cinema_point.html">
-     Cinématique du point
+    <a class="reference internal" href="cinema_contxt.html">
+     Comprendre le contexte.
     </a>
     <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
@@ -112,34 +116,80 @@
      </i>
     </label>
     <ul class="current">
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_referentiel.html">
-       Référentiel
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="cinema_point.html">
+       Cinématique du point
       </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_referentiel.html">
+         Référentiel
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Position et trajectoire
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_vitesse.html">
+         Vecteur vitesse
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_acc.html">
+         Vecteur accélération
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_circulaire.html">
+         Cas du mouvement circulaire
+        </a>
+       </li>
+      </ul>
      </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       Position et trajectoire
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinetique_point.html">
+       Cinétique du point
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_inertie.html">
+         Point matériel et inertie
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_p.html">
+         Eléments cinétiques
+        </a>
+       </li>
+      </ul>
      </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="cinema_vitesse.html">
-       Vecteur vitesse
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc.html">
-       Vecteur accélération
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_circulaire.html">
-       Cas du mouvement circulaire
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_acc_unif.html">
-       Mouvement uniformément accéléré
+      <a class="reference internal" href="cinema_methode.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -149,56 +199,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="cinema_td.html">
-       TD Mécanique 1: Cinématique du point
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinetique_point.html">
-     Cinétique du point
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-    <label for="toctree-checkbox-3">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_inertie.html">
-       Point matériel et inertie
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_p.html">
-       Quantité de mouvement
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_cinema.html">
-     Cinématique et cinétique des systèmes de points
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-    <label for="toctree-checkbox-4">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_description.html">
-       Description d’un système de points
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_cinetique.html">
-       Cinétique du solide
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_mouvement.html">
-       Mouvements particuliers
+       Entrainement : Cinématique du point
       </a>
      </li>
     </ul>
@@ -206,45 +207,18 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="actions.html">
-   Description des actions mécaniques
+  <a class="reference internal" href="dynamique.html">
+   Dynamique du point matériel
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="actions_ponctuelles.html">
-     Modélisation des actions. Cas des actions ponctuelles.
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-    <label for="toctree-checkbox-6">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_interactions.html">
-       Actions et interactions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_typo.html">
-       Action ponctuelle: Modélisation et typologie
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_ex_app.html">
-       Exercices d’application
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="actions_globales.html">
-     Modélisation des actions globales
+    <a class="reference internal" href="dynamique_contxt.html">
+     Comprendre le contexte.
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
     <label for="toctree-checkbox-7">
@@ -252,70 +226,50 @@
      </i>
     </label>
     <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_typo.html">
-       Généralités sur les actions à distance
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions.html">
+       Description des actions mécaniques ponctuelles
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_typo.html">
+         Action ponctuelle: Modélisation et typologie
+        </a>
+       </li>
+      </ul>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_g_exemples.html">
-       Exemples d’analyse
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="theoremes.html">
+       Théorèmes fondamentaux de la mécanique classique
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_newton.html">
+         Lois de Newton et conséquences
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_tmc.html">
+         Théorème du moment cinétique
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="theoremes.html">
-   Théorèmes fondamentaux de la mécanique classique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_newton.html">
-     Lois de Newton et conséquences
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_tmc.html">
-     Théorème du moment cinétique
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_meth.html">
-     Activités méthodes: Applications des théorèmes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_ex_app.html">
-     Exercices d’application
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="theoremes_td.html">
-     Travaux dirigés
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="energetique.html">
-   Approche énérgétique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_gene.html">
-     Théorèmes énergétiques
+    <a class="reference internal" href="dynamique_ex.html">
+     S’entrainer
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
     <label for="toctree-checkbox-10">
@@ -324,28 +278,108 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_rappel.html">
-       Energie cinétique: Rappels
+      <a class="reference internal" href="actions_meth.html">
+       Méthodes : Actions
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_travail.html">
-       Travail et puissance des actions mécaniques
+      <a class="reference internal" href="theoremes_meth.html">
+       Méthodes : Applications des théorèmes
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_ep.html">
-       Forces/actions conservatives et énergie potentielle
+      <a class="reference internal" href="theoremes_ex_app.html">
+       Applications
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="energetique_theoremes.html">
+      <a class="reference internal" href="theoremes_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_contxt.html">
+     Comprendre le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_gene.html">
        Théorèmes énergétiques
       </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_travail.html">
+         Travail et puissance des actions mécaniques
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_ep.html">
+         Forces/actions conservatives et énergie potentielle
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_theoremes.html">
+         Théorèmes énergétiques
+        </a>
+       </li>
+      </ul>
      </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_conservatifs.html">
+       Systèmes conservatifs
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_conserv_1d.html">
+         Système à 1 degré de liberté
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_exemples.html">
-       Exemples
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
@@ -355,34 +389,7 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="energetique_td.html">
-       Travaux dirigés
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_conservatifs.html">
-     Systèmes conservatifs
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label for="toctree-checkbox-11">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_def.html">
-       Système conservatif: Définition
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_1d.html">
-       Système à 1 degré de liberté
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_conserv_td.html">
-       Travaux dirigés
+       Entrainement
       </a>
      </li>
     </ul>
@@ -393,8 +400,8 @@
   <a class="reference internal" href="applications.html">
    Applications
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -403,8 +410,8 @@
     <a class="reference internal" href="oscillateurs.html">
      Oscillateurs
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label for="toctree-checkbox-13">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -431,15 +438,10 @@
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="oscillateurs_td.html">
-       Travaux dirigés: Oscillateurs
+       Entrainement : Oscillateurs
       </a>
      </li>
     </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rotation.html">
-     Solide en rotation autour d’un axe fixe
-    </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="pendules.html">
@@ -452,55 +454,189 @@
   <a class="reference internal" href="centrales.html">
    Mouvement à force centrales
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="centrales_gene.html">
-     Mouvement à force centrales : Généralités
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="centrales_newtoniens.html">
-     Potentiels newtoniens
+    <a class="reference internal" href="centrales_contxt.html">
+     Comprendre le contexte
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_gene.html">
-       Forces newtoniennes: Généralités
+      <a class="reference internal" href="centrales_gene.html">
+       Généralités
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="centrales_newtoniens.html">
+       Potentiels newtoniens
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_mvt.html">
+         Etude du mouvement
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_kepler.html">
+         Mouvement des planètes et lois de Kepler
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_methodes.html">
+       Méthodes
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_odg.html">
-       Forces newtoniennes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_mvt.html">
-       Etude du mouvement
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_kepler.html">
-       Mouvement des planètes et lois de Kepler
+       Activités : Ordres de grandeur
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_satellites.html">
-       Mouvement des satellites
+       Activités : Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_app.html">
+       Applications
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="centrales_newt_td.html">
-       Travaux dirigés: Potentiels newtoniens
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="systeme_pts.html">
+   Systèmes de points matériels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="systeme_cinema.html">
+       Cinématique et cinétique des systèmes de points
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_description.html">
+         Description d’un système de points
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_cinetique.html">
+         Cinétique du solide
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_mouvement.html">
+         Mouvements particuliers
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions_globales.html">
+       Modélisation des actions globales
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_g_typo.html">
+         Types d’actions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_theoremes.html">
+         Théorèmes en mécanique du solide
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+    <label for="toctree-checkbox-26">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_methode.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="rotation.html">
+       Activité : Solide en rotation autour d’un axe fixe
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_td.html">
+       Entrainement
       </a>
      </li>
     </ul>
@@ -596,7 +732,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#vecteur-position">
@@ -658,7 +794,7 @@
         
               <div>
                 
-  <div class="section" id="position-et-trajectoire">
+  <div class="tex2jax_ignore mathjax_ignore section" id="position-et-trajectoire">
 <h1>Position et trajectoire<a class="headerlink" href="#position-et-trajectoire" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="vecteur-position">
 <h2>Vecteur position<a class="headerlink" href="#vecteur-position" title="Permalink to this headline">¶</a></h2>
@@ -666,22 +802,24 @@
 <h3>Vecteur position: Définition<a class="headerlink" href="#vecteur-position-definition" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Vecteur position</strong></p>
+<p><strong>Vecteur position</strong></p>
 <p>On définit la position d’un point matériel M dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> à l’aide du vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{OM}\)</span> où O est un <strong>point fixe</strong> du référentiel.</p>
 </div>
-<p>Normalement, on prend comme point O, le centre du repère choisi comme associé au référentiel d’étude.</p>
+<div class="sidebar">
+<p class="sidebar-title">Type de représentation</p>
+<p>On peut être amené à tracer des trajectoires en utilisant la représentation paramétrique (coordonnées en fonction d’un même paramètre, le temps) ou cartésienne (une coordonnée cartésienne en fonction d’un autre) ou polaire (une coordonnée polaire en fonction d’une autre).</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Equation horaire et trajectoire</strong></p>
+<p><strong>Equation horaire et trajectoire</strong></p>
 <p>L’évolution du mouvement du point matériel <span class="math notranslate nohighlight">\(OM(t)\)</span> est appelée équation horaire. Elle est aussi définit par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.</p>
-<p>On peut être amené à tracer des trajectoires en utilisant la représentation paramétrique (coordonnées en fonction d’un même paramètre, le temps) ou cartésienne (une coordonnée cartésienne en fonction d’un autre) ou polaire (une coordonnée polaire en fonction d’une autre).</p>
 </div>
 </div>
 <div class="section" id="expression-du-vecteur-position">
 <h3>Expression du vecteur position<a class="headerlink" href="#expression-du-vecteur-position" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Expressions</strong></p>
+<p><strong>Expressions</strong></p>
 <p>On peut exprimer le vecteur position dans les différents repères. Les vecteurs des bases locales sont exprimées au point M mobile:</p>
 <ul class="simple">
 <li><p>Coordonnées cartésiennes: <span class="math notranslate nohighlight">\(x_M(t) \overrightarrow{e_x} + y_M(t) \overrightarrow{e_y} + z_M(t) \overrightarrow{e_z}\)</span>.</p></li>
@@ -697,37 +835,35 @@
 </div>
 <div class="section" id="trajectoires-usuelles">
 <h2>Trajectoires usuelles<a class="headerlink" href="#trajectoires-usuelles" title="Permalink to this headline">¶</a></h2>
-<p>Il est important de pouvoir reconnaître un certain nombre de trajectoires usuelles à partir de leur équation paramétrique, cartésienne ou polaire. Nous allons présenter ici les trajectoires les plus utiles ainsi que leur caractéristiques.</p>
 <div class="section" id="trajectoire-rectiligne">
 <h3>Trajectoire rectiligne<a class="headerlink" href="#trajectoire-rectiligne" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Un trajectoire rectiligne ne signifie pas que le mobile va toujours dans le même sens. Il peut rebrousser chemin.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Mouvement rectiligne</strong></p>
+<p><strong>Mouvement rectiligne</strong></p>
 <p>Un mouvement rectiligne est un mouvement dont la trajectoire est portée par une droite (ou un segment) fixe dans le référentiel d’étude. Il se fait suivant une direction de l’espace: c’est un mouvement à 1 degré de liberté.</p>
 </div>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Choix du système de coordonnées</p>
+<div class="topic">
+<p class="topic-title first">Choix du système de coordonnées</p>
 <p>En général, on prévoit par une étude physique que le mouvement sera rectiligne. On va donc choisir un système de coordonnées cartésiennes (ou à la limite cylindriques) dont un axe est confondu avec le support de la trajectoire.</p>
-</div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>Un trajectoire rectiligne ne signifie pas que le mobile va toujours dans le même sens. Il peut rebrousser chemin.</p>
 </div>
 </div>
 <div class="section" id="trajectoire-circulaire">
 <h3>Trajectoire circulaire<a class="headerlink" href="#trajectoire-circulaire" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Mouvement circulaire</strong></p>
+<p><strong>Mouvement circulaire</strong></p>
 <p>Un mouvement est dit circulaire si le point M se déplace sur un cercle (ou une portion de cercle) fixe dans le référentiel R. C’est aussi un mouvement à 1 degré de liberté.</p>
 </div>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Choix du système de coordonnées</p>
+<div class="topic">
+<p class="topic-title first">Choix du système de coordonnées</p>
 <p>On va donc choisir un système de coordonnées cylindriques (ou polaires) de centre O le centre du cercle et d’axe Oz perpendiculaire au plan du cercle. On étudiera plus en détail les caractéristiques d’un tel mouvement.</p>
 </div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Equation cartésienne et paramétrique</strong></p>
+<div class="topic">
+<p class="topic-title first">Equation cartésienne et paramétrique</p>
 <p>On peut être amené à obtenir une trajectoire circulaire sans l’avoir prévu et en ayant utilisé au départ des coordonnées cartésiennes. Il est important de reconnaître qu’une équation cartésienne ou paramétrique est l’équation d’un cercle.</p>
 <p>Ainsi, si l’on peut mettre le couple de coordonnées cartésiennes <span class="math notranslate nohighlight">\((x(t);y(t))\)</span> sous la forme:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -736,8 +872,8 @@ x(t) = R \cos \omega t + x_0\\
 y(t) = R \sin \omega t + y_0
 \end{align*}\]</div>
 <p>Et on peut aussi écrire l’équation d’un cercle sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9ecdca05-63cd-4012-b39f-438b396b65ea">
-<span class="eqno">(1)<a class="headerlink" href="#equation-9ecdca05-63cd-4012-b39f-438b396b65ea" title="Permalink to this equation">¶</a></span>\[\begin{equation}\label{eq_cercle_cartesienmtex_234}
+<div class="amsmath math notranslate nohighlight" id="equation-1dc4ae24-9331-4eb2-b6a6-b1ad4d8e3eec">
+<span class="eqno">(1)<a class="headerlink" href="#equation-1dc4ae24-9331-4eb2-b6a6-b1ad4d8e3eec" title="Permalink to this equation">¶</a></span>\[\begin{equation}\label{eq_cercle_cartesienmtex_234}
 {(x - x_0)}^2 + {(y - y_0)}^2 = R^2
 \end{equation}\]</div>
 <p>Dans les deux cas, il s’agit de l’équation d’un cercle de rayon R et de centre C dont les coordonnées sont <span class="math notranslate nohighlight">\(C(x_0,y_0)\)</span></p>
@@ -745,12 +881,16 @@ y(t) = R \sin \omega t + y_0
 </div>
 <div class="section" id="trajectoire-elliptique">
 <h3>Trajectoire elliptique<a class="headerlink" href="#trajectoire-elliptique" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On fera attention au fait que le centre du repère ne définit pas le même point particulier de l’ellipse suivant qu’on utilise les coordonnées cartésiennes ou polaires.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Ellipse</strong></p>
-<p>Une ellipse est une courbe fermée qu’on peut caractériser/reconnaître de plusieurs manières:</p>
+<p><strong>Ellipse</strong><br />
+Une ellipse est une courbe fermée qu’on peut caractériser/reconnaître de plusieurs manières:</p>
 <ul class="simple">
-<li><p>Lieu géométrique (peu usité): Soit deux points, appelées foyers, <span class="math notranslate nohighlight">\(F_1\)</span> et <span class="math notranslate nohighlight">\(F_2\)</span> et un réel positif K, l’ensemble des points M tel que <span class="math notranslate nohighlight">\(MF_1 + MF_2 = K\)</span> décrit une ellipse. Le milieu du segment <span class="math notranslate nohighlight">\(F_1 F_2\)</span> est appelé centre de l’ellipse.</p></li>
+<li><p><em>Lieu géométrique (peu usité): Soit deux points, appelées foyers, <span class="math notranslate nohighlight">\(F_1\)</span> et <span class="math notranslate nohighlight">\(F_2\)</span> et un réel positif K, l’ensemble des points M tel que <span class="math notranslate nohighlight">\(MF_1 + MF_2 = K\)</span> décrit une ellipse. Le milieu du segment <span class="math notranslate nohighlight">\(F_1 F_2\)</span> est appelé centre de l’ellipse.</em></p></li>
 <li><p>Représentation polaire (<strong>fondamentale</strong>): Soit un point F centre d’un repère polaire. L’ensemble des points M dont les coordonnées du vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{FM}\)</span> sont tels que <span class="math notranslate nohighlight">\(r = \frac{p}{1 + e \cos{(\theta - \theta_0)}}\)</span> avec <span class="math notranslate nohighlight">\(p &gt; 0\)</span> et <span class="math notranslate nohighlight">\(0 \leq e &lt; 1\)</span> décrit une ellipse. <strong>Le point F est un des foyers de l’ellipse</strong>. On dit que p est le <strong>paramètre de l’ellipse</strong> et que <strong>e</strong> est l’excentricité de l’ellipse.</p></li>
 <li><p>Représentation cartésienne (très utile). L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x,y)\)</span> sont telles que: <span class="math notranslate nohighlight">\({(\frac{x}{a})}^2 + {(\frac{y}{b})}^2 = 1\)</span> décrit une ellipse dont le centre est le centre du repère.</p></li>
 <li><p>Représentation paramétrique (utile): L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x(t) = a \cos t ; y(t) = b \sin(t))\)</span> décrit une ellipse dont le centre est le centre du repère.</p></li>
@@ -759,49 +899,39 @@ y(t) = R \sin \omega t + y_0
 <img alt="../_images/mathematiques_ellipse.jpg" src="../_images/mathematiques_ellipse.jpg" />
 </div>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>On fera attention au fait que le centre du repère ne définit pas le même point particulier de l’ellipse suivant qu’on utilise les coordonnées cartésiennes ou polaires.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Caractéristiques d’une ellipse.</strong></p>
+<div class="topic">
+<p class="topic-title first"><strong>Caractéristiques d’une ellipse.</strong></p>
 <p>Les caractéristiques importantes sont:</p>
 <ul class="simple">
 <li><p>le demi-grand axe a (=OA)</p></li>
 <li><p>le demi-petit axe b (=OB)</p></li>
 <li><p>la distance focale c (=OF)</p></li>
 </ul>
-<p>On démontrera en exercice les relations suivantes:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-a &amp;= \frac{p}{1 - e^{2}}\\
-c^{2} &amp;= a^{2} - b^{2}\\
-e &amp;= c / a
-\end{align*}\]</div>
 </div>
 </div>
 <div class="section" id="trajectoire-parabolique">
 <h3>Trajectoire parabolique<a class="headerlink" href="#trajectoire-parabolique" title="Permalink to this headline">¶</a></h3>
+<div class="sidebar">
+<p class="sidebar-title">Orientation</p>
+<p>Dans le cas polaire, si <span class="math notranslate nohighlight">\(\theta_0 = 0\)</span> (cas fréquent) l’axe de symétrie de la parabole est l’axe qui sert d’origine des angles, soit en général l’axe Ox. Ce qui est différent du cas cartésien présenté ici.</p>
+<div class="figure align-center" id="fig-223">
+<img alt="../_images/mathematiques_paraboleb.jpg" src="../_images/mathematiques_paraboleb.jpg" />
+</div>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Parabole</strong></p>
+<p><strong>Parabole</strong></p>
 <p>Une parabole est une courbe non fermée qu’on peut caractériser/reconnaître de plusieurs manières:</p>
 <ul class="simple">
 <li><p>Représentation polaire (<strong>fondamentale</strong>): Soit un point F centre d’un repère polaire. L’ensemble des points M dont les coordonnées du vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{FM}\)</span> sont tels que <span class="math notranslate nohighlight">\(r = \frac{p}{1 + e \cos{\theta - \theta_0}}\)</span> avec <span class="math notranslate nohighlight">\(p &gt; 0\)</span> et <span class="math notranslate nohighlight">\(e = 1\)</span> décrit une parabole. <strong>Le point F est appelé foyer de la parabole</strong>. On dit que p est le <strong>paramètre de la parabole</strong> et que <strong>e</strong> est l’excentricité de la parabole.</p></li>
 <li><p>Représentation cartésienne (très utile). L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x,y)\)</span> sont telles que: <span class="math notranslate nohighlight">\(y = ax^2 + bx + c\)</span> décrit une parabole d’axe de symétrie parallèle à Oy.</p></li>
 </ul>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>Dans le cas polaire, si <span class="math notranslate nohighlight">\(\theta_0 = 0\)</span> (cas fréquent) l’axe de symétrie de la parabole est l’axe qui sert d’origine des angles, soit en général l’axe Ox. Ce qui est différent du cas cartésien présenté ici.</p>
-<div class="figure align-center" id="fig-223">
-<img alt="../_images/mathematiques_paraboleb.jpg" src="../_images/mathematiques_paraboleb.jpg" />
-</div>
-</div>
 </div>
 <div class="section" id="coniques">
 <h3>Coniques<a class="headerlink" href="#coniques" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Définition</p>
 <p>Les coniques correspondent à l’ensemble des courbes qu’on peut obtenir par l’intersection d’un cône et d’un plan. Il en résulte trois types de conique:</p>
 <ul class="simple">
 <li><p>l’ellipse</p></li>
@@ -811,23 +941,24 @@ e &amp;= c / a
 <div class="figure align-center" id="fig-224">
 <img alt="../_images/conique.png" src="../_images/conique.png" />
 </div>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Equation polaire d’une conique</strong></p>
+<p><strong>Equation polaire d’une conique</strong></p>
 <p>En choisissant correctement l’origine du repère polaire, on peut exprimer l’équation polaire d’une conique sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe00a1e0-197a-44ec-9a2f-b0ddaccb8997">
-<span class="eqno">(2)<a class="headerlink" href="#equation-fe00a1e0-197a-44ec-9a2f-b0ddaccb8997" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4ec088b1-7c47-45d1-b038-a030ebdb95bd">
+<span class="eqno">(2)<a class="headerlink" href="#equation-4ec088b1-7c47-45d1-b038-a030ebdb95bd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 r(\theta) = \frac{p}{1 \pm e \cos \left(\theta - \theta_0\right)}
 \end{equation}\]</div>
 <p>Le centre du repère est alors appelée foyer de la conique. A noter que l’ellipse et la parabole possède deux foyers symétriques par rapport au centre de la conique (centre de symétrie de la conique).</p>
 <p>p est appelée paramètre de l’ellipse et e excentricité. En changeant l’origine des angles, on peut faire en sorte de <span class="math notranslate nohighlight">\(\theta_0 = 0\)</span>.</p>
-</div>
 <p>De nombreuses propriétés seront vues sur les coniques lors du cours sur les potentiels newtoniens. On retiendra déjà que la valeur de l’excentricité déterminer le type de conique:</p>
 <ul class="simple">
 <li><p>ellipse: <span class="math notranslate nohighlight">\(0 \leq e &lt; 1\)</span></p></li>
 <li><p>parabole: <span class="math notranslate nohighlight">\(e = 1\)</span></p></li>
 <li><p>hyperbole: <span class="math notranslate nohighlight">\(e &gt; 1\)</span>. Attention, en coordonnées polaires, les asymptotes sont en général obliques.</p></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -855,16 +986,27 @@ r(\theta) = \frac{p}{1 \pm e \cos \left(\theta - \theta_0\right)}
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="cinema_referentiel.html" title="previous page">Référentiel</a>
-    <a class='right-next' id="next-link" href="cinema_vitesse.html" title="next page">Vecteur vitesse</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="cinema_referentiel.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Référentiel</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="cinema_vitesse.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Vecteur vitesse</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -880,8 +1022,7 @@ r(\theta) = \frac{p}{1 \pm e \cos \left(\theta - \theta_0\right)}
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

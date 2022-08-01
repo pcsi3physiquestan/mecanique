@@ -13,7 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# Mouvement des satellites
+# Activités : Mouvement des satellites
 
 On s'intéresse maintenant au mouvement des satellites. On s'intéressera dans le cours uniquement au mouvement des satellites autour de la Terre. Cette étude peut être généralisée. On notera $M_T$ la masse de la Terre et $m$ la masse du satellite. On veut s'intéresser à quelques données utiles lors de l'étude du mouvement des satellites.
 
@@ -35,7 +35,7 @@ En général, la mise en orbite "haute" d'un satellite se fait de la manière su
 On définit alors certaines grandeurs utiles pour la réflexion.
 
 
-````{important} __Définition : Vitesses cosmiques__
+````{important} __Vitesses cosmiques__
 
 On définit la première vitesse cosmique par la vitesse qu'aurait un satellite en orbite basse, c'est-à-dire telle que $h \ll R_T$.
 
@@ -43,7 +43,7 @@ On définit la seconde vitesse cosmique comme la vitesse minimale à transmettre
 
 ````
 
-````{important} __Définition : Orbite géostationnaire__
+````{important} __Orbite géostationnaire__
 
 L'orbite géostationnaire correspond à une orbite où le satellite tourne avec la même période que la Terre sur elle-même et est fixe par rapport à un point du globe.
 
@@ -81,13 +81,11 @@ On souhaite transférer un satellite depuis une orbite circulaire rasante de ray
 
 Le transfert s'effectue de son orbite basse géostationnaire s'effectue de la manière suivante: on communique au satellite une brusque variation de vitesse en un point P de sa trajectoire en éjectant des gaz pendant un intervalle de temps très court dans le sens opposé à la vitesse du satellite. Il suit alors une orbite elliptique et lorsque sa trajectoire croise la droite OP au point A, on lui communique un supplément de vitesse pour le stabiliser sur l'orbite géostationnaire.
 
-1. Etablir une relation entre les vitesses aux points A et P et les distances $r_A = OA$ et $r_P = OP$.
 1. En utilisant la conservation de l'énergie mécanique sur la trajectoire elliptique, établir l'expression de l'énergie mécanique en fonction de $G,M_T ,m$ et $a$ le demi grand axe de l'ellipse.
-1. Donner la valeur de l'énergie mécanique sur l'ellipse.
+1. Donner la valeur de l'énergie mécanique sur l'ellipse de transfert.
 1. Etablir l'expression de la vitesse du satellite sur la trajectoire elliptique en fonction de $R_G, R_T, r, G$ et $M_T$.
 1. Donner la valeur de vitesse qu'il faut imposer en P. Déterminer la variation de l'énergie mécanique en P.
 1. Donner la valeur de vitesse qu'il faut imposer en A. Déterminer la variation de l'énergie mécanique en A.
 1. Déterminer la durée du mouvement.
-
 ````
 

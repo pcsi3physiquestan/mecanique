@@ -15,22 +15,20 @@ kernelspec:
 ---
 # Etude du mouvement
 
-## Etude du mouvement: Position du problème
+## Position du problème
 
 
 __Position du problème__
 On considère deux point matériel $M_1$ et $M_2$ de masses respectives $m_1$ et $m_2$ formant un système isolé (problème à deux corps) et dont l'interaction est de type newtonienne. Ainsi la force exercée par $M_1$ sur $M_2$ est de la forme: $\overrightarrow{F} = - \frac{K}{r^2} \overrightarrow{e_r}$ où $r$ est la distance entre les deux corps et $\overrightarrow{e_r}$ le vecteur unitaire porté par la droite $(M_1 M_2)$ et dirigé de $M_1$ vers $M_2$.
 
 
-
-__Type d'approche__
+````{topic} Type d'approche
 On peut considérer deux types d'approches:
-
 * L'un des deux points matériels est nettement plus lourd (on suppose ici $m_1 >> m_2$). On admet qu'on peut alors se ramener à l'étude d'un seul corps, le point matériel $M_2$ dans le référentiel $R_1$ lié à $M_1$. Le système étant isolé, on peut considérer que le référentiel $R_1$ est galiléen. La résultante des forces qui s'exerce sur $M_2$ est alors toujours dirigée vers le point $M_1$: c'est un mouvement à force centrale. (Exemple: Interaction Terre-Soleil ou Proton-électron)
 * Dans le cas général, il s'agit d'un système de deux points matériel. On admet qu'une étude complète des systèmes de deux points (HP) permettrait de se ramener au mouvement d'un point (fictif) soumis à une force centrale newtonienne.
 
 On se ramène donc à étudier le mouvement d'un point matériel M soumis à une force centrale dans un référentiel galiléen.
-
+````
 
 _On rappelle que dans un mouvement à force centrale, le moment cinétique est conservé. Ici la force est de plus conservative donc l'énergie mécanique est aussi une intégrale première du mouvement._
 
@@ -43,11 +41,11 @@ On va donc choisir un système de coordonnées cylindriques d'axe Oz colinéaire
 * Energie potentielle effective: $E_{p,eff} = \frac{1}{2}\frac{mC^2}{r^2} - \frac{K}{r}$
 \end{rappel}
 
-## Conique
+## Trajectoire
 
-### Force newtonienne: Trajectoire
+### Trajectoire conique
 
-````{important} __Fondamental : Trajectoire conique__
+````{important} __Trajectoire conique__
 
 Un point matériel M soumis à une force centrale newtonienne de type $\overrightarrow{F} = - \frac{K}{r^2} \overrightarrow{e_r}$ dans un référentiel galiléen possède une trajectoire conique dont l'équation, dans un repère cylindrique d'axe Oz colinéaire au moment cinétique et de centre O le centre de force est:
 
@@ -63,17 +61,13 @@ On distingue les cas:
 * une parabole: $e=1$ Cas limite entre les deux, c'est une trajectoire ouverte, donc un état de diffusion.
 ````
 
-````{dropdown} Remarque
 
-Il existe plusieurs méthodes pour montrer que l'équation de la trajectoire est une conique. Le principe général est d'éliminer la variable temps dans les équations. On utilise ici une méthode: la conservation de l'énergie mécanique combinée avec la conservation du moment cinétique.
+### Trajectoire - Démonstration (en ligne)
 
-La preuve de cette propriété n'est théoriquement pas à connaître mais il est préférable d'en connaître une... 
-
-````
-
-### Forces newtoniennes: Trajectoire - Démonstration
-
-````{important} __Fondamental : Démonstration, dropdown__
+```{margin}
+Il existe plusieurs méthodes pour montrer que l'équation de la trajectoire est une conique. Le principe général est d'éliminer la variable temps dans les équations.
+```
+````{topic} __Démonstration__
 
 Le système est conservatif, donc l'énergie mécanique se conserve, soit: $\frac{dE_m}{dt} = 0$. Nous allons introduire la coordonnées $u = \frac{1}{r}$ et éliminer le temps en utilisant la constante des aires $C = r^2 \dot \theta$.
 
@@ -102,46 +96,33 @@ r(\theta) &= \frac{\frac{mC^2}{K}}{1+ \frac{mC^2 A}{K} \cos (\theta - \theta_0)}
 ````
 ## Trajectoire et énergie mécanique
 
-### Etude qualitatide du mouvement
+### Etude qualitative du mouvement
 
-````{important} __Fondamental : Energie potentielle effective.__
+```{margin}
+Dans le cas de l'hyperbole, seule une des deux branches est parcourue suivant que la trajectoire soit attractive (branche qui s'enroule autour du centre de force) ou répulsive (branche qui évite le centre de force).
+```
+````{important} __Energie potentielle effective.__
 
 On rappelle l'allure de l'énegie potentielle effective dans le cas attractif (premier) et répulsif (second). On rappelle que l'origine des potentiels a été choisi à l'infini.
 
 ```{figure} ./images/meca_newtonien_em.png
 :name: fig_259
 :align: center
-
 ```
 
 ```{figure} ./images/meca_newtonien_em_repul.png
 :name: fig_260
 :align: center
-
 ```
 
-Remarquons d'abord que dans le cas répulsif, la trajectoire est toujours de diffusion. Nous montrerons par la suite qu'il s'agit d'une hyperbole.
+* Remarquons d'abord que dans le cas répulsif, la trajectoire est toujours de diffusion. Nous montrerons par la suite qu'il s'agit d'une hyperbole.
+* Dans le cas attractif, il apparaît qu'un état lié correspond que l'énergie mécanique soit négative. La seule conique correspondant à un état lié est l'ellipse. Il vient qu'__une énergie mécanique négative correspond à une trajectoire elliptique.__
 
-Dans le cas attractif, il apparaît qu'un état lié correspond que l'énergie mécanique soit négative. La seule conique correspondant à un état lié est l'ellipse. Il vient qu'__une énergie mécanique négative correspond à une trajectoire elliptique.__
-
-Si l'énergie mécanique est positive ou nulle, le système sera en état de diffusion soit une parabole ou une hyperbole. La distinction justifée par la suite entre les deux sera faite par la suite: le cas parabolique correspond au cas limite $E_m = 0$ et le cas hyperbolique à $E_m > 0$.
+Si l'énergie mécanique est positive ou nulle, le système sera en état de diffusion soit une parabole ou une hyperbole. La distinction justifée par la suite entre les deux sera faite par la suite: __le cas parabolique correspond au cas limite $E_m = 0$ et le cas hyperbolique à $E_m > 0$.__
 ````
 
 
-Dans le cas de l'hyperbole, seule une des deux branches est parcourue suivant que la trajectoire soit attractive (branche qui s'enroule autour du centre de force) ou répulsive (branche qui évite le centre de force).
-
-
-````{attention}
-__Signe de K__
-
-
-Attention, le raisonnement sur le signe de K dépend de l'expression de la force newtonienne (présence ou non d'un signe -).
-
-Quoiqu'il arrive, le paramètre p sera pris de sorte que $p = \frac{mC^2}{\left\vert K \right\vert} > 0$.
-
-````
-
-````{important} __Fondamental : Caractéristiques des trajectoires. Cas elliptique.__
+````{important} __Caractéristiques des trajectoires. Cas elliptique.__
 
 On prend $\theta_0 = 0$.
 
@@ -154,7 +135,7 @@ On prend $\theta_0 = 0$.
 * Toutes les valeurs de $\theta$ sont possibles.
 ````
 
-````{important} __Fondamental : Caractéristiques des trajectoires. Cas parabolique.__
+````{important} __Caractéristiques des trajectoires. Cas parabolique.__
 
 On prend $\theta_0 = 0$.
 
@@ -166,7 +147,7 @@ On prend $\theta_0 = 0$.
 * Toutes les valeurs de $\theta$ sont possibles sauf $\theta = \pi$
 ````
 
-````{important} __Fondamental : Caractéristiques des trajectoires. Cas hyperbolique__
+````{important} __Caractéristiques des trajectoires. Cas hyperbolique__
 
 On prend $\theta_0 = 0$.
 
@@ -188,32 +169,3 @@ Cas répulsif
 * Point le plus proche (périhélie pour les planètes autour du soleil): $r_A = \frac{p}{e - 1}$ atteinte pour $\theta = 0$
 * Les valeurs de $\theta$ sont comprises entre $- \arccos \theta$ et $\arccos \theta$.
 ````
-
-### Enérgie mécanique et excentricité
-
-
-Nous allons trouver une relation entre l'énergie mécanique et l'excentricité. Cela permettra de démontrer la relation entre l'énergie mécanique et le type de trajectoire (parabolique, hyperbolique, elliptique).
-
-
-
->__Relation énergie mécanique-excentricité.__
->On utilise l'expression trouvée précédemment:
->
->$E_m = \frac{1}{2} mC^2 ({(\frac{du}{d \theta})}^2 + u^2 - \frac{2K}{mC^2} u)$
->
->or $u(\theta) = \frac{1 + e \cos \theta}{p}$ soit $\frac{du}{d \theta} = \frac{-e \sin \theta}{p}$. Donc:
->
->\begin{align*}
-E_m &= \frac{1}{2} mC^2 ({(\frac{e \sin \theta}{p})}^2 + {(\frac{1 + e \cos \theta}{p})}^2 - \frac{2K}{mC^2} \frac{1 + e \cos \theta}{p})\\
-&= \frac{1}{2} mC^2 (\frac{e^2}{p^2} \sin^2 \theta + \frac{e^2}{p^2} \cos^2 \theta + \frac{1}{p^2} + \frac{2e}{p^2} \cos \theta - \frac{2 + 2e \cos \theta}{p^2})\\
-&= \frac{1}{2} \frac{K^2}{mC^2} (e^2 - 1)
-\end{align*}
->D'où le lien entre énergie mécanique et type de trajectoire.
-
-
-````{attention}
-
-Cette relation ne __peut PAS être utilisée directement.__
-
-````
-

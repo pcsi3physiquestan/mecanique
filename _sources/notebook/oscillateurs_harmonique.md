@@ -17,7 +17,7 @@ kernelspec:
 
 ## Oscillateur harmonique: Equation
 
-````{important} __Définition : Equation différentielle d'un oscillateur harmonique__
+````{important} __Equation différentielle d'un oscillateur harmonique__
 
 Un oscillateur harmonique est un système dont l'équation d'évolution s'écrit:
 
@@ -28,7 +28,7 @@ On rappelle qu'on peut annuler le second membre __constant__ en procédant à un
 
 ````
 
-````{important} __Fondamental : Energie potentielle__
+````{important} __Energie potentielle__
 
 La résultante des forces en mécanique s'écrit donc sous la forme $\overrightarrow{F} = - k x \overrightarrow{e_x}$ et elle dérive d'une énergie potentielle sous la forme $E_p = \frac{1}{2}k x^2$
 

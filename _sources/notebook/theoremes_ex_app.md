@@ -13,11 +13,57 @@ kernelspec:
   language: python
   name: python3
 ---
-# Exercices d'application
+# Applications
 
-## Jeux aquatiques
+## Actions mécaniques
 
-````{admonition} Exercice 
+````{admonition} Interaction électromagnétique
+:class: attention
+On considère un champ électromagnétique dont les deux parties électriques et magnétiques ont la même origine. Dans ces conditions, on montre qu'en norme $B \sim \frac{E}{c}$ avec $c$ la vitesse de la lumière dans le vide.
+1. Dans le cadre de la mécanique relativiste $v \ll c$, montrer que la partie magnétique de l'interaction de Lorentz est toujours négligeable en norme devant la partie électique.
+````
+
+````{admonition} Variation du champ de gravitation
+:class: attention
+1. Déterminer l'altitude à laquelle le champ de gravitation a diminué de 1% par rapport à son intensité au niveau de la mer.
+2. Sachant que le champ de pesanteur est constitué à plus de 90% par l'action de la gravité, commenter l'hypothèse d'un champ de pesanteur uniforme et ses possibles limites.
+````
+
+````{admonition} Mouvement d'une planète 
+:class: attention
+
+Le mouvement d'une planète du système solaire, dans les hypothèses des lois de Kepler est une ellipse dont l'un des foyers des le Soleil. Dans ce cadre d'hypothèses, la seule action subit par la planète est l'action gravitationnelle exercée par le Soleil. La planète et le Soleil sont assimilés à des points matériels.
+
+1. Représenter qualitativement la trajectoire de la planète dans le référentiel héliocentrique. En quel point de l'ellipse la force gravitationnelle est-elle la plus forte ? la plus faible ?
+1. Représenter deux points où la planète est accéléré, deux points où la planète est ralentie et deux points où l'accélération est normale à la vitesse. Que se passe-t-il en ces points ?
+1. Que vaut le moment de la force gravitationnelle calculée au Soleil ? On remarquera que malgré sa valeur, le mouvement de rotation de la planète autour du Soleil évolue.
+````
+````{topic} Éléments de réponse (sans justification)
+1. La force est (en norme) la plus forte au point le plus proche du Soleil (appelé périhélie) et elle est la plus faible au point le plus éloigné du Soleil (appelé aphélie).
+1. Accéléré quand l'angle entre la vitesse et l'accélération est aigu, ralenti quand il est obtu. L'accélération est normale à la vitesse à l'aphélie et au pérhélie : en ces points, la vitesse atteint un extremum.
+1. Il est nul (vecteur $\overrightarrow{SP}$ parallèle à la force gravitationnelle).
+
+
+```{dropdown} _Conservation du moment cinétique_
+
+Comme on le verra par la suite, la nullité du moment résultant des forces extérieures conduit à la conservation du moment cinétique. Cette propriété aura de nombreuse conséquences sur l'étude du mouvement des planètes.
+
+```
+````
+
+
+
+## Théorèmes
+
+````{admonition} Expérience de Milikan
+:class: attention
+
+On place des goutellettes d'huile chargée de masse m et de charge q entre deux plaques et on maintient les deux plaques distantes d'une distance d à une différence de potentiel U orienté de la plaque du haut vers la plaque vers le bas. Il règne alors entre les plaque un chaque électrique $\overrightarrow{E} = \frac{U}{d}\overrightarrow{e_z}$ avec $\overrightarrow{e_z}$ un vecteur unitaire vertical orienté vers le haut. On suppose le champ de pesanteur uniforme.
+
+Exprimer la charge q en fonction des autres grandeurs introduites et de l'intensité du champ de pesanteur.
+````
+
+````{admonition} Jeux aquatiques 
 :class: attention
 
 Un baigneur (masse $m=80\rm{kg}$) saute d'un plongeoir situé à une hauteur $h=10\rm{m}$ au-dessus de la surface d'eau. On considère qu'il se laisse chuter sans vitesse initiale et qu'il est uniquement soumis à la force de pesanteur (on prendra $g = 10 \rm{m.s^{-2}}$) durant la chute. On note Oz l'axe vertical descendant, O étant le point de saut.
@@ -43,7 +89,7 @@ Le même baigneur décide maintenant d'effectuer un plongeon. On suppose qu'il e
 3. Le plongeur peut-il atteindre le fond de la piscine situé à 4m?
 
 ````
-````{dropdown} Eléments de réponse (sans justification)
+````{topic} Eléments de réponse (sans justification)
 
 L'équation à vérifier est:
 
@@ -64,18 +110,4 @@ z(t) = v_L \left(t - t_e\right) - \tau (v_e - v_L)e^{-\frac{\left(t-t_e\right)}{
 \end{align*}
 ````
 
-## Volant freiné
-
-````{admonition} Exercice 
-:class: attention
-
-On considère un volant qui tourne autour d'un axe fixe horizontal. Son moment d'inertie autour de cet axe vaut J. Son barycentre est sur l'axe et le champ de pesanteur est uniforme et constant. Au cours du mouvement, le volant subit des frottements solides qu'on modélise comme un couple constant dont le moment par rapport à l'axe de rotation est $\vert M_f \vert = \alpha J$ avec $\alpha$ constant. On lance le volant à une vitesse angulaire $\omega_0$ et celui-ci s'immobilise après N tours.
-
-
-1. Exprimer le coefficient $\alpha$ en fonction de $\omega_0$ et N.
-
-````{dropdown} Eléments de réponse (sans justification)
-
-$\alpha = \frac{\omega_0^2}{4 \pi N}$
-````
 

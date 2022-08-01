@@ -15,12 +15,4 @@ kernelspec:
 ---
 # Théorèmes fondamentaux de la mécanique classique
 
-````{admonition} Objectifs
-:class: tip
-* Décrire le mouvement relatif de deux référentiels galiléens
-* Déterminer les équations du mouvement d'un point matériel ou du centre d'inertie d'un système fermé.
-* Mettre en équation le mouvement sans frottements d'un système dans un champ de pesanteur.
-* Prendre en compte la traînée pour modéliser une situation réelle.
-* Appliquer le théorème du moment cinétique sur un axe ou un point
-````
-
+Les théorèmes fondamentaux permettent de relier action et mouvement.

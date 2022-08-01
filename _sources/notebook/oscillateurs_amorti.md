@@ -17,7 +17,7 @@ kernelspec:
 
 ## Oscillateur amorti: Equation
 
-````{important} __Définition : Oscillateur amorti__
+````{important} __Oscillateur amorti__
 
 Un oscillateur amorti est un oscillateur donc l'équation s'écrit:
 
@@ -30,7 +30,7 @@ On n'a pas donné ici l'expression avec le coefficient d'amortissement mais on p
 
 ````
 
-````{important} __Fondamental : Evolution énergétique__
+````{important} __Evolution énergétique__
 
 Le théorème de la puissance mécanique donne:
 

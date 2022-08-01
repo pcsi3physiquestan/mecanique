@@ -1,0 +1,970 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Méthodes : Actions &#8212; Mécanique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/actions_meth.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Méthodes : Applications des théorèmes" href="theoremes_meth.html" />
+    <link rel="prev" title="S’entrainer" href="dynamique_ex.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Mécanique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mecanique.html">
+   Mécanique classique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="cinematique.html">
+   Cinématique et cinétique du point
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_contxt.html">
+     Comprendre le contexte.
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinema_point.html">
+       Cinématique du point
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_referentiel.html">
+         Référentiel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_trajectoire.html">
+         Position et trajectoire
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_vitesse.html">
+         Vecteur vitesse
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_acc.html">
+         Vecteur accélération
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_circulaire.html">
+         Cas du mouvement circulaire
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinetique_point.html">
+       Cinétique du point
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_inertie.html">
+         Point matériel et inertie
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_p.html">
+         Eléments cinétiques
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_methode.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_td.html">
+       Entrainement : Cinématique du point
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="dynamique.html">
+   Dynamique du point matériel
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="dynamique_contxt.html">
+     Comprendre le contexte.
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions.html">
+       Description des actions mécaniques ponctuelles
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_typo.html">
+         Action ponctuelle: Modélisation et typologie
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="theoremes.html">
+       Théorèmes fondamentaux de la mécanique classique
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_newton.html">
+         Lois de Newton et conséquences
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_tmc.html">
+         Théorème du moment cinétique
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="dynamique_ex.html">
+     S’entrainer
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Méthodes : Actions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_meth.html">
+       Méthodes : Applications des théorèmes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_ex_app.html">
+       Applications
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_contxt.html">
+     Comprendre le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_gene.html">
+       Théorèmes énergétiques
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_travail.html">
+         Travail et puissance des actions mécaniques
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_ep.html">
+         Forces/actions conservatives et énergie potentielle
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_theoremes.html">
+         Théorèmes énergétiques
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_conservatifs.html">
+       Systèmes conservatifs
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_conserv_1d.html">
+         Système à 1 degré de liberté
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_exemples.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="applications.html">
+   Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="oscillateurs.html">
+     Oscillateurs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_equation.html">
+       Mise en équation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_harmonique.html">
+       Oscillateur harmonique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_amorti.html">
+       Oscillateur amorti
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_forces.html">
+       Oscillations forcées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_td.html">
+       Entrainement : Oscillateurs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pendules.html">
+     Etude des pendules
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="centrales.html">
+   Mouvement à force centrales
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_contxt.html">
+     Comprendre le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_gene.html">
+       Généralités
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="centrales_newtoniens.html">
+       Potentiels newtoniens
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_mvt.html">
+         Etude du mouvement
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_kepler.html">
+         Mouvement des planètes et lois de Kepler
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_methodes.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_odg.html">
+       Activités : Ordres de grandeur
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_satellites.html">
+       Activités : Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_app.html">
+       Applications
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="systeme_pts.html">
+   Systèmes de points matériels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="systeme_cinema.html">
+       Cinématique et cinétique des systèmes de points
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_description.html">
+         Description d’un système de points
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_cinetique.html">
+         Cinétique du solide
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_mouvement.html">
+         Mouvements particuliers
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions_globales.html">
+       Modélisation des actions globales
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_g_typo.html">
+         Types d’actions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_theoremes.html">
+         Théorèmes en mécanique du solide
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+    <label for="toctree-checkbox-26">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_methode.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="rotation.html">
+       Activité : Solide en rotation autour d’un axe fixe
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/actions_meth.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/actions_meth.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/actions_meth.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#forces-et-mouvement">
+   Forces et mouvement.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#utilisation-du-moment">
+   Utilisation du moment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#determination-de-la-force-de-rappel">
+   Détermination de la force de rappel
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="methodes-actions">
+<h1>Méthodes : Actions<a class="headerlink" href="#methodes-actions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="forces-et-mouvement">
+<h2>Forces et mouvement.<a class="headerlink" href="#forces-et-mouvement" title="Permalink to this headline">¶</a></h2>
+<p><em>On se propose d’étudier qualitativement l’effet d’une action sans utiliser les théorèmes.</em></p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère un point matériel M de masse m se déplaçant sur un plan incliné faisant un angle <span class="math notranslate nohighlight">\(\alpha\)</span> avec l’horizontale. Il est soumis à deux actions: son poids <span class="math notranslate nohighlight">\(\overrightarrow{P}\)</span> d’amplitude <span class="math notranslate nohighlight">\(mg\)</span> dirigé verticalement vers le bas et l’action du plan incliné <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> qu’on suppose perpendiculaire au plan.</p>
+<ol class="simple">
+<li><p>Proposer un système de coordonnées permettant d’étudier le mouvement de M sur le plan (on suppose que M reste sur le plan incliné). Préciser les expressions vectorielles des forces modélisant les deux actions qui s’appliquent sur le point M.</p></li>
+<li><p>Déduire des contraintes imposées l’expression de <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span>.</p></li>
+<li><p>Justifier qualitativement que le point matériel M va glisser le long du plan.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>1. Paramétrage</strong></p>
+<p>On va choisir un système de coordonnées cartésiennes dont l’un des axes (Ox) est suivant le plan incliné.</p>
+</div></blockquote>
+<div class="figure align-center" id="fig-228">
+<img alt="../_images/plan_modelisation.png" src="../_images/plan_modelisation.png" />
+</div>
+<blockquote>
+<div><p>Le poids s’écrira donc: <span class="math notranslate nohighlight">\(\overrightarrow{P} = - mg \cos \alpha \overrightarrow{e_y} + mg \sin \alpha \overrightarrow{e_x}\)</span>.</p>
+<p>La réaction du support s’écrit: <span class="math notranslate nohighlight">\(\overrightarrow{R} = R_y \overrightarrow{e_y}\)</span>. Nous ici dans un cas où l’on n’a pas d’expression connue des composantes de la force. Par contre, on connaît que <strong>certaines composantes sont nulles</strong>. C’est souvent le cas pour les actions dites “de contact”.</p>
+<p><strong>2. Contrainte cinématique</strong></p>
+<p>Ici, le mouvement de M est contraint à reste sur le plan incliné. Il vient une accélération nulle suivant l’axe Oy. Sans quantifier complètement la relation accélération-force, on peut déjà observer que cela implique que la somme des forces suivant l’axe Oy est nulle (il faut que leur action de déviation dans cette direction se compense). Soit: <span class="math notranslate nohighlight">\(R_y = - P_y = mg \cos \alpha\)</span> et donc <span class="math notranslate nohighlight">\(\overrightarrow{R} = mg \cos \alpha \overrightarrow{e_y}\)</span></p>
+<p>Remarque: on pourrait faire une construction graphique pour déterminer graphiquement les caractéristiques de <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span>.</p>
+<p><strong>3. Influence sur le mouvement</strong></p>
+<p>A nouveau, on sait que la force résultante suivant Ox donne la tendance générale du mouvement. Ici seul le poids possède une composante suivant Ox et elle est positive. Le point M aura donc tendance à être dirigé vers le bas de la pente.</p>
+<p>Attention, on rappelle que l’inertie peut permettre au point M de monter dans un premier temps si sa vitesse initiale était vers le haut. Mais va être ralenti et finira par redescendre.</p>
+<p><strong>Modélisation ponctuelle</strong>
+Le système précédente est probablement une modélisation ponctuelle d’un système mécanique plus étendu (un cube, une luge… ). On rappelle qu’une telle modélisation est valable seulement si le système de se déforme pas et ne risque pas de tourner sur lui-même.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="utilisation-du-moment">
+<h2>Utilisation du moment<a class="headerlink" href="#utilisation-du-moment" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Dans tout le problème, on travaille dans le référentiel terrestre <span class="math notranslate nohighlight">\(\mathfrak{R}_T\)</span>.</p>
+<p>On considère une petite masse m assimilable à un point matériel M accrochée à une tige rigide de longueur l sans masse dont l’autre extrémité est relié à un point fixe O. On considère que la tige ne se déforme pas et qu’elle exerce une action ponctuelle sur la masse dont la force est dirigé le long de la tige. L’ensemble est placé dans un champ de pesanteur <span class="math notranslate nohighlight">\(\overrightarrow{g}\)</span> de sorte que le point M.</p>
+<p>On supposera que le mouvement de M reste dans un plan vertical contenant le point O.</p>
+<ol class="simple">
+<li><p>Proposer un paramétrage adapté à l’étude du mouvement du point M puis déterminer dans ce système de coordonnées les vecteurs position, vitesse et accélération ainsi que le moment cinétique calculé par rapport au point O.</p></li>
+<li><p>Faire un bilan des actions appliquées sur le point M et donner l’expression vectorielle des forces associées. (Remarque: pour un point matériel, on parle aussi de bilan des forces).</p></li>
+<li><p>Calculer le moment de chaque action/force par rapport au point O et commenter leurs expressions. En déduire qualitativement l’évolution du mouvement du point M (on distinguera deux types de mouvement possibles).</p></li>
+<li><p>Peut-on déterminer, sans le PFD, l’expression de la force exercée par la tige sur le point M ? Pourquoi ?</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>1. Paramétrage</strong></p>
+<p>Le point M se déplace dans un plan à une distance constante du point O, sa trajectoire est donc portée par un cercle de centre O et de rayon l. On va donc travailler dans un système de coordonnées cylindriques d’axe Oz perpendiculaire au cercle trajectoire. On a pris l’origine des angles sur la verticale descendante.</p>
+</div></blockquote>
+<div class="figure align-center" id="fig-229">
+<img alt="../_images/pendule_param.png" src="../_images/pendule_param.png" />
+</div>
+<blockquote>
+<div><p>On peut alors écrire:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{OM} &amp;= l \overrightarrow{e_r}\\
+\overrightarrow{v_{M/\mathfrak{R}_T}} &amp;= l \dot \theta \overrightarrow{e_{\theta}}\\
+\overrightarrow{a_{M/\mathfrak{R}_T}} &amp;= - l \dot \theta^2 \overrightarrow{e_r} + l \ddot \theta \overrightarrow{e_{\theta}}\\
+\overrightarrow{L_{O/\mathfrak{R}_T}}(M) &amp;= m l^2 \dot \theta \overrightarrow{e_z}\\
+\end{align*}\]</div>
+<p>Il est vivement conseillé de s’entraîner à retrouver les expressions précédentes.</p>
+<p><strong>2. Bilan des forces</strong></p>
+<p>On est dans un champ de pesanteur, donc le poids s’applique sur le point M. Son expression est <span class="math notranslate nohighlight">\(\overrightarrow{P} = mg \overrightarrow{e_x} = mg \cos \theta \overrightarrow{e_r} - mg \sin \theta \overrightarrow{e_{\theta}}\)</span>.</p>
+<p>De plus, la tige exerce une action supposée ponctuelle dont l’expression est <span class="math notranslate nohighlight">\(\overrightarrow{T} = T \overrightarrow{e_r}\)</span>. Comme dans l’exemple du plan incliné, on ne connaît pas l’expression de T mais on sait que l’action est dirigée suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>. Ici T est de signe quelconque puisque la tige peut tirer ou pousser le point M. Si ça avait été un fil T aurait forcément été négatif (un fil ne peut pousser).</p>
+<p><strong>3. Calcul des moments des actions</strong></p>
+<p>Avec les expressions précédentes, il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{M_{O}(\mathfrak{A(poids)})} &amp;= \overrightarrow{OM} \wedge \overrightarrow{P}\\
+&amp;= l \overrightarrow{e_r} \wedge \left(mg \cos \theta \overrightarrow{e_r} - mg \overrightarrow{e_{\theta}}\right)\\
+&amp;= -mgl \sin \theta \overrightarrow{e_z}\\
+\overrightarrow{M_{O}(\mathfrak{A(tige)})} &amp;= \overrightarrow{OM} \wedge \overrightarrow{T}\\
+&amp;= l \overrightarrow{e_r} \wedge \left(T \overrightarrow{e_r}\right)\\
+&amp;= 0
+\end{align*}\]</div>
+<p>On remarque que le moment de la tige <strong>au point O</strong> est nul. C’est logique car la force exercée par l’action <strong>ponctuelle</strong> exercée par la tige est dirigée vers le point O de sorte qu’elle n’a aucun effet sur la rotation de M autour de O. D’un point de vue mathématique pour faire le calcul du moment, on pourra directement remarquer que la force est dirigée vers O, donc le produit vectoriel est nul.</p>
+<p>Le moment du poids est non nul ce qui est logique parce que le poids agit sur la rotation (sa composante suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span>). On peut remarquer que le poids tend à ramener le point M vers <span class="math notranslate nohighlight">\(\theta = 0\)</span> (point le plus bas) de sorte que le moment du poids doit être négatif quand <span class="math notranslate nohighlight">\(\theta &gt; 0\)</span> et positif quand <span class="math notranslate nohighlight">\(\theta &lt; 0\)</span>. C’est ce qu’on trouve.</p>
+<p><strong>4. Force et accélération</strong></p>
+<p>On ne peut pas déterminer pour l’instant l’expression de T comme on l’a fait précédemment pour la réaction d’un support. En effet, il n’y a pas de mouvement radiale (suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>) mais c’est un mouvement <strong>courbe</strong>. Le mouvement est donc <strong>dévié</strong> dans la direction <span class="math notranslate nohighlight">\(- \overrightarrow{e_r}\)</span> à chaque instant (son accélération suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est non nulle et négative).</p>
+<p>Il vient que la somme des forces suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> <strong>ne doit pas être nulle</strong> ce qui nous empêche de déterminer complètement l’expression de T. Grâce au principe fondamentale de la dynamique, on pourra obtenir une expression faisant intervenir l’accélération. Quant au calcul de cette dernière, nous évoquerons le cas de ce système plus tard.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="determination-de-la-force-de-rappel">
+<h2>Détermination de la force de rappel<a class="headerlink" href="#determination-de-la-force-de-rappel" title="Permalink to this headline">¶</a></h2>
+<p><em>On va présenter ici une méthode permettant de déterminer l’expression de la force de rappel élastique.</em></p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère deux ressorts horizontaux de raideur identique k et de longueur à vide <span class="math notranslate nohighlight">\(l_0\)</span>. Ils sont attachées comme représentés ci-dessous. Déterminer la force exercée par chaque ressort sur le point matériel M en fonction de la coordonnées x de M.</p>
+<div class="figure align-center" id="fig-235">
+<img alt="../_images/ressort_exo.png" src="../_images/ressort_exo.png" />
+</div>
+</div>
+<div class="topic">
+<p class="topic-title first">Résolution</p>
+<blockquote>
+<div><p><strong>Expression des longueurs</strong></p>
+<p>On va exprimer les longueurs (grandeurs positives) de chaque ressort en fonction des coordonnées. On note <span class="math notranslate nohighlight">\(l_1 = AM\)</span> et <span class="math notranslate nohighlight">\(l_2 = MB\)</span> les longueurs des ressorts.</p>
+<p>. Il est conseillé d’utiliser des grandeurs algébriques pour déterminer ces longueurs. Ici, il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+l_1 = \overline{AM} = \overline{AO} + \overline{OM} = L + x\\
+l_2 = \overline{MB} = \overline{MO} + \overline{BM} = L - x
+\end{align*}\]</div>
+<p>Les allongements sont donc:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta l_1 = l_1 - l_0 = L + x - l_0\\
+\Delta l_2 = l_2 - l_0 = L - x - l_0
+\end{align*}\]</div>
+</div></blockquote>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<em>Remarque : Longueur et allongement</em><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Il peut être préférable dans certains cas de determiner directement l’allongement directement.</p>
+</div>
+</details><blockquote>
+<div><p><strong>Expression du vecteurs unitaires directeurs</strong></p>
+<p>Il s’agit d’exprimer ce vecteur dans la base d’étude choisi. Ici, pour le ressort 1, le vecteur unitaire doit être suivant <span class="math notranslate nohighlight">\(+ \overrightarrow{e_x}\)</span> pour être orienté vers l’extérieur depuis le point M.</p>
+<p>Pour le ressort 2, <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}} = - \overrightarrow{e_x}\)</span>.</p>
+<p><strong>Expression complète</strong></p>
+<p>Il vient l’expression des forces de rappel appliquées sur le point M:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{F_1} = -k \left(L + x - l_0\right) \overrightarrow{e_x}\\
+\overrightarrow{F_2} = k \left(L - x - l_0\right) \overrightarrow{e_x}\\
+\end{align*}\]</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="dynamique_ex.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">S’entrainer</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="theoremes_meth.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Méthodes : Applications des théorèmes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

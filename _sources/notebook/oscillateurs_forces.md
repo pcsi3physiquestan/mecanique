@@ -20,16 +20,15 @@ On se place maintenant dans le cas d'un oscillateurs amorti soumis à une force 
 
 ## Oscillations forcées: Equation
 
-
-__Mise en équation__
+````{topic} Mise en équation
 Comme on l'a vu, l'équation d'évolution devient:
 
 \begin{align*}
 \frac{\rm{d^2}X}{\rm{dt^2}} + 2 \xi \omega_0 \frac{\rm{d}X}{\rm{dt}} + \omega_0^2 X = F_m \cos \omega t
 \end{align*}
-## Réponse en position
+````
 
-````{admonition} Exercice 
+````{admonition} Réponse en position 
 :class: attention
 
 1. Déterminer la réponse en position en régime forcé. On déterminera l'amplitude complexe puis l'amplitude réelle et la phase. Quel type de filtrage est réalisé.
@@ -39,9 +38,7 @@ Comme on l'a vu, l'équation d'évolution devient:
 
 ````
 
-## Réponse en vitesse
-
-````{admonition} Exercice 
+````{admonition} Réponse en vitesse 
 :class: attention
 
 1. Déterminer la réponse en vitesse en régime forcé. On déterminera l'amplitude complexe puis l'amplitude réelle et la phase. Quel type de filtrage est réalisé.
@@ -50,9 +47,7 @@ Comme on l'a vu, l'équation d'évolution devient:
 
 ````
 
-## Réponse en puissance
-
-````{admonition} Exercice 
+````{admonition} Réponse en puissance 
 :class: attention
 
 1. En appliquant le théorème de l'énergie mécanique, montrer que la puissance moyenne fournie par la force excitatrice est proportionnelle à l'amplitude de la vitesse au carré du système.

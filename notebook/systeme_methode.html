@@ -1,0 +1,1126 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Méthodes &#8212; Mécanique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/systeme_methode.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Activité : Solide en rotation autour d’un axe fixe" href="rotation.html" />
+    <link rel="prev" title="S’entrainer" href="systeme_ex.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Mécanique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mecanique.html">
+   Mécanique classique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="cinematique.html">
+   Cinématique et cinétique du point
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_contxt.html">
+     Comprendre le contexte.
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinema_point.html">
+       Cinématique du point
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_referentiel.html">
+         Référentiel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_trajectoire.html">
+         Position et trajectoire
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_vitesse.html">
+         Vecteur vitesse
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_acc.html">
+         Vecteur accélération
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinema_circulaire.html">
+         Cas du mouvement circulaire
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="cinetique_point.html">
+       Cinétique du point
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_inertie.html">
+         Point matériel et inertie
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="cinetique_p.html">
+         Eléments cinétiques
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="cinema_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_methode.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="cinema_td.html">
+       Entrainement : Cinématique du point
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="dynamique.html">
+   Dynamique du point matériel
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="dynamique_contxt.html">
+     Comprendre le contexte.
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions.html">
+       Description des actions mécaniques ponctuelles
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_typo.html">
+         Action ponctuelle: Modélisation et typologie
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="theoremes.html">
+       Théorèmes fondamentaux de la mécanique classique
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_newton.html">
+         Lois de Newton et conséquences
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="theoremes_tmc.html">
+         Théorème du moment cinétique
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="dynamique_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="actions_meth.html">
+       Méthodes : Actions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_meth.html">
+       Méthodes : Applications des théorèmes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_ex_app.html">
+       Applications
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="energetique.html">
+   Approche énérgétique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_contxt.html">
+     Comprendre le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_gene.html">
+       Théorèmes énergétiques
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_travail.html">
+         Travail et puissance des actions mécaniques
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_ep.html">
+         Forces/actions conservatives et énergie potentielle
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_theoremes.html">
+         Théorèmes énergétiques
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="energetique_conservatifs.html">
+       Systèmes conservatifs
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="energetique_conserv_1d.html">
+         Système à 1 degré de liberté
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="energetique_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_exemples.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_ex_app.html">
+       Exercices d’application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="energetique_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="applications.html">
+   Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="oscillateurs.html">
+     Oscillateurs
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_equation.html">
+       Mise en équation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_harmonique.html">
+       Oscillateur harmonique
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_amorti.html">
+       Oscillateur amorti
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_forces.html">
+       Oscillations forcées
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oscillateurs_td.html">
+       Entrainement : Oscillateurs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pendules.html">
+     Etude des pendules
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="centrales.html">
+   Mouvement à force centrales
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_contxt.html">
+     Comprendre le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_gene.html">
+       Généralités
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="centrales_newtoniens.html">
+       Potentiels newtoniens
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+      <label for="toctree-checkbox-20">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_mvt.html">
+         Etude du mouvement
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="centrales_newt_kepler.html">
+         Mouvement des planètes et lois de Kepler
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="centrales_ex.html">
+     S’entrainer
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_methodes.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_odg.html">
+       Activités : Ordres de grandeur
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_satellites.html">
+       Activités : Mouvement des satellites
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_app.html">
+       Applications
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="centrales_newt_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="systeme_pts.html">
+   Systèmes de points matériels
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="systeme_contxt.html">
+     Connaître le contexte
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="systeme_cinema.html">
+       Cinématique et cinétique des systèmes de points
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+      <label for="toctree-checkbox-24">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_description.html">
+         Description d’un système de points
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_cinetique.html">
+         Cinétique du solide
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="systeme_mouvement.html">
+         Mouvements particuliers
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="actions_globales.html">
+       Modélisation des actions globales
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_g_typo.html">
+         Types d’actions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="actions_theoremes.html">
+         Théorèmes en mécanique du solide
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="systeme_ex.html">
+     S’entrainer
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+    <label for="toctree-checkbox-26">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="rotation.html">
+       Activité : Solide en rotation autour d’un axe fixe
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_app.html">
+       Application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systeme_td.html">
+       Entrainement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/systeme_methode.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/systeme_methode.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/systeme_methode.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cinetique">
+   Cinétique
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#force-et-statique">
+   Force et statique
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dynamique">
+   Dynamique
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="methodes">
+<h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cinetique">
+<h2>Cinétique<a class="headerlink" href="#cinetique" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Calcul de la quantité de mouvement </p>
+<ol class="simple">
+<li><p>On considère un cylindre d’axe Oz fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> et de masse uniformément répartie en rotation autour de l’axe Oz. Déterminer la quantité de mouvement du cylindre.</p></li>
+<li><p>On considère un système composé de pièces de masse respectives <span class="math notranslate nohighlight">\(m_1\)</span> et <span class="math notranslate nohighlight">\(m_2\)</span>. La première est en translation à une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_0}\)</span> dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. La seconde est en translation à une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{2/1}}\)</span> par rapport à la première pièce. Déterminer la quantité de mouvement du système total.</p></li>
+<li><p>On considère un disque d’épaisseur <span class="math notranslate nohighlight">\(h\)</span> et de rayon <span class="math notranslate nohighlight">\(R\)</span> de masse totale <span class="math notranslate nohighlight">\(M\)</span> répartie de manière homogène. Il tourne autour d’un axe <span class="math notranslate nohighlight">\(Oz\)</span> où O est distance de <span class="math notranslate nohighlight">\(R/2\)</span> par rapport avec à G. La rotation se fait à vitesse angulaire constante <span class="math notranslate nohighlight">\(\omega\)</span>. Déterminer la quantité de mouvement du disque.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><ol class="simple">
+<li><p>Le cylindre étant de masse uniformément répartie, le centre d’inertie est situé sur l’axe de rotation et sa vitesse est nulle. Il vient:</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight" id="equation-8cd1b6a4-28bf-4f7f-b8ef-03f0439554e0">
+<span class="eqno">(59)<a class="headerlink" href="#equation-8cd1b6a4-28bf-4f7f-b8ef-03f0439554e0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{p}_{cylindre} = M \overrightarrow{v}_{G/\mathfrak{R}} = \overrightarrow{0}
+\end{equation}\]</div>
+<ol class="simple">
+<li><p>On décompose le système total en deux parties correspondant aux deux pièces:</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight" id="equation-ecab2b87-74e0-473d-bbdf-1558e0c60b3d">
+<span class="eqno">(60)<a class="headerlink" href="#equation-ecab2b87-74e0-473d-bbdf-1558e0c60b3d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{p}_{total} = \overrightarrow{p}_{1} + \overrightarrow{p}_{2} = m_1 \overrightarrow{v_0} + m_2 \left ( \overrightarrow{v_2/1} + \overrightarrow{v_0}\right)
+\end{equation}\]</div>
+<ol class="simple">
+<li><p>On pose un système de coordonnées cylindriques d’axe Oz.</p></li>
+</ol>
+</div></blockquote>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On a indicé le vecteur $\overrightarrow{e}_{\theta} pour bien préciser que la base locale est par rapport au point G. S’il n’y a pas d’ambiguité, cette précision n’est pas nécessaire.</p>
+</div>
+<blockquote>
+<div><div class="amsmath math notranslate nohighlight" id="equation-3be20405-351a-477d-8947-c34bf713a62d">
+<span class="eqno">(61)<a class="headerlink" href="#equation-3be20405-351a-477d-8947-c34bf713a62d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{p}_{cylindre} = M \overrightarrow{v}_{G/\mathfrak{R}} = M \frac{R}{2} \omega \overrightarrow{e}_{\theta,G}
+\end{equation}\]</div>
+</div></blockquote>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Moment d’inertie et moment cinétique </p>
+<ol class="simple">
+<li><p>On considère un solide S constitué de deux tiges de longueurs L pouvant coulisser l’une sur l’autre. La tige placée en dessous est accrochée par une extrémité à un axe fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. Préciser sans calcul pour quelles positions de la tige supérieure le moment d’inertie est maximal ou minimal.</p></li>
+<li><p>Déterminer le moment d’inertie d’un point matériel de masse m sur un axe<span class="math notranslate nohighlight">\(\Delta\)</span> situé à une distance d.</p></li>
+<li><p>On considère deux cylindriques concentriques de moment d’inertie respectifs <span class="math notranslate nohighlight">\(J_1\)</span> et <span class="math notranslate nohighlight">\(J_2\)</span> sur leur axe de symétrie et tournant chacun à des vitesses angulaires <span class="math notranslate nohighlight">\(\omega_1\)</span> et <span class="math notranslate nohighlight">\(\omega_2\)</span> autour de cet axe. Déterminer le moment cinétique et l’énergie cinétique de l’ensemble constitué des deux cylindres.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><ol class="simple">
+<li><p>Il faut</p>
+<ul class="simple">
+<li><p>que la répartition de masse soit la plus éloignée de l’axe pour que le moment soit maximale. La tige coulissante doit donc être au bout de la tige, côté extérieur (côté mobile)/</p></li>
+<li><p>que la répartition de masse soit la plus proche de l’axe pour que le moment soit minimale. La tige coulissante doit donc être centrée sur l’axe de rotation.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(md^2\)</span></p></li>
+<li><p>Les cylindres ne tournant pas à la même vitesse, il faut _<em>décomposer le système en deux sous-systèmes</em> composés des deux cylindres. Il vient:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+L_{total} = J_1 \omega_1 + J_2 \omega_2
+\]</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="force-et-statique">
+<h2>Force et statique<a class="headerlink" href="#force-et-statique" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-force-et-moment-resultant admonition">
+<p class="admonition-title">Force et moment résultant</p>
+<p>On considère une tige de longueur <span class="math notranslate nohighlight">\(L\)</span> dont le milieu est noté O qu’on prend comme origine d’un repère cartésien <span class="math notranslate nohighlight">\((O, \overrightarrow{e}_x, \overrightarrow{e}_y, \overrightarrow{e}_z)\)</span>. Elle soumise à une action extérieure uniforme sur toute sa longueur. Cette action globale est décomposée en des actions quasi-ponctuelles : on suppose qu’un petit élément de longueur <span class="math notranslate nohighlight">\(dl\)</span> de la tige est soumis à une action quasi-ponctuelle <span class="math notranslate nohighlight">\(\overrightarrow{dF} = \Lambda dl \overrightarrow{e}_x\)</span> avec <span class="math notranslate nohighlight">\(\overrightarrow{e}_x\)</span>.</p>
+<ol class="simple">
+<li><p>Déterminer par intégration la force résultante <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> exercée sur la tige.</p></li>
+<li><p>Déterminer par intégration le moment résultant <span class="math notranslate nohighlight">\(\overrightarrow{M}_A\)</span> calculé au point A de l’action considérée, A étant une extrémité de la tige. On traitera deux cas :</p>
+<ul class="simple">
+<li><p>La tige est suivant l’axe Ox (A est en <span class="math notranslate nohighlight">\(x=-\frac{L}{2}\)</span>).</p></li>
+<li><p>La tige est suivant l’axe Oy (A est en <span class="math notranslate nohighlight">\(y=-\frac{L}{2}\)</span>).</p></li>
+</ul>
+</li>
+<li><p>Reprendre les mêmes calculs pour calcul le moment résultant au point O.</p></li>
+</ol>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Le paramétrage de l’intégrale est à comprendre pour les chapitres à venir. <em>Il est VIVEMENT conseillé de faire un schéma puor comprendre le paramètrage et le signe du moments.</em></p>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<p><strong>1.</strong> Il suffit d’intégrer la force le long de la tige:</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{F} = \int_{l=0}^{l=L} \Lambda dl \overrightarrow{e}_x = \Lambda L \overrightarrow{e}_x
+\]</div>
+<p><strong>2.</strong> De même :</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{M}_A = \int_{M \in tige} \overrightarrow{AM} \wedge \Lambda dl \overrightarrow{e}_x
+\]</div>
+<ul class="simple">
+<li><p>Premier cas: <span class="math notranslate nohighlight">\(\overrightarrow{AM} = (x + \frac{L}{2})\overrightarrow{e}_x\)</span> et <span class="math notranslate nohighlight">\(dl=dx\)</span> soit :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{M}_A = \int_{x=\frac{-L}{2}}^{x=\frac{L}{2}} (x + \frac{L}{2})\overrightarrow{e}_x \wedge \Lambda dx \overrightarrow{e}_x = 0
+\]</div>
+<p>C’est logique car en chaque point, la force est colinéaire au vecteur <span class="math notranslate nohighlight">\(\overrightarrow{AM}\)</span> d’où un moment nul.</p>
+<ul class="simple">
+<li><p>Deuxième cas: <span class="math notranslate nohighlight">\(\overrightarrow{AM} = (y + \frac{L}{2})\overrightarrow{e}_y\)</span> et <span class="math notranslate nohighlight">\(dl=dy\)</span> soit :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{M}_A = \int_{y=\frac{-L}{2}}^{y=\frac{L}{2}} (y + \frac{L}{2})\overrightarrow{e}_y \wedge \Lambda dy \overrightarrow{e}_x = - \Lambda \frac{L^2}{2}\overrightarrow{e}_z
+\]</div>
+<p>La force tend effectivement à faire tourner la tige autour de A dans le sens des <span class="math notranslate nohighlight">\(-\overrightarrow{e}_z\)</span>, c’est cohérent.
+<strong>3.</strong> Dans le deux cas, le moment est nul.</p>
+<ul class="simple">
+<li><p>Premier cas : même raisonnement que précédemment.</p></li>
+<li><p>Deuxième cas : On a <span class="math notranslate nohighlight">\(\overrightarrow{OM} = y\)</span> d’où une intégrale nulle. C’est logique car cette fois les effets de rotation autour de O sont compensés deux à deux par les actions locales.</p></li>
+</ul>
+</div>
+<p><em>Cet exercice montre comment calculé les composantes d’une actions de contact quand elles ne sont pas connues : en utilisant les théorèmes TMC et TRD.</em></p>
+<div class="attention admonition">
+<p class="admonition-title">Equilibre d’un cube </p>
+<p>On étudie un cube (de masse uniformément répartie) sur un plan incliné. On admet qu’à l’équilibre, la somme des forces résultats est nulle et la somme des moments résultants en un même point est nulle.</p>
+<ol class="simple">
+<li><p>Représenter la force résultante de l’action du poids en un point judicieusement choisi.</p></li>
+<li><p>On considère un point B à la surface du plan situé au plus bas ou plus haut que le cube (donc pas sur la surface de contact). En raisonnant sur les actions ponctuelles de contact, justifier que le moment résultant en B ne peut jamais être nul.</p></li>
+<li><p>Le cube est immobile. Par une analyse du bilan des actions, représenter la force résultante de l’action du plan incliné sur le cube en un point où son moment est nul.</p></li>
+<li><p>Que se passe-t-il si l’on incline trop le plan ?</p></li>
+</ol>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On pourrait remarquer que le moment résultant du poids est aussi nul en tout point à la verticale de G. Le choix de le représenter en G plutôt qu’en un autre point à sa verticale reste arbitraire.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>1.Force résultante du poids.</strong>
+Le poids estune action globale qui n’a pas de point d’application. MAIS, on a vu qu’une action globale était <em>mathématiquement</em> équivalente à une action ponctuelle en un point de moment résultant nul. Un tel point est donc un bon endroit pour “représenter” une action globale.<br />
+Dans le cas du poids, on sait que le moment résultant est nul au centre d’inertie (champ de pesanteur uniforme) donc on va représenter le poids en G, le centre du cube.</p>
+<p><strong>2.Signe du moment</strong><br />
+On rappelle que l’action de contact ponctuelle du plan sur le cube est forcément dirigée vers l’extérieur du plan incliné (non interpénétration) donc:</p>
+<ul class="simple">
+<li><p>Si B est plus bas que le cube, les moments de TOUTES les actions ponctuelles en B sont non nuls et dirigés <a class="reference internal" href="#cube-incline"><span class="std std-ref">dans le même sens</span></a> : leur somme sera donc non nulle</p></li>
+<li><p>Le raisonnement est le même si B est au dessus du cube.
+<strong>3.Force résultante de la réaction.</strong>
+Deux forces s’appliquent sur le cube : son poids et l’action du support. La somme des forces est nulle à l’équilibre, donc la force résultante de l’action du support est un vecteur force opposé : <span class="math notranslate nohighlight">\(\overrightarrow{R} = - \overrightarrow{P}\)</span>.<br />
+On va de même chercher un point de moment résultant nul. A l’équilibre, la somme des moments résultants en un même point est nul (TMC). Donc si le moment du poids en un point B est nul, le moment de l’action du support est aussi nul en B. Il vient que le moment de l’action du support est nul en tout point à la verticale de G (car <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> est verticale).<br />
+Pour garder le sens physique de l’action de contact, on aura tendance à représenter <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> au point d’intersection entre cette verticale et le plan incliné.</p></li>
+</ul>
+<p><strong>4.Inclinaison du plan</strong><br />
+Si l’on incline trop le cube, on observe que l’intersection (notée B) entre la verticale en G etle plan incliné se retrouve hors du cube (angle supérieur à 45 degré).
+Hors, nous avons vu que le moment ne pouvait être nul en un tel point : le cube ne peut être en équilibre aux fortes pentes, il va basculer.</p>
+</div></blockquote>
+</div>
+<div class="figure align-center" id="cube-incline">
+<img alt="../_images/meca_actions_cube.png" src="../_images/meca_actions_cube.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Actions sur le cube</span><a class="headerlink" href="#cube-incline" title="Permalink to this image">¶</a></p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Cylindre sur plan incliné </p>
+<p>On considère un cylindre de rayon R, de hauteur h et de masse M uniformément répartie placé sur un plan incliné d’angle <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
+<ol class="simple">
+<li><p>Sur un plan de coupe, représenter les forces résultantes associées à chaque action extérieure sur le cylindre. On distinguera deux cas suivant le comportement de l’action de contact.</p></li>
+<li><p>Le cylindre peut-il rester immobile ? Peut-il glisser sans rouler ? Peut-il rouler sans glisser ? On expliquera ceci au moyen d’un bilan des actions.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p>Le raisonnement sur le cube peut-être refait ici et montre que le même résultant de l’action du plan sur le cylindre ne peut-être nul que sur l’arête de contact entre le cylindre et le plan incliné. Le poids est lui toujours de moment nul en G.
+On observe, une fois le schéma réalisé (s’entraîner à le faire), que la somme des moments est nécessairement non nulle donc le cylindre ne peut rester immobile et va forcément tourner (rouler). Il n’y a par contre pas <em>a priori</em> de contradiction à un roulement <em>sans glissement</em>.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="dynamique">
+<h2>Dynamique<a class="headerlink" href="#dynamique" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Volant freiné</p>
+<p>On considère un volant qui tourne autour d’un axe fixe horizontal. Son moment d’inertie autour de cet axe vaut J. Son centre d’inertie est sur l’axe et le champ de pesanteur est uniforme et constant. Au cours du mouvement, le volant subit des frottements solides qu’on modélise comme un couple constant dont le moment par rapport à l’axe de rotation est <span class="math notranslate nohighlight">\(\vert M_f \vert = \alpha J\)</span> avec <span class="math notranslate nohighlight">\(\alpha\)</span> constant. On lance le volant à une vitesse angulaire <span class="math notranslate nohighlight">\(\omega_0\)</span> et celui-ci s’immobilise après N tours.</p>
+<ol class="simple">
+<li><p>Exprimer le coefficient <span class="math notranslate nohighlight">\(\alpha\)</span> en fonction de <span class="math notranslate nohighlight">\(\omega_0\)</span> et N.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<p>On va appliquer un TMC sur l’axe de rotation appliqué au système {volant} dans le référentiel terrestre supposé galiléen. Les forces qui s’appliquent sur le système sont:</p>
+<ul class="simple">
+<li><p>son poids : le moment sur l’axe est nul puisque que le centre d’inertie (point de moment nul du poids) est sur l’axe.</p></li>
+<li><p>l’action de l’axe sur le volant : son moment est celui des frottements solides <span class="math notranslate nohighlight">\(M_f = - J \alpha\)</span> si l’on suppose <span class="math notranslate nohighlight">\(\omega &gt; 0\)</span> la vitesse angulaire.</p></li>
+</ul>
+<p>Le TMC s’écrit donc:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  J \frac{\rm{d}\omega}{\rm{dt}} &amp;= -J \alpha\\
+  \omega &amp;= -\alpha t + \omega_0 \\
+  \theta &amp;= -\frac{\alpha}{2} t^2 + \omega_0 t
+\end{align*}\]</div>
+<p>Le volant s’arrête donc pour <span class="math notranslate nohighlight">\(t_f = \frac{\omega_0}{\alpha}\)</span>, il a alors tourner de :</p>
+<div class="math notranslate nohighlight">
+\[
+\theta_f = \frac{\omega_0^2}{2\alpha} = 2 \pi N
+\]</div>
+<p>Il vient:</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha = \frac{\omega_0^2}{4 \pi N}
+\]</div>
+</div>
+<p><em>Cet exercice présente trois points importants: la capacité à paramétrer correctement un problème, le calcul d’un moment d’une force et l’analyse physique d’un système en rotation par étude des moments. Nous en profiterons pour aborder qualitativement deux notions importantes: la notion d’équilibre et la notion de stabilité.</em></p>
+<div class="attention admonition">
+<p class="admonition-title">Cas d’un système de points.</p>
+<p>On considère un cube de côté a et de répartition de masse uniformément répartie en liaison pivot avec un axe passant par le centre du cube et perpendiculaire à deux des faces du cube. Le cube ne peut ainsi que tourner autour de cet axe supposé fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. Tous les éléments cinématiques et cinétiques devront être établis dans ce référentiel qu’on supposera galiléen.</p>
+<div class="figure align-center" id="fig-230">
+<img alt="../_images/moment_cube.png" src="../_images/moment_cube.png" />
+</div>
+<p>On attache un fil tendu à un coin du cube noté A. On considère que la liaison entre le cube et le fil se résume à un seul point de sorte qu’on puisse considérer l’action du ressort sur le cube comme ponctuelle. La force appliqué par le fil sur le cube est toujours horizontale et de norme <span class="math notranslate nohighlight">\(F_0\)</span>.</p>
+<ol class="simple">
+<li><p>Paramétrer le problème (proposer un système de coordonnées et des paramètres utiles au problème) pour pouvoir étudier la rotation du cube autour de son axe. Proposer alors une expression du moment cinétique du cube sur l’axe de rotation,de son énergie cinétique et de sa quantité de mouvement. On notera J le moment d’inertie du cube sur l’axe de rotation et M sa masse totale.</p></li>
+<li><p>Exprimer le moment de la force exercé par le fil sur le cube exprimé au centre du cube. Commenter suivant les valeurs des paramètres introduits la tendance qu’aura cette force à agir sur la rotation du cube.</p></li>
+<li><p>On suppose la liaison pivot parfaite. Quelles sont les positions d’équilibre du système ? Si l’on écarte légèrement le cube de chacune de ces positions, aura-t-il tendance a revenir à la position d’équilibre ? (On parle de stabilité des positions d’équilibre).</p></li>
+</ol>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
+    class="octicon no-title" aria-hidden="true">
+  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
+    <circle cx="0" cy="12" r="6"></circle>
+    <circle cx="18" cy="12" r="6"></circle>
+    <circle cx="36" cy="12" r="6"></circle>
+  </g>
+</svg><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<blockquote>
+<div><p class="card-text"><strong>1. Paramétrage</strong></p>
+<p class="card-text">Pour étudier un système en rotation autour d’un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d’axe Oz l’axe de rotation. On a représenté ci dessous le système. On repère l’angle <span class="math notranslate nohighlight">\(\theta\)</span> permettant de repérer l’orientation du cube par l’angle <span class="math notranslate nohighlight">\((\overrightarrow{e_x},\overrightarrow{OA})\)</span> de manière à pouvoir utiliser cet angle pour les calculs de moments.</p>
+</div></blockquote>
+<div class="figure align-center" id="fig-231">
+<img alt="../_images/moment_cube_2.png" src="../_images/moment_cube_2.png" />
+</div>
+<blockquote>
+<div><p class="card-text">On peut alors écrire les éléments cinétiques du cube:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L_{Oz}(cube) &amp;= J \dot \theta \\
+E_{c,cube} &amp;= \frac{1}{2} J \dot \theta^2\\
+\overrightarrow{P_{cube/\mathfrak{R}}} = M \overrightarrow{v_{G}} = \overrightarrow{0}
+\end{align*}\]</div>
+<p class="card-text"><strong>Le cube étant de masse répartie de manière homogène, le centre d’inertie est situé au point O, centre du cube</strong>. Fixé sur l’axe Oz, le centre d’inertie est donc immobile, d’où la quantité de mouvement nulle.</p>
+<p class="card-text">Les deux autres expressions sont les expressions déjà données <strong>dans le cas d’un solide en rotation autour d’un axe fixe</strong>.</p>
+<p class="card-text"><strong>2. Calcul de moment de l’action/la force</strong></p>
+<p class="card-text">L’action du fil sur le cube est une action ponctuelle dont la force s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F} = F_0 \overrightarrow{e_x}\)</span> et dont le point d’application est A. Le moment de l’action du fil sur le cube calculé sur l’axe Oz s’écrit (O est un point de l’axe…  Oz):</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_{fil \to cube,Oz} &amp;= \overrightarrow{e_z} \cdot \left(\overrightarrow{OA} \wedge \overrightarrow{F}\right)\\
+&amp;= \overrightarrow{e_z} \cdot \left(\left(\frac{a}{\sqrt{2}} \overrightarrow{e_r} + \frac{a}{2} \overrightarrow{e_z}\right) \wedge F_0 \overrightarrow{e_x}\right)\\
+&amp;= \overrightarrow{e_z} \cdot \left(\frac{aF_0}{2} \overrightarrow{e_y} - \frac{a}{\sqrt{2}} F_0 \sin \theta  \overrightarrow{e_z} \right)\\
+&amp;= - \frac{a}{\sqrt{2}} F_0 \sin \theta \\
+\end{align*}\]</div>
+<p class="card-text"><strong>3. Positions d’équilibre et stabilité</strong>
+On remarque que si <span class="math notranslate nohighlight">\(\theta\)</span> est positif, le moment de l’action est négatif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> décroissants. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, le moment de l’action est positif: l’action du fil aura tendance à faire tourner le cube dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants. C’est cohérent avec le schéma représenté ci-dessous.</p>
+</div></blockquote>
+<div class="figure align-center" id="fig-232">
+<img alt="../_images/moment_cube_signe.png" src="../_images/moment_cube_signe.png" />
+</div>
+<blockquote>
+<div><p class="card-text">On va appliquer un TMC sur l’axe de rotation au cube. Le poids est de moment nul (centre d’inertie sur l’axe) et la liaison pivot aussi (liaison parvaite). Le TMC devient donc:</p>
+</div></blockquote>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+J_{cube} \frac{\rm{d^2}\\theta}{\rm{dt^2}} = - \frac{a}{\sqrt{2}} F_0 \sin \theta
+\end{split}\]</div>
+<p class="card-text">Donc, les angles pour lesquels le moment de l’action du fil est nul seront les positions d’équilibre. L’expression précédente montre que les deux positions correspondent aux angles <span class="math notranslate nohighlight">\(\theta = 0\)</span> et <span class="math notranslate nohighlight">\(\theta = \pi\)</span>. On a représenté les positions d’équilibre ci-dessous.</p>
+<div class="figure align-center" id="fig-233">
+<img alt="../_images/moment_cube_equilibre.png" src="../_images/moment_cube_equilibre.png" />
+</div>
+<blockquote>
+<div><p class="card-text">On remarque que si l’on écarte légèrement le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = 0\)</span> vers des angles positifs, l’angle va décroitre sous l’effet de l’action du fil (cf. schéma du signe du moment) et il va donc avoir tendance à revenir vers la position d’équilibre. A l’inverse, si <span class="math notranslate nohighlight">\(\theta\)</span> est négatif, l’angle va croitre (schéma du signe du moment) et va aussi revenir vers la position d’équilibre. Donc  lorsqu’on écarte le système de cette position d’équilibre, il tend à y revenir, on dit que la position d’équilibre est <strong>stable</strong>.</p>
+</div></blockquote>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p class="card-text">On pourrait montrer que l’action du fil dérive d’une énergie potentiel et faire une étude énergétique des équilibres.</p>
+</div>
+<blockquote>
+<div><p class="card-text">A l’inverse si l’on écarte le cube de sa position d’équilibre <span class="math notranslate nohighlight">\(\theta = \pi\)</span>, on remarque qu’il va s’éloigner de cette position. En effet, pour <span class="math notranslate nohighlight">\(\theta &lt; \pi\)</span>, le moment est négatif et l’angle va encore décroître. Et pour <span class="math notranslate nohighlight">\(\theta &gt; + pi\)</span>, le moment est positif et l’angle va croître. Dans les deux cas, on s’éloigne de la position d’équilibre: la position est dite <strong>instable</strong>.</p>
+</div></blockquote>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="systeme_ex.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">S’entrainer</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="rotation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Activité : Solide en rotation autour d’un axe fixe</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
