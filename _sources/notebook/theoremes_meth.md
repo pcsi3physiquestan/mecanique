@@ -14,6 +14,7 @@ kernelspec:
   name: python3
 ---
 # Méthodes : Applications des théorèmes
+Les exercices seront corrigés en cours.
 
 ## Mouvement dans un champ de pesanteur
 
