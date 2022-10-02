@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oscillations forcées &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/oscillateurs_forces.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Entrainement : Oscillateurs" href="oscillateurs_td.html" />
     <link rel="prev" title="Oscillateur amorti" href="oscillateurs_amorti.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#oscillations-forcees-equation">
@@ -750,13 +746,13 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="oscillations-forcees">
+  <div class="section" id="oscillations-forcees">
 <h1>Oscillations forcées<a class="headerlink" href="#oscillations-forcees" title="Permalink to this headline">¶</a></h1>
 <p>On se place maintenant dans le cas d’un oscillateurs amorti soumis à une force sinusoïdale. On s’intéresse uniquement au cas du régime sinusoïdal forcé. Comme étudié précédemment, on réalise le changement de variable nécessaire pour annuler second membre constant. On va étudier deux types de réponses: la réponse en élongation et la réponse en vitesse.</p>
 <div class="section" id="oscillations-forcees-equation">
 <h2>Oscillations forcées: Equation<a class="headerlink" href="#oscillations-forcees-equation" title="Permalink to this headline">¶</a></h2>
 <div class="topic">
-<p class="topic-title first">Mise en équation</p>
+<p class="topic-title">Mise en équation</p>
 <p>Comme on l’a vu, l’équation d’évolution devient:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -764,7 +760,7 @@
 \end{align*}\]</div>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Réponse en position </p>
+<p class="admonition-title">Réponse en position</p>
 <ol class="simple">
 <li><p>Déterminer la réponse en position en régime forcé. On déterminera l’amplitude complexe puis l’amplitude réelle et la phase. Quel type de filtrage est réalisé.</p></li>
 <li><p>Etudier l’existence d’une résonance en fonction du coefficient d’amortissement.</p></li>
@@ -773,7 +769,7 @@
 </ol>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Réponse en vitesse </p>
+<p class="admonition-title">Réponse en vitesse</p>
 <ol class="simple">
 <li><p>Déterminer la réponse en vitesse en régime forcé. On déterminera l’amplitude complexe puis l’amplitude réelle et la phase. Quel type de filtrage est réalisé.</p></li>
 <li><p>Déterminer la pulsation de résonance et étudier la largeur de la bande passante.</p></li>
@@ -781,7 +777,7 @@
 </ol>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Réponse en puissance </p>
+<p class="admonition-title">Réponse en puissance</p>
 <ol class="simple">
 <li><p>En appliquant le théorème de l’énergie mécanique, montrer que la puissance moyenne fournie par la force excitatrice est proportionnelle à l’amplitude de la vitesse au carré du système.</p></li>
 <li><p>En déduire la réponse fréquentielle en puissance et son allure. Pour quelle pulsation la puissance absorbée par l’oscillateur est-elle maximale ?</p></li>
@@ -813,27 +809,16 @@
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="oscillateurs_amorti.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Oscillateur amorti</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="oscillateurs_amorti.html" title="previous page">Oscillateur amorti</a>
+    <a class='right-next' id="next-link" href="oscillateurs_td.html" title="next page">Entrainement : Oscillateurs</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="oscillateurs_td.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Entrainement : Oscillateurs</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -849,7 +834,8 @@
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

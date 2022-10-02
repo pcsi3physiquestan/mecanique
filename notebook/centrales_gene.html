@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Généralités &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/centrales_gene.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Potentiels newtoniens" href="centrales_newtoniens.html" />
     <link rel="prev" title="Comprendre le contexte" href="centrales_contxt.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#definition">
@@ -789,7 +785,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="generalites">
+  <div class="section" id="generalites">
 <h1>Généralités<a class="headerlink" href="#generalites" title="Permalink to this headline">¶</a></h1>
 <p><em>Dans tout le chapitre, le système sera un point matériel noté M.</em></p>
 <div class="sidebar">
@@ -797,7 +793,7 @@
 <p>Les intégrales premières du mouvement sont extrêmement importantes car elles permettent d’établir des équations d’ordre 1. On peut alors utiliser comme conditions initiales, non pas les données de positions et de vitesses mais les valeurs de ces intégrales premières du mouvement.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Rappel : Intégrale première du mouvement</p>
+<p class="topic-title">Rappel : Intégrale première du mouvement</p>
 <p>Une intégrale première du mouvement est une grandeur dépendant de la position et de sa dérivée temporelle et qui est constante au cours du mouvement.</p>
 <blockquote>
 <div><p>On a vu que pour un système conservatif, l’énergie mécanique, qui ne dépend que de la vitesse (par l’énergie cinétique) et de la position (par l’énergie potentielle) est une intégrale première du mouvement.</p>
@@ -890,7 +886,7 @@ d\mathfrak{A} &amp;= \frac{1}{2} \left\vert \overrightarrow{OM}\wedge\overrighta
 <p>Une force centrale conservative ne dépend que de la coordonnées radiale. On peut donc écrire <span class="math notranslate nohighlight">\(\overrightarrow{F} = F(r) \overrightarrow{e_r}\)</span> et l’énergie potentielle associée <span class="math notranslate nohighlight">\(E_p(r)\)</span> est telle que <span class="math notranslate nohighlight">\(F(r) = - \frac{\rm{d}E_p}{\rm{dr}}(t)\)</span>.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration</p>
+<p class="topic-title">Démonstration</p>
 <blockquote>
 <div><p><strong>Démonstration</strong>
 La force est uniquement suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> par définition d’une force centrale. Il vient (gradient) que les dérivées partielles de l’énergie potentielle par rapport à <span class="math notranslate nohighlight">\(\theta\)</span> et z sont nulles: l’énergie potentielle ne dépend que de r. En dérivant, il vient que la force ne dépend aussi que de r.</p>
@@ -899,14 +895,14 @@ La force est uniquement suivant <span class="math notranslate nohighlight">\(\ov
 <div><p><strong>Conservation de l’énergie mécanique</strong>
 La seule force est conservative, donc l’énergie mécanique est une constante: c’est une intégrale première du mouvement. Comme nous l’avons expliqué, nous n’utiliserons que très rarement des données initiales sur la vitesse et la position. Elles seront remplacées par les données de l’énergie mécanique et du moment cinétique qui sont des constantes du mouvement.</p>
 <p>A un instant t quelconque, l’énergie mécanique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b95ba448-b7c3-4421-b7e4-86f9a712d36f">
-<span class="eqno">(10)<a class="headerlink" href="#equation-b95ba448-b7c3-4421-b7e4-86f9a712d36f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-44b75fde-2221-4382-99be-b6f4deb1ce45">
+<span class="eqno">(10)<a class="headerlink" href="#equation-44b75fde-2221-4382-99be-b6f4deb1ce45" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 E_m = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2 + E_p(r)
 \end{equation}\]</div>
 </div></blockquote>
 </div>
 <div class="topic">
-<p class="topic-title first">Interprétation de l’énergie cinétique.</p>
+<p class="topic-title">Interprétation de l’énergie cinétique.</p>
 <p>L’énergie cinétique se réécrit:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -922,7 +918,7 @@ E_c = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2
 <div class="section" id="energie-potentielle-effective">
 <h3>Energie potentielle effective<a class="headerlink" href="#energie-potentielle-effective" title="Permalink to this headline">¶</a></h3>
 <div class="topic">
-<p class="topic-title first">But</p>
+<p class="topic-title">But</p>
 <p>Le but est d’éliminer la vitesse angulaire pour n’avoir une énergie mécanique s’exprimant uniquement en fonction du rayon et de sa dérivée temporelle. On introduira alors l’énergie mécanique sous la forme:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -956,7 +952,7 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
 <p>A partir du moment où le mobile tourne, il faudra une énergie potentielle tendant très rapidement vers <span class="math notranslate nohighlight">\(- \infty\)</span>, c’est-à-dire que la force doit être <strong>très</strong> attractive, pour que cette barrière infinie soit compensée et que le centre de force soit accessible. Dans de nombreux cas usuels, la barrière infinie n’est pas compensée.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Interprétation</p>
+<p class="topic-title">Interprétation</p>
 <p>Nous allons détailler les caractéristiques qu’on peut déduire de l’énergie potentielle effective mais comme nous l’avons dit, on peut déjà remarquer que <span class="math notranslate nohighlight">\(\frac{1}{2}m \dot r^{2}\)</span> est positif ou nul. Cela implique que <strong>l’énergie potentielle effective est nécessairement inférieure à l’énergie mécanique.</strong></p>
 <p>Comme pour le cas des mouvements conservatifs, cela va interdire certaines zones. Mais cette condition est plus contraignante car l’énergie potentielle effective est plus grande que l’énergie potentielle (le terme d’énergie cinétique orthoradiale est positive - strictement si le moment cinétique est non nul).</p>
 </div>
@@ -980,7 +976,7 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
 <p>Les rayons extrêmes atteints seront données par l’équation <span class="math notranslate nohighlight">\(E_{p,eff} = E_m\)</span>. De même, le mobile ne peut change la variation de r (passer d’éloignement à rapprochement ou inversement) qu’aux position extrêmes car ce sont les positions où la vitesse <strong>radiale</strong> s’annule. La trajectoire est y est tangente au cercle.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Positions extrêmes et vitesse</p>
+<p class="topic-title">Positions extrêmes et vitesse</p>
 <p><strong>ATTENTION !</strong> Aux rayons extrêmes, <strong>seule la vitesse radiale s’annule</strong>. La vitesse totale n’est <strong>pas nulle</strong>. En effet, si le moment cinétique n’est pas nulle, il vient que la vitesse orthoradiale ne s’annule jamais.</p>
 <p><em>Nous verrons même des exemples où la vitesse sera maximale pour l’un des deux rayons extrêmes.</em></p>
 </div>
@@ -997,7 +993,7 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
 </ul>
 </div>
 <div class="topic">
-<p class="topic-title first">TrajectoireS circulaireS</p>
+<p class="topic-title">TrajectoireS circulaireS</p>
 <p>Bien qu’il n’apparaissent souvent qu’un seul minimum sur les tracés d’énergie potentielle effective, il existe en réalité une infinité de trajectoires circulaires possibles suivant la valeur du moment cinétique. Une variation de ce dernier fait varier le tracé même de <span class="math notranslate nohighlight">\(E_{p,eff}(r)\)</span> et donc la position du minimum.</p>
 <p>On déduit en général, non pas une valeur de R, mais <strong>une relation entre le rayon du cercle et la vitesse</strong> du mobile.</p>
 </div>
@@ -1029,27 +1025,16 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="centrales_contxt.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Comprendre le contexte</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="centrales_contxt.html" title="previous page">Comprendre le contexte</a>
+    <a class='right-next' id="next-link" href="centrales_newtoniens.html" title="next page">Potentiels newtoniens</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="centrales_newtoniens.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Potentiels newtoniens</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -1065,7 +1050,8 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

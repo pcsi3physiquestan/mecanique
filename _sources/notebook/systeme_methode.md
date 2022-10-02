@@ -35,7 +35,7 @@ kernelspec:
 \end{equation}
 >1. On pose un système de coordonnées cylindriques d'axe Oz.
 ```{margin}
-On a indicé le vecteur $\overrightarrow{e}_{\theta} pour bien préciser que la base locale est par rapport au point G. S'il n'y a pas d'ambiguité, cette précision n'est pas nécessaire.
+On a indicé le vecteur $\overrightarrow{e}_{\theta}$ pour bien préciser que la base locale est par rapport au point G. S'il n'y a pas d'ambiguité, cette précision n'est pas nécessaire.
 ```
 >\begin{equation}
 \overrightarrow{p}_{cylindre} = M \overrightarrow{v}_{G/\mathfrak{R}} = M \frac{R}{2} \omega \overrightarrow{e}_{\theta,G}
@@ -133,6 +133,7 @@ On pourrait remarquer que le moment résultant du poids est aussi nul en tout po
 >On rappelle que l'action de contact ponctuelle du plan sur le cube est forcément dirigée vers l'extérieur du plan incliné (non interpénétration) donc:
 >    * Si B est plus bas que le cube, les moments de TOUTES les actions ponctuelles en B sont non nuls et dirigés [dans le même sens](cube_incline) : leur somme sera donc non nulle
 >    * Le raisonnement est le même si B est au dessus du cube.
+>
 >__3.Force résultante de la réaction.__
 >Deux forces s'appliquent sur le cube : son poids et l'action du support. La somme des forces est nulle à l'équilibre, donc la force résultante de l'action du support est un vecteur force opposé : $\overrightarrow{R} = - \overrightarrow{P}$.  
 >On va de même chercher un point de moment résultant nul. A l'équilibre, la somme des moments résultants en un même point est nul (TMC). Donc si le moment du poids en un point B est nul, le moment de l'action du support est aussi nul en B. Il vient que le moment de l'action du support est nul en tout point à la verticale de G (car $\overrightarrow{R}$ est verticale).  

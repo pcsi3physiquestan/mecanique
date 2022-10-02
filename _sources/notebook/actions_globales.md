@@ -40,7 +40,8 @@ Dans tous les cas:
 ```{margin}
 Dans les calculs du moment résultant, il est important de différencier le pôint de calcul (identique) du point d'application (qui varie avec l'action ponctuelle).
 ```
-````{important} Description mathématique
+````{important} __Description mathématique__
+
 Une action globale ou action résultante peut être décrite par __deux__ éléments:
 * la __force résultante__ : somme de toutes les forces ponctuelles associées aux actions ponctuelles qu'on a regroupées
 * le __moment résultant__ en un point arbitraire A : somme de tous les moments des actions ponctuelles regroupées calculés tous au même point A.

@@ -26,19 +26,30 @@ Ces expressions ne sont valables que pour un mouvement de translation.
 
 L'énergie cinétique du système S dans un référentiel peut alors s'écrire:
 
+$$
+E_{c/R}= \frac{1}{2} M v_{G/R}^2
+$$
+
+Le moment cinétique du système S par rapport à un point A dans un référentiel donné s'écrit donc:
+
+$$
+\overrightarrow{L_{A/\mathfrak{R}}} = = \overrightarrow{AG} \wedge M \overrightarrow{v_{G/\mathfrak{R}}}
+$$
+````
+
+```{topic} Démonstration
 \begin{align*}
 E_{c/R} &= \sum\limits_{i=1}^{n} \frac{1}{2} m_i v_i^2\\
 &= \sum\limits_{i=1}^{n} \frac{1}{2} m_i v_{G/R}^2\\
 &= \frac{1}{2} M v_{G/R}^2
 \end{align*}
-Le moment cinétique du système S par rapport à un point A dans un référentiel donné s'écrit donc:
 
 \begin{align*}
 \overrightarrow{L_{A/\mathfrak{R}}} &= \sum\limits_{i} \overrightarrow{AM_i} \wedge m_i \overrightarrow{v_{i/\mathfrak{R}}}\\
 &= \left(\sum\limits_{i} m_i \overrightarrow{AM_i}\right) \wedge \overrightarrow{v_{G/\mathfrak{R}}}\\
 &= \overrightarrow{AG} \wedge M \overrightarrow{v_{G/\mathfrak{R}}}
 \end{align*}
-````
+```
 
 ## Solide en rotation autour d'un axe fixe
 
@@ -56,7 +67,7 @@ _avec A un point de l'axe de rotation._
 Nous allons d'abord introduire une grandeur très important pour décrire la rotation d'un solide. Nous verrons par la suite qu'elle intervient dans l'expression de l'énergie cinétique et du moment cinétique.
 
 
-````{important} __ Moment d'inertie__
+````{important} __Moment d'inertie__
 
 Lorsqu'un solide S est en rotation autour d'un axe fixe, on définit son moment d'inertie $J_{S/\Delta}$ par rapport à l'axe  par la grandeur:
 

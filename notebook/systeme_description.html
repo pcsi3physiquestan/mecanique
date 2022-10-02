@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Description d’un système de points &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/systeme_description.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Cinétique du solide" href="systeme_cinetique.html" />
     <link rel="prev" title="Cinématique et cinétique des systèmes de points" href="systeme_cinema.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#masse-et-centre-d-inertie">
@@ -772,7 +768,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="description-d-un-systeme-de-points">
+  <div class="section" id="description-d-un-systeme-de-points">
 <h1>Description d’un système de points<a class="headerlink" href="#description-d-un-systeme-de-points" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="masse-et-centre-d-inertie">
 <h2>Masse et centre d’inertie<a class="headerlink" href="#masse-et-centre-d-inertie" title="Permalink to this headline">¶</a></h2>
@@ -782,7 +778,7 @@
 <p>On définit la masse totale M du système S comme la somme de toutes les masses des points matériels composant le solide.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Expression mathématique</p>
+<p class="topic-title">Expression mathématique</p>
 <p>Dans le cadre d’une description discrète, la masse totale est simplement <span class="math notranslate nohighlight">\(M = \sum\limits_{i=1}^{n} m_i\)</span>.</p>
 <p>Dans le cadre d’une description continu, la masse totale devient une intégrale: <span class="math notranslate nohighlight">\(M = \iiint_{P \in S} \rho(P) d \tau(P)\)</span>. A l’heure actuelle, il n’est pas demandé de savoir calculer une telle intégrale. Il suffit de comprendre qu’on somme des petits volumes infinitésimaux <span class="math notranslate nohighlight">\(d\tau(M)\)</span> coefficientés (ici par la masse volumique).</p>
 </div>
@@ -815,11 +811,11 @@
 <div class="section" id="description-d-un-mouvement-generalites-en-ligne">
 <h3>Description d’un mouvement: généralités (en ligne)<a class="headerlink" href="#description-d-un-mouvement-generalites-en-ligne" title="Permalink to this headline">¶</a></h3>
 <div class="topic">
-<p class="topic-title first">Champ de vitesse</p>
+<p class="topic-title">Champ de vitesse</p>
 <p>Le champ des vitesses d’un solide dans un référentiel R est la description de la vitesse de l’ensemble des points qui composent le solide. Il s’agit soit d’un ensemble discret de vecteurs vitesse affectés à chaque point, soit d’un champ vectoriel qui associe à chaque point P une vitesse correspondant à la vitesse du petit élément de matière autour du point P.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Description générale</p>
+<p class="topic-title">Description générale</p>
 <p>Puisque tous les points du solides sont contraints à se déplacer ensemble, il vient que les mouvements des points du solide sont reliés les uns aux autres. Il suffit en réalité de connaître deux paramètres du mouvement global du solide pour pouvoir déterminer la vitesse de n’importe quel point du solide. Pour s’en convaincre - ce n’est pas une preuve - on peut remarquer que le mouvement d’un solide, à un instant t peut se décomposer en deux parties:</p>
 <ul class="simple">
 <li><p>un mouvement de translation globale du solide.</p></li>
@@ -833,7 +829,7 @@
 </div>
 <p>En physique nous n’utiliserons que deux cas particuliers: la translation seule et la rotation autour d’un axe fixe.</p>
 <div class="topic">
-<p class="topic-title first">Complément : Composition des vitesse (HP)</p>
+<p class="topic-title">Complément : Composition des vitesse (HP)</p>
 <p>Soit un solide donc le vecteur taux de rotation à un instant t est <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> et donc la vitesse en un point A du solide est connue par: <span class="math notranslate nohighlight">\(\overrightarrow{v_{A/R}}(t)\)</span>. Alors la vitesse en tout point B du solide est connue et donnée par la relation:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -910,27 +906,16 @@ Un solide est en translation si pour tout point P du solide, la vitesse <span cl
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="systeme_cinema.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Cinématique et cinétique des systèmes de points</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="systeme_cinema.html" title="previous page">Cinématique et cinétique des systèmes de points</a>
+    <a class='right-next' id="next-link" href="systeme_cinetique.html" title="next page">Cinétique du solide</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="systeme_cinetique.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Cinétique du solide</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -946,7 +931,8 @@ Un solide est en translation si pour tout point P du solide, la vitesse <span cl
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

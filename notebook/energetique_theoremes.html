@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Théorèmes énergétiques &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/energetique_theoremes.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Systèmes conservatifs" href="energetique_conservatifs.html" />
     <link rel="prev" title="Forces/actions conservatives et énergie potentielle" href="energetique_ep.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#theoreme-de-l-energie-cinetique">
@@ -760,7 +756,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="theoremes-energetiques">
+  <div class="section" id="theoremes-energetiques">
 <h1>Théorèmes énergétiques<a class="headerlink" href="#theoremes-energetiques" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="theoreme-de-l-energie-cinetique">
 <h2>Théorème de l’énergie cinétique<a class="headerlink" href="#theoreme-de-l-energie-cinetique" title="Permalink to this headline">¶</a></h2>
@@ -781,11 +777,11 @@ dE_c &amp;= \delta W(\overrightarrow{F})
 <p>En référentiel galiléen (sous les mêmes hypothèses que précédemment):</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{\rm{d}E_{c/\mathfrak{R}}}{\rm{dt}} &amp;= \delta P_{/\mathfrak{R}}(\overrightarrow{F})
+\frac{\rm{d}E_{c/\mathfrak{R}}}{\rm{dt}} &amp;= P_{/\mathfrak{R}}(\overrightarrow{F})
 \end{align*}\]</div>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration</p>
+<p class="topic-title">Démonstration</p>
 <blockquote>
 <div><div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -807,7 +803,7 @@ dE_c &amp;= \delta W(\overrightarrow{F})
 <p><em>On peut déduire du théorème précédent le théorème de la puissance mécanique.</em></p>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration</p>
+<p class="topic-title">Démonstration</p>
 <blockquote>
 <div><div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -821,19 +817,19 @@ dE_c &amp;= \delta W(\overrightarrow{F})
 <div class="section" id="interpretation-des-theoremes-en-ligne">
 <h2>Interprétation des théorèmes (en ligne)<a class="headerlink" href="#interpretation-des-theoremes-en-ligne" title="Permalink to this headline">¶</a></h2>
 <div class="topic">
-<p class="topic-title first">Interprétation du théorème de l’énergie cinétique</p>
+<p class="topic-title">Interprétation du théorème de l’énergie cinétique</p>
 <p>Le théorème de l’énergie cinétique montre que les actions sur le système participe à la modification du mouvement et plus précisément ici la modification de la vitesse.</p>
 <p>Une force dont la puissance est positive va augmenter l’énergie cinétique: c’est une force <strong>motrice</strong> (elle forme un angle aigu avec la vitesse). Une force dont la puissance est négative va diminuer l’énergie cinétique: c’est une force <strong>résistance</strong> (elle forme un angle obtu avec la vitesse). Une force qui <strong>ne travaille pas</strong>, c’est-à-dire dont la puissance transmise est nulle ne modifie pas la vitesse <strong>en norme</strong> du système (la force est alors perpendiculaire à la vitesse).</p>
 <p>On remarquera qu’on n’obtient que l’information sur la <strong>norme</strong> de la vitesse (le TEC est scalaire). Ce théorème donne donc moins d’informations que le PFD pour un point matériel. Par contre, pour un solide, l’information donnée sera complémentaire du TRD.</p>
 <p>Si l’on fait le parallèle avec l’électrocinétique, il faut noter que le théorème de l’énergie cinétique revient à étudier le système <strong>en convention récepteur</strong>. Les puissances considérées sont toutes des puissances reçues par le système.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Interprétation du théorème de l’énergie mécanique</p>
+<p class="topic-title">Interprétation du théorème de l’énergie mécanique</p>
 <p>Le théorème de l’énergie mécanique consiste à particulariser certaines forces (les forces conservatives) et voir les échanges d’énergie avec le milieu extérieur, non plus comme un apport du milieu extérieur mais comme une variation d’un terme énergétique propre au système (sous l’effet d’un champ de pesanteur, le système possède <strong>son</strong> énergie potentielle de pesanteur).</p>
 <p>On interprète alors le théorème de l’énergie mécanique comme un échange entre deux réservoir d’énergie: l’énergie potentielle et l’énergie cinétique. Cet échange est “perturbé” par un apport/retrait possible d’énergie du milieu extérieur par les forces non conservatives. Comme on l’a évoqué précédemment, le premier <strong>échange</strong> est réversible lorsqu’on passe d’un état A à une état B et inversement alors que le second <strong>transfert</strong> n’est a priori pas réversible.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Force conservative ou pas ?</p>
+<p class="topic-title">Force conservative ou pas ?</p>
 <p>Est-ce grave de calculer un travail pour une force conservative au lieu d’utiliser l’énergie potentielle dans un TEM ? La réponse est non. TEC et TEM sont équivalent donc on peut utiliser les deux. On peut utiliser le TEM et “oublier” qu’une force est conservative. La seule règle est de ne pas oublier de considérer le transfert d’énergie (pas énergie potentielle ou calcul de travail) et de le compter qu’une seule fois (si on calcule le travail du poids, il ne faut en plus compter la variation d’énergie potentielle). Néanmoins, il est conseiller d’avoir le réflexe d’utiliser au maximum la variation d’énergie potentielle plutôt le calcul de travail pour une force conservatives en physique. En effet:</p>
 <ul class="simple">
 <li><p>le calcul d’une variation d’énergie potentielle est en général plus direct.</p></li>
@@ -867,27 +863,16 @@ dE_c &amp;= \delta W(\overrightarrow{F})
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="energetique_ep.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Forces/actions conservatives et énergie potentielle</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="energetique_ep.html" title="previous page">Forces/actions conservatives et énergie potentielle</a>
+    <a class='right-next' id="next-link" href="energetique_conservatifs.html" title="next page">Systèmes conservatifs</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="energetique_conservatifs.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Systèmes conservatifs</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -903,7 +888,8 @@ dE_c &amp;= \delta W(\overrightarrow{F})
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

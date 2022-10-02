@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrainement &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/centrales_newt_td.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Systèmes de points matériels" href="systeme_pts.html" />
     <link rel="prev" title="Applications" href="centrales_app.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#forces-centrales-quelconques">
@@ -755,12 +751,12 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="entrainement">
+  <div class="section" id="entrainement">
 <h1>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="forces-centrales-quelconques">
 <h2>Forces centrales quelconques<a class="headerlink" href="#forces-centrales-quelconques" title="Permalink to this headline">¶</a></h2>
 <div class="attention admonition">
-<p class="admonition-title">Point matériel lié à un fil </p>
+<p class="admonition-title">Point matériel lié à un fil</p>
 <p>Un point matériel M de masse m se déplace sans frottement sur un plan horizontal. Il est attaché à un fil de masse négligeable. Le plan est percé au point O choisi pour origine, le fil traverse le plan en O; un opérateur exerce sur l’autre extrémité du fil une force de traction de module F constant.</p>
 <p>A t=0, le point M se trouve sur l’axe Ox à une distance D de O, sa vitesse est alors <span class="math notranslate nohighlight">\(V_0\)</span>, colinéaire à Oy.</p>
 <ol class="simple">
@@ -773,7 +769,7 @@
 </ol>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Mouvement d’une bille dans un cône </p>
+<p class="admonition-title">Mouvement d’une bille dans un cône</p>
 <p>On considère un matériel M glissant sans frottements à l’intérieur d’un cône dont la génératrice fait un angle <span class="math notranslate nohighlight">\(\alpha\)</span> avec l’axe Oz vertical dirigé vers le haut, O étant le sommet du cône. On suppose le champ de pesanteur uniforme <span class="math notranslate nohighlight">\(\overrightarrow{g} = - g \overrightarrow{e_z}\)</span>. On se place en coordonnées cylindriques d’axe Oz et de centre O. On travaille dans le référentiel terrestre qu’on supposera galiléen.</p>
 <ol class="simple">
 <li><p>Déterminer la relation entre les coordonnées r et z. En déduire l’expression de la vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> et de l’accélération <span class="math notranslate nohighlight">\(\overrightarrow{a}\)</span> en fonction de r et <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
@@ -804,7 +800,7 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 <div class="section" id="potentiels-newtoniens">
 <h2>Potentiels newtoniens<a class="headerlink" href="#potentiels-newtoniens" title="Permalink to this headline">¶</a></h2>
 <div class="attention admonition">
-<p class="admonition-title">Vecteur excentricité </p>
+<p class="admonition-title">Vecteur excentricité</p>
 <p>On veut étudier le mouvement d’une planète P, assimilée à un point matériel dans le champ de gravitation d’une étoile de masse <span class="math notranslate nohighlight">\(M_e\)</span>, de centre O considérée comme ponctuelle et fixe. La planète de masse <span class="math notranslate nohighlight">\(M_P\)</span> est située à une distance <span class="math notranslate nohighlight">\(r=OP\)</span> de O. On considère le référentiel lié à l’étoile comme galiléen.</p>
 <ol class="simple">
 <li><p>Exprimer la force exercée par l’étoile sur la planète en fonction de <span class="math notranslate nohighlight">\(M_p, M_e, r, G\)</span> la constante de gravitation universelle et <span class="math notranslate nohighlight">\(\overrightarrow{u_r} = \frac{\overrightarrow{OP}}{r}\)</span>.</p></li>
@@ -820,7 +816,7 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 </ol>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Explosion d’une comète </p>
+<p class="admonition-title">Explosion d’une comète</p>
 <p>Une comète de période T=770 ans s’est approchée du soleil à <span class="math notranslate nohighlight">\(d = 7,75 \times 10^{-3} \rm{u.a.}\)</span></p>
 <ol class="simple">
 <li><p>On suppose que la trajectoire est elliptique. Déterminer le demi-grand axe a, l’excentricité e, le paramètre p de l’ellipse et les vitesses à l’aphélie (<span class="math notranslate nohighlight">\(v_A\)</span>) et au périhélie (<span class="math notranslate nohighlight">\(v_P\)</span>). A-t-on eu raison de faire l’hypothèse d’une trajectoire elliptique?</p></li>
@@ -833,7 +829,7 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 </ol>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Mise en orbite d’une sonde spatiale </p>
+<p class="admonition-title">Mise en orbite d’une sonde spatiale</p>
 <p>On souhaite mettre en orbite une sonde spatiale(s) autour de Mars. Ce véhicule possède au point A la vitesse <span class="math notranslate nohighlight">\(v_A\)</span> et présente un “paramètre d’impact” b (cf. Figure). On donne:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(v_A = 2,5 \rm{km/s}\)</span></p></li>
@@ -855,7 +851,7 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 </ol>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Comète à trajectoire parabolique </p>
+<p class="admonition-title">Comète à trajectoire parabolique</p>
 <p>La comète Arend-Roland est une comète à trajectoire d’excentricité e estimée à 1,0002. On assimilera la trajectoire à une parabole d’excentricité e=1. La comète est passée à son périhélie, le 8 avril 1857, à <span class="math notranslate nohighlight">\(r_P = 0,316 \rm{u.a.}\)</span> du soleil.</p>
 <ol class="simple">
 <li><p>Calculer le paramètre de la trajectoire.</p></li>
@@ -896,27 +892,16 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="centrales_app.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Applications</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="centrales_app.html" title="previous page">Applications</a>
+    <a class='right-next' id="next-link" href="systeme_pts.html" title="next page">Systèmes de points matériels</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="systeme_pts.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Systèmes de points matériels</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -932,7 +917,8 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

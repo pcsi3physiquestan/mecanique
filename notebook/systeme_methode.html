@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Méthodes &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/systeme_methode.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Activité : Solide en rotation autour d’un axe fixe" href="rotation.html" />
     <link rel="prev" title="S’entrainer" href="systeme_ex.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#cinetique">
@@ -760,12 +756,12 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="methodes">
+  <div class="section" id="methodes">
 <h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="cinetique">
 <h2>Cinétique<a class="headerlink" href="#cinetique" title="Permalink to this headline">¶</a></h2>
 <div class="attention admonition">
-<p class="admonition-title">Calcul de la quantité de mouvement </p>
+<p class="admonition-title">Calcul de la quantité de mouvement</p>
 <ol class="simple">
 <li><p>On considère un cylindre d’axe Oz fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> et de masse uniformément répartie en rotation autour de l’axe Oz. Déterminer la quantité de mouvement du cylindre.</p></li>
 <li><p>On considère un système composé de pièces de masse respectives <span class="math notranslate nohighlight">\(m_1\)</span> et <span class="math notranslate nohighlight">\(m_2\)</span>. La première est en translation à une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_0}\)</span> dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. La seconde est en translation à une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{2/1}}\)</span> par rapport à la première pièce. Déterminer la quantité de mouvement du système total.</p></li>
@@ -773,20 +769,20 @@
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><ol class="simple">
 <li><p>Le cylindre étant de masse uniformément répartie, le centre d’inertie est situé sur l’axe de rotation et sa vitesse est nulle. Il vient:</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-eebccda3-7688-43e1-a64a-c6f6bda48db2">
-<span class="eqno">(13)<a class="headerlink" href="#equation-eebccda3-7688-43e1-a64a-c6f6bda48db2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e9f844f8-9ced-4ba4-8d2e-4ca40a6f5183">
+<span class="eqno">(13)<a class="headerlink" href="#equation-e9f844f8-9ced-4ba4-8d2e-4ca40a6f5183" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{p}_{cylindre} = M \overrightarrow{v}_{G/\mathfrak{R}} = \overrightarrow{0}
 \end{equation}\]</div>
 <ol class="simple">
 <li><p>On décompose le système total en deux parties correspondant aux deux pièces:</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-d85ee6c6-2d32-4923-aa76-b40dec8bd8e8">
-<span class="eqno">(14)<a class="headerlink" href="#equation-d85ee6c6-2d32-4923-aa76-b40dec8bd8e8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f391c42d-1e51-477e-8e25-16b47eee8e63">
+<span class="eqno">(14)<a class="headerlink" href="#equation-f391c42d-1e51-477e-8e25-16b47eee8e63" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{p}_{total} = \overrightarrow{p}_{1} + \overrightarrow{p}_{2} = m_1 \overrightarrow{v_0} + m_2 \left ( \overrightarrow{v_2/1} + \overrightarrow{v_0}\right)
 \end{equation}\]</div>
 <ol class="simple">
@@ -795,17 +791,17 @@
 </div></blockquote>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
-<p>On a indicé le vecteur $\overrightarrow{e}_{\theta} pour bien préciser que la base locale est par rapport au point G. S’il n’y a pas d’ambiguité, cette précision n’est pas nécessaire.</p>
+<p>On a indicé le vecteur <span class="math notranslate nohighlight">\(\overrightarrow{e}_{\theta}\)</span> pour bien préciser que la base locale est par rapport au point G. S’il n’y a pas d’ambiguité, cette précision n’est pas nécessaire.</p>
 </div>
 <blockquote>
-<div><div class="amsmath math notranslate nohighlight" id="equation-481d6738-e46c-4315-a989-3460b74c8c66">
-<span class="eqno">(15)<a class="headerlink" href="#equation-481d6738-e46c-4315-a989-3460b74c8c66" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div><div class="amsmath math notranslate nohighlight" id="equation-3b7567f0-7483-4f6e-9eb6-d8c532eea9fe">
+<span class="eqno">(15)<a class="headerlink" href="#equation-3b7567f0-7483-4f6e-9eb6-d8c532eea9fe" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{p}_{cylindre} = M \overrightarrow{v}_{G/\mathfrak{R}} = M \frac{R}{2} \omega \overrightarrow{e}_{\theta,G}
 \end{equation}\]</div>
 </div></blockquote>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Moment d’inertie et moment cinétique </p>
+<p class="admonition-title">Moment d’inertie et moment cinétique</p>
 <ol class="simple">
 <li><p>On considère un solide S constitué de deux tiges de longueurs L pouvant coulisser l’une sur l’autre. La tige placée en dessous est accrochée par une extrémité à un axe fixe dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>. Préciser sans calcul pour quelles positions de la tige supérieure le moment d’inertie est maximal ou minimal.</p></li>
 <li><p>Déterminer le moment d’inertie d’un point matériel de masse m sur un axe<span class="math notranslate nohighlight">\(\Delta\)</span> situé à une distance d.</p></li>
@@ -813,7 +809,7 @@
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><ol class="simple">
 <li><p>Il faut</p>
@@ -853,7 +849,7 @@ L_{total} = J_1 \omega_1 + J_2 \omega_2
 <p>Le paramétrage de l’intégrale est à comprendre pour les chapitres à venir. <em>Il est VIVEMENT conseillé de faire un schéma puor comprendre le paramètrage et le signe du moments.</em></p>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <p><strong>1.</strong> Il suffit d’intégrer la force le long de la tige:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -888,7 +884,7 @@ L_{total} = J_1 \omega_1 + J_2 \omega_2
 </div>
 <p><em>Cet exercice montre comment calculé les composantes d’une actions de contact quand elles ne sont pas connues : en utilisant les théorèmes TMC et TRD.</em></p>
 <div class="attention admonition">
-<p class="admonition-title">Equilibre d’un cube </p>
+<p class="admonition-title">Equilibre d’un cube</p>
 <p>On étudie un cube (de masse uniformément répartie) sur un plan incliné. On admet qu’à l’équilibre, la somme des forces résultats est nulle et la somme des moments résultants en un même point est nulle.</p>
 <ol class="simple">
 <li><p>Représenter la force résultante de l’action du poids en un point judicieusement choisi.</p></li>
@@ -902,7 +898,7 @@ L_{total} = J_1 \omega_1 + J_2 \omega_2
 <p>On pourrait remarquer que le moment résultant du poids est aussi nul en tout point à la verticale de G. Le choix de le représenter en G plutôt qu’en un autre point à sa verticale reste arbitraire.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>1.Force résultante du poids.</strong>
 Le poids estune action globale qui n’a pas de point d’application. MAIS, on a vu qu’une action globale était <em>mathématiquement</em> équivalente à une action ponctuelle en un point de moment résultant nul. Un tel point est donc un bon endroit pour “représenter” une action globale.<br />
@@ -911,12 +907,12 @@ Dans le cas du poids, on sait que le moment résultant est nul au centre d’ine
 On rappelle que l’action de contact ponctuelle du plan sur le cube est forcément dirigée vers l’extérieur du plan incliné (non interpénétration) donc:</p>
 <ul class="simple">
 <li><p>Si B est plus bas que le cube, les moments de TOUTES les actions ponctuelles en B sont non nuls et dirigés <a class="reference internal" href="#cube-incline"><span class="std std-ref">dans le même sens</span></a> : leur somme sera donc non nulle</p></li>
-<li><p>Le raisonnement est le même si B est au dessus du cube.
-<strong>3.Force résultante de la réaction.</strong>
+<li><p>Le raisonnement est le même si B est au dessus du cube.</p></li>
+</ul>
+<p><strong>3.Force résultante de la réaction.</strong>
 Deux forces s’appliquent sur le cube : son poids et l’action du support. La somme des forces est nulle à l’équilibre, donc la force résultante de l’action du support est un vecteur force opposé : <span class="math notranslate nohighlight">\(\overrightarrow{R} = - \overrightarrow{P}\)</span>.<br />
 On va de même chercher un point de moment résultant nul. A l’équilibre, la somme des moments résultants en un même point est nul (TMC). Donc si le moment du poids en un point B est nul, le moment de l’action du support est aussi nul en B. Il vient que le moment de l’action du support est nul en tout point à la verticale de G (car <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> est verticale).<br />
-Pour garder le sens physique de l’action de contact, on aura tendance à représenter <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> au point d’intersection entre cette verticale et le plan incliné.</p></li>
-</ul>
+Pour garder le sens physique de l’action de contact, on aura tendance à représenter <span class="math notranslate nohighlight">\(\overrightarrow{R}\)</span> au point d’intersection entre cette verticale et le plan incliné.</p>
 <p><strong>4.Inclinaison du plan</strong><br />
 Si l’on incline trop le cube, on observe que l’intersection (notée B) entre la verticale en G etle plan incliné se retrouve hors du cube (angle supérieur à 45 degré).
 Hors, nous avons vu que le moment ne pouvait être nul en un tel point : le cube ne peut être en équilibre aux fortes pentes, il va basculer.</p>
@@ -927,7 +923,7 @@ Hors, nous avons vu que le moment ne pouvait être nul en un tel point : le cube
 <p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Actions sur le cube</span><a class="headerlink" href="#cube-incline" title="Permalink to this image">¶</a></p>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Cylindre sur plan incliné </p>
+<p class="admonition-title">Cylindre sur plan incliné</p>
 <p>On considère un cylindre de rayon R, de hauteur h et de masse M uniformément répartie placé sur un plan incliné d’angle <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
 <ol class="simple">
 <li><p>Sur un plan de coupe, représenter les forces résultantes associées à chaque action extérieure sur le cylindre. On distinguera deux cas suivant le comportement de l’action de contact.</p></li>
@@ -935,7 +931,7 @@ Hors, nous avons vu que le moment ne pouvait être nul en un tel point : le cube
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p>Le raisonnement sur le cube peut-être refait ici et montre que le même résultant de l’action du plan sur le cylindre ne peut-être nul que sur l’arête de contact entre le cylindre et le plan incliné. Le poids est lui toujours de moment nul en G.
 On observe, une fois le schéma réalisé (s’entraîner à le faire), que la somme des moments est nécessairement non nulle donc le cylindre ne peut rester immobile et va forcément tourner (rouler). Il n’y a par contre pas <em>a priori</em> de contradiction à un roulement <em>sans glissement</em>.</p>
@@ -952,7 +948,7 @@ On observe, une fois le schéma réalisé (s’entraîner à le faire), que la s
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <p>On va appliquer un TMC sur l’axe de rotation appliqué au système {volant} dans le référentiel terrestre supposé galiléen. Les forces qui s’appliquent sur le système sont:</p>
 <ul class="simple">
 <li><p>son poids : le moment sur l’axe est nul puisque que le centre d’inertie (point de moment nul du poids) est sur l’axe.</p></li>
@@ -991,7 +987,7 @@ On observe, une fois le schéma réalisé (s’entraîner à le faire), que la s
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>1. Paramétrage</strong></p>
 <p>Pour étudier un système en rotation autour d’un axe fixe, le système de coordonnées le plus judicieux est un système de coordonnées cylindrique d’axe Oz l’axe de rotation. On a représenté ci dessous le système. On repère l’angle <span class="math notranslate nohighlight">\(\theta\)</span> permettant de repérer l’orientation du cube par l’angle <span class="math notranslate nohighlight">\((\overrightarrow{e_x},\overrightarrow{OA})\)</span> de manière à pouvoir utiliser cet angle pour les calculs de moments.</p>
@@ -1072,27 +1068,16 @@ J_{cube} \frac{\rm{d^2}\\theta}{\rm{dt^2}} = - \frac{a}{\sqrt{2}} F_0 \sin \thet
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="systeme_ex.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">S’entrainer</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="systeme_ex.html" title="previous page">S’entrainer</a>
+    <a class='right-next' id="next-link" href="rotation.html" title="next page">Activité : Solide en rotation autour d’un axe fixe</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="rotation.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Activité : Solide en rotation autour d’un axe fixe</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -1108,7 +1093,8 @@ J_{cube} \frac{\rm{d^2}\\theta}{\rm{dt^2}} = - \frac{a}{\sqrt{2}} F_0 \sin \thet
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

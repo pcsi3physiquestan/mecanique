@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercices d’application &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/cinema_ex_app.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Entrainement : Cinématique du point" href="cinema_td.html" />
     <link rel="prev" title="Méthodes" href="cinema_methode.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -737,7 +733,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="exercices-d-application">
+  <div class="section" id="exercices-d-application">
 <h1>Exercices d’application<a class="headerlink" href="#exercices-d-application" title="Permalink to this headline">¶</a></h1>
 <p>Ces exercices d’application directe sont à faire à la suite du cours pour vérifier votre compréhension des méthodes. Vous pourrez confronter votre travail avec celui de vos camarades et poser des questions sur cet exercice en classe mais il ne sera pas donné de correction complète.</p>
 <div class="attention admonition">
@@ -745,7 +741,7 @@
 <p>Retrouver les expressions du vecteur vitesse dans les différents systèmes de coordonnées en dérivant directement le vecteur position exprimés dans ces systèmes.</p>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Chute d’une règle </p>
+<p class="admonition-title">Chute d’une règle</p>
 <p>Une barre rectiligne AB de longueur fixe <span class="math notranslate nohighlight">\(2b\)</span> se déplace dans le référentiel R repéré par <span class="math notranslate nohighlight">\((O, \overrightarrow{u_x}x,\overrightarrow{u_y},\overrightarrow{u_z})\)</span> de telle sorte que:</p>
 <ul class="simple">
 <li><p>son extrémité A se trouve sur le demi-axe positif Oz.</p></li>
@@ -768,11 +764,11 @@
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Eléments de réponse (sans justification)</p>
+<p class="topic-title">Eléments de réponse (sans justification)</p>
 <p><span class="math notranslate nohighlight">\(\theta(t) = \frac{\omega}{2}t\)</span> et <span class="math notranslate nohighlight">\(r(t) = b \sqrt{2 (1 - \cos \omega t)}\)</span>et <span class="math notranslate nohighlight">\(z(t) = 2b^2 (1 + \cos \omega t)\)</span></p>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Rotation de la Terre </p>
+<p class="admonition-title">Rotation de la Terre</p>
 <p>On assimile la Terre à une sphère de rayon <span class="math notranslate nohighlight">\(R_T = 6400 \rm{km}\)</span> et tournant sur son axe en 24h à vitesse angulaire constante <span class="math notranslate nohighlight">\(\omega\)</span>. On considère un point M situé à une colatitude <span class="math notranslate nohighlight">\(\theta\)</span>. L’axe (Oz) de référence étant l’axe de révolution de la Terre.</p>
 <ol class="simple">
 <li><p>Déterminer <span class="math notranslate nohighlight">\(\omega\)</span>.</p></li>
@@ -780,7 +776,7 @@
 </ol>
 </div>
 <div class="topic">
-<p class="topic-title first">Eléments de réponse (sans justification)</p>
+<p class="topic-title">Eléments de réponse (sans justification)</p>
 <p><span class="math notranslate nohighlight">\(\omega = 0.72 \times 10^{-4} rad.s^{-1}\)</span></p>
 </div>
 <div class="attention admonition">
@@ -813,27 +809,16 @@
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="cinema_methode.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Méthodes</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="cinema_methode.html" title="previous page">Méthodes</a>
+    <a class='right-next' id="next-link" href="cinema_td.html" title="next page">Entrainement : Cinématique du point</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="cinema_td.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Entrainement : Cinématique du point</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -849,7 +834,8 @@
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

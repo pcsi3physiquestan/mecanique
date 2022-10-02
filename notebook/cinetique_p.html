@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eléments cinétiques &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/cinetique_p.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="S’entrainer" href="cinema_ex.html" />
     <link rel="prev" title="Point matériel et inertie" href="cinetique_inertie.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
@@ -779,7 +775,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="elements-cinetiques">
+  <div class="section" id="elements-cinetiques">
 <h1>Eléments cinétiques<a class="headerlink" href="#elements-cinetiques" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="quantite-de-mouvement">
 <h2>Quantité de mouvement<a class="headerlink" href="#quantite-de-mouvement" title="Permalink to this headline">¶</a></h2>
@@ -800,7 +796,7 @@
 <div class="section" id="moment-cinetique-d-un-point-materiel">
 <h2>Moment cinétique d’un point matériel<a class="headerlink" href="#moment-cinetique-d-un-point-materiel" title="Permalink to this headline">¶</a></h2>
 <div class="topic">
-<p class="topic-title first">Introduction</p>
+<p class="topic-title">Introduction</p>
 <p>Au niveau du point matériel, le moment cinétique se déduit de la quantité de mouvement. Il permet d’étudier plus simplement certains types de mouvement (mouvement de rotation) car il donne directement des informations sur…  la rotation du point.</p>
 <p>Lorsque nous travaillerons à des systèmes de points matériels, nous verrons que ce moment ne se déduit plus directement de la quantité de mouvement et devient alors une source d’information <strong>complémentaire</strong> à la quantité de mouvement.</p>
 </div>
@@ -842,7 +838,7 @@ L_{\Delta/R} = \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{B/R}}(M)
 <div class="section" id="moment-cinetique-interpretation">
 <h3>Moment cinétique: Interprétation<a class="headerlink" href="#moment-cinetique-interpretation" title="Permalink to this headline">¶</a></h3>
 <div class="topic">
-<p class="topic-title first">Interprétation du moment cinétique par rapport à un axe</p>
+<p class="topic-title">Interprétation du moment cinétique par rapport à un axe</p>
 <blockquote>
 <div><p>Dans toute la suite on travaillera implicitement dans un référentiel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span>.</p>
 <p>Pour interprêter le moment cinétique par rapport à un axe orienté <span class="math notranslate nohighlight">\(\Delta\)</span>, on va se placer dans un repère cylindrique d’axe <span class="math notranslate nohighlight">\(\Delta\)</span> centré en un point O de l’axe.</p>
@@ -874,7 +870,7 @@ L_{\Delta/R} &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M
 </div></blockquote>
 </div>
 <div class="topic">
-<p class="topic-title first">Interprétation du moment cinétique par rapport à un point.</p>
+<p class="topic-title">Interprétation du moment cinétique par rapport à un point.</p>
 <blockquote>
 <div><p>En remarquant que la projection du moment cinétique par rapport à un point Bsur différents axes passante par B, on trouve la tendance qu’a le point M à tourner autour de chaque axe. Il apparaît donc que le moment cinétique du point M par rapport à un point B correspond à la tendance que possède le point M à tourner autour de B (avec toutes les précautions précédentes sur le fait de tourner).</p>
 <p>On pourra noter aussi que cette tendance est maximale dans une direction. Il s’agit de la direction du vecteur moment cinétique: cette direction portant le moment cinétique par rapport à un point  donne l’axe perpendiculaire au plan dans lequel M est entrain de se déplacer autour de B à l’instant t.</p>
@@ -883,7 +879,7 @@ L_{\Delta/R} &amp;= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{L_{O/R}}(M
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="energie-cinetique">
+<div class="section" id="energie-cinetique">
 <h1>Energie cinétique<a class="headerlink" href="#energie-cinetique" title="Permalink to this headline">¶</a></h1>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -895,7 +891,7 @@ E_c = \frac{1}{2} m v_{M/R}^2
 \]</div>
 </div>
 <div class="topic">
-<p class="topic-title first">Variation d’énergie cinétique</p>
+<p class="topic-title">Variation d’énergie cinétique</p>
 <ul class="simple">
 <li><p>La variation d’énergie cinétique entre deux points A et B ne dépend que des états du système au point A et B (de la vitesse au point A et B) mais pas du chemin parcouru entre les deux. C’est pourquoi, on note cette variation <span class="math notranslate nohighlight">\(\Delta E_c\)</span> (l’important, c’est le signe <span class="math notranslate nohighlight">\(\Delta\)</span>).</p></li>
 <li><p>Sur un déplacement infinitésimal, cette variation est infinitésimale et se note <span class="math notranslate nohighlight">\(dE_c\)</span> (l’important, c’est le “d” appelé “d droit”).</p></li>
@@ -926,27 +922,16 @@ E_c = \frac{1}{2} m v_{M/R}^2
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="cinetique_inertie.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Point matériel et inertie</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="cinetique_inertie.html" title="previous page">Point matériel et inertie</a>
+    <a class='right-next' id="next-link" href="cinema_ex.html" title="next page">S’entrainer</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="cinema_ex.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">S’entrainer</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -962,7 +947,8 @@ E_c = \frac{1}{2} m v_{M/R}^2
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

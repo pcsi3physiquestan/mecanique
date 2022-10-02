@@ -30,7 +30,7 @@ On peut être amené à tracer des trajectoires en utilisant la représentation 
 ````
 ````{important} __Equation horaire et trajectoire__
 
-L'évolution du mouvement du point matériel $OM(t)$ est appelée équation horaire. Elle est aussi définit par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.
+L'évolution du mouvement du point matériel $OM(t)$ est appelée équation horaire. Elle est aussi définie par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.
 ````
 
 ### Expression du vecteur position
@@ -116,7 +116,7 @@ Une ellipse est une courbe fermée qu'on peut caractériser/reconnaître de plus
 
 ````{topic} __Caractéristiques d'une ellipse.__
 
-Les caractéristiques importantes sont:
+Les caractéristiques utiles sont:
 * le demi-grand axe a (=OA)
 * le demi-petit axe b (=OB)
 * la distance focale c (=OF)

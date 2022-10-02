@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Système à 1 degré de liberté &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/energetique_conserv_1d.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="S’entrainer" href="energetique_ex.html" />
     <link rel="prev" title="Systèmes conservatifs" href="energetique_conservatifs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#systeme-a-1-degre-de-liberte-et-profil">
@@ -794,7 +790,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="systeme-a-1-degre-de-liberte">
+  <div class="section" id="systeme-a-1-degre-de-liberte">
 <h1>Système à 1 degré de liberté<a class="headerlink" href="#systeme-a-1-degre-de-liberte" title="Permalink to this headline">¶</a></h1>
 <p><em>Il est délicat de visualiser les propriétés précédentes et d’autres que nous allons voir pour des systèmes à multiples degrés de liberté car on ne peut avoir de représentation graphique simple de l’énergie potentielle. Par contre, pour un système à 1 degré de liberté, les représentations sont possibles. Nous allons travailler sur un tel système qui sera très présent en physique.</em></p>
 <div class="section" id="systeme-a-1-degre-de-liberte-et-profil">
@@ -813,7 +809,7 @@
 <p>Un système à degré de liberté est un système où toutes les grandeurs peuvent être décrites comme des fonctions d’une seule coordonnée de l’espace (<span class="math notranslate nohighlight">\(x, \theta...\)</span>). Il s’agit en général dun mouvement rectiligne ou d’un mouvement de rotation.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Analogie avec un profil d’altitude</p>
+<p class="topic-title">Analogie avec un profil d’altitude</p>
 <p>Dans le cas d’une bille roulant sur un profil d’altitude à 1 dimension, l’altitude z dépend uniquement de x. On peut alors représenter <span class="math notranslate nohighlight">\(z(x)\)</span> mais aussi <span class="math notranslate nohighlight">\(E_p(x)\)</span> qui est proportionnelle à z.</p>
 <p>Si les propriétés établies par la suite sont très générales et s’appliquent à des cas où l’énergie potentielle n’a pas pour origine la pesanteur, on pourra garder à l’esprit cet exemple pour visualiser les propriétés d’équilibre, de stabilité, d’état lié et de diffusion établies par la suite.</p>
 <div class="figure align-center" id="fig-240">
@@ -821,7 +817,7 @@
 </div>
 </div>
 <div class="topic">
-<p class="topic-title first">Position et vitesse</p>
+<p class="topic-title">Position et vitesse</p>
 <p>On remarquera que l’énergie cinétique est aussi une fonction de la position <strong>dans le cas d’un système conservatif</strong>. En effet, on a :</p>
 <div class="math notranslate nohighlight">
 \[E_c = E_m - E_p(x)\]</div>
@@ -840,7 +836,7 @@
 <p>Cette propriété permet de calculer la vitesse (en norme), en tout point d’une trajectoire d’un système conservatif et de prévoir les point où la vitesse est nulle ou maximale.</p>
 </div>
 <div class="topic">
-<p class="topic-title first"><em>Energie potentielle et force</em></p>
+<p class="topic-title"><em>Energie potentielle et force</em></p>
 <p>On a aussi donné la direction de la force qui, on le rappelle, peut être déterminée en fonction de la <strong>monotonie</strong> de l’énergie potentielle. Sa valeur ne se lit pas directement par contre (il faudrait la pente).</p>
 </div>
 </div>
@@ -870,7 +866,7 @@
 <p>Une fois qu’on a fourni de l’énergie au système, il n’est pas dans l’état “supérieur à F” défini précédemment (son énergie mécanique a changé). Il est dans un état qu’on pourrait pour l’instant appelé “supérieur à C” en utilisant les notations du graphique.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Franchissement d’une barrière de potentiel</p>
+<p class="topic-title">Franchissement d’une barrière de potentiel</p>
 <p>Sans apport d’énergie extérieure supplémentaire, le système ne peut passer de l’état “entre DE” à l’état “supérieur à F”.</p>
 <p>Par contre, si l’on apporte suffisamment d’énergie à un système bloqué “entre DE”, il pourra se libérer.</p>
 <div class="figure align-center" id="fig-barriere-d-energie-potentielle243">
@@ -890,7 +886,7 @@
 <p>Des états où le système peut s’éloigner indéfiniment (état “supérieur à F”), on parle <strong>d’état de diffusion</strong>.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Etats possibles</p>
+<p class="topic-title">Etats possibles</p>
 <div class="figure align-center" id="fig-244">
 <img alt="../_images/meca_ep_1d_general.jpg" src="../_images/meca_ep_1d_general.jpg" />
 </div>
@@ -927,7 +923,7 @@ Le système ne peut pas passer d’un état à l’autre car il mettra un temps 
 <p>Si l’on travaille dans un autre système de coordonnées (cylindriques par exemple), l’expression du gradient doit être modifiée. La conclusion sera néanmoins identique.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration</p>
+<p class="topic-title">Démonstration</p>
 <blockquote>
 <div><p>On a déjà démontré cette propriété dans le cas général, mais nous allons à nouveau la présenter ici dans le cas à une dimension.</p>
 <p>On rappelle que la résultante des forces conservatives (ici la seule) est donnée par:</p>
@@ -953,7 +949,7 @@ Le système ne peut pas passer d’un état à l’autre car il mettra un temps 
 <p>Si la position n’est pas stable, elle est dite instable.</p>
 </div>
 <div class="topic">
-<p class="topic-title first"><strong>Preuve d’une stabilité</strong></p>
+<p class="topic-title"><strong>Preuve d’une stabilité</strong></p>
 <p>On rappelle qu’il a été étudié précédemment deux méthodes possibles de stabilité d’une position d’équilibre:</p>
 <ul class="simple">
 <li><p>on réalise l’écart cité précédemment et on étudie le signe de l’accélération</p></li>
@@ -997,7 +993,7 @@ m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x &amp;= \frac{\rm{d^2}E_p}{\r
 \end{align*}\]</div>
 </div>
 <div class="topic">
-<p class="topic-title first">Importance de ces études</p>
+<p class="topic-title">Importance de ces études</p>
 <p>L’étude aux petits mouvements est fondamentale, notamment pour les systèmes microscopiques. Elle permet une étude souvent fine des systèmes chimiques où les déplacements des atomes dans les liaisons intramoléculaires sont souvent des déplacements faibles autour de leur position d’équilibre. De la, on peut, comme nous le verrons par la suite, déduire des comportements en spectroscopie.</p>
 <p>Cette caractéristiques a elle seule justifie l’importance des oscillateurs harmoniques et des oscillateurs amortis (cas où s’ajoute une force de frottements fluides au système, cf. suite).</p>
 <p>On remarquera que cela revient à approximer localement l’énergie potentielle par une parabole, c’est-à-dire par un système masse-ressort de raideur <span class="math notranslate nohighlight">\(k = \frac{\rm{d^2}E_p}{\rm{dt^2}}(x_{eq})\)</span>. Cela explique pourquoi on modélise souvent les liaison moléculaires par des ressorts. La “raideur” de la liaison tend à modéliser la force avec laquelle le système sera ramené vers son état d’équilibre.</p>
@@ -1007,7 +1003,7 @@ m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x &amp;= \frac{\rm{d^2}E_p}{\r
 <div class="section" id="effet-des-frottements">
 <h2>Effet des frottements<a class="headerlink" href="#effet-des-frottements" title="Permalink to this headline">¶</a></h2>
 <div class="topic">
-<p class="topic-title first">Effets des frottements fluides</p>
+<p class="topic-title">Effets des frottements fluides</p>
 <p>Si le système est soumis à des forces de frottements, son énergie mécanique ne sera plus conservé. S’il s’agit de la seule force non conservatives, alors l’énergie mécanique va diminuer. Le système va alors tendre vers une des positions d’équilibre stable.</p>
 <p>Dans le cas de frottements fluides, la condition d’équilibre n’est pas changée (puisque les frottements fluides dépendent de la vitesse, à l’équilibre, ils sont nuls). Les positions d’équilibre seront les mêmes que celles étudiées dans le cas conservatifs.</p>
 <p>Suivant l’importance de la force frottements, le système va soit tendre directement vers la position d’équilibre, soit osciller autour de cette position en s’y approchant.</p>
@@ -1019,7 +1015,7 @@ m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x &amp;= \frac{\rm{d^2}E_p}{\r
 </div>
 </div>
 <div class="topic">
-<p class="topic-title first">Effets des frottements solides</p>
+<p class="topic-title">Effets des frottements solides</p>
 <p>Les frottements solides vont aussi faire diminuer l’énergie mécanique et rapprocher le système des positions d’équilibre stable. Néanmoins, comme nous le verrons dans le cas des oscillateurs, la valeur atteintes ne sera pas nécessairement la position d’équilibre déterminée dans le cadre des systèmes conservatifs (puisque la force de frottements solides peut être non nuls à l’équilibre).</p>
 </div>
 </div>
@@ -1048,27 +1044,16 @@ m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x &amp;= \frac{\rm{d^2}E_p}{\r
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="energetique_conservatifs.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Systèmes conservatifs</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="energetique_conservatifs.html" title="previous page">Systèmes conservatifs</a>
+    <a class='right-next' id="next-link" href="energetique_ex.html" title="next page">S’entrainer</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="energetique_ex.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">S’entrainer</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -1084,7 +1069,8 @@ m \ddot x + \frac{\rm{d^2}E_p}{\rm{dx^2}}(x_{eq}) x &amp;= \frac{\rm{d^2}E_p}{\r
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

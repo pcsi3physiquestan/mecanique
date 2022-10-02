@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Théorèmes en mécanique du solide &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/actions_theoremes.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="S’entrainer" href="systeme_ex.html" />
     <link rel="prev" title="Types d’actions" href="actions_g_typo.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#theoreme-de-la-resultante-cinetique">
@@ -789,7 +785,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="theoremes-en-mecanique-du-solide">
+  <div class="section" id="theoremes-en-mecanique-du-solide">
 <h1>Théorèmes en mécanique du solide<a class="headerlink" href="#theoremes-en-mecanique-du-solide" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="theoreme-de-la-resultante-cinetique">
 <h2>Théorème de la résultante cinétique<a class="headerlink" href="#theoreme-de-la-resultante-cinetique" title="Permalink to this headline">¶</a></h2>
@@ -802,7 +798,7 @@ On rappelle que pour un système de points matériels (solide déformable ou ind
 <p>La dérivée temporelle de la quantité de mouvement total d’un système de points matériel dans un référentiel galiléen est égale à la somme des forces <strong>extérieures</strong> qui s’appliquent sur le solide.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration</p>
+<p class="topic-title">Démonstration</p>
 <blockquote>
 <div><p>Considérons chaque point <span class="math notranslate nohighlight">\(M_i\)</span> de masse <span class="math notranslate nohighlight">\(m_i\)</span>du système. On peut appliquer le principe fondamental de la dynamique à chaque point. Le bilan des forces sur un point <span class="math notranslate nohighlight">\(M_i\)</span> se divise en deux parties: les actions extérieures, modélisées par des forces <span class="math notranslate nohighlight">\(\overrightarrow{F}_{ext \to M_i}\)</span> et les actions intérieures au système. Si l’on somme tous ces PFD, il vient:</p>
 <ul class="simple">
@@ -817,7 +813,7 @@ On rappelle que pour un système de points matériels (solide déformable ou ind
 <p>Le TRD, ne sera suffisant que si le mouvement est une translation pure (et on retrouve l’idée de modélistion ponctuelle du système).</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Conséquences</p>
+<p class="topic-title">Conséquences</p>
 <p>Une des conséquences est qu’il n’est pas nécessaire de tenir compte des actions intérieures, ce qui simplifie énormément le problème car ces dernières sont très nombreuses et souvent d’expression inconnues (on pensera aux actions de cohésion d’un solide).</p>
 <p>De plus, ce théorème de la résultante cinétique justifie la possible modélisation d’un système en volume par un point matériel qui sera le centre d’inertie. En effet, par la modélisation en point matériel, on perd complètement l’information sur les actions intérieures. Mais vu qu’elle n’agit pas sur la quantité de mouvement total, on ne perd rien. De plus, la quantité de mouvement totale égale la masse totale multipliée par la vitesse du centre d’inertie, donc assimiler le système au centre d’inertie donnera la même information.</p>
 </div>
@@ -830,7 +826,7 @@ On rappelle que pour un système de points matériels (solide déformable ou ind
 <p>La dérivée temporelle du moment cinétique d’un système de points matériel par rapport à un point/un axe fixe dans un référentel <span class="math notranslate nohighlight">\(\mathfrak{R}\)</span> est égal à la somme du moment des actions extérieures calculé au point point/axe.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration</p>
+<p class="topic-title">Démonstration</p>
 <blockquote>
 <div><p><strong>Démonstration</strong>
 On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe étant similaire. Comme pour le cas du TRC, on peut appliquer le théorème du moment cinétique à chaque point <span class="math notranslate nohighlight">\(M_i\)</span> du système. On distingue encore les actions extérieures et les actions intérieures. On rappelle que pour deux points <span class="math notranslate nohighlight">\(M_i\)</span> et <span class="math notranslate nohighlight">\(M_j\)</span> du système. Les forces de <span class="math notranslate nohighlight">\(M_i\)</span> sur <span class="math notranslate nohighlight">\(M_j\)</span> et de <span class="math notranslate nohighlight">\(M_i\)</span> sur <span class="math notranslate nohighlight">\(M_j\)</span> sont opposées et portées par la droite <span class="math notranslate nohighlight">\(M_i M_j\)</span>.</p>
@@ -851,7 +847,7 @@ On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe ét
 <p>Les deux théorèmes vont être complémentaires: le premier donne le mouvement du centre d’inertie et le second le mouvement de rotation autour de l’axe considéré.</p>
 </div>
 <div class="topic">
-<p class="topic-title first"><strong>Interprétation</strong></p>
+<p class="topic-title"><strong>Interprétation</strong></p>
 <p>Le moment cinétique d’un solide contient deux termes: l’information sur la rotation du centre d’inertie autour de l’axe d’étude et l’information sur la rotation du solide sur lui-même. Dans le cadre du programme, le moment cinétique se ramènera directement à l’information sur la rotation su solide complet autour de l’axe fixe considéré.</p>
 <p>Dans ce cadre, l’interprétation du moment cinétique reste la même: on relie le mouvement de rotation sur l’axe à l’influence des actions extérieures sur ce mouvement (par le moment résultant de ces actions).</p>
 </div>
@@ -867,7 +863,7 @@ On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe ét
 <p>La puissance transmise par une action globale dans un référentiel donné est la somme des puissances transmises par chaque action ponctuelle dans le même référentiel.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Calcul et interprétation</p>
+<p class="topic-title">Calcul et interprétation</p>
 <p>On ne donne pas de méthode de calcul générale car on ne calculera pas <strong>pour l’instant</strong> de sommation des travaux et puissance d’une action globale. On verra des expressions simplifiées dans les cas de translation et rotation.</p>
 <p>On peut par contre toujours interprêter ces grandeurs comme des échanges énergétiques. Comme on le verra avec le théorème de l’énergie cinétique, ces échanges vont faire varier l’énergie cinétique du système. La limite de cette interprétation dans le cas général est que pour un solide, cette influence peut agir sur l’énergie cinétique associée à la translation, associée à la rotation, ou à la déformation du système.</p>
 <p>Nous allons simplement traiter les deux premiers cas de manière mathématisée. Certains cas correspondant à la déformation seront présentés par la suite.</p>
@@ -881,7 +877,7 @@ On va démontrer le cas du TMC par rapport à un point A. Le cas sur une axe ét
 <p>Le travail élémentaire s’écrit <span class="math notranslate nohighlight">\(\delta W = \overrightarrow{F} \cdot \overrightarrow{dOM}\)</span> avec M un point quelconque du solide.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration (cette démonstration n’est pas à connaître)__</p>
+<p class="topic-title">Démonstration (cette démonstration n’est pas à connaître)</p>
 <blockquote>
 <div><p>Considérons une action globale d’un système <span class="math notranslate nohighlight">\(\Sigma_{ext}\)</span> sur le système étudié <span class="math notranslate nohighlight">\(\Sigma\)</span> décomposée en une somme d’action ponctuelle sur les points M de <span class="math notranslate nohighlight">\(\Sigma\)</span>. On modélise chaque action ponctuelle par une force <span class="math notranslate nohighlight">\(\overrightarrow{F_{\Sigma_1 \to M}}\)</span>, le puissance transmise par l’action ponctuelle s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}\)</span>. On remarquera que la vitesse de tous les points M est identique (on la notera <span class="math notranslate nohighlight">\(\overrightarrow{v_{trans/\mathfrak{R}}}\)</span>).</p>
 <div class="amsmath math notranslate nohighlight">
@@ -900,7 +896,7 @@ P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \sum\limits_{M} \left(\overrigh
 <p>Le travail élémentaire s’écrit <span class="math notranslate nohighlight">\(\delta W = M_\Delta d\theta_\Delta\)</span> avec <span class="math notranslate nohighlight">\(d\theta_\Delta\)</span> une variation infinitésimale de l’angle <span class="math notranslate nohighlight">\(\theta_\Delta\)</span> orienté suivant <span class="math notranslate nohighlight">\(\Delta\)</span> et représentant la rotation du solide autour de l’axe.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Démonstration (cette démonstration n’est pas à connaître)__</p>
+<p class="topic-title">Démonstration (cette démonstration n’est pas à connaître)</p>
 <blockquote>
 <div><p>Considérons une action globale d’un système <span class="math notranslate nohighlight">\(\Sigma_{ext}\)</span> sur le système étudié <span class="math notranslate nohighlight">\(\Sigma\)</span> décomposée en une somme d’action ponctuelle sur les points M de <span class="math notranslate nohighlight">\(\Sigma\)</span>. On modélise chaque action ponctuelle par une force <span class="math notranslate nohighlight">\(\overrightarrow{F_{\Sigma_1 \to M}}\)</span>, le puissance transmise par l’action ponctuelle s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}\)</span>. On remarquera que la vitesse de tous les points M peut s’écrire (solide en rotation) <span class="math notranslate nohighlight">\(\overrightarrow{v_M} = \overrightarrow{\Omega} \wedge \overrightarrow{OM}\)</span> (O est un point de l’axe et <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> le vecteur taux de rotation).</p>
 <div class="amsmath math notranslate nohighlight">
@@ -932,7 +928,7 @@ P_{/\mathfrak{R}}(\mathfrak{A_{globale}}) &amp;= \omega_{\Delta} M_{\Delta}\left
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Action de la pesanteur</strong></p>
-<p>L’action de la pesanteur dérive d’une énergie potentielle. Si le champ de pesanteur est uniforme : <span class="math notranslate nohighlight">\(E_p  = mg z_G\)</span> où <span class="math notranslate nohighlight">\(z_G\)</span>^est <strong>l’altitude</strong> du centre d’inertie G.</p>
+<p>L’action de la pesanteur dérive d’une énergie potentielle. Si le champ de pesanteur est uniforme : <span class="math notranslate nohighlight">\(E_p  = mg z_G\)</span> où <span class="math notranslate nohighlight">\(z_G\)</span> est <strong>l’altitude</strong> du centre d’inertie G.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -983,7 +979,7 @@ P &amp;= \overrightarrow{f_{1 \rightarrow 2}} \cdot v_{M_2/R} + \overrightarrow{
 </div></blockquote>
 </div>
 <div class="topic">
-<p class="topic-title first">Cas d’un solide déformable isolé.</p>
+<p class="topic-title">Cas d’un solide déformable isolé.</p>
 <p>Une grandeur conservative est une grandeur qui reste constante lorsque le système est isolé. Initialement, on a construit l’énergie mécanique comme une grandeur conservative. Et cela est vraie pour un point matériel ou un solide indéformable.</p>
 <p>Par contre, on remarque que cela n’est plus vrai pour un système indéformable: un système isolé peut voir son énergie mécanique augmenter ou diminuer sous l’influence des forces. Cette limite peut paraître anodine mais elle est l’une des bases de l’élaboration du premier principe de la thermodynamique: on va rechercher une grandeur énergétique plus générale qui restera conservative lorsqu’on tient compte de la déformation du système (fondamentale pour les gaz) en ajoutant à l’énergie mécanique un terme énergétique supplémentaire appelé énergie interne.</p>
 <p>A notre échelle, on verra des effets de la déformabilité des solides lorsqu’on étudiera le cas des solides déformables en rotation.</p>
@@ -1015,27 +1011,16 @@ P &amp;= \overrightarrow{f_{1 \rightarrow 2}} \cdot v_{M_2/R} + \overrightarrow{
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="actions_g_typo.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Types d’actions</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="actions_g_typo.html" title="previous page">Types d’actions</a>
+    <a class='right-next' id="next-link" href="systeme_ex.html" title="next page">S’entrainer</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="systeme_ex.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">S’entrainer</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -1051,7 +1036,8 @@ P &amp;= \overrightarrow{f_{1 \rightarrow 2}} \cdot v_{M_2/R} + \overrightarrow{
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

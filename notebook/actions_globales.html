@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modélisation des actions globales &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/actions_globales.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,7 @@
     <link rel="next" title="Types d’actions" href="actions_g_typo.html" />
     <link rel="prev" title="Mouvements particuliers" href="systeme_mouvement.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -79,14 +76,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Mécanique</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -732,7 +728,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#generalites">
@@ -760,7 +756,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="modelisation-des-actions-globales">
+  <div class="section" id="modelisation-des-actions-globales">
 <h1>Modélisation des actions globales<a class="headerlink" href="#modelisation-des-actions-globales" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="generalites">
 <h2>Généralités<a class="headerlink" href="#generalites" title="Permalink to this headline">¶</a></h2>
@@ -774,7 +770,7 @@
 <p>Rappel : Une action résultante sur un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> est une action du milieu extérieur modélisable par le regroupement <strong>arbitraire</strong> d’un ensemble d’actions ponctuelles sur le système <span class="math notranslate nohighlight">\(\Sigma_2\)</span>.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Arbitraire mais réfléchi…</p>
+<p class="topic-title">Arbitraire mais réfléchi…</p>
 <p>En effet, un système <span class="math notranslate nohighlight">\(\Sigma_2\)</span> subit de nombreuses actions de la part du milieu extérieur. On va pouvoir regrouper ses actions en des actions résultantes mais ces regroupement ne se font pas de manière aléatoire. Un regroupement possède un sens physique: en général, on <strong>doit</strong> par exemple pouvoir attribuer toutes les actions ponctuelles à un même système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> qu’on peut parfaitement définir, de sorte qu’on puisse parler de <strong>l’action résultante du système <span class="math notranslate nohighlight">\(\Sigma_1\)</span> sur le système <span class="math notranslate nohighlight">\(\Sigma_2\)</span>.</strong></p>
 <p>Il arrive par contre qu’on différencie en deux groupes des actions provenant d’un même système. Par exemple, considérons deux boules massiques et chargées. La première exerce sur chaque point de la seconde des actions de gravitation et des actions électriques. Même si l’origine de ces actions reste la première boule, on distinguera deux actions résultantes: l’action électrique résultante de la boule 1 sur la boule 2 et l’action gravitationnelle résultante de la boule 1 sur la boule 2.</p>
 <p>Dans tous les cas:</p>
@@ -789,8 +785,8 @@
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Description mathématique
-Une action globale ou action résultante peut être décrite par <strong>deux</strong> éléments:</p>
+<p><strong>Description mathématique</strong></p>
+<p>Une action globale ou action résultante peut être décrite par <strong>deux</strong> éléments:</p>
 <ul class="simple">
 <li><p>la <strong>force résultante</strong> : somme de toutes les forces ponctuelles associées aux actions ponctuelles qu’on a regroupées</p></li>
 <li><p>le <strong>moment résultant</strong> en un point arbitraire A : somme de tous les moments des actions ponctuelles regroupées calculés tous au même point A.</p></li>
@@ -805,7 +801,7 @@ Une action globale ou action résultante peut être décrite par <strong>deux</s
 <div class="section" id="elements-utiles-en-ligne">
 <h2>Eléments utiles (en ligne)<a class="headerlink" href="#elements-utiles-en-ligne" title="Permalink to this headline">¶</a></h2>
 <div class="topic">
-<p class="topic-title first">Cas rencontrés</p>
+<p class="topic-title">Cas rencontrés</p>
 <p>Vous rencontrerez trois façon de présenter les actions globales:</p>
 <ul class="simple">
 <li><p>Les actions globales usuelles : vous devrez connaître par coeur <strong>une partie</strong> des caractéristiques (force et/ou moment) d’un certain nombre d’actions globales (poids, torsion…)</p>
@@ -833,7 +829,7 @@ Une action globale ou action résultante peut être décrite par <strong>deux</s
 <p>Cette observation sera par exemple utile avec l’action de la pesanteur qui est souvent présentée comme <em>“s’appliquant au centre de gravité”</em> par abus de langage.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Transfert de moment</p>
+<p class="topic-title">Transfert de moment</p>
 <p>Cette relation n’est pas au programme mais sera utile pour expliquer certains éléments : si l’on connait la force résultante <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> d’une action et le moment résultant de l’action en un point A <span class="math notranslate nohighlight">\(\overrightarrow{M}_A\)</span>, alors le moment résultant en un point B sera :</p>
 <div class="math notranslate nohighlight">
 \[
@@ -841,7 +837,7 @@ Une action globale ou action résultante peut être décrite par <strong>deux</s
 \]</div>
 </div>
 <div class="topic">
-<p class="topic-title first">Représentation graphique</p>
+<p class="topic-title">Représentation graphique</p>
 <p>En général, il l’on connait un point de moment nul pour une action globale, on représentera cette action par sa force résultante en ce point.</p>
 <p><em>Il n’est par contre pas nécessaire de chercher un tel point (qui peut ne pas exister) pour faire une représentation graphique.</em> <strong>On se rappellera par contre que le point où l’on dessine la force n’est PAS FORCEMENT UN POINT DE MOMENT NUL.</strong></p>
 </div>
@@ -888,27 +884,16 @@ Une action globale ou action résultante peut être décrite par <strong>deux</s
               </div>
               
         
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="systeme_mouvement.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Mouvements particuliers</p>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="systeme_mouvement.html" title="previous page">Mouvements particuliers</a>
+    <a class='right-next' id="next-link" href="actions_g_typo.html" title="next page">Types d’actions</a>
+
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="actions_g_typo.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Types d’actions</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
@@ -924,7 +909,8 @@ Une action globale ou action résultante peut être décrite par <strong>deux</s
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
+  
   </body>
 </html>

@@ -111,7 +111,7 @@ Dans le cas d'un solide indéformable en translation, la puissance transmise par
 Le travail élémentaire s'écrit $\delta W = \overrightarrow{F} \cdot \overrightarrow{dOM}$ avec M un point quelconque du solide.
 ````
 
-````{topic} Démonstration (cette démonstration n'est pas à connaître)__
+````{topic} Démonstration (cette démonstration n'est pas à connaître)
 >Considérons une action globale d'un système $\Sigma_{ext}$ sur le système étudié $\Sigma$ décomposée en une somme d'action ponctuelle sur les points M de $\Sigma$. On modélise chaque action ponctuelle par une force $\overrightarrow{F_{\Sigma_1 \to M}}$, le puissance transmise par l'action ponctuelle s'écrit $\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}$. On remarquera que la vitesse de tous les points M est identique (on la notera $\overrightarrow{v_{trans/\mathfrak{R}}}$).
 >
 >\begin{align*}
@@ -129,7 +129,7 @@ Dans le cas d'un solide indéformable en rotation autour d'un axe $\Delta$ fixe 
 Le travail élémentaire s'écrit $\delta W = M_\Delta d\theta_\Delta$ avec $d\theta_\Delta$ une variation infinitésimale de l'angle $\theta_\Delta$ orienté suivant $\Delta$ et représentant la rotation du solide autour de l'axe.
 ````
 
-````{topic} Démonstration (cette démonstration n'est pas à connaître)__
+````{topic} Démonstration (cette démonstration n'est pas à connaître)
 >Considérons une action globale d'un système $\Sigma_{ext}$ sur le système étudié $\Sigma$ décomposée en une somme d'action ponctuelle sur les points M de $\Sigma$. On modélise chaque action ponctuelle par une force $\overrightarrow{F_{\Sigma_1 \to M}}$, le puissance transmise par l'action ponctuelle s'écrit $\overrightarrow{F_{\sigma \to M}} \cdot \overrightarrow{v_M}$. On remarquera que la vitesse de tous les points M peut s'écrire (solide en rotation) $\overrightarrow{v_M} = \overrightarrow{\Omega} \wedge \overrightarrow{OM}$ (O est un point de l'axe et $\overrightarrow{\Omega}$ le vecteur taux de rotation).
 >
 >\begin{align*}
@@ -156,7 +156,7 @@ Si la liaison pivot est parfaite, alors la puissance (et le travail) transmis pa
 
 ````{important} __Action de la pesanteur__
 
-L'action de la pesanteur dérive d'une énergie potentielle. Si le champ de pesanteur est uniforme : $E_p  = mg z_G$ où $z_G$^est __l'altitude__ du centre d'inertie G.
+L'action de la pesanteur dérive d'une énergie potentielle. Si le champ de pesanteur est uniforme : $E_p  = mg z_G$ où $z_G$ est __l'altitude__ du centre d'inertie G.
 ````
 
 ````{important} __Action d'un fil de torsion__
