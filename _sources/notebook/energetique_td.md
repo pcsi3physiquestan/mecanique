@@ -64,7 +64,7 @@ E_p( \theta \leq \pi) &= -mgR_1 (\cos \theta + 1)\\
 E_p( \theta \geq \pi) &= -mgR_2 (\cos \theta + 1)
 \end{cases}
 & V_0 \geq \sqrt{2 g R_1}\\
-& V_S = \sqrt{V_{0}^2 - mgR_1 + mgR_2}
+& V_S = \sqrt{V_{0}^2 - 2gR_1 + 2gR_2}
 & N = \frac{mV_0^2}{R_{1}} + 3mg \cos \theta > 0
 \end{align*}
 ````
