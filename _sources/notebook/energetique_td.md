@@ -98,7 +98,7 @@ Cas à deux charges: $E_p(x) = \frac{q^2}{4 \pi \epsilon_0} \left ( \frac{1}{x} 
 
 Position d'équilibre (stable): $x_{eq} = \frac{2a}{3}$
 
-$\omega_0 = \sqrt{\frac{\frac{q^2}{4 \pi \epsilon_0}\frac{27}{4a^2}}{m}}$
+$\omega_0 = \sqrt{\frac{\frac{q^2}{4 \pi \epsilon_0}\frac{81}{8a^3}}{m}}$
 ````
 
 ````{admonition} Bille accrochée à deux ressorts 
