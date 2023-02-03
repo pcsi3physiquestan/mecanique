@@ -166,7 +166,7 @@ Deux points matériels A et B de même masse m sont reliés entre eux par un res
 On cherche pour x et y, des solutions au régime sinusoïdal forcé de la forme $x(t) = X_0 \cos (\omega t + \phi)$ et $y(t) = Y_0 \cos (\omega t +\psi)$. On définit les grandeurs complexes associés $\underline{X} = X_0 e^{j \omega t + \phi}$ et $\underline{Y} = Y_0 e^{j \omega t + \psi}$. Montrer que les solutions des équations différentielles précédentes sont:
 
 \begin{align*}
-\underline{X} &= \frac{\omega_2^2 - \omega^2}{(\omega_2^2 - \omega^2)(\omega_1^2 - \omega^2)} \Gamma_0 e^{j \omega t}\\
+\underline{X} &= \frac{\omega_0^2 - \omega^2}{(\omega_2^2 - \omega^2)(\omega_1^2 - \omega^2)} \Gamma_0 e^{j \omega t}\\
 \underline{Y} &= \frac{\omega_3^2}{(\omega_2^2 - \omega^2)(\omega_1^2 - \omega^2)}\Gamma_0 e^{j \omega t}
 \end{align*}
 où $\omega_0, \omega_1, \omega_2, \omega_3$ sont des grandeurs à exprimer en fonction de k,K et m.
