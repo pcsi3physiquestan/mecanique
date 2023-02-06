@@ -109,7 +109,7 @@ On définit la constante des aires comme la grandeur $C = r^2 \dot\theta$. Dans 
 
 ````{important} __Force centrale conservatives__
 
-Une force centrale conservative ne dépend que de la coordonnées radiale. On peut donc écrire $\overrightarrow{F} = F(r) \overrightarrow{e_r}$ et l'énergie potentielle associée $E_p(r)$ est telle que $F(r) = - \frac{\rm{d}E_p}{\rm{dr}}(t)$.
+Une force centrale conservative ne dépend que de la coordonnées radiale. On peut donc écrire $\overrightarrow{F} = F(r) \overrightarrow{e_r}$ et l'énergie potentielle associée $E_p(r)$ est telle que $F(r) = - \frac{\rm{d}E_p}{\rm{dr}}(r)$.
 ````
 
 ````{topic} Démonstration
