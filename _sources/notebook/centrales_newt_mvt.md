@@ -34,7 +34,7 @@ _On rappelle que dans un mouvement à force centrale, le moment cinétique est c
 
 On va donc choisir un système de coordonnées cylindriques d'axe Oz colinéaire au moment cinétique. On va alors noter:
 
-* Moment cinétique au point O: $\overrightarrow{L_O} = m r^2 \dot \theta \overrightarrow{u_z} = C \overrightarrow{u_z}$ où C est la constante des aires du mouvement.
+* Moment cinétique au point O: $\overrightarrow{L_O} = m r^2 \dot \theta \overrightarrow{u_z} = m C \overrightarrow{u_z}$ où C est la constante des aires du mouvement.
 * Force: $\overrightarrow{F} = - \frac{K}{r^2} \overrightarrow{u_r}$
 * Energie potentielle: $E_p = - \frac{K}{r}$
 * Energie mécanique: $E_m = \frac{1}{2} m \dot r^2 + \frac{1}{2}\frac{mC^2}{r^2} - \frac{K}{r}$
