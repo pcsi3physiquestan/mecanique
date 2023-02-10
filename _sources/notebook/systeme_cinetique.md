@@ -58,7 +58,7 @@ Le moment cinétique $\overrightarrow{\sigma_{S/A}}$ d'un système S dans un ré
 
 ````{important} __Moment cinétique par rapport à un axe__
 
-Le moment cinétique $\overrightarrow{\sigma_{S/\Delta}}$ d'un système S dans un référentiel R par rapport à un point $\Delta$ est la somme des moments cinétiques des différents points du système par rapport au même point $\Delta$.
+Le moment cinétique $\sigma_{S/\Delta}$ d'un système S dans un référentiel R par rapport à un point $\Delta$ est la somme des moments cinétiques des différents points du système par rapport au même point $\Delta$.
 
 ````
 
