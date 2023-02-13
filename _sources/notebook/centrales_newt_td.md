@@ -26,7 +26,7 @@ A t=0, le point M se trouve sur l'axe Ox à une distance D de O, sa vitesse est 
 
 1. Montrer que le moment cinétique $\overrightarrow{L_O}$ en O de M se conserve pendant toute la durée de la traction. Calculer son module et sa direction. Définir la vitesse aréolaire et montrer que le mouvement de M se fait suivant la loi des aires, à savoir que la vitesse aréolaire est constante. 
 1. Déterminer l'énergie mécanique $E_m$ de M; on montrera que la force de traction dérive d'une énergie potentielle $E_p$ que l'on exprimera en utilisant les coordonnées cylindriques. On prendra $E_p=0$ pour $OM=0$.
-1. Montrer que l'on peut se ramener à un problème à un degré de liberté et définir une fonction énergie potentielle effective. 
+1. Montrer que l'on peut écrire $E_m$ comme une fonction de $r$ seule et de ses dérivées et définir une fonction énergie potentielle effective. 
 1. Etudier ses variations en fonction de r=OM. Montrer qu'elle passe par un minimum pour $r_1 = \left(\frac{m V_0^2 D^2}{F}\right)^{1/3}$.
 1. Tracer le graphe correspondant et faire apparaître l'énergie mécanique. Déterminer graphiquement les deux distances extrêmes de M à O; à quelle condition sur F la position initiale est-elle le point de la trajectoire le plus éloigné de O? Le point matériel peut-il arriver jusqu'à O?
 1. Quelle valeur donner à F pour observer un mouvement circulaire? Montrer qu'il est alors nécessaire uniforme.
