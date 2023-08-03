@@ -40,6 +40,12 @@ On prendra $g = 9.8 \rm{m.s^{-2}}$.
     1. En réalité, les frottements de l'air entraîne l'immobilisation du sauteur après plusieurs oscillations. A quelle hauteur s'immobilise-t-il?
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Pesanteur._
+* _$\Longrightarrow$ Action d'un ressort._
+* _$\Longrightarrow$ PFD._
+* _$\Longrightarrow$ Méthodes de résolution du PFD (ordre 2)._
+
 ````{topic} Eléments de réponse (sans justification)
 
 Dans les deux cas l'origine est prise au niveau du point d'attache et l'axe Oz est orienté vers le haut.
@@ -95,6 +101,13 @@ On suppose que durant la descente, la composante "motrice" de l'action de contac
 3. On reprendra cette étude par une application du théorème du moment cinétique.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Pesanteur._
+* _$\Longrightarrow$ PFD._
+* _$\Longrightarrow$ Détermination d'une force._
+* _$\Longrightarrow$ Condition de contact._
+* _$\Longrightarrow$ Méthodes de résolution du PFD (multiplication par la dérivée première)._
+
 ````{topic} Eléments de réponse (sans justification)
 
 Cas à vitesse constante: $ \alpha < \arccos \frac{v^2}{Rg}$
@@ -119,6 +132,11 @@ Un tuyau demi-cylindrique de section négligeable est posé sur le sol. Sur une 
 1. En déduire la densité d'arrosage d, c'est-à-dire la masse reçue par unité de temps et par unité d'air (on fera attention aux angles arrosant la même surface élémentaire).
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Pesanteur._
+* _$\Longrightarrow$ PFD._
+* _$\Longrightarrow$ Calcul différentiel._
+
 ````{topic} Eléments de réponse (sans justification)
 
 $d = D_m \frac{g}{2v^2 \pi \cos 2 \theta}$

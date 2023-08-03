@@ -28,6 +28,11 @@ Les propriétés magnétiques du rotor (non étudié en détail ici) fait qu'un 
 1. Etablir $\omega(t)$ en supposant que le rotor est initialement immobile.
 1. *On se place dans le régime stationnaire où $\omega = cste$, déduire du mouvement du centre d'inertie la force résultant exercée par la liaison pivot.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Bilan des actions mécanique._
+* _$\Longrightarrow$ Théorème du moment cinétique._
+* _$\Longrightarrow$ Moment d'inertie._
+* _$\Longrightarrow$ Détermination d'une action._
 
 __Les deux exercices suivants sont des classiques à maitriser.__
 ````{admonition} Pendule pesant 
@@ -46,5 +51,8 @@ On repère l'angle que fait la tige avec un axe horizontal de référence et $\t
 
 Montrer qu'on a un oscillateur harmonique et déterminer sa pulsation propre en notant J le moment d'inertie de la tige suivant l'axe Oz.
 ````
-
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Bilan des actions mécanique._
+* _$\Longrightarrow$ Théorème du moment cinétique._
+* _$\Longrightarrow$ Moment de torsion._
 

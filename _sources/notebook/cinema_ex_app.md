@@ -49,6 +49,11 @@ On note $\phi$ l'angle $(\overrightarrow{IO}, \overrightarrow{IB})$.
 1. Calculer les coordonnées cylindriques $(R, \Theta)$ puis cartésiennes $X,Y$ et $Z$ du milieu J de la barre. 
 1. Déterminer la vitesse $\overrightarrow{v_J}$ et l'accélération $\overrightarrow{a_J}$ de J, ainsi que leur normes.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Trigonométrie._
+* _$\Longrightarrow$ Vitesse en cartésien._
+
+
 ````{topic} Eléments de réponse (sans justification)
 $\theta(t) = \frac{\omega}{2}t$ et $r(t) = b \sqrt{2 (1 - \cos \omega t)}$et $z(t) = 2b^2 (1 + \cos \omega t)$
 ````
@@ -61,6 +66,9 @@ On assimile la Terre à une sphère de rayon $R_T = 6400 \rm{km}$ et tournant su
 1. Déterminer $\omega$.
 1. Déterminer la position, la vitesse et l'accélération de M en fonction de $\omega, R_T$ et t. On prendra soin de définir correctement le repère de projection. 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Base sphérique._
+* _$\Longrightarrow$ Vitesse en spérique._
 
 ````{topic} Eléments de réponse (sans justification)
 $\omega = 0.72 \times 10^{-4} rad.s^{-1}$
@@ -72,3 +80,5 @@ On considère point matériel M de masse $m$ en mouvement. On considère un axe 
 
 Montrer que le moment cinétique de M sur l'axe $\Delta$ dans $\mathfrak{R}$ est le même qu'on le calcul avec le point A ou avec le point B.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Moment cinétique._

@@ -32,6 +32,11 @@ A t=0, le point M se trouve sur l'axe Ox à une distance D de O, sa vitesse est 
 1. Quelle valeur donner à F pour observer un mouvement circulaire? Montrer qu'il est alors nécessaire uniforme.
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Mouvement à force centrale._
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Energie potentielle effective._
+
 ````{admonition} Mouvement d'une bille dans un cône 
 :class: attention
 
@@ -57,7 +62,10 @@ ATTENTION: Nous allons à partir de ce point réaliser une étude à partir du p
     1. Montrer graphiquement que dans le cas général et si $J_z \neq 0$ le mouvement est dans un état lié dont les rayons extrêmes sont $r_{\min}$ et $r_{\max}$ qu'on repérera graphiquement.
 
 ````
-
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Mouvement à force centrale._ (ou pas)
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Energie potentielle effective._
 
 
 ## Potentiels newtoniens
@@ -79,6 +87,10 @@ On rappelle que l'équation polaire d'une ellipse est $r(\theta) = \frac{p}{1+ e
 3. Dans le cas d'un mouvement circulaire, préciser la valeur de L en fonction de R (rayon du cercle), $v_c$ (vitesse circulaire) et $M_p$. Déterminer l'expression de la vitesse $V_c$ en fonction de R, G et $M_e$ à l'aide du vecteur excentricité.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Mouvement des planètes._
+* _$\Longrightarrow$ Trajectoire elliptique._
+* _$\Longrightarrow$ Excentricité._
 
 ````{admonition} Explosion d'une comète 
 :class: attention
@@ -91,6 +103,10 @@ Une comète de période T=770 ans s'est approchée du soleil à $d = 7,75 \times
     1. Calculer l'énergie mécanique par unité de masse pour chaque fragment. En déduire le type de la nouvelle trajectoire.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Lois de Kepler._
+* _$\Longrightarrow$ Trajectoire elliptique._
+* _$\Longrightarrow$ Energie mécanique._
 
 ````{admonition} Mise en orbite d'une sonde spatiale 
 :class: attention
@@ -118,6 +134,12 @@ Remarque: Le point B n'est pas placé correctement sur le schéma. Cela n'a pas 
 1. Au point B (avec $\alpha = 3$), on veut que le véhicule passe sur l'orbite circulaire de rayon $3 r_M$. Déterminer la variation de vitesse $\Delta v_c$ à communiquer au véhicule en fonction des données.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Lois de Kepler._
+* _$\Longrightarrow$ Trajectoire hyperbolique._
+* _$\Longrightarrow$ Energie mécanique._
+* _$\Longrightarrow$ Mobile à l'infini._
+* _$\Longrightarrow$ Moment cinétique._
 
 ````{admonition} Comète à trajectoire parabolique 
 :class: attention
@@ -135,4 +157,7 @@ $$t(\alpha) = t_0 + \int_0^{\alpha} \frac{p^2}{C} \frac{d \theta}{{(1+ cos \thet
 1. (Analyse numérique) La comète a été découverte par les astronomes belges Sylvain Arend et Georges Roland le 8 novembre 1856. A quelle distance se trouvait-elle du Soleil?
 
 ````
-
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Lois de Kepler._
+* _$\Longrightarrow$ Trajectoire parabolique._
+* _$\Longrightarrow$ Energie mécanique._

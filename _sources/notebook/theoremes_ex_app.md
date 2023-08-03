@@ -22,12 +22,17 @@ kernelspec:
 On considère un champ électromagnétique dont les deux parties électriques et magnétiques ont la même origine. Dans ces conditions, on montre qu'en norme $B \sim \frac{E}{c}$ avec $c$ la vitesse de la lumière dans le vide.
 1. Dans le cadre de la mécanique relativiste $v \ll c$, montrer que la partie magnétique de l'interaction de Lorentz est toujours négligeable en norme devant la partie électique.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Interactions usuelles._
 
 ````{admonition} Variation du champ de gravitation
 :class: attention
 1. Déterminer l'altitude à laquelle le champ de gravitation a diminué de 1% par rapport à son intensité au niveau de la mer.
 2. Sachant que le champ de pesanteur est constitué à plus de 90% par l'action de la gravité, commenter l'hypothèse d'un champ de pesanteur uniforme et ses possibles limites.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Interactions usuelles._
+
 
 ````{admonition} Mouvement d'une planète 
 :class: attention
@@ -38,6 +43,11 @@ Le mouvement d'une planète du système solaire, dans les hypothèses des lois d
 1. Représenter deux points où la planète est accéléré, deux points où la planète est ralentie et deux points où l'accélération est normale à la vitesse. Que se passe-t-il en ces points ?
 1. Que vaut le moment de la force gravitationnelle calculée au Soleil ? On remarquera que malgré sa valeur, le mouvement de rotation de la planète autour du Soleil évolue.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Interactions usuelles._
+* _$\Longrightarrow$ Cinématique du point._
+* _$\Longrightarrow$ Moment d'un force._
+
 ````{topic} Éléments de réponse (sans justification)
 1. La force est (en norme) la plus forte au point le plus proche du Soleil (appelé périhélie) et elle est la plus faible au point le plus éloigné du Soleil (appelé aphélie).
 1. Accéléré quand l'angle entre la vitesse et l'accélération est aigu, ralenti quand il est obtu. L'accélération est normale à la vitesse à l'aphélie et au pérhélie : en ces points, la vitesse atteint un extremum.
@@ -62,6 +72,9 @@ On place des goutellettes d'huile chargée de masse m et de charge q entre deux 
 
 Exprimer la charge q en fonction des autres grandeurs introduites et de l'intensité du champ de pesanteur.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Interactions usuelles._
+* _$\Longrightarrow$ PFD._
 
 ````{admonition} Jeux aquatiques 
 :class: attention
@@ -89,6 +102,11 @@ Le même baigneur décide maintenant d'effectuer un plongeon. On suppose qu'il e
 3. Le plongeur peut-il atteindre le fond de la piscine situé à 4m?
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Pesanteur._
+* _$\Longrightarrow$ PFD._
+* _$\Longrightarrow$ Méthodes de résolution du PFD (ordre 1)._
+
 ````{topic} Eléments de réponse (sans justification)
 
 L'équation à vérifier est:

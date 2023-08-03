@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrainement &#8212; Mécanique</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,39 +19,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/energetique_td.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,27 @@
     <link rel="next" title="Applications" href="applications.html" />
     <link rel="prev" title="Exercices d’application" href="energetique_ex_app.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -70,10 +87,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
+      
       
       
       <h1 class="site-logo" id="site-title">Mécanique</h1>
@@ -82,16 +101,17 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../mecanique.html">
-   Mécanique classique
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../mecanique.html">
+                    Mécanique classique
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="cinematique.html">
    Cinématique et cinétique du point
@@ -291,6 +311,11 @@
      <li class="toctree-l3">
       <a class="reference internal" href="theoremes_td.html">
        Entrainement
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="theoremes_num.html">
+       Méthodes numériques
       </a>
      </li>
     </ul>
@@ -642,12 +667,17 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -655,88 +685,169 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+    <div class="header-article row sticky-top noprint">
+        
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/notebook/energetique_td.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/energetique_td.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/energetique_td.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebook/energetique_td.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/notebook/energetique_td.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/energetique_td.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
 </div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-        </div>
     </div>
-</div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Entrainement</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="entrainement">
-<h1>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="entrainement">
+<h1>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">#</a></h1>
 <div class="attention admonition">
-<p class="admonition-title">Pendule simple modifié</p>
+<p class="admonition-title">Pendule simple modifié </p>
 <p>On considère un pendule simple modifié. Un mobile ponctuel M de masse m est accroché à l’extrémité d’un fil inextensible de longueur L et de masse négligeable, dont l’autre extrémité est fixe en O. On néglige tout frottement. On repère la position du pendule par l’angle <span class="math notranslate nohighlight">\(\theta\)</span> qu’il fait avec la verticale. Lorsque <span class="math notranslate nohighlight">\(\theta&gt;0\)</span>, le système se comporte comme un pendule simple de centre O et de longueur de fil L. A la verticale et en dessous de O, un clou planté en O’ avec OO’=L/3, qui bloquera la partie haute du fil vers la gauche. Quand <span class="math notranslate nohighlight">\(\theta &lt; 0\)</span>, le système se comporte donc comme un pendule simple de centre O’ et de longueur de fil 2L/3.</p>
 <p>A la date t=0, le mobile est lâché sans vitesse initiale avec une inclinaison <span class="math notranslate nohighlight">\(\theta(0) = \theta_0 &gt; 0\)</span>. On note <span class="math notranslate nohighlight">\(t_1\)</span> la date de première rencontre du fil avec le clou et <span class="math notranslate nohighlight">\(t_2\)</span> la date de la première annulation de la vitesse du mobile pour formule. L’intervalle <span class="math notranslate nohighlight">\([0; t_1[\)</span> est nommé première phase du mouvement, l’intervalle <span class="math notranslate nohighlight">\(]t_1;t_2[\)</span> est nommé deuxième phase du mouvement. A la date <span class="math notranslate nohighlight">\(t_1^{-}\)</span>, le fil n’a pas encore rencontré le clou et à la date <span class="math notranslate nohighlight">\(t_1^{+}\)</span>, le fil vient de toucher le clou.</p>
 <ol class="simple">
@@ -749,8 +860,14 @@
 <li><p>Décrire brièvement la suite du mouvement de ce système et donner l’expression de sa période T.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Système conservatif.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Théorème de l’énergie cinétique.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Pendule aux petits angles.</em></p></li>
+</ul>
 <div class="attention admonition">
-<p class="admonition-title">Mouvement d’un anneau sur une piste</p>
+<p class="admonition-title">Mouvement d’un anneau sur une piste </p>
 <p>On considère le dispositif suivant où un objet assimilable à un point matériel M de masse m se déplace solidairement à une piste de deux parties circulaires de rayons <span class="math notranslate nohighlight">\(R_1\)</span> et <span class="math notranslate nohighlight">\(R_2\)</span> et de centres <span class="math notranslate nohighlight">\(C_1\)</span> et <span class="math notranslate nohighlight">\(C_2\)</span> dans un plan vertical. On repère la position de M par l’angle <span class="math notranslate nohighlight">\(\theta\)</span> dont le centre de référence est soit <span class="math notranslate nohighlight">\(C_1\)</span> (partie (1)), soit <span class="math notranslate nohighlight">\(C_2\)</span> (partie (2)). On prend les angles croissants dans le sens trigonométrique et <span class="math notranslate nohighlight">\(\theta_A=- \pi/2\)</span>. Il n’y a pas de frottements et on note g l’accélération de la pesanteur.</p>
 <div class="figure align-center" id="fig-247">
 <img alt="../_images/energetique_piste_anneau.jpeg" src="../_images/energetique_piste_anneau.jpeg" />
@@ -772,6 +889,13 @@
 <li><p>Même question pour la partie (2).</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Système conservatif.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Théorème de l’énergie mécanique.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Barrière de potentiel.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Position d’équilibre et stabilité.</em></p></li>
+</ul>
 <div class="topic">
 <p class="topic-title">Eléments de réponse (sans justification)</p>
 <div class="amsmath math notranslate nohighlight">
@@ -786,7 +910,7 @@ E_p( \theta \geq \pi) &amp;= -mgR_2 (\cos \theta + 1)
 \end{align*}\]</div>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Equilibre de charges et petits mouvements</p>
+<p class="admonition-title">Equilibre de charges et petits mouvements </p>
 <p>Tous les mouvements ont lieu suivant l’axe Ox et on néglige l’effet du poids. La force électrostatique exercée par un point <span class="math notranslate nohighlight">\(M_1\)</span> de charge <span class="math notranslate nohighlight">\(q_1\)</span> sur un point <span class="math notranslate nohighlight">\(M_2\)</span> de charge <span class="math notranslate nohighlight">\(q_2\)</span> est: <span class="math notranslate nohighlight">\(\overrightarrow{f} = \frac{q_1 q_2}{4 \pi \epsilon_0 M_1 M_2^2} \overrightarrow{u}\)</span> où <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> est un vecteur unitaire dirigé de <span class="math notranslate nohighlight">\(M_1\)</span> vers <span class="math notranslate nohighlight">\(M_2\)</span>. On travaille dans un référentiel R supposé galiléen.</p>
 <ol class="simple">
 <li><p>Un point matériel de charge <span class="math notranslate nohighlight">\(q\)</span> est fixé en O, origine du repère. Un autre point matériel M de charge identique <span class="math notranslate nohighlight">\(q\)</span>, initialement à droit de O, à la distance <span class="math notranslate nohighlight">\(a\)</span> de O, est abandonné sans vitesse initiale.</p>
@@ -812,6 +936,12 @@ E_p( \theta \geq \pi) &amp;= -mgR_2 (\cos \theta + 1)
 </li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Système conservatif.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Théorème de l’énergie mécanique.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Position d’équilibre et stabilité.</em></p></li>
+</ul>
 <div class="topic">
 <p class="topic-title">Eléments de réponse (sans justification)</p>
 <p>Cas à une charge: <span class="math notranslate nohighlight">\(E_p(x) = \frac{q^2}{4\pi \epsilon_0 x}\)</span></p>
@@ -821,7 +951,7 @@ E_p( \theta \geq \pi) &amp;= -mgR_2 (\cos \theta + 1)
 <p><span class="math notranslate nohighlight">\(\omega_0 = \sqrt{\frac{\frac{q^2}{4 \pi \epsilon_0}\frac{81}{8a^3}}{m}}\)</span></p>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Bille accrochée à deux ressorts</p>
+<p class="admonition-title">Bille accrochée à deux ressorts </p>
 <p>On considère le mouvement d’une bille M de masse m pouvant coulisser sans frottement sur un cerceau de plan vertical, de centre O et de rayon R. On note AB le diamètre horizontale du cerceau, Ox l’axe horizontal, Oy l’axe vertical et <span class="math notranslate nohighlight">\(\theta\)</span> l’angle entre Ox et OM. Le sens trigonométrique est pris positif (on suppose que <span class="math notranslate nohighlight">\(\theta_B = 0\)</span>). On suppose que le cerceau est fixe dans le référentiel du laboratoire supposé galiléen. Dans tout le problème, on prendra comme origine des potentiels le point le plus bas du cerceau.</p>
 <ol class="simple">
 <li><p>Dans un premier temps, la bille est attachée à un ressort de longueur à vide nulle et de raideur k dont la seconde extrémité est fixée en B.</p>
@@ -847,6 +977,13 @@ E_p( \theta \geq \pi) &amp;= -mgR_2 (\cos \theta + 1)
 </li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Système conservatif.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Ressort.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Théorème de l’énergie mécanique.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Position d’équilibre et stabilité.</em></p></li>
+</ul>
 <div class="topic">
 <p class="topic-title">Eléments de réponse (sans justification)</p>
 <p>Un ressort:</p>
@@ -879,34 +1016,48 @@ E_p( \theta \geq \pi) &amp;= -mgR_2 (\cos \theta + 1)
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="energetique_ex_app.html" title="previous page">Exercices d’application</a>
-    <a class='right-next' id="next-link" href="applications.html" title="next page">Applications</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="energetique_ex_app.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Exercices d’application</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="applications.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Applications</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By C. Lacpatia<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By C. Lacpatia<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>

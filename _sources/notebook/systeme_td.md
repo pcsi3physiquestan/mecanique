@@ -26,6 +26,14 @@ On relie un fil de torsion de constante C d'un côté au bâti et de l'autre eu 
 1. On cherche des configurations pour lesquelles les deux disques oscilles de manièrent sinusoïdales à la même pulsation $\omega$. Montrer qu'il n'existe que deux pulsations possibles  et  dont on déterminera les expressions. Décrire le mouvement global pour chaque pulsation.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Bilan des actions mécanique._
+* _$\Longrightarrow$ Théorème du moment cinétique._
+* _$\Longrightarrow$ Moment de torsion._
+* _$\Longrightarrow$ Oscillateur forcée._
+
+
+
 ````{topic} Eléments de réponse (sans justification)
 
 \begin{align*}
@@ -46,3 +54,6 @@ On considère un système constitué de deux disques en rotation autour d'un axe
 1. Déterminer la vitesse angulaire de l'ensemble des deux disques à la fin de la manipulation. Ce résultat dépend-t-il de la nature des frottements entre les deux disques?
 1. Faire un bilan d'énergie mécanique pour chaque disque séparément puis pour l'ensemble des deux disques. Commenter les résultats.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Solide déformable._
+* _$\Longrightarrow$ Conservation du moment cinétique._

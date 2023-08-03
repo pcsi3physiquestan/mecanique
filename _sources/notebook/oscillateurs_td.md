@@ -46,6 +46,12 @@ On donne les abscisses correspondant aux croisements de la trajectoire de phase 
 1. Déterminer la raideur du ressort k, le coefficient de frottement $\lambda$ et la force $F_C$ sachant que $l_0 = 1\rm{cm}$.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Oscillateur amorti._
+* _$\Longrightarrow$ Régime pseudo-périodique._
+* _$\Longrightarrow$ Portrait de phase._
+* _$\Longrightarrow$ Decrément logarithmique._
+
 
 ````{admonition} Amortisseur 
 :class: attention
@@ -60,6 +66,10 @@ Le point M subit aussi un frottement visqueux $\overrightarrow{f} = - \lambda \o
 1. Il faut éviter des oscillations susceptibles de provoquer chez les passagers le mal des transports, en se plaçant dans les conditions critiques. Pour quelle masse par roue est-ce réalisé, $k$ et $\lambda$ restant inchangés?
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Oscillateur amorti._
+* _$\Longrightarrow$ Régime pseudo-périodique._
+* _$\Longrightarrow$ Ressort._
 
 ````{admonition} Frottements solides 
 :class: attention
@@ -79,6 +89,10 @@ On suppose que le mobile réalise N oscillations complètes avant de s'arrêter 
 6. Comparer le comportement de cet oscillateur avec l'oscillateur amorti par frottement fluide et tracer $x(t)$.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Oscillateur amorti._
+* _$\Longrightarrow$ Frottements solides._
+* _$\Longrightarrow$ Théorème de l'énergie mécanique._
 
 ````{admonition} Elasticité d'une fibre de verre 
 :class: attention
@@ -99,6 +113,10 @@ La fibre de verre de longueur $l$ et de diamètre $d$ est encastrée horizontale
 1. Donner (à la justifiant) l'expression de l'énergie potentielle élastique d'un ressort de longueur à vide nulle, de constante de raideur k lorsque sa longueur est l. En reprenant l'analogie du ressort, quelle est alors l'énergie potentielle élastique de la fibre de verre lorsque la flèche vaut Y?
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Oscillateur amorti._
+* _$\Longrightarrow$ Unités et dimensions._
+* _$\Longrightarrow$ Energie potentielle._
 
 ````{admonition} Piscine à vagues 
 :class: attention
@@ -122,6 +140,11 @@ Pour créer des vagues dans une piscine, on fait effectuer des oscillations vert
     1. Donner l'expression de l'amplitude correspondante en fonction de a, M, k et $\alpha$.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Oscillateur harmonique._
+* _$\Longrightarrow$ Oscillateur amorti._
+* _$\Longrightarrow$ Oscillateur forcé._
+* _$\Longrightarrow$ Réponse en position._
 
 ````{admonition} Vibration d'une molécule diatomique 
 :class: attention
@@ -148,6 +171,13 @@ où C, $\alpha$ et n sont des constantes positives. En l'absence de toute champ 
 1. Dans quel domaine de longueur d'onde faudrait-il travailler pour briser cette liaison en l'éclairant? Quelle marge possède-t-on sur le choix de la longueur d'onde? 
 1. Discuter la validité du modèle linéaire, et le choix de la longueur d'onde excitatrice.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Position d'équilibre et stabilité._
+* _$\Longrightarrow$ Oscillateur harmonique._
+* _$\Longrightarrow$ Oscillateur amorti._
+* _$\Longrightarrow$ Oscillateur forcé._
+
 
 ````{admonition} Système de deux points matériels 
 :class: attention
@@ -175,5 +205,9 @@ où $\omega_0, \omega_1, \omega_2, \omega_3$ sont des grandeurs à exprimer en f
 1. Représenter $X_0(\omega), Y_0(\omega)$ en fonction de $\omega$. Pourquoi y a-t-il des résonances infinies?
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Oscillateur forcé._
+* _$\Longrightarrow$ Etude fréquentielle._
+
 
 

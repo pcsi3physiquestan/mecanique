@@ -27,12 +27,18 @@ $$
 
 Grâce à cette relation et en analysant les différents termes de $E_{p,eff}$, retrouver l'effet centrifuge de la rotation et les effets possibles (centrifuge/centripète) de la force centrale.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Energie potentielle effective._
+
 
 ````{admonition} Mouvement circulaire uniforme
 :class: important
 
 Justifier que le mouvement circulaire correspondant à $E_m = E_{p,eff,min}$ est un mouvement uniforme.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Energie potentielle effective._
+* _$\Longrightarrow$ Trajectoire circulaire._
 
 ## Forces newtoniennes
 
@@ -42,6 +48,12 @@ On considère le mouvement d'une planète autour du Soleil et on suppose sa traj
 1. Etablir sa vitesse en fonction de R. En déduire la troisième loi de Kepler
 2. Déterminer l'expression de l'énergie mécanique, cinétique et potentielle et montrer que $E_m = - E_c = \frac{E_p}{2}$.
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Mouvement des planètes._
+* _$\Longrightarrow$ Trajectoire circulaire._
+* _$\Longrightarrow$ Energie mécanique._
+* _$\Longrightarrow$ Lois de Kepler._
 
 ````{admonition} Satellite Hipparcos 
 :class: attention
@@ -61,6 +73,11 @@ Une programmation du satellite a permis de s'affranchir des problèmes liés à 
 1. Déterminer le rapport $\rho = t_0/T_h$ en fonction de $S_b$ et $S_e$ (surface de l'ellipse) où $t_0$ est la durée totale d'inactivité d'Hipparcos sur une période.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Mouvement des planètes._
+* _$\Longrightarrow$ Trajectoire elliptique._
+* _$\Longrightarrow$ Energie mécanique._
+* _$\Longrightarrow$ Lois de Kepler._
 
 ````{admonition} Satellite artificiel 
 :class: attention
@@ -82,3 +99,6 @@ On considère un satellite artificiel m en mouvement circulaire autour de la Ter
 3. Quelle énergie cinétique minimale faut-il communiquer au satellite pour qu'il échappe à l'attraction terrestre s'il est initialement en orbite circulaire autour de la Terre à l'altitude z?  A.N. z = 36000 km; m=6 tonnes.
 4. Soit un satellite d'énergie initiale $E_{m0}$. Son orbite est relativement basse et il subit donc les frottements des couches hautes de l'atmosphère. Il s'ensuit que l'énergie mécanique du satellite varie suivant la loi $E_m = E_{m0} (1+ bt)$, b étant un coefficient constant positif. On suppose que la trajectoire reste approximativement circulaire. Préciser le signe de $E_{m0}$. Etablir l'expression du rayon r et de la vitesse v du satellite en fonction du temps. Comparer les évolutions de r et de v ainsi que celles des énergies potentielle et cinétique. Que devient l'énergie perdue?
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Trajectoire circulaire._
+* _$\Longrightarrow$ Energie mécanique._

@@ -31,6 +31,11 @@ A la date t=0, le mobile est lâché sans vitesse initiale avec une inclinaison 
 1. Décrire brièvement la suite du mouvement de ce système et donner l'expression de sa période T. 
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Théorème de l'énergie cinétique._
+* _$\Longrightarrow$ Pendule aux petits angles._
+
 
 ````{admonition} Mouvement d'un anneau sur une piste 
 :class: attention
@@ -56,6 +61,12 @@ On considère le dispositif suivant où un objet assimilable à un point matéri
 1. Même question pour la partie (2).
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Théorème de l'énergie mécanique._
+* _$\Longrightarrow$ Barrière de potentiel._
+* _$\Longrightarrow$ Position d'équilibre et stabilité._
+
 ````{topic} Eléments de réponse (sans justification)
 
 \begin{align*}
@@ -88,6 +99,11 @@ Tous les mouvements ont lieu suivant l'axe Ox et on néglige l'effet du poids. L
     1. En déduire la pulsation des petites oscillations et la forme de $x(t)$.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Théorème de l'énergie mécanique._
+* _$\Longrightarrow$ Position d'équilibre et stabilité._
+
 ````{topic} Eléments de réponse (sans justification)
 
 Cas à une charge: $E_p(x) = \frac{q^2}{4\pi \epsilon_0 x}$
@@ -123,6 +139,12 @@ On considère le mouvement d'une bille M de masse m pouvant coulisser sans frott
     1. Quelle est la condition nécessaire sur $k, R, m, g$ pour que la bille reste sur le cerceau lorsqu'elle est à l'équilibre.
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Ressort._
+* _$\Longrightarrow$ Théorème de l'énergie mécanique._
+* _$\Longrightarrow$ Position d'équilibre et stabilité._
+
 ````{topic} Eléments de réponse (sans justification)
 
 Un ressort: 

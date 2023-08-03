@@ -43,6 +43,10 @@ On s'intéresse à un cycliste, considéré comme un point matériel M, qui s'en
 * $t_{S2} = \sqrt{\frac{3L + \pi R}{a_1}}$ et $v_{S2} = \sqrt{a_1 (3L + \pi R)}$.
 * $t_{D} = \sqrt{\frac{4L + \pi R}{a_1}}$ et $v_{D} = \sqrt{a_1 (4L + \pi R)}$.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Base de Frenet_
+* _$\Longrightarrow$ Trajectoire circulaire._
+* _$\Longrightarrow$ Vitesse et accélération en cylindrique._
 
 ## Trajectoire d'un bateau
 
@@ -60,6 +64,9 @@ On s'intéresse à une planète semblable à la Terre mais entièrement recouver
 * $\theta(t) = \theta_0 - \frac{\sqrt{2}}{2}\frac{V_0}{R}t$
 * $\phi(t) = \ln \frac{\tan \theta_0 / 2}{\tan \frac{\theta_0 - \frac{\sqrt{2}V_0}{2R}t}{2}}$
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Base sphérique._
+* _$\Longrightarrow$ Vitesse en sphérique._
 
 ## Poursuite
 
@@ -75,3 +82,7 @@ Déterminer alors les équations paramétriques du mouvement de A (équation hor
 * $r(t) = \frac{\sqrt{2}}{2}a - \frac{\sqrt{2}}{2}v_0 t$
 * $\theta(t) = - \ln \left ( a - v_0 t\right )$
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Base cylindrique._
+* _$\Longrightarrow$ Vitesse en cylindrique._
+* _$\Longrightarrow$ Symétrie._
