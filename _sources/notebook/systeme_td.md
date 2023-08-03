@@ -13,7 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
-## Entrainement
+# Entrainement
 
 ````{admonition} Disques couplés 
 :class: attention
