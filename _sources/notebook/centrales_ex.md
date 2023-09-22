@@ -17,5 +17,5 @@ kernelspec:
 * exercices-types (Méthodes)
 * des activités (Activités) : Ordre de grandeur, 
 * des exercices d'application (Application)
-* des exercices d'entrainement (Entrainement). Un devoir libre est disponible [en ligne](https://stanislas.edunao.com/mod/resource/view.php?id=15165).
-* des approfondissement (Aller plus loin) : Deux approfondissements pour ce chapitre : une [comparaison des force à l'échelle macroscopique](https://stanislas.edunao.com/mod/page/view.php?id=15164) et une étude [de la diffusion de Rutherford sous forme de résolution de problème](https://stanislas.edunao.com/mod/resource/view.php?id=12858).
+* des exercices d'entrainement (Entrainement). Un devoir libre est disponible dans le fascicule.
+* des approfondissement (Aller plus loin) : Deux approfondissements pour ce chapitre : une [comparaison des force à l'échelle macroscopique](https://moodlecpge.stanislas.fr/mod/page/view.php?id=191) et une étude [de la diffusion de Rutherford sous forme de résolution de problème](https://moodlecpge.stanislas.fr/mod/resource/view.php?id=190).

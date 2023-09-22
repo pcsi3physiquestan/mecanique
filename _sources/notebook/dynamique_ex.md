@@ -18,5 +18,5 @@ kernelspec:
 * exercices-types (Méthodes)
 * des activités (Activités) : pas d'activités
 * des exercices d'application (Application)
-* des exercices d'entrainement (Entrainement) :  : En plus des exercices du cours, un devoir libre est accessibvle [ici](https://stanislas.edunao.com/mod/resource/view.php?id=12848). _Attention, il est assez difficile._
+* des exercices d'entrainement (Entrainement) :  : En plus des exercices du cours, un devoir libre est accessible dans le fascicule. _Attention, il est assez difficile._
 * des approfondissement (Aller plus loin)
