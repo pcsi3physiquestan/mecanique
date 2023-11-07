@@ -31,7 +31,7 @@ $$
 \frac{\rm{d}\overrightarrow{L_{A/\mathfrak{R}}}(M)}{\rm{dt}}_{\mathfrak{R}} &= {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{AM} \wedge \overrightarrow{p_{M/\mathfrak{R}}}\right)}_{\mathfrak{R}} \\
 &= {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{AM}\right)}_{\mathfrak{R}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}} + \overrightarrow{AM} \wedge {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{p_{M/\mathfrak{R}}}\right)}_{\mathfrak{R}}\\
 &= \underbrace{\overrightarrow{V_{M/\mathfrak{R}}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}}}_{= 0} + \overrightarrow{AM} \wedge \left(\sum \overrightarrow{F_{\to M}}\right)\\
-&= \sum_i \overrightarrow{M_{A}\left(\mathfrak{A_i}}\right)}
+&= \sum_i \overrightarrow{M_{A}}\left(\mathfrak{A_i}\right)
 \end{align*}
 
 ````{important} __Théorème du moment cinétique. Enoncé par rapport à un axe.__
