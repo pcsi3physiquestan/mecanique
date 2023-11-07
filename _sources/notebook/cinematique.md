@@ -29,4 +29,4 @@ kernelspec:
 ````
 
 Nous allons commencer par étudier les mouvements de points matériels. Les mouvements d'un tel système sont décrits uniquement par ses mouvements de translation (rectiligne ou non). Il n'y a pas de _rotation_ d'un point sur lui même.  
-Nous allons présenté ses éléments _cinématiques_ (décrivant le mouvement sans matérialité du point) et _cinétiques_ (décrivant le mouvement du point avec son inertie : on tient compte de sa masse.)
+Nous allons présenter ses éléments _cinématiques_ (décrivant le mouvement sans matérialité du point) et _cinétiques_ (décrivant le mouvement du point avec son inertie : on tient compte de sa masse.)

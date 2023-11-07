@@ -25,7 +25,7 @@ Retrouver les expressions du vecteur vitesse dans les différents systèmes de c
 ````{admonition} Chute d'une règle 
 :class: attention
 
-Une barre rectiligne AB de longueur fixe $2b$ se déplace dans le référentiel R repéré par $(O, \overrightarrow{u_x}x,\overrightarrow{u_y},\overrightarrow{u_z})$ de telle sorte que:
+Une barre rectiligne AB de longueur fixe $2b$ se déplace dans le référentiel R repéré par $(O, \overrightarrow{u_x},\overrightarrow{u_y},\overrightarrow{u_z})$ de telle sorte que:
 
 * son extrémité A se trouve sur le demi-axe positif Oz.
 * son extrémité B décrit le demi-cercle de plan (xOy) de centre $I(0,b,0)$ et de rayon $b$, à la vitesse angulaire (par rapport à I) $\omega$ constante et positive. A l'instant $t=0$, B se trouve en O.

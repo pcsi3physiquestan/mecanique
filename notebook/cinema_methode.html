@@ -919,11 +919,11 @@ title="Print to PDF"
 <div><p>Cet exercice présente deux points importants: la traduction de contrainte cinématique en terme d’expression des coordonnées et des vecteurs et la détermination d’une accélération en sphérique par dérivation du vecteur vitesse.</p>
 <ul class="simple">
 <li><p>Coordonnées et vecteur vitesse.
-Ici, les contraintes sont: <span class="math notranslate nohighlight">\(r = R_0= Cste; \theta = \frac{v_0}{R_0} t; \varphi = \varphi_0 = Cste\)</span>. On choisi l’origine des angles de tels sorte que <span class="math notranslate nohighlight">\(\varphi_0 = 0\)</span>. Il est important de comprendre l’expression de <span class="math notranslate nohighlight">\(\theta(t)\)</span> qui traduit la relation en vitesse linéaire et vitesse angulaire.</p></li>
+Ici, les contraintes sont: <span class="math notranslate nohighlight">\(\rho = R_0= Cste; \theta = \frac{v_0}{R_0} t; \varphi = \varphi_0 = Cste\)</span>. On choisi l’origine des angles de tels sorte que <span class="math notranslate nohighlight">\(\varphi_0 = 0\)</span>. Il est important de comprendre l’expression de <span class="math notranslate nohighlight">\(\theta(t)\)</span> qui traduit la relation en vitesse linéaire et vitesse angulaire.</p></li>
 </ul>
 <p>Il vient que le vecteur vitesse s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d4c65fe9-5fcb-4381-9477-808e8a236245">
-<span class="eqno">(6)<a class="headerlink" href="#equation-d4c65fe9-5fcb-4381-9477-808e8a236245" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4f213397-2b7c-48fb-b4e1-d7e2960241c7">
+<span class="eqno">(6)<a class="headerlink" href="#equation-4f213397-2b7c-48fb-b4e1-d7e2960241c7" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \overrightarrow{v_{M/Boule}} = R_0 \frac{v_0}{R_0} \overrightarrow{e_{\theta}}
 \end{equation}\]</div>
 <ul class="simple">
@@ -934,7 +934,7 @@ Il vient par dérivation:</p></li>
 \[\begin{align*}
 \overrightarrow{a_{M/Boule}} &amp;= \frac{\rm{d}v_0}{\rm{dt}} \overrightarrow{e_{\theta}} + v_0 \frac{\rm{d}\overrightarrow{e_{\theta}}}{\rm{dt}}\\
 &amp;= v_0 \left(\dot \theta  \frac{\partial \overrightarrow{e_{\theta}}}{\partial \theta} + \dot \varphi \frac{\partial \overrightarrow{e_{\theta}}}{\partial \varphi}\right)\\
-&amp;= - \frac{v_{0}^2}{R_0} \overrightarrow{e_r}
+&amp;= - \frac{v_{0}^2}{R_0} \overrightarrow{e_\rho}
 \end{align*}\]</div>
 </div></blockquote>
 </div>
@@ -943,14 +943,14 @@ Il vient par dérivation:</p></li>
 <p>Un satellite géostationnaire est un satellite en orbite circulaire autour de la terre à une altitude <span class="math notranslate nohighlight">\(h=r-R_T\)</span> où <span class="math notranslate nohighlight">\(R_T\)</span> est le rayon de la Terre (r est le rayon de l’orbite). L’orbite est équatoriale et il reste fixe par rapport à un point de la Terre. Il est soumis à une accélération dans le référentiel géocentrique:</p>
 <div class="math notranslate nohighlight">
 \[
-\overrightarrow{a} = - g_0 {(\frac{R_T}{r})}^2 \overrightarrow{e_r}
+\overrightarrow{a} = - g_0 {(\frac{R_T}{r})}^2 \overrightarrow{e_\rho}
 \]</div>
 <p>Calculer r avec <span class="math notranslate nohighlight">\(g_0 = 9,8 \rm{m.s^{-1}}\)</span> et <span class="math notranslate nohighlight">\(R_T = 6400 \rm{km}\)</span>.</p>
 </div>
 <div class="topic">
 <p class="topic-title">Résolution</p>
 <blockquote>
-<div><p>On peut utilise directement le fait que l’accélération radiale s’écrit <span class="math notranslate nohighlight">\(- r \dot \theta^2 \overrightarrow{e_r}\)</span></p>
+<div><p>On peut utilise directement le fait que l’accélération radiale s’écrit <span class="math notranslate nohighlight">\(- \rho \dot \theta^2 \overrightarrow{e_\rho}\)</span> (ici <span class="math notranslate nohighlight">\(r= \rho\)</span>)</p>
 <p>Un satellite géostationnaire doit tourner autour de la terre en 24h, soit une vitesse angulaire <span class="math notranslate nohighlight">\(\dot \theta = \frac{2 \pi}{T_0}\)</span> avec <span class="math notranslate nohighlight">\(T_0 = 24 \rm{h} = 86400 \rm{s}\)</span>.</p>
 <p>Il vient:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -970,7 +970,7 @@ r &amp;= {\left(\frac{g_0 R_T^2T_0^2}{4 \pi^2 }\right)}^{\left(1/3\right)}\\
 <div><p>La direction du vecteur accélération étant constante, on va particulariser cet axe en le choisissant comme axe Ox. On pose le point O confondu avec <span class="math notranslate nohighlight">\(M_0\)</span> et on choisit un système de coordonnées cartésiennes dont l’axe Oy est tel que le vecteur vitesse initiale soit plan xOy. On peut donc écrire  que:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\overrightarrow{a} &amp;= a_0 \overrightarrow{e_w}\\
+\overrightarrow{a} &amp;= a_0 \overrightarrow{e_x}\\
 \overrightarrow{v} &amp;= v_{0x} \overrightarrow{e_x} + v_{0y} \overrightarrow{e_y}
 \end{align*}\]</div>
 <p>Par projection, on trouve que:</p>
@@ -1010,8 +1010,8 @@ v_x &amp;= 0 \Longrightarrow x(t) = z_0
 <p class="topic-title">Résolution</p>
 <blockquote>
 <div><p><strong>Quantité de mouvement</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-29185a67-03e4-4dfc-8e83-15874b515ce4">
-<span class="eqno">(7)<a class="headerlink" href="#equation-29185a67-03e4-4dfc-8e83-15874b515ce4" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dac61142-9f62-48ef-98ca-7af133216599">
+<span class="eqno">(7)<a class="headerlink" href="#equation-dac61142-9f62-48ef-98ca-7af133216599" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \overrightarrow{p_{M/R}} = m \overrightarrow{v_{M/R}}
 \end{equation}\]</div>
 <p><strong>Moment cinétique</strong></p>
@@ -1040,10 +1040,10 @@ L_{Ox/\mathfrak{R}}(M) &amp;= \overrightarrow{e_x} \cdot \overrightarrow{L_{B/\m
 <div><p><strong>Quantité de mouvement</strong></p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\overrightarrow{p_{M/R}} &amp;= m r \dot \theta \overrightarrow{e_{\theta}}\\
+\overrightarrow{p_{M/R}} &amp;= m \rho \dot \theta \overrightarrow{e_{\theta}}\\
 \overrightarrow{L_{O/\mathfrak{R}}(M)} &amp;= \overrightarrow{OM} \wedge \overrightarrow{p_{M/R}}\\
-&amp;= r \overrightarrow{e_r} \wedge m r \dot \theta \overrightarrow{e_{\theta}}\\
-&amp;= m r^2 \dot \theta \\
+&amp;= \rho \overrightarrow{e_\rho} \wedge m \rho \dot \theta \overrightarrow{e_{\theta}}\\
+&amp;= m \rho^2 \dot \theta \overrightarrow{e_z} \\
 \end{align*}\]</div>
 </div></blockquote>
 </div>

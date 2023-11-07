@@ -25,9 +25,9 @@ _On rappelle qu'un mouvement circulaire est un mouvement dont la trajectoire est
 Les coordonnées utiles pour un tel mouvement sont les coordonnées cylindriques d'axe Oz perpendiculaire au plan du cercle. On a alors les relations:
 
 \begin{align*}
-\overrightarrow{OM} &= r \overrightarrow{e_r}\\
-\overrightarrow{v_{M/\mathfrak{R}}} &= r \dot \theta \overrightarrow{e_{\theta}}\\
-\overrightarrow{a_{M/\mathfrak{R}}} &= - r \dot \theta ^2 \overrightarrow{e_r} + r \ddot \theta \overrightarrow{e_{\theta}}
+\overrightarrow{OM} &= R_0 \overrightarrow{e_r}\\
+\overrightarrow{v_{M/\mathfrak{R}}} &= R_0 \dot \theta \overrightarrow{e_{\theta}}\\
+\overrightarrow{a_{M/\mathfrak{R}}} &= - R_0 \dot \theta ^2 \overrightarrow{e_r} + R_0 \ddot \theta \overrightarrow{e_{\theta}}
 \end{align*}
 ````
 ````{important} __Accélération tangentielle et normale__

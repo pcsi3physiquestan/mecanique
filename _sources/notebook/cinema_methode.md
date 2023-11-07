@@ -28,7 +28,7 @@ On considère un point M contraint à se déplacer sur une sphère fixe de rayon
 >Cet exercice présente deux points importants: la traduction de contrainte cinématique en terme d'expression des coordonnées et des vecteurs et la détermination d'une accélération en sphérique par dérivation du vecteur vitesse.
 >
 > * Coordonnées et vecteur vitesse.
-> Ici, les contraintes sont: $r = R_0= Cste; \theta = \frac{v_0}{R_0} t; \varphi = \varphi_0 = Cste$. On choisi l'origine des angles de tels sorte que $\varphi_0 = 0$. Il est important de comprendre l'expression de $\theta(t)$ qui traduit la relation en vitesse linéaire et vitesse angulaire.
+> Ici, les contraintes sont: $\rho = R_0= Cste; \theta = \frac{v_0}{R_0} t; \varphi = \varphi_0 = Cste$. On choisi l'origine des angles de tels sorte que $\varphi_0 = 0$. Il est important de comprendre l'expression de $\theta(t)$ qui traduit la relation en vitesse linéaire et vitesse angulaire.
 >
 > Il vient que le vecteur vitesse s'écrit:
 >
@@ -41,7 +41,7 @@ On considère un point M contraint à se déplacer sur une sphère fixe de rayon
 >\begin{align*}
 \overrightarrow{a_{M/Boule}} &= \frac{\rm{d}v_0}{\rm{dt}} \overrightarrow{e_{\theta}} + v_0 \frac{\rm{d}\overrightarrow{e_{\theta}}}{\rm{dt}}\\
 &= v_0 \left(\dot \theta  \frac{\partial \overrightarrow{e_{\theta}}}{\partial \theta} + \dot \varphi \frac{\partial \overrightarrow{e_{\theta}}}{\partial \varphi}\right)\\
-&= - \frac{v_{0}^2}{R_0} \overrightarrow{e_r}
+&= - \frac{v_{0}^2}{R_0} \overrightarrow{e_\rho}
 \end{align*}
 ````
 
@@ -51,13 +51,13 @@ On considère un point M contraint à se déplacer sur une sphère fixe de rayon
 Un satellite géostationnaire est un satellite en orbite circulaire autour de la terre à une altitude $h=r-R_T$ où $R_T$ est le rayon de la Terre (r est le rayon de l'orbite). L'orbite est équatoriale et il reste fixe par rapport à un point de la Terre. Il est soumis à une accélération dans le référentiel géocentrique:
 
 $$
-\overrightarrow{a} = - g_0 {(\frac{R_T}{r})}^2 \overrightarrow{e_r}
+\overrightarrow{a} = - g_0 {(\frac{R_T}{r})}^2 \overrightarrow{e_\rho}
 $$
 Calculer r avec $g_0 = 9,8 \rm{m.s^{-1}}$ et $R_T = 6400 \rm{km}$.
 ````
 
 ````{topic} Résolution
->On peut utilise directement le fait que l'accélération radiale s'écrit $- r \dot \theta^2 \overrightarrow{e_r}$
+>On peut utilise directement le fait que l'accélération radiale s'écrit $- \rho \dot \theta^2 \overrightarrow{e_\rho}$ (ici $r= \rho$)
 >
 >Un satellite géostationnaire doit tourner autour de la terre en 24h, soit une vitesse angulaire $\dot \theta = \frac{2 \pi}{T_0}$ avec $T_0 = 24 \rm{h} = 86400 \rm{s}$.
 >
@@ -80,7 +80,7 @@ On considère un point M donc le vecteur accélération est constant. Détermine
 >La direction du vecteur accélération étant constante, on va particulariser cet axe en le choisissant comme axe Ox. On pose le point O confondu avec $M_0$ et on choisit un système de coordonnées cartésiennes dont l'axe Oy est tel que le vecteur vitesse initiale soit plan xOy. On peut donc écrire  que:
 >
 >\begin{align*}
-\overrightarrow{a} &= a_0 \overrightarrow{e_w}\\
+\overrightarrow{a} &= a_0 \overrightarrow{e_x}\\
 \overrightarrow{v} &= v_{0x} \overrightarrow{e_x} + v_{0y} \overrightarrow{e_y}
 \end{align*}
 >
@@ -152,9 +152,9 @@ On considère un point M sur une trajectoire circulaire de centre O et d'axe Oz.
 >__Quantité de mouvement__
 >
 >\begin{align*}
-\overrightarrow{p_{M/R}} &= m r \dot \theta \overrightarrow{e_{\theta}}\\
+\overrightarrow{p_{M/R}} &= m \rho \dot \theta \overrightarrow{e_{\theta}}\\
 \overrightarrow{L_{O/\mathfrak{R}}(M)} &= \overrightarrow{OM} \wedge \overrightarrow{p_{M/R}}\\
-&= r \overrightarrow{e_r} \wedge m r \dot \theta \overrightarrow{e_{\theta}}\\
-&= m r^2 \dot \theta \\
+&= \rho \overrightarrow{e_\rho} \wedge m \rho \dot \theta \overrightarrow{e_{\theta}}\\
+&= m \rho^2 \dot \theta \overrightarrow{e_z} \\
 \end{align*}
 ````

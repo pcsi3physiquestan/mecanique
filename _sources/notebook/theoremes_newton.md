@@ -21,13 +21,19 @@ kernelspec:
 Les postulats fondamentaux de la mécanique sont énoncés pour des points matériels. Nous déduirons les conséquences sur les solides par la suite.
 ```
 
-````{important} __Système isolé et pseudo-isolé__
+````{important} __Système ponctuel isolé et pseudo-isolé__
 * Un point matériel qui n'est soumis à aucune force est dit isolé.
 * Un point matériel soumis à un ensemble de forces dont la résultante (i.e. la somme) est nulle est dit pseudo-isolé.
 ````
 
+````{note} __Référentiel galiléen__
+
+Un référentiel galiléen est un référentiel dans lequel un point matériel isolé ou pseudo-isolé possède un mouvement rectiligne uniforme.
+````
+
 ````{important} __Première loi de Newton (Principe d'inertie)__
-Il existe une classe de référentiels, appelés référentiels galiléens, dans lesquels un point matériel isolé ou pseudo-isolé possède un mouvement rectiligne uniforme.
+
+Il existe des référentiels qui sont des référentiels galiléens.
 ````
 
 ````{important} __Deuxième loi de Newton (Principe fondamental de la dynamique)__
@@ -59,7 +65,6 @@ Il n'existe pas de référentiel galiléen strict connu. Néanmoins, de nombreux
 * Le référentiel géocentrique dans lequel la Terre et 3 étoiles lointaines sont supposées fixes (quelques mois). Il est translation quasi-circulaire par rapport au référentiel héliocentrique
 * Le référentiel terrestre dont laquelle la Terre (en tant que solide) est supposée fixe pour des courtes expériences (quelques heures). Il est rotation autour de l'axe des pôles dans le référentiel géocentrique.
 * A une échelle plus petite, le référentiel lié au noyau atomique pourra être considéré comme galiléen sur des temps très courts.
-
 ````
 
 ````{important} __Infinité des référentiels galiléens.__

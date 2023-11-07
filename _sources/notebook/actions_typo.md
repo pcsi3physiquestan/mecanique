@@ -34,11 +34,11 @@ Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur
 * sa force $\overrightarrow{F}(\mathfrak{A}_{1 \to 2})$ (noté souvent simplement $\overrightarrow{F}$) qui donne la direction et le sens vers laquelle l'action tend à entraîner le système et avec quelle intensité elle tend à entraîner le système.
 * son point d'application.
 
-_Par principe physique, les caractéristiques d'une action sont indépendante du référentiel considéré._
+_Par principe physique, les caractéristiques d'une action sont indépendantes du référentiel considéré._
 ````
 
 ````{attention}
-La force $\overrightarrow{F}$ donne la direction et le sens vers laquelle l'action tend à entraîner le système mais cela ne veut pas dire que le sytèmeva aller dans sa direction. Son inertie peut lui permettre de continuer dans une autre direction. Il sera simplement dévié (plus ou moins fortement suivant son inertie et l'intensité de la force).
+La force $\overrightarrow{F}$ donne la direction et le sens vers laquelle l'action tend à entraîner le système mais cela ne veut pas dire que le sytème va aller dans sa direction. Son inertie peut lui permettre de continuer dans une autre direction. Il sera simplement dévié/ralenti (plus ou moins fortement suivant son inertie et l'intensité de la force).
 
 > Exemple: Un objet lancé vers le haut subit l'action de la pesanteur dirigée vers le bas mais il continue à monter (en étant par contre ralenti).
 
@@ -51,14 +51,14 @@ La force $\overrightarrow{F}$ donne la direction et le sens vers laquelle l'acti
 ````{margin}
 Par abus de langage (quasi systématique), on parle de moment d'une force et non de moment d'une action.
 ````
-````{important} __Moment d'une action ponctuelle/d'une force par rapport à un point.__
+````{important} __Moment d'une action ponctuelle par rapport à un point.__
 
-Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$ modélisée par une force $\overrightarrow{F}$ et un point d'application A.
+Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$ modélisée par une force $\overrightarrow{F_{ext \to A}}$ et un point d'application A.
 
-Soit un point B de l'espace. On définit le moment $\overrightarrow{M_B}(\overrightarrow{F})$ (ou $\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})$) de l'action $\mathfrak{A}_{1 \to 2}$ (ou moment de la force $\overrightarrow{F}$) par rapport au point B par:
+Soit un point B de l'espace. On définit le moment $\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})$ de l'action $\mathfrak{A}_{1 \to 2}$ par rapport au point B par:
 
 $$
-\overrightarrow{M_B}\left(\overrightarrow{F}\right) = \overrightarrow{BA} \wedge \overrightarrow{F}
+\overrightarrow{M_B}\left(\mathfrak{A}_{1 \to 2}\right) = \overrightarrow{BA} \wedge \overrightarrow{F_{ext \to A}}
 $$
 ````
 
@@ -66,43 +66,43 @@ $$
 
 Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$ modélisée par une force $\overrightarrow{F}$ et un point d'application A.
 
-Soit un axe $\Delta$ orienté par un vecteur unitaire $\overrightarrow{u_{\Delta}}$. On définit le moment $M_{\Delta}(\overrightarrow{F})$ (ou $M_{\Delta}(\mathfrak{A}_{1 \to 2})$) de l'action $\mathfrak{A}_{1 \to 2}$ (ou moment de la force $\overrightarrow{F}$) par rapport à l'axe $\Delta$ par:
+Soit un axe $\Delta$ orienté par un vecteur unitaire $\overrightarrow{u_{\Delta}}$. On définit le moment $M_{\Delta}(\mathfrak{A}_{1 \to 2})$ de l'action $\mathfrak{A}_{1 \to 2}$ par rapport à l'axe $\Delta$ par:
 
 $$
-M_{\Delta}\left(\overrightarrow{F}\right) = \overrightarrow{u_{\Delta}} \cdot \left(\overrightarrow{BA} \wedge \overrightarrow{F}\right)
+M_{\Delta}\left(\mathfrak{A}_{1 \to 2}\right) = \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_{B}}\left(\mathfrak{A}_{1 \to 2}\right) = \overrightarrow{u_{\Delta}} \cdot \left(\overrightarrow{BA} \wedge \overrightarrow{F}\right)
 $$
 où B est un point de l'axe $\Delta$.
 ````
 
 ````{attention}
-Ne pas confondre moment d'une force et moment cinétique. Ils n'ont même pas la même unité.
+Ne pas confondre moment d'une action et moment cinétique. Ils n'ont même pas la même unité.
 ````
 
-### Moment d'une force: Interprétation (en ligne)
+### Moment d'une action: Interprétation (en ligne)
 
-````{topic} Interprétation du moment cinétique par rapport à un axe.
+````{topic} Interprétation du moment d'une action par rapport à un axe.
 >Dans toute la suite on travaillera implicitement dans un référentiel $\mathfrak{R}$.
 >
->Pour interprêter le moment cinétique par rapport à un axe orienté $\Delta$, on va se placer dans un repère cylindrique d'axe $\Delta$ centré en un point O de l'axe.
+>Pour interprêter le moment d'une action par rapport à un axe orienté $\Delta$, on va se placer dans un repère cylindrique d'axe $\Delta$ centré en un point O de l'axe.
 >
->On considère pour simplifier un point matériel M subissant une action modélisée par une force $\overrightarrow{F}$ (appliquée donc au point M). On note l'expression de $\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}$.
+>On considère un point matériel M subissant une action $\mathfrak{A}$ modélisée par une force $\overrightarrow{F}$ (appliquée donc au point M). On note l'expression de $\overrightarrow{F} = F_r \overrightarrow{e_r} + F_{\theta} \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}$.
 >
->On peut donc calculer le moment de la force (!) $\overrightarrow{F}$ sur $\Delta$ (Le pointA est le point d'application de l'action):
+>On peut donc calculer le moment de l'action modélisée par $\overrightarrow{F}$ sur $\Delta$ (Le point A est le point d'application de l'action):
 >
 >\begin{align*}
-M_{\Delta}(\overrightarrow{F}) &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_O (\overrightarrow{F})}\\
+M_{\Delta}(\mathfrak{A}) &= \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_O (\mathfrak{A})}\\
 &= \overrightarrow{u_{\Delta}} \cdot \left( \overrightarrow{OA}\wedge \overrightarrow{F}\right)\\
 &= \overrightarrow{e_z} \cdot ((r_A \overrightarrow{e_r} + z_A \overrightarrow{e_z}) \wedge (F_r \overrightarrow{e_r} + F_\theta \overrightarrow{e_{\theta}} + F_z \overrightarrow{e_z}))\\
 &= r_A F_\theta
 \end{align*}
 >On observe que:
 >
->* Le moment de la force $\overrightarrow{F}$ sur l'axe $\Delta$ n'est pas nul si la composante orthoradiale $F_{\theta}$ est non nulle.
->Or la composante orthoradiale correspond à la (seule) composante de $\overrightarrow{F}$ qui tend à faire tourner le point M autour de l'axe $\Delta$ (la composante suivant Oz tend à le faire longer l'axe Oz et la composante suivant $\overrightarrow{e_r}$ ne fait qu'éloigner ou rapprocherle point M de l'axe.
+>* Le moment de l'action $\mathfrak{A}$ sur l'axe $\Delta$ n'est pas nul si la composante orthoradiale $F_{\theta}$ est non nulle.
+>Or la composante orthoradiale correspond à la (seule) composante de $\overrightarrow{F}$ qui tend à faire tourner le point M autour de l'axe $\Delta$ (la composante suivant Oz tend à le faire longer l'axe Oz et la composante suivant $\overrightarrow{e_r}$ ne fait qu'éloigner ou rapprocher le point M de l'axe.
 >
 >Le moment d'une action sur un axe donne donc une information sur __la possibilité que possède cette action (seule) à faire tourner le système autour de l'axe considéré.__.
 >
->* Il est __algébrique__ et le moment de l'action est positif $F_{\theta} > 0$ c'est-à-dire si l'action tend à faire tourner le système suivant les$\theta$ positifs (on généralisera en remarquant qu'il s'agit de faire tourner le système dans un sens en cohérence avec l'orientation de l'axe considéré).
+>* Il est __algébrique__ et le moment de l'action est positif si $F_{\theta} > 0$ c'est-à-dire si l'action tend à faire tourner le système suivant les $\theta$ positifs (on généralisera en remarquant qu'il s'agit de faire tourner le système dans un sens en cohérence avec l'orientation de l'axe considéré).
 >A l'inverse, si $F_{\theta} < 0$, l'action tend à faire tourner le système en sens inverse.
 >
 >Et si la composante orthoradiale est nulle, cela signifie que l'action n'a pas d'effet sur la rotation autour de l'axe. Elle ne fait qu'éloigner/rapprocher le système de l'axe ou le faire longer l'axe.
@@ -118,11 +118,8 @@ On retiendra que le moment d'une action sur un axe $\Delta$ donne la __tendance_
 ````{attention}
 * Il s'agit d'une __tendance__ pour l'action considéré. (notion d'inertie)
 * Cela ne veut pas dire que le système est en rotation autour de l'axe, il peut même être immobile (les considérations sur les moments sont très important en statique des systèmes de points).
-    * Comme pour la force, le moment donne une tendance qui sera réalisée ou non suivant l'existence d'autres actions et suivant l'inertie et le mouvement initial du système.
+    * Comme pour la force, le moment donne une tendance qui sera réalisée ou non suivant l'existence d'autres actions/contraintes et suivant l'inertie et le mouvement initial du système.
 ````
-
-
-
 
 
 ## Actions ponctuelles usuelles
@@ -288,7 +285,7 @@ On parle de __force de rappel__. En effet, lorsque le ressort est comprimé, l'a
 
 ````{important} __Composante tangentielle et composante normale__
 
-En un point de contact M entre le système et le solide/fluide (qu'on appellera $\Sigma_{ext}$), l'action ponctuelle (modélisée par la force $\overrightarrow{F}(M)$ peut-être décomposée en deux composantes:
+En un point de contact M entre le système et le solide/fluide (qu'on appellera $\Sigma_{ext}$), l'action ponctuelle (modélisée par la force $\overrightarrow{F}(M)$) peut-être décomposée en deux composantes:
 
 * une composante normale à la surface de contact $\overrightarrow{F_{\perp}}(M)$
 * une composante tangentielle à la surface de contact $\overrightarrow{F_{//}}(M)$
@@ -302,17 +299,13 @@ En un point de contact M entre le système et le solide/fluide (qu'on appellera 
 
 ````{topic} __Interprétation des composantes.__
 
-La __composante normale__ correspond à une "réaction de non interpénétration", le système extérieur tend à pousser le système au point M. Cela peut-être une tendance légère (cas d'un système extérieur déformable) ou une contrainte forte (le mouvement du système étudié dans la direction normale au point de contact est alors nul. Au jouant sur la géométrie du contact dans le second cas, on arrive à créer des __liaisons__ dont les mouvements possibles (__degré de liberté__) sont définies précisément (surface de contact cylindrique conduit à un pivot glissant, surface de contact plan sur plan conduit à...  un mouvement plan).
-
-Il vient que (sauf cas de surface adhésive non étudié dans le cadre du programme), la composante normale de la force modélisant l'action ponctuelle du système $\Sigma_1$ sur le système $\Sigma_2$ en un point de contact M est toujours dirigée __vers l'intérieur du système $\Sigma_2$__ (qui subit l'action).
-
-La __composante tangentielle__ correspond à une action s'opposant au __mouvement relatif__ des deux systèmes en contacts (ou à la mise en mouvement relatif). On parle de __frottements__ (fluide ou solide suivant le cas). Lorsqu'on point M de contact, la composantre tangentielle s'oppose à la vitesse du système $\Sigma_2$ par rapport au système $\Sigma_1$ ($\overrightarrow{v}(M \in \Sigma_2 / M \in \Sigma_1)$. Lorsqu'il y a immobilité, elle s'oppose à la mise en mouvement (ou est nulle cf. suite).
+La __composante normale__ correspond à une "réaction de non interpénétration", le système extérieur tend à pousser le système au point M. Cela peut-être une tendance légère (cas d'un système extérieur déformable) ou une contrainte forte (le mouvement du système étudié dans la direction normale au point de contact est alors nul). Au jouant sur la géométrie du contact dans le second cas, on arrive à créer des __liaisons__ dont les mouvements possibles (__degré de liberté__) sont définies précisément (surface de contact cylindrique conduit à une rotation et une translation suivante un axe, surface de contact plan sur plan conduit à...  un mouvement plan).
 ````
 
 ```{margin}
 Il s'agit d'une vision simplifiée pour s'adapter au modèle du point matériel. Une vision globale sera présentée dans les systèmes de points.
 
-La distinction faible/forte vitesse reste pour l'instant qualitative. Sauf précision contraire, on supposera l'écoulement laminaire.
+La distinction faible/forte vitesse reste pour l'instant qualitative. Sans précision contraire, on supposera l'écoulement laminaire.
 ```
 ````{important} __Action d'un fluide__
 L'action d'un fluide sur un point matériel est modéliée par une action de __frottements fluides qui s'oppose à la vitesse.__ On distingue deux cas:
@@ -332,10 +325,17 @@ $$
 
 En un point de contact solide-solide, la force de contact $\overrightarrow{R}$ se décompose en deux composantes, l'une tangentielle $\overrightarrow{R_T}$ et l'autre normale $\overrightarrow{R_N}$ ($\overrightarrow{R} = \overrightarrow{R_N} + \overrightarrow{R_T}$). On déduit expérimentalement les comportements suivants:
 
-* La __composante normale__ est telle qu'elle empêche l'interpénétration des systèmes (contrainte cinématique). Elle est dirigée vers l'intérieur du solide qui subit l'action. Son annulaion signifie la perte de contact.
+* La __composante normale__ est telle qu'elle empêche l'interpénétration des systèmes (contrainte cinématique). Elle est dirigée __vers l'intérieur du solide qui subit l'action. Son annulaion signifie la perte de contact.__
 * La __composante tangentielle__ a un comportement qui dépend de l'état relatif des deux solides:
-    * _en cas d'immobilité relative des deux solides_, l'action complète est telle qu'elle permet l'immobilité relative (somme des forces nulle si l'on est dans un référentiel galiléen). La composante tangentielle est de norme nécessairement __inférieure__ à $\left \| \overrightarrow{R_T}\right \| < \mu_S \left \| \overrightarrow{R_N}\right \|$ où $\mu_S$ est appelé coefficient de frottement statique. Lorsque cette condition est mise en défaut, alors le système se met en mouvement.
-    * _en cas de mouvement relatif des deux solides_ (on dit qu'il y a glissement au point M), la composante tangentielle s'oppose à la vitesse relative au point M. Sa norme est __égale__ à $\left \| \overrightarrow{R_T}\right \| = \mu_D \left \| \overrightarrow{R_N}\right \|$ où $\mu_D$ est appelé coefficient de frottement dynamique.
+    * _en cas d'immobilité relative des deux solides_, l'action complète est telle qu'elle permet l'immobilité relative. La composante tangentielle est de norme nécessairement limitée par l'inégalité 
+    
+    $$
+    \left \| \overrightarrow{R_T}\right \| < \mu_S \left \| \overrightarrow{R_N}\right \|
+    $$
+    
+    où $\mu_S$ est appelé coefficient de frottement[^trompeur] statique. Lorsque cette condition est mise en défaut, alors le système se met en mouvement.
+    [^trompeur]: Le terme de "frottement" statique est trompeur car du point de vue du sens commun, ça ne frotte pas !
+    * _en cas de mouvement relatif des deux solides_ (on dit qu'il y a __glissement__ au point M), la composante tangentielle s'oppose à la vitesse relative au point M. Sa norme est __égale__ à $\left \| \overrightarrow{R_T}\right \| = \mu_D \left \| \overrightarrow{R_N}\right \|$ où $\mu_D$ est appelé coefficient de frottement dynamique.
 * Quelque soit le système, $\mu_D < \mu_S$, c'est-à-dire qu'il est plus facile de maintenir un solide en mouvement par rapport à un autre solide malgré les frottements que de mettre en mouvement le même solide.
 ````
 
@@ -346,6 +346,7 @@ Il faut faire attention à plusieurs points:
 * la condition d'immobilité est une __inéquation__. Elle ne permet PAS de déterminer la force ou le moment de l'action. Ces derniers se détermine par application des théorèmes fondamentaux dans un cas statique (immobilité relative des deux solides).
 * Dans tous les cas, la composante normale se déduit de la contrainte cinématique imposée.
 * La condition de contact est importante pour déterminer s'il y a décollement.
-* Il faut faire attention à l'orientation de la composante tangentielle qui change en fonction de la vitesse. Cela signifie qu'on doit souvent faire l'étude du mouvement par phase en fonction du sens de déplacement.
-
+* Il faut faire attention à l'orientation de la composante tangentielle qui change en fonction de la vitesse __uniquement lorsqu'il y a glissement__. Cela signifie 
+    * qu'on doit souvent faire l'étude du mouvement par phase en fonction du sens de déplacement.
+    * que dans le cas de non glissement, on ne peut _a priori_ orienter la composante tangentielle.
 ````

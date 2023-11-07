@@ -902,16 +902,114 @@ title="Print to PDF"
 <div><ol class="simple">
 <li><p>Ecrire l’équation différentielle que doit vérifier l’angle <span class="math notranslate nohighlight">\(\theta\)</span> que fait la tige avec la verticale descendante puis mettre ce problème sous la forme d’un problème d’Euler <span class="math notranslate nohighlight">\(\frac{\rm{d}Y}{\rm{dt}}(t) = F(Y(t), t)\)</span> en précisant les expressions de <span class="math notranslate nohighlight">\(Y(t)\)</span> et <span class="math notranslate nohighlight">\(F(Y(t), t)\)</span>. Quelle est la taille de <span class="math notranslate nohighlight">\(Y(t)\)</span>.</p></li>
 <li><p>En utilisant la fonction native <code class="docutils literal notranslate"><span class="pre">odeint</span></code> de <code class="docutils literal notranslate"><span class="pre">scipy.integrate</span></code> obtenir l’évolution de l’angle <span class="math notranslate nohighlight">\(\theta\)</span> sur <span class="math notranslate nohighlight">\(30 \rm{s}\)</span> pour une pendule lâché d’un angle <span class="math notranslate nohighlight">\(120 ^{\circ}\)</span> sans vitesse initiale.</p></li>
-<li><p>Ecrire une <code class="docutils literal notranslate"><span class="pre">periode(alph:float)</span> <span class="pre">-&gt;</span> <span class="pre">float</span></code> qui, après avoir résolution le problème d’Euler précédent pour un pendule lâché sans vitesse initiale d’un angle <code class="docutils literal notranslate"><span class="pre">alph</span></code> sur une durée de <span class="math notranslate nohighlight">\(100 s\rm{s}\)</span>, déterminer la période du signal. Pour cela, vous devrez :</p>
+<li><p>*Ecrire une <code class="docutils literal notranslate"><span class="pre">periode(alph:float)</span> <span class="pre">-&gt;</span> <span class="pre">float</span></code> qui, après avoir résolution le problème d’Euler précédent pour un pendule lâché sans vitesse initiale d’un angle <code class="docutils literal notranslate"><span class="pre">alph</span></code> sur une durée de <span class="math notranslate nohighlight">\(100 s\rm{s}\)</span>, déterminer la période du signal. Pour cela, vous devrez :</p>
 <ul class="simple">
 <li><p>Déterminer N le nombre de changement de signe de <span class="math notranslate nohighlight">\(\theta(t)\)</span> (dont le nombre d’annulations).</p></li>
 <li><p>La durée <span class="math notranslate nohighlight">\(\delta t\)</span> entre la première et la dernière annulation.</p></li>
 <li><p>La période <span class="math notranslate nohighlight">\(T = \frac{2\delta t}{N-1}\)</span></p></li>
 </ul>
 </li>
-<li><p>Tracer la période des oscillations du pendule pour des angles entre <span class="math notranslate nohighlight">\(alph = 10 ^{\circ}\)</span> et <span class="math notranslate nohighlight">\(alph = 150 ^{\circ}\)</span> par pas de <span class="math notranslate nohighlight">\(10 ^{\circ}\)</span>. Analyser.</p></li>
+<li><p>*Tracer la période des oscillations du pendule pour des angles entre <span class="math notranslate nohighlight">\(alph = 10 ^{\circ}\)</span> et <span class="math notranslate nohighlight">\(alph = 150 ^{\circ}\)</span> par pas de <span class="math notranslate nohighlight">\(10 ^{\circ}\)</span>. Analyser.</p></li>
 </ol>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En posant le vecteur :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Y(t) = 
+\begin{matrix}
+    \theta(t)\\
+    \dot \theta(t)
+\end{matrix}
+\end{split}\]</div>
+<p class="sd-card-text">On obtient le système d’équations:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\dot Y(t) =
+\begin{matrix}
+    \dot \theta(t)\\
+    - \frac{g}{l}\sin \theta(t)
+\end{matrix}
+\end{split}\]</div>
+</div>
+</details><div class="cell tag_hide-input tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
+
+<span class="k">def</span> <span class="nf">f_euler</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">Y</span><span class="p">):</span>  <span class="c1"># Fonction du schéma d&#39;Euler</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">Y</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="o">-</span><span class="n">g</span> <span class="o">/</span> <span class="n">l</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="mi">0</span><span class="p">])])</span>
+
+<span class="n">Y0</span> <span class="o">=</span> <span class="mi">120</span>
+<span class="n">V0</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="n">Y0</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">V0</span><span class="p">]</span>  <span class="c1"># CI en passant l&#39;angle en radians</span>
+<span class="n">tmax</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">pas</span> <span class="o">=</span> <span class="mf">1e-2</span>  <span class="c1"># Pas petit devant la période (minorée par sqrt(g/l) = 2s)</span>
+<span class="n">tks</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tmax</span><span class="p">,</span> <span class="n">pas</span><span class="p">)</span>
+<span class="n">yks</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">f_euler</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">tks</span><span class="p">,</span> <span class="n">tfirst</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">angles</span> <span class="o">=</span> <span class="n">yks</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># Pour avoir uniquement les données de l&#39;angle</span>
+
+<span class="c1"># Supplément : on va tracer position angulaire et vitesse angulaire</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="s1">&#39;col&#39;</span><span class="p">)</span>  <span class="c1"># Deux graphiques sur deux lignes avec les mêmes abscisses</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;theta(rad)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;omega(rad/s)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;t(s)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tks</span><span class="p">,</span> <span class="n">yks</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tks</span><span class="p">,</span> <span class="n">yks</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">periode</span><span class="p">(</span><span class="n">alph</span><span class="p">):</span>
+    <span class="n">l</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">g</span> <span class="o">=</span><span class="mf">9.81</span>
+    <span class="n">V0</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="n">alph</span><span class="p">,</span> <span class="n">V0</span><span class="p">]</span>  <span class="c1"># CI, alpah devra être en radians</span>
+    <span class="n">tmax</span> <span class="o">=</span> <span class="mi">100</span>
+    <span class="n">pas</span> <span class="o">=</span> <span class="mf">1e-2</span>  <span class="c1"># Pas petit devant la période (minorée par sqrt(g/l) = 2s)</span>
+    <span class="n">tks</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tmax</span><span class="p">,</span> <span class="n">pas</span><span class="p">)</span>
+    <span class="n">yks</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">f_euler</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">tks</span><span class="p">,</span> <span class="n">tfirst</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">Ns</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">deltat</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># On va stocker le temps du premier et du dernier changement de signe</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">yks</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">yks</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">yks</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># Test de changement de signe</span>
+            <span class="k">if</span> <span class="n">Ns</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>  <span class="c1"># Stockage du premier temps</span>
+                <span class="n">deltat</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span> <span class="n">tks</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">Ns</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># Décompte du nombre de changement de signe</span>
+            <span class="n">deltat</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tks</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># Stockage du temps du dernier changement de signe détecté</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">deltat</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">deltat</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">Ns</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">alphs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span>  <span class="c1"># On passe les valeurs d&#39;angle en radians</span>
+
+<span class="n">pers</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># On va y stocker les périodes</span>
+<span class="k">for</span> <span class="n">alph</span> <span class="ow">in</span> <span class="n">alphs</span><span class="p">:</span>
+    <span class="n">pers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">periode</span><span class="p">(</span><span class="n">alph</span><span class="p">))</span>
+
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;alpha(rad)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;T(s)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">alphs</span><span class="p">,</span> <span class="n">pers</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="portee-d-un-tir-de-badminton">
 <h2>Portée d’un tir de badminton<a class="headerlink" href="#portee-d-un-tir-de-badminton" title="Permalink to this headline">#</a></h2>
@@ -924,17 +1022,141 @@ title="Print to PDF"
 <p class="sidebar-title"></p>
 <p><em>La physique du sport</em>, Caroline Cohen, 2014</p>
 </div>
-<p>avec <span class="math notranslate nohighlight">\(\rho = 1.29 \times 10^{-3} \rm{kg.m^{-3}}\)</span>  la masse volumique de l’air, <span class="math notranslate nohighlight">\(R = 3.4 \rm{cm}\)</span> le rayon du volant de badminton (face au flux d’air), <span class="math notranslate nohighlight">\(C_x = 0.65\)</span> le coefficient de trainée du volant dans l’air et <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> la vitesse du volant dans l’air.</p>
+<p>avec <span class="math notranslate nohighlight">\(\rho = 1.29 \rm{kg.m^{-3}}\)</span>  la masse volumique de l’air, <span class="math notranslate nohighlight">\(R = 3.4 \rm{cm}\)</span> le rayon du volant de badminton (face au flux d’air), <span class="math notranslate nohighlight">\(C_x = 0.65\)</span> le coefficient de trainée du volant dans l’air et <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> la vitesse du volant dans l’air.</p>
 <p>Soumis de plus à la pesanteur <span class="math notranslate nohighlight">\(g = 9.81 \rm{m.s^{-2}}\)</span>, l’étude théorique de la trajectoire du volant est délicate. On se propose de l’étude de manière numérique pour une vitesse initiale <span class="math notranslate nohighlight">\(V_0 = 60 \rm{m.s^{-1}}\)</span> et un angle de départ <span class="math notranslate nohighlight">\(alph\)</span> variable. L’altitude initiale du volant est <span class="math notranslate nohighlight">\(h_0 = 2\rm{m}\)</span>.</p>
 <blockquote>
 <div><ol class="simple">
-<li><p>Ecrire l’équation différentielle qui régit l’évolution du volant de badmintion et mettre ce problème sous la forme d’un problème d’Euler <span class="math notranslate nohighlight">\(\frac{\rm{d}Y}{\rm{dt}}(t) = F(Y(t), t)\)</span> en précisant les expressions de <span class="math notranslate nohighlight">\(Y(t)\)</span> et <span class="math notranslate nohighlight">\(F(Y(t), t)\)</span>. Quelle est la taille de <span class="math notranslate nohighlight">\(Y(t)\)</span>.</p></li>
-<li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">euler(f:callable,</span> <span class="pre">v0:float,</span> <span class="pre">alph:float,</span> <span class="pre">pas:float)</span> <span class="pre">-&gt;</span> <span class="pre">(numpy.ndarray,</span> <span class="pre">numpy.ndarray)</span></code> qui réalise le schéma d’intégration d’Euler explicite et renvoie l’évolution des coordonnées de position et de vitesse pour une vitesse initiale <code class="docutils literal notranslate"><span class="pre">v0</span></code> et un angle <code class="docutils literal notranslate"><span class="pre">alph</span></code> initial. <strong>L’intégration ne devra pas s’arrêter pour un temps défini mais lorsque l’altitude du volant devient négative.</strong></p></li>
+<li><p>Ecrire l’équation différentielle qui régit l’évolution du volant de badmintion et mettre ce problème sous la forme d’un problème d’Euler <span class="math notranslate nohighlight">\(\frac{\rm{d}Y}{\rm{dt}}(t) = F(t, Y(t))\)</span> en précisant les expressions de <span class="math notranslate nohighlight">\(Y(t)\)</span> et <span class="math notranslate nohighlight">\(F(t, Y(t))\)</span>. Quelle est la taille de <span class="math notranslate nohighlight">\(Y(t)\)</span>.</p></li>
+<li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">euler(f:callable,</span> <span class="pre">v0:float,</span> <span class="pre">alph:float,</span> <span class="pre">pas:float)</span> <span class="pre">-&gt;</span> <span class="pre">numpy.ndarray</span></code> qui réalise le schéma d’intégration d’Euler explicite et renvoie dans un seul tableau numpy l’évolution des coordonnées de position et de vitesse pour une vitesse initiale <code class="docutils literal notranslate"><span class="pre">v0</span></code> et un angle <code class="docutils literal notranslate"><span class="pre">alph</span></code> initial. <strong>L’intégration ne devra pas s’arrêter pour un temps défini mais lorsque l’altitude du volant devient négative.</strong></p></li>
 <li><p>Tracer la trajectoire du volant pour un angle de <span class="math notranslate nohighlight">\(45 ^{\circ}\)</span> en choisissant un pas d’intégration correct.</p></li>
 <li><p>Ecrire une fonction <code class="docutils literal notranslate"><span class="pre">portee(alph:float)</span></code> qui renvoie la portée estimée du tir pour un angle <code class="docutils literal notranslate"><span class="pre">alph</span></code>.</p></li>
 <li><p>Tracer la portée du tir en fonction de l’angle <span class="math notranslate nohighlight">\(alph\)</span> et déterminer la gamme d’angle acceptable pour un retour de fond de court où la portée doit être entre 9m et 12m.</p></li>
 </ol>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En posant le vecteur :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Y(t) = 
+\begin{matrix}
+    x(t)\\
+    z(t)\\    
+    \dot x(t)\\
+    \dot z(t)
+\end{matrix}
+\end{split}\]</div>
+<p class="sd-card-text">On obtient le système d’équations:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\dot Y(t) =
+\begin{matrix}
+    \dot x(t)\\
+    \dot z(t)\\
+    - \frac{1}{2m}\rho \pi R^2 C_x \sqrt{\dot x(t)^2 + \dot z(t)^2}\dot x(t)\\
+    - g - \frac{1}{2m}\rho \pi R^2 C_x \sqrt{\dot x(t)^2 + \dot z(t)^2}\dot z(t)
+\end{matrix}
+\end{split}\]</div>
+</div>
+</details><div class="cell tag_hide-input tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Les bibliothèques scientifiques ne sont pas importées</span>
+<span class="sd">car elles ont été importées pour l&#39;exercice précédent.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="k">def</span> <span class="nf">f_bad</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">Y</span><span class="p">):</span>  <span class="c1"># Y est un vecteur de taille 2</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+    <span class="n">Cx</span> <span class="o">=</span> <span class="mf">0.65</span>
+    <span class="n">rho</span> <span class="o">=</span> <span class="mf">1.29</span>
+    <span class="n">R</span> <span class="o">=</span> <span class="mf">3.4e-2</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="mf">5.3e-3</span>
+    <span class="n">coef</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">Cx</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">R</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">Y</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">coef</span> <span class="o">*</span> <span class="n">v</span> <span class="o">*</span> <span class="n">Y</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="o">-</span><span class="n">g</span> <span class="o">+</span> <span class="n">coef</span> <span class="o">*</span> <span class="n">v</span> <span class="o">*</span> <span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
+
+<span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">pas</span><span class="p">):</span>
+    <span class="n">h0</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># Hauteur de départ</span>
+    <span class="n">Y0</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">h0</span><span class="p">,</span> <span class="n">v0</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">alpha</span><span class="p">),</span> <span class="n">v0</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">alpha</span><span class="p">)])</span>  <span class="c1"># Vecteur numpy pour faciliter les opérations mathématiques</span>
+    <span class="n">tk</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">yk</span> <span class="o">=</span> <span class="p">[</span><span class="n">Y0</span><span class="p">]</span>
+    <span class="k">while</span> <span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">yk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pas</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">tk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="n">tk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pas</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">array</span><span class="p">(</span><span class="n">yk</span><span class="p">)</span>
+
+
+<span class="n">V0</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">alpha0</span> <span class="o">=</span> <span class="mi">45</span> <span class="o">/</span> <span class="mi">180</span> <span class="o">*</span> <span class="n">pi</span>
+<span class="n">pas</span> <span class="o">=</span> <span class="mf">1e-2</span>
+<span class="n">yk</span> <span class="o">=</span> <span class="n">euler</span><span class="p">(</span><span class="n">f_bad</span><span class="p">,</span> <span class="n">V0</span><span class="p">,</span> <span class="n">alpha0</span><span class="p">,</span> <span class="n">pas</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">yk</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">yk</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x(m)&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;z(m)&#39;</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">portee</span><span class="p">(</span><span class="n">alph</span><span class="p">):</span>
+    <span class="n">V0</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">pas</span> <span class="o">=</span> <span class="mf">1e-2</span>
+    <span class="n">yk</span> <span class="o">=</span> <span class="n">euler</span><span class="p">(</span><span class="n">f_bad</span><span class="p">,</span> <span class="n">V0</span><span class="p">,</span> <span class="n">alph</span><span class="p">,</span> <span class="n">pas</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># La portée est la dernière valeur de x.</span>
+
+<span class="n">alphs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Angle en degrés de 5 à 85 degrés</span>
+<span class="n">alphrs</span> <span class="o">=</span> <span class="n">alphs</span> <span class="o">/</span><span class="mi">180</span> <span class="o">*</span> <span class="n">pi</span>  <span class="c1"># Passage en radians</span>
+
+<span class="n">portees</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">alph</span> <span class="ow">in</span> <span class="n">alphrs</span><span class="p">:</span>
+    <span class="n">portees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">portee</span><span class="p">(</span><span class="n">alph</span><span class="p">))</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">alphs</span><span class="p">,</span> <span class="n">portees</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;angle(degre)&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;portee(m)&#39;</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Le tracé précédent montre qu&#39;on ne dépassera pas 12m, on cherche donc à être en dessus de 9m</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&quot;&quot;&quot;On va réaliser une dichotomie</span>
+<span class="sd">mais basée sur les indices des angles&quot;&quot;&quot;</span>
+<span class="n">imin</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">imax</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">portees</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">imax</span><span class="o">-</span><span class="n">imin</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># On se ramène à deux indices possibles</span>
+    <span class="n">imid</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">imax</span><span class="o">+</span><span class="n">imin</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># On prend l&#39;indice médian, c&#39;est un entier</span>
+    <span class="k">if</span> <span class="n">portees</span><span class="p">[</span><span class="n">imid</span><span class="p">]</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
+        <span class="n">imax</span> <span class="o">=</span> <span class="n">imid</span>
+        <span class="n">imin</span> <span class="o">=</span> <span class="n">imid</span>
+    <span class="k">elif</span> <span class="n">portees</span><span class="p">[</span><span class="n">imid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span> <span class="c1"># La portée voulu est dans la partie droite</span>
+        <span class="n">imin</span> <span class="o">=</span> <span class="n">imid</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">imax</span> <span class="o">=</span> <span class="n">imid</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">alphs</span><span class="p">[</span><span class="n">imax</span><span class="p">],</span> <span class="n">portees</span><span class="p">[</span><span class="n">imax</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alphs</span><span class="p">[</span><span class="n">imin</span><span class="p">],</span> <span class="n">portees</span><span class="p">[</span><span class="n">imin</span><span class="p">])</span>
+
+<span class="sd">&quot;&quot;&quot;On doit donc tirer entre 0 et 45°&quot;&quot;&quot;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">NOTE : En pratique, il faudrait aussi vérifier que le volant passe le filet</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 

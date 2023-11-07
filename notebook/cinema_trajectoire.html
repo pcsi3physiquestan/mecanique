@@ -987,11 +987,19 @@ title="Print to PDF"
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Equation horaire et trajectoire</strong></p>
-<p>L’évolution du mouvement du point matériel <span class="math notranslate nohighlight">\(OM(t)\)</span> est appelée équation horaire. Elle est aussi définie par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.</p>
+<p>L’évolution du mouvement du point matériel <span class="math notranslate nohighlight">\(\overrightarrow{OM}(t)\)</span> est appelée équation horaire. Elle est aussi définie par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.</p>
 </div>
 </div>
 <div class="section" id="expression-du-vecteur-position">
 <h3>Expression du vecteur position<a class="headerlink" href="#expression-du-vecteur-position" title="Permalink to this headline">#</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Il arrive qu’on puisse éliminer la variable temps pour obtenir des équations cartésiennes <span class="math notranslate nohighlight">\(y(x)\)</span> ou polaire (<span class="math notranslate nohighlight">\(r(\theta)\)</span>).</p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On trouvera très souvent la notation <span class="math notranslate nohighlight">\(r\)</span> au lieu de <span class="math notranslate nohighlight">\(r\)</span> pour désigner la variable radiale en coordonnées cylindriques ou polaires. Attention, elle ne représente pas la même grandeur qu’en sphérique.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Expressions</strong></p>
@@ -1004,7 +1012,11 @@ title="Print to PDF"
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>On rappelle que les bases cylindriques et sphériques sont des bases <strong>locales</strong> dont les vecteurs vont varier lorsque le point M se déplace. Il faudra donc tenir compte de leur dérivées temporelles.</p>
+<p>On rappelle que les bases cylindriques et sphériques sont des bases <strong>locales</strong> dont les vecteurs vont varier lorsque le point M se déplace. Il faudra donc tenir compte de leur dérivées temporelles :</p>
+<ul class="simple">
+<li><p>Coordonnées cylindrique: <span class="math notranslate nohighlight">\(r_M(t) \overrightarrow{e_r}(\theta(t)) + z_M(t) \overrightarrow{e_z}\)</span>.</p></li>
+<li><p>Coordonnées sphériques: <span class="math notranslate nohighlight">\(r_M(t) \overrightarrow{e_r}(\theta(t), \phi(t))\)</span>.</p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -1047,8 +1059,8 @@ x(t) = R \cos \omega t + x_0\\
 y(t) = R \sin \omega t + y_0
 \end{align*}\]</div>
 <p>Et on peut aussi écrire l’équation d’un cercle sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4d44a312-42bc-4233-a517-df613c5124cd">
-<span class="eqno">(1)<a class="headerlink" href="#equation-4d44a312-42bc-4233-a517-df613c5124cd" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq_cercle_cartesienmtex_234}
+<div class="amsmath math notranslate nohighlight" id="equation-70d71b6f-310b-47f9-8ffa-24f04e2a9323">
+<span class="eqno">(1)<a class="headerlink" href="#equation-70d71b6f-310b-47f9-8ffa-24f04e2a9323" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq_cercle_cartesienmtex_234}
 {(x - x_0)}^2 + {(y - y_0)}^2 = R^2
 \end{equation}\]</div>
 <p>Dans les deux cas, il s’agit de l’équation d’un cercle de rayon R et de centre C dont les coordonnées sont <span class="math notranslate nohighlight">\(C(x_0,y_0)\)</span></p>
@@ -1062,10 +1074,10 @@ y(t) = R \sin \omega t + y_0
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Ellipse</strong><br />
-Une ellipse est une courbe fermée qu’on peut caractériser/reconnaître de plusieurs manières:</p>
+<p><strong>Ellipse</strong></p>
+<p>Une ellipse est une courbe fermée qu’on peut caractériser/reconnaître de plusieurs manières:</p>
 <ul class="simple">
-<li><p><em>Lieu géométrique (peu usité): Soit deux points, appelées foyers, <span class="math notranslate nohighlight">\(F_1\)</span> et <span class="math notranslate nohighlight">\(F_2\)</span> et un réel positif K, l’ensemble des points M tel que <span class="math notranslate nohighlight">\(MF_1 + MF_2 = K\)</span> décrit une ellipse. Le milieu du segment <span class="math notranslate nohighlight">\(F_1 F_2\)</span> est appelé centre de l’ellipse.</em></p></li>
+<li><p><em>Lieu géométrique (peu usité en physique): Soit deux points, appelées foyers, <span class="math notranslate nohighlight">\(F_1\)</span> et <span class="math notranslate nohighlight">\(F_2\)</span> et un réel positif K, l’ensemble des points M tel que <span class="math notranslate nohighlight">\(MF_1 + MF_2 = K\)</span> décrit une ellipse. Le milieu du segment <span class="math notranslate nohighlight">\(F_1 F_2\)</span> est appelé centre de l’ellipse.</em></p></li>
 <li><p>Représentation polaire (<strong>fondamentale</strong>): Soit un point F centre d’un repère polaire. L’ensemble des points M dont les coordonnées du vecteur position <span class="math notranslate nohighlight">\(\overrightarrow{FM}\)</span> sont tels que <span class="math notranslate nohighlight">\(r = \frac{p}{1 + e \cos{(\theta - \theta_0)}}\)</span> avec <span class="math notranslate nohighlight">\(p &gt; 0\)</span> et <span class="math notranslate nohighlight">\(0 \leq e &lt; 1\)</span> décrit une ellipse. <strong>Le point F est un des foyers de l’ellipse</strong>. On dit que p est le <strong>paramètre de l’ellipse</strong> et que <strong>e</strong> est l’excentricité de l’ellipse.</p></li>
 <li><p>Représentation cartésienne (très utile). L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x,y)\)</span> sont telles que: <span class="math notranslate nohighlight">\({(\frac{x}{a})}^2 + {(\frac{y}{b})}^2 = 1\)</span> décrit une ellipse dont le centre est le centre du repère.</p></li>
 <li><p>Représentation paramétrique (utile): L’ensemble des M dont les coordonnées <span class="math notranslate nohighlight">\((x(t) = a \cos t ; y(t) = b \sin(t))\)</span> décrit une ellipse dont le centre est le centre du repère.</p></li>

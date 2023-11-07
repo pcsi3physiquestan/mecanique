@@ -44,7 +44,7 @@ $$
 En coordonnées cyindriques:
 
 $$
-\overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} + r \dot \theta \overrightarrow{e_\theta} + \dot z \overrightarrow{e_z}
+\overrightarrow{v_{M/\mathfrak{R}}} = \dot r \overrightarrow{e_r} +r \dot \theta \overrightarrow{e_\theta} + \dot z \overrightarrow{e_z}
 $$
 En coordonnées spheriques:
 

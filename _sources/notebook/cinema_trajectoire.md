@@ -30,11 +30,17 @@ On peut être amené à tracer des trajectoires en utilisant la représentation 
 ````
 ````{important} __Equation horaire et trajectoire__
 
-L'évolution du mouvement du point matériel $OM(t)$ est appelée équation horaire. Elle est aussi définie par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.
+L'évolution du mouvement du point matériel $\overrightarrow{OM}(t)$ est appelée équation horaire. Elle est aussi définie par les composantes du vecteur position dans la base de projection. La courbe paramètrée (ou trace) ainsi définie est appelée trajectoire.
 ````
 
 ### Expression du vecteur position
 
+```{margin}
+Il arrive qu'on puisse éliminer la variable temps pour obtenir des équations cartésiennes $y(x)$ ou polaire ($r(\theta)$).
+```
+```{margin}
+On trouvera très souvent la notation $r$ au lieu de $r$ pour désigner la variable radiale en coordonnées cylindriques ou polaires. Attention, elle ne représente pas la même grandeur qu'en sphérique.
+```
 ````{important} __Expressions__
 
 On peut exprimer le vecteur position dans les différents repères. Les vecteurs des bases locales sont exprimées au point M mobile:
@@ -45,7 +51,10 @@ On peut exprimer le vecteur position dans les différents repères. Les vecteurs
 ````
 
 ````{attention}
-On rappelle que les bases cylindriques et sphériques sont des bases __locales__ dont les vecteurs vont varier lorsque le point M se déplace. Il faudra donc tenir compte de leur dérivées temporelles.
+On rappelle que les bases cylindriques et sphériques sont des bases __locales__ dont les vecteurs vont varier lorsque le point M se déplace. Il faudra donc tenir compte de leur dérivées temporelles :
+
+* Coordonnées cylindrique: $r_M(t) \overrightarrow{e_r}(\theta(t)) + z_M(t) \overrightarrow{e_z}$.
+* Coordonnées sphériques: $r_M(t) \overrightarrow{e_r}(\theta(t), \phi(t))$.
 
 ````
 
@@ -100,9 +109,10 @@ On fera attention au fait que le centre du repère ne définit pas le même poin
 ````
 ````{important} 
 __Ellipse__  
+
 Une ellipse est une courbe fermée qu'on peut caractériser/reconnaître de plusieurs manières:
 
-* _Lieu géométrique (peu usité): Soit deux points, appelées foyers, $F_1$ et $F_2$ et un réel positif K, l'ensemble des points M tel que $MF_1 + MF_2 = K$ décrit une ellipse. Le milieu du segment $F_1 F_2$ est appelé centre de l'ellipse._
+* _Lieu géométrique (peu usité en physique): Soit deux points, appelées foyers, $F_1$ et $F_2$ et un réel positif K, l'ensemble des points M tel que $MF_1 + MF_2 = K$ décrit une ellipse. Le milieu du segment $F_1 F_2$ est appelé centre de l'ellipse._
 * Représentation polaire (__fondamentale__): Soit un point F centre d'un repère polaire. L'ensemble des points M dont les coordonnées du vecteur position $\overrightarrow{FM}$ sont tels que $r = \frac{p}{1 + e \cos{(\theta - \theta_0)}}$ avec $p > 0$ et $0 \leq e < 1$ décrit une ellipse. __Le point F est un des foyers de l'ellipse__. On dit que p est le __paramètre de l'ellipse__ et que __e__ est l'excentricité de l'ellipse.
 * Représentation cartésienne (très utile). L'ensemble des M dont les coordonnées $(x,y)$ sont telles que: ${(\frac{x}{a})}^2 + {(\frac{y}{b})}^2 = 1$ décrit une ellipse dont le centre est le centre du repère.
 * Représentation paramétrique (utile): L'ensemble des M dont les coordonnées $(x(t) = a \cos t ; y(t) = b \sin(t))$ décrit une ellipse dont le centre est le centre du repère.

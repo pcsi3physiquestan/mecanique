@@ -19,10 +19,10 @@ kernelspec:
 
 ````{important} __Théorème du moment cinétique. Enoncé par rapport à un point.__
 
-Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la dérivée du moment cinétique du point M en un point A fixe dans $\mathfrak{R}$ par rapport au temps est égale à la somme des moments des forces appliquées en M par rapport au même point A.
+Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la dérivée du moment cinétique du point M en un point A fixe dans $\mathfrak{R}$ par rapport au temps est égale à la somme des moments des actions exercées sur M par rapport au même point A.
 
 $$
-{(\frac{d \overrightarrow{L_{O/\mathfrak{R}}}(M)}{dt})}_{\mathfrak{R}} = \overrightarrow{M_O}(\overrightarrow{F})
+{(\frac{d \overrightarrow{L_{A/\mathfrak{R}}}(M)}{dt})}_{\mathfrak{R}} = \sum_i \overrightarrow{M_A}(\mathfrak{A_i})
 $$
 ````
 
@@ -31,12 +31,12 @@ $$
 \frac{\rm{d}\overrightarrow{L_{A/\mathfrak{R}}}(M)}{\rm{dt}}_{\mathfrak{R}} &= {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{AM} \wedge \overrightarrow{p_{M/\mathfrak{R}}}\right)}_{\mathfrak{R}} \\
 &= {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{AM}\right)}_{\mathfrak{R}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}} + \overrightarrow{AM} \wedge {\frac{\rm{d}}{\rm{dt}}\left(\overrightarrow{p_{M/\mathfrak{R}}}\right)}_{\mathfrak{R}}\\
 &= \underbrace{\overrightarrow{V_{M/\mathfrak{R}}}  \wedge \overrightarrow{p_{M/\mathfrak{R}}}}_{= 0} + \overrightarrow{AM} \wedge \left(\sum \overrightarrow{F_{\to M}}\right)\\
-&= \sum \overrightarrow{M_{A}\left(\overrightarrow{F_{\to M}}\right)}
+&= \sum_i \overrightarrow{M_{A}\left(\mathfrak{A_i}}\right)}
 \end{align*}
 
 ````{important} __Théorème du moment cinétique. Enoncé par rapport à un axe.__
 
-Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la dérivée du moment cinétique du point M sur un axe $\Delta$ orienté fixe dans $\mathfrak{R}$ par rapport au temps est égale à la somme des moments des forces appliquées en M par rapport au même axe $\Delta$.
+Soit un point matériel M. Dans un référentiel galiléen $\mathfrak{R}$, la dérivée du moment cinétique du point M sur un axe $\Delta$ orienté fixe dans $\mathfrak{R}$ par rapport au temps est égale à la somme des moments des actions exercées sur M par rapport au même axe $\Delta$.
 ````
 
 >__Démonstration__
