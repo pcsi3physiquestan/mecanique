@@ -334,9 +334,9 @@ En un point de contact solide-solide, la force de contact $\overrightarrow{R}$ s
     $$
     
     où $\mu_S$ est appelé coefficient de frottement[^trompeur] statique. Lorsque cette condition est mise en défaut, alors le système se met en mouvement.
-    [^trompeur]: Le terme de "frottement" statique est trompeur car du point de vue du sens commun, ça ne frotte pas !
     * _en cas de mouvement relatif des deux solides_ (on dit qu'il y a __glissement__ au point M), la composante tangentielle s'oppose à la vitesse relative au point M. Sa norme est __égale__ à $\left \| \overrightarrow{R_T}\right \| = \mu_D \left \| \overrightarrow{R_N}\right \|$ où $\mu_D$ est appelé coefficient de frottement dynamique.
 * Quelque soit le système, $\mu_D < \mu_S$, c'est-à-dire qu'il est plus facile de maintenir un solide en mouvement par rapport à un autre solide malgré les frottements que de mettre en mouvement le même solide.
+[^trompeur]: Le terme de "frottement" statique est trompeur car du point de vue du sens commun, ça ne frotte pas !
 ````
 
 ````{attention}
