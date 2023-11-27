@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entrainement &#8212; Mécanique</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>Entrainement &#8212; Mécanique</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,58 +64,98 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/centrales_newt_td';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/centrales_newt_td.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Systèmes de points matériels" href="systeme_pts.html" />
     <link rel="prev" title="Applications" href="centrales_app.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Mécanique</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../mecanique.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Mécanique</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,794 +165,301 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="cinematique.html">
-   Cinématique et cinétique du point
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinema_contxt.html">
-     Comprendre le contexte.
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="cinema_point.html">
-       Cinématique du point
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-      <label for="toctree-checkbox-3">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="cinema_referentiel.html">
-         Référentiel
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="cinema_trajectoire.html">
-         Position et trajectoire
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="cinema_vitesse.html">
-         Vecteur vitesse
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="cinema_acc.html">
-         Vecteur accélération
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="cinema_circulaire.html">
-         Cas du mouvement circulaire
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="cinetique_point.html">
-       Cinétique du point
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-      <label for="toctree-checkbox-4">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="cinetique_inertie.html">
-         Point matériel et inertie
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="cinetique_p.html">
-         Eléments cinétiques
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinema_ex.html">
-     S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-    <label for="toctree-checkbox-5">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_methode.html">
-       Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_ex_app.html">
-       Exercices d’application
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_td.html">
-       Entrainement : Cinématique du point
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="dynamique.html">
-   Dynamique du point matériel
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="dynamique_contxt.html">
-     Comprendre le contexte.
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="actions.html">
-       Description des actions mécaniques ponctuelles
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-      <label for="toctree-checkbox-8">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="actions_typo.html">
-         Action ponctuelle: Modélisation et typologie
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="theoremes.html">
-       Théorèmes fondamentaux de la mécanique classique
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-      <label for="toctree-checkbox-9">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="theoremes_newton.html">
-         Lois de Newton et conséquences
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="theoremes_tmc.html">
-         Théorème du moment cinétique
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="dynamique_ex.html">
-     S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_meth.html">
-       Méthodes : Actions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_meth.html">
-       Méthodes : Applications des théorèmes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_ex_app.html">
-       Applications
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_td.html">
-       Entrainement
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_num.html">
-       Méthodes numériques
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="energetique.html">
-   Approche énérgétique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-  <label for="toctree-checkbox-11">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_contxt.html">
-     Comprendre le contexte
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-    <label for="toctree-checkbox-12">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="energetique_gene.html">
-       Théorèmes énergétiques
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-      <label for="toctree-checkbox-13">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_travail.html">
-         Travail et puissance des actions mécaniques
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_ep.html">
-         Forces/actions conservatives et énergie potentielle
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_theoremes.html">
-         Théorèmes énergétiques
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="energetique_conservatifs.html">
-       Systèmes conservatifs
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-      <label for="toctree-checkbox-14">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_conserv_1d.html">
-         Système à 1 degré de liberté
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_ex.html">
-     S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_ex_app.html">
-       Exercices d’application
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_td.html">
-       Entrainement
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="applications.html">
-   Applications
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-  <label for="toctree-checkbox-16">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="oscillateurs.html">
-     Oscillateurs
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-    <label for="toctree-checkbox-17">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_equation.html">
-       Mise en équation
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_harmonique.html">
-       Oscillateur harmonique
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_amorti.html">
-       Oscillateur amorti
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_forces.html">
-       Oscillations forcées
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_td.html">
-       Entrainement : Oscillateurs
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pendules.html">
-     Etude des pendules
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="centrales.html">
-   Mouvement à force centrales
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="centrales_contxt.html">
-     Comprendre le contexte
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-    <label for="toctree-checkbox-19">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_gene.html">
-       Généralités
-      </a>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="centrales_newtoniens.html">
-       Potentiels newtoniens
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-      <label for="toctree-checkbox-20">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="centrales_newt_mvt.html">
-         Etude du mouvement
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="centrales_newt_kepler.html">
-         Mouvement des planètes et lois de Kepler
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="centrales_ex.html">
-     S’entrainer
-    </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-    <label for="toctree-checkbox-21">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul class="current">
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_methodes.html">
-       Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_odg.html">
-       Activités : Ordres de grandeur
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_satellites.html">
-       Activités : Mouvement des satellites
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_app.html">
-       Applications
-      </a>
-     </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       Entrainement
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="systeme_pts.html">
-   Systèmes de points matériels
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_contxt.html">
-     Connaître le contexte
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-    <label for="toctree-checkbox-23">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="systeme_cinema.html">
-       Cinématique et cinétique des systèmes de points
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
-      <label for="toctree-checkbox-24">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="systeme_description.html">
-         Description d’un système de points
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="systeme_cinetique.html">
-         Cinétique du solide
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="systeme_mouvement.html">
-         Mouvements particuliers
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="actions_globales.html">
-       Modélisation des actions globales
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
-      <label for="toctree-checkbox-25">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="actions_g_typo.html">
-         Types d’actions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="actions_theoremes.html">
-         Théorèmes en mécanique du solide
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_ex.html">
-     S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
-    <label for="toctree-checkbox-26">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_methode.html">
-       Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="rotation.html">
-       Activité : Solide en rotation autour d’un axe fixe
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_app.html">
-       Application
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_td.html">
-       Entrainement
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="cinematique.html">Cinématique et cinétique du point</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="cinema_contxt.html">Comprendre le contexte.</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="cinema_point.html">Cinématique du point</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="cinema_referentiel.html">Référentiel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cinema_trajectoire.html">Position et trajectoire</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cinema_vitesse.html">Vecteur vitesse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cinema_acc.html">Vecteur accélération</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cinema_circulaire.html">Cas du mouvement circulaire</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="cinetique_point.html">Cinétique du point</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="cinetique_inertie.html">Point matériel et inertie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cinetique_p.html">Eléments cinétiques</a></li>
+
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="cinema_ex.html">S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinema_methode.html">Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinema_ex_app.html">Exercices d’application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinema_td.html">Entrainement : Cinématique du point</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="dynamique.html">Dynamique du point matériel</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="dynamique_contxt.html">Comprendre le contexte.</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="actions.html">Description des actions mécaniques ponctuelles</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="actions_typo.html">Action ponctuelle: Modélisation et typologie</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="theoremes.html">Théorèmes fondamentaux de la mécanique classique</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="theoremes_newton.html">Lois de Newton et conséquences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="theoremes_tmc.html">Théorème du moment cinétique</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="dynamique_ex.html">S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="actions_meth.html">Méthodes : Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_meth.html">Méthodes : Applications des théorèmes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_ex_app.html">Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_td.html">Entrainement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_num.html">Méthodes numériques</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="energetique.html">Approche énérgétique</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="energetique_contxt.html">Comprendre le contexte</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="energetique_gene.html">Théorèmes énergétiques</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="energetique_travail.html">Travail et puissance des actions mécaniques</a></li>
+<li class="toctree-l4"><a class="reference internal" href="energetique_ep.html">Forces/actions conservatives et énergie potentielle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="energetique_theoremes.html">Théorèmes énergétiques</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="energetique_conservatifs.html">Systèmes conservatifs</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="energetique_conserv_1d.html">Système à 1 degré de liberté</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="energetique_ex.html">S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="energetique_exemples.html">Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="energetique_ex_app.html">Exercices d’application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="energetique_td.html">Entrainement</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="applications.html">Applications</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="oscillateurs.html">Oscillateurs</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_equation.html">Mise en équation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_harmonique.html">Oscillateur harmonique</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_amorti.html">Oscillateur amorti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_forces.html">Oscillations forcées</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_td.html">Entrainement : Oscillateurs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pendules.html">Etude des pendules</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="centrales.html">Mouvement à force centrales</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="centrales_contxt.html">Comprendre le contexte</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="centrales_gene.html">Généralités</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="centrales_newtoniens.html">Potentiels newtoniens</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="centrales_newt_mvt.html">Etude du mouvement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="centrales_newt_kepler.html">Mouvement des planètes et lois de Kepler</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="centrales_ex.html">S’entrainer</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="centrales_methodes.html">Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centrales_newt_odg.html">Activités : Ordres de grandeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centrales_newt_satellites.html">Activités : Mouvement des satellites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centrales_app.html">Applications</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Entrainement</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="systeme_pts.html">Systèmes de points matériels</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="systeme_contxt.html">Connaître le contexte</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="systeme_cinema.html">Cinématique et cinétique des systèmes de points</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="systeme_description.html">Description d’un système de points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="systeme_cinetique.html">Cinétique du solide</a></li>
+<li class="toctree-l4"><a class="reference internal" href="systeme_mouvement.html">Mouvements particuliers</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="actions_globales.html">Modélisation des actions globales</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="actions_g_typo.html">Types d’actions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="actions_theoremes.html">Théorèmes en mécanique du solide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="systeme_ex.html">S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="systeme_methode.html">Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rotation.html">Activité : Solide en rotation autour d’un axe fixe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="systeme_app.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="systeme_td.html">Entrainement</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/centrales_newt_td.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/centrales_newt_td.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/centrales_newt_td.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/centrales_newt_td.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#forces-centrales-quelconques">
-   Forces centrales quelconques
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#potentiels-newtoniens">
-   Potentiels newtoniens
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Entrainement</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#forces-centrales-quelconques">
-   Forces centrales quelconques
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#potentiels-newtoniens">
-   Potentiels newtoniens
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Entrainement</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forces-centrales-quelconques">Forces centrales quelconques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potentiels-newtoniens">Potentiels newtoniens</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="entrainement">
-<h1>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">#</a></h1>
-<div class="section" id="forces-centrales-quelconques">
-<h2>Forces centrales quelconques<a class="headerlink" href="#forces-centrales-quelconques" title="Permalink to this headline">#</a></h2>
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="entrainement">
+<h1>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this heading">#</a></h1>
+<section id="forces-centrales-quelconques">
+<h2>Forces centrales quelconques<a class="headerlink" href="#forces-centrales-quelconques" title="Permalink to this heading">#</a></h2>
 <div class="attention admonition">
 <p class="admonition-title">Point matériel lié à un fil </p>
 <p>Un point matériel M de masse m se déplace sans frottement sur un plan horizontal. Il est attaché à un fil de masse négligeable. Le plan est percé au point O choisi pour origine, le fil traverse le plan en O; un opérateur exerce sur l’autre extrémité du fil une force de traction de module F constant.</p>
 <p>A t=0, le point M se trouve sur l’axe Ox à une distance D de O, sa vitesse est alors <span class="math notranslate nohighlight">\(V_0\)</span>, colinéaire à Oy.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Montrer que le moment cinétique <span class="math notranslate nohighlight">\(\overrightarrow{L_O}\)</span> en O de M se conserve pendant toute la durée de la traction. Calculer son module et sa direction. Définir la vitesse aréolaire et montrer que le mouvement de M se fait suivant la loi des aires, à savoir que la vitesse aréolaire est constante.</p></li>
 <li><p>Déterminer l’énergie mécanique <span class="math notranslate nohighlight">\(E_m\)</span> de M; on montrera que la force de traction dérive d’une énergie potentielle <span class="math notranslate nohighlight">\(E_p\)</span> que l’on exprimera en utilisant les coordonnées cylindriques. On prendra <span class="math notranslate nohighlight">\(E_p=0\)</span> pour <span class="math notranslate nohighlight">\(OM=0\)</span>.</p></li>
 <li><p>Montrer que l’on peut écrire <span class="math notranslate nohighlight">\(E_m\)</span> comme une fonction de <span class="math notranslate nohighlight">\(r\)</span> seule et de ses dérivées et définir une fonction énergie potentielle effective.</p></li>
@@ -917,23 +477,23 @@ title="Print to PDF"
 <div class="attention admonition">
 <p class="admonition-title">Mouvement d’une bille dans un cône </p>
 <p>On considère un matériel M glissant sans frottements à l’intérieur d’un cône dont la génératrice fait un angle <span class="math notranslate nohighlight">\(\alpha\)</span> avec l’axe Oz vertical dirigé vers le haut, O étant le sommet du cône. On suppose le champ de pesanteur uniforme <span class="math notranslate nohighlight">\(\overrightarrow{g} = - g \overrightarrow{e_z}\)</span>. On se place en coordonnées cylindriques d’axe Oz et de centre O. On travaille dans le référentiel terrestre qu’on supposera galiléen.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Déterminer la relation entre les coordonnées r et z. En déduire l’expression de la vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> et de l’accélération <span class="math notranslate nohighlight">\(\overrightarrow{a}\)</span> en fonction de r et <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
 <li><p>En déduire, en utilisant le principe fondamental de la dynamique que:</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[M \ddot r = - \frac{mg}{tan \alpha} + mr \dot \theta^2\]</div>
 <p>avec <span class="math notranslate nohighlight">\(M = m (1+ \frac{1}{\tan^2 \alpha})\)</span></p>
-<ol class="simple">
+<ol class="arabic simple" start="3">
 <li><p>Exprimer le moment cinétique <span class="math notranslate nohighlight">\(\overrightarrow{J_O}\)</span> par rapport au point O en fonction de <span class="math notranslate nohighlight">\(m, r, z\)</span> et <span class="math notranslate nohighlight">\(\theta\)</span>. Montrer que la composante suivant Oz, notée <span class="math notranslate nohighlight">\(J_z\)</span> est conservée au cours du mouvement.</p></li>
 <li><p>En exprimant <span class="math notranslate nohighlight">\(\dot \theta\)</span> en fonction de <span class="math notranslate nohighlight">\(J_z\)</span>, montrer que l’équation différentielle sur r peut s’écrire sous la forme: <span class="math notranslate nohighlight">\(M \ddot r = - \frac{dV_{eff}(r)}{dr}\)</span>
 où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un potentiel effectif que l’on exprimera en fonction de <span class="math notranslate nohighlight">\(\alpha\)</span>, m,g, et <span class="math notranslate nohighlight">\(J_z\)</span>. Tracer les allures de <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> pour <span class="math notranslate nohighlight">\(J_z = 0\)</span> et pour <span class="math notranslate nohighlight">\(J_z \neq 0\)</span>.</p></li>
 </ol>
 <p>ATTENTION: Nous allons à partir de ce point réaliser une étude à partir du potentiel effectif comme elle a été faite en cours pour le cas des mouvements à force centrale. On remarquera néanmoins que le mouvement n’est PAS ici un mouvement à force centrale. On pourra s’en convaincre en remarquant par exemple que la composante du moment cinétique projeté sur <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> n’est pas conservée (TMC) ou simplement parce que le mouvement n’est pas plan. La méthode d’analyse mathématique ne reste pas moins utilisable A CONDITION DE PROUVER QU’ON PEUT L’UTILISER.</p>
-<ol class="simple">
+<ol class="arabic simple" start="5">
 <li><p>Calculer l’énergie mécanique et montrer qu’elle peut s’écrire sous la forme: <span class="math notranslate nohighlight">\(E_m = \frac{1}{2} M \dot r^2 + V_{eff}(r)\)</span>. Justifier le fait que l’énergie mécanique est conservée. On vérifiera que cette conservation permet bien de retrouver l’équation différentielle établie à la question précédente.</p></li>
 <li><p>On s’intéresse uniquement aux trajectoires dont les conditions initiales sont de la forme <span class="math notranslate nohighlight">\(r(0) = r_0, \overrightarrow{v}(0) = v_0 \overrightarrow{e_{\theta}}\)</span>.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Exprimer <span class="math notranslate nohighlight">\(J_z\)</span> en fonction de ces conditions initiales.</p></li>
 <li><p>A quelle condition sur <span class="math notranslate nohighlight">\(v_0\)</span> la bille atteint-elle le fond du cône? Quelle est alors la trajectoire.</p></li>
 <li><p>Déterminer <span class="math notranslate nohighlight">\(v_0\)</span> pour que la trajectoire soit un cercle de rayon <span class="math notranslate nohighlight">\(r_0\)</span> et d’altitude constante.</p></li>
@@ -948,18 +508,18 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Système conservatif.</em></p></li>
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Energie potentielle effective.</em></p></li>
 </ul>
-</div>
-<div class="section" id="potentiels-newtoniens">
-<h2>Potentiels newtoniens<a class="headerlink" href="#potentiels-newtoniens" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="potentiels-newtoniens">
+<h2>Potentiels newtoniens<a class="headerlink" href="#potentiels-newtoniens" title="Permalink to this heading">#</a></h2>
 <div class="attention admonition">
 <p class="admonition-title">Vecteur excentricité </p>
 <p>On veut étudier le mouvement d’une planète P, assimilée à un point matériel dans le champ de gravitation d’une étoile de masse <span class="math notranslate nohighlight">\(M_e\)</span>, de centre O considérée comme ponctuelle et fixe. La planète de masse <span class="math notranslate nohighlight">\(M_P\)</span> est située à une distance <span class="math notranslate nohighlight">\(r=OP\)</span> de O. On considère le référentiel lié à l’étoile comme galiléen.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Exprimer la force exercée par l’étoile sur la planète en fonction de <span class="math notranslate nohighlight">\(M_p, M_e, r, G\)</span> la constante de gravitation universelle et <span class="math notranslate nohighlight">\(\overrightarrow{u_r} = \frac{\overrightarrow{OP}}{r}\)</span>.</p></li>
 <li><p>Justifier que le mouvement est plan. Préciser ce plan.</p></li>
 </ol>
 <p>On rappelle que l’équation polaire d’une ellipse est <span class="math notranslate nohighlight">\(r(\theta) = \frac{p}{1+ e \cos \theta}\)</span>. On définit le vecteur excentricité: <span class="math notranslate nohighlight">\(\overrightarrow{e} = - \frac{L}{GM_e M_P} \overrightarrow{v} + \overrightarrow{u_{\theta}}\)</span> où <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est la vitesse de la planète.</p>
-<ol class="simple">
+<ol class="arabic simple" start="3">
 <li><p>Montrer que le vecteur excentricité est un vecteur constant. En fait, ce vecteur est orthogonal au grand axe de l’ellipse.</p></li>
 <li><p>En calculant le produit scalaire <span class="math notranslate nohighlight">\(\overrightarrow{e} \cdot \overrightarrow{u_{\theta}}\)</span>, montrer que l’on retrouve bien l’équation d’une ellipse.</p></li>
 <li><p>Que vaut le module de <span class="math notranslate nohighlight">\(\overrightarrow{e}\)</span>? Préciser p en fonction de G, <span class="math notranslate nohighlight">\(M_p\)</span>, <span class="math notranslate nohighlight">\(M_e\)</span> et L.</p></li>
@@ -976,10 +536,10 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 <div class="attention admonition">
 <p class="admonition-title">Explosion d’une comète </p>
 <p>Une comète de période T=770 ans s’est approchée du soleil à <span class="math notranslate nohighlight">\(d = 7,75 \times 10^{-3} \rm{u.a.}\)</span></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>On suppose que la trajectoire est elliptique. Déterminer le demi-grand axe a, l’excentricité e, le paramètre p de l’ellipse et les vitesses à l’aphélie (<span class="math notranslate nohighlight">\(v_A\)</span>) et au périhélie (<span class="math notranslate nohighlight">\(v_P\)</span>). A-t-on eu raison de faire l’hypothèse d’une trajectoire elliptique?</p></li>
 <li><p>A son périhélie, elle a explosé en deux morceaux de masse <span class="math notranslate nohighlight">\(m_1\)</span> et <span class="math notranslate nohighlight">\(m_2\)</span>, partis respectivement avec la vitesse <span class="math notranslate nohighlight">\(v_1\)</span> et <span class="math notranslate nohighlight">\(v_2\)</span> dans deux directions faisant des angles respectifs <span class="math notranslate nohighlight">\(\alpha_1 = -20 ^{\circ}\)</span> et <span class="math notranslate nohighlight">\(\alpha_2 = 50 ^{\circ}\)</span> avec la direction initiale de <span class="math notranslate nohighlight">\(v_P\)</span>. La quantité de mouvement totale se conserve durant l’explosion et l’on observe que: <span class="math notranslate nohighlight">\(\left \| v_1\right \| \sim \left \| v_2 \right \|\)</span>.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>En utilisant la conservation de la quantité de mouvement, déterminer le rapport des masses <span class="math notranslate nohighlight">\(m_1/m_2\)</span> puis la norme des vitesses des fragments.</p></li>
 <li><p>Calculer l’énergie mécanique par unité de masse pour chaque fragment. En déduire le type de la nouvelle trajectoire.</p></li>
 </ol>
@@ -1000,11 +560,11 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 <li><p>rayon de Mars: <span class="math notranslate nohighlight">\(r_M = 3397 \rm{km}\)</span></p></li>
 <li><p>masse de Mars: <span class="math notranslate nohighlight">\(M_M = 6,39 \times 10^{23} \rm{kg}\)</span></p></li>
 </ul>
-<div class="figure align-center" id="fig-262">
+<figure class="align-center" id="fig-262">
 <img alt="../_images/Mecanique_TD7_EX1_1.jpg" src="../_images/Mecanique_TD7_EX1_1.jpg" />
-</div>
+</figure>
 <p>Remarque: Le point B n’est pas placé correctement sur le schéma. Cela n’a pas d’influence sur les raisonnements.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Au point A, on suppose que le véhicule est assez éloigné de Mars pour pouvoir négliger l’énergie gravitationnelle. En déduire l’expression de l’énergie mécanique et la nature de la trajectoire de(s). Le justifier sur un graphique.</p></li>
 <li><p>Montrer que le moment cinétique se conserve et définir la constante des aires C. Calculer C en fonction de <span class="math notranslate nohighlight">\(v_A\)</span> et b.</p></li>
 <li><p>Sachant que ma trajectoire d’approche est tangente au cercle de rayon <span class="math notranslate nohighlight">\(\alpha r_M\)</span> en B, calculer <span class="math notranslate nohighlight">\(v_B\)</span> (vitesse en B) en fonction de <span class="math notranslate nohighlight">\(v_A, r_M, \alpha\)</span> et <span class="math notranslate nohighlight">\(b\)</span>.</p></li>
@@ -1025,7 +585,7 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 <div class="attention admonition">
 <p class="admonition-title">Comète à trajectoire parabolique </p>
 <p>La comète Arend-Roland est une comète à trajectoire d’excentricité e estimée à 1,0002. On assimilera la trajectoire à une parabole d’excentricité e=1. La comète est passée à son périhélie, le 8 avril 1857, à <span class="math notranslate nohighlight">\(r_P = 0,316 \rm{u.a.}\)</span> du soleil.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Calculer le paramètre de la trajectoire.</p></li>
 <li><p>Exprimer le paramètre p de la conique en fonction de la constante des aires C, de G et la masse du soleil <span class="math notranslate nohighlight">\(M_S\)</span>. En déduire la vitesse de la comète au périhélie.</p></li>
 <li><p>Montrer que l’on peut exprimer la vitesse angulaire <span class="math notranslate nohighlight">\(\dot \theta\)</span> en fonction de la constante des aires C et du paramètres p de la parabole par: <span class="math notranslate nohighlight">\(\dot \theta = C\frac{{(1+ \cos \theta)}^2}{p^2}\)</span>. En quel point est prise l’origine <span class="math notranslate nohighlight">\(\theta=0\)</span>?</p></li>
@@ -1033,7 +593,7 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 </ol>
 <div class="math notranslate nohighlight">
 \[t(\alpha) = t_0 + \int_0^{\alpha} \frac{p^2}{C} \frac{d \theta}{{(1+ cos \theta)}^2}\]</div>
-<ol class="simple">
+<ol class="arabic simple" start="5">
 <li><p>Pour calculer cette intégrale, on effectue le changement de variable <span class="math notranslate nohighlight">\(x = \tan \frac{\theta}{2}\)</span>. En déduire l’expression: <span class="math notranslate nohighlight">\(t = t_0 + \frac{p^2}{C} (X + \frac{X^3}{3})\)</span> où <span class="math notranslate nohighlight">\(X = \tan \frac{\alpha}{2}\)</span>.</p></li>
 <li><p>(Analyse numérique) La comète a été découverte par les astronomes belges Sylvain Arend et Georges Roland le 8 novembre 1856. A quelle distance se trouvait-elle du Soleil?</p></li>
 </ol>
@@ -1044,8 +604,8 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Trajectoire parabolique.</em></p></li>
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Energie mécanique.</em></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1059,7 +619,7 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -1067,50 +627,102 @@ où <span class="math notranslate nohighlight">\(V_{eff}(r)\)</span> est un pote
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="centrales_app.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Applications</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="centrales_app.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Applications</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="systeme_pts.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="systeme_pts.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Systèmes de points matériels</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forces-centrales-quelconques">Forces centrales quelconques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potentiels-newtoniens">Potentiels newtoniens</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

@@ -196,7 +196,7 @@ On remarquera que l'interaction coulombienne peut être attractive si les charge
 Soit deux points matériels $M_1$ et $M_2$ chargés de charges respectives $q_1$ et $q_2$. Les deux charges sont en interaction dites coulombiennes. L'action de $M_1$ sur $M_2$ est modélisée par une force portée par la droite $M_1 M_2$ dont l'expression est:
 
 \begin{align*}
-\overrightarrow{F_{elec,1 \to 2}} &= - \frac{q_1 q_2}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 M_2}}{M_1 M_2^3}\\
+\overrightarrow{F_{elec,1 \to 2}} &= \frac{q_1 q_2}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 M_2}}{M_1 M_2^3}\\
 &= - \frac{q_1 q_2}{4\pi \epsilon_0 r^2} \overrightarrow{u_{1 \to 2}}
 \end{align*}
 où $\epsilon_0$ est la __permittivité électrique du vide__ dont l'expression est $\epsilon_0 = 8.85 \times 10^{-12} \rm{s^{4}.A^{2}.kg^{-1}.m^{-3}}$ soit $\frac{1}{4 \pi \epsilon_0} = 8.99 10^{9} S.I.$.
@@ -215,7 +215,7 @@ Comme cela a été évoqué dans précédemment, les champs (et notamment le cha
 Soit un point $M_1$ de charge $q_1$. On dit que le point $M_1$ créé dans tout point P de l'espace un __champ électrique__ $\overrightarrow{E_{M_1}}(P)$ dont l'expression est:
 
 \begin{align*}
-\overrightarrow{E_{M_1}}(P) &= - \frac{q_1}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 P}}{M_1 P^3}
+\overrightarrow{E_{M_1}}(P) &= \frac{q_1}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 P}}{M_1 P^3}
 \end{align*}
 Si l'on place en un point P un point matériel $M_2$ de charge $q_2$, alors le point $M_2$ subira une action coulmbienne de la part de $M_1$: $\overrightarrow{F_{grav,1 \to 2}} = q_2 \overrightarrow{E_{M_1}}(P = M_2)$.
 
@@ -334,9 +334,9 @@ En un point de contact solide-solide, la force de contact $\overrightarrow{R}$ s
     $$
     
     où $\mu_S$ est appelé coefficient de frottement[^trompeur] statique. Lorsque cette condition est mise en défaut, alors le système se met en mouvement.
-    [^trompeur]: Le terme de "frottement" statique est trompeur car du point de vue du sens commun, ça ne frotte pas !
     * _en cas de mouvement relatif des deux solides_ (on dit qu'il y a __glissement__ au point M), la composante tangentielle s'oppose à la vitesse relative au point M. Sa norme est __égale__ à $\left \| \overrightarrow{R_T}\right \| = \mu_D \left \| \overrightarrow{R_N}\right \|$ où $\mu_D$ est appelé coefficient de frottement dynamique.
 * Quelque soit le système, $\mu_D < \mu_S$, c'est-à-dire qu'il est plus facile de maintenir un solide en mouvement par rapport à un autre solide malgré les frottements que de mettre en mouvement le même solide.
+[^trompeur]: Le terme de "frottement" statique est trompeur car du point de vue du sens commun, ça ne frotte pas !
 ````
 
 ````{attention}
