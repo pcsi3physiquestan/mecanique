@@ -31,7 +31,7 @@ On prendra $g = 9.8 \rm{m.s^{-2}}$.
 1. Traduire la fiche technique en langage correct pour la physique.
 1. La tension de l'élastique obéit-elle à une loi type ressort: $T = k (l-l_0)$ où T est la tension appliquée et l la longueur de l'élastique? 
 1. On supposera dans la suite que la tension est de la forme $T = k (l-l_0)$. A partir des données, déterminer une valeur moyenne de la constante de raideur de l'élastique k pour un élastique de $l_0 = 6 \rm{m}$.
-1. On veut savoir à quelle hauteur remonterait une masse test M de masse minimale (ici $m=65\rm{kg}$) si elle est lâchée sans vitesse initiale, l'élastique tendu au maximum. On prendra l'exemple d'un élastique de $l_0 = 6 \rm{m}$, dont le point d'attache est à la hauteur $h=18\rm{m}$ au dessus du point de départ.
+1. On veut savoir à quelle hauteur remonterait une masse test M de masse minimale (ici $m=65\rm{kg}$) si elle est lâchée sans vitesse initiale, l'élastique tendu au maximum vers le bas. On prendra l'exemple d'un élastique de $l_0 = 6 \rm{m}$, dont le point d'attache est à la hauteur $h=18\rm{m}$ au dessus du point de départ.
     1. Déterminer l'expression de l'altitude $z(t)$ et de la vitesse $\dot z(t)$ tant que l'élastique est tendu. 
     1. Calculer l'instant $t_1$ pour lequel l'élastique n'est plus tendu. En déduire la vitesse de M à cet instant. 
     2. Déterminer la hauteur maximale atteinte par l'objet. 

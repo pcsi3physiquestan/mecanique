@@ -439,7 +439,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generalites">Généralités</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elements-utiles-en-ligne">Eléments utiles (en ligne)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-types-d-actions-rencontrees-en-ligne">Différents types d’actions rencontrées (en ligne)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-particuliers">Cas particuliers</a></li>
 </ul>
             </nav>
@@ -484,23 +484,70 @@ document.write(`
 <p><strong>Description mathématique</strong></p>
 <p>Une action globale ou action résultante peut être décrite par <strong>deux</strong> éléments:</p>
 <ul class="simple">
-<li><p>la <strong>force résultante</strong> : somme de toutes les forces ponctuelles associées aux actions ponctuelles qu’on a regroupées</p></li>
-<li><p>le <strong>moment résultant</strong> en un point arbitraire A : somme de tous les moments des actions ponctuelles regroupées calculés tous au même point A.</p></li>
+<li><p>la <strong>force résultante</strong> <span class="math notranslate nohighlight">\(\overrightarrow{F}_{\Sigma_1 \to \Sigma}\)</span>: somme de toutes les forces ponctuelles associées aux actions ponctuelles qu’on a regroupées</p></li>
+<li><p>le <strong>moment résultant</strong> <span class="math notranslate nohighlight">\(\overrightarrow{M}_{A,\Sigma_1 \to \Sigma}\)</span> en un point arbitraire A : somme de tous les moments des actions ponctuelles regroupées calculés tous au même point A.</p></li>
 </ul>
-<p><em>La donnée des deux éléments de l’action est appelé <strong>torseur</strong> de l’action.</em></p>
+<p><em>La donnée des deux éléments de l’action est appelé <strong>torseur dynamique</strong> de l’action.</em></p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>Notation de torseurs dynamiques</strong></p>
+<p>On note les torseurs dynamiques comme les torseurs cinématiques mais il ne contiennent pas les mêmes grandeurs.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_A(\mathcal{A_{\Sigma_{ext} \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{\Sigma_1 \to \Sigma}\\
+  &amp;\overrightarrow{M}_{A,\Sigma_1 \to \Sigma}
+\end{cases}
+\end{split}\]</div>
+</aside>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Le moment résultant <strong>ne peut être déduire de la force résultante</strong>.</p>
 </div>
+<aside class="sidebar">
+<p class="sidebar-title">Cas d’un moment nul</p>
+<p>Le transfert des moments devient intéressant avec le cas où une action possède un moment nul en un point C (<em>on parle de glisseur</em>). Le transfert des moments en un point B quelconque devient alors:</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{M}_B = \overrightarrow{BC}\wedge \overrightarrow{F}
+\]</div>
+<p><strong>Tout se passe alors <em>comme si(=mathématiquement et pas physiquement)</em> on avait une action ponctuelle de force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> appliquée au point C.</strong></p>
+<p>Cette observation sera par exemple utile avec l’action de la pesanteur qui est souvent présentée comme <em>“s’appliquant au centre de gravité”</em> par abus de langage.</p>
+<p><em>On pourra écrire la relation précédente comme le passage du torseur au point C au torseur au point B comme avec un torseur cinématique.</em></p>
+<p>On peut donc passer d’un torseur en A de moment nul à un torseur en B:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_{A}(\Sigma_1 \to \Sigma)=
+\begin{cases}
+  &amp;\overrightarrow{F}_{\Sigma_1 \to \Sigma}\\
+  &amp;\overrightarrow{M}_{A,\Sigma_1 \to \Sigma} = 0
+\end{cases}
+\Longrightarrow
+\mathcal{T}_{B}(\Sigma_1 \to \Sigma)=
+\begin{cases}
+  &amp;\overrightarrow{F}_{\Sigma_1 \to \Sigma}\\
+  &amp;\overrightarrow{M}_{B,\Sigma_1 \to \Sigma} = \overrightarrow{BC}\wedge \overrightarrow{F}_{\Sigma_1 \to \Sigma}
+\end{cases}
+\end{split}\]</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Transfert de moment</p>
+<p>A l’image des torseurs cinématiques qu’on peut décider d’exprimer en différents points, on peut exprimer le torseur dynamique d’une action mécanique en un autre point B. Cela revient à exprimer le moment de l’action en un autre B.</p>
+<p>Si on ne peut déterminer un moment à partir de la force résultante seule, on peut obtenir le moment en un point B connaissant la force résultant ET le moment en un point A. Cette relation n’est pas au programme mais sera utile pour expliquer certains éléments :</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{M}_B = \overrightarrow{M}_A + \overrightarrow{BA}\wedge \overrightarrow{F}
+\]</div>
+</aside>
 </section>
-<section id="elements-utiles-en-ligne">
-<h2>Eléments utiles (en ligne)<a class="headerlink" href="#elements-utiles-en-ligne" title="Permalink to this heading">#</a></h2>
+<section id="differents-types-d-actions-rencontrees-en-ligne">
+<h2>Différents types d’actions rencontrées (en ligne)<a class="headerlink" href="#differents-types-d-actions-rencontrees-en-ligne" title="Permalink to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">Cas rencontrés</p>
 <p>Vous rencontrerez trois façon de présenter les actions globales:</p>
 <ul class="simple">
-<li><p>Les actions globales usuelles : vous devrez connaître par coeur <strong>une partie</strong> des caractéristiques (force et/ou moment) d’un certain nombre d’actions globales (poids, torsion…)</p>
+<li><p>Les actions globales usuelles : vous devrez connaître par coeur <strong>tout ou une partie</strong> des caractéristiques (force et/ou moment) d’un certain nombre d’actions globales (poids, torsion…)</p>
 <ul>
 <li><p>ATTENTION : Souvent, vous ne connaitrez pas toutes les caractéristiques (seulement la force résultante ou seulement le moment, voire une seule composante du moment)</p></li>
 </ul>
@@ -511,31 +558,13 @@ document.write(`
 <li><p>En général, la recherche des composantes inconnues se fait, comme avec les points matériels par l’application d’un théorème fondamental.</p></li>
 </ul>
 </li>
-<li><p>Les actions à calculer : plus rares mais il arrivera que vous deviez calculer par intégration la force résultante ou le moment résultant. Les méthodes d’intégration seront vues plus tard.</p></li>
+<li><p>Les actions à calculer : plus rares pour l’instant mais il arrivera que vous deviez calculer par intégration la force résultante ou le moment résultant. Les méthodes d’intégration seront vues plus tard.</p></li>
 </ul>
-</aside>
-<aside class="sidebar">
-<p class="sidebar-title">Cas d’un moment nul</p>
-<p>Le transfert des moment devient intéressant avec le cas où une action possède un moment nul en un point C (<em>on parle de glisseur</em>). Le transfert des moments en un point B quelconque devient alors:</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{M}_B = \overrightarrow{BC}\wedge \overrightarrow{F}
-\]</div>
-<p><strong>Tout se passe alors <em>comme si(=mathématiquement et pas physiquement)</em> on avait une action ponctuelle de force <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> appliquée au point C.</strong></p>
-<p>Cette observation sera par exemple utile avec l’action de la pesanteur qui est souvent présentée comme <em>“s’appliquant au centre de gravité”</em> par abus de langage.</p>
-</aside>
-<aside class="topic">
-<p class="topic-title">Transfert de moment</p>
-<p>Cette relation n’est pas au programme mais sera utile pour expliquer certains éléments : si l’on connait la force résultante <span class="math notranslate nohighlight">\(\overrightarrow{F}\)</span> d’une action et le moment résultant de l’action en un point A <span class="math notranslate nohighlight">\(\overrightarrow{M}_A\)</span>, alors le moment résultant en un point B sera :</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{M}_B = \overrightarrow{M}_A + \overrightarrow{BA}\wedge \overrightarrow{F}
-\]</div>
 </aside>
 <aside class="topic">
 <p class="topic-title">Représentation graphique</p>
 <p>En général, il l’on connait un point de moment nul pour une action globale, on représentera cette action par sa force résultante en ce point.</p>
-<p><em>Il n’est par contre pas nécessaire de chercher un tel point (qui peut ne pas exister) pour faire une représentation graphique.</em> <strong>On se rappellera par contre que le point où l’on dessine la force n’est PAS FORCEMENT UN POINT DE MOMENT NUL.</strong></p>
+<p><em>Il n’est par contre pas nécessaire de chercher un tel point (qui peut ne pas exister) pour faire une représentation graphique.</em> <strong>On se rappellera par contre que dans ce cas le point où l’on dessine la force n’est PAS FORCEMENT UN POINT DE MOMENT NUL.</strong></p>
 </aside>
 </section>
 <section id="cas-particuliers">
@@ -621,7 +650,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generalites">Généralités</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elements-utiles-en-ligne">Eléments utiles (en ligne)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-types-d-actions-rencontrees-en-ligne">Différents types d’actions rencontrées (en ligne)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-particuliers">Cas particuliers</a></li>
 </ul>
   </nav></div>

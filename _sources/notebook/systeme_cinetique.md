@@ -64,7 +64,7 @@ Le moment cinétique $\sigma_{S/\Delta}$ d'un système S dans un référentiel R
 
 ````{topic} ATTENTION
 
-On ne peut relier a priori le moment cinétique du solide à la vitesse du centre d'inertie par une formule faisant inervenir un produit vectoriel (définition du moment cinétique d'un point matériel). Le moment cinétique d'un solide ne peut se calcule que de trois manière:
+On ne peut relier a priori le moment cinétique du solide à la vitesse du centre d'inertie par une formule faisant intervenir un produit vectoriel (définition du moment cinétique d'un point matériel). Le moment cinétique d'un solide ne peut se calcule que de trois manières:
 
 * Cas général: par sommation discrète ou continue à partir du moment de chaque point
 * Cas d'une translation: seul cas où l'on peut se ramener au mouvement du centre d'inertie (cf. suite)
@@ -76,7 +76,7 @@ On ne peut relier a priori le moment cinétique du solide à la vitesse du centr
 
 ````{important} __Energie cinétique d'un système de point matériel__
 
-L'énergie cinétique $E_{C/R}$ du système S dans le référentiel R est la somme des énergie cinétique de l'ensemble des points qui composent le système S.
+L'énergie cinétique $E_{C/R}$ du système S dans le référentiel R est la somme des énergies cinétiques de l'ensemble des points qui composent le système S.
 
 ````
 

@@ -28,11 +28,29 @@ Les actions à distance sont en général des actions volumiques (si elle s'exer
 * En général, on donne (ou il doit être connu), un point où le moment résultant est nul (appelé parfois par abus de langage "point d'application").
 ````
 
-````{important} __Actions de la pesanteur__
+````{important} __Action de la pesanteur__
 
 Cas d'un champ de psanteur __uniforme.__ L'action de la pesanteur sur un corps a alors :
 * pour force résultante $\overrightarrow{P} = M\overrightarrow{g}$
 * un moment résultant nul en un point appelé __centre de gravité__. Il est confondu avec le _centre d'inertie_ pour un champ uniforme.
+
+```{sidebar} __Ecriture du torseur__
+Le torseur de l'action de la pesanteur doit donc être parfaitement connu au centre de gravité G ET en tout point A de l'espace:
+
+$$
+\mathcal{T}_G(\mathcal{A_{pesanteur \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{pesanteur \to \Sigma} = m \overrightarrow{g}\\
+  &\overrightarrow{M}_{G,pesanteur \to \Sigma} = 0
+\end{cases}
+\Longrightarrow
+\mathcal{T}_A(\mathcal{A_{pesanteur \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{pesanteur \to \Sigma} = m \overrightarrow{g}\\
+  &\overrightarrow{M}_{A,pesanteur \to \Sigma} = 0 + \overrightarrow{AG} \wedge \overrightarrow{F}_{pesanteur \to \Sigma}
+\end{cases}
+$$
+```
 ````
 
 ````{topic} Démonstration
@@ -65,7 +83,7 @@ On rappelle que la __composante normale__ correspond à une "réaction de non in
 ````
 ````{important} __Rappel : Composante tangentielle et composante normale__
 
-En un point de contact M entre le système et le solide/fluide (qu'on appellera $\Sigma_{ext}$), l'action ponctuelle (modélisée par la force $\overrightarrow{F}(M)$ peut-être décomposée en deux composantes:
+En un point de contact M entre le système et le solide/fluide (qu'on appellera $\Sigma_{ext}$), l'action ponctuelle (modélisée par la force $\overrightarrow{F}(M)$ peut-être décomposée en deux composantes):
 
 * une composante normale à la surface de contact $\overrightarrow{F_{\perp}}(M)$
 * une composante tangentielle à la surface de contact $\overrightarrow{F_{//}}(M)$
@@ -79,12 +97,10 @@ En un point de contact M entre le système et le solide/fluide (qu'on appellera 
 
 _Il n'y a pas d'expression simple a priori de cette action ponctuelle qui dépend de la géométrie au point de contact mais aussi du reste du contact, des autres actions qui s'appliquent sur les deux systèmes, de la nature des matériaux qui forment le système..._
 
-_On peut néanmoins obtenir plusieurs informations sur la force et moment résultant de l'action globale suivant les cas (solides ou fluide, géométrie du contact... ). C'est ce que nous ferons par la suite._
+_On peut néanmoins obtenir plusieurs informations sur la force et moment résultant de l'action globale suivant les cas (solide ou fluide, géométrie du contact... ). C'est ce que nous ferons par la suite._
 
 
 ### Action d'un fluide
-
-L'action d'un fluide se décompose
 
 #### Modélisation de l'action d'un fluide (en ligne)
 
@@ -108,10 +124,39 @@ On distingue deux types de régimes extrêmes: le régime laminaire (aux faibles
 
 ````{important} __Force de frottements fluide__
 
-* __Cas laminaire__ : Aux faibles vitesses, la force ou le moment de frottements fluides est proportionnelle à la vitesse du fluide.
+* __Cas laminaire__ : Aux faibles vitesses, la force ou le moment résultant de frottements fluides est proportionnelle à la vitesse du fluide.
     * Pour un système en translation : $\overrightarrow{F} = - \lambda \overrightarrow{v_{systeme/fluide}}$. 
     * Dans le cas d'un système en rotation au tour d'un axe fixe : $M_{axe}(fluide) = - K \dot \theta$ où $\dot \theta$ est la vitesse angulaire du solide autour de l'axe (fluide supposé au repos)
 * __Cas turbulent__ : Aux fortes vitesses, la force de frottements fluides est proportionnelle au carré de la vitesse du fluide: $\overrightarrow{F} = -k \left \| v\right \| \overrightarrow{v}$. Cette expression est valable pour un système en translation. Le cas d'un système en rotation ne sera pas traité.
+
+```{sidebar} __Ecriture du torseur__
+Le torseur de l'action d'un fluide aura donc plusieurs formes possibles suivant les cas. Dans tous les cas, plusieurs composantes du torseurs sont inconnues et ne sont souvent pas utiles:
+
+* Solide en translation:
+
+$$
+\mathcal{T}_A(\mathcal{A_{fluide \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{fluide \to \Sigma} = - \lambda \overrightarrow{v} + ? \textrm{ ou } - k v \overrightarrow{v} + ?_{normale}\\
+  &\overrightarrow{M}_{A,fluide \to \Sigma} =  ?
+\end{cases}
+$$
+
+Le $?_{normale}$ correspond à la résultante des composantes normales qui est a priori inconnue. Un chapitre sera dédié à son étude par la suite. Pour l'instant, il n'interviendra pas dans les études, on pourra considérer sa projection dans la direction du mouvement comme nulle. Le $?$ correspond au moment dont l'expression n'est pas à connaître et qui n'intervient généralement pas dans l'étude (il arrive d'ailleurs fréquemment qu'il soit omis dans l'expression de la force résultante).
+
+
+* Solide en rotation autour d'un fixe $Oz$ (on repère la rotation par la position $\theta$ d'un point du solide):
+
+$$
+\mathcal{T}_A(\mathcal{A_{fluide \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{fluide \to \Sigma} = ?\\
+  &\overrightarrow{M}_{A,fluide \to \Sigma} =  - K \dot \theta \overrightarrow{e_z} + ?_{\perp}
+\end{cases}
+$$
+Le $?_{\perp}$ correspond à moment résultant dans les directions perpendiculaires à l'axe de rotation. Il n'influe donc pas sur le mouvement et son expression n'est donc pas utile (il arrive d'ailleurs fréquemment qu'il soit omis dans l'expression du moment résultant). Le $?$ correspond à la résultante des action dont l'expression n'est pas à connaître et qui n'intervient généralement pas dans l'étude.
+
+```
 ````
 
 ### Action de contact solide
@@ -136,6 +181,10 @@ En un point de contact solide-solide, la force de contact $\overrightarrow{R}$ s
 * Quelque soit le système, $\mu_D < \mu_S$, c'est-à-dire qu'il est plus facile de maintenir un solide en mouvement par rapport à un autre solide malgré les frottements que de mettre en mouvement le même solide.
 ````
 
+````{attention}
+Les relations précédentes ne concernant a priori que les forces ponctuelles. Le passage aux actions globales dépend de la géométrie de la liaison.
+````
+
 
 #### Liaisons normalisée et géométrie
 
@@ -153,9 +202,43 @@ Par contre, si __la liaison est sans frottements__ (on dit que la liaison est pa
 ````
 
 __Liaisons normalisée__
-En général, on travaille avec des géométries simples et usuelles pour les surfaces de contact. On parle de liaison normalisée (celle présentée précédemment est la liaison rotule ou sphérique). Ces liaisons seront vues en SI. En physique la seule à connaître est la liaison pivot.
+En général, on travaille avec des géométries simples et usuelles pour les surfaces de contact. On parle de liaison normalisée (celle présentée précédemment est la liaison rotule ou sphérique). Ces liaisons seront vues en SI. En physique les seules à connaître sont la liaison pivot et la liaison glissière.
 
+````{topic} __Torseur d'une liaison__
+Néanmoins, il est important de comprendre qu'a priori, le torseur dynamique d'une liaison est... quelconque et les composantes ne sont pas connues. Par exemple, dans un système de coordonnées cartésiennes, le torseur ressemblerait à les ? en indice donne les composantes qu'on ne connait pas:
 
+$$
+\mathcal{T}_A(\mathcal{A_{fluide \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{fluide \to \Sigma} = F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}\\
+  &\overrightarrow{M}_{A,fluide \to \Sigma} =  M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y} + M_{A,z,?}\overrightarrow{e_z}\\
+\end{cases}
+$$
+... ... ... On n'est pas très avancé (on rappelle, cf. SI, que les liaisons donnent par contre beaucoup d'informations sur les aspects cinématiques en interdisant certaines mouvements).
+
+Néanmoins, __des caractéristiques supplémentaires permettent de connaître certaines composantes ou des relations entre composantes__. Par exemple:
+* si l'on considère que la liaison est sans frottements (liaison parfaite), alors certaines composantes seront nulles (faire le parallèle avec la composante tangentielle nulle en mécanique du point).
+* si l'on suppose valides les lois de Coulomb, alors en identifiant les composantes "tangentielles" et "normales" résultantes, on peut relier certaines composantes.
+````
+
+##### Liaison glissière
+Cette liaison ne permet au mobile qu'un mouvement de translation. Dans ces cas là, on s'intéresse alors principalement à la résultante des forces et pas au moment. Ce dernier est donc souvent inconnu (__pas nul__) sans que cela soit un problème.
+
+Au niveau de la force, on distingue alors la composante tangentielle __des__ composantes normales. On peut alors utiliser suivant les problèmes l'hypothèse de non frottements ou les lois de Coulomb.
+
+```{topic} __En terme de torseur__
+Si l'on choisit l'axe Ox d'un repère cartésien comme l'axe de la glissière, il vient:
+
+$$
+\mathcal{T}_A(\mathcal{A_{glissiere \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{glissiere \to \Sigma} = \underbrace{F_{x}\overrightarrow{e_x}}_{\textrm{composante tangentielle, agit sur la translation (frottements/non glissement), connu ou loi de Coulomb}} + \underbrace{F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}}_{\textrm{composante normale, inconnue}}\\
+  &\overrightarrow{M}_{A,glissiere \to \Sigma} =  ?\\
+\end{cases}
+$$
+```
+
+_Des éléments communs concernant la résultante des forces s'obtiennent pour une liaison plan-plan (on a par contre deux composantes tangentielles et une composante normale)._
 
 ##### Liaison pivot
 
@@ -176,16 +259,32 @@ A priori, toutes les composantes de la force et du moment résultant __peuvent �
 * les composantes de la force résultante qui peuvent être non nuls pour empêcher les translations. Elles s'opposent à la force résultante des autres actions sur le rotor.
 * les composantes du moment résultant dans les directions __perpendiculaires__ à l'axe de rotation empêchent les rotations suivant les autres axes. Elles s'opposent au moment des autres actions sur ces mêmes axes.
 * la composante du moment résultant sur l'axe de rotation. Elle agit sur le (seul) mouvement du rotor à savoir le mouvement de rotation suivant l'axe. Elle peut a priori avoir un effet moteur ou résistant suivant l'expression de ce moment.
+
+
+
 ````
 
-````{sidebar} Erreurs classiques
+```{sidebar} Erreurs classiques
 
 
-Attention, la nullité du moment sur l'axe __n'est pas liée__ à l'orientation de la force résultante. On rappelle __qu'il n'y a pas de lien directe entre force résultante et moment résultant__.
+Attention, la nullité/non-nullité du moment sur l'axe __n'est pas liée__ à l'orientation de la force résultante. On rappelle __qu'il n'y a pas de lien directe entre force résultante et moment résultant__.
 
 De même seul le moment suivant l'axe de rotation est nul __dans le cas sans frottements__. Les moments suivant un axe quelconque (perpendiculaire ou même parallèle mais non confondu avec l'axe de rotation) sont a priori non nulle. De même la force résultante est a priori non nulle.
 
+```
+````{topic} En terme de torseur
+En terme de torseur, on choisira donc un système de coordonnées cylindriques d'axe Oz l'axe de rotation de la liaison et __on choisit un point de l'axe pour exprimer le moment__. On peut alors interpréter les composantes de la force résultante et du moment résultant:
+
+$$
+\mathcal{T}_{A \in axe}(\mathcal{A_{pivot \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{pivot \to \Sigma} = \underbrace{F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}}_{\textrm{empêche toute translation}}\\
+  &\overrightarrow{M}_{A,pivot \to \Sigma} =  \underbrace{M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y}}_{\textrm{empêche toute rotation autre qu autour de Oz}} + \underbrace{M_{A,z}\overrightarrow{e_z}}_{\textrm{agit sur la rotation, connu}}\\
+\end{cases}
+$$
 ````
+
+
 ````{important} __Liaison pivot parfaite__
 
 Une liaison pivot parfaite est une liaison pivot sans frottements, le moment résultant de la liaison __sur l'axe de rotation__ est nulle.
@@ -228,15 +327,17 @@ On remarquera qu'une telle action est sembable à une action de rappel élastiqu
 L'angle $\theta$ repère la torsion du fil. La présence de l'angle $\theta_0$ permet de placer l'origine des angles en un point où le fil est déjà tordu. Cela peut-être utile lorsque l'on étudie plusieurs fil de torsion.
 
 On parle de moment de rappel ou par abus de langage de couple de rappel.
+
+````{sidebar} En terme de torseur
+En terme de torseur, on part donc du torseur de la liaison pivot quelconque en un point de l'axe et on précise le moment sur l'axe.
+
+$$
+\mathcal{T}_{A \in axe}(\mathcal{A_{torsion \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{torsion \to \Sigma} = \underbrace{F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}}_{\textrm{empêche toute translation}}\\
+  &\overrightarrow{M}_{A,torsion \to \Sigma} =  \underbrace{M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y}}_{\textrm{empêche toute rotation}} - C \theta_{torsion} \overrightarrow{e_z}\\
+\end{cases}
+$$
 ````
-
-````{topic} ATTENTION
-
-Malgré l'appellation abusive qu'on peut trouver de "couple" de rappel, cette action n'est a priori PAS un couple. Il n'y a aucune raison pour que la force résultante de l'action du fil sur le système à ses extrémités soit nulle.
-
-On pourra s'en convaincre en avec le cas d'une masse M suspendue à un fil de torsion. Il n'y a pas de mouvement verticale, donc la composante de la résultante des forces appliqué sur la masse M doit être nulle sur l'axe verticale. Or il y a deux actions: la pesanteur (verticale donc) et l'action du fil de torsion: ce dernier doit avoir une résultante des forces nulle verticalement.
-
-````
-
 
 

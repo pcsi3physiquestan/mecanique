@@ -40,7 +40,7 @@ Un solide indéformable est un système de points tel que, quelque soit les deux
 
 ````
 ```{topic} Direction
-Dans un solide, la distance entre les points doit être constantes, mais la direction du vecteur associé peut varier, c'est le cas quand le solide tourne sur lui-même. Si nous utiliserons principalement des solides continus par la suite, un solide peut aussi être un ensemble discrets de points matériels.
+Dans un solide __indéformable__, la distance entre les points doit être constantes, mais la direction du vecteur associé peut varier, c'est le cas quand le solide tourne sur lui-même. Si nous utiliserons principalement des solides continus par la suite, un solide peut aussi être un ensemble discrets de points matériels.
 ```
 
 

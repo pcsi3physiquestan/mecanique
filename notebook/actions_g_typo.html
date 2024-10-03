@@ -448,6 +448,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#action-de-contact-solide">Action de contact solide</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lois-phenomenologiques-de-coulomb">Lois phénoménologiques de Coulomb</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#liaisons-normalisee-et-geometrie">Liaisons normalisée et géométrie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#liaison-glissiere">Liaison glissière</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#liaison-pivot">Liaison pivot</a></li>
 </ul>
 </li>
@@ -486,12 +487,30 @@ document.write(`
 </aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Actions de la pesanteur</strong></p>
+<p><strong>Action de la pesanteur</strong></p>
 <p>Cas d’un champ de psanteur <strong>uniforme.</strong> L’action de la pesanteur sur un corps a alors :</p>
 <ul class="simple">
 <li><p>pour force résultante <span class="math notranslate nohighlight">\(\overrightarrow{P} = M\overrightarrow{g}\)</span></p></li>
 <li><p>un moment résultant nul en un point appelé <strong>centre de gravité</strong>. Il est confondu avec le <em>centre d’inertie</em> pour un champ uniforme.</p></li>
 </ul>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>Ecriture du torseur</strong></p>
+<p>Le torseur de l’action de la pesanteur doit donc être parfaitement connu au centre de gravité G ET en tout point A de l’espace:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_G(\mathcal{A_{pesanteur \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{pesanteur \to \Sigma} = m \overrightarrow{g}\\
+  &amp;\overrightarrow{M}_{G,pesanteur \to \Sigma} = 0
+\end{cases}
+\Longrightarrow
+\mathcal{T}_A(\mathcal{A_{pesanteur \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{pesanteur \to \Sigma} = m \overrightarrow{g}\\
+  &amp;\overrightarrow{M}_{A,pesanteur \to \Sigma} = 0 + \overrightarrow{AG} \wedge \overrightarrow{F}_{pesanteur \to \Sigma}
+\end{cases}
+\end{split}\]</div>
+</aside>
 </div>
 <aside class="topic">
 <p class="topic-title">Démonstration</p>
@@ -529,7 +548,7 @@ document.write(`
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Rappel : Composante tangentielle et composante normale</strong></p>
-<p>En un point de contact M entre le système et le solide/fluide (qu’on appellera <span class="math notranslate nohighlight">\(\Sigma_{ext}\)</span>), l’action ponctuelle (modélisée par la force <span class="math notranslate nohighlight">\(\overrightarrow{F}(M)\)</span> peut-être décomposée en deux composantes:</p>
+<p>En un point de contact M entre le système et le solide/fluide (qu’on appellera <span class="math notranslate nohighlight">\(\Sigma_{ext}\)</span>), l’action ponctuelle (modélisée par la force <span class="math notranslate nohighlight">\(\overrightarrow{F}(M)\)</span> peut-être décomposée en deux composantes):</p>
 <ul class="simple">
 <li><p>une composante normale à la surface de contact <span class="math notranslate nohighlight">\(\overrightarrow{F_{\perp}}(M)\)</span></p></li>
 <li><p>une composante tangentielle à la surface de contact <span class="math notranslate nohighlight">\(\overrightarrow{F_{//}}(M)\)</span></p></li>
@@ -539,10 +558,9 @@ document.write(`
 </figure>
 </div>
 <p><em>Il n’y a pas d’expression simple a priori de cette action ponctuelle qui dépend de la géométrie au point de contact mais aussi du reste du contact, des autres actions qui s’appliquent sur les deux systèmes, de la nature des matériaux qui forment le système…</em></p>
-<p><em>On peut néanmoins obtenir plusieurs informations sur la force et moment résultant de l’action globale suivant les cas (solides ou fluide, géométrie du contact… ). C’est ce que nous ferons par la suite.</em></p>
+<p><em>On peut néanmoins obtenir plusieurs informations sur la force et moment résultant de l’action globale suivant les cas (solide ou fluide, géométrie du contact… ). C’est ce que nous ferons par la suite.</em></p>
 <section id="action-d-un-fluide">
 <h3>Action d’un fluide<a class="headerlink" href="#action-d-un-fluide" title="Permalink to this heading">#</a></h3>
-<p>L’action d’un fluide se décompose</p>
 <section id="modelisation-de-l-action-d-un-fluide-en-ligne">
 <h4>Modélisation de l’action d’un fluide (en ligne)<a class="headerlink" href="#modelisation-de-l-action-d-un-fluide-en-ligne" title="Permalink to this heading">#</a></h4>
 <aside class="topic">
@@ -566,7 +584,7 @@ document.write(`
 <p class="admonition-title">Important</p>
 <p><strong>Force de frottements fluide</strong></p>
 <ul class="simple">
-<li><p><strong>Cas laminaire</strong> : Aux faibles vitesses, la force ou le moment de frottements fluides est proportionnelle à la vitesse du fluide.</p>
+<li><p><strong>Cas laminaire</strong> : Aux faibles vitesses, la force ou le moment résultant de frottements fluides est proportionnelle à la vitesse du fluide.</p>
 <ul>
 <li><p>Pour un système en translation : <span class="math notranslate nohighlight">\(\overrightarrow{F} = - \lambda \overrightarrow{v_{systeme/fluide}}\)</span>.</p></li>
 <li><p>Dans le cas d’un système en rotation au tour d’un axe fixe : <span class="math notranslate nohighlight">\(M_{axe}(fluide) = - K \dot \theta\)</span> où <span class="math notranslate nohighlight">\(\dot \theta\)</span> est la vitesse angulaire du solide autour de l’axe (fluide supposé au repos)</p></li>
@@ -574,6 +592,34 @@ document.write(`
 </li>
 <li><p><strong>Cas turbulent</strong> : Aux fortes vitesses, la force de frottements fluides est proportionnelle au carré de la vitesse du fluide: <span class="math notranslate nohighlight">\(\overrightarrow{F} = -k \left \| v\right \| \overrightarrow{v}\)</span>. Cette expression est valable pour un système en translation. Le cas d’un système en rotation ne sera pas traité.</p></li>
 </ul>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>Ecriture du torseur</strong></p>
+<p>Le torseur de l’action d’un fluide aura donc plusieurs formes possibles suivant les cas. Dans tous les cas, plusieurs composantes du torseurs sont inconnues et ne sont souvent pas utiles:</p>
+<ul class="simple">
+<li><p>Solide en translation:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_A(\mathcal{A_{fluide \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{fluide \to \Sigma} = - \lambda \overrightarrow{v} + ? \textrm{ ou } - k v \overrightarrow{v} + ?_{normale}\\
+  &amp;\overrightarrow{M}_{A,fluide \to \Sigma} =  ?
+\end{cases}
+\end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(?_{normale}\)</span> correspond à la résultante des composantes normales qui est a priori inconnue. Un chapitre sera dédié à son étude par la suite. Pour l’instant, il n’interviendra pas dans les études, on pourra considérer sa projection dans la direction du mouvement comme nulle. Le <span class="math notranslate nohighlight">\(?\)</span> correspond au moment dont l’expression n’est pas à connaître et qui n’intervient généralement pas dans l’étude (il arrive d’ailleurs fréquemment qu’il soit omis dans l’expression de la force résultante).</p>
+<ul class="simple">
+<li><p>Solide en rotation autour d’un fixe <span class="math notranslate nohighlight">\(Oz\)</span> (on repère la rotation par la position <span class="math notranslate nohighlight">\(\theta\)</span> d’un point du solide):</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_A(\mathcal{A_{fluide \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{fluide \to \Sigma} = ?\\
+  &amp;\overrightarrow{M}_{A,fluide \to \Sigma} =  - K \dot \theta \overrightarrow{e_z} + ?_{\perp}
+\end{cases}
+\end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(?_{\perp}\)</span> correspond à moment résultant dans les directions perpendiculaires à l’axe de rotation. Il n’influe donc pas sur le mouvement et son expression n’est donc pas utile (il arrive d’ailleurs fréquemment qu’il soit omis dans l’expression du moment résultant). Le <span class="math notranslate nohighlight">\(?\)</span> correspond à la résultante des action dont l’expression n’est pas à connaître et qui n’intervient généralement pas dans l’étude.</p>
+</aside>
 </div>
 </section>
 </section>
@@ -601,6 +647,10 @@ document.write(`
 <li><p>Quelque soit le système, <span class="math notranslate nohighlight">\(\mu_D &lt; \mu_S\)</span>, c’est-à-dire qu’il est plus facile de maintenir un solide en mouvement par rapport à un autre solide malgré les frottements que de mettre en mouvement le même solide.</p></li>
 </ul>
 </div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Les relations précédentes ne concernant a priori que les forces ponctuelles. Le passage aux actions globales dépend de la géométrie de la liaison.</p>
+</div>
 </section>
 <section id="liaisons-normalisee-et-geometrie">
 <h4>Liaisons normalisée et géométrie<a class="headerlink" href="#liaisons-normalisee-et-geometrie" title="Permalink to this heading">#</a></h4>
@@ -613,7 +663,43 @@ document.write(`
 <p>Par contre, si <strong>la liaison est sans frottements</strong> (on dit que la liaison est parfaite), alors il vient que certaines composantes des éléments modélisant l’action seront nuls: les éléments qui s’opposent au mouvement selon les degrés de liberté. Dans l’exemple précédent, les éléments s’opposant à la rotation relative des solides sont nuls <strong>si la liaison est sans frottements</strong>: c’est le moment résultant exprimé au centre de la sphère de contact.</p>
 </aside>
 <p><strong>Liaisons normalisée</strong>
-En général, on travaille avec des géométries simples et usuelles pour les surfaces de contact. On parle de liaison normalisée (celle présentée précédemment est la liaison rotule ou sphérique). Ces liaisons seront vues en SI. En physique la seule à connaître est la liaison pivot.</p>
+En général, on travaille avec des géométries simples et usuelles pour les surfaces de contact. On parle de liaison normalisée (celle présentée précédemment est la liaison rotule ou sphérique). Ces liaisons seront vues en SI. En physique les seules à connaître sont la liaison pivot et la liaison glissière.</p>
+<aside class="topic">
+<p class="topic-title"><strong>Torseur d’une liaison</strong></p>
+<p>Néanmoins, il est important de comprendre qu’a priori, le torseur dynamique d’une liaison est… quelconque et les composantes ne sont pas connues. Par exemple, dans un système de coordonnées cartésiennes, le torseur ressemblerait à les ? en indice donne les composantes qu’on ne connait pas:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_A(\mathcal{A_{fluide \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{fluide \to \Sigma} = F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}\\
+  &amp;\overrightarrow{M}_{A,fluide \to \Sigma} =  M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y} + M_{A,z,?}\overrightarrow{e_z}\\
+\end{cases}
+\end{split}\]</div>
+<p>… … … On n’est pas très avancé (on rappelle, cf. SI, que les liaisons donnent par contre beaucoup d’informations sur les aspects cinématiques en interdisant certaines mouvements).</p>
+<p>Néanmoins, <strong>des caractéristiques supplémentaires permettent de connaître certaines composantes ou des relations entre composantes</strong>. Par exemple:</p>
+<ul class="simple">
+<li><p>si l’on considère que la liaison est sans frottements (liaison parfaite), alors certaines composantes seront nulles (faire le parallèle avec la composante tangentielle nulle en mécanique du point).</p></li>
+<li><p>si l’on suppose valides les lois de Coulomb, alors en identifiant les composantes “tangentielles” et “normales” résultantes, on peut relier certaines composantes.</p></li>
+</ul>
+</aside>
+<section id="liaison-glissiere">
+<h5>Liaison glissière<a class="headerlink" href="#liaison-glissiere" title="Permalink to this heading">#</a></h5>
+<p>Cette liaison ne permet au mobile qu’un mouvement de translation. Dans ces cas là, on s’intéresse alors principalement à la résultante des forces et pas au moment. Ce dernier est donc souvent inconnu (<strong>pas nul</strong>) sans que cela soit un problème.</p>
+<p>Au niveau de la force, on distingue alors la composante tangentielle <strong>des</strong> composantes normales. On peut alors utiliser suivant les problèmes l’hypothèse de non frottements ou les lois de Coulomb.</p>
+<aside class="topic">
+<p class="topic-title"><strong>En terme de torseur</strong></p>
+<p>Si l’on choisit l’axe Ox d’un repère cartésien comme l’axe de la glissière, il vient:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_A(\mathcal{A_{glissiere \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{glissiere \to \Sigma} = \underbrace{F_{x}\overrightarrow{e_x}}_{\textrm{composante tangentielle, agit sur la translation (frottements/non glissement), connu ou loi de Coulomb}} + \underbrace{F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}}_{\textrm{composante normale, inconnue}}\\
+  &amp;\overrightarrow{M}_{A,glissiere \to \Sigma} =  ?\\
+\end{cases}
+\end{split}\]</div>
+</aside>
+<p><em>Des éléments communs concernant la résultante des forces s’obtiennent pour une liaison plan-plan (on a par contre deux composantes tangentielles et une composante normale).</em></p>
+</section>
 <section id="liaison-pivot">
 <h5>Liaison pivot<a class="headerlink" href="#liaison-pivot" title="Permalink to this heading">#</a></h5>
 <div class="admonition important">
@@ -634,8 +720,20 @@ En général, on travaille avec des géométries simples et usuelles pour les su
 </aside>
 <aside class="sidebar">
 <p class="sidebar-title">Erreurs classiques</p>
-<p>Attention, la nullité du moment sur l’axe <strong>n’est pas liée</strong> à l’orientation de la force résultante. On rappelle <strong>qu’il n’y a pas de lien directe entre force résultante et moment résultant</strong>.</p>
+<p>Attention, la nullité/non-nullité du moment sur l’axe <strong>n’est pas liée</strong> à l’orientation de la force résultante. On rappelle <strong>qu’il n’y a pas de lien directe entre force résultante et moment résultant</strong>.</p>
 <p>De même seul le moment suivant l’axe de rotation est nul <strong>dans le cas sans frottements</strong>. Les moments suivant un axe quelconque (perpendiculaire ou même parallèle mais non confondu avec l’axe de rotation) sont a priori non nulle. De même la force résultante est a priori non nulle.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">En terme de torseur</p>
+<p>En terme de torseur, on choisira donc un système de coordonnées cylindriques d’axe Oz l’axe de rotation de la liaison et <strong>on choisit un point de l’axe pour exprimer le moment</strong>. On peut alors interpréter les composantes de la force résultante et du moment résultant:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_{A \in axe}(\mathcal{A_{pivot \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{pivot \to \Sigma} = \underbrace{F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}}_{\textrm{empêche toute translation}}\\
+  &amp;\overrightarrow{M}_{A,pivot \to \Sigma} =  \underbrace{M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y}}_{\textrm{empêche toute rotation autre qu autour de Oz}} + \underbrace{M_{A,z}\overrightarrow{e_z}}_{\textrm{agit sur la rotation, connu}}\\
+\end{cases}
+\end{split}\]</div>
 </aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -672,12 +770,19 @@ Un fil de torsion est un fil dont la section n’est pas négligeable et qui peu
 <p>On remarquera qu’une telle action est sembable à une action de rappel élastique. Pour le ressort, le rappel se fait suivant ue translation. Ici le rappel concerne une rotation.</p>
 <p>L’angle <span class="math notranslate nohighlight">\(\theta\)</span> repère la torsion du fil. La présence de l’angle <span class="math notranslate nohighlight">\(\theta_0\)</span> permet de placer l’origine des angles en un point où le fil est déjà tordu. Cela peut-être utile lorsque l’on étudie plusieurs fil de torsion.</p>
 <p>On parle de moment de rappel ou par abus de langage de couple de rappel.</p>
-</div>
-<aside class="topic">
-<p class="topic-title">ATTENTION</p>
-<p>Malgré l’appellation abusive qu’on peut trouver de “couple” de rappel, cette action n’est a priori PAS un couple. Il n’y a aucune raison pour que la force résultante de l’action du fil sur le système à ses extrémités soit nulle.</p>
-<p>On pourra s’en convaincre en avec le cas d’une masse M suspendue à un fil de torsion. Il n’y a pas de mouvement verticale, donc la composante de la résultante des forces appliqué sur la masse M doit être nulle sur l’axe verticale. Or il y a deux actions: la pesanteur (verticale donc) et l’action du fil de torsion: ce dernier doit avoir une résultante des forces nulle verticalement.</p>
+<aside class="sidebar">
+<p class="sidebar-title">En terme de torseur</p>
+<p>En terme de torseur, on part donc du torseur de la liaison pivot quelconque en un point de l’axe et on précise le moment sur l’axe.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_{A \in axe}(\mathcal{A_{torsion \to \Sigma}}) =
+\begin{cases}
+  &amp;\overrightarrow{F}_{torsion \to \Sigma} = \underbrace{F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}}_{\textrm{empêche toute translation}}\\
+  &amp;\overrightarrow{M}_{A,torsion \to \Sigma} =  \underbrace{M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y}}_{\textrm{empêche toute rotation}} - C \theta_{torsion} \overrightarrow{e_z}\\
+\end{cases}
+\end{split}\]</div>
 </aside>
+</div>
 </section>
 </section>
 </section>
@@ -756,6 +861,7 @@ Un fil de torsion est un fil dont la section n’est pas négligeable et qui peu
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#action-de-contact-solide">Action de contact solide</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lois-phenomenologiques-de-coulomb">Lois phénoménologiques de Coulomb</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#liaisons-normalisee-et-geometrie">Liaisons normalisée et géométrie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#liaison-glissiere">Liaison glissière</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#liaison-pivot">Liaison pivot</a></li>
 </ul>
 </li>

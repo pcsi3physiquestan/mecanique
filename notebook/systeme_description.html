@@ -503,8 +503,8 @@ document.write(`
 <p>Le champ des vitesses d’un solide dans un référentiel R est la description de la vitesse de l’ensemble des points qui composent le solide. Il s’agit soit d’un ensemble discret de vecteurs vitesse affectés à chaque point, soit d’un champ vectoriel qui associe à chaque point P une vitesse correspondant à la vitesse du petit élément de matière autour du point P.</p>
 </aside>
 <aside class="topic">
-<p class="topic-title">Description générale</p>
-<p>Puisque tous les points du solides sont contraints à se déplacer ensemble, il vient que les mouvements des points du solide sont reliés les uns aux autres. Il suffit en réalité de connaître deux paramètres du mouvement global du solide pour pouvoir déterminer la vitesse de n’importe quel point du solide. Pour s’en convaincre - ce n’est pas une preuve - on peut remarquer que le mouvement d’un solide, à un instant t peut se décomposer en deux parties:</p>
+<p class="topic-title">Description générale - Cas d’un solide indéformable</p>
+<p>Puisque tous les points du solide indéformable sont contraints à se déplacer ensemble, il vient que les mouvements des points du solide sont reliés les uns aux autres. Il suffit en réalité de connaître deux paramètres du mouvement global du solide pour pouvoir déterminer la vitesse de n’importe quel point du solide. Pour s’en convaincre - ce n’est pas une preuve - on peut remarquer que le mouvement d’un solide, à un instant t peut se décomposer en deux parties:</p>
 <ul class="simple">
 <li><p>un mouvement de translation globale du solide.</p></li>
 <li><p>un mouvement de rotation autour d’un axe (différent à chaque instant) appelé axe instantané de rotation.</p></li>
@@ -514,29 +514,67 @@ document.write(`
 <li><p>De la vitesse en un point du solide.</p></li>
 <li><p>De la vitesse angulaire de rotation du solide autour de l’axe instantané de rotation. Celle-ci sera décrite par un vecteur rotation: <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> contenant à la fois l’information sur la direction de l’axe et sur la vitesse angulaire.</p></li>
 </ul>
+<p><strong>L’ensemble des deux données constitue le torseur cinématique introduit en sciences de l’ingénieur:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_{\Sigma,A} =
+\begin{cases}
+  &amp;\Omega\\
+  &amp;\overrightarrow{v}_{A/R}
+\end{cases}
+\end{split}\]</div>
+<p>Pour comprendre l’utilisation des relations à venir ainsi que la descriptions des actions mécaniques. Nous conserverons ces notations bien qu’il ne soit pas nécessaire en physique de toujours écrire les grandeurs sus la forme de torseur. Cela simplifie surtout la compréhension des méthodes.</p>
 </aside>
 <p>En physique nous n’utiliserons que deux cas particuliers: la translation seule et la rotation autour d’un axe fixe.</p>
 <aside class="topic">
 <p class="topic-title">Complément : Composition des vitesse (HP)</p>
-<p>Soit un solide donc le vecteur taux de rotation à un instant t est <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> et donc la vitesse en un point A du solide est connue par: <span class="math notranslate nohighlight">\(\overrightarrow{v_{A/R}}(t)\)</span>. Alors la vitesse en tout point B du solide est connue et donnée par la relation:</p>
+<p>Soit un solide donc le vecteur taux de rotation à un instant t est <span class="math notranslate nohighlight">\(\overrightarrow{\Omega}\)</span> et donc la vitesse en un point A du solide est connue par: <span class="math notranslate nohighlight">\(\overrightarrow{v_{A/R}}(t)\)</span>. Alors la vitesse en tout point B du solide est connue et donnée par la relation (de Varignon):</p>
 <div class="math notranslate nohighlight">
 \[
 \overrightarrow{v_{B/R}} = \overrightarrow{v_{A/R}} + \overrightarrow{\Omega} \wedge \overrightarrow{AB}
 \]</div>
 <p>Cette formule est valable quelque soit le mouvement du solide. Néanmoins, elle n’est pas à connaître et ne peut être appliquée directement en physique. Elle est par contre probablement à connaître et à savoir utiliser en SI. Les conséquences et définitions associées qui auront pu être vues en SI (centre instantanée de rotation, détermination graphique d’une vitesse… ) ne sont pas à connaître en physique. Par contre, les cas particuliers qui vont être présentés ensuite sont à connaître.</p>
+<p>On dit qu’on réexprime le torseur cinématique en un autre point:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_{\Sigma,A} =
+\begin{cases}
+  &amp;\Omega\\
+  &amp;\overrightarrow{v}_A
+\end{cases}
+\Longrightarrow
+\mathcal{T}_{\Sigma,B} =
+\begin{cases}
+  &amp;\Omega\\
+  &amp;\overrightarrow{v_{B/R}} = \overrightarrow{v_{A/R}} + \overrightarrow{\Omega} \wedge \overrightarrow{AB}
+\end{cases}
+\end{split}\]</div>
 </aside>
 </section>
 </section>
 <section id="mouvement-de-translation">
 <h2>Mouvement de translation<a class="headerlink" href="#mouvement-de-translation" title="Permalink to this heading">#</a></h2>
-<aside class="sidebar">
-<p class="sidebar-title">Translation et mouvement rectiligne</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
 <p>Une translation ne signifie pas que le solide va forcément tout droit (ne pas confondre mouvement de translation et mouvement rectiligne). Ainsi, un solide peut avoir un mouvement de translation circulaire: c’est le cas des nacelles de grande roue.</p>
 </aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Translation</strong>
 Un solide est en translation si pour tout point P du solide, la vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_{P/R}}\)</span> est identique.</p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>Ecriture en terme de torseur(HP)</strong></p>
+<p>Du point de vue torseur, on décrit donc un solide en translation avec un vecteur rotation nul:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_{\Sigma,B} =
+\begin{cases}
+  &amp;\Omega = 0\\
+  &amp;\overrightarrow{v_{B/R}}
+\end{cases}
+\end{split}\]</div>
+<p>Et il ne dépend pas du point considéré.</p>
+</aside>
 </div>
 </section>
 <section id="mouvement-de-rotation-autour-d-un-axe-fixe">
@@ -555,6 +593,19 @@ Un solide est en translation si pour tout point P du solide, la vitesse <span cl
 \overrightarrow{v_{P/R}} = \overrightarrow{\Omega} \wedge \overrightarrow{AP}
 \]</div>
 <p>où A est un point de l’axe de rotation.</p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>Ecriture en terme de torseur(HP)</strong></p>
+<p>Du point de vue torseur, on décrit donc un solide en rotation par un torseur en un point de l’axe de rotation où sa vitesse est nulle:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{T}_{\Sigma,A \in axe} =
+\begin{cases}
+  &amp;\Omega\\
+  &amp;\overrightarrow{v_{A/R}} = 0
+\end{cases}
+\end{split}\]</div>
+<p>La formule de Varignon redonne la relation du champ de vitesse précédent.</p>
+</aside>
 </div>
 <div class="note admonition">
 <p class="admonition-title">Démonstration</p>

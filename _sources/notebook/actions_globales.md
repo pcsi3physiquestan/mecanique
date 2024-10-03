@@ -43,31 +43,30 @@ Dans les calculs du moment résultant, il est important de différencier le pôi
 ````{important} __Description mathématique__
 
 Une action globale ou action résultante peut être décrite par __deux__ éléments:
-* la __force résultante__ : somme de toutes les forces ponctuelles associées aux actions ponctuelles qu'on a regroupées
-* le __moment résultant__ en un point arbitraire A : somme de tous les moments des actions ponctuelles regroupées calculés tous au même point A.
+* la __force résultante__ $\overrightarrow{F}_{\Sigma_1 \to \Sigma}$: somme de toutes les forces ponctuelles associées aux actions ponctuelles qu'on a regroupées
+* le __moment résultant__ $\overrightarrow{M}_{A,\Sigma_1 \to \Sigma}$ en un point arbitraire A : somme de tous les moments des actions ponctuelles regroupées calculés tous au même point A.
 
-_La donnée des deux éléments de l'action est appelé __torseur__ de l'action._
+_La donnée des deux éléments de l'action est appelé __torseur dynamique__ de l'action._
+
+```{sidebar} __Notation de torseurs dynamiques__
+On note les torseurs dynamiques comme les torseurs cinématiques mais il ne contiennent pas les mêmes grandeurs.
+
+$$
+\mathcal{T}_A(\mathcal{A_{\Sigma_{ext} \to \Sigma}}) =
+\begin{cases}
+  &\overrightarrow{F}_{\Sigma_1 \to \Sigma}\\
+  &\overrightarrow{M}_{A,\Sigma_1 \to \Sigma}
+\end{cases}
+$$
+```
 ````
-
 
 ````{attention}
 Le moment résultant __ne peut être déduire de la force résultante__.
 ````
 
-
-## Eléments utiles (en ligne)
-````{topic} Cas rencontrés
-Vous rencontrerez trois façon de présenter les actions globales:
-* Les actions globales usuelles : vous devrez connaître par coeur __une partie__ des caractéristiques (force et/ou moment) d'un certain nombre d'actions globales (poids, torsion...)
-    * ATTENTION : Souvent, vous ne connaitrez pas toutes les caractéristiques (seulement la force résultante ou seulement le moment, voire une seule composante du moment)
-* Les actions de contact : Comme pour les actions ponctuelles, on ne connait en général pas grand chose sur les actions de contact, sauf en cas d'absence de frottement qui supprimera __une__ composante de la force ou du moment résultant.
-    * Il pourra aussi y avoir l'application des lois de Coulomb
-    * En général, la recherche des composantes inconnues se fait, comme avec les points matériels par l'application d'un théorème fondamental.
-* Les actions à calculer : plus rares mais il arrivera que vous deviez calculer par intégration la force résultante ou le moment résultant. Les méthodes d'intégration seront vues plus tard.
-````
-
-````{sidebar} Cas d'un moment nul
-Le transfert des moment devient intéressant avec le cas où une action possède un moment nul en un point C (_on parle de glisseur_). Le transfert des moments en un point B quelconque devient alors:
+```{sidebar} Cas d'un moment nul
+Le transfert des moments devient intéressant avec le cas où une action possède un moment nul en un point C (_on parle de glisseur_). Le transfert des moments en un point B quelconque devient alors:
 
 $$
 \overrightarrow{M}_B = \overrightarrow{BC}\wedge \overrightarrow{F}
@@ -76,20 +75,55 @@ $$
 __Tout se passe alors _comme si(=mathématiquement et pas physiquement)_ on avait une action ponctuelle de force $\overrightarrow{F}$ appliquée au point C.__
 
 Cette observation sera par exemple utile avec l'action de la pesanteur qui est souvent présentée comme _"s'appliquant au centre de gravité"_ par abus de langage.
-````
+
+_On pourra écrire la relation précédente comme le passage du torseur au point C au torseur au point B comme avec un torseur cinématique._
+
+On peut donc passer d'un torseur en A de moment nul à un torseur en B:
+
+$$
+\mathcal{T}_{A}(\Sigma_1 \to \Sigma)=
+\begin{cases}
+  &\overrightarrow{F}_{\Sigma_1 \to \Sigma}\\
+  &\overrightarrow{M}_{A,\Sigma_1 \to \Sigma} = 0
+\end{cases}
+\Longrightarrow
+\mathcal{T}_{B}(\Sigma_1 \to \Sigma)=
+\begin{cases}
+  &\overrightarrow{F}_{\Sigma_1 \to \Sigma}\\
+  &\overrightarrow{M}_{B,\Sigma_1 \to \Sigma} = \overrightarrow{BC}\wedge \overrightarrow{F}_{\Sigma_1 \to \Sigma}
+\end{cases}
+$$
+
+```
 ````{topic} Transfert de moment
-Cette relation n'est pas au programme mais sera utile pour expliquer certains éléments : si l'on connait la force résultante $\overrightarrow{F}$ d'une action et le moment résultant de l'action en un point A $\overrightarrow{M}_A$, alors le moment résultant en un point B sera :
+
+A l'image des torseurs cinématiques qu'on peut décider d'exprimer en différents points, on peut exprimer le torseur dynamique d'une action mécanique en un autre point B. Cela revient à exprimer le moment de l'action en un autre B.
+
+Si on ne peut déterminer un moment à partir de la force résultante seule, on peut obtenir le moment en un point B connaissant la force résultant ET le moment en un point A. Cette relation n'est pas au programme mais sera utile pour expliquer certains éléments :
 
 $$
 \overrightarrow{M}_B = \overrightarrow{M}_A + \overrightarrow{BA}\wedge \overrightarrow{F}
 $$
 ````
 
+## Différents types d'actions rencontrées (en ligne)
+````{topic} Cas rencontrés
+Vous rencontrerez trois façon de présenter les actions globales:
+* Les actions globales usuelles : vous devrez connaître par coeur __tout ou une partie__ des caractéristiques (force et/ou moment) d'un certain nombre d'actions globales (poids, torsion...)
+    * ATTENTION : Souvent, vous ne connaitrez pas toutes les caractéristiques (seulement la force résultante ou seulement le moment, voire une seule composante du moment)
+* Les actions de contact : Comme pour les actions ponctuelles, on ne connait en général pas grand chose sur les actions de contact, sauf en cas d'absence de frottement qui supprimera __une__ composante de la force ou du moment résultant.
+    * Il pourra aussi y avoir l'application des lois de Coulomb
+    * En général, la recherche des composantes inconnues se fait, comme avec les points matériels par l'application d'un théorème fondamental.
+* Les actions à calculer : plus rares pour l'instant mais il arrivera que vous deviez calculer par intégration la force résultante ou le moment résultant. Les méthodes d'intégration seront vues plus tard.
+````
+
+
 ````{topic} Représentation graphique
 En général, il l'on connait un point de moment nul pour une action globale, on représentera cette action par sa force résultante en ce point. 
 
-_Il n'est par contre pas nécessaire de chercher un tel point (qui peut ne pas exister) pour faire une représentation graphique._ __On se rappellera par contre que le point où l'on dessine la force n'est PAS FORCEMENT UN POINT DE MOMENT NUL.__
+_Il n'est par contre pas nécessaire de chercher un tel point (qui peut ne pas exister) pour faire une représentation graphique._ __On se rappellera par contre que dans ce cas le point où l'on dessine la force n'est PAS FORCEMENT UN POINT DE MOMENT NUL.__
 ````
+
 ## Cas particuliers
 
 ```{margin}
