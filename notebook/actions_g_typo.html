@@ -493,8 +493,8 @@ document.write(`
 <li><p>pour force résultante <span class="math notranslate nohighlight">\(\overrightarrow{P} = M\overrightarrow{g}\)</span></p></li>
 <li><p>un moment résultant nul en un point appelé <strong>centre de gravité</strong>. Il est confondu avec le <em>centre d’inertie</em> pour un champ uniforme.</p></li>
 </ul>
-<aside class="sidebar">
-<p class="sidebar-title"><strong>Ecriture du torseur</strong></p>
+<aside class="topic">
+<p class="topic-title"><strong>Ecriture du torseur</strong></p>
 <p>Le torseur de l’action de la pesanteur doit donc être parfaitement connu au centre de gravité G ET en tout point A de l’espace:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -512,8 +512,9 @@ document.write(`
 \end{split}\]</div>
 </aside>
 </div>
-<aside class="topic">
-<p class="topic-title">Démonstration</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Démonstration</p>
 <blockquote>
 <div><p>On traite le cas discret.</p>
 <div class="math notranslate nohighlight">
@@ -526,11 +527,13 @@ document.write(`
 \overrightarrow{M_G}(Poids) = \sum\limits_{i} (\overrightarrow{GM_i} \wedge m_i \overrightarrow{g}) = \sum\limits_{i} (m_i \overrightarrow{GM_i}) \wedge\overrightarrow{g} = M \overrightarrow{GG} \wedge \overrightarrow{g} = \overrightarrow{0}
 \]</div>
 </div></blockquote>
-</aside>
+</div>
 </section>
 <section id="actions-de-contact">
 <h2>Actions de contact<a class="headerlink" href="#actions-de-contact" title="Permalink to this heading">#</a></h2>
-<p>Les actions de contact sont en général surfacique: on va sommer les actions ponctuelles en surface (double intégale) en se restreignant évidemment à la surface de contact ! On ne cherchera pas à calculer ces intégrales. L’expression des caractéristiques de ces actions de contacts se fait de deux manières:</p>
+<p>Les actions de contact sont en général surfacique: on va sommer les actions ponctuelles en surface (double intégale) en se restreignant évidemment à la surface de contact ! On ne cherchera pas à calculer ces intégrales. L’expression des caractéristiques de ces actions de contacts se fait de deux manières (cf. en ligne).</p>
+<aside class="topic">
+<p class="topic-title">Types d’actions de contact</p>
 <ul class="simple">
 <li><p>Cas d’action d’un fluide (liquide ou gaz). Comme on va le voir, on dispose souvent d’expression de la résultante des forces. En première année, on utilise principalement ces actions dans le cadre d’une modélisation ponctuelle du système mécanique de sorte que le moment résultant n’est pas donné (l’action devenant par modélisation…  ponctuelle).</p></li>
 <li><p>Cas d’action d’un solide (on parle de liaison). Dans le cadre du programme, les caractéristiques:</p>
@@ -541,6 +544,7 @@ document.write(`
 </ul>
 </li>
 </ul>
+</aside>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>On rappelle que la <strong>composante normale</strong> correspond à une “réaction de non interpénétration” et que la <strong>composante tangentielle</strong> correspond aux frottements.</p>
@@ -572,14 +576,14 @@ document.write(`
 <li><p>le système est en rotation autour d’un axe fixe et donc en rotation par rapport au fluide. On donne alors le moment résultant de l’action du fluide sur le système calculé sur l’axe de rotation. Correspondant à des frottements, ce moment s’oppose à la vitesse angulaire <span class="math notranslate nohighlight">\(\dot \theta\)</span> du fluide. En général (cas dit laminaire), le moment sur l’axe a pour expression <span class="math notranslate nohighlight">\(- K \dot \theta\)</span>.</p></li>
 </ul>
 </aside>
-</section>
-<section id="expression-de-la-force-de-frottements-fluides">
-<h4>Expression de la force de frottements fluides<a class="headerlink" href="#expression-de-la-force-de-frottements-fluides" title="Permalink to this heading">#</a></h4>
 <aside class="topic">
 <p class="topic-title">Type de régimes</p>
 <p>La force de frottements fluide va dépendre du comportement du fluide qui de la géométrie du système (même si quand on passe à une modélisation ponctuelle du système cette dépendance reste) et à sa vitesse par rapport au fluide ainsi qu’à la <strong>viscosité</strong> du fluide.</p>
 <p>On distingue deux types de régimes extrêmes: le régime laminaire (aux faibles vitesses) où l’écoulement du fluide épouse la forme de l’obstacle (ici le système mobile) et le régime turbulant (aux fortes vitesses) où l’écoulement du fluide possède un caractère tourbillonnaire (vortex). La transition du premier régime au second régime n’est pas brusque et des phénomènes très particuliers peuvent se produire pour des vitesses intermédiaires (ces cas ne seront pas étudiés en classe préparatoire).</p>
 </aside>
+</section>
+<section id="expression-de-la-force-de-frottements-fluides">
+<h4>Expression de la force de frottements fluides<a class="headerlink" href="#expression-de-la-force-de-frottements-fluides" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Force de frottements fluide</strong></p>
@@ -592,8 +596,8 @@ document.write(`
 </li>
 <li><p><strong>Cas turbulent</strong> : Aux fortes vitesses, la force de frottements fluides est proportionnelle au carré de la vitesse du fluide: <span class="math notranslate nohighlight">\(\overrightarrow{F} = -k \left \| v\right \| \overrightarrow{v}\)</span>. Cette expression est valable pour un système en translation. Le cas d’un système en rotation ne sera pas traité.</p></li>
 </ul>
-<aside class="sidebar">
-<p class="sidebar-title"><strong>Ecriture du torseur</strong></p>
+<aside class="topic">
+<p class="topic-title"><strong>Ecriture du torseur</strong></p>
 <p>Le torseur de l’action d’un fluide aura donc plusieurs formes possibles suivant les cas. Dans tous les cas, plusieurs composantes du torseurs sont inconnues et ne sont souvent pas utiles:</p>
 <ul class="simple">
 <li><p>Solide en translation:</p></li>
@@ -663,29 +667,29 @@ document.write(`
 <p>Par contre, si <strong>la liaison est sans frottements</strong> (on dit que la liaison est parfaite), alors il vient que certaines composantes des éléments modélisant l’action seront nuls: les éléments qui s’opposent au mouvement selon les degrés de liberté. Dans l’exemple précédent, les éléments s’opposant à la rotation relative des solides sont nuls <strong>si la liaison est sans frottements</strong>: c’est le moment résultant exprimé au centre de la sphère de contact.</p>
 </aside>
 <p><strong>Liaisons normalisée</strong>
-En général, on travaille avec des géométries simples et usuelles pour les surfaces de contact. On parle de liaison normalisée (celle présentée précédemment est la liaison rotule ou sphérique). Ces liaisons seront vues en SI. En physique les seules à connaître sont la liaison pivot et la liaison glissière.</p>
+En général, on travaille avec des géométries simples et usuelles pour les surfaces de contact. On parle de liaison normalisée (celle présentée précédemment est la liaison rotule ou sphérique). Ces liaisons ont été vues en SI. En physique les seules à connaître sont la liaison pivot et la liaison glissière.</p>
 <aside class="topic">
 <p class="topic-title"><strong>Torseur d’une liaison</strong></p>
 <p>Néanmoins, il est important de comprendre qu’a priori, le torseur dynamique d’une liaison est… quelconque et les composantes ne sont pas connues. Par exemple, dans un système de coordonnées cartésiennes, le torseur ressemblerait à les ? en indice donne les composantes qu’on ne connait pas:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathcal{T}_A(\mathcal{A_{fluide \to \Sigma}}) =
+\mathcal{T}_A(\mathcal{A_{solide \to \Sigma}}) =
 \begin{cases}
-  &amp;\overrightarrow{F}_{fluide \to \Sigma} = F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}\\
-  &amp;\overrightarrow{M}_{A,fluide \to \Sigma} =  M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y} + M_{A,z,?}\overrightarrow{e_z}\\
+  &amp;\overrightarrow{F}_{solide \to \Sigma} = F_{x,?}\overrightarrow{e_x} + F_{y,?}\overrightarrow{e_y} + F_{z,?}\overrightarrow{e_z}\\
+  &amp;\overrightarrow{M}_{A,solide \to \Sigma} =  M_{A,x,?}\overrightarrow{e_x} + M_{A,y,?}\overrightarrow{e_y} + M_{A,z,?}\overrightarrow{e_z}\\
 \end{cases}
 \end{split}\]</div>
 <p>… … … On n’est pas très avancé (on rappelle, cf. SI, que les liaisons donnent par contre beaucoup d’informations sur les aspects cinématiques en interdisant certaines mouvements).</p>
 <p>Néanmoins, <strong>des caractéristiques supplémentaires permettent de connaître certaines composantes ou des relations entre composantes</strong>. Par exemple:</p>
 <ul class="simple">
 <li><p>si l’on considère que la liaison est sans frottements (liaison parfaite), alors certaines composantes seront nulles (faire le parallèle avec la composante tangentielle nulle en mécanique du point).</p></li>
-<li><p>si l’on suppose valides les lois de Coulomb, alors en identifiant les composantes “tangentielles” et “normales” résultantes, on peut relier certaines composantes.</p></li>
+<li><p>si l’on suppose valides les lois de Coulomb, alors en identifiant les composantes “tangentielles” et “normales” résultantes, on peut relier certaines composantes (leurs normes).</p></li>
 </ul>
 </aside>
 <section id="liaison-glissiere">
 <h5>Liaison glissière<a class="headerlink" href="#liaison-glissiere" title="Permalink to this heading">#</a></h5>
 <p>Cette liaison ne permet au mobile qu’un mouvement de translation. Dans ces cas là, on s’intéresse alors principalement à la résultante des forces et pas au moment. Ce dernier est donc souvent inconnu (<strong>pas nul</strong>) sans que cela soit un problème.</p>
-<p>Au niveau de la force, on distingue alors la composante tangentielle <strong>des</strong> composantes normales. On peut alors utiliser suivant les problèmes l’hypothèse de non frottements ou les lois de Coulomb.</p>
+<p>Au niveau de la force, on distingue alors la composante tangentielle <strong>des</strong> composantes normales. On peut alors utiliser, suivant les problèmes, l’hypothèse de non frottements ou les lois de Coulomb.</p>
 <aside class="topic">
 <p class="topic-title"><strong>En terme de torseur</strong></p>
 <p>Si l’on choisit l’axe Ox d’un repère cartésien comme l’axe de la glissière, il vient:</p>
@@ -718,8 +722,8 @@ En général, on travaille avec des géométries simples et usuelles pour les su
 <li><p>la composante du moment résultant sur l’axe de rotation. Elle agit sur le (seul) mouvement du rotor à savoir le mouvement de rotation suivant l’axe. Elle peut a priori avoir un effet moteur ou résistant suivant l’expression de ce moment.</p></li>
 </ul>
 </aside>
-<aside class="sidebar">
-<p class="sidebar-title">Erreurs classiques</p>
+<aside class="topic">
+<p class="topic-title">Erreurs classiques</p>
 <p>Attention, la nullité/non-nullité du moment sur l’axe <strong>n’est pas liée</strong> à l’orientation de la force résultante. On rappelle <strong>qu’il n’y a pas de lien directe entre force résultante et moment résultant</strong>.</p>
 <p>De même seul le moment suivant l’axe de rotation est nul <strong>dans le cas sans frottements</strong>. Les moments suivant un axe quelconque (perpendiculaire ou même parallèle mais non confondu avec l’axe de rotation) sont a priori non nulle. De même la force résultante est a priori non nulle.</p>
 </aside>
@@ -744,8 +748,8 @@ En général, on travaille avec des géométries simples et usuelles pour les su
 <p class="topic-title">Explication</p>
 <blockquote>
 <div><p>Dans une liaison pivot, la surface de contact est un cylindre. S’il n’y a pas de frottements, alors il n’y a pas de composantes tangentielles pour chaque action ponctuelles de contact.</p>
-<p>Dans le cas des surfaces planes extrêmes, la force ponctuelle est donc suivant l’axe de rotation: son moment est nul.</p>
-<p>Dans le cas de la surface latérales en forme de cylindre, la force ponctuelle est dirigée vers l’axe de rotation: son moment est nul.</p>
+<p>Dans le cas des surfaces planes extrêmes, la force ponctuelle est donc suivant l’axe de rotation: son moment sur l’axe est nul.</p>
+<p>Dans le cas de la surface latérales en forme de cylindre, la force ponctuelle est dirigée vers l’axe de rotation: son moment sur l’axe est nul.</p>
 <p>Il vient que le moment résultant sera nul.</p>
 </div></blockquote>
 </aside>
@@ -770,8 +774,8 @@ Un fil de torsion est un fil dont la section n’est pas négligeable et qui peu
 <p>On remarquera qu’une telle action est sembable à une action de rappel élastique. Pour le ressort, le rappel se fait suivant ue translation. Ici le rappel concerne une rotation.</p>
 <p>L’angle <span class="math notranslate nohighlight">\(\theta\)</span> repère la torsion du fil. La présence de l’angle <span class="math notranslate nohighlight">\(\theta_0\)</span> permet de placer l’origine des angles en un point où le fil est déjà tordu. Cela peut-être utile lorsque l’on étudie plusieurs fil de torsion.</p>
 <p>On parle de moment de rappel ou par abus de langage de couple de rappel.</p>
-<aside class="sidebar">
-<p class="sidebar-title">En terme de torseur</p>
+<aside class="topic">
+<p class="topic-title">En terme de torseur</p>
 <p>En terme de torseur, on part donc du torseur de la liaison pivot quelconque en un point de l’axe et on précise le moment sur l’axe.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
