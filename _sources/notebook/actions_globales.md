@@ -48,7 +48,7 @@ Une action globale ou action résultante peut être décrite par __deux__ élém
 
 _La donnée des deux éléments de l'action est appelé __torseur dynamique__ de l'action._
 
-```{sidebar} __Notation de torseurs dynamiques__
+```{topic} __Notation de torseurs dynamiques__
 On note les torseurs dynamiques comme les torseurs cinématiques mais il ne contiennent pas les mêmes grandeurs.
 
 $$
