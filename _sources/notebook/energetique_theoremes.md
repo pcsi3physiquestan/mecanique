@@ -70,7 +70,7 @@ _On peut déduire du théorème précédent le théorème de la puissance mécan
 ```{image} ./images/qr_code/qr_energie_theoreme.png
 :name: qr_energie_theoreme
 :width: 150px
-:align: right
+:align: center
 :target: energetique_theoremes.html#interpretation-des-theoremes-en-ligne
 ```
 

@@ -14,6 +14,12 @@ kernelspec:
   name: python3
 ---
 # Méthodes 
+```{image} ./images/qr_code/qr_newton_methodes.png
+:name: qr_newton_methodes
+:width: 150px
+:align: center
+:target: centrales_methodes.html
+```
 
 ## Forces centrales
 

@@ -52,6 +52,13 @@ $$
 ## Description d'un mouvement
 
 ### Description d'un mouvement: généralités (en ligne)
+```{image} ./images/qr_code/qr_systemes_mouvement.png
+:name: qr_systemes_mouvement
+:width: 150px
+:align: center
+:target: systeme_description.html#description-d-un-mouvement-generalites-en-ligne
+```
+
 
 ````{topic} Champ de vitesse
 Le champ des vitesses d'un solide dans un référentiel R est la description de la vitesse de l'ensemble des points qui composent le solide. Il s'agit soit d'un ensemble discret de vecteurs vitesse affectés à chaque point, soit d'un champ vectoriel qui associe à chaque point P une vitesse correspondant à la vitesse du petit élément de matière autour du point P.
@@ -116,7 +123,7 @@ Une translation ne signifie pas que le solide va forcément tout droit (ne pas c
 ````{important} __Translation__
 Un solide est en translation si pour tout point P du solide, la vitesse $\overrightarrow{v_{P/R}}$ est identique.
 
-```{sidebar} __Ecriture en terme de torseur(HP)__
+```{topic} __Ecriture en terme de torseur(HP)__
 
 Du point de vue torseur, on décrit donc un solide en translation avec un vecteur rotation nul:
 
@@ -150,7 +157,7 @@ $$
 \overrightarrow{v_{P/R}} = \overrightarrow{\Omega} \wedge \overrightarrow{AP}
 $$
 où A est un point de l'axe de rotation.
-```{sidebar} __Ecriture en terme de torseur(HP)__
+```{topic} __Ecriture en terme de torseur(HP)__
 
 Du point de vue torseur, on décrit donc un solide en rotation par un torseur en un point de l'axe de rotation où sa vitesse est nulle:
 

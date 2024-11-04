@@ -18,7 +18,7 @@ kernelspec:
 ````{admonition} Disques couplés 
 :class: attention
 
-On considère deux disques horizontaux tournant autour d'un axe vertical $\Delta$ en leur centre. Les disques sont homogènes, de moment d'inertie par rapport à $\Delta$, $J_1$ et $J_2$ et la liaison avec l'axe est parfaite. On repère leur rotation autour de l'axe par deux angles $\theta_1$ et $\theta_2$.
+On considère deux disques horizontaux tournant autour d'un axe vertical $\Delta$ en leur centre. Les disques sont homogènes, de moment d'inertie par rapport à $\Delta$, $J_1$ et $J_2=J_1$ et la liaison avec l'axe est parfaite. On repère leur rotation autour de l'axe par deux angles $\theta_1$ et $\theta_2$.
 
 On relie un fil de torsion de constante C d'un côté au bâti et de l'autre eu premier disque puis un deuxième fil de torsion de même constante C d'un côté au premier disque et de l'autre au second disque et enfin un dernier fil de torsion de même constante C d'un côté au deuxième disque et de l'autre au bâti.
 

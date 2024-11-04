@@ -76,7 +76,7 @@ Les démonstrations du caractère conservatif sont en ligne.
 ```{image} ./images/qr_code/qr_conservatives.png
 :name: qr_conservatives
 :width: 150px
-:align: right
+:align: center
 :target: energetique_ep.html#forces-conservatives-usuelles
 ```
 

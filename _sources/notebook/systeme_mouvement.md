@@ -33,7 +33,7 @@ $$
 Le moment cinétique du système S par rapport à un point A dans un référentiel donné s'écrit donc:
 
 $$
-\overrightarrow{L_{A/\mathfrak{R}}} = = \overrightarrow{AG} \wedge M \overrightarrow{v_{G/\mathfrak{R}}}
+\overrightarrow{L_{A/\mathfrak{R}}} = \overrightarrow{AG} \wedge M \overrightarrow{v_{G/\mathfrak{R}}}
 $$
 ````
 

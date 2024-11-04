@@ -53,7 +53,7 @@ $$
 ```
 ````
 
-````{hint} Démonstration
+````{topic} Démonstration
 >On traite le cas discret.
 >
 >$$

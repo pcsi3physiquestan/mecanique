@@ -14,7 +14,15 @@ kernelspec:
   name: python3
 ---
 # Méthodes : Applications des théorèmes
-Les exercices seront corrigés en cours.
+Les exercices seront corrigés en cours. Une version dui corrigé est disponible en ligne (Connexion Moodle nécessaire).
+```{image} ./images/qr_code/qr_theoremes_methodes.png
+:name: qr_theoremes_methodes
+:width: 150px
+:align: right
+:target: https://moodlecpge.stanislas.fr/mod/resource/view.php?id=174
+```
+
+
 
 ## Mouvement dans un champ de pesanteur
 

@@ -14,6 +14,12 @@ kernelspec:
   name: python3
 ---
 # Méthodes
+```{image} ./images/qr_code/qr_systemes_methodes.png
+:name: qr_systemes_methodes
+:width: 150px
+:align: center
+:target: systeme_methode.html
+```
 
 ## Cinétique
 

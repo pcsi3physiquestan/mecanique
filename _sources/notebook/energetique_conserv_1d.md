@@ -22,7 +22,7 @@ _Plusieurs éléments d'explications graphiques et d'exemples sont disponibles e
 ```{image} ./images/qr_code/qr_energie_conservatif.png
 :name: qr_energie_conservatif
 :width: 150px
-:align: right
+:align: center
 :target: energetique_conserv_1d.html
 ```
 

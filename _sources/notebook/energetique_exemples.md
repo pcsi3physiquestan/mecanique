@@ -17,7 +17,7 @@ kernelspec:
 ```{image} ./images/qr_code/qr_energie_methodes.png
 :name: qr_energie_methodes
 :width: 150px
-:align: right
+:align: center
 :target: energetique_exemples.html
 ```
 

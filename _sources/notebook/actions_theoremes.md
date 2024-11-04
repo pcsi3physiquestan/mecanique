@@ -14,6 +14,13 @@ kernelspec:
   name: python3
 ---
 # Théorèmes en mécanique du solide
+Les démonstrations de plusieurs théorèmes sont en ligne.
+```{image} ./images/qr_code/qr_systemes_theoremes.png
+:name: qr_systemes_theoremes
+:width: 150px
+:align: center
+:target: actions_theoremes.html
+```
 
 ## Théorème de la résultante cinétique
 

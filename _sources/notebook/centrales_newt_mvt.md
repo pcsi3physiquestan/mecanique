@@ -63,6 +63,12 @@ On distingue les cas:
 
 
 ### Trajectoire - Démonstration (en ligne)
+```{image} ./images/qr_code/qr_newton_demo.png
+:name: qr_newton_demo
+:width: 150px
+:align: center
+:target: centrales_newt_mvt.html#trajectoire-demonstration-en-ligne
+```
 
 ```{margin}
 Il existe plusieurs méthodes pour montrer que l'équation de la trajectoire est une conique. Le principe général est d'éliminer la variable temps dans les équations.
