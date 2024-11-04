@@ -22,7 +22,7 @@ Ces exercices d'application directe sont à faire à la suite du cours pour vér
 Retrouver les expressions du vecteur vitesse dans les différents systèmes de coordonnées en dérivant directement le vecteur position exprimés dans ces systèmes.
 ````
 
-````{admonition} Chute d'une règle 
+`````{admonition} Chute d'une règle 
 :class: attention
 
 Une barre rectiligne AB de longueur fixe $2b$ se déplace dans le référentiel R repéré par $(O, \overrightarrow{u_x},\overrightarrow{u_y},\overrightarrow{u_z})$ de telle sorte que:
@@ -51,7 +51,7 @@ On note $\phi$ l'angle $(\overrightarrow{IO}, \overrightarrow{IB})$.
 4. Déterminer l'angle $\alpha=(\overrightarrow{AO}, \overrightarrow{AB})$ en fonction de $\omega$ et $t$.
 5. Calculer les coordonnées cylindriques $(R, \Theta)$ puis cartésiennes $X,Y$ et $Z$ du milieu J de la barre. 
 6. Déterminer la vitesse $\overrightarrow{v_J}$ et l'accélération $\overrightarrow{a_J}$ de J, ainsi que leur normes.
-````
+`````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Trigonométrie._
 * _$\Longrightarrow$ Vitesse en cartésien._
