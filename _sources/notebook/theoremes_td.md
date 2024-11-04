@@ -16,6 +16,7 @@ kernelspec:
 (saut_elas)=
 # Entrainement
 
+
 ````{admonition} Saut à l'elastique
 :class: attention
 
@@ -29,24 +30,27 @@ Dans tout le problème, on ne tient pas compte des frottements de l'air. Un fabr
 On prendra $g = 9.8 \rm{m.s^{-2}}$.
 
 1. Traduire la fiche technique en langage correct pour la physique.
-1. La tension de l'élastique obéit-elle à une loi type ressort: $T = k (l-l_0)$ où T est la tension appliquée et l la longueur de l'élastique? 
-1. On supposera dans la suite que la tension est de la forme $T = k (l-l_0)$. A partir des données, déterminer une valeur moyenne de la constante de raideur de l'élastique k pour un élastique de $l_0 = 6 \rm{m}$.
-1. On veut savoir à quelle hauteur remonterait une masse test M de masse minimale (ici $m=65\rm{kg}$) si elle est lâchée sans vitesse initiale, l'élastique tendu au maximum vers le bas. On prendra l'exemple d'un élastique de $l_0 = 6 \rm{m}$, dont le point d'attache est à la hauteur $h=18\rm{m}$ au dessus du point de départ.
+2. La tension de l'élastique obéit-elle à une loi type ressort: $T = k (l-l_0)$ où T est la tension appliquée et l la longueur de l'élastique? 
+3. On supposera dans la suite que la tension est de la forme $T = k (l-l_0)$. A partir des données, déterminer une valeur moyenne de la constante de raideur de l'élastique k pour un élastique de $l_0 = 6 \rm{m}$.
+4. On veut savoir à quelle hauteur remonterait une masse test M de masse minimale (ici $m=65\rm{kg}$) si elle est lâchée sans vitesse initiale, l'élastique tendu au maximum vers le bas. On prendra l'exemple d'un élastique de $l_0 = 6 \rm{m}$, dont le point d'attache est à la hauteur $h=18\rm{m}$ au dessus du point de départ.
     1. Déterminer l'expression de l'altitude $z(t)$ et de la vitesse $\dot z(t)$ tant que l'élastique est tendu. 
-    1. Calculer l'instant $t_1$ pour lequel l'élastique n'est plus tendu. En déduire la vitesse de M à cet instant. 
-    2. Déterminer la hauteur maximale atteinte par l'objet. 
-1. On réalise maintenant un saut normal, à partir du point d'attache, sans vitesse initiales (le sauteur a les mêmes caractéristiques que la masse test et on utilise le même élastique). 
+    2. Calculer l'instant $t_1$ pour lequel l'élastique n'est plus tendu. En déduire la vitesse de M à cet instant. 
+    3. Déterminer la hauteur maximale atteinte par l'objet. 
+5. On réalise maintenant un saut normal, à partir du point d'attache, sans vitesse initiales (le sauteur a les mêmes caractéristiques que la masse test et on utilise le même élastique). 
     1. Déterminer le point le plus bas atteint par le sauteur et l'accélération ressentie en ce point. 
-    1. En réalité, les frottements de l'air entraîne l'immobilisation du sauteur après plusieurs oscillations. A quelle hauteur s'immobilise-t-il?
+    2. En réalité, les frottements de l'air entraîne l'immobilisation du sauteur après plusieurs oscillations. A quelle hauteur s'immobilise-t-il?
 
 ````
+
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Pesanteur._
 * _$\Longrightarrow$ Action d'un ressort._
 * _$\Longrightarrow$ PFD._
 * _$\Longrightarrow$ Méthodes de résolution du PFD (ordre 2)._
 
+
 ````{topic} Eléments de réponse (sans justification)
+
 
 Dans les deux cas l'origine est prise au niveau du point d'attache et l'axe Oz est orienté vers le haut.
 
@@ -75,6 +79,7 @@ L'accélération subit vaut alors: $a = \frac{k}{m}(z_m - l_0) - g$
 Immobilisation à $z_e = -\frac{mg}{k} - l_0$
 ````
 
+---
 ````{admonition} Cascade en voiture 
 :class: attention
 
@@ -87,7 +92,7 @@ Immobilisation à $z_e = -\frac{mg}{k} - l_0$
 Une automobile, assimilée à un point matériel, circule à la vitesse v uniforme, sur une piste au profil accidenté. Elle franchit une bosse (cf. Figure)), modélisée par deux portions rectilignes raccordés par un arc de cercle de rayon $l$, de centre O et d'ouverture angulaire $2 \alpha$.
 
 1. Faire un bilan sommaire des forces extérieures.
-1. A quelle condition garde-t-elle contact avec le sol? A.N.: $\alpha = 10 ^{\circ}; l = 5\rm{m}$. (on pourra considérer que le centre d'inertie touche le sol pour simplifier l'étude).
+2. A quelle condition garde-t-elle contact avec le sol? A.N.: $\alpha = 10 ^{\circ}; l = 5\rm{m}$. (on pourra considérer que le centre d'inertie touche le sol pour simplifier l'étude).
 
 La voiture est maintenant assimilée à un point matériel de masse $m=1000\rm{kg}$. On prend $l=130\rm{m}$ et $\alpha = 15 ^{\circ}$. La voiture est au sommet de la bosse (point noté A) avec une vitesse de $v_0 = 125 \rm{km.h^{-1}}$ (on ne cherche pas à savoir comment elle est arrivée là). Sa vitesse n'est plus forcément constante.
 
@@ -142,3 +147,21 @@ _Point utile pour cet exercice_
 $d = D_m \frac{g}{2v^2 \pi \cos 2 \theta}$
 ````
 
+````{list-table} Corrigé des exercices d'application et d'entrainement
+:header-rows: 1
+
+* - __Exercices d'application__
+  - __Exercices d'entrainement__
+* - ```{image} ./images/qr_code/qr_theoremes_app.png
+    :name: qr_theoremes_app
+    :width: 150px
+    :align: right
+    :target: theoremes_ex_app.html
+    ```
+  - ```{image} ./images/qr_code/qr_theoremes_td.png
+    :name: qr_theoremes_td
+    :width: 150px
+    :align: right
+    :target: theoremes_td.html
+    ```
+````

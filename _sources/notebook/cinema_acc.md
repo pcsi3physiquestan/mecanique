@@ -130,7 +130,7 @@ où $R$ est appelé rayon de courbure. Il peut varier dans le temps et reflète.
 ````{topic} Interprétation
 >Le [rayon de courbure](https://www.geogebra.org/m/BzmtMzUq) est algébrique: son signe dépend de la concavité de la trajectoire. Dans le cadre du programme, on se contentera de sa valeur absolue dans l'expression de l'accélération normale. Il suffit alors d'orienter l'accélération normale par la physique: est est toujours vers l'intérieur de la courbure de la trajectoire.
 >
->On peut interpréter ces expressions.
+> On peut interpréter ces expressions.
 >
 >*  plus l'accélération normale est grande, plus la trajectoire va être courbée soit un faible rayon. De plus, plus la vitesse est grande, plus il faut une forte accélération pour courber la trajectoire.
 >* l'accélération tangentielle étant directement reliée au caractère accéléré ou décéléré, il est logique d'avoir cette relation. La démonstration de l'expression de l'accélération tangentielle se fait d'ailleurs à partir du calcul du produit scalaire $\overrightarrow{a}\cdot\overrightarrow{v} $ comme on l'a fait précédemment.

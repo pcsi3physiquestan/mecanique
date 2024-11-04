@@ -14,6 +14,12 @@ kernelspec:
   name: python3
 ---
 # Méthodes
+```{image} ./images/qr_code/qr_energie_methodes.png
+:name: qr_energie_methodes
+:width: 150px
+:align: right
+:target: energetique_exemples.html
+```
 
 ## Calcul du travail d'une force.
 

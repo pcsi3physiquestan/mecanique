@@ -67,6 +67,13 @@ _On peut déduire du théorème précédent le théorème de la puissance mécan
 
 ## Interprétation des théorèmes (en ligne)
 
+```{image} ./images/qr_code/qr_energie_theoreme.png
+:name: qr_energie_theoreme
+:width: 150px
+:align: right
+:target: energetique_theoremes.html#interpretation-des-theoremes-en-ligne
+```
+
 ````{topic} Interprétation du théorème de l'énergie cinétique
 Le théorème de l'énergie cinétique montre que les actions sur le système participe à la modification du mouvement et plus précisément ici la modification de la vitesse.
 

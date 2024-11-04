@@ -28,5 +28,5 @@ kernelspec:
 * Relier la direction et le sens du vecteur moment cinétique aux caractéristiques du mouvement.
 ````
 
-Nous allons commencer par étudier les mouvements de points matériels. Les mouvements d'un tel système sont décrits uniquement par ses mouvements de translation (rectiligne ou non). Il n'y a pas de _rotation_ d'un point sur lui même.  
-Nous allons présenter ses éléments _cinématiques_ (décrivant le mouvement sans matérialité du point) et _cinétiques_ (décrivant le mouvement du point avec son inertie : on tient compte de sa masse.)
+Nous allons commencer par étudier les mouvements de points : ils sont décrits uniquement par ses mouvements de translation (rectiligne ou non). Il n'y a pas de _rotation_ d'un point sur lui même.
+Nous allons présenter ses éléments __cinématiques__ (décrivant le mouvement sans matérialité du point) et __cinétiques__ (décrivant le mouvement du point avec son inertie : on tient compte de sa masse.)

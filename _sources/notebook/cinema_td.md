@@ -68,7 +68,7 @@ _Point utile pour cet exercice_
 * _$\Longrightarrow$ Base sphérique._
 * _$\Longrightarrow$ Vitesse en sphérique._
 
-## Poursuite
+## Aller plus loin - Poursuite
 
 ````{admonition} Exercice 
 :class: attention
@@ -86,3 +86,22 @@ _Point utile pour cet exercice_
 * _$\Longrightarrow$ Base cylindrique._
 * _$\Longrightarrow$ Vitesse en cylindrique._
 * _$\Longrightarrow$ Symétrie._
+
+````{list-table} Corrigé des exercices d'application et d'entrainement
+:header-rows: 1
+
+* - __Exercices d'application__
+  - __Exercices d'entrainement__
+* - ```{image} ./images/qr_code/qr_cinema_app.png
+    :name: qr_cinema_app
+    :width: 150px
+    :align: right
+    :target: cinema_ex_app.html
+    ```
+  - ```{image} ./images/qr_code/qr_cinema_td.png
+    :name: qr_cinema_td
+    :width: 150px
+    :align: right
+    :target: cinema_td.html
+    ```
+````

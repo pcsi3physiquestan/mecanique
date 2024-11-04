@@ -71,6 +71,14 @@ Il vient par identification avec la définition du gradient l'expression précé
 ````
 
 ## Forces conservatives usuelles
+Les démonstrations du caractère conservatif sont en ligne.
+
+```{image} ./images/qr_code/qr_conservatives.png
+:name: qr_conservatives
+:width: 150px
+:align: right
+:target: energetique_ep.html#forces-conservatives-usuelles
+```
 
 ```{margin}
 Attention, la fonction f ne doit dépendre __que de la position de M (coordonnées), pas des dérivées de la position__.

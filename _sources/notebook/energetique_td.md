@@ -158,4 +158,14 @@ Deux ressorts:
 $E_p = -mgR \sin\theta + mgR$, la seule position d'équilibre est en $\pi/2$
 ````
 
+````{list-table} Corrigé des exercices d'entrainement
+:header-rows: 1
 
+* - __Exercices d'entrainement__
+* - ```{image} ./images/qr_code/qr_energie_td.png
+    :name: qr_energie_td.png
+    :width: 150px
+    :align: right
+    :target: energetique_td.html
+    ```
+````

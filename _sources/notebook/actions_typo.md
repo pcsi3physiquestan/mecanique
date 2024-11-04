@@ -55,7 +55,7 @@ Par abus de langage (quasi systématique), on parle de moment d'une force et non
 
 Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$ modélisée par une force $\overrightarrow{F_{ext \to A}}$ et un point d'application A.
 
-Soit un point B de l'espace. On définit le moment $\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})$ de l'action $\mathfrak{A}_{1 \to 2}$ par rapport au point B par:
+Soit un point B __arbitraire__ de l'espace. On définit le moment $\overrightarrow{M_B}(\mathfrak{A}_{1 \to 2})$ de l'action $\mathfrak{A}_{1 \to 2}$ par rapport au point B par:
 
 $$
 \overrightarrow{M_B}\left(\mathfrak{A}_{1 \to 2}\right) = \overrightarrow{BA} \wedge \overrightarrow{F_{ext \to A}}
@@ -66,7 +66,7 @@ $$
 
 Soit une action ponctuelle $\mathfrak{A}_{1 \to 2}$ d'un système $\Sigma_1$ sur un système $\Sigma_2$ modélisée par une force $\overrightarrow{F}$ et un point d'application A.
 
-Soit un axe $\Delta$ orienté par un vecteur unitaire $\overrightarrow{u_{\Delta}}$. On définit le moment $M_{\Delta}(\mathfrak{A}_{1 \to 2})$ de l'action $\mathfrak{A}_{1 \to 2}$ par rapport à l'axe $\Delta$ par:
+Soit un axe __arbitraire__ $\Delta$ orienté par un vecteur unitaire $\overrightarrow{u_{\Delta}}$. On définit le moment $M_{\Delta}(\mathfrak{A}_{1 \to 2})$ de l'action $\mathfrak{A}_{1 \to 2}$ par rapport à l'axe $\Delta$ par:
 
 $$
 M_{\Delta}\left(\mathfrak{A}_{1 \to 2}\right) = \overrightarrow{u_{\Delta}} \cdot \overrightarrow{M_{B}}\left(\mathfrak{A}_{1 \to 2}\right) = \overrightarrow{u_{\Delta}} \cdot \left(\overrightarrow{BA} \wedge \overrightarrow{F}\right)
@@ -79,6 +79,12 @@ Ne pas confondre moment d'une action et moment cinétique. Ils n'ont même pas l
 ````
 
 ### Moment d'une action: Interprétation (en ligne)
+```{image} ./images/qr_code/qr_actions_moment.png
+:name: qr_actions_moment
+:width: 150px
+:align: right
+:target: actions_typo.html#moment-d-une-action-interpretation-en-ligne
+```
 
 ````{topic} Interprétation du moment d'une action par rapport à un axe.
 >Dans toute la suite on travaillera implicitement dans un référentiel $\mathfrak{R}$.
@@ -123,12 +129,14 @@ On retiendra que le moment d'une action sur un axe $\Delta$ donne la __tendance_
 
 
 ## Actions ponctuelles usuelles
-
 _Nous allons présenter ici les actions usuelles dont les caractéristiques des forces doivent être connues. Il s'agit pour la plupart d'action ponctuelle s'exerçant sur des points matériels, il ne sera donc en général pas précisé le point d'application parce qu'il est alors évident._
+
+```{topic} Introduction
 
 On distingue les interactions à distance et les interactions de contact. 
 * Les premières regroupent des interactions fondamentales (gravitation et électromagnétisme) et des dérivées (pesanteur). 
 * Les secondes, représentent des actions résultant de multiples actions (principalement électrostatiques) à l'échelle microscopique. On parle aussi d'actions surfaciques puisque les actions microscopiques se font en surface. _Il s'agit donc d'action globales mais dans certains cas, on peut les assimiler à des actions ponctuelles: quand le contact se fait sur une surface très petite (qu'on peut considérer à un point) ou quand on assimile le système à un point matériel._
+```
 
 ### Actions à distance
 
@@ -175,7 +183,7 @@ Dans la seconde expression, r est la distance $M_1 M_2$ et $\overrightarrow{u_{1
 ````
 
 ```{sidebar} Intérêt
-Le champ de gravitation permet de séparer la cause (présence d'une masse) de la conséquence (action sur une autre masse). Cela devient très utile quand on travaille avec non plus des points mais des __systèmes de points matériels__ qui créent le champ de gravitation. Ce dernier étant la somme (possiblement continue = intégrale !) des champ de gravitation créé par chaque points du système, on peut séparément calculer le champ de gravitation puis dans un second temps calculer l'action sur un système (un point - action ponctuelle ou un système de points - action résultante de l'ensemble des action gravitationnelle sur chaque point du système).
+Le champ de gravitation permet de séparer la cause (présence d'une masse) de la conséquence (action sur une autre masse). Cela devient très utile quand on travaille avec non plus des points mais des __systèmes de points matériels__ qui créent le champ de gravitation.
 ```
 ````{important} __Champ de gravitation__
 
@@ -206,9 +214,7 @@ Dans la seconde expression, r est la distance $M_1 M_2$ et $\overrightarrow{u_{1
 ````
 
 ```{sidebar} Intérêt
-Le champ électrique permet, comme le champ de gravitation, de séparer la cause (présence d'une charge) de la conséquence (action sur une autre charge). Cela devient très utile quand on travaille avec non plus des points mais des __systèmes de points matériels chargés__ qui créent le champ électrique. Ce dernier étant la somme (possiblement continue = intégrale !) des champs électrique créé par chaque points du système, on peut séparément calculer le champ électrique puis dans un second temps calculer l'action sur un système (un point - action ponctuelle ou un système de points - action résultante de l'ensemble des action gravitationnelle sur chaque point du système).
-
-Comme cela a été évoqué dans précédemment, les champs (et notamment le champ électrique) peut être étudié pour lui-même sans tenir compte de la cause de ce champ électrique. C'est le cas des ondes électromagnétiques.
+Le champ électrique permet, comme le champ de gravitation, de séparer la cause (présence d'une charge) de la conséquence (action sur une autre charge). Cela devient très utile quand on travaille avec non plus des points mais des __systèmes de points matériels chargés__ qui créent le champ électrique.On peut alors calculer séparément le champ électrique et l'action de ce dernier sur un système.
 ```
 ````{important} __Champ électrique__
 
@@ -224,13 +230,13 @@ Si l'on place en un point P un point matériel $M_2$ de charge $q_2$, alors le p
 
 #### Pesanteur sur un point matériel
 
+```{sidebar} Gravitation et pesanteur
+Le champ de pesanteur résulte de l'action gravitationnelle de la Terre sur le point M et de l'effet de rotation du référentiel terrestre (rotation de la Terre sur elle-même). Comme c'est l'action gravitationnelle qui prédomine au voisinage de la surface terrestre (cf. deuxième année), on confond souvent la pesanteur à la gravitation.
+```
 ````{important} __Champ de pesanteur__
 
 A la surface de la Terre, tout corps massique est attiré vers "le bas" par une action appelée poids. Pour un point matériel M de masse m, la force qui s'applique s'écrit $\overrightarrow{P} = m \overrightarrow{g}$ où $\overrightarrow{g}$ est le champ de pesanteur au point M. Il est dirigé vers "le bas" (en réalité, il permet de définir la verticale (principe du fil à plomb)).
 
-```{margin} Gravitation et pesanteur
-Le champ de pesanteur résulte de l'action gravitationnelle de la Terre sur le point M et de l'effet de rotation du référentiel terrestre (rotation de la Terre sur elle-même). Comme c'est l'action gravitationnelle qui prédomine au voisinage de la surface terrestre (cf. deuxième année), on confond souvent la pesanteur à la gravitation.
-```
 ````
 
 ### Actions de contact

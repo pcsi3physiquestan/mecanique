@@ -17,6 +17,14 @@ kernelspec:
 
 _Il est délicat de visualiser les propriétés précédentes et d'autres que nous allons voir pour des systèmes à multiples degrés de liberté car on ne peut avoir de représentation graphique simple de l'énergie potentielle. Par contre, pour un système à 1 degré de liberté, les représentations sont possibles. Nous allons travailler sur un tel système qui sera très présent en physique._
 
+_Plusieurs éléments d'explications graphiques et d'exemples sont disponibles en ligne._
+
+```{image} ./images/qr_code/qr_energie_conservatif.png
+:name: qr_energie_conservatif
+:width: 150px
+:align: right
+:target: energetique_conserv_1d.html
+```
 
 ## Système à 1 degré de liberté et profil
 

@@ -42,7 +42,7 @@ Lorsque nous travaillerons à des systèmes de points matériels, nous verrons q
 
 Un moment cinétique se calcule par rapport à un A de l'espace (pas nécessairement le centre du repère). Il est important de le préciser car l'expression du moment cinétique __dépend du point considéré__. Celà devient évident lorsqu'on donne un sens (cf. suite) au moment cinétique.
 
-On peut calculerun moment cinétique par rapport à un point fixe ou non fixe dans le référentiel considéré. En physique, on se limitera à l'utilisation d'un point fixe de manière à pouvoir appliquer les théorème fondamentaux.
+On peut calculer un moment cinétique par rapport à un point fixe ou non fixe dans le référentiel considéré. En physique, on se limitera à l'utilisation d'un point fixe de manière à pouvoir appliquer les théorème fondamentaux.
 ````
 ````{important} __Moment cinétique par rapport à un point.__
 
@@ -73,7 +73,7 @@ __Scalaire et vecteur__
 Le moment cinétique par rapport à un point est un __vecteur__ et le moment cinétique par rapport à un axe est un __scalaire__. Il est important de faire cette différence.
 ````
 
-### Moment cinétique: Interprétation
+### Moment cinétique: Interprétation (en ligne)
 
 ````{topic} Interprétation du moment cinétique par rapport à un axe
 >Dans toute la suite on travaillera implicitement dans un référentiel $\mathfrak{R}$.

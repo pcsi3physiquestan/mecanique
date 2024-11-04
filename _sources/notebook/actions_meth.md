@@ -14,6 +14,12 @@ kernelspec:
   name: python3
 ---
 # Méthodes : Actions
+```{image} ./images/qr_code/qr_actions_meth.png
+:name: qr_actions_meth
+:width: 150px
+:align: right
+:target: actions_meth.html
+```
 ## Forces et mouvement.
 _On se propose d'étudier qualitativement l'effet d'une action sans utiliser les théorèmes._
 
