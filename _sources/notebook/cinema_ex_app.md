@@ -32,22 +32,25 @@ Une barre rectiligne AB de longueur fixe $2b$ se déplace dans le référentiel 
 
 On note $\phi$ l'angle $(\overrightarrow{IO}, \overrightarrow{IB})$.
 
-```{figure} ./images/td_regle.jpg
-:name: fig_225
-:align: center
-```
+````{list-table} Modélisation du problème
 
-```{figure} ./images/td_regl_e2.jpg
-:name: fig_226
-:align: center
-```
+* - ```{figure} ./images/td_regle.jpg
+    :name: fig_225
+    :align: center
+    ```
+  - ```{figure} ./images/td_regl_e2.jpg
+    :name: fig_226
+    :align: center
+    ```
+````
+
 
 1. Déterminer la durée T du mouvement 
-1. Déterminer une relation simple entre $\phi$ et $\theta$. 
-1. Etablir les expressions en fonction du temps $t$ des coordonnées polaires $r$ et $\theta$ de B (cf. Figure).
-1. Déterminer l'angle $\alpha=(\overrightarrow{AO}, \overrightarrow{AB})$ en fonction de $\omega$ et $t$.
-1. Calculer les coordonnées cylindriques $(R, \Theta)$ puis cartésiennes $X,Y$ et $Z$ du milieu J de la barre. 
-1. Déterminer la vitesse $\overrightarrow{v_J}$ et l'accélération $\overrightarrow{a_J}$ de J, ainsi que leur normes.
+2. Déterminer une relation simple entre $\phi$ et $\theta$. 
+3. Etablir les expressions en fonction du temps $t$ des coordonnées polaires $r$ et $\theta$ de B (cf. Figure).
+4. Déterminer l'angle $\alpha=(\overrightarrow{AO}, \overrightarrow{AB})$ en fonction de $\omega$ et $t$.
+5. Calculer les coordonnées cylindriques $(R, \Theta)$ puis cartésiennes $X,Y$ et $Z$ du milieu J de la barre. 
+6. Déterminer la vitesse $\overrightarrow{v_J}$ et l'accélération $\overrightarrow{a_J}$ de J, ainsi que leur normes.
 ````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Trigonométrie._

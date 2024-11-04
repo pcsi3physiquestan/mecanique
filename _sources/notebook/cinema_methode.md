@@ -17,7 +17,7 @@ kernelspec:
 ```{figure} ./images/qr_code/qr_cinema_meth.png
 :name: qr_cinema_meth
 :width: 150px
-:align: right
+:align: center
 :target: cinema_methode.html
 ```
 

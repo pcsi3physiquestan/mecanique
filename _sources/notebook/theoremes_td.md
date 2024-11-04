@@ -85,8 +85,8 @@ Immobilisation à $z_e = -\frac{mg}{k} - l_0$
 
 ```{figure} ./images/meca_td_cascade.jpg
 :name: fig_238
-:align: center
-
+:align: right
+:width: 100px
 ```
 
 Une automobile, assimilée à un point matériel, circule à la vitesse v uniforme, sur une piste au profil accidenté. Elle franchit une bosse (cf. Figure)), modélisée par deux portions rectilignes raccordés par un arc de cercle de rayon $l$, de centre O et d'ouverture angulaire $2 \alpha$.

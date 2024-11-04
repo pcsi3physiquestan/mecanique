@@ -82,7 +82,7 @@ Ne pas confondre moment d'une action et moment cinétique. Ils n'ont même pas l
 ```{image} ./images/qr_code/qr_actions_moment.png
 :name: qr_actions_moment
 :width: 150px
-:align: right
+:align: center
 :target: actions_typo.html#moment-d-une-action-interpretation-en-ligne
 ```
 
