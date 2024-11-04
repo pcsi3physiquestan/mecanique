@@ -198,7 +198,7 @@ Un mouvement uniforme n'est pas forcément rectiligne, le vecteur vitesse peut c
 ```{figure} ./images/qr_code/qr_cinema_demo_acc_vit.png
 :name: qr_cinema_demo_acc_vit
 :width: 150px
-:align: right
+:align: left
 :target: cinema_point.html#relation-geometrique-entre-vitesse-et-acceleration
 ```
 * Dans un mouvement uniforme, le vecteur accélération est soit nul, soit perpendiculaire au vecteur vitesse.
