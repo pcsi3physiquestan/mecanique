@@ -44,8 +44,8 @@ On considère le dispositif suivant où un objet assimilable à un point matéri
 
 ```{figure} ./images/energetique_piste_anneau.jpeg
 :name: fig_247
-:align: center
-
+:align: right
+:width: 150px
 ```
 
 1. Exprimer l'énergie potentielle de pesanteur $E_p(\theta)$ de M en supposant $E_p = 0$ au point $B(\theta = \pi)$. On distinguera les cas (1) et (2). 
@@ -163,7 +163,7 @@ $E_p = -mgR \sin\theta + mgR$, la seule position d'équilibre est en $\pi/2$
 
 * - __Exercices d'entrainement__
 * - ```{image} ./images/qr_code/qr_energie_td.png
-    :name: qr_energie_td.png
+    :name: qr_energie_td
     :width: 150px
     :align: right
     :target: energetique_td.html
