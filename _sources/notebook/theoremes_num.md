@@ -32,7 +32,7 @@ On considère un pendule simple de longueur $l = 1 \rm{m}$ dans un champ de pesa
 >     * La période $T = \frac{2\delta t}{N-1}$
 > 4. \*Tracer la période des oscillations du pendule pour des angles entre $alph = 10 ^{\circ}$ et $alph = 150 ^{\circ}$ par pas de $10 ^{\circ}$. Analyser.
 
-```{topic}
+```{topic} Mise en équation
 En posant le vecteur :
 
 $$
