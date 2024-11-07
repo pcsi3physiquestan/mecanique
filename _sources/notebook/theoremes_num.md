@@ -143,8 +143,6 @@ Soumis de plus à la pesanteur $g = 9.81 \rm{m.s^{-2}}$, l'étude théorique de 
 > 4. Ecrire une fonction `portee(alph:float)` qui renvoie la portée estimée du tir pour un angle `alph`.
 > 5. Tracer la portée du tir en fonction de l'angle $alph$ et déterminer la gamme d'angle acceptable pour un retour de fond de court où la portée doit être entre 9m et 12m.
 
-```{dropdown}
-
 ````{topic} Mise en équation
 En posant le vecteur :
 

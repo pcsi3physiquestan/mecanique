@@ -589,16 +589,9 @@ Y(t) =
 <li><p>Tracer la portée du tir en fonction de l’angle <span class="math notranslate nohighlight">\(alph\)</span> et déterminer la gamme d’angle acceptable pour un retour de fond de court où la portée doit être entre 9m et 12m.</p></li>
 </ol>
 </div></blockquote>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
 <aside class="topic">
 <p class="topic-title">Mise en équation</p>
-<p class="sd-card-text">En posant le vecteur :</p>
+<p>En posant le vecteur :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 Y(t) = 
@@ -609,7 +602,7 @@ Y(t) =
     \dot z(t)
 \end{matrix}
 \end{split}\]</div>
-<p class="sd-card-text">On obtient le système d’équations:</p>
+<p>On obtient le système d’équations:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \dot Y(t) =
@@ -620,99 +613,121 @@ Y(t) =
     - g - \frac{1}{2m}\rho \pi R^2 C_x \sqrt{\dot x(t)^2 + \dot z(t)^2}\dot z(t)
 \end{matrix}
 \end{split}\]</div>
-</aside>
-</div>
-</details><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-```{code-cell}
-:tags: [hide-input, remove-output]
-
-
-&quot;&quot;&quot;
-Les bibliothèques scientifiques ne sont pas importées
-car elles ont été importées pour l&#39;exercice précédent.
-&quot;&quot;&quot;
-
-def f_bad(t, Y):  # Y est un vecteur de taille 2
-    g = 9.81
-    Cx = 0.65
-    rho = 1.29
-    R = 3.4e-2
-    m = 5.3e-3
-    coef = -1/(2 * m) * rho * Cx * pi * R ** 2
-    v = sqrt(Y[2] ** 2 + Y[3]**2)
-    return np.array([Y[2], Y[3], coef * v * Y[2], -g + coef * v * Y[3]])
-
-def euler(f, v0, alpha, pas):
-    h0 = 2  # Hauteur de départ
-    Y0 = array([0, h0, v0 * cos(alpha), v0 * sin(alpha)])  # Vecteur numpy pour faciliter les opérations mathématiques
-    tk = [0]
-    yk = [Y0]
-    while yk[-1][1]&gt;=0:
-        yk.append(yk[-1] + pas * f(tk[-1], yk[-1]))
-        tk.append(tk[-1] + pas)
-    return array(yk)
-
-
-V0 = 60
-alpha0 = 45 / 180 * pi
-pas = 1e-2
-yk = euler(f_bad, V0, alpha0, pas)
-plot(yk[:, 0], yk[:,1])
-xlabel(&#39;x(m)&#39;)
-ylabel(&#39;z(m)&#39;)
-grid()
-```
-
-```{code-cell}
-:tags: [hide-input, remove-output]
-def portee(alph):
-    V0 = 60
-    pas = 1e-2
-    yk = euler(f_bad, V0, alph, pas)
-    return yk[-1, 0]  # La portée est la dernière valeur de x.
-
-alphs = np.arange(5, 90, 5)  # Angle en degrés de 5 à 85 degrés
-alphrs = alphs /180 * pi  # Passage en radians
-
-portees = []
-for alph in alphrs:
-    portees.append(portee(alph))
-
-plot(alphs, portees)
-xlabel(&#39;angle(degre)&#39;)
-ylabel(&#39;portee(m)&#39;)
-grid()
-```
-
-```{code-cell}
-:tags: [hide-input, remove-output]
-&quot;&quot;&quot;
-Le tracé précédent montre qu&#39;on ne dépassera pas 12m, on cherche donc à être en dessus de 9m
-&quot;&quot;&quot;
-&quot;&quot;&quot;On va réaliser une dichotomie
-mais basée sur les indices des angles&quot;&quot;&quot;
-imin = 0
-imax = len(portees) - 1
-
-while (imax-imin) &gt; 1: # On se ramène à deux indices possibles
-    imid = int((imax+imin) / 2)  # On prend l&#39;indice médian, c&#39;est un entier
-    if portees[imid] == 9:
-        imax = imid
-        imin = imid
-    elif portees[imid] &gt; 9: # La portée voulu est dans la partie droite
-        imin = imid
-    else:
-        imax = imid
-
-print(alphs[imax], portees[imax])
-print(alphs[imin], portees[imin])
-
-&quot;&quot;&quot;On doit donc tirer entre 0 et 45°&quot;&quot;&quot;
-&quot;&quot;&quot;
-NOTE : En pratique, il faudrait aussi vérifier que le volant passe le filet
-&quot;&quot;&quot;
-```
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
+</div>
+</aside>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Les bibliothèques scientifiques ne sont pas importées</span>
+<span class="sd">car elles ont été importées pour l&#39;exercice précédent.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="k">def</span> <span class="nf">f_bad</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">Y</span><span class="p">):</span>  <span class="c1"># Y est un vecteur de taille 2</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+    <span class="n">Cx</span> <span class="o">=</span> <span class="mf">0.65</span>
+    <span class="n">rho</span> <span class="o">=</span> <span class="mf">1.29</span>
+    <span class="n">R</span> <span class="o">=</span> <span class="mf">3.4e-2</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="mf">5.3e-3</span>
+    <span class="n">coef</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">Cx</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">R</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">Y</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">coef</span> <span class="o">*</span> <span class="n">v</span> <span class="o">*</span> <span class="n">Y</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="o">-</span><span class="n">g</span> <span class="o">+</span> <span class="n">coef</span> <span class="o">*</span> <span class="n">v</span> <span class="o">*</span> <span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
+
+<span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">pas</span><span class="p">):</span>
+    <span class="n">h0</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># Hauteur de départ</span>
+    <span class="n">Y0</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">h0</span><span class="p">,</span> <span class="n">v0</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">alpha</span><span class="p">),</span> <span class="n">v0</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">alpha</span><span class="p">)])</span>  <span class="c1"># Vecteur numpy pour faciliter les opérations mathématiques</span>
+    <span class="n">tk</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">yk</span> <span class="o">=</span> <span class="p">[</span><span class="n">Y0</span><span class="p">]</span>
+    <span class="k">while</span> <span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">yk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pas</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">tk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="n">tk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pas</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">array</span><span class="p">(</span><span class="n">yk</span><span class="p">)</span>
+
+
+<span class="n">V0</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">alpha0</span> <span class="o">=</span> <span class="mi">45</span> <span class="o">/</span> <span class="mi">180</span> <span class="o">*</span> <span class="n">pi</span>
+<span class="n">pas</span> <span class="o">=</span> <span class="mf">1e-2</span>
+<span class="n">yk</span> <span class="o">=</span> <span class="n">euler</span><span class="p">(</span><span class="n">f_bad</span><span class="p">,</span> <span class="n">V0</span><span class="p">,</span> <span class="n">alpha0</span><span class="p">,</span> <span class="n">pas</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">yk</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">yk</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x(m)&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;z(m)&#39;</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">portee</span><span class="p">(</span><span class="n">alph</span><span class="p">):</span>
+    <span class="n">V0</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">pas</span> <span class="o">=</span> <span class="mf">1e-2</span>
+    <span class="n">yk</span> <span class="o">=</span> <span class="n">euler</span><span class="p">(</span><span class="n">f_bad</span><span class="p">,</span> <span class="n">V0</span><span class="p">,</span> <span class="n">alph</span><span class="p">,</span> <span class="n">pas</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">yk</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># La portée est la dernière valeur de x.</span>
+
+<span class="n">alphs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Angle en degrés de 5 à 85 degrés</span>
+<span class="n">alphrs</span> <span class="o">=</span> <span class="n">alphs</span> <span class="o">/</span><span class="mi">180</span> <span class="o">*</span> <span class="n">pi</span>  <span class="c1"># Passage en radians</span>
+
+<span class="n">portees</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">alph</span> <span class="ow">in</span> <span class="n">alphrs</span><span class="p">:</span>
+    <span class="n">portees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">portee</span><span class="p">(</span><span class="n">alph</span><span class="p">))</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">alphs</span><span class="p">,</span> <span class="n">portees</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;angle(degre)&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;portee(m)&#39;</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Le tracé précédent montre qu&#39;on ne dépassera pas 12m, on cherche donc à être en dessus de 9m</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&quot;&quot;&quot;On va réaliser une dichotomie</span>
+<span class="sd">mais basée sur les indices des angles&quot;&quot;&quot;</span>
+<span class="n">imin</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">imax</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">portees</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">imax</span><span class="o">-</span><span class="n">imin</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># On se ramène à deux indices possibles</span>
+    <span class="n">imid</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">imax</span><span class="o">+</span><span class="n">imin</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># On prend l&#39;indice médian, c&#39;est un entier</span>
+    <span class="k">if</span> <span class="n">portees</span><span class="p">[</span><span class="n">imid</span><span class="p">]</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
+        <span class="n">imax</span> <span class="o">=</span> <span class="n">imid</span>
+        <span class="n">imin</span> <span class="o">=</span> <span class="n">imid</span>
+    <span class="k">elif</span> <span class="n">portees</span><span class="p">[</span><span class="n">imid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span> <span class="c1"># La portée voulu est dans la partie droite</span>
+        <span class="n">imin</span> <span class="o">=</span> <span class="n">imid</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">imax</span> <span class="o">=</span> <span class="n">imid</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">alphs</span><span class="p">[</span><span class="n">imax</span><span class="p">],</span> <span class="n">portees</span><span class="p">[</span><span class="n">imax</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alphs</span><span class="p">[</span><span class="n">imin</span><span class="p">],</span> <span class="n">portees</span><span class="p">[</span><span class="n">imin</span><span class="p">])</span>
+
+<span class="sd">&quot;&quot;&quot;On doit donc tirer entre 0 et 45°&quot;&quot;&quot;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">NOTE : En pratique, il faudrait aussi vérifier que le volant passe le filet</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</details>
 </div>
 </section>
 </section>
