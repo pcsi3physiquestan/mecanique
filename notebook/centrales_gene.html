@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5.1.1. Généralités &#8212; Mécanique</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>5.1.1. Généralités &#8212; Mécanique</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,58 +64,98 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/centrales_gene';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mecanique/notebook/centrales_gene.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="5.1.2. Potentiels newtoniens" href="centrales_newtoniens.html" />
     <link rel="prev" title="5.1. Comprendre le contexte" href="centrales_contxt.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Mécanique</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../mecanique.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Mécanique</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,838 +165,320 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="cinematique.html">
-   1. Cinématique et cinétique du point
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinema_contxt.html">
-     1.1. Comprendre le contexte.
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_point.html">
-       1.1.1. Cinématique du point
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinetique_point.html">
-       1.1.2. Cinétique du point
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="cinema_ex.html">
-     1.2. S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-    <label for="toctree-checkbox-3">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_methode.html">
-       1.2.1. Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_activite.html">
-       1.2.2. Activités - Mouvement circulaire
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_ex_app.html">
-       1.2.3. Exercices d’application
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="cinema_td.html">
-       1.2.4. Entrainement : Cinématique du point
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="dynamique.html">
-   2. Dynamique du point matériel
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="dynamique_contxt.html">
-     2.1. Comprendre le contexte.
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-    <label for="toctree-checkbox-5">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="actions.html">
-       2.1.1. Description des actions mécaniques ponctuelles
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-      <label for="toctree-checkbox-6">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="actions_typo.html">
-         2.1.1.3. Action ponctuelle: Modélisation et typologie
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="theoremes.html">
-       2.1.2. Théorèmes fondamentaux de la mécanique classique
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-      <label for="toctree-checkbox-7">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="theoremes_newton.html">
-         2.1.2.1. Lois de Newton et conséquences
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="theoremes_tmc.html">
-         2.1.2.2. Théorème du moment cinétique
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="dynamique_ex.html">
-     2.2. S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="actions_meth.html">
-       2.2.1. Méthodes : Actions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_meth.html">
-       2.2.2. Méthodes : Applications des théorèmes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_ex_app.html">
-       2.2.3. Applications
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_td.html">
-       2.2.4. Entrainement
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="theoremes_num.html">
-       2.2.5. Méthodes numériques
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="energetique.html">
-   3. Approche énérgétique
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_contxt.html">
-     3.1. Comprendre le contexte
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="energetique_gene.html">
-       3.1.1. Théorèmes énergétiques
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-      <label for="toctree-checkbox-11">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_travail.html">
-         3.1.1.1. Travail et puissance des actions mécaniques
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_ep.html">
-         3.1.1.2. Forces/actions conservatives et énergie potentielle
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_theoremes.html">
-         3.1.1.3. Théorèmes énergétiques
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="energetique_conservatifs.html">
-       3.1.2. Systèmes conservatifs
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-      <label for="toctree-checkbox-12">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="energetique_conserv_1d.html">
-         3.1.2.1. Système à 1 degré de liberté
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="energetique_ex.html">
-     3.2. S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label for="toctree-checkbox-13">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_exemples.html">
-       3.2.1. Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_ex_app.html">
-       3.2.2. Exercices d’application
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="energetique_td.html">
-       3.2.3. Entrainement
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="applications.html">
-   4. Applications
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="oscillateurs.html">
-     4.1. Oscillateurs
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_equation.html">
-       4.1.1. Mise en équation
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_harmonique.html">
-       4.1.2. Oscillateur harmonique
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_amorti.html">
-       4.1.3. Oscillateur amorti
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_forces.html">
-       4.1.4. Oscillations forcées
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="oscillateurs_td.html">
-       4.1.5. Entrainement : Oscillateurs
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pendules.html">
-     4.2. Etude des pendules
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="centrales.html">
-   5. Mouvement à force centrales
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-  <label for="toctree-checkbox-16">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="centrales_contxt.html">
-     5.1. Comprendre le contexte
-    </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-    <label for="toctree-checkbox-17">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul class="current">
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
-       5.1.1. Généralités
-      </a>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="centrales_newtoniens.html">
-       5.1.2. Potentiels newtoniens
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-      <label for="toctree-checkbox-18">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="centrales_newt_mvt.html">
-         5.1.2.1. Etude du mouvement
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="centrales_newt_kepler.html">
-         5.1.2.2. Mouvement des planètes et lois de Kepler
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="centrales_ex.html">
-     5.2. S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-    <label for="toctree-checkbox-19">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_methodes.html">
-       5.2.1. Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_odg.html">
-       5.2.2. Activités : Ordres de grandeur
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_satellites.html">
-       5.2.3. Activités : Mouvement des satellites
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_app.html">
-       5.2.4. Applications
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="centrales_newt_td.html">
-       5.2.5. Entrainement
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="systeme_pts.html">
-   6. Systèmes de points matériels
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_contxt.html">
-     6.1. Connaître le contexte
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-    <label for="toctree-checkbox-21">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="systeme_cinema.html">
-       6.1.1. Cinématique et cinétique des systèmes de points
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-      <label for="toctree-checkbox-22">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="systeme_description.html">
-         6.1.1.1. Description d’un système de points
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="systeme_cinetique.html">
-         6.1.1.2. Cinétique du solide
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="systeme_mouvement.html">
-         6.1.1.3. Mouvements particuliers
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="actions_globales.html">
-       6.1.2. Modélisation des actions globales
-      </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-      <label for="toctree-checkbox-23">
-       <i class="fas fa-chevron-down">
-       </i>
-      </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="actions_g_typo.html">
-         6.1.2.4. Types d’actions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="actions_theoremes.html">
-         6.1.2.5. Théorèmes en mécanique du solide
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="systeme_ex.html">
-     6.2. S’entrainer
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
-    <label for="toctree-checkbox-24">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_methode.html">
-       6.2.1. Méthodes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="rotation.html">
-       6.2.2. Activité : Solide en rotation autour d’un axe fixe
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_app.html">
-       6.2.3. Application
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="systeme_td.html">
-       6.2.4. Entrainement
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="cinematique.html">1. Cinématique et cinétique du point</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="cinema_contxt.html">1.1. Comprendre le contexte.</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinema_point.html">1.1.1. Cinématique du point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinetique_point.html">1.1.2. Cinétique du point</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="cinema_ex.html">1.2. S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinema_methode.html">1.2.1. Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinema_activite.html">1.2.2. Activités - Mouvement circulaire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinema_ex_app.html">1.2.3. Exercices d’application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinema_td.html">1.2.4. Entrainement : Cinématique du point</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="dynamique.html">2. Dynamique du point matériel</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="dynamique_contxt.html">2.1. Comprendre le contexte.</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="actions.html">2.1.1. Description des actions mécaniques ponctuelles</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="actions_typo.html">2.1.1.3. Action ponctuelle: Modélisation et typologie</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="theoremes.html">2.1.2. Théorèmes fondamentaux de la mécanique classique</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="theoremes_newton.html">2.1.2.1. Lois de Newton et conséquences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="theoremes_tmc.html">2.1.2.2. Théorème du moment cinétique</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="dynamique_ex.html">2.2. S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="actions_meth.html">2.2.1. Méthodes : Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_meth.html">2.2.2. Méthodes : Applications des théorèmes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_ex_app.html">2.2.3. Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_td.html">2.2.4. Entrainement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theoremes_num.html">2.2.5. Méthodes numériques</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="energetique.html">3. Approche énérgétique</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="energetique_contxt.html">3.1. Comprendre le contexte</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="energetique_gene.html">3.1.1. Théorèmes énergétiques</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="energetique_travail.html">3.1.1.1. Travail et puissance des actions mécaniques</a></li>
+<li class="toctree-l4"><a class="reference internal" href="energetique_ep.html">3.1.1.2. Forces/actions conservatives et énergie potentielle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="energetique_theoremes.html">3.1.1.3. Théorèmes énergétiques</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="energetique_conservatifs.html">3.1.2. Systèmes conservatifs</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="energetique_conserv_1d.html">3.1.2.1. Système à 1 degré de liberté</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="energetique_ex.html">3.2. S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="energetique_exemples.html">3.2.1. Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="energetique_ex_app.html">3.2.2. Exercices d’application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="energetique_td.html">3.2.3. Entrainement</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="applications.html">4. Applications</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="oscillateurs.html">4.1. Oscillateurs</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_equation.html">4.1.1. Mise en équation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_harmonique.html">4.1.2. Oscillateur harmonique</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_amorti.html">4.1.3. Oscillateur amorti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_forces.html">4.1.4. Oscillations forcées</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oscillateurs_td.html">4.1.5. Entrainement : Oscillateurs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pendules.html">4.2. Etude des pendules</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="centrales.html">5. Mouvement à force centrales</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="centrales_contxt.html">5.1. Comprendre le contexte</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">5.1.1. Généralités</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="centrales_newtoniens.html">5.1.2. Potentiels newtoniens</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="centrales_newt_mvt.html">5.1.2.1. Etude du mouvement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="centrales_newt_kepler.html">5.1.2.2. Mouvement des planètes et lois de Kepler</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="centrales_ex.html">5.2. S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="centrales_methodes.html">5.2.1. Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centrales_newt_odg.html">5.2.2. Activités : Ordres de grandeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centrales_newt_satellites.html">5.2.3. Activités : Mouvement des satellites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centrales_app.html">5.2.4. Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="centrales_newt_td.html">5.2.5. Entrainement</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="systeme_pts.html">6. Systèmes de points matériels</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="systeme_contxt.html">6.1. Connaître le contexte</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="systeme_cinema.html">6.1.1. Cinématique et cinétique des systèmes de points</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="systeme_description.html">6.1.1.1. Description d’un système de points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="systeme_cinetique.html">6.1.1.2. Cinétique du solide</a></li>
+<li class="toctree-l4"><a class="reference internal" href="systeme_mouvement.html">6.1.1.3. Mouvements particuliers</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="actions_globales.html">6.1.2. Modélisation des actions globales</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="actions_g_typo.html">6.1.2.4. Types d’actions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="actions_theoremes.html">6.1.2.5. Théorèmes en mécanique du solide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="systeme_ex.html">6.2. S’entrainer</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="systeme_methode.html">6.2.1. Méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rotation.html">6.2.2. Activité : Solide en rotation autour d’un axe fixe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="systeme_app.html">6.2.3. Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="systeme_td.html">6.2.4. Entrainement</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/centrales_gene.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/centrales_gene.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/centrales_gene.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/centrales_gene.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition">
-   5.1.1.1. Définition
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conservation-du-moment-cinetique">
-   5.1.1.2. Conservation du moment cinétique
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cas-conservatifs">
-   5.1.1.3. Cas conservatifs
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     5.1.1.3.1. Généralités
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#energie-potentielle-effective">
-     5.1.1.3.2. Energie potentielle effective
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analyse-semi-qualitatives">
-     5.1.1.3.3. Analyse semi-qualitatives
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#positivite-de-l-energie-cinetique">
-       5.1.1.3.3.1. Positivité de l’énergie cinétique
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#caracteristiques-autres">
-       5.1.1.3.3.2. Caractéristiques autres
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Généralités</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition">
-   5.1.1.1. Définition
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conservation-du-moment-cinetique">
-   5.1.1.2. Conservation du moment cinétique
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cas-conservatifs">
-   5.1.1.3. Cas conservatifs
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     5.1.1.3.1. Généralités
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#energie-potentielle-effective">
-     5.1.1.3.2. Energie potentielle effective
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analyse-semi-qualitatives">
-     5.1.1.3.3. Analyse semi-qualitatives
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#positivite-de-l-energie-cinetique">
-       5.1.1.3.3.1. Positivité de l’énergie cinétique
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#caracteristiques-autres">
-       5.1.1.3.3.2. Caractéristiques autres
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Généralités</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">5.1.1.1. Définition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-du-moment-cinetique">5.1.1.2. Conservation du moment cinétique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-conservatifs">5.1.1.3. Cas conservatifs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.1.1.3.1. Généralités</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energie-potentielle-effective">5.1.1.3.2. Energie potentielle effective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-semi-qualitatives">5.1.1.3.3. Analyse semi-qualitatives</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#positivite-de-l-energie-cinetique">5.1.1.3.3.1. Positivité de l’énergie cinétique</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques-autres">5.1.1.3.3.2. Caractéristiques autres</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="generalites">
-<h1><span class="section-number">5.1.1. </span>Généralités<a class="headerlink" href="#generalites" title="Permalink to this headline">#</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="generalites">
+<h1><span class="section-number">5.1.1. </span>Généralités<a class="headerlink" href="#generalites" title="Permalink to this heading">#</a></h1>
 <p><em>Dans tout le chapitre, le système sera un point matériel noté M.</em></p>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">Intérêt</p>
 <p>Les intégrales premières du mouvement sont extrêmement importantes car elles permettent d’établir des équations d’ordre 1. On peut alors utiliser comme conditions initiales, non pas les données de positions et de vitesses mais les valeurs de ces intégrales premières du mouvement.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Rappel : Intégrale première du mouvement</p>
 <p>Une intégrale première du mouvement est une grandeur dépendant de la position et de sa dérivée temporelle et qui est constante au cours du mouvement.</p>
 <blockquote>
 <div><p>On a vu que pour un système conservatif, l’énergie mécanique, qui ne dépend que de la vitesse (par l’énergie cinétique) et de la position (par l’énergie potentielle) est une intégrale première du mouvement.</p>
 </div></blockquote>
-</div>
-<div class="section" id="definition">
-<h2><span class="section-number">5.1.1.1. </span>Définition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
-<div class="margin sidebar">
+</aside>
+<section id="definition">
+<h2><span class="section-number">5.1.1.1. </span>Définition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Le référentiel sera toujours supposé galiléen.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Mouvement à force centrale</strong></p>
 <p>Un mouvement à force centrale est un mouvement dont la résultante des forces est toujours dirigée vers un même point O fixe dans le référentiel considéré.<br />
 On appelle le point O le <strong>centre de force</strong> car en effet le point O est responsable de la force.</p>
 </div>
-</div>
-<div class="section" id="conservation-du-moment-cinetique">
-<h2><span class="section-number">5.1.1.2. </span>Conservation du moment cinétique<a class="headerlink" href="#conservation-du-moment-cinetique" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="conservation-du-moment-cinetique">
+<h2><span class="section-number">5.1.1.2. </span>Conservation du moment cinétique<a class="headerlink" href="#conservation-du-moment-cinetique" title="Permalink to this heading">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Conservation du moment cinétique</strong></p>
@@ -1005,17 +540,17 @@ d\mathfrak{A} &amp;= \frac{1}{2} \left\vert \overrightarrow{OM}\wedge\overrighta
 <p><strong>Constante des aires</strong></p>
 <p>On définit la constante des aires comme la grandeur <span class="math notranslate nohighlight">\(C = r^2 \dot\theta\)</span>. Dans un mouvement à force centrale, il s’agit évidemment d’une constante et la vitesse aréolaire s’écrit <span class="math notranslate nohighlight">\(\frac{\rm{d}\mathfrak{A}}{\rm{dt}} = \frac{1}{2}C\)</span>.</p>
 </div>
-</div>
-<div class="section" id="cas-conservatifs">
-<h2><span class="section-number">5.1.1.3. </span>Cas conservatifs<a class="headerlink" href="#cas-conservatifs" title="Permalink to this headline">#</a></h2>
-<div class="section" id="id1">
-<h3><span class="section-number">5.1.1.3.1. </span>Généralités<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="cas-conservatifs">
+<h2><span class="section-number">5.1.1.3. </span>Cas conservatifs<a class="headerlink" href="#cas-conservatifs" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h3><span class="section-number">5.1.1.3.1. </span>Généralités<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Force centrale conservatives</strong></p>
 <p>Une force centrale conservative ne dépend que de la coordonnées radiale. On peut donc écrire <span class="math notranslate nohighlight">\(\overrightarrow{F} = F(r) \overrightarrow{e_r}\)</span> et l’énergie potentielle associée <span class="math notranslate nohighlight">\(E_p(r)\)</span> est telle que <span class="math notranslate nohighlight">\(F(r) = - \frac{\rm{d}E_p}{\rm{dr}}(r)\)</span>.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Démonstration</p>
 <blockquote>
 <div><p><strong>Démonstration</strong>
@@ -1025,13 +560,13 @@ La force est uniquement suivant <span class="math notranslate nohighlight">\(\ov
 <div><p><strong>Conservation de l’énergie mécanique</strong>
 La seule force est conservative, donc l’énergie mécanique est une constante: c’est une intégrale première du mouvement. Comme nous l’avons expliqué, nous n’utiliserons que très rarement des données initiales sur la vitesse et la position. Elles seront remplacées par les données de l’énergie mécanique et du moment cinétique qui sont des constantes du mouvement.</p>
 <p>A un instant t quelconque, l’énergie mécanique s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d9c770aa-4fa3-4876-a290-e1a3cebe5e75">
-<span class="eqno">(5.1)<a class="headerlink" href="#equation-d9c770aa-4fa3-4876-a290-e1a3cebe5e75" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1e294063-ff2b-450f-aadb-80938449cefb">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-1e294063-ff2b-450f-aadb-80938449cefb" title="Permalink to this equation">#</a></span>\[\begin{equation}
 E_m = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2 + E_p(r)
 \end{equation}\]</div>
 </div></blockquote>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Interprétation de l’énergie cinétique.</p>
 <p>L’énergie cinétique se réécrit:</p>
 <div class="math notranslate nohighlight">
@@ -1043,11 +578,11 @@ E_c = \frac{1}{2}m \dot r^2 + \frac{1}{2}m r^2 \dot \theta^2
 <li><p>Le premier correspond à l’éloignement/rapprochement du mobile. On l’appelera énergie cinétique radiale.</p></li>
 <li><p>Le second correspond à la rotation du mobile autour de O, on l’appelera énergie cinétique orthoradiale (ou de rotation).</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="energie-potentielle-effective">
-<h3><span class="section-number">5.1.1.3.2. </span>Energie potentielle effective<a class="headerlink" href="#energie-potentielle-effective" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</aside>
+</section>
+<section id="energie-potentielle-effective">
+<h3><span class="section-number">5.1.1.3.2. </span>Energie potentielle effective<a class="headerlink" href="#energie-potentielle-effective" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">But</p>
 <p>Le but est d’éliminer la vitesse angulaire pour n’avoir une énergie mécanique s’exprimant uniquement en fonction du rayon et de sa dérivée temporelle. On introduira alors l’énergie mécanique sous la forme:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -1056,7 +591,7 @@ E_m &amp;= E_{c,r} + E_{p,eff}(r)\\
 &amp;= \frac{1}{2}m \dot r^{2} + E_{p,eff}(r)
 \end{align*}\]</div>
 <p>L’intérêt de pouvoir utiliser la positivité de l’énergie cinétique radiale pour obtenir des informations. Comme nous allons le voir, nous obtiendrons plus d’informations qu’avec la seule positivité de l’énergie cinétique complète.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Expression de l’énergie potentielle effective.</strong></p>
@@ -1076,21 +611,21 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
 \end{align*}\]</div>
 <p>où <span class="math notranslate nohighlight">\(C\)</span> est la constante des aires et <span class="math notranslate nohighlight">\(L_O\)</span> est la composante du moment cinétique.</p>
 </div>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">Barrière de potentiel en r=0</p>
 <p>Le terme ajouté <span class="math notranslate nohighlight">\(\frac{1mC^2}{2r^2}\)</span> tend vers <span class="math notranslate nohighlight">\(+ \infty\)</span> en <span class="math notranslate nohighlight">\(r=0\)</span>. Cela signifie que ce terme énergétique tend à <strong>empêcher le mobile d’atteindre le centre de force</strong> en lui opposant une barrière d’énergie infinie.</p>
 <p>A partir du moment où le mobile tourne, il faudra une énergie potentielle tendant très rapidement vers <span class="math notranslate nohighlight">\(- \infty\)</span>, c’est-à-dire que la force doit être <strong>très</strong> attractive, pour que cette barrière infinie soit compensée et que le centre de force soit accessible. Dans de nombreux cas usuels, la barrière infinie n’est pas compensée.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Interprétation</p>
 <p>Nous allons détailler les caractéristiques qu’on peut déduire de l’énergie potentielle effective mais comme nous l’avons dit, on peut déjà remarquer que <span class="math notranslate nohighlight">\(\frac{1}{2}m \dot r^{2}\)</span> est positif ou nul. Cela implique que <strong>l’énergie potentielle effective est nécessairement inférieure à l’énergie mécanique.</strong></p>
 <p>Comme pour le cas des mouvements conservatifs, cela va interdire certaines zones. Mais cette condition est plus contraignante car l’énergie potentielle effective est plus grande que l’énergie potentielle (le terme d’énergie cinétique orthoradiale est positive - strictement si le moment cinétique est non nul).</p>
-</div>
-</div>
-<div class="section" id="analyse-semi-qualitatives">
-<h3><span class="section-number">5.1.1.3.3. </span>Analyse semi-qualitatives<a class="headerlink" href="#analyse-semi-qualitatives" title="Permalink to this headline">#</a></h3>
-<div class="section" id="positivite-de-l-energie-cinetique">
-<h4><span class="section-number">5.1.1.3.3.1. </span>Positivité de l’énergie cinétique<a class="headerlink" href="#positivite-de-l-energie-cinetique" title="Permalink to this headline">#</a></h4>
+</aside>
+</section>
+<section id="analyse-semi-qualitatives">
+<h3><span class="section-number">5.1.1.3.3. </span>Analyse semi-qualitatives<a class="headerlink" href="#analyse-semi-qualitatives" title="Permalink to this heading">#</a></h3>
+<section id="positivite-de-l-energie-cinetique">
+<h4><span class="section-number">5.1.1.3.3.1. </span>Positivité de l’énergie cinétique<a class="headerlink" href="#positivite-de-l-energie-cinetique" title="Permalink to this heading">#</a></h4>
 <p><em>On rappelle que l’énergie cinétique radiale est nécessairement positive ou nulle. Cela permet de déterminer des zones accessibles. Nous allons préciser ici ce principe en remarquant que les zones accessibles sont un peu particulières. Ici le système est à deux degrés de liberté: sa position radiale et sa position angulaire.</em></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -1100,19 +635,19 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
 <li><p>Si la trajectoire est limitée par un rayon maximal, l’état sera <strong>lié.</strong></p></li>
 <li><p>Si la trajectoire n’est pas limitée par un rayon maximal, l’état sera de <strong>diffusion.</strong></p></li>
 </ul>
-<div class="figure align-center" id="fig-257">
+<figure class="align-center" id="fig-257">
 <img alt="../_images/meca_force_centrale_traj.jpg" src="../_images/meca_force_centrale_traj.jpg" />
-</div>
+</figure>
 <p>Les rayons extrêmes atteints seront données par l’équation <span class="math notranslate nohighlight">\(E_{p,eff} = E_m\)</span>. De même, le mobile ne peut change la variation de r (passer d’éloignement à rapprochement ou inversement) qu’aux position extrêmes car ce sont les positions où la vitesse <strong>radiale</strong> s’annule. La trajectoire est y est tangente au cercle.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Positions extrêmes et vitesse</p>
 <p><strong>ATTENTION !</strong> Aux rayons extrêmes, <strong>seule la vitesse radiale s’annule</strong>. La vitesse totale n’est <strong>pas nulle</strong>. En effet, si le moment cinétique n’est pas nulle, il vient que la vitesse orthoradiale ne s’annule jamais.</p>
 <p><em>Nous verrons même des exemples où la vitesse sera maximale pour l’un des deux rayons extrêmes.</em></p>
-</div>
-</div>
-<div class="section" id="caracteristiques-autres">
-<h4><span class="section-number">5.1.1.3.3.2. </span>Caractéristiques autres<a class="headerlink" href="#caracteristiques-autres" title="Permalink to this headline">#</a></h4>
+</aside>
+</section>
+<section id="caracteristiques-autres">
+<h4><span class="section-number">5.1.1.3.3.2. </span>Caractéristiques autres<a class="headerlink" href="#caracteristiques-autres" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Minimum d’énergie potentielle effective</strong></p>
@@ -1122,15 +657,15 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
 <li><p>Par contre, si l’énergie mécanique égale la valeur minimale de l’énergie potentielle effective, alors un seul rayon est accessible: <strong>la trajectoire sera donc un cercle</strong>.</p></li>
 </ul>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">TrajectoireS circulaireS</p>
 <p>Bien qu’il n’apparaissent souvent qu’un seul minimum sur les tracés d’énergie potentielle effective, il existe en réalité une infinité de trajectoires circulaires possibles suivant la valeur du moment cinétique. Une variation de ce dernier fait varier le tracé même de <span class="math notranslate nohighlight">\(E_{p,eff}(r)\)</span> et donc la position du minimum.</p>
 <p>On déduit en général, non pas une valeur de R, mais <strong>une relation entre le rayon du cercle et la vitesse</strong> du mobile.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+</aside>
+</section>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1144,7 +679,7 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -1152,50 +687,112 @@ E_{p,eff}(r) &amp;= E_{c,\theta} + E_{p}(r)\\
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="centrales_contxt.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5.1. </span>Comprendre le contexte</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="centrales_contxt.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5.1. </span>Comprendre le contexte</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="centrales_newtoniens.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="centrales_newtoniens.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">5.1.2. </span>Potentiels newtoniens</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">5.1.1.1. Définition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-du-moment-cinetique">5.1.1.2. Conservation du moment cinétique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-conservatifs">5.1.1.3. Cas conservatifs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.1.1.3.1. Généralités</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energie-potentielle-effective">5.1.1.3.2. Energie potentielle effective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-semi-qualitatives">5.1.1.3.3. Analyse semi-qualitatives</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#positivite-de-l-energie-cinetique">5.1.1.3.3.1. Positivité de l’énergie cinétique</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques-autres">5.1.1.3.3.2. Caractéristiques autres</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

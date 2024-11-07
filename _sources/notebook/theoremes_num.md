@@ -32,7 +32,7 @@ On considère un pendule simple de longueur $l = 1 \rm{m}$ dans un champ de pesa
 >     * La période $T = \frac{2\delta t}{N-1}$
 > 4. \*Tracer la période des oscillations du pendule pour des angles entre $alph = 10 ^{\circ}$ et $alph = 150 ^{\circ}$ par pas de $10 ^{\circ}$. Analyser.
 
-```{dropdown}
+```{topic}
 En posant le vecteur :
 
 $$
@@ -144,6 +144,8 @@ Soumis de plus à la pesanteur $g = 9.81 \rm{m.s^{-2}}$, l'étude théorique de 
 > 5. Tracer la portée du tir en fonction de l'angle $alph$ et déterminer la gamme d'angle acceptable pour un retour de fond de court où la portée doit être entre 9m et 12m.
 
 ```{dropdown}
+
+````{topic}{Mise en équation}
 En posant le vecteur :
 
 $$
@@ -168,6 +170,7 @@ $$
 \end{matrix}
 $$
 ```
+````
 
 ```{code-cell}
 :tags: [hide-input, remove-output]
