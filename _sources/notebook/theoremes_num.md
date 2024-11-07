@@ -145,7 +145,7 @@ Soumis de plus à la pesanteur $g = 9.81 \rm{m.s^{-2}}$, l'étude théorique de 
 
 ```{dropdown}
 
-````{topic}{Mise en équation}
+````{topic} Mise en équation
 En posant le vecteur :
 
 $$
