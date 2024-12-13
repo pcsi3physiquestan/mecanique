@@ -68,7 +68,7 @@ Pour le saut normal:
 
 \begin{align*}
 z(t) &= -\frac{g}{2}t^2 &\textrm{ pour }t < t_2\\
-z(t) &= - (\frac{mg}{k} + l_0) +  \frac{mg}{k}\cos \left(\omega_0 \left(t - t_2\right)\right)  -  \sqrt{2l_0 g} \sin \left(\omega_0 \left(t - t_2\right)\right) &\textrm{ pour }t > t_2\\
+z(t) &= - (\frac{mg}{k} + l_0) +  \frac{mg}{k}\cos \left(\omega_0 \left(t - t_2\right)\right)  -  \frac{\sqrt{2l_0 g}}{\omega_0} \sin \left(\omega_0 \left(t - t_2\right)\right) &\textrm{ pour }t > t_2\\
 \end{align*}
 avec $\omega_0 = \sqrt{\frac{k}{m}}$, l'instant où l'élastique se tend $t_2 = \sqrt{\frac{2l_0}{g}}$.
 
