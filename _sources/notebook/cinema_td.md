@@ -38,10 +38,10 @@ On s'intéresse à un cycliste, considéré comme un point matériel M, qui s'en
 ````
 ````{topic} Eléménts de réponse (sans justification)
 * $t_{E1} = \sqrt{\frac{L}{a_1}}$ et $v_{E1} = \sqrt{a_1 L}$.
-* $t_{S1} = \sqrt{\frac{L + \frac{\pi}{2}R}{a_1}}$ et $v_{S1} = \sqrt{a_1 (L + \frac{\pi}{2}R)}$.
-* $t_{E2} = \sqrt{\frac{3L + \frac{\pi}{2}R}{a_1}}$ et $v_{E2} = \sqrt{a_1 (3L + \frac{\pi}{2}R)}$.
-* $t_{S2} = \sqrt{\frac{3L + \pi R}{a_1}}$ et $v_{S2} = \sqrt{a_1 (3L + \pi R)}$.
-* $t_{D} = \sqrt{\frac{4L + \pi R}{a_1}}$ et $v_{D} = \sqrt{a_1 (4L + \pi R)}$.
+* $t_{S1} = \sqrt{\frac{L + 2\piR}{a_1}}$ et $v_{S1} = \sqrt{a_1 (L + 2\pi R)}$.
+* $t_{E2} = \sqrt{\frac{3L + 2\pi R}{a_1}}$ et $v_{E2} = \sqrt{a_1 (3L + 2 \pi R)}$.
+* $t_{S2} = \sqrt{\frac{3L + 4\pi R}{a_1}}$ et $v_{S2} = \sqrt{a_1 (3L + 4 \pi R)}$.
+* $t_{D} = \sqrt{\frac{4L + 4\pi R}{a_1}}$ et $v_{D} = \sqrt{a_1 (4L + 4 \pi R)}$.
 ````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Base de Frenet_
