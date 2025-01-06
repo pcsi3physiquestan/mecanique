@@ -149,13 +149,13 @@ _Point utile pour cet exercice_
 
 Un ressort: 
 
-$E_p = -k R^2 {(\cos{\theta})} - mgR\sin \theta + mgR$
+$E_p = -k R^2 {(\cos{\theta})} + mgR\sin \theta + mgR$
 
-Positions d'équilibre: $\tan \theta = \frac{mgR}{kR^2}$, il n'y a qu'une position stable: $\theta_{eq} = \arctan \frac{mgR}{kR^2}$
+Positions d'équilibre: $\tan \theta = -\frac{mgR}{kR^2}$, il n'y a qu'une position stable: $\theta_{eq} = -\arctan \frac{mgR}{kR^2}$
 
 Deux ressorts:
 
-$E_p = -mgR \sin\theta + mgR$, la seule position d'équilibre est en $\pi/2$
+$E_p = mgR \sin\theta + mgR$, la seule position d'équilibre est en $-\pi/2$
 ````
 
 ````{list-table} Corrigé des exercices d'entrainement et Questionnaire de cours
