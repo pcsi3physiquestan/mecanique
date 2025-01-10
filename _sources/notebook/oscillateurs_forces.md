@@ -24,7 +24,7 @@ On se place maintenant dans le cas d'un oscillateurs amorti soumis à une force 
 Comme on l'a vu, l'équation d'évolution devient:
 
 \begin{align*}
-\frac{\rm{d^2}X}{\rm{dt^2}} + 2 \xi \omega_0 \frac{\rm{d}X}{\rm{dt}} + \omega_0^2 X = F_m \cos \omega t
+\frac{\rm{d^2}X}{\rm{dt^2}} + 2 \xi \omega_0 \frac{\rm{d}X}{\rm{dt}} + \omega_0^2 X = \frac{F_m}{m} \cos \omega t = a_m \cos \omega t
 \end{align*}
 ````
 
