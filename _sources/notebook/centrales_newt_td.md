@@ -153,7 +153,7 @@ La comète Arend-Roland est une comète à trajectoire d'excentricité e estimé
 
 $$t(\alpha) = t_0 + \int_0^{\alpha} \frac{p^2}{C} \frac{d \theta}{{(1+ cos \theta)}^2}$$
 
-5. Pour calculer cette intégrale, on effectue le changement de variable $x = \tan \frac{\theta}{2}$. En déduire l'expression: $t = t_0 + \frac{p^2}{C} (X + \frac{X^3}{3})$ où $X = \tan \frac{\alpha}{2}$.
+5. Pour calculer cette intégrale, on effectue le changement de variable $x = \tan \frac{\theta}{2}$. En déduire l'expression: $t = t_0 + \frac{p^2}{2C} (X + \frac{X^3}{3})$ où $X = \tan \frac{\alpha}{2}$.
 1. (Analyse numérique) La comète a été découverte par les astronomes belges Sylvain Arend et Georges Roland le 8 novembre 1856. A quelle distance se trouvait-elle du Soleil?
 
 ````
